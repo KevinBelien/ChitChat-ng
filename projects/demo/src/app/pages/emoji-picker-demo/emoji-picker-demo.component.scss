@@ -1,0 +1,12 @@
+.emoji-picker-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
+
+.emoji-picker {
+	border: 1px solid #eee;
+	border-radius: 3px;
+}

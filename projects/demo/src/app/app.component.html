@@ -1,3 +1,30 @@
-<main>
-	<router-outlet></router-outlet>
-</main>
+<mat-toolbar class="nav-toolbar">
+	<ch-button
+		type="contrast"
+		fill="clear"
+		icon="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+	></ch-button>
+	<h3 class="title">Chit Chat</h3>
+</mat-toolbar>
+
+<mat-sidenav-container class="side-nav-container">
+	<mat-sidenav mode="side" opened class="side-nav">
+		<mat-nav-list>
+			@for (item of navigationItems; track item.path) {
+
+			<mat-list-item
+				class="nav-item"
+				[routerLink]="item.path"
+				routerLinkActive="selected"
+				(click)="selectNavItem(item)"
+			>
+				{{ item.text | titlecase }}
+			</mat-list-item>
+			}
+		</mat-nav-list>
+	</mat-sidenav>
+
+	<mat-sidenav-content class="content-container">
+		<router-outlet></router-outlet>
+	</mat-sidenav-content>
+</mat-sidenav-container>

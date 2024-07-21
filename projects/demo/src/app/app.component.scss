@@ -1,1 +1,31 @@
+$top-bar-height: 50px;
 
+$side-nav-width: 200px;
+$side-nav-padding: 16px;
+
+.nav-toolbar {
+	height: $top-bar-height;
+	display: flex;
+	column-gap: 0.7em;
+	background-color: var(--ch-color-primary);
+	align-items: center;
+}
+
+.title {
+	color: #fff;
+}
+
+.side-nav-container {
+	position: relative;
+	height: calc(100vh - $top-bar-height);
+}
+
+.side-nav {
+	width: $side-nav-width;
+	padding: $side-nav-padding;
+}
+
+.nav-item.selected {
+	background-color: var(--ch-color-primary);
+	color: white;
+}

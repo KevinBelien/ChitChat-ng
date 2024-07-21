@@ -9,9 +9,17 @@ export const routes: Routes = [
 	{
 		path: 'button',
 		loadComponent: () =>
-			import('./pages/button/button.component').then(
+			import('./pages/button-demo/button-demo.component').then(
 				(c) => c.ButtonDemoComponent
 			),
+		pathMatch: 'full',
+	},
+	{
+		path: 'emoji-picker',
+		loadComponent: () =>
+			import(
+				'./pages/emoji-picker-demo/emoji-picker-demo.component'
+			).then((c) => c.EmojiPickerDemoComponent),
 		pathMatch: 'full',
 	},
 	{

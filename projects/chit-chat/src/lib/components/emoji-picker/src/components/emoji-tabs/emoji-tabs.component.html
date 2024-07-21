@@ -1,0 +1,20 @@
+<div class="ch-emoji-tabs">
+	<ng-container
+		*ngFor="let category of emojiCategories; trackBy: trackCategory"
+	>
+		<ch-button
+			chHover
+			(hoverChange)="handleHoverChange($event, category)"
+			fill="clear"
+			type="contrast"
+			[cssClass]="selectedTab === category ? 'ch-button-active' : ''"
+			[icon]="
+				categoryHovered === category
+					? emojiCategoryIcons[category].solid
+					: emojiCategoryIcons[category].outline
+			"
+			(onClick)="handleCategoryButtonClick($event, category)"
+		>
+		</ch-button>
+	</ng-container>
+</div>

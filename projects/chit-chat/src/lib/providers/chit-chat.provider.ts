@@ -1,5 +1,6 @@
 import { DOCUMENT } from '@angular/common';
 import { inject, Provider } from '@angular/core';
+import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { AuthService } from 'chit-chat/src/lib/auth';
 import { ScreenService } from 'chit-chat/src/lib/utils';
@@ -11,6 +12,10 @@ export function provideChitChat(config: LibConfig): Provider[] {
 		{
 			provide: LibConfigService,
 			useValue: config,
+		},
+		{
+			provide: FIREBASE_OPTIONS,
+			useValue: config.firebaseConfig,
 		},
 		AuthService,
 		ScreenService,

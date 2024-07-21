@@ -1,0 +1,13 @@
+.ch-emoji-picker {
+	height: var(--picker-height, 400px);
+	width: var(--picker-width, 400px);
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--ch-background-color);
+}
+
+.ch-emoji-picker-container {
+	position: relative;
+	flex-grow: 1;
+}

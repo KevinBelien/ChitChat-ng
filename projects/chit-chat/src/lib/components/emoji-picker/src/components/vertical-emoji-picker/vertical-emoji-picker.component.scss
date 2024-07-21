@@ -1,0 +1,33 @@
+.ch-static-category {
+	z-index: 10; /* Ensure it stays below the sticky elements */
+	width: 100%;
+}
+
+.ch-virtual-category {
+	z-index: 20;
+}
+
+.ch-emoji-group-title {
+	background-color: var(--ch-background-color, #fff);
+	font-weight: 500;
+	user-select: none;
+	height: calc(
+		var(--emoji-size, 24px) * var(--item-size-multiplier, 1.5)
+	);
+	display: flex;
+	align-items: center;
+	width: 100%;
+	padding-left: 0.5rem;
+}
+
+.ch-sticky {
+	position: -webkit-sticky;
+	position: sticky;
+	top: calc(var(--sp-offset, 0px) - 1px);
+}
+
+.ch-row {
+	display: flex;
+	height: 100%;
+	width: 100%;
+}

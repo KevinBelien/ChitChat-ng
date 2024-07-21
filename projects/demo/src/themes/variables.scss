@@ -1,4 +1,8 @@
 :root {
+	--mat-sidenav-content-background-color: #fafafa;
+	--mat-sidenav-content-text-color: #181818;
+	--mat-sidenav-container-background-color: white;
+
 	--ch-font-family: 'Poppins', 'Roboto', 'RobotoFallback',
 		'Noto Kufi Arabic', 'Helvetica', 'Arial', sans-serif;
 	--ch-background-color: #fff;
@@ -45,7 +49,14 @@
 
 @media (prefers-color-scheme: dark) {
 	body {
-		--ch-background-color: #181818;
+		--mat-sidenav-content-background-color: #212121;
+		--mat-sidenav-content-text-color: #212121;
+		--mat-sidenav-content-text-color: #fff;
+		--mat-sidenav-container-background-color: #222;
+		--mdc-list-list-item-label-text-color: #fff;
+		--mdc-list-list-item-hover-label-text-color: #fff;
+
+		--ch-background-color: #222;
 		--ch-text-color: #fff;
 		--ch-background-selected: rgba(255, 255, 255, 0.2);
 		--ch-color-scroll: hsla(0, 0%, 100%, 0.15);

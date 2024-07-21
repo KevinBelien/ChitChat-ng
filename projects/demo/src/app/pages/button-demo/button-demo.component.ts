@@ -11,8 +11,8 @@ import {
 	selector: 'app-button-demo',
 	standalone: true,
 	imports: [CommonModule, FormsModule, ButtonComponent],
-	templateUrl: './button.component.html',
-	styleUrl: './button.component.scss',
+	templateUrl: './button-demo.component.html',
+	styleUrl: './button-demo.component.scss',
 })
 export class ButtonDemoComponent {
 	readonly buttonTypes: ButtonType[] = [
@@ -49,6 +49,6 @@ export class ButtonDemoComponent {
 	constructor() {}
 
 	handleClick = (e: MouseEvent) => {
-		console.log(e);
+		alert('button clicked');
 	};
 }
