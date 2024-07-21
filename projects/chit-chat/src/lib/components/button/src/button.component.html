@@ -1,0 +1,26 @@
+<button
+	chRipple
+	[rippleEnabled]="activeStateEnabled"
+	[ngClass]="buttonClass"
+	[disabled]="disabled"
+	[ngStyle]="{
+		width: width ? width + 'px' : 'auto',
+		height: height ? height + 'px' : 'auto'
+	}"
+	[tabIndex]="tabIndex"
+	(click)="handleClick($event)"
+>
+	<ng-content></ng-content>
+
+	<ng-container *ngIf="!!icon">
+		<div [ngClass]="iconClass()">
+			<ch-icon [iconPath]="icon"></ch-icon>
+		</div>
+	</ng-container>
+	<span
+		*ngIf="label"
+		class="ch-button-label"
+		[attr.aria-hidden]="icon && !label"
+		>{{ label }}</span
+	>
+</button>

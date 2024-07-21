@@ -1,0 +1,16 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "../../dist/out-tsc/lib",
+		"declaration": true,
+		"declarationMap": true,
+		"inlineSources": true,
+		"types": [],
+		"rootDir": "src",
+		"baseUrl": ".",
+		"paths": {
+			"chit-chat/*": ["src/lib/*"]
+		}
+	},
+	"exclude": ["**/*.spec.ts"]
+}

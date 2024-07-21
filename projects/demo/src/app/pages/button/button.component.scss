@@ -1,0 +1,40 @@
+.button-demo-container {
+	margin: 1em;
+	display: flex;
+	flex-direction: column;
+	row-gap: 2em;
+}
+
+.button-collection-section {
+	display: flex;
+	flex-direction: column;
+	row-gap: 1em;
+}
+
+.fill-title {
+	font-weight: 500;
+	font-size: 1rem;
+	margin-bottom: 6px;
+}
+
+.btn-row {
+	display: flex;
+	align-items: center;
+	column-gap: 1em;
+}
+
+.fill-container {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.4em;
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	row-gap: 0.5em;
+}
+.form-item {
+	display: flex;
+	gap: 0.5em;
+}
