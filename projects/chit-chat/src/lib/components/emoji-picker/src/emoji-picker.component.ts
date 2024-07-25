@@ -11,17 +11,13 @@ import {
 	SimpleChanges,
 	ViewChild,
 } from '@angular/core';
+import { filter, Observable, switchMap, tap } from 'rxjs';
 import { EmojiTabsComponent } from './components/emoji-tabs/emoji-tabs.component';
 import { HorizontalEmojiPickerComponent } from './components/horizontal-emoji-picker/horizontal-emoji-picker.component';
 import { VerticalEmojiPickerComponent } from './components/vertical-emoji-picker/vertical-emoji-picker.component';
-import { emojis, groupedEmojis } from './data';
 import { EmojiPickerOrientation } from './enums';
 import { EmojiSizeKey } from './enums/emoji-size.enum';
-import {
-	EmojiCategory,
-	GroupedEmoji,
-	emojiCategories,
-} from './interfaces';
+import { Emoji, emojiCategories, EmojiCategory } from './interfaces';
 import { EmojiDataService } from './services';
 
 @Component({
@@ -35,7 +31,6 @@ import { EmojiDataService } from './services';
 	],
 	providers: [EmojiDataService],
 	changeDetection: ChangeDetectionStrategy.OnPush,
-
 	templateUrl: './emoji-picker.component.html',
 	styleUrl: './emoji-picker.component.scss',
 	host: {
@@ -65,7 +60,7 @@ export class EmojiPickerComponent
 	@Input()
 	scrollbarVisible: boolean = true;
 
-	emojis: GroupedEmoji[] = [...groupedEmojis];
+	emojis$: Observable<Emoji[]> = new Observable<Emoji[]>();
 
 	@Input()
 	emojiCategories: EmojiCategory[] = [...emojiCategories].filter(
@@ -83,16 +78,24 @@ export class EmojiPickerComponent
 
 	readonly Orientations = EmojiPickerOrientation;
 
-	flatEmojis = [...emojis];
-
 	constructor(
 		private renderer: Renderer2,
 		private emojiDataService: EmojiDataService
-	) {}
+	) {
+		this.emojis$ = this.emojiDataService.dbInitialized.pipe(
+			tap((initialized) => console.log('initialized', initialized)),
+			filter((initialized) => initialized), // Proceed only if db is initialized
+			switchMap(() => {
+				console.log('gets to emoji data fetch');
+				return this.emojiDataService.fetchEmojis(
+					this.emojiCategories
+				);
+			})
+		);
+	}
 
 	ngOnInit(): void {
 		this.loadCountryFlagEmojiPolyfill();
-
 		// console.log(
 		// 	groupedEmojis.map((record) => {
 		// 		return Object.assign(record, {
@@ -119,16 +122,30 @@ export class EmojiPickerComponent
 			changes['emojiCategories'] &&
 			!changes['emojiCategories'].isFirstChange()
 		) {
-			this.emojis = this.filterAndSortEmojisByCategoryList(
-				this.emojiCategories
+			this.emojiDataService.dbInitialized.pipe(
+				filter((initialized) => initialized), // Proceed only if db is initialized
+				switchMap(() =>
+					this.emojiDataService.fetchEmojis(this.emojiCategories)
+				)
 			);
+
+			const isActiveCategoryInCategories =
+				this.emojiCategories.includes(this.selectedCategory);
+
+			if (!isActiveCategoryInCategories) {
+				if (this.verticalEmojiPickerComponent) {
+					this.verticalEmojiPickerComponent.navigateToCategory(
+						changes['emojiCategories'].currentValue[0]
+					);
+				}
+			}
 		}
 	}
 
 	ngAfterViewInit(): void {
-		this.emojis = this.filterAndSortEmojisByCategoryList(
-			this.emojiCategories
-		);
+		// this.emojis = this.filterAndSortEmojisByCategoryList(
+		// 	this.emojiCategories
+		// );
 	}
 
 	//add polyfill script to support flag emojis for windows users
@@ -151,38 +168,38 @@ export class EmojiPickerComponent
 		}
 	};
 
-	filterGroupedEmojisByIncludedCategories = (
-		emojis: GroupedEmoji[],
+	// filterGroupedEmojisByIncludedCategories = (
+	// 	emojis: GroupedEmoji[],
 
-		includedCategories: EmojiCategory[]
-	): GroupedEmoji[] => {
-		return emojis.filter((group) =>
-			includedCategories.includes(group.category)
-		);
-	};
+	// 	includedCategories: EmojiCategory[]
+	// ): GroupedEmoji[] => {
+	// 	return emojis.filter((group) =>
+	// 		includedCategories.includes(group.category)
+	// 	);
+	// };
 
-	filterAndSortEmojisByCategoryList = (
-		categories: EmojiCategory[]
-	) => {
-		const filteredEmojis =
-			this.filterGroupedEmojisByIncludedCategories(
-				this.emojis,
-				categories
-			);
-		return this.sortGroupedEmojisByCategories(
-			filteredEmojis,
-			categories
-		);
-	};
+	// filterAndSortEmojisByCategoryList = (
+	// 	categories: EmojiCategory[]
+	// ) => {
+	// 	const filteredEmojis =
+	// 		this.filterGroupedEmojisByIncludedCategories(
+	// 			this.emojis,
+	// 			categories
+	// 		);
+	// 	return this.sortGroupedEmojisByCategories(
+	// 		filteredEmojis,
+	// 		categories
+	// 	);
+	// };
 
-	sortGroupedEmojisByCategories = (
-		emojis: GroupedEmoji[],
-		categories: EmojiCategory[]
-	): GroupedEmoji[] => {
-		return emojis.sort(
-			(a, b) =>
-				categories.indexOf(a.category) -
-				categories.indexOf(b.category)
-		);
-	};
+	// sortGroupedEmojisByCategories = (
+	// 	emojis: GroupedEmoji[],
+	// 	categories: EmojiCategory[]
+	// ): GroupedEmoji[] => {
+	// 	return emojis.sort(
+	// 		(a, b) =>
+	// 			categories.indexOf(a.category) -
+	// 			categories.indexOf(b.category)
+	// 	);
+	// };
 }

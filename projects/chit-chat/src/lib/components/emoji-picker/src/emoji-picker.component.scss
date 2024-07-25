@@ -4,7 +4,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	background-color: var(--ch-background-color);
+	background-color: var(--ch-background-color, '#fff');
 }
 
 .ch-emoji-picker-container {

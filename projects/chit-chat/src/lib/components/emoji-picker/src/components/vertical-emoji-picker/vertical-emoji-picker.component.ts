@@ -9,6 +9,7 @@ import {
 	Component,
 	EventEmitter,
 	HostBinding,
+	inject,
 	Input,
 	OnChanges,
 	OnDestroy,
@@ -17,16 +18,15 @@ import {
 	ViewChild,
 } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { groupedEmojis, mappedEmojis } from '../../data';
 import { EmojiSize, EmojiSizeKey } from '../../enums';
 import {
 	Emoji,
 	EmojiCategory,
 	EmojiPickerRow,
-	GroupedEmoji,
 } from '../../interfaces';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 import { emojiCategories } from './../../interfaces/emoji.interface';
+import { EmojiDataService } from './../../services/emoji-data.service';
 
 import {
 	ClickEvent,
@@ -56,6 +56,8 @@ import {
 export class VerticalEmojiPickerComponent
 	implements AfterViewInit, OnDestroy, OnChanges
 {
+	private emojiDataService = inject(EmojiDataService);
+
 	@ViewChild(CdkVirtualScrollViewport, { static: false })
 	viewport?: CdkVirtualScrollViewport;
 
@@ -81,10 +83,8 @@ export class VerticalEmojiPickerComponent
 	@Input()
 	emojiCategories: EmojiCategory[] = [...emojiCategories];
 
-	mappedEmojis: Map<string, Emoji> = mappedEmojis;
-
 	@Input()
-	emojis: GroupedEmoji[] = groupedEmojis;
+	emojis: Emoji[] | null = [];
 
 	@Input()
 	currentCategory: EmojiCategory = this.emojiCategories[0];
@@ -157,7 +157,8 @@ export class VerticalEmojiPickerComponent
 			this.rows = this.generateEmojiRows();
 		}
 
-		if (changes['emojis'] && !changes['emojis'].isFirstChange()) {
+		if (changes['emojis']) {
+			console.log('gets to change', this.emojis);
 			this.rows = this.generateEmojiRows();
 		}
 	}
@@ -202,9 +203,8 @@ export class VerticalEmojiPickerComponent
 
 		const previousRow = this.rows[index - 1];
 		const currentRow = this.rows[index];
-
 		this.setCurrentCategory(
-			previousRow
+			!!previousRow
 				? previousRow.type === 'emoji'
 					? previousRow.value[0].category
 					: (previousRow.value as EmojiCategory)
@@ -223,29 +223,63 @@ export class VerticalEmojiPickerComponent
 	};
 
 	generateEmojiRows = (): EmojiPickerRow[] => {
+		if (!this.emojis) return [];
+
 		const maxEmojisPerRow = this.calculateAmountEmojiInRows(
 			this.emojiSizeInPx
 		);
 
 		const rows: EmojiPickerRow[] = [];
+		let currentRow: Emoji[] = [];
 
-		this.emojis.forEach((group) => {
+		this.emojis.forEach((emoji, index) => {
+			if (index === 0) {
+				console.log(emoji);
+			}
 			// Add the category title as a row
-			rows.push({
-				id: crypto.randomUUID(),
-				type: 'category',
-				value: group.category,
-			});
+			const previousEmoji = this.emojis![index - 1];
 
-			// Add the emojis in rows with a max of maxEmojisPerRow
-			for (let i = 0; i < group.emojis.length; i += maxEmojisPerRow) {
+			if (
+				!previousEmoji ||
+				previousEmoji.category !== emoji.category
+			) {
+				if (currentRow.length > 0) {
+					rows.push({
+						id: crypto.randomUUID(),
+						type: 'emoji',
+						value: currentRow,
+					});
+					currentRow = [];
+				}
+
+				rows.push({
+					id: crypto.randomUUID(),
+					type: 'category',
+					value: emoji.category,
+				});
+			}
+
+			if (currentRow.length === maxEmojisPerRow) {
 				rows.push({
 					id: crypto.randomUUID(),
 					type: 'emoji',
-					value: group.emojis.slice(i, i + maxEmojisPerRow),
+					value: currentRow,
 				});
+				currentRow = [];
+			} else {
+				currentRow.push(emoji);
 			}
+			// // Add the emojis in rows with a max of maxEmojisPerRow
+			// for (let i = 0; i < group.emojis.length; i += maxEmojisPerRow) {
+			// 	rows.push({
+			// 		id: crypto.randomUUID(),
+			// 		type: 'emoji',
+			// 		value: group.emojis.slice(i, i + maxEmojisPerRow),
+			// 	});
+			// }
 		});
+
+		console.log(rows);
 		return rows;
 	};
 
@@ -285,12 +319,14 @@ export class VerticalEmojiPickerComponent
 	};
 
 	trackEmoji = (index: number, emoji: Emoji) => {
-		return emoji.value;
+		return emoji.id;
 	};
 
 	handleTouchHold = (e: TouchHoldEvent) => {
 		if (!e.data) return;
-		const emoji = mappedEmojis.get(e.data);
+
+		const emoji = this.emojiDataService.getEmojiById(e.data);
+
 		alert(emoji?.value);
 		this.touchHoldEventActive =
 			!!emoji && !!emoji.skinTones && emoji.skinTones.length > 0;
@@ -304,7 +340,9 @@ export class VerticalEmojiPickerComponent
 			return;
 		}
 
-		const emoji = mappedEmojis.get(e.data);
+		const emoji = this.emojiDataService.getEmojiById(e.data);
+
+		// const emoji = mappedEmojis.get(e.data);
 
 		// Call the method to show the popover with the target element and the emoji
 		console.log('gets to click', emoji);

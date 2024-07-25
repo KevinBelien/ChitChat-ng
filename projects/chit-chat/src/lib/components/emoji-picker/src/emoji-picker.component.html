@@ -14,7 +14,7 @@
 			<ch-vertical-emoji-picker
 				[height]="height"
 				[width]="width"
-				[emojis]="emojis"
+				[emojis]="emojis$ | async"
 				[emojiSize]="emojiSize"
 				[(currentCategory)]="selectedCategory"
 				[scrollbarVisible]="scrollbarVisible"

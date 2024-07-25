@@ -3,12 +3,18 @@
 		type="contrast"
 		fill="clear"
 		icon="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+		(onClick)="handleMenuBtnClick($event)"
 	></ch-button>
 	<h3 class="title">Chit Chat</h3>
 </mat-toolbar>
 
 <mat-sidenav-container class="side-nav-container">
-	<mat-sidenav mode="side" opened class="side-nav">
+	<mat-sidenav
+		mode="side"
+		[opened]="isMenuOpened"
+		[mode]="sideNavMode"
+		class="side-nav"
+	>
 		<mat-nav-list>
 			@for (item of navigationItems; track item.path) {
 

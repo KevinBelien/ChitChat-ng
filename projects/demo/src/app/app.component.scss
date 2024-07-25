@@ -20,12 +20,25 @@ $side-nav-padding: 16px;
 	height: calc(100vh - $top-bar-height);
 }
 
-.side-nav {
+::ng-deep .side-nav {
 	width: $side-nav-width;
 	padding: $side-nav-padding;
+
+	.mdc-list-item__primary-text {
+		color: #fff;
+	}
+
+	.mdc-list-item:focus .mdc-list-item__primary-text,
+	.mdc-list-item:hover .mdc-list-item__primary-text {
+		color: #fff;
+	}
 }
 
 .nav-item.selected {
 	background-color: var(--ch-color-primary);
 	color: white;
+}
+
+.content-container {
+	padding-inline: 6px;
 }

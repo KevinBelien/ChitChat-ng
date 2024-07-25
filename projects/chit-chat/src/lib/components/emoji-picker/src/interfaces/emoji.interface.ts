@@ -1,7 +1,7 @@
 export interface Emoji {
+	id: string;
 	name: string;
 	value: string;
-	shortname: string;
 	category: EmojiCategory;
 	order: number;
 	skinTones?: AlternativeSkinTone[];
@@ -38,8 +38,3 @@ export const emojiCategories = [
 ] as const;
 
 export type EmojiCategory = (typeof emojiCategories)[number];
-
-export interface GroupedEmoji {
-	category: EmojiCategory;
-	emojis: Emoji[];
-}
