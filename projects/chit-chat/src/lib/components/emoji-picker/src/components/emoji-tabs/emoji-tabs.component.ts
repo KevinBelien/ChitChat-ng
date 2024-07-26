@@ -3,12 +3,17 @@ import {
 	ChangeDetectionStrategy,
 	Component,
 	EventEmitter,
+	inject,
 	Input,
 	Output,
 } from '@angular/core';
 import { ButtonComponent } from 'chit-chat/src/lib/components/button';
 import { IconComponent } from 'chit-chat/src/lib/components/icon';
-import { HoverDirective, HoverEvent } from 'chit-chat/src/lib/utils';
+import {
+	HoverDirective,
+	HoverEvent,
+	ScreenService,
+} from 'chit-chat/src/lib/utils';
 import { emojiCategoryIcons } from '../../icons/emoji-categories';
 import { EmojiCategory } from '../../interfaces';
 import { emojiCategories } from './../../interfaces/emoji.interface';
@@ -39,6 +44,9 @@ export class EmojiTabsComponent {
 
 	@Output()
 	onTabClicked = new EventEmitter<EmojiCategory>();
+
+	private screenService = inject(ScreenService);
+	readonly isMobile = this.screenService.isMobile();
 
 	trackCategory = (index: number, category: EmojiCategory) => {
 		return category;

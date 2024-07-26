@@ -9,7 +9,8 @@
 			type="contrast"
 			[cssClass]="selectedTab === category ? 'ch-button-active' : ''"
 			[icon]="
-				categoryHovered === category
+				(!isMobile && categoryHovered === category) ||
+				selectedTab === category
 					? emojiCategoryIcons[category].solid
 					: emojiCategoryIcons[category].outline
 			"

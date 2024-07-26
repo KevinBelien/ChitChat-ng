@@ -1,5 +1,35 @@
 <div class="emoji-picker-container">
 	<div class="emoji-picker">
-		<ch-emoji-picker></ch-emoji-picker>
+		<ch-emoji-picker
+			[emojiSize]="form.emojiSize"
+			[emojiCategories]="form.categories"
+		></ch-emoji-picker>
+	</div>
+
+	<div class="form">
+		<div class="form-item">
+			<mat-form-field>
+				<mat-label>Emoji Size</mat-label>
+				<mat-select [(ngModel)]="form.emojiSize">
+					@for (size of emojiSizes; track size) {
+					<mat-option [value]="size">
+						{{ size | titlecase }}
+					</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="form-item">
+			<mat-form-field>
+				<mat-label>Category</mat-label>
+				<mat-select [(ngModel)]="form.categories" multiple>
+					@for (category of categories; track category) {
+					<mat-option [value]="category">{{
+						category | titlecase
+					}}</mat-option>
+					}
+				</mat-select>
+			</mat-form-field>
+		</div>
 	</div>
 </div>

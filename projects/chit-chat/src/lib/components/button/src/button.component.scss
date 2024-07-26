@@ -129,6 +129,7 @@
 // Button Styles
 ::ng-deep .ch-button {
 	display: inline-flex;
+	font-family: inherit;
 	cursor: pointer;
 	user-select: none;
 	align-items: center;

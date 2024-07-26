@@ -6,6 +6,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AuthService } from 'chit-chat/src/lib/auth';
 import { ButtonComponent } from 'chit-chat/src/lib/components/button';
+import { ScreenService } from 'chit-chat/src/lib/utils';
 import { NavigationItem, navigationItems } from './app-navigation';
 
 @Component({
@@ -24,11 +25,26 @@ import { NavigationItem, navigationItems } from './app-navigation';
 	styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
-	authenticationService = inject(AuthService);
+	private authenticationService = inject(AuthService);
+	private screenService = inject(ScreenService);
 
 	readonly navigationItems = [...navigationItems];
 
 	selectedNavItem: NavigationItem = navigationItems[0];
+	sideNavMode: 'over' | 'push' | 'side';
+
+	isMenuOpened: boolean = true;
+
+	constructor() {
+		this.sideNavMode = this.calcSideNavMode();
+		this.screenService.breakPointChanged.subscribe(() => {
+			this.sideNavMode = this.calcSideNavMode();
+		});
+	}
+
+	calcSideNavMode = (): 'over' | 'push' | 'side' => {
+		return this.screenService.sizes['lg'] ? 'side' : 'over';
+	};
 
 	selectNavItem(item: NavigationItem) {
 		this.selectedNavItem = item;
@@ -40,4 +56,9 @@ export class AppComponent implements OnInit {
 			password: 'Test123',
 		});
 	}
+
+	handleMenuBtnClick = (e: Event) => {
+		e.stopPropagation();
+		this.isMenuOpened = !this.isMenuOpened;
+	};
 }

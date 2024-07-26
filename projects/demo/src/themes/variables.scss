@@ -3,8 +3,9 @@
 	--mat-sidenav-content-text-color: #181818;
 	--mat-sidenav-container-background-color: white;
 
-	--ch-font-family: 'Poppins', 'Roboto', 'RobotoFallback',
-		'Noto Kufi Arabic', 'Helvetica', 'Arial', sans-serif;
+	--ch-font-family: Poppins, Roboto, RobotoFallback,
+		'Noto Kufi Arabic', Helvetica, Arial, sans-serif;
+
 	--ch-background-color: #fff;
 	--ch-text-color: #181818;
 
@@ -52,9 +53,9 @@
 		--mat-sidenav-content-background-color: #212121;
 		--mat-sidenav-content-text-color: #212121;
 		--mat-sidenav-content-text-color: #fff;
-		--mat-sidenav-container-background-color: #222;
-		--mdc-list-list-item-label-text-color: #fff;
-		--mdc-list-list-item-hover-label-text-color: #fff;
+		--mat-sidenav-container-background-color: #2c2c2c;
+		// --mdc-list-list-item-label-text-color: #fff;
+		// --mdc-list-list-item-hover-label-text-color: #fff;
 
 		--ch-background-color: #222;
 		--ch-text-color: #fff;
