@@ -1,27 +1,35 @@
 import { CommonModule } from '@angular/common';
 import {
-	AfterViewInit,
 	ChangeDetectionStrategy,
 	Component,
+	EventEmitter,
 	HostBinding,
+	inject,
 	Input,
 	OnChanges,
 	OnInit,
+	Output,
 	Renderer2,
 	SimpleChanges,
 	ViewChild,
 } from '@angular/core';
+import {
+	BehaviorSubject,
+	combineLatest,
+	map,
+	Observable,
+	of,
+	switchMap,
+} from 'rxjs';
 import { EmojiTabsComponent } from './components/emoji-tabs/emoji-tabs.component';
 import { HorizontalEmojiPickerComponent } from './components/horizontal-emoji-picker/horizontal-emoji-picker.component';
 import { VerticalEmojiPickerComponent } from './components/vertical-emoji-picker/vertical-emoji-picker.component';
-import { emojis, groupedEmojis } from './data';
 import { EmojiPickerOrientation } from './enums';
 import { EmojiSizeKey } from './enums/emoji-size.enum';
-import {
-	EmojiCategory,
-	GroupedEmoji,
-	emojiCategories,
-} from './interfaces';
+import { Emoji, emojiCategories, EmojiCategory } from './models';
+import { CategoryBarPosition } from './models/category-bar-position.model';
+import { EmojiSuggestionMode } from './models/emoji-suggestion-mode.model';
+import { SuggestionEmojis } from './models/suggestion-emojis.model';
 import { EmojiDataService } from './services';
 
 @Component({
@@ -35,7 +43,6 @@ import { EmojiDataService } from './services';
 	],
 	providers: [EmojiDataService],
 	changeDetection: ChangeDetectionStrategy.OnPush,
-
 	templateUrl: './emoji-picker.component.html',
 	styleUrl: './emoji-picker.component.scss',
 	host: {
@@ -43,68 +50,81 @@ import { EmojiDataService } from './services';
 		class: 'ch-element',
 	},
 })
-export class EmojiPickerComponent
-	implements OnInit, AfterViewInit, OnChanges
-{
+export class EmojiPickerComponent implements OnInit, OnChanges {
+	private emojiDataService = inject(EmojiDataService);
+	private renderer = inject(Renderer2);
+
 	@ViewChild(VerticalEmojiPickerComponent, { static: false })
 	verticalEmojiPickerComponent?: VerticalEmojiPickerComponent;
 
-	@Input()
-	emojiSize: EmojiSizeKey = 'default';
-
-	@Input()
-	height: number = 450;
-
-	@Input()
-	width: number = 350;
-
-	@Input()
-	orientation: EmojiPickerOrientation =
+	@Input() emojiSize: EmojiSizeKey = 'default';
+	@Input() suggestionMode: EmojiSuggestionMode = 'recent';
+	@Input() height: number = 450;
+	@Input() width: number = 350;
+	@Input() orientation: EmojiPickerOrientation =
 		EmojiPickerOrientation.VERTICAL;
+	@Input() categoryBarPosition: CategoryBarPosition = 'top';
+	@Input() scrollbarVisible: boolean = true;
+	@Input() emojiCategories: EmojiCategory[] = [...emojiCategories];
+	@Input() selectedCategory: EmojiCategory = this.emojiCategories[0];
+	@Input() suggestionSize: number = 50;
+	@Input() autoUpdateSuggestions: boolean = true;
 
-	@Input()
-	scrollbarVisible: boolean = true;
-
-	emojis: GroupedEmoji[] = [...groupedEmojis];
-
-	@Input()
-	emojiCategories: EmojiCategory[] = [...emojiCategories].filter(
-		(cat) => cat !== 'recent'
-	);
-
-	@Input()
-	selectedCategory: EmojiCategory = this.emojiCategories[0];
-
-	@HostBinding('style.--picker-height')
-	pickerHeight: string = `${this.height}px`;
-
-	@HostBinding('style.--picker-width')
-	pickerWidth: string = `${this.width}px`;
+	@Output()
+	onEmojiSelected = new EventEmitter<Emoji>();
 
 	readonly Orientations = EmojiPickerOrientation;
 
-	flatEmojis = [...emojis];
+	suggestionMode$ = new BehaviorSubject<EmojiSuggestionMode>(
+		this.suggestionMode
+	);
+	suggestionSize$ = new BehaviorSubject<number>(this.suggestionSize);
 
-	constructor(
-		private renderer: Renderer2,
-		private emojiDataService: EmojiDataService
-	) {}
+	suggestionEmojis$: Observable<SuggestionEmojis | null> =
+		combineLatest([
+			this.suggestionMode$,
+			this.suggestionSize$,
+			this.emojiDataService.emojiCategories,
+		]).pipe(
+			switchMap(([mode, size, emojiCategories]) => {
+				if (!emojiCategories.includes('suggestions')) return of(null);
+				return mode === 'recent'
+					? this.emojiDataService.recentEmojis.pipe(
+							map((emojis) => ({
+								suggestionMode: mode,
+								emojis: emojis.slice(0, size),
+							}))
+					  )
+					: this.emojiDataService.frequentEmojis.pipe(
+							map((emojis) => ({
+								suggestionMode: mode,
+								emojis: emojis.slice(0, size),
+							}))
+					  );
+			})
+		);
+
+	emojis$: BehaviorSubject<Emoji[]> = this.emojiDataService.emojis;
+
+	allEmojis$ = combineLatest([
+		this.emojis$,
+		this.suggestionEmojis$,
+	]).pipe(
+		map(([emojis, suggestionEmojis]) => ({
+			emojis,
+			suggestionEmojis,
+		}))
+	);
+
+	emojiCategories$ = this.emojiDataService.emojiCategories;
+
+	@HostBinding('style.--picker-height')
+	pickerHeight: string = `${this.height}px`;
+	@HostBinding('style.--picker-width')
+	pickerWidth: string = `${this.width}px`;
 
 	ngOnInit(): void {
 		this.loadCountryFlagEmojiPolyfill();
-
-		// console.log(
-		// 	groupedEmojis.map((record) => {
-		// 		return Object.assign(record, {
-		// 			emojis: record.emojis.map((emoji) =>
-		// 				Object.assign(
-		// 					{ ...emoji },
-		// 					{ name: emoji.name.toLowerCase() }
-		// 				)
-		// 			),
-		// 		});
-		// 	})
-		// );
 	}
 
 	ngOnChanges(changes: SimpleChanges): void {
@@ -115,23 +135,43 @@ export class EmojiPickerComponent
 			this.pickerWidth = `${this.width}px`;
 		}
 
-		if (
-			changes['emojiCategories'] &&
-			!changes['emojiCategories'].isFirstChange()
-		) {
-			this.emojis = this.filterAndSortEmojisByCategoryList(
-				this.emojiCategories
+		if (changes['emojiCategories']) {
+			this.emojiDataService.setEmojiCategories(
+				changes['emojiCategories'].currentValue
+			);
+
+			const currentCategories =
+				this.emojiDataService.emojiCategories.getValue();
+
+			if (currentCategories.length === 0) return;
+
+			const isActiveCategoryInCategories =
+				this.emojiCategories.includes(this.selectedCategory);
+			this.selectedCategory = currentCategories[0];
+
+			if (
+				!isActiveCategoryInCategories &&
+				this.verticalEmojiPickerComponent
+			) {
+				this.verticalEmojiPickerComponent.navigateToCategory(
+					currentCategories[0]
+				);
+			}
+		}
+
+		if (changes['suggestionMode']) {
+			this.suggestionMode$.next(
+				changes['suggestionMode'].currentValue
+			);
+		}
+
+		if (changes['suggestionSize']) {
+			this.suggestionSize$.next(
+				changes['suggestionSize'].currentValue
 			);
 		}
 	}
 
-	ngAfterViewInit(): void {
-		this.emojis = this.filterAndSortEmojisByCategoryList(
-			this.emojiCategories
-		);
-	}
-
-	//add polyfill script to support flag emojis for windows users
 	private loadCountryFlagEmojiPolyfill() {
 		const script = this.renderer.createElement('script');
 		script.type = 'module';
@@ -151,38 +191,16 @@ export class EmojiPickerComponent
 		}
 	};
 
-	filterGroupedEmojisByIncludedCategories = (
-		emojis: GroupedEmoji[],
-
-		includedCategories: EmojiCategory[]
-	): GroupedEmoji[] => {
-		return emojis.filter((group) =>
-			includedCategories.includes(group.category)
-		);
+	addEmojiToSuggestions = (emojiId: string) => {
+		this.emojiDataService.addEmojiToRecents(emojiId);
+		this.emojiDataService.incrementEmojiFrequency(emojiId);
 	};
 
-	filterAndSortEmojisByCategoryList = (
-		categories: EmojiCategory[]
-	) => {
-		const filteredEmojis =
-			this.filterGroupedEmojisByIncludedCategories(
-				this.emojis,
-				categories
-			);
-		return this.sortGroupedEmojisByCategories(
-			filteredEmojis,
-			categories
-		);
-	};
+	handleEmojisSelected = (emoji: Emoji) => {
+		if (this.autoUpdateSuggestions) {
+			this.addEmojiToSuggestions(emoji.id);
+		}
 
-	sortGroupedEmojisByCategories = (
-		emojis: GroupedEmoji[],
-		categories: EmojiCategory[]
-	): GroupedEmoji[] => {
-		return emojis.sort(
-			(a, b) =>
-				categories.indexOf(a.category) -
-				categories.indexOf(b.category)
-		);
+		this.onEmojiSelected.emit(emoji);
 	};
 }

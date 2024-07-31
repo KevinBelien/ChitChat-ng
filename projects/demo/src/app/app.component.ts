@@ -1,7 +1,8 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, OnInit } from '@angular/core';
+import { Component, inject, OnInit, Renderer2 } from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AuthService } from 'chit-chat/src/lib/auth';
@@ -20,11 +21,13 @@ import { NavigationItem, navigationItems } from './app-navigation';
 		MatListModule,
 		ButtonComponent,
 		MatToolbarModule,
+		MatSlideToggleModule,
 	],
 	templateUrl: './app.component.html',
 	styleUrl: './app.component.scss',
 })
 export class AppComponent implements OnInit {
+	private renderer = inject(Renderer2);
 	private authenticationService = inject(AuthService);
 	private screenService = inject(ScreenService);
 
@@ -33,17 +36,27 @@ export class AppComponent implements OnInit {
 	selectedNavItem: NavigationItem = navigationItems[0];
 	sideNavMode: 'over' | 'push' | 'side';
 
-	isMenuOpened: boolean = true;
+	isMenuOpened: boolean = this.screenService.sizes['lg'];
 
+	isDarkTheme: boolean = false;
+
+	contentHeight: number;
 	constructor() {
 		this.sideNavMode = this.calcSideNavMode();
+		this.contentHeight = this.calculatePageHeight();
 		this.screenService.breakPointChanged.subscribe(() => {
 			this.sideNavMode = this.calcSideNavMode();
+			this.contentHeight = this.calculatePageHeight();
 		});
+
+		this.enableLightTheme();
 	}
 
 	calcSideNavMode = (): 'over' | 'push' | 'side' => {
 		return this.screenService.sizes['lg'] ? 'side' : 'over';
+	};
+	calculatePageHeight = () => {
+		return window.innerHeight - 50;
 	};
 
 	selectNavItem(item: NavigationItem) {
@@ -60,5 +73,21 @@ export class AppComponent implements OnInit {
 	handleMenuBtnClick = (e: Event) => {
 		e.stopPropagation();
 		this.isMenuOpened = !this.isMenuOpened;
+	};
+
+	enableDarkTheme() {
+		this.renderer.removeClass(document.body, 'ch-light-theme');
+		this.renderer.addClass(document.body, 'ch-dark-theme');
+	}
+
+	enableLightTheme() {
+		this.renderer.removeClass(document.body, 'ch-dark-theme');
+		this.renderer.addClass(document.body, 'ch-light-theme');
+	}
+
+	handleThemeChange = () => {
+		this.isDarkTheme = !this.isDarkTheme;
+		if (this.isDarkTheme) this.enableDarkTheme();
+		else this.enableLightTheme();
 	};
 }

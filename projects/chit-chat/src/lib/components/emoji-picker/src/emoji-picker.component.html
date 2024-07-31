@@ -1,9 +1,15 @@
 <div class="ch-emoji-picker">
-	<ch-emoji-tabs
-		[emojiCategories]="emojiCategories"
-		[selectedTab]="selectedCategory"
-		(onTabClicked)="handleCategoryTabClicked($event)"
-	></ch-emoji-tabs>
+	<div
+		class="emoji-tab-bar"
+		[ngClass]="{ 'bar-bottom': categoryBarPosition === 'bottom' }"
+	>
+		<ch-emoji-tabs
+			*ngIf="emojiCategories$ | async as categories"
+			[emojiCategories]="categories"
+			[selectedTab]="selectedCategory"
+			(onTabClicked)="handleCategoryTabClicked($event)"
+		></ch-emoji-tabs>
+	</div>
 	<div class="ch-emoji-picker-container">
 		<ng-container
 			*ngIf="
@@ -12,13 +18,16 @@
 			"
 		>
 			<ch-vertical-emoji-picker
+				*ngIf="allEmojis$ | async as allEmojis"
 				[height]="height"
 				[width]="width"
-				[emojis]="emojis"
+				[emojis]="allEmojis.emojis"
+				[suggestionEmojis]="allEmojis.suggestionEmojis"
 				[emojiSize]="emojiSize"
 				[(currentCategory)]="selectedCategory"
 				[scrollbarVisible]="scrollbarVisible"
 				[emojiCategories]="emojiCategories"
+				(onClick)="handleEmojisSelected($event)"
 			></ch-vertical-emoji-picker>
 		</ng-container>
 

@@ -15,8 +15,7 @@ import {
 	ScreenService,
 } from 'chit-chat/src/lib/utils';
 import { emojiCategoryIcons } from '../../icons/emoji-categories';
-import { EmojiCategory } from '../../interfaces';
-import { emojiCategories } from './../../interfaces/emoji.interface';
+import { emojiCategories, EmojiCategory } from '../../models';
 
 @Component({
 	selector: 'ch-emoji-tabs',

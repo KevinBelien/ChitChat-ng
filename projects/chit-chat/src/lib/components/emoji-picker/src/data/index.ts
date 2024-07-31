@@ -1,2 +1,1 @@
-export * from './emoji-grouped';
-export * from './emoji-list';
+export * from './emojis';

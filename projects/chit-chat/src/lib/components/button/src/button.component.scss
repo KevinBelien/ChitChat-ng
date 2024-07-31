@@ -97,25 +97,31 @@
 
 // CSS Variables
 :host {
-	--ch-color-contrast: #1a1a1a;
-	--ch-color-contrast-alter: #e9e9e9;
+	box-sizing: border-box;
+	display: inline-flex;
+	--ch-color-contrast-default: #1a1a1a;
+	--ch-color-contrast-default-alter: #e9e9e9;
 
 	--ch-color-contrast-lighter: hsl(
-		from var(--ch-color-contrast) h s calc(l + 10)
+		from var(--ch-color-contrast, var(--ch-color-contrast-default)) h
+			s calc(l + 10)
 	);
 	--ch-color-contrast-lightest: hsl(
-		from var(--ch-color-contrast) h s calc(l + 15)
+		from var(--ch-color-contrast, var(--ch-color-contrast-default)) h
+			s calc(l + 15)
 	);
 
 	@media (prefers-color-scheme: dark) {
-		--ch-color-contrast: #e9e9e9;
-		--ch-color-contrast-alter: #1a1a1a;
+		--ch-color-contrast-default: #e9e9e9;
+		--ch-color-contrast-default-alter: #1a1a1a;
 
 		--ch-color-contrast-lighter: hsl(
-			from var(--ch-color-contrast) h s calc(l - 10)
+			from var(--ch-color-contrast, var(--ch-color-contrast-default))
+				h s calc(l - 10)
 		);
 		--ch-color-contrast-lightest: hsl(
-			from var(--ch-color-contrast) h s calc(l - 15)
+			from var(--ch-color-contrast, var(--ch-color-contrast-default))
+				h s calc(l - 15)
 		);
 	}
 
@@ -174,12 +180,24 @@
 		}
 
 		&.ch-button-contrast {
-			background-color: var(--ch-color-contrast);
-			border-color: var(--ch-color-contrast);
-			color: var(--ch-color-contrast-alter);
+			background-color: var(
+				--ch-color-contrast,
+				var(--ch-color-contrast-default)
+			);
+			border-color: var(
+				--ch-color-contrast,
+				var(--ch-color-contrast-default)
+			);
+			color: var(
+				--ch-color-contrast-alter,
+				var(--ch-color-contrast-default-alter)
+			);
 
 			.ch-button-icon ch-icon .ch-icon {
-				fill: var(--ch-color-contrast-alter);
+				fill: var(
+					--ch-color-contrast-alter,
+					var(--ch-color-contrast-default-alter)
+				);
 			}
 
 			&:not(:disabled):not(.ch-hover-state-disabled):hover {
@@ -188,7 +206,8 @@
 			}
 
 			&:not(:disabled):not(.ch-focus-state-disabled):focus-visible {
-				outline: 2px solid var(--ch-color-contrast);
+				outline: 2px solid
+					var(--ch-color-contrast, var(--ch-color-contrast-default));
 				outline-offset: 2px;
 				box-shadow: none;
 			}
@@ -236,11 +255,20 @@
 		}
 
 		&.ch-button-contrast {
-			border-color: var(--ch-color-contrast);
-			color: var(--ch-color-contrast);
+			border-color: var(
+				--ch-color-contrast,
+				var(--ch-color-contrast-default)
+			);
+			color: var(
+				--ch-color-contrast,
+				var(--ch-color-contrast-default)
+			);
 
 			ch-icon .ch-icon {
-				fill: var(--ch-color-contrast);
+				fill: var(
+					--ch-color-contrast,
+					var(--ch-color-contrast-default)
+				);
 			}
 
 			&:not(:disabled):not(.ch-hover-state-disabled):hover {
@@ -252,7 +280,8 @@
 			}
 
 			&:not(:disabled):not(.ch-focus-state-disabled):focus-visible {
-				outline: 2px solid var(--ch-color-contrast);
+				outline: 2px solid
+					var(--ch-color-contrast, var(--ch-color-contrast-default));
 				outline-offset: 2px;
 				box-shadow: none;
 			}

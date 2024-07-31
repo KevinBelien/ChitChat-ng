@@ -15,16 +15,24 @@
 >
 	<div
 		class="ch-static-category ch-sticky ch-row"
-		[style.display]="scrollIndex === 0 ? 'none' : 'block'"
+		[style.display]="
+			scrollIndex === 0 || emojiCategories.length === 0
+				? 'none'
+				: 'block'
+		"
 	>
 		<div class="ch-emoji-group-title">
-			{{ currentCategory }}
+			{{
+				currentCategory === 'suggestions' && !!suggestionEmojis
+					? suggestionEmojis.suggestionMode
+					: currentCategory
+			}}
 		</div>
 	</div>
 
 	<div
 		*cdkVirtualFor="
-			let row of rows;
+			let row of emojiRows$ | async;
 			let index = index;
 			trackBy: trackEmojiRow
 		"
@@ -36,7 +44,7 @@
 	>
 		<ng-container *ngIf="row.type === 'category'">
 			<div class="ch-emoji-group-title">
-				{{ row.value }}
+				{{ row.translationKey }}
 			</div>
 		</ng-container>
 
@@ -48,7 +56,7 @@
 
 				<ch-emoji-button
 					[emoji]="emoji"
-					[attr.data-emoji]="emoji.name"
+					[attr.data-emoji]="emoji.id"
 				></ch-emoji-button>
 			</ng-container>
 		</ng-container>

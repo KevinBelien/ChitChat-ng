@@ -3,6 +3,8 @@
 		<ch-emoji-picker
 			[emojiSize]="form.emojiSize"
 			[emojiCategories]="form.categories"
+			[categoryBarPosition]="form.categoryBarPosition"
+			[suggestionMode]="form.suggestionMode"
 		></ch-emoji-picker>
 	</div>
 
@@ -28,6 +30,25 @@
 						category | titlecase
 					}}</mat-option>
 					}
+				</mat-select>
+			</mat-form-field>
+		</div>
+
+		<div class="form-item">
+			<mat-form-field>
+				<mat-label>Category Bar Position</mat-label>
+				<mat-select [(ngModel)]="form.categoryBarPosition">
+					<mat-option value="top">Top</mat-option>
+					<mat-option value="bottom">Bottom</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="form-item">
+			<mat-form-field>
+				<mat-label>Suggestion Mode</mat-label>
+				<mat-select [(ngModel)]="form.suggestionMode">
+					<mat-option value="recent">Recent</mat-option>
+					<mat-option value="frequent">Frequent</mat-option>
 				</mat-select>
 			</mat-form-field>
 		</div>

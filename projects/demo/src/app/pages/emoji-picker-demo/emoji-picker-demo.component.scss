@@ -1,14 +1,26 @@
+:host {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+}
+
 .emoji-picker-container {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	height: 100%;
-	row-gap: 2em;
+	flex-grow: 1;
+	row-gap: 4rem;
+	margin: 2em;
+
+	.form {
+		flex: 0 1 auto;
+	}
 }
 
 .emoji-picker {
 	border: 1px solid #eee;
 	border-radius: 6px;
 	overflow: hidden;
+	padding-inline: 0.2rem;
 }

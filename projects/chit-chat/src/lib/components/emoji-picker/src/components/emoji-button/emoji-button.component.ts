@@ -4,7 +4,7 @@ import {
 	Component,
 	Input,
 } from '@angular/core';
-import { Emoji } from '../../interfaces';
+import { Emoji } from '../../models';
 
 import { RippleDirective } from 'chit-chat/src/lib/utils';
 

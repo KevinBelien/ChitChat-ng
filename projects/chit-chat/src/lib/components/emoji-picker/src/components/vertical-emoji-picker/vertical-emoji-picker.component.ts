@@ -9,6 +9,7 @@ import {
 	Component,
 	EventEmitter,
 	HostBinding,
+	inject,
 	Input,
 	OnChanges,
 	OnDestroy,
@@ -16,17 +17,17 @@ import {
 	SimpleChanges,
 	ViewChild,
 } from '@angular/core';
-import { Subject, takeUntil } from 'rxjs';
-import { groupedEmojis, mappedEmojis } from '../../data';
+import { firstValueFrom, Observable, Subject, takeUntil } from 'rxjs';
+import { emojis } from '../../data';
 import { EmojiSize, EmojiSizeKey } from '../../enums';
 import {
 	Emoji,
+	emojiCategories,
 	EmojiCategory,
 	EmojiPickerRow,
-	GroupedEmoji,
-} from '../../interfaces';
+} from '../../models';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
-import { emojiCategories } from './../../interfaces/emoji.interface';
+import { SuggestionEmojis } from './../../models/suggestion-emojis.model';
 
 import {
 	ClickEvent,
@@ -34,6 +35,7 @@ import {
 	RippleDirective,
 	TouchHoldEvent,
 } from 'chit-chat/src/lib/utils';
+import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.service';
 
 @Component({
 	selector: 'ch-vertical-emoji-picker',
@@ -45,6 +47,7 @@ import {
 		EmojiButtonComponent,
 		RippleDirective,
 	],
+	providers: [VerticalEmojiPickerService],
 	templateUrl: './vertical-emoji-picker.component.html',
 	styleUrl: './vertical-emoji-picker.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -56,152 +59,213 @@ import {
 export class VerticalEmojiPickerComponent
 	implements AfterViewInit, OnDestroy, OnChanges
 {
+	private dataService = inject(VerticalEmojiPickerService);
+
 	@ViewChild(CdkVirtualScrollViewport, { static: false })
 	viewport?: CdkVirtualScrollViewport;
 
-	@Input()
-	emojiSize: EmojiSizeKey = 'default';
-
-	emojiSizeInPx: number = 0;
-
-	@Input()
-	height: number = 400;
-
-	@Input()
-	width: number = 250;
-
-	@Input()
-	scrollbarVisible: boolean = true;
+	@Input() emojiSize: EmojiSizeKey = 'default';
+	@Input() height: number = 400;
+	@Input() width: number = 250;
+	@Input() scrollbarVisible: boolean = true;
+	@Input() suggestionEmojis: SuggestionEmojis | null = null;
+	@Input() emojiCategories: EmojiCategory[] = [...emojiCategories];
+	@Input() emojis: Emoji[] = [...emojis];
+	@Input() currentCategory: EmojiCategory = this.emojiCategories[0];
+	@Input() scrollWheelStep?: number;
 
 	@HostBinding('style.--item-size-multiplier')
 	itemSizeMultiplier: number = 1.5;
+	@HostBinding('style.--sp-offset') spo: string = '0px';
+	@HostBinding('style.--emoji-size') emoSize?: string;
 
-	itemSize: number = 0;
-
-	@Input()
-	emojiCategories: EmojiCategory[] = [...emojiCategories];
-
-	mappedEmojis: Map<string, Emoji> = mappedEmojis;
-
-	@Input()
-	emojis: GroupedEmoji[] = groupedEmojis;
-
-	@Input()
-	currentCategory: EmojiCategory = this.emojiCategories[0];
-
-	@Input()
-	scrollWheelStep?: number;
-
-	//REMOVE TWO WAY BINDING?
-	@Output()
-	currentCategoryChange = new EventEmitter<EmojiCategory>();
+	@Output() currentCategoryChange = new EventEmitter<EmojiCategory>();
+	@Output() onClick = new EventEmitter<Emoji>();
 
 	scrollIndex: number = 0;
-
 	manuallyNavigated: boolean = false;
-
-	rows: EmojiPickerRow[] = [];
-
 	touchHoldEventActive: boolean = false;
+
+	emojiSizeInPx: number = 0;
+	itemSize: number = 0;
+
+	emojiRows$: Observable<EmojiPickerRow[]> =
+		this.dataService.finalRows$;
 
 	destroy$ = new Subject<void>();
 
-	@HostBinding('style.--sp-offset') spo: string = '0px';
-
-	@HostBinding('style.--emoji-size')
-	emoSize?: string;
-
-	@Output()
-	onClick = new EventEmitter<Emoji>();
-
-	ngAfterViewInit() {
+	ngAfterViewInit(): void {
 		this.viewport?.renderedRangeStream
 			.pipe(takeUntil(this.destroy$))
 			.subscribe(() => {
 				this.viewport?.checkViewportSize();
-
 				this.spo =
 					-(this.viewport?.getOffsetToRenderedContentStart() || 0) +
 					'px';
 			});
-		this.emojiSizeInPx = this.calculateEmojiSize();
-		this.emoSize = `${this.emojiSizeInPx}px`;
-
-		this.itemSize = this.toFixedAndFloor(
-			this.emojiSizeInPx * this.itemSizeMultiplier,
-			2
-		);
-
-		this.rows = this.generateEmojiRows();
-
-		if (this.rows.length === 0) return;
-
-		this.currentCategory =
-			this.rows[0].type === 'emoji'
-				? this.rows[0].value[0].category
-				: (this.rows[0].value as EmojiCategory);
 	}
 
 	ngOnChanges(changes: SimpleChanges): void {
 		if (
-			changes['emojiSize'] &&
-			!changes['emojiSize'].isFirstChange()
+			changes['emojiCategories'].currentValue &&
+			changes['emojiCategories'].currentValue.length === 0
 		) {
-			this.emojiSizeInPx = this.calculateEmojiSize();
-			this.emoSize = `${this.emojiSizeInPx}px`;
-			this.itemSize = this.emojiSizeInPx * this.itemSizeMultiplier;
-			this.rows = this.generateEmojiRows();
+			this.scrollIndex = 0;
 		}
 
-		if (changes['width'] && !changes['width'].isFirstChange()) {
-			this.rows = this.generateEmojiRows();
+		if (changes['emojiSize'] || changes['width']) {
+			this.updateEmojiSizeAndRows();
 		}
 
-		if (changes['emojis'] && !changes['emojis'].isFirstChange()) {
-			this.rows = this.generateEmojiRows();
+		if (changes['emojis']) {
+			this.dataService.updateEmojiRows(
+				changes['emojis'].currentValue,
+				this.emojiSizeInPx,
+				this.getViewportWidth(),
+				this.itemSizeMultiplier
+			);
+		}
+
+		if (changes['suggestionEmojis']) {
+			this.dataService.updateSuggestionRows(
+				changes['suggestionEmojis'].currentValue,
+				this.emojiCategories,
+				this.emojiSizeInPx,
+				this.getViewportWidth(),
+				this.itemSizeMultiplier
+			);
 		}
 	}
 
-	ngOnDestroy() {
+	ngOnDestroy(): void {
 		this.destroy$.next();
 		this.destroy$.complete();
 	}
 
-	private calculateEmojiSize = () => {
+	private updateEmojiSizeAndRows(): void {
 		const viewportWidth = this.getViewportWidth();
-		const idealEmojiSize = EmojiSize[this.emojiSize];
-		const maxEmojisPerRow =
-			this.calculateAmountEmojiInRows(idealEmojiSize);
+		this.emojiSizeInPx = this.dataService.calculateEmojiSize(
+			viewportWidth,
+			EmojiSize[this.emojiSize],
+			this.itemSizeMultiplier
+		);
+		this.emoSize = `${this.emojiSizeInPx}px`;
+		this.itemSize = this.emojiSizeInPx * this.itemSizeMultiplier;
 
-		return this.toFixedAndFloor(
-			viewportWidth / (maxEmojisPerRow * this.itemSizeMultiplier),
-			2
+		this.dataService.updateSuggestionRows(
+			this.suggestionEmojis,
+			this.emojiCategories,
+			this.emojiSizeInPx,
+			viewportWidth,
+			this.itemSizeMultiplier
+		);
+
+		this.dataService.updateEmojiRows(
+			this.emojis,
+			this.emojiSizeInPx,
+			viewportWidth,
+			this.itemSizeMultiplier
+		);
+	}
+
+	private getViewportWidth = (): number => {
+		return this.width - this.getScrollbarWidth();
+	};
+
+	private getScrollbarWidth(): number {
+		return this.scrollbarVisible ? this.getGlobalScrollbarWidth() : 0;
+	}
+
+	private getGlobalScrollbarWidth = (): number => {
+		const root = document.querySelector(':root') as HTMLElement;
+		const scrollbarWidth = getComputedStyle(root).getPropertyValue(
+			'--ch-scrollbar-width'
+		);
+		return parseFloat(scrollbarWidth.replace('px', '').trim());
+	};
+
+	trackEmojiRow = (index: number, row: EmojiPickerRow): string => {
+		return row.id;
+	};
+
+	trackEmoji = (index: number, emoji: Emoji): string => {
+		return emoji.value;
+	};
+
+	handleTouchHold = (e: TouchHoldEvent): void => {
+		if (!e.data) return;
+		const emoji = this.dataService.getEmojiById(e.data);
+		alert(emoji?.value);
+		this.touchHoldEventActive =
+			!!emoji && !!emoji.skinTones && emoji.skinTones.length > 0;
+	};
+
+	handleClick = (e: ClickEvent): void => {
+		if (!e.data || this.touchHoldEventActive) {
+			this.touchHoldEventActive = false;
+			return;
+		}
+
+		const emoji = this.dataService.getEmojiById(e.data);
+		this.onClick.emit(emoji);
+	};
+
+	navigateToCategory = async (
+		category: EmojiCategory
+	): Promise<void> => {
+		if (!this.emojiCategories.includes(category)) {
+			throw new Error(
+				`Couldn't navigate to category ${category} because it's not in the list of emojiCategories`
+			);
+		}
+
+		const index = await this.calculateIndexOfCategory(category);
+		if (index === -1) {
+			throw new Error(
+				`Couldn't navigate to category ${category} because couldn't find index in viewport`
+			);
+		}
+
+		this.manuallyNavigated = true;
+
+		this.viewport?.scrollToIndex(index === 0 ? index : index + 1);
+	};
+
+	calculateIndexOfCategory = async (
+		category: EmojiCategory
+	): Promise<number> => {
+		const rows = await firstValueFrom(this.emojiRows$);
+		return rows.findIndex(
+			(row) => row.type === 'category' && row.value === category
 		);
 	};
 
-	findDuplicates = (arr: any[], key: string): any[] => {
-		const seenKeys = new Set<string>();
-		const duplicates: any[] = [];
+	onWheel(event: WheelEvent): void {
+		event.preventDefault();
+		const step = this.scrollWheelStep ?? this.itemSize * 4;
+		const scrollAmount = Math.sign(event.deltaY) * step;
+		this.viewport?.scrollToOffset(
+			this.viewport?.measureScrollOffset() + scrollAmount
+		);
+	}
 
-		for (const item of arr) {
-			const keyValue = item[key];
-
-			if (seenKeys.has(keyValue)) {
-				duplicates.push(item);
-			} else {
-				seenKeys.add(keyValue);
-			}
-		}
-
-		return duplicates;
+	setCurrentCategory = (
+		category: EmojiCategory,
+		emit: boolean
+	): void => {
+		this.currentCategory = category;
+		if (emit) this.currentCategoryChange.emit(this.currentCategory);
 	};
 
-	handleScrolledIndexChanged = (index: number) => {
-		if (this.rows.length === 0) return;
+	handleScrolledIndexChanged = async (
+		index: number
+	): Promise<void> => {
+		const rows = await firstValueFrom(this.emojiRows$);
+		if (rows.length === 0) return;
 		this.scrollIndex = index;
 
-		const previousRow = this.rows[index - 1];
-		const currentRow = this.rows[index];
+		const previousRow = rows[index - 1];
+		const currentRow = rows[index];
 
 		this.setCurrentCategory(
 			previousRow
@@ -216,131 +280,4 @@ export class VerticalEmojiPickerComponent
 
 		this.manuallyNavigated = false;
 	};
-
-	setCurrentCategory = (category: EmojiCategory, emit: boolean) => {
-		this.currentCategory = category;
-		if (emit) this.currentCategoryChange.emit(this.currentCategory);
-	};
-
-	generateEmojiRows = (): EmojiPickerRow[] => {
-		const maxEmojisPerRow = this.calculateAmountEmojiInRows(
-			this.emojiSizeInPx
-		);
-
-		const rows: EmojiPickerRow[] = [];
-
-		this.emojis.forEach((group) => {
-			// Add the category title as a row
-			rows.push({
-				id: crypto.randomUUID(),
-				type: 'category',
-				value: group.category,
-			});
-
-			// Add the emojis in rows with a max of maxEmojisPerRow
-			for (let i = 0; i < group.emojis.length; i += maxEmojisPerRow) {
-				rows.push({
-					id: crypto.randomUUID(),
-					type: 'emoji',
-					value: group.emojis.slice(i, i + maxEmojisPerRow),
-				});
-			}
-		});
-		return rows;
-	};
-
-	private calculateAmountEmojiInRows = (emojiSize: number) => {
-		const viewportWidth = this.getViewportWidth();
-
-		return Math.floor(
-			viewportWidth / (emojiSize * this.itemSizeMultiplier)
-		);
-	};
-
-	getViewportWidth = () => {
-		return this.width - this.getScrollbarWidth();
-	};
-
-	getScrollbarWidth(): number {
-		return this.scrollbarVisible ? this.getGlobalScrollbarWidth() : 0;
-	}
-
-	private getGlobalScrollbarWidth = (): number => {
-		const root = document.querySelector(':root') as HTMLElement;
-		const scrollbarWidth = getComputedStyle(root).getPropertyValue(
-			'--ch-scrollbar-width'
-		);
-		return parseFloat(scrollbarWidth.replace('px', '').trim());
-	};
-
-	private toFixedAndFloor = (value: number, decimals: number) => {
-		const multiplier = Math.pow(10, decimals);
-		const flooredValue = Math.floor(value * multiplier) / multiplier;
-
-		return Number(flooredValue.toFixed(decimals));
-	};
-
-	trackEmojiRow = (index: number, row: EmojiPickerRow) => {
-		return row.id;
-	};
-
-	trackEmoji = (index: number, emoji: Emoji) => {
-		return emoji.value;
-	};
-
-	handleTouchHold = (e: TouchHoldEvent) => {
-		if (!e.data) return;
-		const emoji = mappedEmojis.get(e.data);
-		alert(emoji?.value);
-		this.touchHoldEventActive =
-			!!emoji && !!emoji.skinTones && emoji.skinTones.length > 0;
-
-		// Call the method to show the popover with the target element and the emoji
-	};
-	handleClick = (e: ClickEvent) => {
-		console.log(e);
-		if (!e.data || this.touchHoldEventActive) {
-			this.touchHoldEventActive = false;
-			return;
-		}
-
-		const emoji = mappedEmojis.get(e.data);
-
-		// Call the method to show the popover with the target element and the emoji
-		console.log('gets to click', emoji);
-
-		// console.log('pointer out', e);
-	};
-
-	navigateToCategory = (category: EmojiCategory) => {
-		if (!this.emojiCategories.includes(category))
-			throw new Error(
-				`Couldn't navigate to category ${category} because it's not in the list of emojiCategories`
-			);
-
-		const index = this.calculateIndexOfCategory(category);
-		if (index === -1)
-			throw new Error(
-				`Couldn't navigate to category ${category} because couldn't find index in viewport`
-			);
-
-		this.manuallyNavigated = true;
-
-		this.viewport?.scrollToIndex(index === 0 ? index : index + 1);
-	};
-
-	calculateIndexOfCategory = (category: EmojiCategory) => {
-		return this.rows.findIndex(
-			(row) => row.type === 'category' && row.value === category
-		);
-	};
-
-	onWheel(event: WheelEvent): void {
-		event.preventDefault();
-		const step = this.scrollWheelStep ?? this.itemSize * 4;
-		const scrollAmount = Math.sign(event.deltaY) * step;
-		this.viewport?.scrollToOffset(
-			this.viewport?.measureScrollOffset() + scrollAmount
-		);
-	}
 }

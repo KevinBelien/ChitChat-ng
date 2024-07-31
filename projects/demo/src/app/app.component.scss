@@ -9,9 +9,13 @@ $side-nav-padding: 16px;
 	column-gap: 0.7em;
 	background-color: var(--ch-color-primary);
 	align-items: center;
+
+	.toolbar-end {
+		margin-left: auto;
+	}
 }
 
-.title {
+.top-bar-content {
 	color: #fff;
 }
 
@@ -20,25 +24,43 @@ $side-nav-padding: 16px;
 	height: calc(100vh - $top-bar-height);
 }
 
-::ng-deep .side-nav {
+::ng-deep
+	.nav-toolbar
+	ch-button
+	.ch-button.ch-button-clear.ch-button-contrast
+	ch-icon
+	.ch-icon {
+	fill: #fff;
+}
+
+::ng-deep .side-nav.mat-drawer {
 	width: $side-nav-width;
 	padding: $side-nav-padding;
+}
 
+.content-container {
+	padding-inline: 6px;
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - $top-bar-height);
+}
+
+::ng-deep .ch-dark-theme .side-nav.mat-drawer {
 	.mdc-list-item__primary-text {
 		color: #fff;
 	}
 
 	.mdc-list-item:focus .mdc-list-item__primary-text,
-	.mdc-list-item:hover .mdc-list-item__primary-text {
+	.mdc-list-item:hover .mdc-list-item__primary-text,
+	.mdc-list-item:active .mdc-list-item__primary-text {
 		color: #fff;
 	}
 }
 
-.nav-item.selected {
+::ng-deep mat-list-item.nav-item.selected {
 	background-color: var(--ch-color-primary);
-	color: white;
-}
 
-.content-container {
-	padding-inline: 6px;
+	.mdc-list-item__primary-text {
+		color: white;
+	}
 }
