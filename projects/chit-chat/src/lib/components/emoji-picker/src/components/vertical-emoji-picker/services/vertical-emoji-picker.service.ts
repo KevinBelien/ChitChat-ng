@@ -18,12 +18,11 @@ import { EmojiDataService } from '../../../services';
 export class VerticalEmojiPickerService {
 	private emojiDataService = inject(EmojiDataService);
 
-	suggestionRows$: BehaviorSubject<EmojiPickerRow[]> =
+	private suggestionRows$: BehaviorSubject<EmojiPickerRow[]> =
 		new BehaviorSubject<EmojiPickerRow[]>([]);
 
-	emojiRows$: BehaviorSubject<EmojiPickerRow[]> = new BehaviorSubject<
-		EmojiPickerRow[]
-	>([]);
+	private emojiRows$: BehaviorSubject<EmojiPickerRow[]> =
+		new BehaviorSubject<EmojiPickerRow[]>([]);
 
 	finalRows$: Observable<EmojiPickerRow[]> = combineLatest([
 		this.suggestionRows$,
@@ -35,13 +34,13 @@ export class VerticalEmojiPickerService {
 		])
 	);
 
-	updateSuggestionRows(
+	updateSuggestionRows = (
 		emojis: SuggestionEmojis | null,
 		emojiCategories: EmojiCategory[],
 		emojiSize: number,
 		viewportWidth: number,
 		itemSizeMultiplier: number
-	): void {
+	): void => {
 		const emojiRows = !!emojis
 			? this.generateSuggestionRows(
 					emojiCategories,
@@ -53,7 +52,7 @@ export class VerticalEmojiPickerService {
 			: [];
 
 		this.suggestionRows$.next(emojiRows);
-	}
+	};
 
 	updateEmojiRows = (
 		emojis: Emoji[],
