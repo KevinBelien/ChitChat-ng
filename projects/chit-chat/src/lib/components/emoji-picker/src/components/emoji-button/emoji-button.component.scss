@@ -49,8 +49,7 @@ button.ch-emoji-btn {
 		&.ch-emoji-variation-indicator::after {
 			background-color: var(
 				--ch-emoji-variant-indicator-color-hover,
-				var(--ch-emoji-variant-indicator-color),
-				rgb(190, 190, 190)
+				var(--ch-emoji-variant-indicator-color, rgb(190, 190, 190))
 			);
 		}
 	}

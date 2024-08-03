@@ -2,9 +2,10 @@
 	display: flex;
 	background-color: var(
 		--ch-skintone-picker-background,
-		--ch-emoji-picker-background,
-		--ch-background-color,
-		#fff
+		var(
+			--ch-emoji-picker-background,
+			var(--ch-background-color, #fff)
+		)
 	);
 
 	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);

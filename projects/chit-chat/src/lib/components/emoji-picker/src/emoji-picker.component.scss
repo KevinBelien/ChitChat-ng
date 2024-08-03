@@ -6,17 +6,17 @@
 	flex-direction: column;
 	background-color: var(
 		--ch-emoji-picker-background,
-		--ch-background-color,
-		#fff
+		var(--ch-background-color, #fff)
 	);
 
 	.emoji-tab-bar {
 		padding-inline: calc(var(--padding-inline) * 1px);
 		background-color: var(
 			--ch-emoji-picker-tab-bar-background,
-			--ch-emoji-picker-background,
-			--ch-background-color,
-			#fff
+			var(
+				--ch-emoji-picker-background,
+				var(--ch-background-color, #fff)
+			)
 		);
 
 		&.bar-bottom {
