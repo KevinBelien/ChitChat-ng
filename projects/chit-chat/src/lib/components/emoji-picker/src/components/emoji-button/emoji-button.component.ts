@@ -4,7 +4,6 @@ import {
 	Component,
 	Input,
 } from '@angular/core';
-import { Emoji } from '../../models';
 
 import { RippleDirective } from 'chit-chat/src/lib/utils';
 
@@ -22,7 +21,8 @@ import { RippleDirective } from 'chit-chat/src/lib/utils';
 })
 export class EmojiButtonComponent {
 	@Input()
-	emoji?: Emoji;
+	emoji?: string;
 
-	constructor() {}
+	@Input()
+	showSkintoneIndicator: boolean = false;
 }

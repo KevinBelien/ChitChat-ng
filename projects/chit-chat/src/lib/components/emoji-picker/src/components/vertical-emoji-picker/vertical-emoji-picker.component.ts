@@ -17,7 +17,14 @@ import {
 	SimpleChanges,
 	ViewChild,
 } from '@angular/core';
-import { firstValueFrom, Observable, Subject, takeUntil } from 'rxjs';
+import {
+	BehaviorSubject,
+	combineLatest,
+	firstValueFrom,
+	Observable,
+	Subject,
+	takeUntil,
+} from 'rxjs';
 import { emojis } from '../../data';
 import { EmojiSize, EmojiSizeKey } from '../../enums';
 import {
@@ -35,6 +42,7 @@ import {
 	RippleDirective,
 	TouchHoldEvent,
 } from 'chit-chat/src/lib/utils';
+import { EmojiPickerStateService } from '../../services/emoji-picker-state.service';
 import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.service';
 
 @Component({
@@ -49,7 +57,7 @@ import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.ser
 	],
 	providers: [VerticalEmojiPickerService],
 	templateUrl: './vertical-emoji-picker.component.html',
-	styleUrl: './vertical-emoji-picker.component.scss',
+	styleUrls: ['./vertical-emoji-picker.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
 		'collision-id': crypto.randomUUID(),
@@ -60,6 +68,7 @@ export class VerticalEmojiPickerComponent
 	implements AfterViewInit, OnDestroy, OnChanges
 {
 	private dataService = inject(VerticalEmojiPickerService);
+	private emojiPickerStateService = inject(EmojiPickerStateService);
 
 	@ViewChild(CdkVirtualScrollViewport, { static: false })
 	viewport?: CdkVirtualScrollViewport;
@@ -74,66 +83,72 @@ export class VerticalEmojiPickerComponent
 	@Input() currentCategory: EmojiCategory = this.emojiCategories[0];
 	@Input() scrollWheelStep?: number;
 
-	@HostBinding('style.--item-size-multiplier')
-	itemSizeMultiplier: number = 1.5;
-	@HostBinding('style.--sp-offset') spo: string = '0px';
-	@HostBinding('style.--emoji-size') emoSize?: string;
+	@HostBinding('style.--sticky-offset')
+	stickyHeaderOffset: string = '0px';
 
 	@Output() currentCategoryChange = new EventEmitter<EmojiCategory>();
-	@Output() onClick = new EventEmitter<Emoji>();
+	@Output() onClick = new EventEmitter<ClickEvent>();
+	@Output() onTouchHold = new EventEmitter<TouchHoldEvent>();
 
 	scrollIndex: number = 0;
 	manuallyNavigated: boolean = false;
-	touchHoldEventActive: boolean = false;
-
-	emojiSizeInPx: number = 0;
-	itemSize: number = 0;
 
 	emojiRows$: Observable<EmojiPickerRow[]> =
-		this.dataService.finalRows$;
+		this.dataService.allEmojiRows$;
 
 	destroy$ = new Subject<void>();
+
+	private width$ = new BehaviorSubject<number>(this.width);
+	private emojiSize$ = new BehaviorSubject<EmojiSizeKey>(
+		this.emojiSize
+	);
+
+	itemSize$ = this.emojiPickerStateService.emojiItemSize$;
 
 	ngAfterViewInit(): void {
 		this.viewport?.renderedRangeStream
 			.pipe(takeUntil(this.destroy$))
 			.subscribe(() => {
 				this.viewport?.checkViewportSize();
-				this.spo =
+				this.stickyHeaderOffset =
 					-(this.viewport?.getOffsetToRenderedContentStart() || 0) +
 					'px';
+			});
+
+		combineLatest([
+			this.emojiPickerStateService.padding$,
+			this.emojiPickerStateService.emojiItemSizeMultiplier$,
+			this.width$,
+			this.emojiSize$,
+		])
+			.pipe(takeUntil(this.destroy$))
+			.subscribe(() => {
+				this.updateEmojiSizeAndRows();
 			});
 	}
 
 	ngOnChanges(changes: SimpleChanges): void {
 		if (
-			changes['emojiCategories'].currentValue &&
+			changes['emojiCategories'] &&
 			changes['emojiCategories'].currentValue.length === 0
 		) {
 			this.scrollIndex = 0;
 		}
 
-		if (changes['emojiSize'] || changes['width']) {
-			this.updateEmojiSizeAndRows();
+		if (changes['emojiSize']) {
+			this.emojiSize$.next(changes['emojiSize'].currentValue);
+		}
+
+		if (changes['width']) {
+			this.width$.next(changes['width'].currentValue);
 		}
 
 		if (changes['emojis']) {
-			this.dataService.updateEmojiRows(
-				changes['emojis'].currentValue,
-				this.emojiSizeInPx,
-				this.getViewportWidth(),
-				this.itemSizeMultiplier
-			);
+			this.updateEmojiRows();
 		}
 
 		if (changes['suggestionEmojis']) {
-			this.dataService.updateSuggestionRows(
-				changes['suggestionEmojis'].currentValue,
-				this.emojiCategories,
-				this.emojiSizeInPx,
-				this.getViewportWidth(),
-				this.itemSizeMultiplier
-			);
+			this.updateSuggestionRows();
 		}
 	}
 
@@ -144,32 +159,55 @@ export class VerticalEmojiPickerComponent
 
 	private updateEmojiSizeAndRows(): void {
 		const viewportWidth = this.getViewportWidth();
-		this.emojiSizeInPx = this.dataService.calculateEmojiSize(
+		const emojiSizeInPx = this.calculateEmojiSize(viewportWidth);
+
+		this.emojiPickerStateService.setEmojiSize(emojiSizeInPx);
+
+		this.updateSuggestionRows();
+		this.updateEmojiRows();
+	}
+
+	private updateEmojiRows(): void {
+		const viewportWidth = this.getViewportWidth();
+		const emojiSizeInPx =
+			this.emojiPickerStateService.emojiSizeInPx$.getValue();
+
+		this.dataService.updateEmojiRows(
+			this.emojis,
+			emojiSizeInPx,
 			viewportWidth,
-			EmojiSize[this.emojiSize],
-			this.itemSizeMultiplier
+			this.emojiPickerStateService.emojiItemSizeMultiplier$.getValue()
 		);
-		this.emoSize = `${this.emojiSizeInPx}px`;
-		this.itemSize = this.emojiSizeInPx * this.itemSizeMultiplier;
+	}
+
+	private updateSuggestionRows(): void {
+		const viewportWidth = this.getViewportWidth();
+		const emojiSizeInPx =
+			this.emojiPickerStateService.emojiSizeInPx$.getValue();
 
 		this.dataService.updateSuggestionRows(
 			this.suggestionEmojis,
 			this.emojiCategories,
-			this.emojiSizeInPx,
+			emojiSizeInPx,
 			viewportWidth,
-			this.itemSizeMultiplier
+			this.emojiPickerStateService.emojiItemSizeMultiplier$.getValue()
 		);
+	}
 
-		this.dataService.updateEmojiRows(
-			this.emojis,
-			this.emojiSizeInPx,
+	private calculateEmojiSize(viewportWidth: number): number {
+		return this.dataService.calculateEmojiSize(
 			viewportWidth,
-			this.itemSizeMultiplier
+			EmojiSize[this.emojiSize],
+			this.emojiPickerStateService.emojiItemSizeMultiplier$.getValue()
 		);
 	}
 
 	private getViewportWidth = (): number => {
-		return this.width - this.getScrollbarWidth();
+		return (
+			this.width -
+			this.getScrollbarWidth() -
+			this.emojiPickerStateService.padding$.getValue() * 2
+		);
 	};
 
 	private getScrollbarWidth(): number {
@@ -184,30 +222,23 @@ export class VerticalEmojiPickerComponent
 		return parseFloat(scrollbarWidth.replace('px', '').trim());
 	};
 
-	trackEmojiRow = (index: number, row: EmojiPickerRow): string => {
+	protected trackEmojiRow = (
+		index: number,
+		row: EmojiPickerRow
+	): string => {
 		return row.id;
 	};
 
-	trackEmoji = (index: number, emoji: Emoji): string => {
+	protected trackEmoji = (index: number, emoji: Emoji): string => {
 		return emoji.value;
 	};
 
-	handleTouchHold = (e: TouchHoldEvent): void => {
-		if (!e.data) return;
-		const emoji = this.dataService.getEmojiById(e.data);
-		alert(emoji?.value);
-		this.touchHoldEventActive =
-			!!emoji && !!emoji.skinTones && emoji.skinTones.length > 0;
+	protected handleTouchHold = (e: TouchHoldEvent): void => {
+		this.onTouchHold.emit(e);
 	};
 
-	handleClick = (e: ClickEvent): void => {
-		if (!e.data || this.touchHoldEventActive) {
-			this.touchHoldEventActive = false;
-			return;
-		}
-
-		const emoji = this.dataService.getEmojiById(e.data);
-		this.onClick.emit(emoji);
+	protected handleClick = (e: ClickEvent): void => {
+		this.onClick.emit(e);
 	};
 
 	navigateToCategory = async (
@@ -231,7 +262,7 @@ export class VerticalEmojiPickerComponent
 		this.viewport?.scrollToIndex(index === 0 ? index : index + 1);
 	};
 
-	calculateIndexOfCategory = async (
+	private calculateIndexOfCategory = async (
 		category: EmojiCategory
 	): Promise<number> => {
 		const rows = await firstValueFrom(this.emojiRows$);
@@ -240,9 +271,11 @@ export class VerticalEmojiPickerComponent
 		);
 	};
 
-	onWheel(event: WheelEvent): void {
+	protected onWheel(event: WheelEvent): void {
 		event.preventDefault();
-		const step = this.scrollWheelStep ?? this.itemSize * 4;
+		const step =
+			this.scrollWheelStep ??
+			this.emojiPickerStateService.emojiSizeInPx$.getValue() * 4;
 		const scrollAmount = Math.sign(event.deltaY) * step;
 		this.viewport?.scrollToOffset(
 			this.viewport?.measureScrollOffset() + scrollAmount
@@ -257,7 +290,7 @@ export class VerticalEmojiPickerComponent
 		if (emit) this.currentCategoryChange.emit(this.currentCategory);
 	};
 
-	handleScrolledIndexChanged = async (
+	protected handleScrolledIndexChanged = async (
 		index: number
 	): Promise<void> => {
 		const rows = await firstValueFrom(this.emojiRows$);
@@ -272,9 +305,11 @@ export class VerticalEmojiPickerComponent
 				? previousRow.type === 'emoji'
 					? previousRow.value[0].category
 					: (previousRow.value as EmojiCategory)
-				: currentRow.type === 'emoji'
+				: !!currentRow && currentRow.type === 'emoji'
 				? currentRow.value[0].category
-				: (currentRow.value as EmojiCategory),
+				: !!currentRow.value
+				? (currentRow.value as EmojiCategory)
+				: this.currentCategory,
 			!this.manuallyNavigated
 		);
 

@@ -29,8 +29,14 @@ import { emojiCategories, EmojiCategory } from '../../models';
 	templateUrl: './emoji-tabs.component.html',
 	styleUrl: './emoji-tabs.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
+	host: {
+		'collision-id': crypto.randomUUID(),
+		class: 'ch-element',
+	},
 })
 export class EmojiTabsComponent {
+	private screenService = inject(ScreenService);
+
 	@Input()
 	emojiCategories: EmojiCategory[] = [...emojiCategories];
 
@@ -44,7 +50,6 @@ export class EmojiTabsComponent {
 	@Output()
 	onTabClicked = new EventEmitter<EmojiCategory>();
 
-	private screenService = inject(ScreenService);
 	readonly isMobile = this.screenService.isMobile();
 
 	trackCategory = (index: number, category: EmojiCategory) => {

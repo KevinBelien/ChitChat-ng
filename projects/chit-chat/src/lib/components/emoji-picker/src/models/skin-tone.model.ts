@@ -1,10 +1,10 @@
-export interface AlternativeSkinTone {
-	skinTone: SkinTone;
+export interface AlternativeSkintone {
+	skintone: Skintone;
 	value: string;
 	order: number;
 }
 
-export const skinTones = [
+export const skintones = [
 	'default',
 	'light',
 	'medium-light',
@@ -13,4 +13,4 @@ export const skinTones = [
 	'dark',
 ] as const;
 
-export type SkinTone = (typeof skinTones)[number];
+export type Skintone = (typeof skintones)[number];

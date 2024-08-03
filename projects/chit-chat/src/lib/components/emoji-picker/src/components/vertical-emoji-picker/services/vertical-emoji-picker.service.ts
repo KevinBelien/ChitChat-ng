@@ -1,4 +1,5 @@
 import { inject, Injectable } from '@angular/core';
+import { NumberHelper } from 'chit-chat/src/lib/utils';
 import {
 	BehaviorSubject,
 	combineLatest,
@@ -24,7 +25,7 @@ export class VerticalEmojiPickerService {
 	private emojiRows$: BehaviorSubject<EmojiPickerRow[]> =
 		new BehaviorSubject<EmojiPickerRow[]>([]);
 
-	finalRows$: Observable<EmojiPickerRow[]> = combineLatest([
+	allEmojiRows$: Observable<EmojiPickerRow[]> = combineLatest([
 		this.suggestionRows$,
 		this.emojiRows$,
 	]).pipe(
@@ -174,19 +175,10 @@ export class VerticalEmojiPickerService {
 			itemSizeMultiplier
 		);
 
-		return this.toFixedAndFloor(
+		return NumberHelper.toFixedAndFloor(
 			viewportWidth / (maxEmojisPerRow * itemSizeMultiplier),
 			2
 		);
-	};
-
-	private toFixedAndFloor = (
-		value: number,
-		decimals: number
-	): number => {
-		const multiplier = Math.pow(10, decimals);
-		const flooredValue = Math.floor(value * multiplier) / multiplier;
-		return Number(flooredValue.toFixed(decimals));
 	};
 
 	calculateAmountEmojiInRows = (

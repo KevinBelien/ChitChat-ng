@@ -9,8 +9,8 @@ import {
 	EmojiCategory,
 	EmojiPickerComponent,
 	EmojiSizeKey,
+	EmojiSuggestionMode,
 } from 'chit-chat/src/lib/components/emoji-picker';
-import { EmojiSuggestionMode } from './../../../../../../dist/chit-chat/src/lib/components/emoji-picker/src/types/emoji-suggestion-mode.type.d';
 
 @Component({
 	selector: 'app-emoji-picker-demo',

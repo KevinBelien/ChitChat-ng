@@ -1,5 +1,5 @@
 import { EmojiCategory } from './emoji-category.model';
-import { AlternativeSkinTone } from './skin-tone.model';
+import { AlternativeSkintone } from './skin-tone.model';
 
 export interface Emoji {
 	id: string;
@@ -7,6 +7,6 @@ export interface Emoji {
 	value: string;
 	category: EmojiCategory;
 	order: number;
-	skinTones?: AlternativeSkinTone[];
+	skintones?: AlternativeSkintone[];
 	keywords: string[];
 }

@@ -2,13 +2,14 @@ import {
 	Directive,
 	ElementRef,
 	EventEmitter,
+	inject,
 	Input,
 	OnDestroy,
 	OnInit,
 	Output,
 	Renderer2,
 } from '@angular/core';
-import { Subject, fromEvent, timer } from 'rxjs';
+import { fromEvent, Subject, timer } from 'rxjs';
 import {
 	debounceTime,
 	switchMap,
@@ -23,7 +24,10 @@ import { ClickEvent, TouchHoldEvent } from '../interfaces';
 	standalone: true,
 })
 export class ClickTouchHoldDirective implements OnInit, OnDestroy {
-	@Input() touchHoldTimeInMillis = 750;
+	private renderer = inject(Renderer2);
+	private elementRef = inject(ElementRef);
+
+	@Input() touchHoldTimeInMillis = 500;
 	@Input() preventContextMenu = true;
 	@Input() dataAttribute?: string;
 	@Output() onClick = new EventEmitter<ClickEvent>();
@@ -41,11 +45,6 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 	private hasPointerExited = false;
 
 	private eventListeners: Array<() => void> = [];
-
-	constructor(
-		private elementRef: ElementRef,
-		private renderer: Renderer2
-	) {}
 
 	ngOnInit(): void {
 		this.addEventListeners();
@@ -189,6 +188,7 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 			const data = this.getAttributeValue(targetElement);
 			this.onClick.emit({
 				event,
+				targetElement,
 				data,
 				action:
 					event.key === 'Enter'
@@ -211,7 +211,7 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 			!this.hasPointerExited &&
 			this.isTargetDataAttributeMatch(targetElement, data)
 		) {
-			this.onTouchHold.emit({ event, data });
+			this.onTouchHold.emit({ event, data, targetElement });
 		}
 	};
 
@@ -227,6 +227,7 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 		if (!this.hasPointerExited) {
 			this.onClick.emit({
 				event,
+				targetElement,
 				data,
 				pointerType: event.pointerType as PointerDeviceType,
 				action:

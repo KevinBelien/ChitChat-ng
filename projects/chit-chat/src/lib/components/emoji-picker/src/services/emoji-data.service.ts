@@ -11,37 +11,37 @@ export class EmojiDataService implements OnDestroy {
 		frequent: { key: 'ch-emojis-frequently', limit: 100 },
 	};
 
-	readonly emojis: BehaviorSubject<Emoji[]> = new BehaviorSubject<
+	readonly emojis$: BehaviorSubject<Emoji[]> = new BehaviorSubject<
 		Emoji[]
 	>([...emojis]);
 
-	readonly recentEmojis: BehaviorSubject<Emoji[]>;
-	readonly frequentEmojis: BehaviorSubject<Emoji[]>;
+	readonly recentEmojis$: BehaviorSubject<Emoji[]>;
+	readonly frequentEmojis$: BehaviorSubject<Emoji[]>;
 
-	readonly emojiCategories: BehaviorSubject<EmojiCategory[]> =
+	readonly emojiCategories$: BehaviorSubject<EmojiCategory[]> =
 		new BehaviorSubject<EmojiCategory[]>([...emojiCategories]);
 
-	private mappedEmojis: BehaviorSubject<Map<string, Emoji>>;
+	private mappedEmojis$: BehaviorSubject<Map<string, Emoji>>;
 
 	destroy$ = new Subject<void>();
 
 	constructor() {
-		this.mappedEmojis = new BehaviorSubject<Map<string, Emoji>>(
+		this.mappedEmojis$ = new BehaviorSubject<Map<string, Emoji>>(
 			this.mapEmojis()
 		);
 
-		this.recentEmojis = new BehaviorSubject<Emoji[]>(
+		this.recentEmojis$ = new BehaviorSubject<Emoji[]>(
 			this.getRecentEmojisFromStorage()
 		);
 
-		this.frequentEmojis = new BehaviorSubject<Emoji[]>(
+		this.frequentEmojis$ = new BehaviorSubject<Emoji[]>(
 			this.getFrequentEmojisFromStorage()
 		);
 
-		this.emojiCategories
+		this.emojiCategories$
 			.pipe(takeUntil(this.destroy$))
 			.subscribe((categories) => {
-				this.emojis.next(
+				this.emojis$.next(
 					this.filterAndSortEmojisByCategoryList(
 						categories.filter(
 							(category) => category !== 'suggestions'
@@ -52,7 +52,7 @@ export class EmojiDataService implements OnDestroy {
 	}
 
 	getEmojiById = (id: string): Emoji | undefined => {
-		return this.mappedEmojis.getValue().get(id);
+		return this.mappedEmojis$.getValue().get(id);
 	};
 
 	getEmojisByIds = (emojiIds: string[]): Emoji[] => {
@@ -96,7 +96,7 @@ export class EmojiDataService implements OnDestroy {
 	};
 
 	getEmojis = (): Emoji[] => {
-		return this.emojis.getValue();
+		return this.emojis$.getValue();
 	};
 
 	mapEmojis = (): Map<string, Emoji> => {
@@ -105,7 +105,7 @@ export class EmojiDataService implements OnDestroy {
 	};
 
 	setEmojiCategories = (categories: EmojiCategory[]): void => {
-		this.emojiCategories.next(
+		this.emojiCategories$.next(
 			categories.sort((a, b) => {
 				if (a === 'suggestions') return -1;
 				if (b === 'suggestions') return 1;
@@ -160,7 +160,7 @@ export class EmojiDataService implements OnDestroy {
 			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);
 
-		this.recentEmojis.next(emojis);
+		this.recentEmojis$.next(emojis);
 	};
 
 	incrementEmojiFrequency = (id: string): void => {
@@ -172,7 +172,7 @@ export class EmojiDataService implements OnDestroy {
 			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);
 
-		this.frequentEmojis.next(emojis);
+		this.frequentEmojis$.next(emojis);
 	};
 
 	incrementEmojiFrequencyInStorage = (
@@ -235,6 +235,10 @@ export class EmojiDataService implements OnDestroy {
 		localStorage.setItem(config.key, JSON.stringify(emojis));
 
 		return emojis;
+	};
+
+	hasEmojiSkintone = (emoji: Emoji) => {
+		return !!emoji.skintones && emoji.skintones.length > 0;
 	};
 
 	ngOnDestroy(): void {

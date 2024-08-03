@@ -3,12 +3,22 @@
 	width: 100%;
 }
 
+.ch-scroll-wrapper {
+	height: 100%;
+	width: 100%;
+	padding-inline: calc(var(--padding-inline) * 1px);
+}
+
 .ch-virtual-category {
 	z-index: 20;
 }
 
 .ch-emoji-group-title {
-	background-color: var(--ch-background-color, #fff);
+	background-color: var(
+		--ch-emoji-picker-background,
+		--ch-background-color,
+		#fff
+	);
 	color: var(--ch-text-color, #000);
 	font-weight: 500;
 	user-select: none;
@@ -24,7 +34,7 @@
 .ch-sticky {
 	position: -webkit-sticky;
 	position: sticky;
-	top: calc(var(--sp-offset, 0px) - 1px);
+	top: calc(var(--sticky-offset, 0px) - 1px);
 }
 
 .ch-row {

@@ -1562,34 +1562,34 @@ export const emojis: Emoji[] = [
 		value: '🫶',
 		category: 'smileys-people',
 		order: 90,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫶',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫶🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫶🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫶🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫶🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫶🏿',
 				order: 6,
 			},
@@ -1612,34 +1612,34 @@ export const emojis: Emoji[] = [
 		value: '🤲',
 		category: 'smileys-people',
 		order: 91,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤲',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤲🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤲🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤲🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤲🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤲🏿',
 				order: 6,
 			},
@@ -1662,34 +1662,34 @@ export const emojis: Emoji[] = [
 		value: '👐',
 		category: 'smileys-people',
 		order: 92,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👐',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👐🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👐🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👐🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👐🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👐🏿',
 				order: 6,
 			},
@@ -1711,34 +1711,34 @@ export const emojis: Emoji[] = [
 		value: '🙌',
 		category: 'smileys-people',
 		order: 93,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙌',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙌🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙌🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙌🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙌🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙌🏿',
 				order: 6,
 			},
@@ -1761,34 +1761,34 @@ export const emojis: Emoji[] = [
 		value: '👏',
 		category: 'smileys-people',
 		order: 94,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👏',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👏🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👏🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👏🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👏🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👏🏿',
 				order: 6,
 			},
@@ -1810,34 +1810,34 @@ export const emojis: Emoji[] = [
 		value: '🤝',
 		category: 'smileys-people',
 		order: 95,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤝',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤝🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤝🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤝🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤝🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤝🏿',
 				order: 6,
 			},
@@ -1859,34 +1859,34 @@ export const emojis: Emoji[] = [
 		value: '👍',
 		category: 'smileys-people',
 		order: 96,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👍',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👍🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👍🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👍🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👍🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👍🏿',
 				order: 6,
 			},
@@ -1909,34 +1909,34 @@ export const emojis: Emoji[] = [
 		value: '👎',
 		category: 'smileys-people',
 		order: 97,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👎',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👎🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👎🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👎🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👎🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👎🏿',
 				order: 6,
 			},
@@ -1959,34 +1959,34 @@ export const emojis: Emoji[] = [
 		value: '👊',
 		category: 'smileys-people',
 		order: 98,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👊',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👊🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👊🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👊🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👊🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👊🏿',
 				order: 6,
 			},
@@ -2009,34 +2009,34 @@ export const emojis: Emoji[] = [
 		value: '✊',
 		category: 'smileys-people',
 		order: 99,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '✊',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '✊🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '✊🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '✊🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '✊🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '✊🏿',
 				order: 6,
 			},
@@ -2059,34 +2059,34 @@ export const emojis: Emoji[] = [
 		value: '🤛',
 		category: 'smileys-people',
 		order: 100,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤛',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤛🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤛🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤛🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤛🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤛🏿',
 				order: 6,
 			},
@@ -2108,34 +2108,34 @@ export const emojis: Emoji[] = [
 		value: '🤜',
 		category: 'smileys-people',
 		order: 101,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤜',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤜🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤜🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤜🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤜🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤜🏿',
 				order: 6,
 			},
@@ -2157,34 +2157,34 @@ export const emojis: Emoji[] = [
 		value: '🫷',
 		category: 'smileys-people',
 		order: 102,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫷',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫷🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫷🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫷🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫷🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫷🏿',
 				order: 6,
 			},
@@ -2206,34 +2206,34 @@ export const emojis: Emoji[] = [
 		value: '🫸',
 		category: 'smileys-people',
 		order: 103,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫸',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫸🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫸🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫸🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫸🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫸🏿',
 				order: 6,
 			},
@@ -2255,34 +2255,34 @@ export const emojis: Emoji[] = [
 		value: '🤞',
 		category: 'smileys-people',
 		order: 104,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤞',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤞🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤞🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤞🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤞🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤞🏿',
 				order: 6,
 			},
@@ -2304,34 +2304,34 @@ export const emojis: Emoji[] = [
 		value: '✌️',
 		category: 'smileys-people',
 		order: 105,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '✌️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '✌🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '✌🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '✌🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '✌🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '✌🏿',
 				order: 6,
 			},
@@ -2354,34 +2354,34 @@ export const emojis: Emoji[] = [
 		value: '🫰',
 		category: 'smileys-people',
 		order: 106,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫰',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫰🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫰🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫰🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫰🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫰🏿',
 				order: 6,
 			},
@@ -2403,34 +2403,34 @@ export const emojis: Emoji[] = [
 		value: '🤟',
 		category: 'smileys-people',
 		order: 107,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤟',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤟🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤟🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤟🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤟🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤟🏿',
 				order: 6,
 			},
@@ -2452,34 +2452,34 @@ export const emojis: Emoji[] = [
 		value: '🤘',
 		category: 'smileys-people',
 		order: 108,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤘',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤘🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤘🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤘🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤘🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤘🏿',
 				order: 6,
 			},
@@ -2501,34 +2501,34 @@ export const emojis: Emoji[] = [
 		value: '👌',
 		category: 'smileys-people',
 		order: 109,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👌',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👌🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👌🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👌🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👌🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👌🏿',
 				order: 6,
 			},
@@ -2551,34 +2551,34 @@ export const emojis: Emoji[] = [
 		value: '🤌',
 		category: 'smileys-people',
 		order: 110,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤌',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤌🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤌🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤌🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤌🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤌🏿',
 				order: 6,
 			},
@@ -2600,34 +2600,34 @@ export const emojis: Emoji[] = [
 		value: '🤏',
 		category: 'smileys-people',
 		order: 111,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤏',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤏🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤏🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤏🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤏🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤏🏿',
 				order: 6,
 			},
@@ -2648,34 +2648,34 @@ export const emojis: Emoji[] = [
 		value: '🫳',
 		category: 'smileys-people',
 		order: 112,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫳🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫳🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫳🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫳🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫳🏿',
 				order: 6,
 			},
@@ -2697,34 +2697,34 @@ export const emojis: Emoji[] = [
 		value: '🫴',
 		category: 'smileys-people',
 		order: 113,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫴',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫴🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫴🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫴🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫴🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫴🏿',
 				order: 6,
 			},
@@ -2746,34 +2746,34 @@ export const emojis: Emoji[] = [
 		value: '👈',
 		category: 'smileys-people',
 		order: 114,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👈',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👈🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👈🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👈🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👈🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👈🏿',
 				order: 6,
 			},
@@ -2794,34 +2794,34 @@ export const emojis: Emoji[] = [
 		value: '👉',
 		category: 'smileys-people',
 		order: 115,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👉',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👉🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👉🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👉🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👉🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👉🏿',
 				order: 6,
 			},
@@ -2842,34 +2842,34 @@ export const emojis: Emoji[] = [
 		value: '👆',
 		category: 'smileys-people',
 		order: 116,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👆',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👆🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👆🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👆🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👆🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👆🏿',
 				order: 6,
 			},
@@ -2891,34 +2891,34 @@ export const emojis: Emoji[] = [
 		value: '👇',
 		category: 'smileys-people',
 		order: 117,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👇',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👇🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👇🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👇🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👇🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👇🏿',
 				order: 6,
 			},
@@ -2940,34 +2940,34 @@ export const emojis: Emoji[] = [
 		value: '☝️',
 		category: 'smileys-people',
 		order: 118,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '☝️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '☝🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '☝🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '☝🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '☝🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '☝🏿',
 				order: 6,
 			},
@@ -2989,34 +2989,34 @@ export const emojis: Emoji[] = [
 		value: '✋',
 		category: 'smileys-people',
 		order: 119,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '✋',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '✋🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '✋🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '✋🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '✋🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '✋🏿',
 				order: 6,
 			},
@@ -3037,34 +3037,34 @@ export const emojis: Emoji[] = [
 		value: '🤚',
 		category: 'smileys-people',
 		order: 120,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤚',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤚🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤚🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤚🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤚🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤚🏿',
 				order: 6,
 			},
@@ -3085,34 +3085,34 @@ export const emojis: Emoji[] = [
 		value: '🖐',
 		category: 'smileys-people',
 		order: 121,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🖐',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🖐🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🖐🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🖐🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🖐🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🖐🏿',
 				order: 6,
 			},
@@ -3133,34 +3133,34 @@ export const emojis: Emoji[] = [
 		value: '🖖',
 		category: 'smileys-people',
 		order: 122,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🖖',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🖖🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🖖🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🖖🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🖖🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🖖🏿',
 				order: 6,
 			},
@@ -3181,34 +3181,34 @@ export const emojis: Emoji[] = [
 		value: '👋',
 		category: 'smileys-people',
 		order: 123,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👋',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👋🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👋🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👋🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👋🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👋🏿',
 				order: 6,
 			},
@@ -3229,34 +3229,34 @@ export const emojis: Emoji[] = [
 		value: '🤙',
 		category: 'smileys-people',
 		order: 124,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤙',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤙🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤙🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤙🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤙🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤙🏿',
 				order: 6,
 			},
@@ -3278,34 +3278,34 @@ export const emojis: Emoji[] = [
 		value: '🫲',
 		category: 'smileys-people',
 		order: 125,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫲',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫲🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫲🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫲🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫲🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫲🏿',
 				order: 6,
 			},
@@ -3318,34 +3318,34 @@ export const emojis: Emoji[] = [
 		value: '🫱',
 		category: 'smileys-people',
 		order: 126,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫱',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫱🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫱🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫱🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫱🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫱🏿',
 				order: 6,
 			},
@@ -3358,34 +3358,34 @@ export const emojis: Emoji[] = [
 		value: '💪',
 		category: 'smileys-people',
 		order: 127,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💪',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💪🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💪🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💪🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💪🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💪🏿',
 				order: 6,
 			},
@@ -3406,34 +3406,34 @@ export const emojis: Emoji[] = [
 		value: '🖕',
 		category: 'smileys-people',
 		order: 129,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🖕',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🖕🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🖕🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🖕🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🖕🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🖕🏿',
 				order: 6,
 			},
@@ -3446,34 +3446,34 @@ export const emojis: Emoji[] = [
 		value: '✍️',
 		category: 'smileys-people',
 		order: 130,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '✍️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '✍🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '✍🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '✍🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '✍🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '✍🏿',
 				order: 6,
 			},
@@ -3486,34 +3486,34 @@ export const emojis: Emoji[] = [
 		value: '🙏',
 		category: 'smileys-people',
 		order: 131,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙏',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙏🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙏🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙏🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙏🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙏🏿',
 				order: 6,
 			},
@@ -3526,34 +3526,34 @@ export const emojis: Emoji[] = [
 		value: '🫵',
 		category: 'smileys-people',
 		order: 132,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫵',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫵🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫵🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫵🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫵🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫵🏿',
 				order: 6,
 			},
@@ -3566,34 +3566,34 @@ export const emojis: Emoji[] = [
 		value: '🦶',
 		category: 'smileys-people',
 		order: 133,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦶',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦶🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦶🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦶🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦶🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦶🏿',
 				order: 6,
 			},
@@ -3606,34 +3606,34 @@ export const emojis: Emoji[] = [
 		value: '🦵',
 		category: 'smileys-people',
 		order: 134,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦵',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦵🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦵🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦵🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦵🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦵🏿',
 				order: 6,
 			},
@@ -3702,34 +3702,34 @@ export const emojis: Emoji[] = [
 		value: '👂',
 		category: 'smileys-people',
 		order: 142,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👂🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👂🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👂🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👂🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👂🏿',
 				order: 6,
 			},
@@ -3742,34 +3742,34 @@ export const emojis: Emoji[] = [
 		value: '🦻',
 		category: 'smileys-people',
 		order: 143,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦻',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦻🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦻🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦻🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦻🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦻🏿',
 				order: 6,
 			},
@@ -3782,34 +3782,34 @@ export const emojis: Emoji[] = [
 		value: '👃',
 		category: 'smileys-people',
 		order: 144,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👃',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👃🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👃🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👃🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👃🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👃🏿',
 				order: 6,
 			},
@@ -3902,34 +3902,34 @@ export const emojis: Emoji[] = [
 		value: '👶',
 		category: 'smileys-people',
 		order: 155,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👶',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👶🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👶🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👶🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👶🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👶🏿',
 				order: 6,
 			},
@@ -3942,34 +3942,34 @@ export const emojis: Emoji[] = [
 		value: '👧',
 		category: 'smileys-people',
 		order: 156,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👧🏿',
 				order: 6,
 			},
@@ -3982,34 +3982,34 @@ export const emojis: Emoji[] = [
 		value: '🧒',
 		category: 'smileys-people',
 		order: 157,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧒',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧒🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧒🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧒🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧒🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧒🏿',
 				order: 6,
 			},
@@ -4022,34 +4022,34 @@ export const emojis: Emoji[] = [
 		value: '👦',
 		category: 'smileys-people',
 		order: 158,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👦🏿',
 				order: 6,
 			},
@@ -4062,34 +4062,34 @@ export const emojis: Emoji[] = [
 		value: '👩',
 		category: 'smileys-people',
 		order: 159,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿',
 				order: 6,
 			},
@@ -4102,34 +4102,34 @@ export const emojis: Emoji[] = [
 		value: '🧑',
 		category: 'smileys-people',
 		order: 160,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿',
 				order: 6,
 			},
@@ -4142,34 +4142,34 @@ export const emojis: Emoji[] = [
 		value: '👨',
 		category: 'smileys-people',
 		order: 161,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿',
 				order: 6,
 			},
@@ -4182,34 +4182,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🦱',
 		category: 'smileys-people',
 		order: 162,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🦱',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🦱',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🦱',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🦱',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🦱',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🦱',
 				order: 6,
 			},
@@ -4222,34 +4222,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🦱',
 		category: 'smileys-people',
 		order: 163,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🦱',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🦱',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🦱',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🦱',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🦱',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🦱',
 				order: 6,
 			},
@@ -4262,34 +4262,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🦱',
 		category: 'smileys-people',
 		order: 164,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🦱',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🦱',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🦱',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🦱',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🦱',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🦱',
 				order: 6,
 			},
@@ -4302,34 +4302,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🦰',
 		category: 'smileys-people',
 		order: 165,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🦰',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🦰',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🦰',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🦰',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🦰',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🦰',
 				order: 6,
 			},
@@ -4342,34 +4342,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🦰',
 		category: 'smileys-people',
 		order: 166,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🦰',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🦰',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🦰',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🦰',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🦰',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🦰',
 				order: 6,
 			},
@@ -4382,34 +4382,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🦰',
 		category: 'smileys-people',
 		order: 167,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🦰',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🦰',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🦰',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🦰',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🦰',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🦰',
 				order: 6,
 			},
@@ -4422,34 +4422,34 @@ export const emojis: Emoji[] = [
 		value: '👱‍♀',
 		category: 'smileys-people',
 		order: 168,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👱‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👱🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👱🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👱🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👱🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👱🏿‍♀',
 				order: 6,
 			},
@@ -4462,34 +4462,34 @@ export const emojis: Emoji[] = [
 		value: '👱',
 		category: 'smileys-people',
 		order: 169,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👱',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👱🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👱🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👱🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👱🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👱🏿',
 				order: 6,
 			},
@@ -4502,34 +4502,34 @@ export const emojis: Emoji[] = [
 		value: '👱‍♂',
 		category: 'smileys-people',
 		order: 170,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👱‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👱🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👱🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👱🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👱🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👱🏿‍♂',
 				order: 6,
 			},
@@ -4542,34 +4542,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🦳',
 		category: 'smileys-people',
 		order: 171,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🦳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🦳',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🦳',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🦳',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🦳',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🦳',
 				order: 6,
 			},
@@ -4582,34 +4582,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🦳',
 		category: 'smileys-people',
 		order: 172,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🦳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🦳',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🦳',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🦳',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🦳',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🦳',
 				order: 6,
 			},
@@ -4622,34 +4622,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🦳',
 		category: 'smileys-people',
 		order: 173,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🦳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🦳',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🦳',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🦳',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🦳',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🦳',
 				order: 6,
 			},
@@ -4662,34 +4662,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🦲',
 		category: 'smileys-people',
 		order: 174,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🦲',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🦲',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🦲',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🦲',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🦲',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🦲',
 				order: 6,
 			},
@@ -4702,34 +4702,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🦲',
 		category: 'smileys-people',
 		order: 175,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🦲',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🦲',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🦲',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🦲',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🦲',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🦲',
 				order: 6,
 			},
@@ -4742,34 +4742,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🦲',
 		category: 'smileys-people',
 		order: 176,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🦲',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🦲',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🦲',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🦲',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🦲',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🦲',
 				order: 6,
 			},
@@ -4782,34 +4782,34 @@ export const emojis: Emoji[] = [
 		value: '🧔‍♀',
 		category: 'smileys-people',
 		order: 177,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧔‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧔🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧔🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧔🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧔🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧔🏿‍♀',
 				order: 6,
 			},
@@ -4822,34 +4822,34 @@ export const emojis: Emoji[] = [
 		value: '🧔',
 		category: 'smileys-people',
 		order: 178,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧔',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧔🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧔🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧔🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧔🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧔🏿',
 				order: 6,
 			},
@@ -4862,34 +4862,34 @@ export const emojis: Emoji[] = [
 		value: '🧔‍♂',
 		category: 'smileys-people',
 		order: 179,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧔‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧔🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧔🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧔🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧔🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧔🏿‍♂',
 				order: 6,
 			},
@@ -4902,34 +4902,34 @@ export const emojis: Emoji[] = [
 		value: '👵',
 		category: 'smileys-people',
 		order: 180,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👵',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👵🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👵🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👵🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👵🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👵🏿',
 				order: 6,
 			},
@@ -4942,34 +4942,34 @@ export const emojis: Emoji[] = [
 		value: '🧓',
 		category: 'smileys-people',
 		order: 181,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧓',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧓🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧓🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧓🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧓🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧓🏿',
 				order: 6,
 			},
@@ -4982,34 +4982,34 @@ export const emojis: Emoji[] = [
 		value: '👴',
 		category: 'smileys-people',
 		order: 182,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👴',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👴🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👴🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👴🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👴🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👴🏿',
 				order: 6,
 			},
@@ -5022,34 +5022,34 @@ export const emojis: Emoji[] = [
 		value: '👲',
 		category: 'smileys-people',
 		order: 183,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👲',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👲🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👲🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👲🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👲🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👲🏿',
 				order: 6,
 			},
@@ -5062,34 +5062,34 @@ export const emojis: Emoji[] = [
 		value: '👳‍♀',
 		category: 'smileys-people',
 		order: 184,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👳‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👳🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👳🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👳🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👳🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👳🏿‍♀',
 				order: 6,
 			},
@@ -5102,34 +5102,34 @@ export const emojis: Emoji[] = [
 		value: '👳',
 		category: 'smileys-people',
 		order: 185,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👳🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👳🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👳🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👳🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👳🏿',
 				order: 6,
 			},
@@ -5142,34 +5142,34 @@ export const emojis: Emoji[] = [
 		value: '👳‍♂',
 		category: 'smileys-people',
 		order: 186,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👳‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👳🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👳🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👳🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👳🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👳🏿‍♂',
 				order: 6,
 			},
@@ -5182,34 +5182,34 @@ export const emojis: Emoji[] = [
 		value: '🧕',
 		category: 'smileys-people',
 		order: 187,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧕',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧕🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧕🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧕🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧕🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧕🏿',
 				order: 6,
 			},
@@ -5222,34 +5222,34 @@ export const emojis: Emoji[] = [
 		value: '👮‍♀',
 		category: 'smileys-people',
 		order: 188,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👮‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👮🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👮🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👮🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👮🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👮🏿‍♀',
 				order: 6,
 			},
@@ -5262,34 +5262,34 @@ export const emojis: Emoji[] = [
 		value: '👮',
 		category: 'smileys-people',
 		order: 189,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👮',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👮🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👮🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👮🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👮🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👮🏿',
 				order: 6,
 			},
@@ -5302,34 +5302,34 @@ export const emojis: Emoji[] = [
 		value: '👮‍♂',
 		category: 'smileys-people',
 		order: 190,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👮‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👮🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👮🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👮🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👮🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👮🏿‍♂',
 				order: 6,
 			},
@@ -5342,34 +5342,34 @@ export const emojis: Emoji[] = [
 		value: '👷‍♀',
 		category: 'smileys-people',
 		order: 191,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👷‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👷🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👷🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👷🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👷🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👷🏿‍♀',
 				order: 6,
 			},
@@ -5382,34 +5382,34 @@ export const emojis: Emoji[] = [
 		value: '👷',
 		category: 'smileys-people',
 		order: 192,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👷',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👷🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👷🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👷🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👷🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👷🏿',
 				order: 6,
 			},
@@ -5422,34 +5422,34 @@ export const emojis: Emoji[] = [
 		value: '👷‍♂',
 		category: 'smileys-people',
 		order: 193,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👷‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👷🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👷🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👷🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👷🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👷🏿‍♂',
 				order: 6,
 			},
@@ -5462,34 +5462,34 @@ export const emojis: Emoji[] = [
 		value: '💂‍♀',
 		category: 'smileys-people',
 		order: 194,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💂‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💂🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💂🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💂🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💂🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💂🏿‍♀',
 				order: 6,
 			},
@@ -5502,34 +5502,34 @@ export const emojis: Emoji[] = [
 		value: '💂',
 		category: 'smileys-people',
 		order: 195,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💂🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💂🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💂🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💂🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💂🏿',
 				order: 6,
 			},
@@ -5542,34 +5542,34 @@ export const emojis: Emoji[] = [
 		value: '💂‍♂',
 		category: 'smileys-people',
 		order: 196,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💂‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💂🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💂🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💂🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💂🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💂🏿‍♂',
 				order: 6,
 			},
@@ -5582,34 +5582,34 @@ export const emojis: Emoji[] = [
 		value: '🕵‍♀',
 		category: 'smileys-people',
 		order: 197,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🕵‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🕵🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🕵🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🕵🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🕵🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🕵🏿‍♀',
 				order: 6,
 			},
@@ -5622,34 +5622,34 @@ export const emojis: Emoji[] = [
 		value: '🕵',
 		category: 'smileys-people',
 		order: 198,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🕵',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🕵🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🕵🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🕵🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🕵🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🕵🏿',
 				order: 6,
 			},
@@ -5662,34 +5662,34 @@ export const emojis: Emoji[] = [
 		value: '🕵‍♂',
 		category: 'smileys-people',
 		order: 199,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🕵‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🕵🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🕵🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🕵🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🕵🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🕵🏿‍♂',
 				order: 6,
 			},
@@ -5702,34 +5702,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍⚕',
 		category: 'smileys-people',
 		order: 200,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍⚕',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍⚕',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍⚕',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍⚕',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍⚕',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍⚕',
 				order: 6,
 			},
@@ -5742,34 +5742,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍⚕',
 		category: 'smileys-people',
 		order: 201,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍⚕',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍⚕',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍⚕',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍⚕',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍⚕',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍⚕',
 				order: 6,
 			},
@@ -5782,34 +5782,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍⚕',
 		category: 'smileys-people',
 		order: 202,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍⚕',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍⚕',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍⚕',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍⚕',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍⚕',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍⚕',
 				order: 6,
 			},
@@ -5822,34 +5822,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🌾',
 		category: 'smileys-people',
 		order: 203,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🌾',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🌾',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🌾',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🌾',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🌾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🌾',
 				order: 6,
 			},
@@ -5862,34 +5862,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🌾',
 		category: 'smileys-people',
 		order: 204,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🌾',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🌾',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🌾',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🌾',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🌾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🌾',
 				order: 6,
 			},
@@ -5902,34 +5902,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🌾',
 		category: 'smileys-people',
 		order: 205,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🌾',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🌾',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🌾',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🌾',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🌾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🌾',
 				order: 6,
 			},
@@ -5942,34 +5942,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🍳',
 		category: 'smileys-people',
 		order: 206,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🍳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🍳',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🍳',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🍳',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🍳',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🍳',
 				order: 6,
 			},
@@ -5982,34 +5982,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🍳',
 		category: 'smileys-people',
 		order: 207,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🍳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🍳',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🍳',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🍳',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🍳',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🍳',
 				order: 6,
 			},
@@ -6022,34 +6022,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🍳',
 		category: 'smileys-people',
 		order: 208,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🍳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🍳',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🍳',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🍳',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🍳',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🍳',
 				order: 6,
 			},
@@ -6062,34 +6062,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🎓',
 		category: 'smileys-people',
 		order: 209,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🎓',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🎓',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🎓',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🎓',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🎓',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🎓',
 				order: 6,
 			},
@@ -6102,34 +6102,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🎓',
 		category: 'smileys-people',
 		order: 210,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🎓',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🎓',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🎓',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🎓',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🎓',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🎓',
 				order: 6,
 			},
@@ -6142,34 +6142,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🎓',
 		category: 'smileys-people',
 		order: 211,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🎓',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🎓',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🎓',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🎓',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🎓',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🎓',
 				order: 6,
 			},
@@ -6182,34 +6182,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🎤',
 		category: 'smileys-people',
 		order: 212,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🎤',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🎤',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🎤',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🎤',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🎤',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🎤',
 				order: 6,
 			},
@@ -6222,34 +6222,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🎤',
 		category: 'smileys-people',
 		order: 213,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🎤',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🎤',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🎤',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🎤',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🎤',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🎤',
 				order: 6,
 			},
@@ -6262,34 +6262,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🎤',
 		category: 'smileys-people',
 		order: 214,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🎤',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🎤',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🎤',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🎤',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🎤',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🎤',
 				order: 6,
 			},
@@ -6302,34 +6302,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🏫',
 		category: 'smileys-people',
 		order: 215,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🏫',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🏫',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🏫',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🏫',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🏫',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🏫',
 				order: 6,
 			},
@@ -6342,34 +6342,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🏫',
 		category: 'smileys-people',
 		order: 216,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🏫',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🏫',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🏫',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🏫',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🏫',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🏫',
 				order: 6,
 			},
@@ -6382,34 +6382,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🏫',
 		category: 'smileys-people',
 		order: 217,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🏫',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🏫',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🏫',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🏫',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🏫',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🏫',
 				order: 6,
 			},
@@ -6422,34 +6422,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🏭',
 		category: 'smileys-people',
 		order: 218,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🏭',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🏭',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🏭',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🏭',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🏭',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🏭',
 				order: 6,
 			},
@@ -6462,34 +6462,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🏭',
 		category: 'smileys-people',
 		order: 219,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🏭',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🏭',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🏭',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🏭',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🏭',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🏭',
 				order: 6,
 			},
@@ -6502,34 +6502,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🏭',
 		category: 'smileys-people',
 		order: 220,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🏭',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🏭',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🏭',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🏭',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🏭',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🏭',
 				order: 6,
 			},
@@ -6542,34 +6542,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍💻',
 		category: 'smileys-people',
 		order: 221,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍💻',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍💻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍💻',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍💻',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍💻',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍💻',
 				order: 6,
 			},
@@ -6582,34 +6582,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍💻',
 		category: 'smileys-people',
 		order: 222,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍💻',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍💻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍💻',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍💻',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍💻',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍💻',
 				order: 6,
 			},
@@ -6622,34 +6622,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍💻',
 		category: 'smileys-people',
 		order: 223,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍💻',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍💻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍💻',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍💻',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍💻',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍💻',
 				order: 6,
 			},
@@ -6662,34 +6662,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍💼',
 		category: 'smileys-people',
 		order: 224,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍💼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍💼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍💼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍💼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍💼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍💼',
 				order: 6,
 			},
@@ -6702,34 +6702,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍💼',
 		category: 'smileys-people',
 		order: 225,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍💼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍💼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍💼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍💼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍💼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍💼',
 				order: 6,
 			},
@@ -6742,34 +6742,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍💼',
 		category: 'smileys-people',
 		order: 226,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍💼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍💼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍💼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍💼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍💼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍💼',
 				order: 6,
 			},
@@ -6782,34 +6782,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🔧',
 		category: 'smileys-people',
 		order: 227,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🔧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🔧',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🔧',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🔧',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🔧',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🔧',
 				order: 6,
 			},
@@ -6822,34 +6822,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🔧',
 		category: 'smileys-people',
 		order: 228,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🔧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🔧',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🔧',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🔧',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🔧',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🔧',
 				order: 6,
 			},
@@ -6862,34 +6862,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🔧',
 		category: 'smileys-people',
 		order: 229,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🔧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🔧',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🔧',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🔧',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🔧',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🔧',
 				order: 6,
 			},
@@ -6902,34 +6902,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🔬',
 		category: 'smileys-people',
 		order: 230,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🔬',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🔬',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🔬',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🔬',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🔬',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🔬',
 				order: 6,
 			},
@@ -6942,34 +6942,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🔬',
 		category: 'smileys-people',
 		order: 231,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🔬',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🔬',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🔬',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🔬',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🔬',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🔬',
 				order: 6,
 			},
@@ -6982,34 +6982,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🔬',
 		category: 'smileys-people',
 		order: 232,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🔬',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🔬',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🔬',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🔬',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🔬',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🔬',
 				order: 6,
 			},
@@ -7022,34 +7022,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🎨',
 		category: 'smileys-people',
 		order: 233,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🎨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🎨',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🎨',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🎨',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🎨',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🎨',
 				order: 6,
 			},
@@ -7062,34 +7062,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🎨',
 		category: 'smileys-people',
 		order: 234,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🎨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🎨',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🎨',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🎨',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🎨',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🎨',
 				order: 6,
 			},
@@ -7102,34 +7102,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🎨',
 		category: 'smileys-people',
 		order: 235,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🎨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🎨',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🎨',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🎨',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🎨',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🎨',
 				order: 6,
 			},
@@ -7142,34 +7142,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🚒',
 		category: 'smileys-people',
 		order: 236,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🚒',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🚒',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🚒',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🚒',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🚒',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🚒',
 				order: 6,
 			},
@@ -7182,34 +7182,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🚒',
 		category: 'smileys-people',
 		order: 237,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🚒',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🚒',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🚒',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🚒',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🚒',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🚒',
 				order: 6,
 			},
@@ -7222,34 +7222,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🚒',
 		category: 'smileys-people',
 		order: 238,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🚒',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🚒',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🚒',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🚒',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🚒',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🚒',
 				order: 6,
 			},
@@ -7262,34 +7262,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍✈',
 		category: 'smileys-people',
 		order: 239,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍✈',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍✈',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍✈',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍✈',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍✈',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍✈',
 				order: 6,
 			},
@@ -7302,34 +7302,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍✈️',
 		category: 'smileys-people',
 		order: 240,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍✈️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍✈️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍✈️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍✈️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍✈️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍✈️',
 				order: 6,
 			},
@@ -7342,34 +7342,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍✈️',
 		category: 'smileys-people',
 		order: 241,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍✈️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍✈️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍✈️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍✈️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍✈️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍✈️',
 				order: 6,
 			},
@@ -7382,34 +7382,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🚀',
 		category: 'smileys-people',
 		order: 242,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🚀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🚀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🚀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🚀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🚀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🚀',
 				order: 6,
 			},
@@ -7422,34 +7422,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🚀',
 		category: 'smileys-people',
 		order: 243,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🚀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🚀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🚀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🚀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🚀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🚀',
 				order: 6,
 			},
@@ -7462,34 +7462,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🚀',
 		category: 'smileys-people',
 		order: 244,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🚀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🚀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🚀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🚀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🚀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🚀',
 				order: 6,
 			},
@@ -7502,34 +7502,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍⚖️',
 		category: 'smileys-people',
 		order: 245,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍⚖️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍⚖️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍⚖️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍⚖️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍⚖️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍⚖️',
 				order: 6,
 			},
@@ -7542,34 +7542,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍⚖️',
 		category: 'smileys-people',
 		order: 246,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍⚖️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍⚖️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍⚖️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍⚖️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍⚖️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍⚖️',
 				order: 6,
 			},
@@ -7582,34 +7582,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍⚖️',
 		category: 'smileys-people',
 		order: 247,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍⚖️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍⚖️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍⚖️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍⚖️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍⚖️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍⚖️',
 				order: 6,
 			},
@@ -7622,34 +7622,34 @@ export const emojis: Emoji[] = [
 		value: '👰‍♀️',
 		category: 'smileys-people',
 		order: 248,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👰‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👰🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👰🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👰🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👰🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👰🏿‍♀️',
 				order: 6,
 			},
@@ -7662,34 +7662,34 @@ export const emojis: Emoji[] = [
 		value: '👰',
 		category: 'smileys-people',
 		order: 249,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👰',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👰🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👰🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👰🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👰🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👰🏿',
 				order: 6,
 			},
@@ -7702,34 +7702,34 @@ export const emojis: Emoji[] = [
 		value: '👰‍♂️',
 		category: 'smileys-people',
 		order: 250,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👰‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👰🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👰🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👰🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👰🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👰🏿‍♂️',
 				order: 6,
 			},
@@ -7742,34 +7742,34 @@ export const emojis: Emoji[] = [
 		value: '🤵‍♀️',
 		category: 'smileys-people',
 		order: 251,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤵‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤵🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤵🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤵🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤵🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤵🏿‍♀️',
 				order: 6,
 			},
@@ -7782,34 +7782,34 @@ export const emojis: Emoji[] = [
 		value: '🤵',
 		category: 'smileys-people',
 		order: 252,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤵',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤵🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤵🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤵🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤵🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤵🏿',
 				order: 6,
 			},
@@ -7822,34 +7822,34 @@ export const emojis: Emoji[] = [
 		value: '🤵‍♂️',
 		category: 'smileys-people',
 		order: 253,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤵‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤵🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤵🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤵🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤵🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤵🏿‍♂️',
 				order: 6,
 			},
@@ -7862,34 +7862,34 @@ export const emojis: Emoji[] = [
 		value: '👸',
 		category: 'smileys-people',
 		order: 254,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👸',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👸🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👸🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👸🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👸🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👸🏿',
 				order: 6,
 			},
@@ -7902,34 +7902,34 @@ export const emojis: Emoji[] = [
 		value: '🫅',
 		category: 'smileys-people',
 		order: 255,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫅',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫅🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫅🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫅🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫅🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫅🏿',
 				order: 6,
 			},
@@ -7942,34 +7942,34 @@ export const emojis: Emoji[] = [
 		value: '🤴',
 		category: 'smileys-people',
 		order: 256,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤴',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤴🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤴🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤴🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤴🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤴🏿',
 				order: 6,
 			},
@@ -7982,34 +7982,34 @@ export const emojis: Emoji[] = [
 		value: '🥷',
 		category: 'smileys-people',
 		order: 257,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🥷',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🥷🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🥷🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🥷🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🥷🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🥷🏿',
 				order: 6,
 			},
@@ -8022,34 +8022,34 @@ export const emojis: Emoji[] = [
 		value: '🦸‍♀️',
 		category: 'smileys-people',
 		order: 258,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦸‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦸🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦸🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦸🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦸🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦸🏿‍♀️',
 				order: 6,
 			},
@@ -8062,34 +8062,34 @@ export const emojis: Emoji[] = [
 		value: '🦸',
 		category: 'smileys-people',
 		order: 259,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦸',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦸🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦸🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦸🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦸🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦸🏿',
 				order: 6,
 			},
@@ -8102,34 +8102,34 @@ export const emojis: Emoji[] = [
 		value: '🦸‍♂️',
 		category: 'smileys-people',
 		order: 260,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦸‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦸🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦸🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦸🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦸🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦸🏿‍♂️',
 				order: 6,
 			},
@@ -8142,34 +8142,34 @@ export const emojis: Emoji[] = [
 		value: '🦹‍♀️',
 		category: 'smileys-people',
 		order: 261,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦹‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦹🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦹🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦹🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦹🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦹🏿‍♀️',
 				order: 6,
 			},
@@ -8182,34 +8182,34 @@ export const emojis: Emoji[] = [
 		value: '🦹',
 		category: 'smileys-people',
 		order: 262,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦹',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦹🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦹🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦹🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦹🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦹🏿',
 				order: 6,
 			},
@@ -8222,34 +8222,34 @@ export const emojis: Emoji[] = [
 		value: '🦹‍♂️',
 		category: 'smileys-people',
 		order: 263,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🦹‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🦹🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🦹🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🦹🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🦹🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🦹🏿‍♂️',
 				order: 6,
 			},
@@ -8262,34 +8262,34 @@ export const emojis: Emoji[] = [
 		value: '🤶',
 		category: 'smileys-people',
 		order: 264,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤶',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤶🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤶🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤶🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤶🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤶🏿',
 				order: 6,
 			},
@@ -8307,34 +8307,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🎄',
 		category: 'smileys-people',
 		order: 265,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🎄',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🎄',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🎄',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🎄',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🎄',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🎄',
 				order: 6,
 			},
@@ -8347,34 +8347,34 @@ export const emojis: Emoji[] = [
 		value: '🎅',
 		category: 'smileys-people',
 		order: 266,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🎅',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🎅🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🎅🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🎅🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🎅🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🎅🏿',
 				order: 6,
 			},
@@ -8387,34 +8387,34 @@ export const emojis: Emoji[] = [
 		value: '🧙‍♀️',
 		category: 'smileys-people',
 		order: 267,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧙‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧙🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧙🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧙🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧙🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧙🏿‍♀️',
 				order: 6,
 			},
@@ -8427,34 +8427,34 @@ export const emojis: Emoji[] = [
 		value: '🧙',
 		category: 'smileys-people',
 		order: 268,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧙',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧙🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧙🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧙🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧙🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧙🏿',
 				order: 6,
 			},
@@ -8467,34 +8467,34 @@ export const emojis: Emoji[] = [
 		value: '🧙‍♂️',
 		category: 'smileys-people',
 		order: 269,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧙‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧙🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧙🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧙🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧙🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧙🏿‍♂️',
 				order: 6,
 			},
@@ -8507,34 +8507,34 @@ export const emojis: Emoji[] = [
 		value: '🧝‍♀️',
 		category: 'smileys-people',
 		order: 270,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧝‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧝🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧝🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧝🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧝🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧝🏿‍♀️',
 				order: 6,
 			},
@@ -8547,34 +8547,34 @@ export const emojis: Emoji[] = [
 		value: '🧝',
 		category: 'smileys-people',
 		order: 271,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧝',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧝🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧝🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧝🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧝🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧝🏿',
 				order: 6,
 			},
@@ -8587,34 +8587,34 @@ export const emojis: Emoji[] = [
 		value: '🧝‍♂️',
 		category: 'smileys-people',
 		order: 272,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧝‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧝🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧝🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧝🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧝🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧝🏿‍♂️',
 				order: 6,
 			},
@@ -8635,34 +8635,34 @@ export const emojis: Emoji[] = [
 		value: '🧛‍♀️',
 		category: 'smileys-people',
 		order: 274,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧛‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧛🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧛🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧛🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧛🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧛🏿‍♀️',
 				order: 6,
 			},
@@ -8675,34 +8675,34 @@ export const emojis: Emoji[] = [
 		value: '🧛',
 		category: 'smileys-people',
 		order: 275,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧛',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧛🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧛🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧛🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧛🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧛🏿',
 				order: 6,
 			},
@@ -8715,34 +8715,34 @@ export const emojis: Emoji[] = [
 		value: '🧛‍♂️',
 		category: 'smileys-people',
 		order: 276,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧛‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧛🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧛🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧛🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧛🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧛🏿‍♂️',
 				order: 6,
 			},
@@ -8803,34 +8803,34 @@ export const emojis: Emoji[] = [
 		value: '🧜‍♀️',
 		category: 'smileys-people',
 		order: 283,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧜‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧜🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧜🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧜🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧜🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧜🏿‍♀️',
 				order: 6,
 			},
@@ -8843,34 +8843,34 @@ export const emojis: Emoji[] = [
 		value: '🧜',
 		category: 'smileys-people',
 		order: 284,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧜',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧜🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧜🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧜🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧜🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧜🏿',
 				order: 6,
 			},
@@ -8883,34 +8883,34 @@ export const emojis: Emoji[] = [
 		value: '🧜‍♂️',
 		category: 'smileys-people',
 		order: 285,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧜‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧜🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧜🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧜🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧜🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧜🏿‍♂️',
 				order: 6,
 			},
@@ -8923,34 +8923,34 @@ export const emojis: Emoji[] = [
 		value: '🧚‍♀️',
 		category: 'smileys-people',
 		order: 286,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧚‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧚🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧚🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧚🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧚🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧚🏿‍♀️',
 				order: 6,
 			},
@@ -8963,34 +8963,34 @@ export const emojis: Emoji[] = [
 		value: '🧚',
 		category: 'smileys-people',
 		order: 287,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧚',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧚🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧚🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧚🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧚🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧚🏿',
 				order: 6,
 			},
@@ -9003,34 +9003,34 @@ export const emojis: Emoji[] = [
 		value: '🧚‍♂️',
 		category: 'smileys-people',
 		order: 288,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧚‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧚🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧚🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧚🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧚🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧚🏿‍♂️',
 				order: 6,
 			},
@@ -9043,34 +9043,34 @@ export const emojis: Emoji[] = [
 		value: '👼',
 		category: 'smileys-people',
 		order: 289,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👼🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👼🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👼🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👼🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👼🏿',
 				order: 6,
 			},
@@ -9083,34 +9083,34 @@ export const emojis: Emoji[] = [
 		value: '🤰',
 		category: 'smileys-people',
 		order: 290,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤰',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤰🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤰🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤰🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤰🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤰🏿',
 				order: 6,
 			},
@@ -9123,34 +9123,34 @@ export const emojis: Emoji[] = [
 		value: '🫄',
 		category: 'smileys-people',
 		order: 291,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫄',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫄🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫄🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫄🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫄🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫄🏿',
 				order: 6,
 			},
@@ -9163,34 +9163,34 @@ export const emojis: Emoji[] = [
 		value: '🫃',
 		category: 'smileys-people',
 		order: 292,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🫃',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🫃🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🫃🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🫃🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🫃🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🫃🏿',
 				order: 6,
 			},
@@ -9203,34 +9203,34 @@ export const emojis: Emoji[] = [
 		value: '🤱',
 		category: 'smileys-people',
 		order: 293,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤱',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤱🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤱🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤱🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤱🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤱🏿',
 				order: 6,
 			},
@@ -9243,34 +9243,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🍼',
 		category: 'smileys-people',
 		order: 294,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🍼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🍼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🍼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🍼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🍼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🍼',
 				order: 6,
 			},
@@ -9283,34 +9283,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🍼',
 		category: 'smileys-people',
 		order: 295,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🍼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🍼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🍼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🍼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🍼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🍼',
 				order: 6,
 			},
@@ -9323,34 +9323,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🍼',
 		category: 'smileys-people',
 		order: 296,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🍼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🍼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🍼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🍼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🍼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🍼',
 				order: 6,
 			},
@@ -9363,34 +9363,34 @@ export const emojis: Emoji[] = [
 		value: '🙇‍♀️',
 		category: 'smileys-people',
 		order: 297,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙇‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙇🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙇🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙇🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙇🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙇🏿‍♀️',
 				order: 6,
 			},
@@ -9403,34 +9403,34 @@ export const emojis: Emoji[] = [
 		value: '🙇',
 		category: 'smileys-people',
 		order: 298,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙇',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙇🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙇🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙇🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙇🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙇🏿',
 				order: 6,
 			},
@@ -9443,34 +9443,34 @@ export const emojis: Emoji[] = [
 		value: '🙇‍♂️',
 		category: 'smileys-people',
 		order: 299,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙇‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙇🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙇🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙇🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙇🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙇🏿‍♂️',
 				order: 6,
 			},
@@ -9483,34 +9483,34 @@ export const emojis: Emoji[] = [
 		value: '💁‍♀️',
 		category: 'smileys-people',
 		order: 300,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💁‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💁🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💁🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💁🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💁🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💁🏿‍♀️',
 				order: 6,
 			},
@@ -9523,34 +9523,34 @@ export const emojis: Emoji[] = [
 		value: '💁',
 		category: 'smileys-people',
 		order: 301,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💁',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💁🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💁🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💁🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💁🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💁🏿',
 				order: 6,
 			},
@@ -9563,34 +9563,34 @@ export const emojis: Emoji[] = [
 		value: '💁‍♂️',
 		category: 'smileys-people',
 		order: 302,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💁‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💁🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💁🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💁🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💁🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💁🏿‍♂️',
 				order: 6,
 			},
@@ -9603,34 +9603,34 @@ export const emojis: Emoji[] = [
 		value: '🙅‍♀️',
 		category: 'smileys-people',
 		order: 303,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙅‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙅🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙅🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙅🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙅🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙅🏿‍♀️',
 				order: 6,
 			},
@@ -9643,34 +9643,34 @@ export const emojis: Emoji[] = [
 		value: '🙅',
 		category: 'smileys-people',
 		order: 304,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙅',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙅🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙅🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙅🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙅🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙅🏿',
 				order: 6,
 			},
@@ -9683,34 +9683,34 @@ export const emojis: Emoji[] = [
 		value: '🙅‍♂️',
 		category: 'smileys-people',
 		order: 305,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙅‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙅🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙅🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙅🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙅🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙅🏿‍♂️',
 				order: 6,
 			},
@@ -9723,34 +9723,34 @@ export const emojis: Emoji[] = [
 		value: '🙆‍♀️',
 		category: 'smileys-people',
 		order: 306,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙆‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙆🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙆🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙆🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙆🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙆🏿‍♀️',
 				order: 6,
 			},
@@ -9763,34 +9763,34 @@ export const emojis: Emoji[] = [
 		value: '🙆',
 		category: 'smileys-people',
 		order: 307,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙆',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙆🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙆🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙆🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙆🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙆🏿',
 				order: 6,
 			},
@@ -9803,34 +9803,34 @@ export const emojis: Emoji[] = [
 		value: '🙆‍♂️',
 		category: 'smileys-people',
 		order: 308,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙆‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙆🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙆🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙆🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙆🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙆🏿‍♂️',
 				order: 6,
 			},
@@ -9843,34 +9843,34 @@ export const emojis: Emoji[] = [
 		value: '🙋‍♀️',
 		category: 'smileys-people',
 		order: 309,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙋‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙋🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙋🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙋🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙋🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙋🏿‍♀️',
 				order: 6,
 			},
@@ -9883,34 +9883,34 @@ export const emojis: Emoji[] = [
 		value: '🙋',
 		category: 'smileys-people',
 		order: 310,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙋',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙋🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙋🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙋🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙋🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙋🏿',
 				order: 6,
 			},
@@ -9923,34 +9923,34 @@ export const emojis: Emoji[] = [
 		value: '🙋‍♂️',
 		category: 'smileys-people',
 		order: 311,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙋‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙋🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙋🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙋🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙋🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙋🏿‍♂️',
 				order: 6,
 			},
@@ -9963,34 +9963,34 @@ export const emojis: Emoji[] = [
 		value: '🧏‍♀️',
 		category: 'smileys-people',
 		order: 312,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧏‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧏🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧏🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧏🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧏🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧏🏿‍♀️',
 				order: 6,
 			},
@@ -10003,34 +10003,34 @@ export const emojis: Emoji[] = [
 		value: '🧏',
 		category: 'smileys-people',
 		order: 313,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧏',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧏🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧏🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧏🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧏🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧏🏿',
 				order: 6,
 			},
@@ -10043,34 +10043,34 @@ export const emojis: Emoji[] = [
 		value: '🧏‍♂️',
 		category: 'smileys-people',
 		order: 314,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧏‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧏🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧏🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧏🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧏🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧏🏿‍♂️',
 				order: 6,
 			},
@@ -10083,34 +10083,34 @@ export const emojis: Emoji[] = [
 		value: '🤦‍♀️',
 		category: 'smileys-people',
 		order: 315,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤦‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤦🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤦🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤦🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤦🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤦🏿‍♀️',
 				order: 6,
 			},
@@ -10123,34 +10123,34 @@ export const emojis: Emoji[] = [
 		value: '🤦',
 		category: 'smileys-people',
 		order: 316,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤦🏿',
 				order: 6,
 			},
@@ -10163,34 +10163,34 @@ export const emojis: Emoji[] = [
 		value: '🤦‍♂️',
 		category: 'smileys-people',
 		order: 317,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤦‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤦🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤦🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤦🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤦🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤦🏿‍♂️',
 				order: 6,
 			},
@@ -10203,34 +10203,34 @@ export const emojis: Emoji[] = [
 		value: '🤷‍♀️',
 		category: 'smileys-people',
 		order: 318,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤷‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤷🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤷🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤷🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤷🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤷🏿‍♀️',
 				order: 6,
 			},
@@ -10243,34 +10243,34 @@ export const emojis: Emoji[] = [
 		value: '🤷',
 		category: 'smileys-people',
 		order: 319,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤷',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤷🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤷🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤷🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤷🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤷🏿',
 				order: 6,
 			},
@@ -10283,34 +10283,34 @@ export const emojis: Emoji[] = [
 		value: '🤷‍♂️',
 		category: 'smileys-people',
 		order: 320,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤷‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤷🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤷🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤷🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤷🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤷🏿‍♂️',
 				order: 6,
 			},
@@ -10323,34 +10323,34 @@ export const emojis: Emoji[] = [
 		value: '🙎‍♀️',
 		category: 'smileys-people',
 		order: 321,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙎‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙎🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙎🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙎🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙎🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙎🏿‍♀️',
 				order: 6,
 			},
@@ -10363,34 +10363,34 @@ export const emojis: Emoji[] = [
 		value: '🙎',
 		category: 'smileys-people',
 		order: 322,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙎',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙎🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙎🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙎🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙎🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙎🏿',
 				order: 6,
 			},
@@ -10403,34 +10403,34 @@ export const emojis: Emoji[] = [
 		value: '🙎‍♂️',
 		category: 'smileys-people',
 		order: 323,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙎‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙎🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙎🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙎🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙎🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙎🏿‍♂️',
 				order: 6,
 			},
@@ -10443,34 +10443,34 @@ export const emojis: Emoji[] = [
 		value: '🙍‍♀️',
 		category: 'smileys-people',
 		order: 324,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙍‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙍🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙍🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙍🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙍🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙍🏿‍♀️',
 				order: 6,
 			},
@@ -10483,34 +10483,34 @@ export const emojis: Emoji[] = [
 		value: '🙍',
 		category: 'smileys-people',
 		order: 325,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙍',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙍🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙍🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙍🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙍🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙍🏿',
 				order: 6,
 			},
@@ -10523,34 +10523,34 @@ export const emojis: Emoji[] = [
 		value: '🙍‍♂️',
 		category: 'smileys-people',
 		order: 326,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🙍‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🙍🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🙍🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🙍🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🙍🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🙍🏿‍♂️',
 				order: 6,
 			},
@@ -10563,34 +10563,34 @@ export const emojis: Emoji[] = [
 		value: '💇‍♀️',
 		category: 'smileys-people',
 		order: 327,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💇‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💇🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💇🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💇🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💇🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💇🏿‍♀️',
 				order: 6,
 			},
@@ -10603,34 +10603,34 @@ export const emojis: Emoji[] = [
 		value: '💇',
 		category: 'smileys-people',
 		order: 328,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💇',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💇🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💇🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💇🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💇🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💇🏿',
 				order: 6,
 			},
@@ -10643,34 +10643,34 @@ export const emojis: Emoji[] = [
 		value: '💇‍♂️',
 		category: 'smileys-people',
 		order: 329,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💇‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💇🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💇🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💇🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💇🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💇🏿‍♂️',
 				order: 6,
 			},
@@ -10683,34 +10683,34 @@ export const emojis: Emoji[] = [
 		value: '💆‍♀️',
 		category: 'smileys-people',
 		order: 330,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💆‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💆🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💆🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💆🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💆🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💆🏿‍♀️',
 				order: 6,
 			},
@@ -10723,34 +10723,34 @@ export const emojis: Emoji[] = [
 		value: '💆',
 		category: 'smileys-people',
 		order: 331,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💆',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💆🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💆🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💆🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💆🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💆🏿',
 				order: 6,
 			},
@@ -10763,34 +10763,34 @@ export const emojis: Emoji[] = [
 		value: '💆‍♂️',
 		category: 'smileys-people',
 		order: 332,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💆‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💆🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💆🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💆🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💆🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💆🏿‍♂️',
 				order: 6,
 			},
@@ -10803,34 +10803,34 @@ export const emojis: Emoji[] = [
 		value: '🧖‍♀️',
 		category: 'smileys-people',
 		order: 333,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧖‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧖🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧖🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧖🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧖🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧖🏿‍♀️',
 				order: 6,
 			},
@@ -10843,34 +10843,34 @@ export const emojis: Emoji[] = [
 		value: '🧖',
 		category: 'smileys-people',
 		order: 334,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧖',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧖🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧖🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧖🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧖🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧖🏿',
 				order: 6,
 			},
@@ -10883,34 +10883,34 @@ export const emojis: Emoji[] = [
 		value: '🧖‍♂️',
 		category: 'smileys-people',
 		order: 335,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧖‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧖🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧖🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧖🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧖🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧖🏿‍♂️',
 				order: 6,
 			},
@@ -10923,34 +10923,34 @@ export const emojis: Emoji[] = [
 		value: '💅',
 		category: 'smileys-people',
 		order: 336,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💅',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💅🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💅🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💅🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💅🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💅🏿',
 				order: 6,
 			},
@@ -10963,34 +10963,34 @@ export const emojis: Emoji[] = [
 		value: '🤳',
 		category: 'smileys-people',
 		order: 337,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤳',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤳🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤳🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤳🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤳🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤳🏿',
 				order: 6,
 			},
@@ -11003,34 +11003,34 @@ export const emojis: Emoji[] = [
 		value: '💃',
 		category: 'smileys-people',
 		order: 338,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💃',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💃🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💃🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💃🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💃🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💃🏿',
 				order: 6,
 			},
@@ -11043,34 +11043,34 @@ export const emojis: Emoji[] = [
 		value: '🕺',
 		category: 'smileys-people',
 		order: 339,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🕺',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🕺🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🕺🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🕺🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🕺🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🕺🏿',
 				order: 6,
 			},
@@ -11099,34 +11099,34 @@ export const emojis: Emoji[] = [
 		value: '🕴',
 		category: 'smileys-people',
 		order: 342,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🕴',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🕴🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🕴🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🕴🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🕴🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🕴🏿',
 				order: 6,
 			},
@@ -11139,34 +11139,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🦽',
 		category: 'smileys-people',
 		order: 343,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🦽',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🦽',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🦽',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🦽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🦽',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🦽',
 				order: 6,
 			},
@@ -11179,34 +11179,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🦽',
 		category: 'smileys-people',
 		order: 344,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🦽',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🦽',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🦽',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🦽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🦽',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🦽',
 				order: 6,
 			},
@@ -11219,34 +11219,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🦽',
 		category: 'smileys-people',
 		order: 345,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🦽',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🦽',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🦽',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🦽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🦽',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🦽',
 				order: 6,
 			},
@@ -11259,34 +11259,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🦼',
 		category: 'smileys-people',
 		order: 346,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🦼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🦼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🦼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🦼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🦼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🦼',
 				order: 6,
 			},
@@ -11299,34 +11299,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🦼',
 		category: 'smileys-people',
 		order: 347,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🦼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🦼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🦼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🦼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🦼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🦼',
 				order: 6,
 			},
@@ -11339,34 +11339,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🦼',
 		category: 'smileys-people',
 		order: 348,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🦼',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🦼',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🦼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🦼',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🦼',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🦼',
 				order: 6,
 			},
@@ -11379,34 +11379,34 @@ export const emojis: Emoji[] = [
 		value: '🚶‍♀',
 		category: 'smileys-people',
 		order: 349,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚶‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚶🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚶🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚶🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚶🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚶🏿‍♀️',
 				order: 6,
 			},
@@ -11419,34 +11419,34 @@ export const emojis: Emoji[] = [
 		value: '🚶',
 		category: 'smileys-people',
 		order: 350,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚶',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚶🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚶🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚶🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚶🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚶🏿',
 				order: 6,
 			},
@@ -11459,34 +11459,34 @@ export const emojis: Emoji[] = [
 		value: '🚶‍♂',
 		category: 'smileys-people',
 		order: 351,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚶‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚶🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚶🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚶🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚶🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚶🏿‍♂️',
 				order: 6,
 			},
@@ -11499,34 +11499,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍🦯',
 		category: 'smileys-people',
 		order: 352,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍🦯',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍🦯',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍🦯',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍🦯',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍🦯',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍🦯',
 				order: 6,
 			},
@@ -11539,34 +11539,34 @@ export const emojis: Emoji[] = [
 		value: '🧑‍🦯',
 		category: 'smileys-people',
 		order: 353,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧑‍🦯',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧑🏻‍🦯',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧑🏼‍🦯',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧑🏽‍🦯',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧑🏾‍🦯',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧑🏿‍🦯',
 				order: 6,
 			},
@@ -11579,34 +11579,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍🦯',
 		category: 'smileys-people',
 		order: 354,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍🦯',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍🦯',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍🦯',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍🦯',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍🦯',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍🦯',
 				order: 6,
 			},
@@ -11619,34 +11619,34 @@ export const emojis: Emoji[] = [
 		value: '🧎‍♀',
 		category: 'smileys-people',
 		order: 355,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧎‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧎🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧎🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧎🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧎🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧎🏿‍♀',
 				order: 6,
 			},
@@ -11659,34 +11659,34 @@ export const emojis: Emoji[] = [
 		value: '🧎',
 		category: 'smileys-people',
 		order: 356,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧎',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧎🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧎🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧎🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧎🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧎🏿',
 				order: 6,
 			},
@@ -11699,34 +11699,34 @@ export const emojis: Emoji[] = [
 		value: '🧎‍♂',
 		category: 'smileys-people',
 		order: 357,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧎‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧎🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧎🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧎🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧎🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧎🏿‍♂',
 				order: 6,
 			},
@@ -11739,34 +11739,34 @@ export const emojis: Emoji[] = [
 		value: '🏃‍♀',
 		category: 'smileys-people',
 		order: 358,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏃‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏃🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏃🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏃🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏃🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏃🏿‍♀',
 				order: 6,
 			},
@@ -11779,34 +11779,34 @@ export const emojis: Emoji[] = [
 		value: '🏃',
 		category: 'smileys-people',
 		order: 359,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏃',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏃🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏃🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏃🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏃🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏃🏿',
 				order: 6,
 			},
@@ -11819,34 +11819,34 @@ export const emojis: Emoji[] = [
 		value: '🏃‍♂',
 		category: 'smileys-people',
 		order: 360,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏃‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏃🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏃🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏃🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏃🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏃🏿‍♂',
 				order: 6,
 			},
@@ -11859,34 +11859,34 @@ export const emojis: Emoji[] = [
 		value: '🧍‍♀',
 		category: 'smileys-people',
 		order: 361,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧍‍♀',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧍🏻‍♀',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧍🏼‍♀',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧍🏽‍♀',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧍🏾‍♀',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧍🏿‍♀',
 				order: 6,
 			},
@@ -11899,34 +11899,34 @@ export const emojis: Emoji[] = [
 		value: '🧍',
 		category: 'smileys-people',
 		order: 362,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧍',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧍🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧍🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧍🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧍🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧍🏿',
 				order: 6,
 			},
@@ -11939,34 +11939,34 @@ export const emojis: Emoji[] = [
 		value: '🧍‍♂',
 		category: 'smileys-people',
 		order: 363,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧍‍♂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧍🏻‍♂',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧍🏼‍♂',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧍🏽‍♂',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧍🏾‍♂',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧍🏿‍♂',
 				order: 6,
 			},
@@ -11979,34 +11979,34 @@ export const emojis: Emoji[] = [
 		value: '👫',
 		category: 'smileys-people',
 		order: 364,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👫',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👫🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👫🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👫🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👫🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👫🏿',
 				order: 6,
 			},
@@ -12019,34 +12019,34 @@ export const emojis: Emoji[] = [
 		value: '👭',
 		category: 'smileys-people',
 		order: 365,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👭',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👭🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👭🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👭🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👭🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👭🏿',
 				order: 6,
 			},
@@ -12059,34 +12059,34 @@ export const emojis: Emoji[] = [
 		value: '👬',
 		category: 'smileys-people',
 		order: 366,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👬',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👬🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👬🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👬🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👬🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👬🏿',
 				order: 6,
 			},
@@ -12099,34 +12099,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍❤️‍👨',
 		category: 'smileys-people',
 		order: 367,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍❤️‍👨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍❤️‍👨🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍❤️‍👨🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍❤️‍👨🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍❤️‍👨🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍❤️‍👨🏿',
 				order: 6,
 			},
@@ -12139,34 +12139,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍❤️‍👩',
 		category: 'smileys-people',
 		order: 368,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍❤️‍👩',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍❤️‍👩🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍❤️‍👩🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍❤️‍👩🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍❤️‍👩🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍❤️‍👩🏿',
 				order: 6,
 			},
@@ -12179,34 +12179,34 @@ export const emojis: Emoji[] = [
 		value: '💑',
 		category: 'smileys-people',
 		order: 369,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💑',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💑🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💑🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💑🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💑🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💑🏿',
 				order: 6,
 			},
@@ -12219,34 +12219,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍❤️‍👨',
 		category: 'smileys-people',
 		order: 370,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍❤️‍👨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍❤️‍👨🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍❤️‍👨🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍❤️‍👨🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍❤️‍👨🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍❤️‍👨🏿',
 				order: 6,
 			},
@@ -12259,34 +12259,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍❤️‍💋‍👨',
 		category: 'smileys-people',
 		order: 371,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍❤️‍💋‍👨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍❤️‍💋‍👨🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍❤️‍💋‍👨🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍❤️‍💋‍👨🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍❤️‍💋‍👨🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍❤️‍💋‍👨🏿',
 				order: 6,
 			},
@@ -12299,34 +12299,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍❤️‍💋‍👩',
 		category: 'smileys-people',
 		order: 372,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍❤️‍💋‍👩',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍❤️‍💋‍👩🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍❤️‍💋‍👩🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍❤️‍💋‍👩🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍❤️‍💋‍👩🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍❤️‍💋‍👩🏿',
 				order: 6,
 			},
@@ -12339,34 +12339,34 @@ export const emojis: Emoji[] = [
 		value: '💏',
 		category: 'smileys-people',
 		order: 373,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '💏',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '💏🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '💏🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '💏🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '💏🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '💏🏿',
 				order: 6,
 			},
@@ -12379,34 +12379,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍❤️‍💋‍👨',
 		category: 'smileys-people',
 		order: 374,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍❤️‍💋‍👨',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍❤️‍💋‍👨🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍❤️‍💋‍👨🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍❤️‍💋‍👨🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍❤️‍💋‍👨🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍❤️‍💋‍👨🏿',
 				order: 6,
 			},
@@ -12419,34 +12419,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👩‍👦',
 		category: 'smileys-people',
 		order: 375,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👩‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👩🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👩🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👩🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👩🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👩🏿‍👦🏿',
 				order: 6,
 			},
@@ -12459,34 +12459,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👩‍👧',
 		category: 'smileys-people',
 		order: 376,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👩‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👩🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👩🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👩🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👩🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👩🏿‍👧🏿',
 				order: 6,
 			},
@@ -12499,34 +12499,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👩‍👧‍👦',
 		category: 'smileys-people',
 		order: 377,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👩‍👧‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👩🏻‍👧🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👩🏼‍👧🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👩🏽‍👧🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👩🏾‍👧🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👩🏿‍👧🏿‍👦🏿',
 				order: 6,
 			},
@@ -12539,34 +12539,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👩‍👦‍👦',
 		category: 'smileys-people',
 		order: 378,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👩‍👦‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👩🏻‍👦🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👩🏼‍👦🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👩🏽‍👦🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👩🏾‍👦🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👩🏿‍👦🏿‍👦🏿',
 				order: 6,
 			},
@@ -12579,34 +12579,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👩‍👧‍👧',
 		category: 'smileys-people',
 		order: 379,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👩‍👧‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👩🏻‍👧🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👩🏼‍👧🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👩🏽‍👧🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👩🏾‍👧🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👩🏿‍👧🏿‍👧🏿',
 				order: 6,
 			},
@@ -12619,34 +12619,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👩‍👦',
 		category: 'smileys-people',
 		order: 380,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👩‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👩🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👩🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👩🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👩🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👩🏿‍👦🏿',
 				order: 6,
 			},
@@ -12659,34 +12659,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👩‍👧',
 		category: 'smileys-people',
 		order: 381,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👩‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👩🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👩🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👩🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👩🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👩🏿‍👧🏿',
 				order: 6,
 			},
@@ -12699,34 +12699,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👩‍👧‍👦',
 		category: 'smileys-people',
 		order: 382,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👩‍👧‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👩🏻‍👧🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👩🏼‍👧🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👩🏽‍👧🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👩🏾‍👧🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👩🏿‍👧🏿‍👦🏿',
 				order: 6,
 			},
@@ -12739,34 +12739,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👩‍👦‍👦',
 		category: 'smileys-people',
 		order: 383,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👩‍👦‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👩🏻‍👦🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👩🏼‍👦🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👩🏽‍👦🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👩🏾‍👦🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👩🏿‍👦🏿‍👦🏿',
 				order: 6,
 			},
@@ -12779,34 +12779,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👩‍👧‍👧',
 		category: 'smileys-people',
 		order: 384,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👩‍👧‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👩🏻‍👧🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👩🏼‍👧🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👩🏽‍👧🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👩🏾‍👧🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👩🏿‍👧🏿‍👧🏿',
 				order: 6,
 			},
@@ -12819,34 +12819,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👨‍👦',
 		category: 'smileys-people',
 		order: 385,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👨‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👨🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👨🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👨🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👨🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👨🏿‍👦🏿',
 				order: 6,
 			},
@@ -12859,34 +12859,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👨‍👧',
 		category: 'smileys-people',
 		order: 386,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👨‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👨🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👨🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👨🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👨🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👨🏿‍👧🏿',
 				order: 6,
 			},
@@ -12899,34 +12899,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👨‍👧‍👦',
 		category: 'smileys-people',
 		order: 387,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👨‍👧‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👨🏻‍👧🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👨🏼‍👧🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👨🏽‍👧🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👨🏾‍👧🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👨🏿‍👧🏿‍👦🏿',
 				order: 6,
 			},
@@ -12939,34 +12939,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👨‍👦‍👦',
 		category: 'smileys-people',
 		order: 388,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👨‍👦‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👨🏻‍👦🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👨🏼‍👦🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👨🏽‍👦🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👨🏾‍👦🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👨🏿‍👦🏿‍👦🏿',
 				order: 6,
 			},
@@ -12979,34 +12979,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👨‍👧‍👧',
 		category: 'smileys-people',
 		order: 389,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👨‍👧‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👨🏻‍👧🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👨🏼‍👧🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👨🏽‍👧🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👨🏾‍👧🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👨🏿‍👧🏿‍👧🏿',
 				order: 6,
 			},
@@ -13019,34 +13019,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👦',
 		category: 'smileys-people',
 		order: 390,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👦',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👦',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👦',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👦',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👦',
 				order: 6,
 			},
@@ -13059,34 +13059,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👧',
 		category: 'smileys-people',
 		order: 391,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👧',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👧',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👧',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👧',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👧',
 				order: 6,
 			},
@@ -13099,34 +13099,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👧‍👦',
 		category: 'smileys-people',
 		order: 392,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👧‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👧🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👧🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👧🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👧🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👧🏿‍👦🏿',
 				order: 6,
 			},
@@ -13139,34 +13139,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👦‍👦',
 		category: 'smileys-people',
 		order: 393,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👦‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👦🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👦🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👦🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👦🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👦🏿‍👦🏿',
 				order: 6,
 			},
@@ -13179,34 +13179,34 @@ export const emojis: Emoji[] = [
 		value: '👩‍👧‍👧',
 		category: 'smileys-people',
 		order: 394,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👩‍👧‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👩🏻‍👧🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👩🏼‍👧🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👩🏽‍👧🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👩🏾‍👧🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👩🏿‍👧🏿‍👧🏿',
 				order: 6,
 			},
@@ -13219,34 +13219,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👦',
 		category: 'smileys-people',
 		order: 395,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👦',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👦',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👦',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👦',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👦',
 				order: 6,
 			},
@@ -13259,34 +13259,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👧',
 		category: 'smileys-people',
 		order: 396,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👧',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👧',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👧',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👧',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👧',
 				order: 6,
 			},
@@ -13299,34 +13299,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👧‍👦',
 		category: 'smileys-people',
 		order: 397,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👧‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👧🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👧🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👧🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👧🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👧🏿‍👦🏿',
 				order: 6,
 			},
@@ -13339,34 +13339,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👦‍👦',
 		category: 'smileys-people',
 		order: 398,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👦‍👦',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👦🏻‍👦🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👦🏼‍👦🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👦🏽‍👦🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👦🏾‍👦🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👦🏿‍👦🏿',
 				order: 6,
 			},
@@ -13379,34 +13379,34 @@ export const emojis: Emoji[] = [
 		value: '👨‍👧‍👧',
 		category: 'smileys-people',
 		order: 399,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '👨‍👧‍👧',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '👨🏻‍👧🏻‍👧🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '👨🏼‍👧🏼‍👧🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '👨🏽‍👧🏽‍👧🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '👨🏾‍👧🏾‍👧🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '👨🏿‍👧🏿‍👧🏿',
 				order: 6,
 			},
@@ -16779,34 +16779,34 @@ export const emojis: Emoji[] = [
 		value: '🏂',
 		category: 'activities',
 		order: 820,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏂',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏂🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏂🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏂🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏂🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏂🏿',
 				order: 6,
 			},
@@ -16827,34 +16827,34 @@ export const emojis: Emoji[] = [
 		value: '🏋️‍♀️',
 		category: 'activities',
 		order: 822,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏋️‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏋🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏋🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏋🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏋🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏋🏿‍♀️',
 				order: 6,
 			},
@@ -16867,34 +16867,34 @@ export const emojis: Emoji[] = [
 		value: '🏋️‍♂️',
 		category: 'activities',
 		order: 823,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏋️‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏋🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏋🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏋🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏋🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏋🏿‍♂️',
 				order: 6,
 			},
@@ -16923,34 +16923,34 @@ export const emojis: Emoji[] = [
 		value: '🤸‍♀️',
 		category: 'activities',
 		order: 826,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤸‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤸🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤸🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤸🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤸🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤸🏿‍♀️',
 				order: 6,
 			},
@@ -16963,34 +16963,34 @@ export const emojis: Emoji[] = [
 		value: '🤸‍♂️',
 		category: 'activities',
 		order: 827,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤸‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤸🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤸🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤸🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤸🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤸🏿‍♂️',
 				order: 6,
 			},
@@ -17003,34 +17003,34 @@ export const emojis: Emoji[] = [
 		value: '🤸',
 		category: 'activities',
 		order: 828,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤸',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤸🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤸🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤸🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤸🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤸🏿',
 				order: 6,
 			},
@@ -17043,34 +17043,34 @@ export const emojis: Emoji[] = [
 		value: '⛹️‍♀️',
 		category: 'activities',
 		order: 829,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '⛹️‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '⛹🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '⛹🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '⛹🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '⛹🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '⛹🏿‍♀️',
 				order: 6,
 			},
@@ -17083,34 +17083,34 @@ export const emojis: Emoji[] = [
 		value: '⛹️‍♂️',
 		category: 'activities',
 		order: 830,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '⛹️‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '⛹🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '⛹🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '⛹🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '⛹🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '⛹🏿‍♂️',
 				order: 6,
 			},
@@ -17123,34 +17123,34 @@ export const emojis: Emoji[] = [
 		value: '⛹️',
 		category: 'activities',
 		order: 831,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '⛹️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '⛹🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '⛹🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '⛹🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '⛹🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '⛹🏿',
 				order: 6,
 			},
@@ -17171,34 +17171,34 @@ export const emojis: Emoji[] = [
 		value: '🤾‍♀️',
 		category: 'activities',
 		order: 833,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤾‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤾🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤾🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤾🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤾🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤾🏿‍♀️',
 				order: 6,
 			},
@@ -17211,34 +17211,34 @@ export const emojis: Emoji[] = [
 		value: '🤾‍♂️',
 		category: 'activities',
 		order: 834,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤾‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤾🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤾🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤾🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤾🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤾🏿‍♂️',
 				order: 6,
 			},
@@ -17251,34 +17251,34 @@ export const emojis: Emoji[] = [
 		value: '🤾',
 		category: 'activities',
 		order: 835,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤾',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤾🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤾🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤾🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤾🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤾🏿',
 				order: 6,
 			},
@@ -17291,34 +17291,34 @@ export const emojis: Emoji[] = [
 		value: '🏌️‍♀️',
 		category: 'activities',
 		order: 836,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏌️‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏌🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏌🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏌🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏌🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏌🏿‍♀️',
 				order: 6,
 			},
@@ -17331,34 +17331,34 @@ export const emojis: Emoji[] = [
 		value: '🏌️‍♂️',
 		category: 'activities',
 		order: 837,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏌️‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏌🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏌🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏌🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏌🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏌🏿‍♂️',
 				order: 6,
 			},
@@ -17371,34 +17371,34 @@ export const emojis: Emoji[] = [
 		value: '🏌️',
 		category: 'activities',
 		order: 838,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏌️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏌🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏌🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏌🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏌🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏌🏿',
 				order: 6,
 			},
@@ -17411,34 +17411,34 @@ export const emojis: Emoji[] = [
 		value: '🏇',
 		category: 'activities',
 		order: 839,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏇',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏇🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏇🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏇🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏇🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏇🏿',
 				order: 6,
 			},
@@ -17451,34 +17451,34 @@ export const emojis: Emoji[] = [
 		value: '🧘‍♀️',
 		category: 'activities',
 		order: 840,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧘‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧘🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧘🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧘🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧘🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧘🏿‍♀️',
 				order: 6,
 			},
@@ -17491,34 +17491,34 @@ export const emojis: Emoji[] = [
 		value: '🧘‍♂️',
 		category: 'activities',
 		order: 841,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧘‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧘🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧘🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧘🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧘🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧘🏿‍♂️',
 				order: 6,
 			},
@@ -17531,34 +17531,34 @@ export const emojis: Emoji[] = [
 		value: '🧘',
 		category: 'activities',
 		order: 842,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧘',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧘🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧘🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧘🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧘🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧘🏿',
 				order: 6,
 			},
@@ -17571,34 +17571,34 @@ export const emojis: Emoji[] = [
 		value: '🏄‍♀️',
 		category: 'activities',
 		order: 843,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏄‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏄🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏄🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏄🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏄🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏄🏿‍♀️',
 				order: 6,
 			},
@@ -17611,34 +17611,34 @@ export const emojis: Emoji[] = [
 		value: '🏄‍♂️',
 		category: 'activities',
 		order: 844,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏄‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏄🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏄🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏄🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏄🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏄🏿‍♂️',
 				order: 6,
 			},
@@ -17651,34 +17651,34 @@ export const emojis: Emoji[] = [
 		value: '🏄',
 		category: 'activities',
 		order: 845,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏄',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏄🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏄🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏄🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏄🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏄🏿',
 				order: 6,
 			},
@@ -17691,34 +17691,34 @@ export const emojis: Emoji[] = [
 		value: '🏊‍♀️',
 		category: 'activities',
 		order: 846,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏊‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏊🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏊🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏊🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏊🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏊🏿‍♀️',
 				order: 6,
 			},
@@ -17731,34 +17731,34 @@ export const emojis: Emoji[] = [
 		value: '🏊‍♂️',
 		category: 'activities',
 		order: 847,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏊‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏊🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏊🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏊🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏊🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏊🏿‍♂️',
 				order: 6,
 			},
@@ -17771,34 +17771,34 @@ export const emojis: Emoji[] = [
 		value: '🏊',
 		category: 'activities',
 		order: 848,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🏊',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🏊🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🏊🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🏊🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🏊🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🏊🏿',
 				order: 6,
 			},
@@ -17811,34 +17811,34 @@ export const emojis: Emoji[] = [
 		value: '🤽‍♀️',
 		category: 'activities',
 		order: 849,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤽‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤽🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤽🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤽🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤽🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤽🏿‍♀️',
 				order: 6,
 			},
@@ -17851,34 +17851,34 @@ export const emojis: Emoji[] = [
 		value: '🤽‍♂️',
 		category: 'activities',
 		order: 850,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤽‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤽🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤽🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤽🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤽🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤽🏿‍♂️',
 				order: 6,
 			},
@@ -17891,34 +17891,34 @@ export const emojis: Emoji[] = [
 		value: '🤽',
 		category: 'activities',
 		order: 851,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤽',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤽🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤽🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤽🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤽🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤽🏿',
 				order: 6,
 			},
@@ -17931,34 +17931,34 @@ export const emojis: Emoji[] = [
 		value: '🚣‍♀️',
 		category: 'activities',
 		order: 852,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚣‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚣🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚣🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚣🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚣🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚣🏿‍♀️',
 				order: 6,
 			},
@@ -17971,34 +17971,34 @@ export const emojis: Emoji[] = [
 		value: '🚣‍♂️',
 		category: 'activities',
 		order: 853,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚣‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚣🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚣🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚣🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚣🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚣🏿‍♂️',
 				order: 6,
 			},
@@ -18011,34 +18011,34 @@ export const emojis: Emoji[] = [
 		value: '🚣',
 		category: 'activities',
 		order: 854,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚣',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚣🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚣🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚣🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚣🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚣🏿',
 				order: 6,
 			},
@@ -18051,34 +18051,34 @@ export const emojis: Emoji[] = [
 		value: '🧗‍♀️',
 		category: 'activities',
 		order: 855,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧗‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧗🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧗🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧗🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧗🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧗🏿‍♀️',
 				order: 6,
 			},
@@ -18091,34 +18091,34 @@ export const emojis: Emoji[] = [
 		value: '🧗‍♂️',
 		category: 'activities',
 		order: 856,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧗‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧗🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧗🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧗🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧗🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧗🏿‍♂️',
 				order: 6,
 			},
@@ -18131,34 +18131,34 @@ export const emojis: Emoji[] = [
 		value: '🧗',
 		category: 'activities',
 		order: 857,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🧗',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🧗🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🧗🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🧗🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🧗🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🧗🏿',
 				order: 6,
 			},
@@ -18171,34 +18171,34 @@ export const emojis: Emoji[] = [
 		value: '🚵‍♀️',
 		category: 'activities',
 		order: 858,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚵‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚵🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚵🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚵🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚵🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚵🏿‍♀️',
 				order: 6,
 			},
@@ -18211,34 +18211,34 @@ export const emojis: Emoji[] = [
 		value: '🚵‍♂️',
 		category: 'activities',
 		order: 859,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚵‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚵🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚵🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚵🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚵🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚵🏿‍♂️',
 				order: 6,
 			},
@@ -18251,34 +18251,34 @@ export const emojis: Emoji[] = [
 		value: '🚵',
 		category: 'activities',
 		order: 860,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚵',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚵🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚵🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚵🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚵🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚵🏿',
 				order: 6,
 			},
@@ -18291,34 +18291,34 @@ export const emojis: Emoji[] = [
 		value: '🚴‍♀️',
 		category: 'activities',
 		order: 861,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚴‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚴🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚴🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚴🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚴🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚴🏿‍♀️',
 				order: 6,
 			},
@@ -18331,34 +18331,34 @@ export const emojis: Emoji[] = [
 		value: '🚴‍♂️',
 		category: 'activities',
 		order: 862,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚴‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚴🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚴🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚴🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚴🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚴🏿‍♂️',
 				order: 6,
 			},
@@ -18371,34 +18371,34 @@ export const emojis: Emoji[] = [
 		value: '🚴',
 		category: 'activities',
 		order: 863,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🚴',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🚴🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🚴🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🚴🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🚴🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🚴🏿',
 				order: 6,
 			},
@@ -18499,34 +18499,34 @@ export const emojis: Emoji[] = [
 		value: '🤹‍♀️',
 		category: 'activities',
 		order: 875,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤹‍♀️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤹🏻‍♀️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤹🏼‍♀️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤹🏽‍♀️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤹🏾‍♀️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤹🏿‍♀️',
 				order: 6,
 			},
@@ -18539,34 +18539,34 @@ export const emojis: Emoji[] = [
 		value: '🤹‍♂️',
 		category: 'activities',
 		order: 876,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤹‍♂️',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤹🏻‍♂️',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤹🏼‍♂️',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤹🏽‍♂️',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤹🏾‍♂️',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤹🏿‍♂️',
 				order: 6,
 			},
@@ -18579,34 +18579,34 @@ export const emojis: Emoji[] = [
 		value: '🤹',
 		category: 'activities',
 		order: 877,
-		skinTones: [
+		skintones: [
 			{
-				skinTone: 'default',
+				skintone: 'default',
 				value: '🤹',
 				order: 1,
 			},
 			{
-				skinTone: 'light',
+				skintone: 'light',
 				value: '🤹🏻',
 				order: 2,
 			},
 			{
-				skinTone: 'medium-light',
+				skintone: 'medium-light',
 				value: '🤹🏼',
 				order: 3,
 			},
 			{
-				skinTone: 'medium',
+				skintone: 'medium',
 				value: '🤹🏽',
 				order: 4,
 			},
 			{
-				skinTone: 'medium-dark',
+				skintone: 'medium-dark',
 				value: '🤹🏾',
 				order: 5,
 			},
 			{
-				skinTone: 'dark',
+				skintone: 'dark',
 				value: '🤹🏿',
 				order: 6,
 			},

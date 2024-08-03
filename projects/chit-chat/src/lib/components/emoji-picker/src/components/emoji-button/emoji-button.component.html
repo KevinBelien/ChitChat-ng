@@ -1,3 +1,13 @@
-<button *ngIf="emoji" class="ch-emoji-btn" chRipple>
-	<span class="ch-emoji">{{ emoji.value }}</span>
+<button
+	*ngIf="emoji"
+	class="ch-emoji-btn"
+	[ngClass]="{
+		'ch-emoji-variation-indicator': showSkintoneIndicator
+	}"
+	chRipple
+>
+	<span class="ch-emoji">{{ emoji }}</span>
+	<!-- <ng-container *ngIf="showSkintoneIndicator">
+		<div class="ch-button-indicator"></div>
+	</ng-container> -->
 </button>

@@ -1,6 +1,8 @@
+$emoji-btn-border-radius: 6px;
+
 button.ch-emoji-btn {
 	position: relative;
-	border-radius: 6px;
+	border-radius: $emoji-btn-border-radius;
 	font-size: var(--emoji-size, 24px);
 	font-family: 'Apple Color Emoji', 'Noto Color Emoji',
 		'Twemoji Mozilla', 'EmojiOne', 'Twemoji Country Flags',
@@ -23,12 +25,34 @@ button.ch-emoji-btn {
 	cursor: pointer;
 	-webkit-tap-highlight-color: transparent;
 
+	&.ch-emoji-variation-indicator::after {
+		content: '';
+		position: absolute;
+		top: calc($emoji-btn-border-radius / 4);
+		right: calc($emoji-btn-border-radius / 4);
+		width: 0.35rem;
+		height: 0.35rem;
+		background-color: var(
+			--ch-emoji-variant-indicator-color,
+			rgb(190, 190, 190)
+		);
+		border-radius: 50%;
+	}
+
 	&:hover {
 		background-color: color-mix(
 			in srgb,
 			var(--ch-background-color) 50%,
-			rgba(128, 128, 128, 0.5)
+			#c0c0c0
 		);
+
+		&.ch-emoji-variation-indicator::after {
+			background-color: var(
+				--ch-emoji-variant-indicator-color-hover,
+				var(--ch-emoji-variant-indicator-color),
+				rgb(190, 190, 190)
+			);
+		}
 	}
 
 	&:focus-visible {

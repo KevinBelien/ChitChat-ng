@@ -1,0 +1,9 @@
+<div class="skintone-picker-container">
+	<ng-container *ngIf="!!emoji">
+		<ng-container
+			*ngFor="let skintone of emoji.skintones; trackBy: trackSkintone"
+		>
+			<ch-emoji-button [emoji]="skintone.value"></ch-emoji-button>
+		</ng-container>
+	</ng-container>
+</div>
