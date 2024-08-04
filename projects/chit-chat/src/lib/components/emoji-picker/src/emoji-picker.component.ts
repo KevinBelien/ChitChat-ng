@@ -77,7 +77,7 @@ export class EmojiPickerComponent
 	@Input() emojiSize: EmojiSizeKey = 'default';
 	@Input() suggestionMode: EmojiSuggestionMode = 'recent';
 	@Input() height: number = 450;
-	@Input() width: number = 350;
+	@Input() width: number = 400;
 	@Input() orientation: EmojiPickerOrientation =
 		EmojiPickerOrientation.VERTICAL;
 	@Input() categoryBarPosition: CategoryBarPosition = 'top';
@@ -87,11 +87,9 @@ export class EmojiPickerComponent
 	@Input() suggestionSize: number = 50;
 	@Input() autoUpdateSuggestions: boolean = true;
 
-	@Output()
-	onEmojiSelected = new EventEmitter<Emoji>();
+	@Output() onEmojiSelected = new EventEmitter<Emoji>();
 
 	emojiTouchHoldEventActive: boolean = false;
-
 	private overlayRef?: OverlayRef;
 
 	readonly Orientations = EmojiPickerOrientation;
@@ -139,20 +137,16 @@ export class EmojiPickerComponent
 
 	emojiCategories$ = this.emojiDataService.emojiCategories$;
 
+	destroy$ = new Subject<void>();
+
 	@HostBinding('style.--picker-height')
 	pickerHeight: string = `${this.height}px`;
 	@HostBinding('style.--picker-width')
 	pickerWidth: string = `${this.width}px`;
-
 	@HostBinding('style.--emoji-size') emojiSizeInPx?: string;
-
 	@HostBinding('style.--item-size-multiplier')
 	itemSizeMultiplier?: number;
-
-	@HostBinding('style.--padding-inline')
-	padding?: number;
-
-	destroy$ = new Subject<void>();
+	@HostBinding('style.--padding-inline') padding?: number;
 
 	constructor() {
 		this.emojiPickerStateService.emojiSizeInPx$
@@ -185,7 +179,6 @@ export class EmojiPickerComponent
 		if (changes['width']) {
 			this.pickerWidth = `${this.width}px`;
 		}
-
 		if (changes['emojiCategories']) {
 			this.emojiDataService.setEmojiCategories(
 				changes['emojiCategories'].currentValue
@@ -193,7 +186,6 @@ export class EmojiPickerComponent
 
 			const currentCategories =
 				this.emojiDataService.emojiCategories$.getValue();
-
 			if (currentCategories.length === 0) return;
 
 			const isActiveCategoryInCategories =
@@ -209,13 +201,11 @@ export class EmojiPickerComponent
 				);
 			}
 		}
-
 		if (changes['suggestionMode']) {
 			this.suggestionMode$.next(
 				changes['suggestionMode'].currentValue
 			);
 		}
-
 		if (changes['suggestionSize']) {
 			this.suggestionSize$.next(
 				changes['suggestionSize'].currentValue
@@ -241,7 +231,6 @@ export class EmojiPickerComponent
 
 	handleCategoryTabClicked = (category: EmojiCategory) => {
 		this.selectedCategory = category;
-
 		if (this.verticalEmojiPickerComponent) {
 			this.verticalEmojiPickerComponent.navigateToCategory(category);
 		}
@@ -257,9 +246,7 @@ export class EmojiPickerComponent
 			this.emojiTouchHoldEventActive = false;
 			return;
 		}
-
 		const emoji = this.emojiDataService.getEmojiById(e.data);
-
 		if (
 			e.action &&
 			e.action === ClickActionType.RIGHTCLICK &&
@@ -269,10 +256,8 @@ export class EmojiPickerComponent
 				this.openSkintoneDialog(e.targetElement, emoji);
 			}
 			this.emojiTouchHoldEventActive = false;
-
 			return;
 		}
-
 		if (!emoji) throw new Error(`No emoji found with id: ${e.data}`);
 		this.selectEmoji(emoji);
 	};
@@ -283,7 +268,6 @@ export class EmojiPickerComponent
 			!!emoji &&
 			this.emojiDataService.hasEmojiSkintone(emoji) &&
 			e.event.pointerType === 'touch';
-
 		if (this.emojiTouchHoldEventActive && !!emoji) {
 			this.openSkintoneDialog(e.targetElement, emoji);
 		}
@@ -293,7 +277,6 @@ export class EmojiPickerComponent
 		if (this.overlayRef) {
 			this.overlayRef.dispose();
 		}
-
 		const positionStrategy = this.overlay
 			.position()
 			.flexibleConnectedTo(targetElement)
@@ -306,17 +289,14 @@ export class EmojiPickerComponent
 					overlayY: 'bottom',
 				},
 			]);
-
 		this.overlayRef = this.overlay.create({
 			positionStrategy,
 			hasBackdrop: true,
 			backdropClass: 'cdk-overlay-transparent-backdrop',
 		});
-
 		const emojiPortal = new ComponentPortal(SkintonePickerComponent);
 		const componentRef = this.overlayRef.attach(emojiPortal);
 		componentRef.instance.emoji = emoji;
-
 		this.overlayRef
 			.backdropClick()
 			.pipe(takeUntil(this.destroy$))
@@ -327,7 +307,6 @@ export class EmojiPickerComponent
 		if (this.autoUpdateSuggestions) {
 			this.addEmojiToSuggestions(emoji.id);
 		}
-
 		this.onEmojiSelected.emit(emoji);
 	};
 }

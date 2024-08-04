@@ -52,17 +52,23 @@ export class EmojiTabsComponent {
 
 	readonly isMobile = this.screenService.isMobile();
 
-	trackCategory = (index: number, category: EmojiCategory) => {
+	protected trackCategory = (
+		index: number,
+		category: EmojiCategory
+	) => {
 		return category;
 	};
 
-	handleHoverChange = (e: HoverEvent, category: EmojiCategory) => {
+	protected handleHoverChange = (
+		e: HoverEvent,
+		category: EmojiCategory
+	) => {
 		if (e.isHovered) this.categoryHovered = category;
 		else if (this.categoryHovered === category)
 			this.categoryHovered = null;
 	};
 
-	handleCategoryButtonClick = (
+	protected handleCategoryButtonClick = (
 		e: MouseEvent,
 		category: EmojiCategory
 	) => {

@@ -5,7 +5,7 @@
 	[itemSize]="itemSize$ | async"
 	[minBufferPx]="300"
 	[maxBufferPx]="450"
-	(wheel)="onWheel($event)"
+	(wheel)="handleWheelScroll($event)"
 	(scrolledIndexChange)="handleScrolledIndexChanged($event)"
 	chClickTouchHold
 	dataAttribute="data-emoji"
