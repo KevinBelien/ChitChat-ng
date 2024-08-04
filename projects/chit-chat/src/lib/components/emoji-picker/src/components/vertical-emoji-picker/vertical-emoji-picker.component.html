@@ -33,6 +33,7 @@
 		<div
 			*cdkVirtualFor="
 				let row of emojiRows$ | async;
+				templateCacheSize: 30;
 				let index = index;
 				trackBy: trackEmojiRow
 			"
