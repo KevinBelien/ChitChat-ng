@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
+	ElementRef,
 	EventEmitter,
 	HostBinding,
 	inject,
@@ -76,11 +77,15 @@ export class EmojiPickerComponent
 {
 	private emojiDataService = inject(EmojiDataService);
 	private renderer = inject(Renderer2);
+	private elementRef = inject(ElementRef);
 	private overlay = inject(Overlay);
 	private emojiPickerStateService = inject(EmojiPickerStateService);
 
 	@ViewChild(VerticalEmojiPickerComponent, { static: false })
 	verticalEmojiPickerComponent?: VerticalEmojiPickerComponent;
+
+	@ViewChild(SkintonePickerComponent, { static: false })
+	SkintonePickerComponent?: SkintonePickerComponent;
 
 	@Input()
 	@HostBinding('style.--picker-height')
@@ -161,6 +166,8 @@ export class EmojiPickerComponent
 	itemSizeMultiplier?: number;
 	@HostBinding('style.--ch-padding-inline') padding?: number;
 
+	private pointerDownListener?: () => void;
+
 	constructor() {
 		this.isIndividualSkintoneEnabled =
 			this.isSkintoneSettingEnabled();
@@ -199,6 +206,20 @@ export class EmojiPickerComponent
 			});
 
 		this.emojiDataService.setSkintoneSetting(this.skintoneSetting);
+
+		this.pointerDownListener = this.renderer.listen(
+			this.elementRef.nativeElement,
+			'pointerdown',
+			(evt: PointerEvent) => {
+				if (
+					!(evt.target as HTMLElement).closest(
+						'.ch-color-picker-container'
+					)
+				) {
+					this.SkintonePickerComponent?.close();
+				}
+			}
+		);
 	}
 
 	ngOnChanges(changes: SimpleChanges): void {
@@ -248,9 +269,16 @@ export class EmojiPickerComponent
 	}
 
 	ngOnDestroy(): void {
+		if (!!this.pointerDownListener) {
+			this.pointerDownListener();
+		}
 		this.destroy$.next();
 		this.destroy$.complete();
 	}
+
+	handleScroll = () => {
+		this.SkintonePickerComponent?.close();
+	};
 
 	private loadCountryFlagEmojiPolyfill() {
 		const script = this.renderer.createElement('script');

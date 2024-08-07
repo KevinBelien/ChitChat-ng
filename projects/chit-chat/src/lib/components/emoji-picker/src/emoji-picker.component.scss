@@ -36,18 +36,19 @@
 	flex-direction: row;
 	align-items: center;
 	padding-inline: calc(var(--ch-padding-inline) * 1px);
-	margin-block: 0.5em;
+	margin-block: 1em;
+	min-width: 0;
 
 	.ch-searchbar-container {
 		flex: 1;
+		display: flex;
 		min-width: 0;
-		display: block;
 		position: relative;
 
 		.ch-searchbar {
 			transition: all 0.2s ease-in-out;
+			flex-grow: 1;
 			width: 100%;
-			overflow: clip;
 		}
 	}
 }

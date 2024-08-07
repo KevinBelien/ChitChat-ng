@@ -39,6 +39,7 @@
 				[scrollbarVisible]="scrollbarVisible"
 				[emojiCategories]="emojiCategories"
 				(onClick)="handleEmojiClick($event)"
+				(onScroll)="handleScroll()"
 				(onTouchHold)="handleEmojiTouchHold($event)"
 			></ch-vertical-emoji-picker>
 		</ng-container>

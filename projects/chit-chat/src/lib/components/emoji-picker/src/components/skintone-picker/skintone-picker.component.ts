@@ -1,8 +1,11 @@
 import { CommonModule } from '@angular/common';
 import {
+	ChangeDetectionStrategy,
+	ChangeDetectorRef,
 	Component,
 	EventEmitter,
 	HostBinding,
+	inject,
 	Input,
 	OnChanges,
 	Output,
@@ -17,11 +20,14 @@ import {
 @Component({
 	selector: 'ch-skintone-picker',
 	standalone: true,
+	changeDetection: ChangeDetectionStrategy.OnPush,
 	imports: [CommonModule],
 	templateUrl: './skintone-picker.component.html',
 	styleUrl: './skintone-picker.component.scss',
 })
 export class SkintonePickerComponent implements OnChanges {
+	private cdr = inject(ChangeDetectorRef);
+
 	isPickerOpen = false;
 
 	skintoneColors = [...skintoneColors];
@@ -60,15 +66,23 @@ export class SkintonePickerComponent implements OnChanges {
 		);
 	};
 
-	togglePicker() {
+	toggle() {
 		this.isPickerOpen = !this.isPickerOpen;
 	}
 
+	close = () => {
+		this.isPickerOpen = false;
+		this.cdr.detectChanges();
+	};
+
 	handleClick = (skintoneColor: SkintoneColor, event: Event) => {
 		event.stopPropagation();
-		this.selectedColor = skintoneColor;
-		this.onSelectionChanged.emit(skintoneColor.skintone);
-		this.togglePicker();
+
+		if (this.isPickerOpen) {
+			this.selectedColor = skintoneColor;
+			this.onSelectionChanged.emit(skintoneColor.skintone);
+		}
+		this.toggle();
 	};
 
 	getPosition = (index: number) => {

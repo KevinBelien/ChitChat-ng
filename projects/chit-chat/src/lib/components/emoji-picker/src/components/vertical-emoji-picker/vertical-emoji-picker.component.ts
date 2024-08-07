@@ -88,6 +88,7 @@ export class VerticalEmojiPickerComponent
 
 	@Output() currentCategoryChange = new EventEmitter<EmojiCategory>();
 	@Output() onClick = new EventEmitter<ClickEvent>();
+	@Output() onScroll = new EventEmitter<void>();
 	@Output() onTouchHold = new EventEmitter<TouchHoldEvent>();
 
 	scrollIndex: number = 0;
@@ -116,6 +117,11 @@ export class VerticalEmojiPickerComponent
 					this.viewport?.getOffsetToRenderedContentStart() || 0
 				);
 			});
+
+		this.viewport
+			?.elementScrolled()
+			.pipe(takeUntil(this.destroy$))
+			.subscribe(() => this.onScroll.emit());
 
 		combineLatest([
 			this.emojiPickerStateService.padding$,
