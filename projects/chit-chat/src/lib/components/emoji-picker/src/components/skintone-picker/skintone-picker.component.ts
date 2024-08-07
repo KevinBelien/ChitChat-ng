@@ -1,16 +1,15 @@
 import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
-	ChangeDetectorRef,
 	Component,
 	EventEmitter,
 	HostBinding,
-	inject,
 	Input,
 	OnChanges,
 	Output,
 	SimpleChanges,
 } from '@angular/core';
+import { BehaviorSubject } from 'rxjs';
 import {
 	Skintone,
 	SkintoneColor,
@@ -26,9 +25,7 @@ import {
 	styleUrl: './skintone-picker.component.scss',
 })
 export class SkintonePickerComponent implements OnChanges {
-	private cdr = inject(ChangeDetectorRef);
-
-	isPickerOpen = false;
+	isPickerOpen$ = new BehaviorSubject<boolean>(false);
 
 	skintoneColors = [...skintoneColors];
 
@@ -67,18 +64,17 @@ export class SkintonePickerComponent implements OnChanges {
 	};
 
 	toggle() {
-		this.isPickerOpen = !this.isPickerOpen;
+		this.isPickerOpen$.next(!this.isPickerOpen$.getValue());
 	}
 
 	close = () => {
-		this.isPickerOpen = false;
-		this.cdr.detectChanges();
+		this.isPickerOpen$.next(false);
 	};
 
 	handleClick = (skintoneColor: SkintoneColor, event: Event) => {
 		event.stopPropagation();
 
-		if (this.isPickerOpen) {
+		if (this.isPickerOpen$.getValue()) {
 			this.selectedColor = skintoneColor;
 			this.onSelectionChanged.emit(skintoneColor.skintone);
 		}
@@ -86,7 +82,7 @@ export class SkintonePickerComponent implements OnChanges {
 	};
 
 	getPosition = (index: number) => {
-		if (!this.isPickerOpen) return 'translateX(0px)';
+		if (!this.isPickerOpen$.getValue()) return 'translateX(0px)';
 
 		const position = -(index * (this.size + this.itemPadding));
 		return `translateX(${position}px) ${
