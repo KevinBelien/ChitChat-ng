@@ -50,8 +50,10 @@ export class MessageService {
 				doc(messagesRef),
 				JSON.parse(JSON.stringify(data))
 			);
-		} catch (e: any) {
-			throw Error(`Something went wrong when sending message. ${e}`);
+		} catch (evt: any) {
+			throw Error(
+				`Something went wrong when sending message. ${evt}`
+			);
 		}
 	};
 

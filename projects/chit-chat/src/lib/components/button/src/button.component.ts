@@ -80,7 +80,7 @@ export class ButtonComponent {
 		};
 	}
 
-	handleClick = (e: MouseEvent) => {
-		this.onClick.emit(e);
+	handleClick = (evt: MouseEvent) => {
+		this.onClick.emit(evt);
 	};
 }

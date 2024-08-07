@@ -191,7 +191,7 @@ export class VerticalEmojiPickerService {
 		);
 	};
 
-	getEmojiById = (id: string) => {
-		return this.emojiDataService.getEmojiById(id);
+	fetchEmojiById = (id: string) => {
+		return this.emojiDataService.fetchEmojiById(id);
 	};
 }

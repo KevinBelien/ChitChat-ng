@@ -70,8 +70,8 @@ export class AppComponent implements OnInit {
 		});
 	}
 
-	handleMenuBtnClick = (e: Event) => {
-		e.stopPropagation();
+	handleMenuBtnClick = (evt: Event) => {
+		evt.stopPropagation();
 		this.isMenuOpened = !this.isMenuOpened;
 	};
 

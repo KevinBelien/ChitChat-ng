@@ -12,10 +12,7 @@
 	</div>
 	<div class="ch-emoji-picker-container">
 		<ng-container
-			*ngIf="
-				orientation === Orientations.VERTICAL;
-				else horizontalEmojiPicker
-			"
+			*ngIf="orientation === 'vertical'; else horizontalEmojiPicker"
 		>
 			<ch-vertical-emoji-picker
 				*ngIf="allEmojis$ | async as allEmojis"
@@ -23,6 +20,7 @@
 				[width]="width"
 				[emojis]="allEmojis.emojis"
 				[suggestionEmojis]="allEmojis.suggestionEmojis"
+				[showSkintoneIndicator]="isAlternativeSkintoneEnabled"
 				[emojiSize]="emojiSize"
 				[(currentCategory)]="selectedCategory"
 				[scrollbarVisible]="scrollbarVisible"

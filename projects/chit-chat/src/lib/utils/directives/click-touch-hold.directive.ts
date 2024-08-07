@@ -106,11 +106,11 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 
 		fromEvent<PointerEvent>(nativeElement, 'pointermove')
 			.pipe(debounceTime(50), takeUntil(this.destroy$))
-			.subscribe((e: PointerEvent) => this.onPointerMove(e));
+			.subscribe((evt: PointerEvent) => this.onPointerMove(evt));
 
 		fromEvent<TouchEvent>(nativeElement, 'touchmove')
 			.pipe(debounceTime(50), takeUntil(this.destroy$))
-			.subscribe((e: TouchEvent) => this.onTouchMove(e));
+			.subscribe((evt: TouchEvent) => this.onTouchMove(evt));
 
 		if (this.preventContextMenu) {
 			this.eventListeners.push(

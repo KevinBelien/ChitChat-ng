@@ -1,15 +1,19 @@
-import { Injectable, OnDestroy } from '@angular/core';
+import { inject, Injectable, OnDestroy } from '@angular/core';
 import { BehaviorSubject, Subject, takeUntil } from 'rxjs';
 import { emojis } from '../data';
-import { Emoji, emojiCategories, EmojiCategory } from '../models';
-import { FrequentEmoji } from '../models/frequent-emoji.model';
+import {
+	Emoji,
+	emojiCategories,
+	EmojiCategory,
+	IndividualEmojiSkintone,
+	Skintone,
+	SkintoneSetting,
+} from '../models';
+import { EmojiStorageService } from './emoji-storage.service';
 
-@Injectable()
+@Injectable({ providedIn: 'root' })
 export class EmojiDataService implements OnDestroy {
-	readonly STORAGE_CONFIG = {
-		recent: { key: 'ch-recent-emojis', limit: 100 },
-		frequent: { key: 'ch-emojis-frequently', limit: 100 },
-	};
+	private emojiStorageService = inject(EmojiStorageService);
 
 	readonly emojis$: BehaviorSubject<Emoji[]> = new BehaviorSubject<
 		Emoji[]
@@ -21,47 +25,154 @@ export class EmojiDataService implements OnDestroy {
 	readonly emojiCategories$: BehaviorSubject<EmojiCategory[]> =
 		new BehaviorSubject<EmojiCategory[]>([...emojiCategories]);
 
-	private mappedEmojis$: BehaviorSubject<Map<string, Emoji>>;
+	readonly emojiMap$: BehaviorSubject<Map<string, Emoji>>;
+
+	readonly skintoneSetting$ = new BehaviorSubject<SkintoneSetting>(
+		'none'
+	);
 
 	destroy$ = new Subject<void>();
 
 	constructor() {
-		this.mappedEmojis$ = new BehaviorSubject<Map<string, Emoji>>(
-			this.mapEmojis()
+		this.emojiMap$ = new BehaviorSubject<Map<string, Emoji>>(
+			this.createEmojiMap()
 		);
 
 		this.recentEmojis$ = new BehaviorSubject<Emoji[]>(
-			this.getRecentEmojisFromStorage()
+			this.fetchRecentEmojisFromStorage()
 		);
 
 		this.frequentEmojis$ = new BehaviorSubject<Emoji[]>(
-			this.getFrequentEmojisFromStorage()
+			this.fetchFrequentEmojisFromStorage()
 		);
 
 		this.emojiCategories$
 			.pipe(takeUntil(this.destroy$))
 			.subscribe((categories) => {
 				this.emojis$.next(
-					this.filterAndSortEmojisByCategoryList(
+					this.filterAndSortEmojis(
 						categories.filter(
 							(category) => category !== 'suggestions'
 						)
 					)
 				);
 			});
+
+		this.skintoneSetting$
+			.pipe(takeUntil(this.destroy$))
+			.subscribe((skintoneSetting) => {
+				this.applySkintoneSetting(skintoneSetting);
+			});
 	}
 
-	getEmojiById = (id: string): Emoji | undefined => {
-		return this.mappedEmojis$.getValue().get(id);
+	ngOnDestroy(): void {
+		this.destroy$.next();
+		this.destroy$.complete();
+	}
+
+	setSkintoneSetting = (value: SkintoneSetting) => {
+		this.skintoneSetting$.next(value);
 	};
 
-	getEmojisByIds = (emojiIds: string[]): Emoji[] => {
+	applySkintoneSetting = (skintoneConfig: SkintoneSetting) => {
+		switch (skintoneConfig) {
+			case 'none':
+				this.applyUniformSkintone('default');
+				break;
+			case 'individual':
+				this.applyIndividualSkintoneSetting();
+				break;
+			default:
+				this.applyGlobalSkintoneSetting();
+				break;
+		}
+	};
+
+	updateGlobalSkintone = (skintone: Skintone) => {
+		this.emojiStorageService.updateGlobalSkintone(skintone);
+	};
+
+	applyGlobalSkintoneSetting = (): void => {
+		const globalSkintone =
+			this.emojiStorageService.fetchGlobalSkintone();
+
+		this.applyUniformSkintone(globalSkintone);
+	};
+
+	applyIndividualSkintoneSetting = () => {
+		const response: IndividualEmojiSkintone[] =
+			this.emojiStorageService.fetchEmojisSkintone();
+
+		const emojiMap = this.emojiMap$.getValue();
+
+		for (const record of response) {
+			const emoji = emojiMap.get(record.emojiId);
+
+			if (!emoji) break;
+
+			const newEmoji = {
+				...emoji,
+				value: record.emojiValue,
+			};
+
+			emojiMap.set(record.emojiId, newEmoji);
+		}
+		this.emojiMap$.next(emojiMap);
+	};
+
+	updateEmojiSkintone = (emojiId: string, value: string) => {
+		this.emojiStorageService.updateEmojiSkintone(emojiId, value);
+
+		const map = this.emojiMap$.getValue();
+		const previousValue = this.fetchEmojiById(emojiId);
+
+		if (!previousValue) return;
+
+		map.set(emojiId, Object.assign({ ...previousValue }, { value }));
+
+		this.emojiMap$.next(map);
+	};
+
+	applyUniformSkintone = (skintone: Skintone): void => {
+		const emojiMap = this.emojiMap$.getValue();
+		emojiMap.forEach((emoji: Emoji) => {
+			if (!!emoji.skintones) {
+				const newEmoji = Object.assign(
+					{ ...emoji },
+					{ value: this.fetchSkintoneFromEmoji(emoji, skintone) }
+				);
+				emojiMap.set(emoji.id, newEmoji);
+			}
+		});
+
+		this.emojiMap$.next(emojiMap);
+	};
+
+	fetchSkintoneFromEmoji = (
+		emoji: Emoji,
+		skintone: Skintone
+	): string => {
+		if (!emoji.skintones) {
+			return emoji.value;
+		}
+		const skintoneObj = emoji.skintones.find(
+			(s) => s.skintone === skintone
+		);
+
+		return skintoneObj ? skintoneObj.value : emoji.value;
+	};
+
+	fetchEmojiById = (id: string): Emoji | undefined => {
+		return this.emojiMap$.getValue().get(id);
+	};
+
+	fetchEmojisByIds = (emojiIds: string[]): Emoji[] => {
 		return emojiIds
-			.map((id) => this.getEmojiById(id))
+			.map((id) => this.fetchEmojiById(id))
 			.filter((emoji) => !!emoji);
 	};
 
-	filterEmojisByIncludedCategories = (
+	filterEmojisByCategories = (
 		emojis: Emoji[],
 		includedCategories: EmojiCategory[]
 	): Emoji[] => {
@@ -70,17 +181,15 @@ export class EmojiDataService implements OnDestroy {
 		);
 	};
 
-	filterAndSortEmojisByCategoryList = (
-		categories: EmojiCategory[]
-	): Emoji[] => {
-		const filteredEmojis = this.filterEmojisByIncludedCategories(
+	filterAndSortEmojis = (categories: EmojiCategory[]): Emoji[] => {
+		const filteredEmojis = this.filterEmojisByCategories(
 			[...emojis],
 			categories
 		);
-		return this.sortEmojisByCategories(filteredEmojis, categories);
+		return this.sortEmojis(filteredEmojis, categories);
 	};
 
-	sortEmojisByCategories = (
+	sortEmojis = (
 		emojis: Emoji[],
 		categories: EmojiCategory[]
 	): Emoji[] => {
@@ -99,7 +208,7 @@ export class EmojiDataService implements OnDestroy {
 		return this.emojis$.getValue();
 	};
 
-	mapEmojis = (): Map<string, Emoji> => {
+	createEmojiMap = (): Map<string, Emoji> => {
 		const emojis = this.getEmojis();
 		return new Map(emojis.map((emoji) => [emoji.id, emoji]));
 	};
@@ -114,59 +223,48 @@ export class EmojiDataService implements OnDestroy {
 		);
 	};
 
-	/*STORAGE*/
-	getRecentEmojisFromStorage = (): Emoji[] => {
-		const emojiIds = this.getEmojisFromStorage<string>('recent');
+	hasEmojiSkintones = (emoji: Emoji) => {
+		return !!emoji.skintones && emoji.skintones.length > 0;
+	};
 
-		const emojis = this.getEmojisByIds(emojiIds).map((emoji) =>
+	fetchRecentEmojisFromStorage = (): Emoji[] => {
+		const emojiIds =
+			this.emojiStorageService.retrieveFromStorage<string>('recent');
+
+		const emojis = this.fetchEmojisByIds(emojiIds).map((emoji) =>
 			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);
 
 		return emojis;
 	};
 
-	getFrequentEmojisFromStorage = (): Emoji[] => {
+	fetchFrequentEmojisFromStorage = (): Emoji[] => {
 		const frequentEmojis =
-			this.getEmojisFromStorage<FrequentEmoji>('frequent');
+			this.emojiStorageService.fetchFrequentEmojis();
 
-		const sortedFrequentEmojiIds = this.sortFrequentEmojis(
-			frequentEmojis
-		).map((frequentEmoji) => frequentEmoji.id);
-
-		const emojis = this.getEmojisByIds(sortedFrequentEmojiIds).map(
-			(emoji) =>
-				Object.assign({ ...emoji }, { category: 'suggestions' })
+		const emojis = this.fetchEmojisByIds(
+			frequentEmojis.map((frequentEmoji) => frequentEmoji.id)
+		).map((emoji) =>
+			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);
 		return emojis;
 	};
 
-	private sortFrequentEmojis = (
-		emojis: FrequentEmoji[],
-		sortDateDescending: boolean = false
-	) => {
-		return emojis.sort((a, b) => {
-			if (b.count !== a.count) {
-				return b.count - a.count;
-			}
-			return sortDateDescending
-				? b.dateInMs - a.dateInMs
-				: a.dateInMs - b.dateInMs;
-		});
-	};
-
 	addEmojiToRecents = (id: string): void => {
-		const emojiIds = this.addToStartInStorage<string>('recent', id);
-		const emojis = this.getEmojisByIds(emojiIds).map((emoji) =>
+		const emojiIds =
+			this.emojiStorageService.prependToStorage<string>('recent', id);
+		const emojis = this.fetchEmojisByIds(emojiIds).map((emoji) =>
 			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);
 
 		this.recentEmojis$.next(emojis);
 	};
 
-	incrementEmojiFrequency = (id: string): void => {
-		const frequentEmojis = this.incrementEmojiFrequencyInStorage(id);
+	increaseEmojiFrequency = (id: string): void => {
+		const frequentEmojis =
+			this.emojiStorageService.increaseEmojiFrequency(id);
 
-		const emojis = this.getEmojisByIds(
+		const emojis = this.fetchEmojisByIds(
 			frequentEmojis.map((frequentEmoji) => frequentEmoji.id)
 		).map((emoji) =>
 			Object.assign({ ...emoji }, { category: 'suggestions' })
@@ -174,75 +272,4 @@ export class EmojiDataService implements OnDestroy {
 
 		this.frequentEmojis$.next(emojis);
 	};
-
-	incrementEmojiFrequencyInStorage = (
-		id: string
-	): FrequentEmoji[] => {
-		const config = this.STORAGE_CONFIG.frequent;
-		const dateInMs = Date.now();
-
-		let frequentEmojis =
-			this.getEmojisFromStorage<FrequentEmoji>('frequent');
-
-		const emojiIndex = frequentEmojis.findIndex(
-			(emoji) => emoji.id === id
-		);
-
-		if (emojiIndex > -1) {
-			frequentEmojis[emojiIndex].count += 1;
-			frequentEmojis[emojiIndex].dateInMs = dateInMs;
-		} else {
-			frequentEmojis.push({ id, count: 1, dateInMs: dateInMs });
-		}
-
-		if (frequentEmojis.length > config.limit) {
-			frequentEmojis = this.sortFrequentEmojis(frequentEmojis, true);
-			frequentEmojis = frequentEmojis.slice(0, config.limit);
-		}
-
-		localStorage.setItem(
-			this.STORAGE_CONFIG.frequent.key,
-			JSON.stringify(frequentEmojis)
-		);
-
-		frequentEmojis = this.sortFrequentEmojis(frequentEmojis);
-
-		return frequentEmojis;
-	};
-
-	getEmojisFromStorage = <T>(
-		storageKey: keyof typeof this.STORAGE_CONFIG
-	): Array<T> => {
-		const response = localStorage.getItem(
-			this.STORAGE_CONFIG[storageKey].key
-		);
-
-		return !!response ? (JSON.parse(response) as T[]) : [];
-	};
-
-	addToStartInStorage = <T>(
-		storageKey: keyof typeof this.STORAGE_CONFIG,
-		data: T
-	): T[] => {
-		const config = this.STORAGE_CONFIG[storageKey];
-
-		let emojis = this.getEmojisFromStorage<T>(storageKey);
-		emojis.unshift(data);
-		emojis = [...new Set(emojis)];
-		if (emojis.length > config.limit) {
-			emojis = emojis.slice(0, config.limit);
-		}
-		localStorage.setItem(config.key, JSON.stringify(emojis));
-
-		return emojis;
-	};
-
-	hasEmojiSkintone = (emoji: Emoji) => {
-		return !!emoji.skintones && emoji.skintones.length > 0;
-	};
-
-	ngOnDestroy(): void {
-		this.destroy$.next();
-		this.destroy$.complete();
-	}
 }

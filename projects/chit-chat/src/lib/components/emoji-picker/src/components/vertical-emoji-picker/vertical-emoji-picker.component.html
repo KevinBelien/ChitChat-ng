@@ -56,10 +56,12 @@
 					<!-- <div class="emoji-container"> -->
 
 					<ch-emoji-button
-						[emoji]="emoji.value"
+						[emoji]="fetchEmojiById(emoji.id)"
 						[attr.data-emoji]="emoji.id"
 						[showSkintoneIndicator]="
-							!!emoji.skintones && emoji.skintones.length > 0
+							showSkintoneIndicator &&
+							!!emoji.skintones &&
+							emoji.skintones.length > 0
 						"
 					></ch-emoji-button>
 				</ng-container>

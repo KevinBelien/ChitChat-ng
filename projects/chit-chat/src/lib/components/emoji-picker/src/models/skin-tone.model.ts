@@ -14,3 +14,8 @@ export const skintones = [
 ] as const;
 
 export type Skintone = (typeof skintones)[number];
+
+export interface IndividualEmojiSkintone {
+	emojiId: string;
+	emojiValue: string;
+}

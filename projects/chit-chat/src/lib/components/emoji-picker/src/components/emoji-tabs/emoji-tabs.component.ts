@@ -60,16 +60,16 @@ export class EmojiTabsComponent {
 	};
 
 	protected handleHoverChange = (
-		e: HoverEvent,
+		evt: HoverEvent,
 		category: EmojiCategory
 	) => {
-		if (e.isHovered) this.categoryHovered = category;
+		if (evt.isHovered) this.categoryHovered = category;
 		else if (this.categoryHovered === category)
 			this.categoryHovered = null;
 	};
 
 	protected handleCategoryButtonClick = (
-		e: MouseEvent,
+		evt: MouseEvent,
 		category: EmojiCategory
 	) => {
 		this.selectedTab = category;

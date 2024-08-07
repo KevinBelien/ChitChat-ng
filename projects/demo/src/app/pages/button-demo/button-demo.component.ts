@@ -48,7 +48,7 @@ export class ButtonDemoComponent {
 
 	constructor() {}
 
-	handleClick = (e: MouseEvent) => {
+	handleClick = (evt: MouseEvent) => {
 		alert('button clicked');
 	};
 }

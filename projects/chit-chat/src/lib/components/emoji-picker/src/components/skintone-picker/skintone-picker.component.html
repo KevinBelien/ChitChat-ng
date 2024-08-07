@@ -1,9 +1,17 @@
-<div class="skintone-picker-container">
+<div
+	class="skintone-picker-container"
+	chClickTouchHold
+	dataAttribute="data-skintone"
+	(onClick)="handleEmojiClick($event)"
+>
 	<ng-container *ngIf="!!emoji">
 		<ng-container
 			*ngFor="let skintone of emoji.skintones; trackBy: trackSkintone"
 		>
-			<ch-emoji-button [emoji]="skintone.value"></ch-emoji-button>
+			<ch-emoji-button
+				[emoji]="skintone.value"
+				[attr.data-skintone]="skintone.value"
+			></ch-emoji-button>
 		</ng-container>
 	</ng-container>
 </div>

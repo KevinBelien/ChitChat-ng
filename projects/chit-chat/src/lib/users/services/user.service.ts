@@ -123,9 +123,9 @@ export class UserService {
 				doc(usersRef, data.uid),
 				JSON.parse(JSON.stringify(data))
 			);
-		} catch (e: any) {
+		} catch (evt: any) {
 			throw Error(
-				`Something went wrong when creating user with uid ${data.uid}. ${e}`
+				`Something went wrong when creating user with uid ${data.uid}. ${evt}`
 			);
 		}
 	};

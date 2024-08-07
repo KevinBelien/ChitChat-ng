@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import {
 	AfterViewInit,
 	ChangeDetectionStrategy,
+	ChangeDetectorRef,
 	Component,
 	EventEmitter,
 	HostBinding,
@@ -69,6 +70,7 @@ export class VerticalEmojiPickerComponent
 {
 	private dataService = inject(VerticalEmojiPickerService);
 	private emojiPickerStateService = inject(EmojiPickerStateService);
+	private cdr = inject(ChangeDetectorRef);
 
 	@ViewChild(CdkVirtualScrollViewport, { static: false })
 	viewport?: CdkVirtualScrollViewport;
@@ -82,6 +84,7 @@ export class VerticalEmojiPickerComponent
 	@Input() emojis: Emoji[] = [...emojis];
 	@Input() currentCategory: EmojiCategory = this.emojiCategories[0];
 	@Input() scrollWheelStep?: number;
+	@Input() showSkintoneIndicator: boolean = true;
 
 	@Output() currentCategoryChange = new EventEmitter<EmojiCategory>();
 	@Output() onClick = new EventEmitter<ClickEvent>();
@@ -296,12 +299,12 @@ export class VerticalEmojiPickerComponent
 			: (currentRow.value as EmojiCategory);
 	}
 
-	protected handleTouchHold = (e: TouchHoldEvent): void => {
-		this.onTouchHold.emit(e);
+	protected handleTouchHold = (evt: TouchHoldEvent): void => {
+		this.onTouchHold.emit(evt);
 	};
 
-	protected handleClick = (e: ClickEvent): void => {
-		this.onClick.emit(e);
+	protected handleClick = (evt: ClickEvent): void => {
+		this.onClick.emit(evt);
 	};
 
 	protected handleWheelScroll(event: WheelEvent): void {
@@ -324,5 +327,13 @@ export class VerticalEmojiPickerComponent
 
 	protected trackEmoji = (index: number, emoji: Emoji): string => {
 		return emoji.value;
+	};
+
+	protected fetchEmojiById = (id: string) => {
+		return this.dataService.fetchEmojiById(id)?.value;
+	};
+
+	requestChangeDetection = () => {
+		this.cdr.markForCheck();
 	};
 }

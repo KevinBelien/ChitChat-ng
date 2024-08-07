@@ -2,11 +2,17 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
+	EventEmitter,
 	HostBinding,
 	inject,
 	Input,
+	Output,
 	Renderer2,
 } from '@angular/core';
+import {
+	ClickEvent,
+	ClickTouchHoldDirective,
+} from 'chit-chat/src/lib/utils';
 import { AlternativeSkintone, Emoji } from '../../models';
 import { EmojiPickerStateService } from '../../services/emoji-picker-state.service';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
@@ -14,7 +20,11 @@ import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 @Component({
 	selector: 'lib-skintone-picker',
 	standalone: true,
-	imports: [CommonModule, EmojiButtonComponent],
+	imports: [
+		CommonModule,
+		EmojiButtonComponent,
+		ClickTouchHoldDirective,
+	],
 	templateUrl: './skintone-picker.component.html',
 	styleUrl: './skintone-picker.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -34,6 +44,9 @@ export class SkintonePickerComponent {
 
 	@HostBinding('style.--item-size-multiplier')
 	itemSizeMultiplier?: number;
+
+	@Output()
+	onSelectionChanged = new EventEmitter<ClickEvent>();
 
 	constructor() {
 		this.emojiPickerStateService.emojiSizeInPx$.subscribe(
@@ -68,5 +81,10 @@ export class SkintonePickerComponent {
 		skintone: AlternativeSkintone
 	) => {
 		return skintone.skintone;
+	};
+
+	protected handleEmojiClick = (evt: ClickEvent) => {
+		if (evt.action === 'right-click') return;
+		this.onSelectionChanged.emit(evt);
 	};
 }
