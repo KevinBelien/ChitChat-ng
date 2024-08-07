@@ -1,6 +1,6 @@
 .ch-emoji-picker {
-	height: var(--picker-height, 400px);
-	width: var(--picker-width, 400px);
+	height: calc(var(--picker-height, 400) * 1px);
+	width: calc(var(--picker-width, 400) * 1px);
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -10,7 +10,7 @@
 	);
 
 	.emoji-tab-bar {
-		padding-inline: calc(var(--padding-inline) * 1px);
+		padding-inline: calc(var(--ch-padding-inline) * 1px);
 		background-color: var(
 			--ch-emoji-picker-tab-bar-background,
 			var(
@@ -29,4 +29,24 @@
 .ch-emoji-picker-container {
 	position: relative;
 	flex-grow: 1;
+}
+
+.ch-search-container {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding-inline: calc(var(--ch-padding-inline) * 1px);
+
+	.ch-searchbar-container {
+		flex: 1;
+		min-width: 0;
+		display: block;
+		position: relative;
+
+		.ch-searchbar {
+			transition: all 0.2s ease-in-out;
+			width: 100%;
+			overflow: clip;
+		}
+	}
 }

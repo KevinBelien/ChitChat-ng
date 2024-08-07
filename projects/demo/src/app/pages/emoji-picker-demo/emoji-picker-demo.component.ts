@@ -10,6 +10,7 @@ import {
 	EmojiPickerComponent,
 	EmojiSizeKey,
 	EmojiSuggestionMode,
+	SkintoneSetting,
 } from 'chit-chat/src/lib/components/emoji-picker';
 
 @Component({
@@ -33,11 +34,13 @@ export class EmojiPickerDemoComponent {
 		categories: EmojiCategory[];
 		categoryBarPosition: CategoryBarPosition;
 		suggestionMode: EmojiSuggestionMode;
+		skintoneSettings: SkintoneSetting;
 	} = {
 		emojiSize: 'default',
 		categories: [...emojiCategories],
 		categoryBarPosition: 'top',
 		suggestionMode: 'recent',
+		skintoneSettings: 'both',
 	};
 
 	emojiSizes: EmojiSizeKey[] = ['default', 'xs', 'sm', 'lg', 'xl'];

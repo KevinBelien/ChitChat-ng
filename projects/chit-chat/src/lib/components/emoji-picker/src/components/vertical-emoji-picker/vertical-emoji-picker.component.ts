@@ -105,16 +105,16 @@ export class VerticalEmojiPickerComponent
 	destroy$ = new Subject<void>();
 
 	@HostBinding('style.--sticky-offset')
-	stickyHeaderOffset: string = '0px';
+	stickyHeaderOffset: number = 0;
 
 	ngAfterViewInit(): void {
 		this.viewport?.renderedRangeStream
 			.pipe(takeUntil(this.destroy$))
 			.subscribe(() => {
 				this.viewport?.checkViewportSize();
-				this.stickyHeaderOffset =
-					-(this.viewport?.getOffsetToRenderedContentStart() || 0) +
-					'px';
+				this.stickyHeaderOffset = -(
+					this.viewport?.getOffsetToRenderedContentStart() || 0
+				);
 			});
 
 		combineLatest([

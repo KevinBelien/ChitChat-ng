@@ -1,5 +1,10 @@
 import { inject, Injectable, OnDestroy } from '@angular/core';
-import { BehaviorSubject, Subject, takeUntil } from 'rxjs';
+import {
+	BehaviorSubject,
+	combineLatest,
+	Subject,
+	takeUntil,
+} from 'rxjs';
 import { emojis } from '../data';
 import {
 	Emoji,
@@ -30,6 +35,7 @@ export class EmojiDataService implements OnDestroy {
 	readonly skintoneSetting$ = new BehaviorSubject<SkintoneSetting>(
 		'none'
 	);
+	readonly globalSkintoneSetting$: BehaviorSubject<Skintone>;
 
 	destroy$ = new Subject<void>();
 
@@ -58,9 +64,16 @@ export class EmojiDataService implements OnDestroy {
 				);
 			});
 
-		this.skintoneSetting$
+		this.globalSkintoneSetting$ = new BehaviorSubject<Skintone>(
+			this.fetchGlobalSkintone()
+		);
+
+		combineLatest([
+			this.skintoneSetting$,
+			this.globalSkintoneSetting$,
+		])
 			.pipe(takeUntil(this.destroy$))
-			.subscribe((skintoneSetting) => {
+			.subscribe(([skintoneSetting, globalSkintone]) => {
 				this.applySkintoneSetting(skintoneSetting);
 			});
 	}
@@ -90,11 +103,11 @@ export class EmojiDataService implements OnDestroy {
 
 	updateGlobalSkintone = (skintone: Skintone) => {
 		this.emojiStorageService.updateGlobalSkintone(skintone);
+		this.globalSkintoneSetting$.next(skintone);
 	};
 
 	applyGlobalSkintoneSetting = (): void => {
-		const globalSkintone =
-			this.emojiStorageService.fetchGlobalSkintone();
+		const globalSkintone = this.fetchGlobalSkintone();
 
 		this.applyUniformSkintone(globalSkintone);
 	};
@@ -146,6 +159,10 @@ export class EmojiDataService implements OnDestroy {
 		});
 
 		this.emojiMap$.next(emojiMap);
+	};
+
+	fetchGlobalSkintone = () => {
+		return this.emojiStorageService.fetchGlobalSkintone();
 	};
 
 	fetchSkintoneFromEmoji = (

@@ -89,6 +89,8 @@ body.ch-light-theme {
 
 	--ch-background-color: #fff;
 	--ch-text-color: #181818;
+	--ch-hover-color: #dddddd;
+	--ch-select-color: #afafaf;
 
 	--ch-color-primary: #138e6b;
 	--ch-color-success: #23a55a;
@@ -183,4 +185,6 @@ body.ch-dark-theme {
 	--ch-emoji-variant-indicator-color-hover: #f1f1f1;
 	--ch-emoji-picker-tab-bar-background: #1e1e1e;
 	--ch-skintone-picker-background: #343434;
+	--ch-hover-color: #3d3d3d;
+	--ch-select-color: #646464;
 }

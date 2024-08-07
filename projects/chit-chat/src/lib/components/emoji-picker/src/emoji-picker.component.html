@@ -1,4 +1,17 @@
 <div class="ch-emoji-picker">
+	<div class="ch-search-container">
+		<div class="ch-searchbar-container">
+			<input class="ch-searchbar" />
+		</div>
+		<ng-container *ngIf="isGlobalSkintoneEnabled">
+			<ch-skintone-picker
+				*ngIf="globalSkintone$ | async as globalSkintone"
+				[selectedSkintone]="globalSkintone"
+				[size]="20"
+				(onSelectionChanged)="handleGlobalSkintoneChanged($event)"
+			></ch-skintone-picker>
+		</ng-container>
+	</div>
 	<div
 		class="emoji-tab-bar"
 		[ngClass]="{ 'bar-bottom': categoryBarPosition === 'bottom' }"
@@ -15,12 +28,12 @@
 			*ngIf="orientation === 'vertical'; else horizontalEmojiPicker"
 		>
 			<ch-vertical-emoji-picker
-				*ngIf="allEmojis$ | async as allEmojis"
+				*ngIf="emojis$ | async as emojis"
 				[height]="height"
 				[width]="width"
-				[emojis]="allEmojis.emojis"
-				[suggestionEmojis]="allEmojis.suggestionEmojis"
-				[showSkintoneIndicator]="isAlternativeSkintoneEnabled"
+				[emojis]="emojis.emojis"
+				[suggestionEmojis]="emojis.suggestionEmojis"
+				[showSkintoneIndicator]="isIndividualSkintoneEnabled"
 				[emojiSize]="emojiSize"
 				[(currentCategory)]="selectedCategory"
 				[scrollbarVisible]="scrollbarVisible"

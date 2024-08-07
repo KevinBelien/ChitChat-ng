@@ -6,5 +6,6 @@ export * from './emoji-suggestion-mode.model';
 export * from './emoji.model';
 export * from './frequent-emoji.model';
 export * from './skin-tone.model';
+export * from './skintone-color.model';
 export * from './skintone-setting.model';
 export * from './suggestion-emojis.model';

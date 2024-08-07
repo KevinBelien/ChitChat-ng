@@ -5,6 +5,7 @@
 			[emojiCategories]="form.categories"
 			[categoryBarPosition]="form.categoryBarPosition"
 			[suggestionMode]="form.suggestionMode"
+			[skintoneSetting]="form.skintoneSettings"
 		></ch-emoji-picker>
 	</div>
 
@@ -49,6 +50,17 @@
 				<mat-select [(ngModel)]="form.suggestionMode">
 					<mat-option value="recent">Recent</mat-option>
 					<mat-option value="frequent">Frequent</mat-option>
+				</mat-select>
+			</mat-form-field>
+		</div>
+		<div class="form-item">
+			<mat-form-field>
+				<mat-label>Skintone settings</mat-label>
+				<mat-select [(ngModel)]="form.skintoneSettings">
+					<mat-option value="both">Both</mat-option>
+					<mat-option value="global">Global</mat-option>
+					<mat-option value="individual">Individual</mat-option>
+					<mat-option value="none">None</mat-option>
 				</mat-select>
 			</mat-form-field>
 		</div>

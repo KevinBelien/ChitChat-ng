@@ -6,7 +6,7 @@
 .ch-scroll-wrapper {
 	height: 100%;
 	width: 100%;
-	padding-inline: calc(var(--padding-inline) * 1px);
+	padding-inline: calc(var(--ch-padding-inline) * 1px);
 }
 
 .ch-virtual-category {
@@ -22,7 +22,8 @@
 	font-weight: 500;
 	user-select: none;
 	height: calc(
-		var(--emoji-size, 24px) * var(--item-size-multiplier, 1.5)
+		var(--ch-emoji-size, 24px) *
+			var(--ch-emoji-btn-size-multiplier, 1.5) * 1px
 	);
 	display: flex;
 	align-items: center;
@@ -33,7 +34,7 @@
 .ch-sticky {
 	position: -webkit-sticky;
 	position: sticky;
-	top: calc(var(--sticky-offset, 0px) - 1px);
+	top: calc(var(--sticky-offset, 0) * 1px - 1px);
 }
 
 .ch-row {

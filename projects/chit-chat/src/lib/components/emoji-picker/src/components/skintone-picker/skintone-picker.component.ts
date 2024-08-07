@@ -1,90 +1,84 @@
 import { CommonModule } from '@angular/common';
 import {
-	ChangeDetectionStrategy,
 	Component,
 	EventEmitter,
 	HostBinding,
-	inject,
 	Input,
+	OnChanges,
 	Output,
-	Renderer2,
+	SimpleChanges,
 } from '@angular/core';
 import {
-	ClickEvent,
-	ClickTouchHoldDirective,
-} from 'chit-chat/src/lib/utils';
-import { AlternativeSkintone, Emoji } from '../../models';
-import { EmojiPickerStateService } from '../../services/emoji-picker-state.service';
-import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
+	Skintone,
+	SkintoneColor,
+	skintoneColors,
+} from '../../models';
 
 @Component({
-	selector: 'lib-skintone-picker',
+	selector: 'ch-skintone-picker',
 	standalone: true,
-	imports: [
-		CommonModule,
-		EmojiButtonComponent,
-		ClickTouchHoldDirective,
-	],
+	imports: [CommonModule],
 	templateUrl: './skintone-picker.component.html',
 	styleUrl: './skintone-picker.component.scss',
-	changeDetection: ChangeDetectionStrategy.OnPush,
-	host: {
-		'collision-id': crypto.randomUUID(),
-		class: 'ch-element',
-	},
 })
-export class SkintonePickerComponent {
-	private emojiPickerStateService = inject(EmojiPickerStateService);
-	private renderer = inject(Renderer2);
+export class SkintonePickerComponent implements OnChanges {
+	isPickerOpen = false;
+
+	skintoneColors = [...skintoneColors];
 
 	@Input()
-	emoji?: Emoji;
+	selectedSkintone: Skintone = 'default';
 
-	@HostBinding('style.--emoji-size') emojiSizeInPx?: string;
+	@Input()
+	@HostBinding('style.--ch-skincolor-swatch-size')
+	size: number = 20;
 
-	@HostBinding('style.--item-size-multiplier')
-	itemSizeMultiplier?: number;
+	@HostBinding('style.--ch-skincolor-swatch-padding')
+	itemPadding: number = 12;
+
+	@HostBinding('style.--ch-skincolor-swatch-count')
+	skintoneCount: number = this.skintoneColors.length;
 
 	@Output()
-	onSelectionChanged = new EventEmitter<ClickEvent>();
+	onSelectionChanged = new EventEmitter<Skintone>();
 
-	constructor() {
-		this.emojiPickerStateService.emojiSizeInPx$.subscribe(
-			(emojiSizeInPx) => {
-				this.emojiSizeInPx = `${emojiSizeInPx}px`;
-			}
-		);
-		this.emojiPickerStateService.emojiItemSizeMultiplier$.subscribe(
-			(emojiContainerSizeMultiplier) => {
-				this.itemSizeMultiplier = emojiContainerSizeMultiplier;
-			}
-		);
+	selectedColor: SkintoneColor = this.skintoneColors[0];
 
-		this.disableContextMenu();
-	}
-
-	private disableContextMenu = () => {
-		const overlayElement = document.querySelector(
-			'.cdk-overlay-container'
-		) as HTMLElement;
-		if (overlayElement) {
-			this.renderer.listen(
-				overlayElement,
-				'contextmenu',
-				(event: MouseEvent) => event.preventDefault()
+	ngOnChanges(changes: SimpleChanges): void {
+		if (changes['selectedSkintone']) {
+			this.selectedColor = this.getColorBySkintone(
+				changes['selectedSkintone'].currentValue
 			);
 		}
+	}
+
+	getColorBySkintone = (skintone: Skintone): SkintoneColor => {
+		return (
+			this.skintoneColors.find(
+				(color) => color.skintone === skintone
+			) ?? this.skintoneColors[0]
+		);
 	};
 
-	protected trackSkintone = (
-		index: number,
-		skintone: AlternativeSkintone
-	) => {
-		return skintone.skintone;
+	togglePicker() {
+		this.isPickerOpen = !this.isPickerOpen;
+	}
+
+	handleClick = (skintoneColor: SkintoneColor, event: Event) => {
+		event.stopPropagation();
+		this.selectedColor = skintoneColor;
+		this.onSelectionChanged.emit(skintoneColor.skintone);
+		this.togglePicker();
 	};
 
-	protected handleEmojiClick = (evt: ClickEvent) => {
-		if (evt.action === 'right-click') return;
-		this.onSelectionChanged.emit(evt);
+	getPosition = (index: number) => {
+		if (!this.isPickerOpen) return 'translateX(0px)';
+
+		const position = -(index * (this.size + this.itemPadding));
+		return `translateX(${position}px) ${
+			this.selectedColor === this.skintoneColors[index]
+				? 'scale(1.2)'
+				: ''
+		}`;
 	};
 }
