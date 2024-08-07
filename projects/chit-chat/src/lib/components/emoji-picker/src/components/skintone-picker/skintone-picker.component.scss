@@ -34,8 +34,7 @@
 			width: calc(var(--ch-skincolor-swatch-size) * 1px);
 			height: calc(var(--ch-skincolor-swatch-size) * 1px);
 			z-index: 0;
-			transition: transform 0.3s ease-in-out,
-				opacity 0.35s ease-in-out;
+			transition: transform 0.3s ease-in-out, opacity 0.4s ease-in-out;
 			outline: none;
 			box-shadow: none;
 			border: none;
@@ -44,16 +43,12 @@
 			&.selected {
 				z-index: 1;
 			}
-
-			&:hover {
-				box-shadow: 0 0 0 3px var(--ch-hover-color);
-			}
 		}
 	}
 
 	&:not(.open) {
-		.ch-skintone-select .ch-color-swatch {
-			&:not(.selected) {
+		.ch-skintone-select {
+			.ch-color-swatch:not(.selected) {
 				opacity: 0;
 			}
 		}
@@ -67,10 +62,15 @@
 				) * 1px * var(--ch-skincolor-swatch-count)
 		);
 
-		.ch-skintone-select .ch-color-swatch {
-			&.selected {
-				box-shadow: 0 0 0 1px var(--ch-emoji-picker-background),
-					0 0 0 3px var(--ch-select-color);
+		.ch-skintone-select {
+			.ch-color-swatch {
+				&:hover {
+					box-shadow: 0 0 0 2.5px var(--ch-hover-color);
+				}
+				&.selected {
+					box-shadow: 0 0 0 1.2px var(--ch-emoji-picker-background),
+						0 0 0 2px var(--ch-select-color);
+				}
 			}
 		}
 	}
