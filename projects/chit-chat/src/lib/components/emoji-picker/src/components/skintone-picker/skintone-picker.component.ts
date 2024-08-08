@@ -25,7 +25,7 @@ import {
 	styleUrl: './skintone-picker.component.scss',
 })
 export class SkintonePickerComponent implements OnChanges {
-	isPickerOpen$ = new BehaviorSubject<boolean>(false);
+	isOpen$ = new BehaviorSubject<boolean>(false);
 
 	skintoneColors = [...skintoneColors];
 
@@ -64,17 +64,17 @@ export class SkintonePickerComponent implements OnChanges {
 	};
 
 	toggle() {
-		this.isPickerOpen$.next(!this.isPickerOpen$.getValue());
+		this.isOpen$.next(!this.isOpen$.getValue());
 	}
 
 	close = () => {
-		this.isPickerOpen$.next(false);
+		this.isOpen$.next(false);
 	};
 
 	handleClick = (skintoneColor: SkintoneColor, event: Event) => {
 		event.stopPropagation();
 
-		if (this.isPickerOpen$.getValue()) {
+		if (this.isOpen$.getValue()) {
 			this.selectedColor = skintoneColor;
 			this.onSelectionChanged.emit(skintoneColor.skintone);
 		}
@@ -82,7 +82,7 @@ export class SkintonePickerComponent implements OnChanges {
 	};
 
 	getPosition = (index: number) => {
-		if (!this.isPickerOpen$.getValue()) return 'translateX(0px)';
+		if (!this.isOpen$.getValue()) return 'translateX(0px)';
 
 		const position = -(index * (this.size + this.itemPadding));
 		return `translateX(${position}px) ${

@@ -1,7 +1,4 @@
-<div
-	class="ch-color-picker-container"
-	[class.open]="isPickerOpen$ | async"
->
+<div class="ch-color-picker-container" [class.open]="isOpen$ | async">
 	<div class="ch-skintone-select">
 		<button
 			*ngFor="let skintoneColor of skintoneColors; let i = index"

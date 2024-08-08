@@ -118,18 +118,22 @@ export class EmojiDataService implements OnDestroy {
 
 		const emojiMap = this.emojiMap$.getValue();
 
-		for (const record of response) {
-			const emoji = emojiMap.get(record.emojiId);
+		emojiMap.forEach((emoji: Emoji) => {
+			if (!emoji.skintones) {
+				return;
+			}
 
-			if (!emoji) break;
-
+			const record = response.find(
+				(item) => item.emojiId === emoji.id
+			);
 			const newEmoji = {
 				...emoji,
-				value: record.emojiValue,
+				value: !!record
+					? record.emojiValue
+					: this.fetchSkintoneFromEmoji(emoji, 'default'),
 			};
-
-			emojiMap.set(record.emojiId, newEmoji);
-		}
+			emojiMap.set(emoji.id, newEmoji);
+		});
 		this.emojiMap$.next(emojiMap);
 	};
 
