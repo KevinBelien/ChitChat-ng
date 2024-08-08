@@ -77,7 +77,7 @@ export class VerticalEmojiPickerComponent
 
 	@Input() emojiSize: EmojiSizeKey = 'default';
 	@Input() height: number = 400;
-	@Input() width: number = 250;
+	@Input() width: number = 350;
 	@Input() scrollbarVisible: boolean = true;
 	@Input() suggestionEmojis: SuggestionEmojis | null = null;
 	@Input() emojiCategories: EmojiCategory[] = [...emojiCategories];
@@ -216,6 +216,7 @@ export class VerticalEmojiPickerComponent
 	private getViewportWidth = (): number => {
 		return (
 			this.width -
+			0.1 -
 			this.getScrollbarWidth() -
 			this.emojiPickerStateService.padding$.getValue() * 2
 		);
@@ -228,7 +229,7 @@ export class VerticalEmojiPickerComponent
 	private getGlobalScrollbarWidth = (): number => {
 		const root = document.querySelector(':root') as HTMLElement;
 		const scrollbarWidth = getComputedStyle(root).getPropertyValue(
-			'--ch-scrollbar-width'
+			'--ch-scrollbar-size'
 		);
 		return parseFloat(scrollbarWidth.replace('px', '').trim());
 	};

@@ -932,7 +932,7 @@ export const emojis: Emoji[] = [
 		],
 	},
 	{
-		id: '8d54fef6-63cd-4d07-a92e-0d4eac8683ad',
+		id: '8d54fef6-63cd-4d07-a12e-0d4eac8683ad',
 		name: 'shushing face',
 		value: '🤫',
 		category: 'smileys-people',
@@ -954,11 +954,31 @@ export const emojis: Emoji[] = [
 		],
 	},
 	{
+		id: 'd97165d3-e910-4f20-ac5b-89az99813ed6',
+		name: 'shaking face',
+		value: '🫨',
+		category: 'smileys-people',
+		order: 60,
+		keywords: [
+			'face',
+			'shaky',
+			'shaking',
+			'trembling',
+			'vibrating',
+			'quivering',
+			'shocked',
+			'startled',
+			'shuddering',
+			'wobbly',
+			'distressed',
+		],
+	},
+	{
 		id: '8d54fef6-63cd-4d07-a92e-0d4eac8683ad',
 		name: 'melting face',
 		value: '🫠',
 		category: 'smileys-people',
-		order: 60,
+		order: 61,
 		keywords: [
 			'melt',
 			'melting',
@@ -979,7 +999,7 @@ export const emojis: Emoji[] = [
 		name: 'face with medical mask',
 		value: '😷',
 		category: 'smileys-people',
-		order: 60,
+		order: 62,
 		keywords: [
 			'face',
 			'sick',
@@ -1003,7 +1023,7 @@ export const emojis: Emoji[] = [
 		name: 'face with thermometer',
 		value: '🤒',
 		category: 'smileys-people',
-		order: 61,
+		order: 63,
 		keywords: [
 			'face',
 			'sick',
@@ -1026,7 +1046,7 @@ export const emojis: Emoji[] = [
 		name: 'face with head-bandage',
 		value: '🤕',
 		category: 'smileys-people',
-		order: 62,
+		order: 64,
 		keywords: [
 			'face',
 			'hurt',
@@ -1048,7 +1068,7 @@ export const emojis: Emoji[] = [
 		name: 'nauseated face',
 		value: '🤢',
 		category: 'smileys-people',
-		order: 63,
+		order: 65,
 		keywords: [
 			'face',
 			'vomit',
@@ -1070,7 +1090,7 @@ export const emojis: Emoji[] = [
 		name: 'face vomiting',
 		value: '🤮',
 		category: 'smileys-people',
-		order: 64,
+		order: 66,
 		keywords: [
 			'face',
 			'vomit',
@@ -1092,7 +1112,7 @@ export const emojis: Emoji[] = [
 		name: 'sneezing face',
 		value: '🤧',
 		category: 'smileys-people',
-		order: 65,
+		order: 67,
 		keywords: [
 			'face',
 			'sneeze',
@@ -1114,7 +1134,7 @@ export const emojis: Emoji[] = [
 		name: 'money-mouth face',
 		value: '🤑',
 		category: 'smileys-people',
-		order: 66,
+		order: 68,
 		keywords: [
 			'face',
 			'rich',
@@ -1134,7 +1154,7 @@ export const emojis: Emoji[] = [
 		name: 'cowboy hat face',
 		value: '🤠',
 		category: 'smileys-people',
-		order: 67,
+		order: 69,
 		keywords: [
 			'face',
 			'cowboy',
@@ -1153,7 +1173,7 @@ export const emojis: Emoji[] = [
 		name: 'smiling face with horns',
 		value: '😈',
 		category: 'smileys-people',
-		order: 68,
+		order: 70,
 		keywords: [
 			'face',
 			'devil',
@@ -1172,7 +1192,7 @@ export const emojis: Emoji[] = [
 		name: 'angry face with horns',
 		value: '👿',
 		category: 'smileys-people',
-		order: 69,
+		order: 71,
 		keywords: [
 			'face',
 			'devil',
@@ -1191,7 +1211,7 @@ export const emojis: Emoji[] = [
 		name: 'ogre',
 		value: '👹',
 		category: 'smileys-people',
-		order: 70,
+		order: 72,
 		keywords: [
 			'monster',
 			'ogre',
@@ -1209,7 +1229,7 @@ export const emojis: Emoji[] = [
 		name: 'goblin',
 		value: '👺',
 		category: 'smileys-people',
-		order: 71,
+		order: 73,
 		keywords: [
 			'monster',
 			'goblin',
@@ -1227,7 +1247,7 @@ export const emojis: Emoji[] = [
 		name: 'clown face',
 		value: '🤡',
 		category: 'smileys-people',
-		order: 72,
+		order: 74,
 		keywords: [
 			'face',
 			'clown',
@@ -1245,7 +1265,7 @@ export const emojis: Emoji[] = [
 		name: 'pile of poo',
 		value: '💩',
 		category: 'smileys-people',
-		order: 73,
+		order: 75,
 		keywords: [
 			'poop',
 			'shitface',
@@ -1264,7 +1284,7 @@ export const emojis: Emoji[] = [
 		name: 'ghost',
 		value: '👻',
 		category: 'smileys-people',
-		order: 74,
+		order: 76,
 		keywords: [
 			'monster',
 			'creature',
@@ -1282,7 +1302,7 @@ export const emojis: Emoji[] = [
 		name: 'skull',
 		value: '💀',
 		category: 'smileys-people',
-		order: 75,
+		order: 77,
 		keywords: [
 			'dead',
 			'skeleton',
@@ -1300,7 +1320,7 @@ export const emojis: Emoji[] = [
 		name: 'skull and crossbones',
 		value: '☠',
 		category: 'smileys-people',
-		order: 76,
+		order: 78,
 		keywords: [
 			'dead',
 			'danger',
@@ -1319,7 +1339,7 @@ export const emojis: Emoji[] = [
 		name: 'alien',
 		value: '👽',
 		category: 'smileys-people',
-		order: 77,
+		order: 79,
 		keywords: [
 			'creature',
 			'extraterrestrial',
@@ -1338,7 +1358,7 @@ export const emojis: Emoji[] = [
 		name: 'alien monster',
 		value: '👾',
 		category: 'smileys-people',
-		order: 78,
+		order: 80,
 		keywords: [
 			'monster',
 			'computer',
@@ -1357,7 +1377,7 @@ export const emojis: Emoji[] = [
 		name: 'robot',
 		value: '🤖',
 		category: 'smileys-people',
-		order: 79,
+		order: 81,
 		keywords: [
 			'computer',
 			'machine',
@@ -1376,7 +1396,7 @@ export const emojis: Emoji[] = [
 		name: 'jack-o-lantern',
 		value: '🎃',
 		category: 'smileys-people',
-		order: 80,
+		order: 82,
 		keywords: [
 			'halloween',
 			'pumpkin',
@@ -1395,7 +1415,7 @@ export const emojis: Emoji[] = [
 		name: 'grinning cat',
 		value: '😺',
 		category: 'smileys-people',
-		order: 81,
+		order: 83,
 		keywords: [
 			'cat',
 			'animal',
@@ -1413,7 +1433,7 @@ export const emojis: Emoji[] = [
 		name: 'grinning cat with smiling eyes',
 		value: '😸',
 		category: 'smileys-people',
-		order: 82,
+		order: 84,
 		keywords: [
 			'cat',
 			'animal',
@@ -1432,7 +1452,7 @@ export const emojis: Emoji[] = [
 		name: 'cat with tears of joy',
 		value: '😹',
 		category: 'smileys-people',
-		order: 83,
+		order: 85,
 		keywords: [
 			'cat',
 			'animal',
@@ -1451,7 +1471,7 @@ export const emojis: Emoji[] = [
 		name: 'smiling cat with heart-eyes',
 		value: '😻',
 		category: 'smileys-people',
-		order: 84,
+		order: 86,
 		keywords: [
 			'cat',
 			'animal',
@@ -1470,7 +1490,7 @@ export const emojis: Emoji[] = [
 		name: 'cat with wry smile',
 		value: '😼',
 		category: 'smileys-people',
-		order: 85,
+		order: 87,
 		keywords: [
 			'cat',
 			'animal',
@@ -1488,7 +1508,7 @@ export const emojis: Emoji[] = [
 		name: 'kissing cat',
 		value: '😽',
 		category: 'smileys-people',
-		order: 86,
+		order: 88,
 		keywords: [
 			'cat',
 			'animal',
@@ -1505,7 +1525,7 @@ export const emojis: Emoji[] = [
 		name: 'weary cat',
 		value: '🙀',
 		category: 'smileys-people',
-		order: 87,
+		order: 89,
 		keywords: [
 			'cat',
 			'animal',
@@ -1524,7 +1544,7 @@ export const emojis: Emoji[] = [
 		name: 'crying cat',
 		value: '😿',
 		category: 'smileys-people',
-		order: 88,
+		order: 90,
 		keywords: [
 			'cat',
 			'animal',
@@ -1543,7 +1563,7 @@ export const emojis: Emoji[] = [
 		name: 'pouting cat',
 		value: '😾',
 		category: 'smileys-people',
-		order: 89,
+		order: 91,
 		keywords: [
 			'cat',
 			'animal',
@@ -1561,7 +1581,7 @@ export const emojis: Emoji[] = [
 		name: 'heart hands',
 		value: '🫶',
 		category: 'smileys-people',
-		order: 90,
+		order: 92,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1611,7 +1631,7 @@ export const emojis: Emoji[] = [
 		name: 'palms up together',
 		value: '🤲',
 		category: 'smileys-people',
-		order: 91,
+		order: 93,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1661,7 +1681,7 @@ export const emojis: Emoji[] = [
 		name: 'open hands',
 		value: '👐',
 		category: 'smileys-people',
-		order: 92,
+		order: 94,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1710,7 +1730,7 @@ export const emojis: Emoji[] = [
 		name: 'raising hands',
 		value: '🙌',
 		category: 'smileys-people',
-		order: 93,
+		order: 95,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1760,7 +1780,7 @@ export const emojis: Emoji[] = [
 		name: 'clapping hands',
 		value: '👏',
 		category: 'smileys-people',
-		order: 94,
+		order: 96,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1809,7 +1829,7 @@ export const emojis: Emoji[] = [
 		name: 'handshake',
 		value: '🤝',
 		category: 'smileys-people',
-		order: 95,
+		order: 97,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1858,7 +1878,7 @@ export const emojis: Emoji[] = [
 		name: 'thumbs up',
 		value: '👍',
 		category: 'smileys-people',
-		order: 96,
+		order: 98,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1908,7 +1928,7 @@ export const emojis: Emoji[] = [
 		name: 'thumbs down',
 		value: '👎',
 		category: 'smileys-people',
-		order: 97,
+		order: 99,
 		skintones: [
 			{
 				skintone: 'default',
@@ -1958,7 +1978,7 @@ export const emojis: Emoji[] = [
 		name: 'oncoming fist',
 		value: '👊',
 		category: 'smileys-people',
-		order: 98,
+		order: 100,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2008,7 +2028,7 @@ export const emojis: Emoji[] = [
 		name: 'raised fist',
 		value: '✊',
 		category: 'smileys-people',
-		order: 99,
+		order: 101,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2058,7 +2078,7 @@ export const emojis: Emoji[] = [
 		name: 'left-facing fist',
 		value: '🤛',
 		category: 'smileys-people',
-		order: 100,
+		order: 102,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2107,7 +2127,7 @@ export const emojis: Emoji[] = [
 		name: 'right-facing fist',
 		value: '🤜',
 		category: 'smileys-people',
-		order: 101,
+		order: 103,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2156,7 +2176,7 @@ export const emojis: Emoji[] = [
 		name: 'leftwards pushing hand',
 		value: '🫷',
 		category: 'smileys-people',
-		order: 102,
+		order: 104,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2205,7 +2225,7 @@ export const emojis: Emoji[] = [
 		name: 'rightwards pushing hand',
 		value: '🫸',
 		category: 'smileys-people',
-		order: 103,
+		order: 105,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2254,7 +2274,7 @@ export const emojis: Emoji[] = [
 		name: 'crossed fingers',
 		value: '🤞',
 		category: 'smileys-people',
-		order: 104,
+		order: 106,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2303,7 +2323,7 @@ export const emojis: Emoji[] = [
 		name: 'victory hand',
 		value: '✌️',
 		category: 'smileys-people',
-		order: 105,
+		order: 107,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2353,7 +2373,7 @@ export const emojis: Emoji[] = [
 		name: 'hand with index finger and thumb crossed',
 		value: '🫰',
 		category: 'smileys-people',
-		order: 106,
+		order: 108,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2402,7 +2422,7 @@ export const emojis: Emoji[] = [
 		name: 'love-you gesture',
 		value: '🤟',
 		category: 'smileys-people',
-		order: 107,
+		order: 109,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2451,7 +2471,7 @@ export const emojis: Emoji[] = [
 		name: 'sign of the horns',
 		value: '🤘',
 		category: 'smileys-people',
-		order: 108,
+		order: 110,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2500,7 +2520,7 @@ export const emojis: Emoji[] = [
 		name: 'ok hand',
 		value: '👌',
 		category: 'smileys-people',
-		order: 109,
+		order: 111,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2550,7 +2570,7 @@ export const emojis: Emoji[] = [
 		name: 'pinched fingers',
 		value: '🤌',
 		category: 'smileys-people',
-		order: 110,
+		order: 112,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2599,7 +2619,7 @@ export const emojis: Emoji[] = [
 		name: 'pinching hand',
 		value: '🤏',
 		category: 'smileys-people',
-		order: 111,
+		order: 113,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2647,7 +2667,7 @@ export const emojis: Emoji[] = [
 		name: 'palm down hand',
 		value: '🫳',
 		category: 'smileys-people',
-		order: 112,
+		order: 114,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2696,7 +2716,7 @@ export const emojis: Emoji[] = [
 		name: 'palm up hand',
 		value: '🫴',
 		category: 'smileys-people',
-		order: 113,
+		order: 115,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2745,7 +2765,7 @@ export const emojis: Emoji[] = [
 		name: 'backhand index pointing left',
 		value: '👈',
 		category: 'smileys-people',
-		order: 114,
+		order: 116,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2793,7 +2813,7 @@ export const emojis: Emoji[] = [
 		name: 'backhand index pointing right',
 		value: '👉',
 		category: 'smileys-people',
-		order: 115,
+		order: 117,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2841,7 +2861,7 @@ export const emojis: Emoji[] = [
 		name: 'backhand index pointing up',
 		value: '👆',
 		category: 'smileys-people',
-		order: 116,
+		order: 118,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2890,7 +2910,7 @@ export const emojis: Emoji[] = [
 		name: 'backhand index pointing down',
 		value: '👇',
 		category: 'smileys-people',
-		order: 117,
+		order: 119,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2939,7 +2959,7 @@ export const emojis: Emoji[] = [
 		name: 'index pointing up',
 		value: '☝️',
 		category: 'smileys-people',
-		order: 118,
+		order: 120,
 		skintones: [
 			{
 				skintone: 'default',
@@ -2988,7 +3008,7 @@ export const emojis: Emoji[] = [
 		name: 'raised hand',
 		value: '✋',
 		category: 'smileys-people',
-		order: 119,
+		order: 121,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3036,7 +3056,7 @@ export const emojis: Emoji[] = [
 		name: 'raised back of hand',
 		value: '🤚',
 		category: 'smileys-people',
-		order: 120,
+		order: 122,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3084,7 +3104,7 @@ export const emojis: Emoji[] = [
 		name: 'hand with fingers splayed',
 		value: '🖐',
 		category: 'smileys-people',
-		order: 121,
+		order: 123,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3132,7 +3152,7 @@ export const emojis: Emoji[] = [
 		name: 'vulcan salute',
 		value: '🖖',
 		category: 'smileys-people',
-		order: 122,
+		order: 124,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3180,7 +3200,7 @@ export const emojis: Emoji[] = [
 		name: 'waving hand',
 		value: '👋',
 		category: 'smileys-people',
-		order: 123,
+		order: 125,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3228,7 +3248,7 @@ export const emojis: Emoji[] = [
 		name: 'call me hand',
 		value: '🤙',
 		category: 'smileys-people',
-		order: 124,
+		order: 126,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3277,7 +3297,7 @@ export const emojis: Emoji[] = [
 		name: 'leftwards hand',
 		value: '🫲',
 		category: 'smileys-people',
-		order: 125,
+		order: 127,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3317,7 +3337,7 @@ export const emojis: Emoji[] = [
 		name: 'rightwards hand',
 		value: '🫱',
 		category: 'smileys-people',
-		order: 126,
+		order: 128,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3357,7 +3377,7 @@ export const emojis: Emoji[] = [
 		name: 'flexed biceps',
 		value: '💪',
 		category: 'smileys-people',
-		order: 127,
+		order: 129,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3397,7 +3417,7 @@ export const emojis: Emoji[] = [
 		name: 'mechanical arm',
 		value: '🦾',
 		category: 'smileys-people',
-		order: 128,
+		order: 130,
 		keywords: ['mechanical', 'arm', 'robotic', 'prosthetic'],
 	},
 	{
@@ -3405,7 +3425,7 @@ export const emojis: Emoji[] = [
 		name: 'middle finger',
 		value: '🖕',
 		category: 'smileys-people',
-		order: 129,
+		order: 131,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3445,7 +3465,7 @@ export const emojis: Emoji[] = [
 		name: 'writing hand',
 		value: '✍️',
 		category: 'smileys-people',
-		order: 130,
+		order: 132,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3485,7 +3505,7 @@ export const emojis: Emoji[] = [
 		name: 'folded hands',
 		value: '🙏',
 		category: 'smileys-people',
-		order: 131,
+		order: 133,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3525,7 +3545,7 @@ export const emojis: Emoji[] = [
 		name: 'index pointing at the viewer',
 		value: '🫵',
 		category: 'smileys-people',
-		order: 132,
+		order: 134,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3565,7 +3585,7 @@ export const emojis: Emoji[] = [
 		name: 'foot',
 		value: '🦶',
 		category: 'smileys-people',
-		order: 133,
+		order: 135,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3605,7 +3625,7 @@ export const emojis: Emoji[] = [
 		name: 'leg',
 		value: '🦵',
 		category: 'smileys-people',
-		order: 134,
+		order: 136,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3645,7 +3665,7 @@ export const emojis: Emoji[] = [
 		name: 'mechanical leg',
 		value: '🦿',
 		category: 'smileys-people',
-		order: 135,
+		order: 137,
 		keywords: ['mechanical', 'leg', 'robotic', 'prosthetic'],
 	},
 	{
@@ -3653,7 +3673,7 @@ export const emojis: Emoji[] = [
 		name: 'lipstick',
 		value: '💄',
 		category: 'smileys-people',
-		order: 136,
+		order: 138,
 		keywords: ['lipstick', 'makeup', 'cosmetics'],
 	},
 	{
@@ -3661,7 +3681,7 @@ export const emojis: Emoji[] = [
 		name: 'kiss mark',
 		value: '💋',
 		category: 'smileys-people',
-		order: 137,
+		order: 139,
 		keywords: ['kiss', 'mark', 'lipstick', 'love'],
 	},
 	{
@@ -3669,7 +3689,7 @@ export const emojis: Emoji[] = [
 		name: 'mouth',
 		value: '👄',
 		category: 'smileys-people',
-		order: 138,
+		order: 140,
 		keywords: ['mouth', 'lips', 'smile', 'talk'],
 	},
 	{
@@ -3677,7 +3697,7 @@ export const emojis: Emoji[] = [
 		name: 'biting lip',
 		value: '🫦',
 		category: 'smileys-people',
-		order: 139,
+		order: 141,
 		keywords: ['biting', 'lip', 'mouth'],
 	},
 	{
@@ -3685,7 +3705,7 @@ export const emojis: Emoji[] = [
 		name: 'tooth',
 		value: '🦷',
 		category: 'smileys-people',
-		order: 140,
+		order: 142,
 		keywords: ['tooth', 'dentist', 'teeth', 'mouth'],
 	},
 	{
@@ -3693,7 +3713,7 @@ export const emojis: Emoji[] = [
 		name: 'tongue',
 		value: '👅',
 		category: 'smileys-people',
-		order: 141,
+		order: 143,
 		keywords: ['tongue', 'mouth', 'body'],
 	},
 	{
@@ -3701,7 +3721,7 @@ export const emojis: Emoji[] = [
 		name: 'ear',
 		value: '👂',
 		category: 'smileys-people',
-		order: 142,
+		order: 144,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3741,7 +3761,7 @@ export const emojis: Emoji[] = [
 		name: 'ear with hearing aid',
 		value: '🦻',
 		category: 'smileys-people',
-		order: 143,
+		order: 145,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3781,7 +3801,7 @@ export const emojis: Emoji[] = [
 		name: 'nose',
 		value: '👃',
 		category: 'smileys-people',
-		order: 144,
+		order: 146,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3821,7 +3841,7 @@ export const emojis: Emoji[] = [
 		name: 'footprints',
 		value: '👣',
 		category: 'smileys-people',
-		order: 145,
+		order: 147,
 		keywords: ['footprints', 'feet', 'body'],
 	},
 	{
@@ -3829,7 +3849,7 @@ export const emojis: Emoji[] = [
 		name: 'eye',
 		value: '👁️',
 		category: 'smileys-people',
-		order: 146,
+		order: 148,
 		keywords: ['eye', 'sight', 'body'],
 	},
 	{
@@ -3837,7 +3857,7 @@ export const emojis: Emoji[] = [
 		name: 'eyes',
 		value: '👀',
 		category: 'smileys-people',
-		order: 147,
+		order: 149,
 		keywords: ['eyes', 'sight', 'body'],
 	},
 	{
@@ -3845,7 +3865,7 @@ export const emojis: Emoji[] = [
 		name: 'anatomical heart',
 		value: '🫀',
 		category: 'smileys-people',
-		order: 148,
+		order: 150,
 		keywords: ['heart', 'anatomical', 'body'],
 	},
 	{
@@ -3853,7 +3873,7 @@ export const emojis: Emoji[] = [
 		name: 'lungs',
 		value: '🫁',
 		category: 'smileys-people',
-		order: 149,
+		order: 151,
 		keywords: ['lungs', 'breathing', 'body'],
 	},
 	{
@@ -3861,7 +3881,7 @@ export const emojis: Emoji[] = [
 		name: 'brain',
 		value: '🧠',
 		category: 'smileys-people',
-		order: 150,
+		order: 152,
 		keywords: ['brain', 'mind', 'body'],
 	},
 	{
@@ -3869,7 +3889,7 @@ export const emojis: Emoji[] = [
 		name: 'speaking head',
 		value: '🗣️',
 		category: 'smileys-people',
-		order: 151,
+		order: 153,
 		keywords: ['speaking', 'head', 'voice', 'body'],
 	},
 	{
@@ -3877,7 +3897,7 @@ export const emojis: Emoji[] = [
 		name: 'bust in silhouette',
 		value: '👤',
 		category: 'smileys-people',
-		order: 152,
+		order: 154,
 		keywords: ['bust', 'silhouette', 'person'],
 	},
 	{
@@ -3885,7 +3905,7 @@ export const emojis: Emoji[] = [
 		name: 'busts in silhouette',
 		value: '👥',
 		category: 'smileys-people',
-		order: 153,
+		order: 155,
 		keywords: ['busts', 'silhouette', 'people'],
 	},
 	{
@@ -3893,7 +3913,7 @@ export const emojis: Emoji[] = [
 		name: 'people hugging',
 		value: '🫂',
 		category: 'smileys-people',
-		order: 154,
+		order: 156,
 		keywords: ['people', 'hugging', 'body'],
 	},
 	{
@@ -3901,7 +3921,7 @@ export const emojis: Emoji[] = [
 		name: 'baby',
 		value: '👶',
 		category: 'smileys-people',
-		order: 155,
+		order: 157,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3941,7 +3961,7 @@ export const emojis: Emoji[] = [
 		name: 'girl',
 		value: '👧',
 		category: 'smileys-people',
-		order: 156,
+		order: 158,
 		skintones: [
 			{
 				skintone: 'default',
@@ -3981,7 +4001,7 @@ export const emojis: Emoji[] = [
 		name: 'child',
 		value: '🧒',
 		category: 'smileys-people',
-		order: 157,
+		order: 159,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4021,7 +4041,7 @@ export const emojis: Emoji[] = [
 		name: 'boy',
 		value: '👦',
 		category: 'smileys-people',
-		order: 158,
+		order: 160,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4061,7 +4081,7 @@ export const emojis: Emoji[] = [
 		name: 'woman',
 		value: '👩',
 		category: 'smileys-people',
-		order: 159,
+		order: 161,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4101,7 +4121,7 @@ export const emojis: Emoji[] = [
 		name: 'person',
 		value: '🧑',
 		category: 'smileys-people',
-		order: 160,
+		order: 162,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4141,7 +4161,7 @@ export const emojis: Emoji[] = [
 		name: 'man',
 		value: '👨',
 		category: 'smileys-people',
-		order: 161,
+		order: 163,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4181,7 +4201,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with curly hair',
 		value: '👩‍🦱',
 		category: 'smileys-people',
-		order: 162,
+		order: 164,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4221,7 +4241,7 @@ export const emojis: Emoji[] = [
 		name: 'person with curly hair',
 		value: '🧑‍🦱',
 		category: 'smileys-people',
-		order: 163,
+		order: 165,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4261,7 +4281,7 @@ export const emojis: Emoji[] = [
 		name: 'man with curly hair',
 		value: '👨‍🦱',
 		category: 'smileys-people',
-		order: 164,
+		order: 166,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4301,7 +4321,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with red hair',
 		value: '👩‍🦰',
 		category: 'smileys-people',
-		order: 165,
+		order: 167,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4341,7 +4361,7 @@ export const emojis: Emoji[] = [
 		name: 'person with red hair',
 		value: '🧑‍🦰',
 		category: 'smileys-people',
-		order: 166,
+		order: 168,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4381,7 +4401,7 @@ export const emojis: Emoji[] = [
 		name: 'man with red hair',
 		value: '👨‍🦰',
 		category: 'smileys-people',
-		order: 167,
+		order: 169,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4421,7 +4441,7 @@ export const emojis: Emoji[] = [
 		name: 'blond-haired woman',
 		value: '👱‍♀',
 		category: 'smileys-people',
-		order: 168,
+		order: 170,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4461,7 +4481,7 @@ export const emojis: Emoji[] = [
 		name: 'blond-haired person',
 		value: '👱',
 		category: 'smileys-people',
-		order: 169,
+		order: 171,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4501,7 +4521,7 @@ export const emojis: Emoji[] = [
 		name: 'blond-haired man',
 		value: '👱‍♂',
 		category: 'smileys-people',
-		order: 170,
+		order: 172,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4541,7 +4561,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with white hair',
 		value: '👩‍🦳',
 		category: 'smileys-people',
-		order: 171,
+		order: 173,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4581,7 +4601,7 @@ export const emojis: Emoji[] = [
 		name: 'person with white hair',
 		value: '🧑‍🦳',
 		category: 'smileys-people',
-		order: 172,
+		order: 174,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4621,7 +4641,7 @@ export const emojis: Emoji[] = [
 		name: 'man with white hair',
 		value: '👨‍🦳',
 		category: 'smileys-people',
-		order: 173,
+		order: 175,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4661,7 +4681,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with no hair',
 		value: '👩‍🦲',
 		category: 'smileys-people',
-		order: 174,
+		order: 176,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4701,7 +4721,7 @@ export const emojis: Emoji[] = [
 		name: 'person with no hair',
 		value: '🧑‍🦲',
 		category: 'smileys-people',
-		order: 175,
+		order: 177,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4741,7 +4761,7 @@ export const emojis: Emoji[] = [
 		name: 'man with no hair',
 		value: '👨‍🦲',
 		category: 'smileys-people',
-		order: 176,
+		order: 178,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4781,7 +4801,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with beard',
 		value: '🧔‍♀',
 		category: 'smileys-people',
-		order: 177,
+		order: 179,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4821,7 +4841,7 @@ export const emojis: Emoji[] = [
 		name: 'person with beard',
 		value: '🧔',
 		category: 'smileys-people',
-		order: 178,
+		order: 180,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4861,7 +4881,7 @@ export const emojis: Emoji[] = [
 		name: 'man with beard',
 		value: '🧔‍♂',
 		category: 'smileys-people',
-		order: 179,
+		order: 181,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4901,7 +4921,7 @@ export const emojis: Emoji[] = [
 		name: 'old woman',
 		value: '👵',
 		category: 'smileys-people',
-		order: 180,
+		order: 182,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4941,7 +4961,7 @@ export const emojis: Emoji[] = [
 		name: 'older person',
 		value: '🧓',
 		category: 'smileys-people',
-		order: 181,
+		order: 183,
 		skintones: [
 			{
 				skintone: 'default',
@@ -4981,7 +5001,7 @@ export const emojis: Emoji[] = [
 		name: 'old man',
 		value: '👴',
 		category: 'smileys-people',
-		order: 182,
+		order: 184,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5021,7 +5041,7 @@ export const emojis: Emoji[] = [
 		name: 'man with chinese cap',
 		value: '👲',
 		category: 'smileys-people',
-		order: 183,
+		order: 185,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5061,7 +5081,7 @@ export const emojis: Emoji[] = [
 		name: 'woman wearing turban',
 		value: '👳‍♀',
 		category: 'smileys-people',
-		order: 184,
+		order: 186,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5101,7 +5121,7 @@ export const emojis: Emoji[] = [
 		name: 'person wearing turban',
 		value: '👳',
 		category: 'smileys-people',
-		order: 185,
+		order: 187,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5141,7 +5161,7 @@ export const emojis: Emoji[] = [
 		name: 'man wearing turban',
 		value: '👳‍♂',
 		category: 'smileys-people',
-		order: 186,
+		order: 188,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5181,7 +5201,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with headscarf',
 		value: '🧕',
 		category: 'smileys-people',
-		order: 187,
+		order: 189,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5221,7 +5241,7 @@ export const emojis: Emoji[] = [
 		name: 'woman police officer',
 		value: '👮‍♀',
 		category: 'smileys-people',
-		order: 188,
+		order: 190,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5261,7 +5281,7 @@ export const emojis: Emoji[] = [
 		name: 'police officer',
 		value: '👮',
 		category: 'smileys-people',
-		order: 189,
+		order: 191,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5301,7 +5321,7 @@ export const emojis: Emoji[] = [
 		name: 'man police officer',
 		value: '👮‍♂',
 		category: 'smileys-people',
-		order: 190,
+		order: 192,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5341,7 +5361,7 @@ export const emojis: Emoji[] = [
 		name: 'woman construction worker',
 		value: '👷‍♀',
 		category: 'smileys-people',
-		order: 191,
+		order: 193,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5381,7 +5401,7 @@ export const emojis: Emoji[] = [
 		name: 'construction worker',
 		value: '👷',
 		category: 'smileys-people',
-		order: 192,
+		order: 194,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5421,7 +5441,7 @@ export const emojis: Emoji[] = [
 		name: 'man construction worker',
 		value: '👷‍♂',
 		category: 'smileys-people',
-		order: 193,
+		order: 195,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5461,7 +5481,7 @@ export const emojis: Emoji[] = [
 		name: 'woman guard',
 		value: '💂‍♀',
 		category: 'smileys-people',
-		order: 194,
+		order: 196,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5501,7 +5521,7 @@ export const emojis: Emoji[] = [
 		name: 'guard',
 		value: '💂',
 		category: 'smileys-people',
-		order: 195,
+		order: 197,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5541,7 +5561,7 @@ export const emojis: Emoji[] = [
 		name: 'man guard',
 		value: '💂‍♂',
 		category: 'smileys-people',
-		order: 196,
+		order: 198,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5581,7 +5601,7 @@ export const emojis: Emoji[] = [
 		name: 'woman detective',
 		value: '🕵‍♀',
 		category: 'smileys-people',
-		order: 197,
+		order: 199,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5621,7 +5641,7 @@ export const emojis: Emoji[] = [
 		name: 'detective',
 		value: '🕵',
 		category: 'smileys-people',
-		order: 198,
+		order: 200,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5661,7 +5681,7 @@ export const emojis: Emoji[] = [
 		name: 'man detective',
 		value: '🕵‍♂',
 		category: 'smileys-people',
-		order: 199,
+		order: 201,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5701,7 +5721,7 @@ export const emojis: Emoji[] = [
 		name: 'woman health worker',
 		value: '👩‍⚕',
 		category: 'smileys-people',
-		order: 200,
+		order: 202,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5741,7 +5761,7 @@ export const emojis: Emoji[] = [
 		name: 'health worker',
 		value: '🧑‍⚕',
 		category: 'smileys-people',
-		order: 201,
+		order: 203,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5781,7 +5801,7 @@ export const emojis: Emoji[] = [
 		name: 'man health worker',
 		value: '👨‍⚕',
 		category: 'smileys-people',
-		order: 202,
+		order: 204,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5821,7 +5841,7 @@ export const emojis: Emoji[] = [
 		name: 'woman farmer',
 		value: '👩‍🌾',
 		category: 'smileys-people',
-		order: 203,
+		order: 205,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5861,7 +5881,7 @@ export const emojis: Emoji[] = [
 		name: 'farmer',
 		value: '🧑‍🌾',
 		category: 'smileys-people',
-		order: 204,
+		order: 206,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5901,7 +5921,7 @@ export const emojis: Emoji[] = [
 		name: 'man farmer',
 		value: '👨‍🌾',
 		category: 'smileys-people',
-		order: 205,
+		order: 207,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5941,7 +5961,7 @@ export const emojis: Emoji[] = [
 		name: 'woman cook',
 		value: '👩‍🍳',
 		category: 'smileys-people',
-		order: 206,
+		order: 208,
 		skintones: [
 			{
 				skintone: 'default',
@@ -5981,7 +6001,7 @@ export const emojis: Emoji[] = [
 		name: 'cook',
 		value: '🧑‍🍳',
 		category: 'smileys-people',
-		order: 207,
+		order: 209,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6021,7 +6041,7 @@ export const emojis: Emoji[] = [
 		name: 'man cook',
 		value: '👨‍🍳',
 		category: 'smileys-people',
-		order: 208,
+		order: 210,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6061,7 +6081,7 @@ export const emojis: Emoji[] = [
 		name: 'woman student',
 		value: '👩‍🎓',
 		category: 'smileys-people',
-		order: 209,
+		order: 211,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6101,7 +6121,7 @@ export const emojis: Emoji[] = [
 		name: 'student',
 		value: '🧑‍🎓',
 		category: 'smileys-people',
-		order: 210,
+		order: 212,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6141,7 +6161,7 @@ export const emojis: Emoji[] = [
 		name: 'man student',
 		value: '👨‍🎓',
 		category: 'smileys-people',
-		order: 211,
+		order: 213,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6181,7 +6201,7 @@ export const emojis: Emoji[] = [
 		name: 'woman singer',
 		value: '👩‍🎤',
 		category: 'smileys-people',
-		order: 212,
+		order: 214,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6221,7 +6241,7 @@ export const emojis: Emoji[] = [
 		name: 'singer',
 		value: '🧑‍🎤',
 		category: 'smileys-people',
-		order: 213,
+		order: 215,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6261,7 +6281,7 @@ export const emojis: Emoji[] = [
 		name: 'man singer',
 		value: '👨‍🎤',
 		category: 'smileys-people',
-		order: 214,
+		order: 216,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6301,7 +6321,7 @@ export const emojis: Emoji[] = [
 		name: 'woman teacher',
 		value: '👩‍🏫',
 		category: 'smileys-people',
-		order: 215,
+		order: 217,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6341,7 +6361,7 @@ export const emojis: Emoji[] = [
 		name: 'teacher',
 		value: '🧑‍🏫',
 		category: 'smileys-people',
-		order: 216,
+		order: 218,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6381,7 +6401,7 @@ export const emojis: Emoji[] = [
 		name: 'man teacher',
 		value: '👨‍🏫',
 		category: 'smileys-people',
-		order: 217,
+		order: 219,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6421,7 +6441,7 @@ export const emojis: Emoji[] = [
 		name: 'woman factory worker',
 		value: '👩‍🏭',
 		category: 'smileys-people',
-		order: 218,
+		order: 220,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6461,7 +6481,7 @@ export const emojis: Emoji[] = [
 		name: 'factory worker',
 		value: '🧑‍🏭',
 		category: 'smileys-people',
-		order: 219,
+		order: 221,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6501,7 +6521,7 @@ export const emojis: Emoji[] = [
 		name: 'man factory worker',
 		value: '👨‍🏭',
 		category: 'smileys-people',
-		order: 220,
+		order: 222,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6541,7 +6561,7 @@ export const emojis: Emoji[] = [
 		name: 'woman technologist',
 		value: '👩‍💻',
 		category: 'smileys-people',
-		order: 221,
+		order: 223,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6581,7 +6601,7 @@ export const emojis: Emoji[] = [
 		name: 'technologist',
 		value: '🧑‍💻',
 		category: 'smileys-people',
-		order: 222,
+		order: 224,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6621,7 +6641,7 @@ export const emojis: Emoji[] = [
 		name: 'man technologist',
 		value: '👨‍💻',
 		category: 'smileys-people',
-		order: 223,
+		order: 225,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6661,7 +6681,7 @@ export const emojis: Emoji[] = [
 		name: 'woman office worker',
 		value: '👩‍💼',
 		category: 'smileys-people',
-		order: 224,
+		order: 226,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6701,7 +6721,7 @@ export const emojis: Emoji[] = [
 		name: 'person office worker',
 		value: '🧑‍💼',
 		category: 'smileys-people',
-		order: 225,
+		order: 227,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6741,7 +6761,7 @@ export const emojis: Emoji[] = [
 		name: 'man office worker',
 		value: '👨‍💼',
 		category: 'smileys-people',
-		order: 226,
+		order: 228,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6781,7 +6801,7 @@ export const emojis: Emoji[] = [
 		name: 'woman mechanic',
 		value: '👩‍🔧',
 		category: 'smileys-people',
-		order: 227,
+		order: 229,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6821,7 +6841,7 @@ export const emojis: Emoji[] = [
 		name: 'person mechanic',
 		value: '🧑‍🔧',
 		category: 'smileys-people',
-		order: 228,
+		order: 230,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6861,7 +6881,7 @@ export const emojis: Emoji[] = [
 		name: 'man mechanic',
 		value: '👨‍🔧',
 		category: 'smileys-people',
-		order: 229,
+		order: 231,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6901,7 +6921,7 @@ export const emojis: Emoji[] = [
 		name: 'woman scientist',
 		value: '👩‍🔬',
 		category: 'smileys-people',
-		order: 230,
+		order: 232,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6941,7 +6961,7 @@ export const emojis: Emoji[] = [
 		name: 'person scientist',
 		value: '🧑‍🔬',
 		category: 'smileys-people',
-		order: 231,
+		order: 233,
 		skintones: [
 			{
 				skintone: 'default',
@@ -6981,7 +7001,7 @@ export const emojis: Emoji[] = [
 		name: 'man scientist',
 		value: '👨‍🔬',
 		category: 'smileys-people',
-		order: 232,
+		order: 234,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7021,7 +7041,7 @@ export const emojis: Emoji[] = [
 		name: 'woman artist',
 		value: '👩‍🎨',
 		category: 'smileys-people',
-		order: 233,
+		order: 235,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7061,7 +7081,7 @@ export const emojis: Emoji[] = [
 		name: 'person artist',
 		value: '🧑‍🎨',
 		category: 'smileys-people',
-		order: 234,
+		order: 236,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7101,7 +7121,7 @@ export const emojis: Emoji[] = [
 		name: 'man artist',
 		value: '👨‍🎨',
 		category: 'smileys-people',
-		order: 235,
+		order: 237,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7141,7 +7161,7 @@ export const emojis: Emoji[] = [
 		name: 'woman firefighter',
 		value: '👩‍🚒',
 		category: 'smileys-people',
-		order: 236,
+		order: 238,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7181,7 +7201,7 @@ export const emojis: Emoji[] = [
 		name: 'person firefighter',
 		value: '🧑‍🚒',
 		category: 'smileys-people',
-		order: 237,
+		order: 239,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7221,7 +7241,7 @@ export const emojis: Emoji[] = [
 		name: 'man firefighter',
 		value: '👨‍🚒',
 		category: 'smileys-people',
-		order: 238,
+		order: 240,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7261,7 +7281,7 @@ export const emojis: Emoji[] = [
 		name: 'woman pilot',
 		value: '👩‍✈',
 		category: 'smileys-people',
-		order: 239,
+		order: 241,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7301,7 +7321,7 @@ export const emojis: Emoji[] = [
 		name: 'pilot',
 		value: '🧑‍✈️',
 		category: 'smileys-people',
-		order: 240,
+		order: 242,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7341,7 +7361,7 @@ export const emojis: Emoji[] = [
 		name: 'man pilot',
 		value: '👨‍✈️',
 		category: 'smileys-people',
-		order: 241,
+		order: 243,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7381,7 +7401,7 @@ export const emojis: Emoji[] = [
 		name: 'woman astronaut',
 		value: '👩‍🚀',
 		category: 'smileys-people',
-		order: 242,
+		order: 244,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7421,7 +7441,7 @@ export const emojis: Emoji[] = [
 		name: 'person astronaut',
 		value: '🧑‍🚀',
 		category: 'smileys-people',
-		order: 243,
+		order: 245,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7461,7 +7481,7 @@ export const emojis: Emoji[] = [
 		name: 'man astronaut',
 		value: '👨‍🚀',
 		category: 'smileys-people',
-		order: 244,
+		order: 246,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7501,7 +7521,7 @@ export const emojis: Emoji[] = [
 		name: 'woman judge',
 		value: '👩‍⚖️',
 		category: 'smileys-people',
-		order: 245,
+		order: 247,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7541,7 +7561,7 @@ export const emojis: Emoji[] = [
 		name: 'person judge',
 		value: '🧑‍⚖️',
 		category: 'smileys-people',
-		order: 246,
+		order: 248,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7581,7 +7601,7 @@ export const emojis: Emoji[] = [
 		name: 'man judge',
 		value: '👨‍⚖️',
 		category: 'smileys-people',
-		order: 247,
+		order: 249,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7621,7 +7641,7 @@ export const emojis: Emoji[] = [
 		name: 'bride with veil',
 		value: '👰‍♀️',
 		category: 'smileys-people',
-		order: 248,
+		order: 250,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7661,7 +7681,7 @@ export const emojis: Emoji[] = [
 		name: 'bride',
 		value: '👰',
 		category: 'smileys-people',
-		order: 249,
+		order: 251,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7701,7 +7721,7 @@ export const emojis: Emoji[] = [
 		name: 'groom with veil',
 		value: '👰‍♂️',
 		category: 'smileys-people',
-		order: 250,
+		order: 252,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7741,7 +7761,7 @@ export const emojis: Emoji[] = [
 		name: 'woman in tuxedo',
 		value: '🤵‍♀️',
 		category: 'smileys-people',
-		order: 251,
+		order: 253,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7781,7 +7801,7 @@ export const emojis: Emoji[] = [
 		name: 'person in tuxedo',
 		value: '🤵',
 		category: 'smileys-people',
-		order: 252,
+		order: 254,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7821,7 +7841,7 @@ export const emojis: Emoji[] = [
 		name: 'man in tuxedo',
 		value: '🤵‍♂️',
 		category: 'smileys-people',
-		order: 253,
+		order: 255,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7861,7 +7881,7 @@ export const emojis: Emoji[] = [
 		name: 'princess',
 		value: '👸',
 		category: 'smileys-people',
-		order: 254,
+		order: 256,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7901,7 +7921,7 @@ export const emojis: Emoji[] = [
 		name: 'person with crown',
 		value: '🫅',
 		category: 'smileys-people',
-		order: 255,
+		order: 257,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7941,7 +7961,7 @@ export const emojis: Emoji[] = [
 		name: 'prince',
 		value: '🤴',
 		category: 'smileys-people',
-		order: 256,
+		order: 258,
 		skintones: [
 			{
 				skintone: 'default',
@@ -7981,7 +8001,7 @@ export const emojis: Emoji[] = [
 		name: 'ninja',
 		value: '🥷',
 		category: 'smileys-people',
-		order: 257,
+		order: 259,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8021,7 +8041,7 @@ export const emojis: Emoji[] = [
 		name: 'woman superhero',
 		value: '🦸‍♀️',
 		category: 'smileys-people',
-		order: 258,
+		order: 260,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8061,7 +8081,7 @@ export const emojis: Emoji[] = [
 		name: 'person superhero',
 		value: '🦸',
 		category: 'smileys-people',
-		order: 259,
+		order: 261,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8101,7 +8121,7 @@ export const emojis: Emoji[] = [
 		name: 'man superhero',
 		value: '🦸‍♂️',
 		category: 'smileys-people',
-		order: 260,
+		order: 262,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8141,7 +8161,7 @@ export const emojis: Emoji[] = [
 		name: 'woman supervillain',
 		value: '🦹‍♀️',
 		category: 'smileys-people',
-		order: 261,
+		order: 263,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8181,7 +8201,7 @@ export const emojis: Emoji[] = [
 		name: 'person supervillain',
 		value: '🦹',
 		category: 'smileys-people',
-		order: 262,
+		order: 264,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8221,7 +8241,7 @@ export const emojis: Emoji[] = [
 		name: 'man supervillain',
 		value: '🦹‍♂️',
 		category: 'smileys-people',
-		order: 263,
+		order: 265,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8261,7 +8281,7 @@ export const emojis: Emoji[] = [
 		name: 'mother christmas',
 		value: '🤶',
 		category: 'smileys-people',
-		order: 264,
+		order: 266,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8306,7 +8326,7 @@ export const emojis: Emoji[] = [
 		name: 'mx claus',
 		value: '🧑‍🎄',
 		category: 'smileys-people',
-		order: 265,
+		order: 267,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8346,7 +8366,7 @@ export const emojis: Emoji[] = [
 		name: 'santa claus',
 		value: '🎅',
 		category: 'smileys-people',
-		order: 266,
+		order: 268,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8386,7 +8406,7 @@ export const emojis: Emoji[] = [
 		name: 'woman mage',
 		value: '🧙‍♀️',
 		category: 'smileys-people',
-		order: 267,
+		order: 269,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8426,7 +8446,7 @@ export const emojis: Emoji[] = [
 		name: 'person mage',
 		value: '🧙',
 		category: 'smileys-people',
-		order: 268,
+		order: 270,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8466,7 +8486,7 @@ export const emojis: Emoji[] = [
 		name: 'man mage',
 		value: '🧙‍♂️',
 		category: 'smileys-people',
-		order: 269,
+		order: 271,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8506,7 +8526,7 @@ export const emojis: Emoji[] = [
 		name: 'woman elf',
 		value: '🧝‍♀️',
 		category: 'smileys-people',
-		order: 270,
+		order: 272,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8546,7 +8566,7 @@ export const emojis: Emoji[] = [
 		name: 'person elf',
 		value: '🧝',
 		category: 'smileys-people',
-		order: 271,
+		order: 273,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8586,7 +8606,7 @@ export const emojis: Emoji[] = [
 		name: 'man elf',
 		value: '🧝‍♂️',
 		category: 'smileys-people',
-		order: 272,
+		order: 274,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8626,7 +8646,7 @@ export const emojis: Emoji[] = [
 		name: 'troll',
 		value: '🧌',
 		category: 'smileys-people',
-		order: 273,
+		order: 275,
 		keywords: ['troll', 'fantasy', 'creature'],
 	},
 	{
@@ -8634,7 +8654,7 @@ export const emojis: Emoji[] = [
 		name: 'woman vampire',
 		value: '🧛‍♀️',
 		category: 'smileys-people',
-		order: 274,
+		order: 276,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8674,7 +8694,7 @@ export const emojis: Emoji[] = [
 		name: 'person vampire',
 		value: '🧛',
 		category: 'smileys-people',
-		order: 275,
+		order: 277,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8714,7 +8734,7 @@ export const emojis: Emoji[] = [
 		name: 'man vampire',
 		value: '🧛‍♂️',
 		category: 'smileys-people',
-		order: 276,
+		order: 278,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8754,7 +8774,7 @@ export const emojis: Emoji[] = [
 		name: 'woman zombie',
 		value: '🧟‍♀️',
 		category: 'smileys-people',
-		order: 277,
+		order: 279,
 		keywords: ['zombie', 'woman', 'undead', 'horror'],
 	},
 	{
@@ -8762,7 +8782,7 @@ export const emojis: Emoji[] = [
 		name: 'person zombie',
 		value: '🧟',
 		category: 'smileys-people',
-		order: 278,
+		order: 280,
 		keywords: ['zombie', 'person', 'undead', 'horror'],
 	},
 	{
@@ -8770,7 +8790,7 @@ export const emojis: Emoji[] = [
 		name: 'man zombie',
 		value: '🧟‍♂️',
 		category: 'smileys-people',
-		order: 279,
+		order: 281,
 		keywords: ['zombie', 'man', 'undead', 'horror'],
 	},
 	{
@@ -8778,7 +8798,7 @@ export const emojis: Emoji[] = [
 		name: 'woman genie',
 		value: '🧞‍♀️',
 		category: 'smileys-people',
-		order: 280,
+		order: 282,
 		keywords: ['genie', 'woman', 'fantasy', 'magical'],
 	},
 	{
@@ -8786,7 +8806,7 @@ export const emojis: Emoji[] = [
 		name: 'person genie',
 		value: '🧞',
 		category: 'smileys-people',
-		order: 281,
+		order: 283,
 		keywords: ['genie', 'person', 'fantasy', 'magical'],
 	},
 	{
@@ -8794,7 +8814,7 @@ export const emojis: Emoji[] = [
 		name: 'man genie',
 		value: '🧞‍♂️',
 		category: 'smileys-people',
-		order: 282,
+		order: 284,
 		keywords: ['genie', 'man', 'fantasy', 'magical'],
 	},
 	{
@@ -8802,7 +8822,7 @@ export const emojis: Emoji[] = [
 		name: 'woman merperson',
 		value: '🧜‍♀️',
 		category: 'smileys-people',
-		order: 283,
+		order: 285,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8842,7 +8862,7 @@ export const emojis: Emoji[] = [
 		name: 'person merperson',
 		value: '🧜',
 		category: 'smileys-people',
-		order: 284,
+		order: 286,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8882,7 +8902,7 @@ export const emojis: Emoji[] = [
 		name: 'man merperson',
 		value: '🧜‍♂️',
 		category: 'smileys-people',
-		order: 285,
+		order: 287,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8922,7 +8942,7 @@ export const emojis: Emoji[] = [
 		name: 'woman fairy',
 		value: '🧚‍♀️',
 		category: 'smileys-people',
-		order: 286,
+		order: 288,
 		skintones: [
 			{
 				skintone: 'default',
@@ -8962,7 +8982,7 @@ export const emojis: Emoji[] = [
 		name: 'person fairy',
 		value: '🧚',
 		category: 'smileys-people',
-		order: 287,
+		order: 289,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9002,7 +9022,7 @@ export const emojis: Emoji[] = [
 		name: 'man fairy',
 		value: '🧚‍♂️',
 		category: 'smileys-people',
-		order: 288,
+		order: 290,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9042,7 +9062,7 @@ export const emojis: Emoji[] = [
 		name: 'angel',
 		value: '👼',
 		category: 'smileys-people',
-		order: 289,
+		order: 291,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9082,7 +9102,7 @@ export const emojis: Emoji[] = [
 		name: 'pregnant woman',
 		value: '🤰',
 		category: 'smileys-people',
-		order: 290,
+		order: 292,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9122,7 +9142,7 @@ export const emojis: Emoji[] = [
 		name: 'pregnant person',
 		value: '🫄',
 		category: 'smileys-people',
-		order: 291,
+		order: 293,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9162,7 +9182,7 @@ export const emojis: Emoji[] = [
 		name: 'pregnant man',
 		value: '🫃',
 		category: 'smileys-people',
-		order: 292,
+		order: 294,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9202,7 +9222,7 @@ export const emojis: Emoji[] = [
 		name: 'breastfeeding',
 		value: '🤱',
 		category: 'smileys-people',
-		order: 293,
+		order: 295,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9242,7 +9262,7 @@ export const emojis: Emoji[] = [
 		name: 'woman feeding baby',
 		value: '👩‍🍼',
 		category: 'smileys-people',
-		order: 294,
+		order: 296,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9282,7 +9302,7 @@ export const emojis: Emoji[] = [
 		name: 'person feeding baby',
 		value: '🧑‍🍼',
 		category: 'smileys-people',
-		order: 295,
+		order: 297,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9322,7 +9342,7 @@ export const emojis: Emoji[] = [
 		name: 'man feeding baby',
 		value: '👨‍🍼',
 		category: 'smileys-people',
-		order: 296,
+		order: 298,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9362,7 +9382,7 @@ export const emojis: Emoji[] = [
 		name: 'woman bowing',
 		value: '🙇‍♀️',
 		category: 'smileys-people',
-		order: 297,
+		order: 299,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9402,7 +9422,7 @@ export const emojis: Emoji[] = [
 		name: 'person bowing',
 		value: '🙇',
 		category: 'smileys-people',
-		order: 298,
+		order: 300,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9442,7 +9462,7 @@ export const emojis: Emoji[] = [
 		name: 'man bowing',
 		value: '🙇‍♂️',
 		category: 'smileys-people',
-		order: 299,
+		order: 301,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9482,7 +9502,7 @@ export const emojis: Emoji[] = [
 		name: 'woman tipping hand',
 		value: '💁‍♀️',
 		category: 'smileys-people',
-		order: 300,
+		order: 302,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9522,7 +9542,7 @@ export const emojis: Emoji[] = [
 		name: 'person tipping hand',
 		value: '💁',
 		category: 'smileys-people',
-		order: 301,
+		order: 303,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9562,7 +9582,7 @@ export const emojis: Emoji[] = [
 		name: 'man tipping hand',
 		value: '💁‍♂️',
 		category: 'smileys-people',
-		order: 302,
+		order: 304,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9602,7 +9622,7 @@ export const emojis: Emoji[] = [
 		name: 'woman gesturing no',
 		value: '🙅‍♀️',
 		category: 'smileys-people',
-		order: 303,
+		order: 305,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9642,7 +9662,7 @@ export const emojis: Emoji[] = [
 		name: 'person gesturing no',
 		value: '🙅',
 		category: 'smileys-people',
-		order: 304,
+		order: 306,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9682,7 +9702,7 @@ export const emojis: Emoji[] = [
 		name: 'man gesturing no',
 		value: '🙅‍♂️',
 		category: 'smileys-people',
-		order: 305,
+		order: 307,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9722,7 +9742,7 @@ export const emojis: Emoji[] = [
 		name: 'woman gesturing ok',
 		value: '🙆‍♀️',
 		category: 'smileys-people',
-		order: 306,
+		order: 308,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9762,7 +9782,7 @@ export const emojis: Emoji[] = [
 		name: 'person gesturing ok',
 		value: '🙆',
 		category: 'smileys-people',
-		order: 307,
+		order: 309,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9802,7 +9822,7 @@ export const emojis: Emoji[] = [
 		name: 'man gesturing ok',
 		value: '🙆‍♂️',
 		category: 'smileys-people',
-		order: 308,
+		order: 310,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9842,7 +9862,7 @@ export const emojis: Emoji[] = [
 		name: 'woman raising hand',
 		value: '🙋‍♀️',
 		category: 'smileys-people',
-		order: 309,
+		order: 311,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9882,7 +9902,7 @@ export const emojis: Emoji[] = [
 		name: 'person raising hand',
 		value: '🙋',
 		category: 'smileys-people',
-		order: 310,
+		order: 312,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9922,7 +9942,7 @@ export const emojis: Emoji[] = [
 		name: 'man raising hand',
 		value: '🙋‍♂️',
 		category: 'smileys-people',
-		order: 311,
+		order: 313,
 		skintones: [
 			{
 				skintone: 'default',
@@ -9962,7 +9982,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with hearing aid',
 		value: '🧏‍♀️',
 		category: 'smileys-people',
-		order: 312,
+		order: 314,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10002,7 +10022,7 @@ export const emojis: Emoji[] = [
 		name: 'person with hearing aid',
 		value: '🧏',
 		category: 'smileys-people',
-		order: 313,
+		order: 315,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10042,7 +10062,7 @@ export const emojis: Emoji[] = [
 		name: 'man with hearing aid',
 		value: '🧏‍♂️',
 		category: 'smileys-people',
-		order: 314,
+		order: 316,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10082,7 +10102,7 @@ export const emojis: Emoji[] = [
 		name: 'woman facepalming',
 		value: '🤦‍♀️',
 		category: 'smileys-people',
-		order: 315,
+		order: 317,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10122,7 +10142,7 @@ export const emojis: Emoji[] = [
 		name: 'person facepalming',
 		value: '🤦',
 		category: 'smileys-people',
-		order: 316,
+		order: 318,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10162,7 +10182,7 @@ export const emojis: Emoji[] = [
 		name: 'man facepalming',
 		value: '🤦‍♂️',
 		category: 'smileys-people',
-		order: 317,
+		order: 319,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10202,7 +10222,7 @@ export const emojis: Emoji[] = [
 		name: 'woman shrugging',
 		value: '🤷‍♀️',
 		category: 'smileys-people',
-		order: 318,
+		order: 320,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10242,7 +10262,7 @@ export const emojis: Emoji[] = [
 		name: 'person shrugging',
 		value: '🤷',
 		category: 'smileys-people',
-		order: 319,
+		order: 321,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10282,7 +10302,7 @@ export const emojis: Emoji[] = [
 		name: 'man shrugging',
 		value: '🤷‍♂️',
 		category: 'smileys-people',
-		order: 320,
+		order: 322,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10322,7 +10342,7 @@ export const emojis: Emoji[] = [
 		name: 'woman pouting',
 		value: '🙎‍♀️',
 		category: 'smileys-people',
-		order: 321,
+		order: 323,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10362,7 +10382,7 @@ export const emojis: Emoji[] = [
 		name: 'person pouting',
 		value: '🙎',
 		category: 'smileys-people',
-		order: 322,
+		order: 324,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10402,7 +10422,7 @@ export const emojis: Emoji[] = [
 		name: 'man pouting',
 		value: '🙎‍♂️',
 		category: 'smileys-people',
-		order: 323,
+		order: 325,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10442,7 +10462,7 @@ export const emojis: Emoji[] = [
 		name: 'woman frowning',
 		value: '🙍‍♀️',
 		category: 'smileys-people',
-		order: 324,
+		order: 326,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10482,7 +10502,7 @@ export const emojis: Emoji[] = [
 		name: 'person frowning',
 		value: '🙍',
 		category: 'smileys-people',
-		order: 325,
+		order: 327,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10522,7 +10542,7 @@ export const emojis: Emoji[] = [
 		name: 'man frowning',
 		value: '🙍‍♂️',
 		category: 'smileys-people',
-		order: 326,
+		order: 328,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10562,7 +10582,7 @@ export const emojis: Emoji[] = [
 		name: 'woman getting haircut',
 		value: '💇‍♀️',
 		category: 'smileys-people',
-		order: 327,
+		order: 329,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10602,7 +10622,7 @@ export const emojis: Emoji[] = [
 		name: 'person getting haircut',
 		value: '💇',
 		category: 'smileys-people',
-		order: 328,
+		order: 330,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10642,7 +10662,7 @@ export const emojis: Emoji[] = [
 		name: 'man getting haircut',
 		value: '💇‍♂️',
 		category: 'smileys-people',
-		order: 329,
+		order: 331,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10682,7 +10702,7 @@ export const emojis: Emoji[] = [
 		name: 'woman getting massage',
 		value: '💆‍♀️',
 		category: 'smileys-people',
-		order: 330,
+		order: 332,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10722,7 +10742,7 @@ export const emojis: Emoji[] = [
 		name: 'person getting massage',
 		value: '💆',
 		category: 'smileys-people',
-		order: 331,
+		order: 333,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10762,7 +10782,7 @@ export const emojis: Emoji[] = [
 		name: 'man getting massage',
 		value: '💆‍♂️',
 		category: 'smileys-people',
-		order: 332,
+		order: 334,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10802,7 +10822,7 @@ export const emojis: Emoji[] = [
 		name: 'woman in steamy room',
 		value: '🧖‍♀️',
 		category: 'smileys-people',
-		order: 333,
+		order: 335,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10842,7 +10862,7 @@ export const emojis: Emoji[] = [
 		name: 'person in steamy room',
 		value: '🧖',
 		category: 'smileys-people',
-		order: 334,
+		order: 336,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10882,7 +10902,7 @@ export const emojis: Emoji[] = [
 		name: 'man in steamy room',
 		value: '🧖‍♂️',
 		category: 'smileys-people',
-		order: 335,
+		order: 337,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10922,7 +10942,7 @@ export const emojis: Emoji[] = [
 		name: 'nail polish',
 		value: '💅',
 		category: 'smileys-people',
-		order: 336,
+		order: 338,
 		skintones: [
 			{
 				skintone: 'default',
@@ -10962,7 +10982,7 @@ export const emojis: Emoji[] = [
 		name: 'selfie',
 		value: '🤳',
 		category: 'smileys-people',
-		order: 337,
+		order: 339,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11002,7 +11022,7 @@ export const emojis: Emoji[] = [
 		name: 'woman dancing',
 		value: '💃',
 		category: 'smileys-people',
-		order: 338,
+		order: 340,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11042,7 +11062,7 @@ export const emojis: Emoji[] = [
 		name: 'man dancing',
 		value: '🕺',
 		category: 'smileys-people',
-		order: 339,
+		order: 341,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11082,7 +11102,7 @@ export const emojis: Emoji[] = [
 		name: 'women with bunny ears',
 		value: '👯‍♀',
 		category: 'smileys-people',
-		order: 340,
+		order: 342,
 		keywords: ['women', 'bunny ears', 'partying'],
 	},
 	{
@@ -11090,7 +11110,7 @@ export const emojis: Emoji[] = [
 		name: 'men with bunny ears',
 		value: '👯‍♂',
 		category: 'smileys-people',
-		order: 341,
+		order: 343,
 		keywords: ['men', 'bunny ears', 'partying'],
 	},
 	{
@@ -11098,7 +11118,7 @@ export const emojis: Emoji[] = [
 		name: 'man in suit levitating',
 		value: '🕴',
 		category: 'smileys-people',
-		order: 342,
+		order: 344,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11138,7 +11158,7 @@ export const emojis: Emoji[] = [
 		name: 'woman in manual wheelchair',
 		value: '👩‍🦽',
 		category: 'smileys-people',
-		order: 343,
+		order: 345,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11178,7 +11198,7 @@ export const emojis: Emoji[] = [
 		name: 'person in manual wheelchair',
 		value: '🧑‍🦽',
 		category: 'smileys-people',
-		order: 344,
+		order: 346,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11218,7 +11238,7 @@ export const emojis: Emoji[] = [
 		name: 'man in manual wheelchair',
 		value: '👨‍🦽',
 		category: 'smileys-people',
-		order: 345,
+		order: 347,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11258,7 +11278,7 @@ export const emojis: Emoji[] = [
 		name: 'woman in motorized wheelchair',
 		value: '👩‍🦼',
 		category: 'smileys-people',
-		order: 346,
+		order: 348,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11298,7 +11318,7 @@ export const emojis: Emoji[] = [
 		name: 'person in motorized wheelchair',
 		value: '🧑‍🦼',
 		category: 'smileys-people',
-		order: 347,
+		order: 349,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11338,7 +11358,7 @@ export const emojis: Emoji[] = [
 		name: 'man in motorized wheelchair',
 		value: '👨‍🦼',
 		category: 'smileys-people',
-		order: 348,
+		order: 350,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11378,7 +11398,7 @@ export const emojis: Emoji[] = [
 		name: 'woman walking',
 		value: '🚶‍♀',
 		category: 'smileys-people',
-		order: 349,
+		order: 351,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11418,7 +11438,7 @@ export const emojis: Emoji[] = [
 		name: 'person walking',
 		value: '🚶',
 		category: 'smileys-people',
-		order: 350,
+		order: 352,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11458,7 +11478,7 @@ export const emojis: Emoji[] = [
 		name: 'man walking',
 		value: '🚶‍♂',
 		category: 'smileys-people',
-		order: 351,
+		order: 353,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11498,7 +11518,7 @@ export const emojis: Emoji[] = [
 		name: 'woman with white cane',
 		value: '👩‍🦯',
 		category: 'smileys-people',
-		order: 352,
+		order: 354,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11538,7 +11558,7 @@ export const emojis: Emoji[] = [
 		name: 'person with white cane',
 		value: '🧑‍🦯',
 		category: 'smileys-people',
-		order: 353,
+		order: 355,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11578,7 +11598,7 @@ export const emojis: Emoji[] = [
 		name: 'man with white cane',
 		value: '👨‍🦯',
 		category: 'smileys-people',
-		order: 354,
+		order: 356,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11618,7 +11638,7 @@ export const emojis: Emoji[] = [
 		name: 'woman kneeling',
 		value: '🧎‍♀',
 		category: 'smileys-people',
-		order: 355,
+		order: 357,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11658,7 +11678,7 @@ export const emojis: Emoji[] = [
 		name: 'person kneeling',
 		value: '🧎',
 		category: 'smileys-people',
-		order: 356,
+		order: 358,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11698,7 +11718,7 @@ export const emojis: Emoji[] = [
 		name: 'man kneeling',
 		value: '🧎‍♂',
 		category: 'smileys-people',
-		order: 357,
+		order: 359,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11738,7 +11758,7 @@ export const emojis: Emoji[] = [
 		name: 'woman running',
 		value: '🏃‍♀',
 		category: 'smileys-people',
-		order: 358,
+		order: 360,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11778,7 +11798,7 @@ export const emojis: Emoji[] = [
 		name: 'person running',
 		value: '🏃',
 		category: 'smileys-people',
-		order: 359,
+		order: 361,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11818,7 +11838,7 @@ export const emojis: Emoji[] = [
 		name: 'man running',
 		value: '🏃‍♂',
 		category: 'smileys-people',
-		order: 360,
+		order: 362,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11858,7 +11878,7 @@ export const emojis: Emoji[] = [
 		name: 'woman standing',
 		value: '🧍‍♀',
 		category: 'smileys-people',
-		order: 361,
+		order: 363,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11898,7 +11918,7 @@ export const emojis: Emoji[] = [
 		name: 'person standing',
 		value: '🧍',
 		category: 'smileys-people',
-		order: 362,
+		order: 364,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11938,7 +11958,7 @@ export const emojis: Emoji[] = [
 		name: 'man standing',
 		value: '🧍‍♂',
 		category: 'smileys-people',
-		order: 363,
+		order: 365,
 		skintones: [
 			{
 				skintone: 'default',
@@ -11978,7 +11998,7 @@ export const emojis: Emoji[] = [
 		name: 'woman and man holding hands',
 		value: '👫',
 		category: 'smileys-people',
-		order: 364,
+		order: 366,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12018,7 +12038,7 @@ export const emojis: Emoji[] = [
 		name: 'women holding hands',
 		value: '👭',
 		category: 'smileys-people',
-		order: 365,
+		order: 367,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12058,7 +12078,7 @@ export const emojis: Emoji[] = [
 		name: 'men holding hands',
 		value: '👬',
 		category: 'smileys-people',
-		order: 366,
+		order: 368,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12098,7 +12118,7 @@ export const emojis: Emoji[] = [
 		name: 'woman and man holding hands with heart',
 		value: '👩‍❤️‍👨',
 		category: 'smileys-people',
-		order: 367,
+		order: 369,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12138,7 +12158,7 @@ export const emojis: Emoji[] = [
 		name: 'women holding hands with heart',
 		value: '👩‍❤️‍👩',
 		category: 'smileys-people',
-		order: 368,
+		order: 370,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12178,7 +12198,7 @@ export const emojis: Emoji[] = [
 		name: 'couple with heart',
 		value: '💑',
 		category: 'smileys-people',
-		order: 369,
+		order: 371,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12218,7 +12238,7 @@ export const emojis: Emoji[] = [
 		name: 'men holding hands with heart',
 		value: '👨‍❤️‍👨',
 		category: 'smileys-people',
-		order: 370,
+		order: 372,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12258,7 +12278,7 @@ export const emojis: Emoji[] = [
 		name: 'woman and man kissing',
 		value: '👩‍❤️‍💋‍👨',
 		category: 'smileys-people',
-		order: 371,
+		order: 373,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12298,7 +12318,7 @@ export const emojis: Emoji[] = [
 		name: 'women kissing',
 		value: '👩‍❤️‍💋‍👩',
 		category: 'smileys-people',
-		order: 372,
+		order: 374,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12338,7 +12358,7 @@ export const emojis: Emoji[] = [
 		name: 'kiss',
 		value: '💏',
 		category: 'smileys-people',
-		order: 373,
+		order: 375,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12378,7 +12398,7 @@ export const emojis: Emoji[] = [
 		name: 'kiss man-man',
 		value: '👨‍❤️‍💋‍👨',
 		category: 'smileys-people',
-		order: 374,
+		order: 376,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12418,7 +12438,7 @@ export const emojis: Emoji[] = [
 		name: 'family man woman boy',
 		value: '👨‍👩‍👦',
 		category: 'smileys-people',
-		order: 375,
+		order: 377,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12458,7 +12478,7 @@ export const emojis: Emoji[] = [
 		name: 'family man woman girl',
 		value: '👨‍👩‍👧',
 		category: 'smileys-people',
-		order: 376,
+		order: 378,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12498,7 +12518,7 @@ export const emojis: Emoji[] = [
 		name: 'family man woman girl boy',
 		value: '👨‍👩‍👧‍👦',
 		category: 'smileys-people',
-		order: 377,
+		order: 379,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12538,7 +12558,7 @@ export const emojis: Emoji[] = [
 		name: 'family man woman boy boy',
 		value: '👨‍👩‍👦‍👦',
 		category: 'smileys-people',
-		order: 378,
+		order: 380,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12578,7 +12598,7 @@ export const emojis: Emoji[] = [
 		name: 'family man woman girl girl',
 		value: '👨‍👩‍👧‍👧',
 		category: 'smileys-people',
-		order: 379,
+		order: 381,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12618,7 +12638,7 @@ export const emojis: Emoji[] = [
 		name: 'family woman woman boy',
 		value: '👩‍👩‍👦',
 		category: 'smileys-people',
-		order: 380,
+		order: 382,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12658,7 +12678,7 @@ export const emojis: Emoji[] = [
 		name: 'family woman woman girl',
 		value: '👩‍👩‍👧',
 		category: 'smileys-people',
-		order: 381,
+		order: 383,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12698,7 +12718,7 @@ export const emojis: Emoji[] = [
 		name: 'family woman woman girl boy',
 		value: '👩‍👩‍👧‍👦',
 		category: 'smileys-people',
-		order: 382,
+		order: 384,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12738,7 +12758,7 @@ export const emojis: Emoji[] = [
 		name: 'family woman woman boy boy',
 		value: '👩‍👩‍👦‍👦',
 		category: 'smileys-people',
-		order: 383,
+		order: 385,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12778,7 +12798,7 @@ export const emojis: Emoji[] = [
 		name: 'family woman woman girl girl',
 		value: '👩‍👩‍👧‍👧',
 		category: 'smileys-people',
-		order: 384,
+		order: 386,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12818,7 +12838,7 @@ export const emojis: Emoji[] = [
 		name: 'family man man boy',
 		value: '👨‍👨‍👦',
 		category: 'smileys-people',
-		order: 385,
+		order: 387,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12858,7 +12878,7 @@ export const emojis: Emoji[] = [
 		name: 'family man man girl',
 		value: '👨‍👨‍👧',
 		category: 'smileys-people',
-		order: 386,
+		order: 388,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12898,7 +12918,7 @@ export const emojis: Emoji[] = [
 		name: 'family man man girl boy',
 		value: '👨‍👨‍👧‍👦',
 		category: 'smileys-people',
-		order: 387,
+		order: 389,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12938,7 +12958,7 @@ export const emojis: Emoji[] = [
 		name: 'family man man boy boy',
 		value: '👨‍👨‍👦‍👦',
 		category: 'smileys-people',
-		order: 388,
+		order: 390,
 		skintones: [
 			{
 				skintone: 'default',
@@ -12978,7 +12998,7 @@ export const emojis: Emoji[] = [
 		name: 'family man man girl girl',
 		value: '👨‍👨‍👧‍👧',
 		category: 'smileys-people',
-		order: 389,
+		order: 391,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13018,7 +13038,7 @@ export const emojis: Emoji[] = [
 		name: 'woman and boy',
 		value: '👩‍👦',
 		category: 'smileys-people',
-		order: 390,
+		order: 392,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13058,7 +13078,7 @@ export const emojis: Emoji[] = [
 		name: 'woman and girl',
 		value: '👩‍👧',
 		category: 'smileys-people',
-		order: 391,
+		order: 393,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13098,7 +13118,7 @@ export const emojis: Emoji[] = [
 		name: 'woman, girl and boy',
 		value: '👩‍👧‍👦',
 		category: 'smileys-people',
-		order: 392,
+		order: 394,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13138,7 +13158,7 @@ export const emojis: Emoji[] = [
 		name: 'woman and two boys',
 		value: '👩‍👦‍👦',
 		category: 'smileys-people',
-		order: 393,
+		order: 395,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13178,7 +13198,7 @@ export const emojis: Emoji[] = [
 		name: 'woman and two girls',
 		value: '👩‍👧‍👧',
 		category: 'smileys-people',
-		order: 394,
+		order: 396,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13218,7 +13238,7 @@ export const emojis: Emoji[] = [
 		name: 'man and boy',
 		value: '👨‍👦',
 		category: 'smileys-people',
-		order: 395,
+		order: 397,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13258,7 +13278,7 @@ export const emojis: Emoji[] = [
 		name: 'man and girl',
 		value: '👨‍👧',
 		category: 'smileys-people',
-		order: 396,
+		order: 398,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13298,7 +13318,7 @@ export const emojis: Emoji[] = [
 		name: 'man, girl and boy',
 		value: '👨‍👧‍👦',
 		category: 'smileys-people',
-		order: 397,
+		order: 399,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13338,7 +13358,7 @@ export const emojis: Emoji[] = [
 		name: 'man and two boys',
 		value: '👨‍👦‍👦',
 		category: 'smileys-people',
-		order: 398,
+		order: 400,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13378,7 +13398,7 @@ export const emojis: Emoji[] = [
 		name: 'man and two girls',
 		value: '👨‍👧‍👧',
 		category: 'smileys-people',
-		order: 399,
+		order: 401,
 		skintones: [
 			{
 				skintone: 'default',
@@ -13418,7 +13438,7 @@ export const emojis: Emoji[] = [
 		name: 'knot',
 		value: '🪢',
 		category: 'smileys-people',
-		order: 400,
+		order: 402,
 		keywords: ['knot', 'rope', 'tie'],
 	},
 	{
@@ -13426,7 +13446,7 @@ export const emojis: Emoji[] = [
 		name: 'yarn',
 		value: '🧶',
 		category: 'smileys-people',
-		order: 401,
+		order: 403,
 		keywords: ['yarn', 'knitting', 'thread'],
 	},
 	{
@@ -13434,7 +13454,7 @@ export const emojis: Emoji[] = [
 		name: 'thread',
 		value: '🧵',
 		category: 'smileys-people',
-		order: 402,
+		order: 404,
 		keywords: ['thread', 'sewing', 'spool'],
 	},
 	{
@@ -13442,7 +13462,7 @@ export const emojis: Emoji[] = [
 		name: 'sewing needle',
 		value: '🪡',
 		category: 'smileys-people',
-		order: 403,
+		order: 405,
 		keywords: ['needle', 'sewing', 'stitch'],
 	},
 	{
@@ -13450,7 +13470,7 @@ export const emojis: Emoji[] = [
 		name: 'coat',
 		value: '🧥',
 		category: 'smileys-people',
-		order: 404,
+		order: 406,
 		keywords: ['coat', 'jacket', 'outerwear'],
 	},
 	{
@@ -13458,7 +13478,7 @@ export const emojis: Emoji[] = [
 		name: 'lab coat',
 		value: '🥼',
 		category: 'smileys-people',
-		order: 405,
+		order: 407,
 		keywords: ['lab coat', 'scientist', 'doctor'],
 	},
 	{
@@ -13466,7 +13486,7 @@ export const emojis: Emoji[] = [
 		name: 'safety vest',
 		value: '🦺',
 		category: 'smileys-people',
-		order: 406,
+		order: 408,
 		keywords: ['safety vest', 'high visibility', 'protection'],
 	},
 	{
@@ -13474,7 +13494,7 @@ export const emojis: Emoji[] = [
 		name: 'blouse',
 		value: '👚',
 		category: 'smileys-people',
-		order: 407,
+		order: 409,
 		keywords: ['blouse', 'shirt', 'top'],
 	},
 	{
@@ -13482,7 +13502,7 @@ export const emojis: Emoji[] = [
 		name: 't-shirt',
 		value: '👕',
 		category: 'smileys-people',
-		order: 408,
+		order: 410,
 		keywords: ['t-shirt', 'shirt', 'top'],
 	},
 	{
@@ -13490,7 +13510,7 @@ export const emojis: Emoji[] = [
 		name: 'jeans',
 		value: '👖',
 		category: 'smileys-people',
-		order: 409,
+		order: 411,
 		keywords: ['jeans', 'pants', 'denim'],
 	},
 	{
@@ -13498,7 +13518,7 @@ export const emojis: Emoji[] = [
 		name: 'briefs',
 		value: '🩲',
 		category: 'smileys-people',
-		order: 410,
+		order: 412,
 		keywords: ['briefs', 'underwear', 'undergarment'],
 	},
 	{
@@ -13506,7 +13526,7 @@ export const emojis: Emoji[] = [
 		name: 'shorts',
 		value: '🩳',
 		category: 'smileys-people',
-		order: 411,
+		order: 413,
 		keywords: ['shorts', 'summer', 'clothing'],
 	},
 	{
@@ -13514,7 +13534,7 @@ export const emojis: Emoji[] = [
 		name: 'necktie',
 		value: '👔',
 		category: 'smileys-people',
-		order: 412,
+		order: 414,
 		keywords: ['necktie', 'tie', 'formal'],
 	},
 	{
@@ -13522,7 +13542,7 @@ export const emojis: Emoji[] = [
 		name: 'dress',
 		value: '👗',
 		category: 'smileys-people',
-		order: 413,
+		order: 415,
 		keywords: ['dress', 'clothing', 'fashion'],
 	},
 	{
@@ -13530,7 +13550,7 @@ export const emojis: Emoji[] = [
 		name: 'bikini',
 		value: '👙',
 		category: 'smileys-people',
-		order: 414,
+		order: 416,
 		keywords: ['bikini', 'swimwear', 'beach'],
 	},
 	{
@@ -13538,7 +13558,7 @@ export const emojis: Emoji[] = [
 		name: 'one-piece swimsuit',
 		value: '🩱',
 		category: 'smileys-people',
-		order: 415,
+		order: 417,
 		keywords: ['swimsuit', 'swimwear', 'beach'],
 	},
 	{
@@ -13546,7 +13566,7 @@ export const emojis: Emoji[] = [
 		name: 'kimono',
 		value: '👘',
 		category: 'smileys-people',
-		order: 416,
+		order: 418,
 		keywords: ['kimono', 'robe', 'traditional'],
 	},
 	{
@@ -13554,7 +13574,7 @@ export const emojis: Emoji[] = [
 		name: 'sari',
 		value: '🥻',
 		category: 'smileys-people',
-		order: 417,
+		order: 419,
 		keywords: ['sari', 'robe', 'traditional'],
 	},
 	{
@@ -13562,7 +13582,7 @@ export const emojis: Emoji[] = [
 		name: 'flip-flops',
 		value: '🩴',
 		category: 'smileys-people',
-		order: 418,
+		order: 420,
 		keywords: ['flip-flops', 'sandals', 'shoes'],
 	},
 	{
@@ -13570,7 +13590,7 @@ export const emojis: Emoji[] = [
 		name: 'flat shoe',
 		value: '🥿',
 		category: 'smileys-people',
-		order: 419,
+		order: 421,
 		keywords: ['flat shoe', 'shoes', 'footwear'],
 	},
 	{
@@ -13578,7 +13598,7 @@ export const emojis: Emoji[] = [
 		name: 'high-heeled shoe',
 		value: '👠',
 		category: 'smileys-people',
-		order: 420,
+		order: 422,
 		keywords: ['high-heeled shoe', 'heels', 'footwear'],
 	},
 	{
@@ -13586,7 +13606,7 @@ export const emojis: Emoji[] = [
 		name: 'sandal',
 		value: '👡',
 		category: 'smileys-people',
-		order: 421,
+		order: 423,
 		keywords: ['sandal', 'shoes', 'footwear'],
 	},
 	{
@@ -13594,7 +13614,7 @@ export const emojis: Emoji[] = [
 		name: 'boot',
 		value: '👢',
 		category: 'smileys-people',
-		order: 422,
+		order: 424,
 		keywords: ['boot', 'shoes', 'footwear'],
 	},
 	{
@@ -13602,7 +13622,7 @@ export const emojis: Emoji[] = [
 		name: 'shoe',
 		value: '👞',
 		category: 'smileys-people',
-		order: 423,
+		order: 425,
 		keywords: ['shoe', 'shoes', 'footwear'],
 	},
 	{
@@ -13610,7 +13630,7 @@ export const emojis: Emoji[] = [
 		name: 'running shoe',
 		value: '👟',
 		category: 'smileys-people',
-		order: 424,
+		order: 426,
 		keywords: ['running shoe', 'sneakers', 'footwear'],
 	},
 	{
@@ -13618,7 +13638,7 @@ export const emojis: Emoji[] = [
 		name: 'hiking boot',
 		value: '🥾',
 		category: 'smileys-people',
-		order: 425,
+		order: 427,
 		keywords: ['hiking boot', 'boots', 'footwear'],
 	},
 	{
@@ -13626,7 +13646,7 @@ export const emojis: Emoji[] = [
 		name: 'socks',
 		value: '🧦',
 		category: 'smileys-people',
-		order: 426,
+		order: 428,
 		keywords: ['socks', 'footwear', 'clothing'],
 	},
 	{
@@ -13634,7 +13654,7 @@ export const emojis: Emoji[] = [
 		name: 'gloves',
 		value: '🧤',
 		category: 'smileys-people',
-		order: 427,
+		order: 429,
 		keywords: ['gloves', 'clothing', 'winter'],
 	},
 	{
@@ -13642,7 +13662,7 @@ export const emojis: Emoji[] = [
 		name: 'scarf',
 		value: '🧣',
 		category: 'smileys-people',
-		order: 428,
+		order: 430,
 		keywords: ['scarf', 'clothing', 'winter'],
 	},
 	{
@@ -13650,7 +13670,7 @@ export const emojis: Emoji[] = [
 		name: 'top hat',
 		value: '🎩',
 		category: 'smileys-people',
-		order: 429,
+		order: 431,
 		keywords: ['top hat', 'hat', 'headwear'],
 	},
 	{
@@ -13658,7 +13678,7 @@ export const emojis: Emoji[] = [
 		name: 'cap',
 		value: '🧢',
 		category: 'smileys-people',
-		order: 430,
+		order: 432,
 		keywords: ['cap', 'hat', 'headwear'],
 	},
 	{
@@ -13666,7 +13686,7 @@ export const emojis: Emoji[] = [
 		name: "woman's hat",
 		value: '👒',
 		category: 'smileys-people',
-		order: 431,
+		order: 433,
 		keywords: ["woman's hat", 'hat', 'headwear'],
 	},
 	{
@@ -13674,7 +13694,7 @@ export const emojis: Emoji[] = [
 		name: 'graduation cap',
 		value: '🎓',
 		category: 'smileys-people',
-		order: 432,
+		order: 434,
 		keywords: ['graduation cap', 'graduation', 'education'],
 	},
 	{
@@ -13682,7 +13702,7 @@ export const emojis: Emoji[] = [
 		name: 'helmet with white cross',
 		value: '⛑',
 		category: 'smileys-people',
-		order: 433,
+		order: 435,
 		keywords: ['helmet', 'cross', 'safety'],
 	},
 	{
@@ -13690,7 +13710,7 @@ export const emojis: Emoji[] = [
 		name: 'military helmet',
 		value: '🪖',
 		category: 'smileys-people',
-		order: 434,
+		order: 436,
 		keywords: ['military', 'helmet', 'safety'],
 	},
 	{
@@ -13698,7 +13718,7 @@ export const emojis: Emoji[] = [
 		name: 'crown',
 		value: '👑',
 		category: 'smileys-people',
-		order: 435,
+		order: 437,
 		keywords: ['crown', 'king', 'queen'],
 	},
 	{
@@ -13706,7 +13726,7 @@ export const emojis: Emoji[] = [
 		name: 'ring',
 		value: '💍',
 		category: 'smileys-people',
-		order: 436,
+		order: 438,
 		keywords: ['ring', 'jewelry', 'engagement'],
 	},
 	{
@@ -13714,7 +13734,7 @@ export const emojis: Emoji[] = [
 		name: 'clutch bag',
 		value: '👝',
 		category: 'smileys-people',
-		order: 437,
+		order: 439,
 		keywords: ['clutch bag', 'bag', 'fashion'],
 	},
 	{
@@ -13722,7 +13742,7 @@ export const emojis: Emoji[] = [
 		name: 'purse',
 		value: '👛',
 		category: 'smileys-people',
-		order: 438,
+		order: 440,
 		keywords: ['purse', 'bag', 'fashion'],
 	},
 	{
@@ -13730,7 +13750,7 @@ export const emojis: Emoji[] = [
 		name: 'handbag',
 		value: '👜',
 		category: 'smileys-people',
-		order: 439,
+		order: 441,
 		keywords: ['handbag', 'bag', 'fashion'],
 	},
 	{
@@ -13738,7 +13758,7 @@ export const emojis: Emoji[] = [
 		name: 'briefcase',
 		value: '💼',
 		category: 'smileys-people',
-		order: 440,
+		order: 442,
 		keywords: ['briefcase', 'bag', 'business'],
 	},
 	{
@@ -13746,7 +13766,7 @@ export const emojis: Emoji[] = [
 		name: 'backpack',
 		value: '🎒',
 		category: 'smileys-people',
-		order: 441,
+		order: 443,
 		keywords: ['backpack', 'bag', 'school'],
 	},
 	{
@@ -13754,7 +13774,7 @@ export const emojis: Emoji[] = [
 		name: 'luggage',
 		value: '🧳',
 		category: 'smileys-people',
-		order: 442,
+		order: 444,
 		keywords: ['luggage', 'travel', 'bag'],
 	},
 	{
@@ -13762,7 +13782,7 @@ export const emojis: Emoji[] = [
 		name: 'glasses',
 		value: '👓',
 		category: 'smileys-people',
-		order: 443,
+		order: 445,
 		keywords: ['glasses', 'eyewear', 'vision'],
 	},
 	{
@@ -13770,7 +13790,7 @@ export const emojis: Emoji[] = [
 		name: 'sunglasses',
 		value: '🕶',
 		category: 'smileys-people',
-		order: 444,
+		order: 446,
 		keywords: ['sunglasses', 'eyewear', 'fashion'],
 	},
 	{
@@ -13778,7 +13798,7 @@ export const emojis: Emoji[] = [
 		name: 'goggles',
 		value: '🥽',
 		category: 'smileys-people',
-		order: 445,
+		order: 447,
 		keywords: ['goggles', 'eyewear', 'protection'],
 	},
 	{
@@ -13786,7 +13806,7 @@ export const emojis: Emoji[] = [
 		name: 'closed umbrella',
 		value: '🌂',
 		category: 'smileys-people',
-		order: 446,
+		order: 448,
 		keywords: ['umbrella', 'closed', 'rain', 'weather'],
 	},
 	{
@@ -13794,7 +13814,7 @@ export const emojis: Emoji[] = [
 		name: 'dog face',
 		value: '🐶',
 		category: 'animals-nature',
-		order: 447,
+		order: 449,
 		keywords: ['animal', 'dog', 'pet'],
 	},
 	{
@@ -13802,7 +13822,7 @@ export const emojis: Emoji[] = [
 		name: 'cat face',
 		value: '🐱',
 		category: 'animals-nature',
-		order: 448,
+		order: 450,
 		keywords: ['animal', 'cat', 'pet'],
 	},
 	{
@@ -13810,7 +13830,7 @@ export const emojis: Emoji[] = [
 		name: 'mouse face',
 		value: '🐭',
 		category: 'animals-nature',
-		order: 449,
+		order: 451,
 		keywords: ['animal', 'mouse', 'rodent'],
 	},
 	{
@@ -13818,7 +13838,7 @@ export const emojis: Emoji[] = [
 		name: 'hamster face',
 		value: '🐹',
 		category: 'animals-nature',
-		order: 450,
+		order: 452,
 		keywords: ['animal', 'hamster', 'pet'],
 	},
 	{
@@ -13826,7 +13846,7 @@ export const emojis: Emoji[] = [
 		name: 'rabbit face',
 		value: '🐰',
 		category: 'animals-nature',
-		order: 451,
+		order: 453,
 		keywords: ['animal', 'rabbit', 'bunny'],
 	},
 	{
@@ -13834,7 +13854,7 @@ export const emojis: Emoji[] = [
 		name: 'fox face',
 		value: '🦊',
 		category: 'animals-nature',
-		order: 452,
+		order: 454,
 		keywords: ['animal', 'fox', 'wild'],
 	},
 	{
@@ -13842,7 +13862,7 @@ export const emojis: Emoji[] = [
 		name: 'bear face',
 		value: '🐻',
 		category: 'animals-nature',
-		order: 453,
+		order: 455,
 		keywords: ['animal', 'bear', 'wild'],
 	},
 	{
@@ -13850,7 +13870,7 @@ export const emojis: Emoji[] = [
 		name: 'panda face',
 		value: '🐼',
 		category: 'animals-nature',
-		order: 454,
+		order: 456,
 		keywords: ['animal', 'panda', 'bear'],
 	},
 	{
@@ -13858,7 +13878,7 @@ export const emojis: Emoji[] = [
 		name: 'polar bear',
 		value: '🐻‍❄',
 		category: 'animals-nature',
-		order: 455,
+		order: 457,
 		keywords: ['animal', 'polar', 'bear'],
 	},
 	{
@@ -13866,7 +13886,7 @@ export const emojis: Emoji[] = [
 		name: 'koala',
 		value: '🐨',
 		category: 'animals-nature',
-		order: 456,
+		order: 458,
 		keywords: ['animal', 'koala', 'wild'],
 	},
 	{
@@ -13874,7 +13894,7 @@ export const emojis: Emoji[] = [
 		name: 'tiger face',
 		value: '🐯',
 		category: 'animals-nature',
-		order: 457,
+		order: 459,
 		keywords: ['animal', 'tiger', 'wild'],
 	},
 	{
@@ -13882,7 +13902,7 @@ export const emojis: Emoji[] = [
 		name: 'lion face',
 		value: '🦁',
 		category: 'animals-nature',
-		order: 458,
+		order: 460,
 		keywords: ['animal', 'lion', 'wild'],
 	},
 	{
@@ -13890,7 +13910,7 @@ export const emojis: Emoji[] = [
 		name: 'cow face',
 		value: '🐮',
 		category: 'animals-nature',
-		order: 459,
+		order: 461,
 		keywords: ['animal', 'cow', 'farm'],
 	},
 	{
@@ -13898,7 +13918,7 @@ export const emojis: Emoji[] = [
 		name: 'pig face',
 		value: '🐷',
 		category: 'animals-nature',
-		order: 460,
+		order: 462,
 		keywords: ['animal', 'pig', 'farm'],
 	},
 	{
@@ -13906,7 +13926,7 @@ export const emojis: Emoji[] = [
 		name: 'pig nose',
 		value: '🐽',
 		category: 'animals-nature',
-		order: 461,
+		order: 463,
 		keywords: ['animal', 'pig', 'nose'],
 	},
 	{
@@ -13914,7 +13934,7 @@ export const emojis: Emoji[] = [
 		name: 'frog',
 		value: '🐸',
 		category: 'animals-nature',
-		order: 462,
+		order: 464,
 		keywords: ['animal', 'frog', 'amphibian'],
 	},
 	{
@@ -13922,7 +13942,7 @@ export const emojis: Emoji[] = [
 		name: 'monkey face',
 		value: '🐵',
 		category: 'animals-nature',
-		order: 463,
+		order: 465,
 		keywords: ['animal', 'monkey', 'primate'],
 	},
 	{
@@ -13930,7 +13950,7 @@ export const emojis: Emoji[] = [
 		name: 'see-no-evil monkey',
 		value: '🙈',
 		category: 'animals-nature',
-		order: 464,
+		order: 466,
 		keywords: ['monkey', 'see', 'evil'],
 	},
 	{
@@ -13938,7 +13958,7 @@ export const emojis: Emoji[] = [
 		name: 'hear-no-evil monkey',
 		value: '🙉',
 		category: 'animals-nature',
-		order: 465,
+		order: 467,
 		keywords: ['monkey', 'hear', 'evil'],
 	},
 	{
@@ -13946,7 +13966,7 @@ export const emojis: Emoji[] = [
 		name: 'speak-no-evil monkey',
 		value: '🙊',
 		category: 'animals-nature',
-		order: 466,
+		order: 468,
 		keywords: ['monkey', 'speak', 'evil'],
 	},
 	{
@@ -13954,7 +13974,7 @@ export const emojis: Emoji[] = [
 		name: 'monkey',
 		value: '🐒',
 		category: 'animals-nature',
-		order: 467,
+		order: 469,
 		keywords: ['animal', 'monkey', 'primate'],
 	},
 	{
@@ -13962,7 +13982,7 @@ export const emojis: Emoji[] = [
 		name: 'chicken',
 		value: '🐔',
 		category: 'animals-nature',
-		order: 468,
+		order: 470,
 		keywords: ['animal', 'chicken', 'bird'],
 	},
 	{
@@ -13970,7 +13990,7 @@ export const emojis: Emoji[] = [
 		name: 'penguin',
 		value: '🐧',
 		category: 'animals-nature',
-		order: 469,
+		order: 471,
 		keywords: ['animal', 'penguin', 'bird'],
 	},
 	{
@@ -13978,7 +13998,7 @@ export const emojis: Emoji[] = [
 		name: 'bird',
 		value: '🐦',
 		category: 'animals-nature',
-		order: 470,
+		order: 472,
 		keywords: ['animal', 'bird'],
 	},
 	{
@@ -13986,7 +14006,7 @@ export const emojis: Emoji[] = [
 		name: 'baby chick',
 		value: '🐤',
 		category: 'animals-nature',
-		order: 471,
+		order: 473,
 		keywords: ['animal', 'chick', 'bird'],
 	},
 	{
@@ -13994,7 +14014,7 @@ export const emojis: Emoji[] = [
 		name: 'hatching chick',
 		value: '🐣',
 		category: 'animals-nature',
-		order: 472,
+		order: 474,
 		keywords: ['animal', 'chick', 'hatch'],
 	},
 	{
@@ -14002,7 +14022,7 @@ export const emojis: Emoji[] = [
 		name: 'front-facing baby chick',
 		value: '🐥',
 		category: 'animals-nature',
-		order: 473,
+		order: 475,
 		keywords: ['animal', 'chick', 'bird'],
 	},
 	{
@@ -14010,7 +14030,7 @@ export const emojis: Emoji[] = [
 		name: 'goose',
 		value: '🪿',
 		category: 'animals-nature',
-		order: 474,
+		order: 476,
 		keywords: ['animal', 'goose', 'bird'],
 	},
 	{
@@ -14018,7 +14038,7 @@ export const emojis: Emoji[] = [
 		name: 'duck',
 		value: '🦆',
 		category: 'animals-nature',
-		order: 475,
+		order: 477,
 		keywords: ['animal', 'duck', 'bird'],
 	},
 	{
@@ -14026,7 +14046,7 @@ export const emojis: Emoji[] = [
 		name: 'black bird',
 		value: '🐦‍⬛',
 		category: 'animals-nature',
-		order: 476,
+		order: 478,
 		keywords: ['animal', 'bird', 'black'],
 	},
 	{
@@ -14034,7 +14054,7 @@ export const emojis: Emoji[] = [
 		name: 'eagle',
 		value: '🦅',
 		category: 'animals-nature',
-		order: 477,
+		order: 479,
 		keywords: ['animal', 'eagle', 'bird'],
 	},
 	{
@@ -14042,7 +14062,7 @@ export const emojis: Emoji[] = [
 		name: 'owl',
 		value: '🦉',
 		category: 'animals-nature',
-		order: 478,
+		order: 480,
 		keywords: ['animal', 'owl', 'bird'],
 	},
 	{
@@ -14050,7 +14070,7 @@ export const emojis: Emoji[] = [
 		name: 'bat',
 		value: '🦇',
 		category: 'animals-nature',
-		order: 479,
+		order: 481,
 		keywords: ['animal', 'bat', 'wild'],
 	},
 	{
@@ -14058,7 +14078,7 @@ export const emojis: Emoji[] = [
 		name: 'wolf',
 		value: '🐺',
 		category: 'animals-nature',
-		order: 480,
+		order: 482,
 		keywords: ['animal', 'wolf', 'wild'],
 	},
 	{
@@ -14066,7 +14086,7 @@ export const emojis: Emoji[] = [
 		name: 'boar',
 		value: '🐗',
 		category: 'animals-nature',
-		order: 481,
+		order: 483,
 		keywords: ['animal', 'boar', 'wild'],
 	},
 	{
@@ -14074,7 +14094,7 @@ export const emojis: Emoji[] = [
 		name: 'horse face',
 		value: '🐴',
 		category: 'animals-nature',
-		order: 482,
+		order: 484,
 		keywords: ['animal', 'horse'],
 	},
 	{
@@ -14082,7 +14102,7 @@ export const emojis: Emoji[] = [
 		name: 'unicorn face',
 		value: '🦄',
 		category: 'animals-nature',
-		order: 483,
+		order: 485,
 		keywords: ['animal', 'unicorn', 'mythical'],
 	},
 	{
@@ -14090,7 +14110,7 @@ export const emojis: Emoji[] = [
 		name: 'moose',
 		value: '🫎',
 		category: 'animals-nature',
-		order: 484,
+		order: 486,
 		keywords: ['animal', 'moose', 'wild'],
 	},
 	{
@@ -14098,7 +14118,7 @@ export const emojis: Emoji[] = [
 		name: 'bee',
 		value: '🐝',
 		category: 'animals-nature',
-		order: 485,
+		order: 487,
 		keywords: ['animal', 'bee', 'insect'],
 	},
 	{
@@ -14106,7 +14126,7 @@ export const emojis: Emoji[] = [
 		name: 'worm',
 		value: '🪱',
 		category: 'animals-nature',
-		order: 486,
+		order: 488,
 		keywords: ['animal', 'worm', 'insect'],
 	},
 	{
@@ -14114,7 +14134,7 @@ export const emojis: Emoji[] = [
 		name: 'bug',
 		value: '🐛',
 		category: 'animals-nature',
-		order: 487,
+		order: 489,
 		keywords: ['animal', 'bug', 'insect'],
 	},
 	{
@@ -14122,7 +14142,7 @@ export const emojis: Emoji[] = [
 		name: 'butterfly',
 		value: '🦋',
 		category: 'animals-nature',
-		order: 488,
+		order: 490,
 		keywords: ['animal', 'butterfly', 'insect'],
 	},
 	{
@@ -14130,7 +14150,7 @@ export const emojis: Emoji[] = [
 		name: 'snail',
 		value: '🐌',
 		category: 'animals-nature',
-		order: 489,
+		order: 491,
 		keywords: ['animal', 'snail', 'mollusk'],
 	},
 	{
@@ -14138,7 +14158,7 @@ export const emojis: Emoji[] = [
 		name: 'lady beetle',
 		value: '🐞',
 		category: 'animals-nature',
-		order: 490,
+		order: 492,
 		keywords: ['animal', 'beetle', 'ladybug'],
 	},
 	{
@@ -14146,7 +14166,7 @@ export const emojis: Emoji[] = [
 		name: 'ant',
 		value: '🐜',
 		category: 'animals-nature',
-		order: 491,
+		order: 493,
 		keywords: ['animal', 'ant', 'insect'],
 	},
 	{
@@ -14154,7 +14174,7 @@ export const emojis: Emoji[] = [
 		name: 'fly',
 		value: '🪰',
 		category: 'animals-nature',
-		order: 492,
+		order: 494,
 		keywords: ['animal', 'fly', 'insect'],
 	},
 	{
@@ -14162,7 +14182,7 @@ export const emojis: Emoji[] = [
 		name: 'beetle',
 		value: '🪲',
 		category: 'animals-nature',
-		order: 493,
+		order: 495,
 		keywords: ['animal', 'beetle', 'insect'],
 	},
 	{
@@ -14170,7 +14190,7 @@ export const emojis: Emoji[] = [
 		name: 'cockroach',
 		value: '🪳',
 		category: 'animals-nature',
-		order: 494,
+		order: 496,
 		keywords: ['animal', 'cockroach', 'insect'],
 	},
 	{
@@ -14178,7 +14198,7 @@ export const emojis: Emoji[] = [
 		name: 'mosquito',
 		value: '🦟',
 		category: 'animals-nature',
-		order: 495,
+		order: 497,
 		keywords: ['animal', 'mosquito', 'insect'],
 	},
 	{
@@ -14186,7 +14206,7 @@ export const emojis: Emoji[] = [
 		name: 'cricket',
 		value: '🦗',
 		category: 'animals-nature',
-		order: 496,
+		order: 498,
 		keywords: ['animal', 'cricket', 'insect'],
 	},
 	{
@@ -14194,7 +14214,7 @@ export const emojis: Emoji[] = [
 		name: 'spider',
 		value: '🕷',
 		category: 'animals-nature',
-		order: 497,
+		order: 499,
 		keywords: ['animal', 'spider', 'insect'],
 	},
 	{
@@ -14202,7 +14222,7 @@ export const emojis: Emoji[] = [
 		name: 'spider web',
 		value: '🕸',
 		category: 'animals-nature',
-		order: 498,
+		order: 500,
 		keywords: ['animal', 'spider', 'web'],
 	},
 	{
@@ -14210,7 +14230,7 @@ export const emojis: Emoji[] = [
 		name: 'scorpion',
 		value: '🦂',
 		category: 'animals-nature',
-		order: 499,
+		order: 501,
 		keywords: ['animal', 'scorpion', 'insect'],
 	},
 	{
@@ -14218,7 +14238,7 @@ export const emojis: Emoji[] = [
 		name: 'turtle',
 		value: '🐢',
 		category: 'animals-nature',
-		order: 500,
+		order: 502,
 		keywords: ['animal', 'turtle', 'reptile'],
 	},
 	{
@@ -14226,7 +14246,7 @@ export const emojis: Emoji[] = [
 		name: 'snake',
 		value: '🐍',
 		category: 'animals-nature',
-		order: 501,
+		order: 503,
 		keywords: ['animal', 'snake', 'reptile'],
 	},
 	{
@@ -14234,7 +14254,7 @@ export const emojis: Emoji[] = [
 		name: 'lizard',
 		value: '🦎',
 		category: 'animals-nature',
-		order: 502,
+		order: 504,
 		keywords: ['animal', 'lizard', 'reptile'],
 	},
 	{
@@ -14242,7 +14262,7 @@ export const emojis: Emoji[] = [
 		name: 't-rex',
 		value: '🦖',
 		category: 'animals-nature',
-		order: 503,
+		order: 505,
 		keywords: ['animal', 't_rex', 'dinosaur'],
 	},
 	{
@@ -14250,7 +14270,7 @@ export const emojis: Emoji[] = [
 		name: 'sauropod',
 		value: '🦕',
 		category: 'animals-nature',
-		order: 504,
+		order: 506,
 		keywords: ['animal', 'sauropod', 'dinosaur'],
 	},
 	{
@@ -14258,7 +14278,7 @@ export const emojis: Emoji[] = [
 		name: 'octopus',
 		value: '🐙',
 		category: 'animals-nature',
-		order: 505,
+		order: 507,
 		keywords: ['animal', 'octopus', 'marine'],
 	},
 	{
@@ -14266,7 +14286,7 @@ export const emojis: Emoji[] = [
 		name: 'squid',
 		value: '🦑',
 		category: 'animals-nature',
-		order: 506,
+		order: 508,
 		keywords: ['animal', 'squid', 'marine'],
 	},
 	{
@@ -14274,7 +14294,7 @@ export const emojis: Emoji[] = [
 		name: 'jellyfish',
 		value: '🪼',
 		category: 'animals-nature',
-		order: 507,
+		order: 509,
 		keywords: ['animal', 'jellyfish', 'marine'],
 	},
 	{
@@ -14282,7 +14302,7 @@ export const emojis: Emoji[] = [
 		name: 'shrimp',
 		value: '🦐',
 		category: 'animals-nature',
-		order: 508,
+		order: 510,
 		keywords: ['animal', 'shrimp', 'marine'],
 	},
 	{
@@ -14290,7 +14310,7 @@ export const emojis: Emoji[] = [
 		name: 'lobster',
 		value: '🦞',
 		category: 'animals-nature',
-		order: 509,
+		order: 511,
 		keywords: ['animal', 'lobster', 'marine'],
 	},
 	{
@@ -14298,7 +14318,7 @@ export const emojis: Emoji[] = [
 		name: 'crab',
 		value: '🦀',
 		category: 'animals-nature',
-		order: 510,
+		order: 512,
 		keywords: ['animal', 'crab', 'marine'],
 	},
 	{
@@ -14306,7 +14326,7 @@ export const emojis: Emoji[] = [
 		name: 'blowfish',
 		value: '🐡',
 		category: 'animals-nature',
-		order: 511,
+		order: 513,
 		keywords: ['animal', 'blowfish', 'fish'],
 	},
 	{
@@ -14314,7 +14334,7 @@ export const emojis: Emoji[] = [
 		name: 'tropical fish',
 		value: '🐠',
 		category: 'animals-nature',
-		order: 512,
+		order: 514,
 		keywords: ['animal', 'tropical', 'fish'],
 	},
 	{
@@ -14322,7 +14342,7 @@ export const emojis: Emoji[] = [
 		name: 'fish',
 		value: '🐟',
 		category: 'animals-nature',
-		order: 513,
+		order: 515,
 		keywords: ['animal', 'fish', 'marine'],
 	},
 	{
@@ -14330,7 +14350,7 @@ export const emojis: Emoji[] = [
 		name: 'dolphin',
 		value: '🐬',
 		category: 'animals-nature',
-		order: 514,
+		order: 516,
 		keywords: ['animal', 'dolphin', 'marine'],
 	},
 	{
@@ -14338,7 +14358,7 @@ export const emojis: Emoji[] = [
 		name: 'spouting whale',
 		value: '🐳',
 		category: 'animals-nature',
-		order: 515,
+		order: 517,
 		keywords: ['animal', 'whale', 'marine'],
 	},
 	{
@@ -14346,7 +14366,7 @@ export const emojis: Emoji[] = [
 		name: 'whale',
 		value: '🐋',
 		category: 'animals-nature',
-		order: 516,
+		order: 518,
 		keywords: ['animal', 'whale', 'marine'],
 	},
 	{
@@ -14354,7 +14374,7 @@ export const emojis: Emoji[] = [
 		name: 'shark',
 		value: '🦈',
 		category: 'animals-nature',
-		order: 517,
+		order: 519,
 		keywords: ['animal', 'shark', 'marine'],
 	},
 	{
@@ -14362,7 +14382,7 @@ export const emojis: Emoji[] = [
 		name: 'seal',
 		value: '🦭',
 		category: 'animals-nature',
-		order: 518,
+		order: 520,
 		keywords: ['animal', 'seal', 'marine'],
 	},
 	{
@@ -14370,7 +14390,7 @@ export const emojis: Emoji[] = [
 		name: 'crocodile',
 		value: '🐊',
 		category: 'animals-nature',
-		order: 519,
+		order: 521,
 		keywords: ['animal', 'crocodile', 'reptile'],
 	},
 	{
@@ -14378,7 +14398,7 @@ export const emojis: Emoji[] = [
 		name: 'tiger',
 		value: '🐅',
 		category: 'animals-nature',
-		order: 520,
+		order: 522,
 		keywords: ['animal', 'tiger', 'wild'],
 	},
 	{
@@ -14386,7 +14406,7 @@ export const emojis: Emoji[] = [
 		name: 'leopard',
 		value: '🐆',
 		category: 'animals-nature',
-		order: 521,
+		order: 523,
 		keywords: ['animal', 'leopard', 'wild'],
 	},
 	{
@@ -14394,7 +14414,7 @@ export const emojis: Emoji[] = [
 		name: 'zebra',
 		value: '🦓',
 		category: 'animals-nature',
-		order: 522,
+		order: 524,
 		keywords: ['animal', 'zebra', 'wild'],
 	},
 	{
@@ -14402,7 +14422,7 @@ export const emojis: Emoji[] = [
 		name: 'gorilla',
 		value: '🦍',
 		category: 'animals-nature',
-		order: 523,
+		order: 525,
 		keywords: ['animal', 'gorilla', 'primate'],
 	},
 	{
@@ -14410,7 +14430,7 @@ export const emojis: Emoji[] = [
 		name: 'orangutan',
 		value: '🦧',
 		category: 'animals-nature',
-		order: 524,
+		order: 526,
 		keywords: ['animal', 'orangutan', 'primate'],
 	},
 	{
@@ -14418,7 +14438,7 @@ export const emojis: Emoji[] = [
 		name: 'mammoth',
 		value: '🦣',
 		category: 'animals-nature',
-		order: 525,
+		order: 527,
 		keywords: ['animal', 'mammoth', 'prehistoric'],
 	},
 	{
@@ -14426,7 +14446,7 @@ export const emojis: Emoji[] = [
 		name: 'elephant',
 		value: '🐘',
 		category: 'animals-nature',
-		order: 526,
+		order: 528,
 		keywords: ['animal', 'elephant', 'wild'],
 	},
 	{
@@ -14434,7 +14454,7 @@ export const emojis: Emoji[] = [
 		name: 'hippopotamus',
 		value: '🦛',
 		category: 'animals-nature',
-		order: 527,
+		order: 529,
 		keywords: ['animal', 'hippopotamus', 'wild'],
 	},
 	{
@@ -14442,7 +14462,7 @@ export const emojis: Emoji[] = [
 		name: 'rhinoceros',
 		value: '🦏',
 		category: 'animals-nature',
-		order: 528,
+		order: 530,
 		keywords: ['animal', 'rhinoceros', 'wild'],
 	},
 	{
@@ -14450,7 +14470,7 @@ export const emojis: Emoji[] = [
 		name: 'camel',
 		value: '🐪',
 		category: 'animals-nature',
-		order: 529,
+		order: 531,
 		keywords: ['animal', 'camel', 'desert'],
 	},
 	{
@@ -14458,7 +14478,7 @@ export const emojis: Emoji[] = [
 		name: 'two-hump camel',
 		value: '🐫',
 		category: 'animals-nature',
-		order: 530,
+		order: 532,
 		keywords: ['animal', 'camel', 'desert'],
 	},
 	{
@@ -14466,7 +14486,7 @@ export const emojis: Emoji[] = [
 		name: 'giraffe',
 		value: '🦒',
 		category: 'animals-nature',
-		order: 531,
+		order: 533,
 		keywords: ['animal', 'giraffe', 'wild'],
 	},
 	{
@@ -14474,7 +14494,7 @@ export const emojis: Emoji[] = [
 		name: 'kangaroo',
 		value: '🦘',
 		category: 'animals-nature',
-		order: 532,
+		order: 534,
 		keywords: ['animal', 'kangaroo', 'wild'],
 	},
 	{
@@ -14482,7 +14502,7 @@ export const emojis: Emoji[] = [
 		name: 'bison',
 		value: '🦬',
 		category: 'animals-nature',
-		order: 533,
+		order: 535,
 		keywords: ['animal', 'bison', 'wild'],
 	},
 	{
@@ -14490,7 +14510,7 @@ export const emojis: Emoji[] = [
 		name: 'water buffalo',
 		value: '🐃',
 		category: 'animals-nature',
-		order: 534,
+		order: 536,
 		keywords: ['animal', 'buffalo', 'wild'],
 	},
 	{
@@ -14498,7 +14518,7 @@ export const emojis: Emoji[] = [
 		name: 'ox',
 		value: '🐂',
 		category: 'animals-nature',
-		order: 535,
+		order: 537,
 		keywords: ['animal', 'ox', 'farm'],
 	},
 	{
@@ -14506,7 +14526,7 @@ export const emojis: Emoji[] = [
 		name: 'cow',
 		value: '🐄',
 		category: 'animals-nature',
-		order: 536,
+		order: 538,
 		keywords: ['animal', 'cow', 'farm'],
 	},
 	{
@@ -14514,7 +14534,7 @@ export const emojis: Emoji[] = [
 		name: 'donkey',
 		value: '🫏',
 		category: 'animals-nature',
-		order: 537,
+		order: 539,
 		keywords: ['animal', 'donkey', 'farm'],
 	},
 	{
@@ -14522,7 +14542,7 @@ export const emojis: Emoji[] = [
 		name: 'horse',
 		value: '🐎',
 		category: 'animals-nature',
-		order: 538,
+		order: 540,
 		keywords: ['animal', 'horse', 'farm'],
 	},
 	{
@@ -14530,7 +14550,7 @@ export const emojis: Emoji[] = [
 		name: 'pig',
 		value: '🐖',
 		category: 'animals-nature',
-		order: 539,
+		order: 541,
 		keywords: ['animal', 'pig', 'farm'],
 	},
 	{
@@ -14538,7 +14558,7 @@ export const emojis: Emoji[] = [
 		name: 'ram',
 		value: '🐏',
 		category: 'animals-nature',
-		order: 540,
+		order: 542,
 		keywords: ['animal', 'ram', 'farm'],
 	},
 	{
@@ -14546,7 +14566,7 @@ export const emojis: Emoji[] = [
 		name: 'sheep',
 		value: '🐑',
 		category: 'animals-nature',
-		order: 541,
+		order: 543,
 		keywords: ['animal', 'sheep', 'farm'],
 	},
 	{
@@ -14554,7 +14574,7 @@ export const emojis: Emoji[] = [
 		name: 'llama',
 		value: '🦙',
 		category: 'animals-nature',
-		order: 542,
+		order: 544,
 		keywords: ['animal', 'llama', 'farm'],
 	},
 	{
@@ -14562,7 +14582,7 @@ export const emojis: Emoji[] = [
 		name: 'goat',
 		value: '🐐',
 		category: 'animals-nature',
-		order: 543,
+		order: 545,
 		keywords: ['animal', 'goat', 'farm'],
 	},
 	{
@@ -14570,7 +14590,7 @@ export const emojis: Emoji[] = [
 		name: 'deer',
 		value: '🦌',
 		category: 'animals-nature',
-		order: 544,
+		order: 546,
 		keywords: ['animal', 'deer', 'wild'],
 	},
 	{
@@ -14578,7 +14598,7 @@ export const emojis: Emoji[] = [
 		name: 'dog',
 		value: '🐕',
 		category: 'animals-nature',
-		order: 545,
+		order: 547,
 		keywords: ['animal', 'dog', 'pet'],
 	},
 	{
@@ -14586,7 +14606,7 @@ export const emojis: Emoji[] = [
 		name: 'poodle',
 		value: '🐩',
 		category: 'animals-nature',
-		order: 546,
+		order: 548,
 		keywords: ['animal', 'dog', 'pet'],
 	},
 	{
@@ -14594,7 +14614,7 @@ export const emojis: Emoji[] = [
 		name: 'guide dog',
 		value: '🦮',
 		category: 'animals-nature',
-		order: 547,
+		order: 549,
 		keywords: ['animal', 'dog', 'guide'],
 	},
 	{
@@ -14602,7 +14622,7 @@ export const emojis: Emoji[] = [
 		name: 'service dog',
 		value: '🐕‍🦺',
 		category: 'animals-nature',
-		order: 548,
+		order: 550,
 		keywords: ['animal', 'dog', 'service'],
 	},
 	{
@@ -14610,7 +14630,7 @@ export const emojis: Emoji[] = [
 		name: 'cat',
 		value: '🐈',
 		category: 'animals-nature',
-		order: 549,
+		order: 551,
 		keywords: ['animal', 'cat', 'pet'],
 	},
 	{
@@ -14618,7 +14638,7 @@ export const emojis: Emoji[] = [
 		name: 'black cat',
 		value: '🐈‍⬛',
 		category: 'animals-nature',
-		order: 550,
+		order: 552,
 		keywords: ['animal', 'cat', 'black'],
 	},
 	{
@@ -14626,7 +14646,7 @@ export const emojis: Emoji[] = [
 		name: 'feather',
 		value: '🪶',
 		category: 'animals-nature',
-		order: 551,
+		order: 553,
 		keywords: ['feather'],
 	},
 	{
@@ -14634,7 +14654,7 @@ export const emojis: Emoji[] = [
 		name: 'wing',
 		value: '🪽',
 		category: 'animals-nature',
-		order: 552,
+		order: 554,
 		keywords: ['wing', 'fly', 'flying', 'heaven', 'angel'],
 	},
 	{
@@ -14642,7 +14662,7 @@ export const emojis: Emoji[] = [
 		name: 'rooster',
 		value: '🐓',
 		category: 'animals-nature',
-		order: 553,
+		order: 555,
 		keywords: ['animal', 'rooster', 'bird'],
 	},
 	{
@@ -14650,7 +14670,7 @@ export const emojis: Emoji[] = [
 		name: 'turkey',
 		value: '🦃',
 		category: 'animals-nature',
-		order: 554,
+		order: 556,
 		keywords: ['animal', 'turkey', 'bird'],
 	},
 	{
@@ -14658,7 +14678,7 @@ export const emojis: Emoji[] = [
 		name: 'dodo',
 		value: '🦤',
 		category: 'animals-nature',
-		order: 555,
+		order: 557,
 		keywords: ['animal', 'dodo', 'bird'],
 	},
 	{
@@ -14666,7 +14686,7 @@ export const emojis: Emoji[] = [
 		name: 'peacock',
 		value: '🦚',
 		category: 'animals-nature',
-		order: 556,
+		order: 558,
 		keywords: ['animal', 'peacock', 'bird'],
 	},
 	{
@@ -14674,7 +14694,7 @@ export const emojis: Emoji[] = [
 		name: 'parrot',
 		value: '🦜',
 		category: 'animals-nature',
-		order: 557,
+		order: 559,
 		keywords: ['animal', 'parrot', 'bird'],
 	},
 	{
@@ -14682,7 +14702,7 @@ export const emojis: Emoji[] = [
 		name: 'swan',
 		value: '🦢',
 		category: 'animals-nature',
-		order: 558,
+		order: 560,
 		keywords: ['animal', 'swan', 'bird'],
 	},
 	{
@@ -14690,7 +14710,7 @@ export const emojis: Emoji[] = [
 		name: 'flamingo',
 		value: '🦩',
 		category: 'animals-nature',
-		order: 559,
+		order: 561,
 		keywords: ['animal', 'flamingo', 'bird'],
 	},
 	{
@@ -14698,7 +14718,7 @@ export const emojis: Emoji[] = [
 		name: 'dove',
 		value: '🕊',
 		category: 'animals-nature',
-		order: 560,
+		order: 562,
 		keywords: ['animal', 'dove', 'bird'],
 	},
 	{
@@ -14706,7 +14726,7 @@ export const emojis: Emoji[] = [
 		name: 'rabbit',
 		value: '🐇',
 		category: 'animals-nature',
-		order: 561,
+		order: 563,
 		keywords: ['animal', 'rabbit', 'pet'],
 	},
 	{
@@ -14714,7 +14734,7 @@ export const emojis: Emoji[] = [
 		name: 'raccoon',
 		value: '🦝',
 		category: 'animals-nature',
-		order: 562,
+		order: 564,
 		keywords: ['animal', 'raccoon', 'wild'],
 	},
 	{
@@ -14722,7 +14742,7 @@ export const emojis: Emoji[] = [
 		name: 'skunk',
 		value: '🦨',
 		category: 'animals-nature',
-		order: 563,
+		order: 565,
 		keywords: ['animal', 'skunk', 'wild'],
 	},
 	{
@@ -14730,7 +14750,7 @@ export const emojis: Emoji[] = [
 		name: 'badger',
 		value: '🦡',
 		category: 'animals-nature',
-		order: 564,
+		order: 566,
 		keywords: ['animal', 'badger', 'wild'],
 	},
 	{
@@ -14738,7 +14758,7 @@ export const emojis: Emoji[] = [
 		name: 'beaver',
 		value: '🦫',
 		category: 'animals-nature',
-		order: 565,
+		order: 567,
 		keywords: ['animal', 'beaver', 'wild'],
 	},
 	{
@@ -14746,7 +14766,7 @@ export const emojis: Emoji[] = [
 		name: 'otter',
 		value: '🦦',
 		category: 'animals-nature',
-		order: 566,
+		order: 568,
 		keywords: ['animal', 'otter', 'wild'],
 	},
 	{
@@ -14754,7 +14774,7 @@ export const emojis: Emoji[] = [
 		name: 'sloth',
 		value: '🦥',
 		category: 'animals-nature',
-		order: 567,
+		order: 569,
 		keywords: ['animal', 'sloth', 'wild'],
 	},
 	{
@@ -14762,7 +14782,7 @@ export const emojis: Emoji[] = [
 		name: 'mouse',
 		value: '🐁',
 		category: 'animals-nature',
-		order: 568,
+		order: 570,
 		keywords: ['animal', 'mouse', 'rodent'],
 	},
 	{
@@ -14770,7 +14790,7 @@ export const emojis: Emoji[] = [
 		name: 'rat',
 		value: '🐀',
 		category: 'animals-nature',
-		order: 569,
+		order: 571,
 		keywords: ['animal', 'rat', 'rodent'],
 	},
 	{
@@ -14778,7 +14798,7 @@ export const emojis: Emoji[] = [
 		name: 'chipmunk',
 		value: '🐿',
 		category: 'animals-nature',
-		order: 570,
+		order: 572,
 		keywords: ['animal', 'chipmunk', 'rodent'],
 	},
 	{
@@ -14786,7 +14806,7 @@ export const emojis: Emoji[] = [
 		name: 'hedgehog',
 		value: '🦔',
 		category: 'animals-nature',
-		order: 571,
+		order: 573,
 		keywords: ['animal', 'hedgehog', 'wild'],
 	},
 	{
@@ -14794,7 +14814,7 @@ export const emojis: Emoji[] = [
 		name: 'paw prints',
 		value: '🐾',
 		category: 'animals-nature',
-		order: 572,
+		order: 574,
 		keywords: ['animal', 'paw', 'prints'],
 	},
 	{
@@ -14802,7 +14822,7 @@ export const emojis: Emoji[] = [
 		name: 'dragon',
 		value: '🐉',
 		category: 'animals-nature',
-		order: 573,
+		order: 575,
 		keywords: ['animal', 'dragon', 'mythical'],
 	},
 	{
@@ -14810,7 +14830,7 @@ export const emojis: Emoji[] = [
 		name: 'dragon face',
 		value: '🐲',
 		category: 'animals-nature',
-		order: 574,
+		order: 576,
 		keywords: ['animal', 'dragon', 'mythical'],
 	},
 	{
@@ -14818,7 +14838,7 @@ export const emojis: Emoji[] = [
 		name: 'cactus',
 		value: '🌵',
 		category: 'animals-nature',
-		order: 575,
+		order: 577,
 		keywords: ['plant', 'cactus', 'desert'],
 	},
 	{
@@ -14826,7 +14846,7 @@ export const emojis: Emoji[] = [
 		name: 'christmas tree',
 		value: '🎄',
 		category: 'animals-nature',
-		order: 576,
+		order: 578,
 		keywords: ['plant', 'tree', 'christmas'],
 	},
 	{
@@ -14834,7 +14854,7 @@ export const emojis: Emoji[] = [
 		name: 'evergreen tree',
 		value: '🌲',
 		category: 'animals-nature',
-		order: 577,
+		order: 579,
 		keywords: ['plant', 'tree'],
 	},
 	{
@@ -14842,7 +14862,7 @@ export const emojis: Emoji[] = [
 		name: 'deciduous tree',
 		value: '🌳',
 		category: 'animals-nature',
-		order: 578,
+		order: 580,
 		keywords: ['plant', 'tree'],
 	},
 	{
@@ -14850,7 +14870,7 @@ export const emojis: Emoji[] = [
 		name: 'palm tree',
 		value: '🌴',
 		category: 'animals-nature',
-		order: 579,
+		order: 581,
 		keywords: ['plant', 'tree', 'tropical'],
 	},
 	{
@@ -14858,7 +14878,7 @@ export const emojis: Emoji[] = [
 		name: 'wood',
 		value: '🪵',
 		category: 'animals-nature',
-		order: 580,
+		order: 582,
 		keywords: ['plant', 'wood', 'log'],
 	},
 	{
@@ -14866,7 +14886,7 @@ export const emojis: Emoji[] = [
 		name: 'seedling',
 		value: '🌱',
 		category: 'animals-nature',
-		order: 581,
+		order: 583,
 		keywords: ['plant', 'seedling', 'growth'],
 	},
 	{
@@ -14874,7 +14894,7 @@ export const emojis: Emoji[] = [
 		name: 'herb',
 		value: '🌿',
 		category: 'animals-nature',
-		order: 582,
+		order: 584,
 		keywords: ['plant', 'herb'],
 	},
 	{
@@ -14882,7 +14902,7 @@ export const emojis: Emoji[] = [
 		name: 'shamrock',
 		value: '☘',
 		category: 'animals-nature',
-		order: 583,
+		order: 585,
 		keywords: ['plant', 'shamrock', 'luck'],
 	},
 	{
@@ -14890,7 +14910,7 @@ export const emojis: Emoji[] = [
 		name: 'four leaf clover',
 		value: '🍀',
 		category: 'animals-nature',
-		order: 584,
+		order: 586,
 		keywords: ['plant', 'clover', 'luck'],
 	},
 	{
@@ -14898,7 +14918,7 @@ export const emojis: Emoji[] = [
 		name: 'bamboo',
 		value: '🎍',
 		category: 'animals-nature',
-		order: 585,
+		order: 587,
 		keywords: ['plant', 'bamboo'],
 	},
 	{
@@ -14906,7 +14926,7 @@ export const emojis: Emoji[] = [
 		name: 'potted plant',
 		value: '🪴',
 		category: 'animals-nature',
-		order: 586,
+		order: 588,
 		keywords: ['plant', 'potted'],
 	},
 	{
@@ -14914,7 +14934,7 @@ export const emojis: Emoji[] = [
 		name: 'tanabata tree',
 		value: '🎋',
 		category: 'animals-nature',
-		order: 587,
+		order: 589,
 		keywords: ['plant', 'tanabata'],
 	},
 	{
@@ -14922,7 +14942,7 @@ export const emojis: Emoji[] = [
 		name: 'leaf fluttering in wind',
 		value: '🍃',
 		category: 'animals-nature',
-		order: 588,
+		order: 590,
 		keywords: ['plant', 'leaf', 'wind'],
 	},
 	{
@@ -14930,7 +14950,7 @@ export const emojis: Emoji[] = [
 		name: 'fallen leaf',
 		value: '🍂',
 		category: 'animals-nature',
-		order: 589,
+		order: 591,
 		keywords: ['plant', 'leaf', 'fallen'],
 	},
 	{
@@ -14938,7 +14958,7 @@ export const emojis: Emoji[] = [
 		name: 'maple leaf',
 		value: '🍁',
 		category: 'animals-nature',
-		order: 590,
+		order: 592,
 		keywords: ['plant', 'leaf', 'maple'],
 	},
 	{
@@ -14946,7 +14966,7 @@ export const emojis: Emoji[] = [
 		name: 'nest with eggs',
 		value: '🪺',
 		category: 'animals-nature',
-		order: 591,
+		order: 593,
 		keywords: ['animal', 'nest', 'eggs'],
 	},
 	{
@@ -14954,7 +14974,7 @@ export const emojis: Emoji[] = [
 		name: 'empty nest',
 		value: '🪹',
 		category: 'animals-nature',
-		order: 592,
+		order: 594,
 		keywords: ['animal', 'nest', 'empty'],
 	},
 	{
@@ -14962,7 +14982,7 @@ export const emojis: Emoji[] = [
 		name: 'mushroom',
 		value: '🍄',
 		category: 'animals-nature',
-		order: 593,
+		order: 595,
 		keywords: ['plant', 'mushroom'],
 	},
 	{
@@ -14970,7 +14990,7 @@ export const emojis: Emoji[] = [
 		name: 'shell',
 		value: '🐚',
 		category: 'animals-nature',
-		order: 594,
+		order: 596,
 		keywords: ['animal', 'shell', 'marine'],
 	},
 	{
@@ -14978,7 +14998,7 @@ export const emojis: Emoji[] = [
 		name: 'coral',
 		value: '🪸',
 		category: 'animals-nature',
-		order: 595,
+		order: 597,
 		keywords: ['animal', 'coral', 'marine'],
 	},
 	{
@@ -14986,7 +15006,7 @@ export const emojis: Emoji[] = [
 		name: 'rock',
 		value: '🪨',
 		category: 'animals-nature',
-		order: 596,
+		order: 598,
 		keywords: ['nature', 'rock'],
 	},
 	{
@@ -14994,7 +15014,7 @@ export const emojis: Emoji[] = [
 		name: 'sheaf of rice',
 		value: '🌾',
 		category: 'animals-nature',
-		order: 597,
+		order: 599,
 		keywords: ['plant', 'rice'],
 	},
 	{
@@ -15002,7 +15022,7 @@ export const emojis: Emoji[] = [
 		name: 'bouquet',
 		value: '💐',
 		category: 'animals-nature',
-		order: 598,
+		order: 600,
 		keywords: ['plant', 'bouquet', 'flowers'],
 	},
 	{
@@ -15010,7 +15030,7 @@ export const emojis: Emoji[] = [
 		name: 'tulip',
 		value: '🌷',
 		category: 'animals-nature',
-		order: 599,
+		order: 601,
 		keywords: ['plant', 'flower', 'tulip'],
 	},
 	{
@@ -15018,7 +15038,7 @@ export const emojis: Emoji[] = [
 		name: 'rose',
 		value: '🌹',
 		category: 'animals-nature',
-		order: 600,
+		order: 602,
 		keywords: ['plant', 'flower', 'rose'],
 	},
 	{
@@ -15026,7 +15046,7 @@ export const emojis: Emoji[] = [
 		name: 'wilted flower',
 		value: '🥀',
 		category: 'animals-nature',
-		order: 601,
+		order: 603,
 		keywords: ['plant', 'flower', 'wilted'],
 	},
 	{
@@ -15034,7 +15054,7 @@ export const emojis: Emoji[] = [
 		name: 'blue flower',
 		value: '🪻',
 		category: 'animals-nature',
-		order: 602,
+		order: 604,
 		keywords: ['plant', 'flower', 'blue'],
 	},
 	{
@@ -15042,7 +15062,7 @@ export const emojis: Emoji[] = [
 		name: 'lotus',
 		value: '🪷',
 		category: 'animals-nature',
-		order: 603,
+		order: 605,
 		keywords: ['plant', 'flower', 'lotus'],
 	},
 	{
@@ -15050,7 +15070,7 @@ export const emojis: Emoji[] = [
 		name: 'hibiscus',
 		value: '🌺',
 		category: 'animals-nature',
-		order: 604,
+		order: 606,
 		keywords: ['plant', 'flower', 'hibiscus'],
 	},
 	{
@@ -15058,7 +15078,7 @@ export const emojis: Emoji[] = [
 		name: 'cherry blossom',
 		value: '🌸',
 		category: 'animals-nature',
-		order: 605,
+		order: 607,
 		keywords: ['plant', 'flower', 'cherry'],
 	},
 	{
@@ -15066,7 +15086,7 @@ export const emojis: Emoji[] = [
 		name: 'blossom',
 		value: '🌼',
 		category: 'animals-nature',
-		order: 606,
+		order: 608,
 		keywords: ['plant', 'flower', 'blossom'],
 	},
 	{
@@ -15074,7 +15094,7 @@ export const emojis: Emoji[] = [
 		name: 'sunflower',
 		value: '🌻',
 		category: 'animals-nature',
-		order: 607,
+		order: 609,
 		keywords: ['plant', 'flower', 'sunflower'],
 	},
 	{
@@ -15082,7 +15102,7 @@ export const emojis: Emoji[] = [
 		name: 'sun with face',
 		value: '🌞',
 		category: 'animals-nature',
-		order: 608,
+		order: 610,
 		keywords: ['nature', 'sun', 'face'],
 	},
 	{
@@ -15090,7 +15110,7 @@ export const emojis: Emoji[] = [
 		name: 'full moon with face',
 		value: '🌝',
 		category: 'animals-nature',
-		order: 609,
+		order: 611,
 		keywords: ['nature', 'moon', 'face', 'full'],
 	},
 	{
@@ -15098,7 +15118,7 @@ export const emojis: Emoji[] = [
 		name: 'first quarter moon with face',
 		value: '🌛',
 		category: 'animals-nature',
-		order: 610,
+		order: 612,
 		keywords: ['nature', 'moon', 'face', 'first quarter'],
 	},
 	{
@@ -15106,7 +15126,7 @@ export const emojis: Emoji[] = [
 		name: 'last quarter moon with face',
 		value: '🌜',
 		category: 'animals-nature',
-		order: 611,
+		order: 613,
 		keywords: ['nature', 'moon', 'face', 'last quarter'],
 	},
 	{
@@ -15114,7 +15134,7 @@ export const emojis: Emoji[] = [
 		name: 'new moon face',
 		value: '🌚',
 		category: 'animals-nature',
-		order: 612,
+		order: 614,
 		keywords: ['nature', 'moon', 'face', 'face'],
 	},
 	{
@@ -15122,7 +15142,7 @@ export const emojis: Emoji[] = [
 		name: 'full moon',
 		value: '🌕',
 		category: 'animals-nature',
-		order: 613,
+		order: 615,
 		keywords: ['nature', 'moon', 'full'],
 	},
 	{
@@ -15130,7 +15150,7 @@ export const emojis: Emoji[] = [
 		name: 'waning gibbous moon',
 		value: '🌖',
 		category: 'animals-nature',
-		order: 614,
+		order: 616,
 		keywords: ['nature', 'moon', 'waning', 'gibbous'],
 	},
 	{
@@ -15138,7 +15158,7 @@ export const emojis: Emoji[] = [
 		name: 'last quarter moon',
 		value: '🌗',
 		category: 'animals-nature',
-		order: 615,
+		order: 617,
 		keywords: ['nature', 'moon', 'last', 'quarter'],
 	},
 	{
@@ -15146,7 +15166,7 @@ export const emojis: Emoji[] = [
 		name: 'waning crescent moon',
 		value: '🌘',
 		category: 'animals-nature',
-		order: 616,
+		order: 618,
 		keywords: ['nature', 'moon', 'waning', 'crescent'],
 	},
 	{
@@ -15154,7 +15174,7 @@ export const emojis: Emoji[] = [
 		name: 'new moon',
 		value: '🌑',
 		category: 'animals-nature',
-		order: 617,
+		order: 619,
 		keywords: ['nature', 'moon', 'new'],
 	},
 	{
@@ -15162,7 +15182,7 @@ export const emojis: Emoji[] = [
 		name: 'waxing crescent moon',
 		value: '🌒',
 		category: 'animals-nature',
-		order: 618,
+		order: 620,
 		keywords: ['nature', 'moon', 'waxing', 'crescent'],
 	},
 	{
@@ -15170,7 +15190,7 @@ export const emojis: Emoji[] = [
 		name: 'first quarter moon',
 		value: '🌓',
 		category: 'animals-nature',
-		order: 619,
+		order: 621,
 		keywords: ['nature', 'moon', 'first', 'quarter'],
 	},
 	{
@@ -15178,7 +15198,7 @@ export const emojis: Emoji[] = [
 		name: 'waxing gibbous moon',
 		value: '🌔',
 		category: 'animals-nature',
-		order: 620,
+		order: 622,
 		keywords: ['nature', 'moon', 'waxing gibbous moon'],
 	},
 	{
@@ -15186,7 +15206,7 @@ export const emojis: Emoji[] = [
 		name: 'crescent moon',
 		value: '🌙',
 		category: 'animals-nature',
-		order: 621,
+		order: 623,
 		keywords: ['nature', 'moon', 'crescent'],
 	},
 	{
@@ -15194,7 +15214,7 @@ export const emojis: Emoji[] = [
 		name: 'earth globe europe-africa',
 		value: '🌍',
 		category: 'animals-nature',
-		order: 622,
+		order: 624,
 		keywords: ['nature', 'earth', 'europe', 'africa'],
 	},
 	{
@@ -15202,7 +15222,7 @@ export const emojis: Emoji[] = [
 		name: 'earth globe americas',
 		value: '🌎',
 		category: 'animals-nature',
-		order: 623,
+		order: 625,
 		keywords: ['nature', 'earth', 'americas'],
 	},
 	{
@@ -15210,7 +15230,7 @@ export const emojis: Emoji[] = [
 		name: 'earth globe asia-australia',
 		value: '🌏',
 		category: 'animals-nature',
-		order: 624,
+		order: 626,
 		keywords: ['nature', 'earth', 'asia', 'australia'],
 	},
 	{
@@ -15218,7 +15238,7 @@ export const emojis: Emoji[] = [
 		name: 'ringed planet',
 		value: '🪐',
 		category: 'animals-nature',
-		order: 625,
+		order: 627,
 		keywords: ['nature', 'planet', 'ringed'],
 	},
 	{
@@ -15226,7 +15246,7 @@ export const emojis: Emoji[] = [
 		name: 'dizzy',
 		value: '💫',
 		category: 'animals-nature',
-		order: 626,
+		order: 628,
 		keywords: ['nature', 'star', 'dizzy', 'shooting star', 'shiny'],
 	},
 	{
@@ -15234,7 +15254,7 @@ export const emojis: Emoji[] = [
 		name: 'star',
 		value: '⭐',
 		category: 'animals-nature',
-		order: 627,
+		order: 629,
 		keywords: ['nature', 'star'],
 	},
 	{
@@ -15242,7 +15262,7 @@ export const emojis: Emoji[] = [
 		name: 'glowing star',
 		value: '🌟',
 		category: 'animals-nature',
-		order: 628,
+		order: 630,
 		keywords: ['nature', 'star'],
 	},
 	{
@@ -15250,7 +15270,7 @@ export const emojis: Emoji[] = [
 		name: 'sparkles',
 		value: '✨',
 		category: 'animals-nature',
-		order: 629,
+		order: 631,
 		keywords: ['nature', 'sparkles'],
 	},
 	{
@@ -15258,7 +15278,7 @@ export const emojis: Emoji[] = [
 		name: 'high voltage',
 		value: '⚡',
 		category: 'animals-nature',
-		order: 630,
+		order: 632,
 		keywords: ['nature', 'lightning', 'voltage'],
 	},
 	{
@@ -15266,7 +15286,7 @@ export const emojis: Emoji[] = [
 		name: 'comet',
 		value: '☄',
 		category: 'animals-nature',
-		order: 631,
+		order: 633,
 		keywords: ['nature', 'comet'],
 	},
 	{
@@ -15274,7 +15294,7 @@ export const emojis: Emoji[] = [
 		name: 'fire',
 		value: '🔥',
 		category: 'animals-nature',
-		order: 632,
+		order: 634,
 		keywords: ['nature', 'fire'],
 	},
 	{
@@ -15282,7 +15302,7 @@ export const emojis: Emoji[] = [
 		name: 'tornado',
 		value: '🌪',
 		category: 'animals-nature',
-		order: 633,
+		order: 635,
 		keywords: ['nature', 'tornado'],
 	},
 	{
@@ -15290,7 +15310,7 @@ export const emojis: Emoji[] = [
 		name: 'rainbow',
 		value: '🌈',
 		category: 'animals-nature',
-		order: 634,
+		order: 636,
 		keywords: ['nature', 'rainbow'],
 	},
 	{
@@ -15298,7 +15318,7 @@ export const emojis: Emoji[] = [
 		name: 'sun',
 		value: '☀',
 		category: 'animals-nature',
-		order: 635,
+		order: 637,
 		keywords: ['nature', 'sun'],
 	},
 	{
@@ -15306,7 +15326,7 @@ export const emojis: Emoji[] = [
 		name: 'sun behind small cloud',
 		value: '🌤',
 		category: 'animals-nature',
-		order: 636,
+		order: 638,
 		keywords: ['nature', 'sun', 'cloud'],
 	},
 	{
@@ -15314,7 +15334,7 @@ export const emojis: Emoji[] = [
 		name: 'sun behind cloud',
 		value: '⛅',
 		category: 'animals-nature',
-		order: 637,
+		order: 639,
 		keywords: ['nature', 'sun', 'cloud'],
 	},
 	{
@@ -15322,7 +15342,7 @@ export const emojis: Emoji[] = [
 		name: 'sun behind large cloud',
 		value: '🌥',
 		category: 'animals-nature',
-		order: 638,
+		order: 640,
 		keywords: ['nature', 'sun', 'cloud'],
 	},
 	{
@@ -15330,7 +15350,7 @@ export const emojis: Emoji[] = [
 		name: 'cloud',
 		value: '☁',
 		category: 'animals-nature',
-		order: 639,
+		order: 641,
 		keywords: ['nature', 'cloud'],
 	},
 	{
@@ -15338,7 +15358,7 @@ export const emojis: Emoji[] = [
 		name: 'sun behind rain cloud',
 		value: '🌦',
 		category: 'animals-nature',
-		order: 640,
+		order: 642,
 		keywords: ['nature', 'sun', 'cloud', 'rain'],
 	},
 	{
@@ -15346,7 +15366,7 @@ export const emojis: Emoji[] = [
 		name: 'cloud with rain',
 		value: '🌧',
 		category: 'animals-nature',
-		order: 641,
+		order: 643,
 		keywords: ['nature', 'cloud', 'rain'],
 	},
 	{
@@ -15354,7 +15374,7 @@ export const emojis: Emoji[] = [
 		name: 'cloud with lightning and rain',
 		value: '⛈',
 		category: 'animals-nature',
-		order: 642,
+		order: 644,
 		keywords: ['nature', 'cloud', 'lightning', 'rain'],
 	},
 	{
@@ -15362,7 +15382,7 @@ export const emojis: Emoji[] = [
 		name: 'cloud with lightning',
 		value: '🌩',
 		category: 'animals-nature',
-		order: 643,
+		order: 645,
 		keywords: ['nature', 'cloud', 'lightning'],
 	},
 	{
@@ -15370,7 +15390,7 @@ export const emojis: Emoji[] = [
 		name: 'cloud with snow',
 		value: '🌨',
 		category: 'animals-nature',
-		order: 644,
+		order: 646,
 		keywords: ['nature', 'cloud', 'snow'],
 	},
 	{
@@ -15378,7 +15398,7 @@ export const emojis: Emoji[] = [
 		name: 'snowflake',
 		value: '❄',
 		category: 'animals-nature',
-		order: 645,
+		order: 647,
 		keywords: ['nature', 'snow'],
 	},
 	{
@@ -15386,7 +15406,7 @@ export const emojis: Emoji[] = [
 		name: 'snowman',
 		value: '☃',
 		category: 'animals-nature',
-		order: 646,
+		order: 648,
 		keywords: ['nature', 'snowman'],
 	},
 	{
@@ -15394,7 +15414,7 @@ export const emojis: Emoji[] = [
 		name: 'snowman without snow',
 		value: '⛄',
 		category: 'animals-nature',
-		order: 647,
+		order: 649,
 		keywords: ['nature', 'snowman'],
 	},
 	{
@@ -15402,7 +15422,7 @@ export const emojis: Emoji[] = [
 		name: 'wind face',
 		value: '🌬',
 		category: 'animals-nature',
-		order: 648,
+		order: 650,
 		keywords: ['nature', 'wind'],
 	},
 	{
@@ -15410,7 +15430,7 @@ export const emojis: Emoji[] = [
 		name: 'dashing away',
 		value: '💨',
 		category: 'animals-nature',
-		order: 649,
+		order: 651,
 		keywords: ['nature', 'dash'],
 	},
 	{
@@ -15418,7 +15438,7 @@ export const emojis: Emoji[] = [
 		name: 'droplet',
 		value: '💧',
 		category: 'animals-nature',
-		order: 650,
+		order: 652,
 		keywords: ['nature', 'water'],
 	},
 	{
@@ -15426,7 +15446,7 @@ export const emojis: Emoji[] = [
 		name: 'sweat droplets',
 		value: '💦',
 		category: 'animals-nature',
-		order: 651,
+		order: 653,
 		keywords: ['nature', 'water', 'sweat'],
 	},
 	{
@@ -15434,7 +15454,7 @@ export const emojis: Emoji[] = [
 		name: 'bubbles',
 		value: '🫧',
 		category: 'animals-nature',
-		order: 652,
+		order: 654,
 		keywords: ['nature', 'bubbles'],
 	},
 	{
@@ -15442,7 +15462,7 @@ export const emojis: Emoji[] = [
 		name: 'umbrella with rain drops',
 		value: '☔',
 		category: 'animals-nature',
-		order: 653,
+		order: 655,
 		keywords: ['nature', 'umbrella', 'rain'],
 	},
 	{
@@ -15450,7 +15470,7 @@ export const emojis: Emoji[] = [
 		name: 'open umbrella',
 		value: '☂',
 		category: 'animals-nature',
-		order: 654,
+		order: 656,
 		keywords: ['nature', 'umbrella'],
 	},
 	{
@@ -15458,7 +15478,7 @@ export const emojis: Emoji[] = [
 		name: 'water wave',
 		value: '🌊',
 		category: 'animals-nature',
-		order: 655,
+		order: 657,
 		keywords: ['nature', 'water', 'wave'],
 	},
 	{
@@ -15466,7 +15486,7 @@ export const emojis: Emoji[] = [
 		name: 'fog',
 		value: '🌫',
 		category: 'animals-nature',
-		order: 656,
+		order: 658,
 		keywords: ['nature', 'fog'],
 	},
 	{
@@ -15474,7 +15494,7 @@ export const emojis: Emoji[] = [
 		name: 'green apple',
 		value: '🍏',
 		category: 'food-drink',
-		order: 657,
+		order: 659,
 		keywords: ['food', 'fruit', 'apple'],
 	},
 	{
@@ -15482,7 +15502,7 @@ export const emojis: Emoji[] = [
 		name: 'red apple',
 		value: '🍎',
 		category: 'food-drink',
-		order: 658,
+		order: 660,
 		keywords: ['food', 'fruit', 'apple'],
 	},
 	{
@@ -15490,7 +15510,7 @@ export const emojis: Emoji[] = [
 		name: 'pear',
 		value: '🍐',
 		category: 'food-drink',
-		order: 659,
+		order: 661,
 		keywords: ['food', 'fruit', 'pear'],
 	},
 	{
@@ -15498,7 +15518,7 @@ export const emojis: Emoji[] = [
 		name: 'tangerine',
 		value: '🍊',
 		category: 'food-drink',
-		order: 660,
+		order: 662,
 		keywords: ['food', 'fruit', 'tangerine'],
 	},
 	{
@@ -15506,7 +15526,7 @@ export const emojis: Emoji[] = [
 		name: 'lemon',
 		value: '🍋',
 		category: 'food-drink',
-		order: 661,
+		order: 663,
 		keywords: ['food', 'fruit', 'lemon'],
 	},
 	{
@@ -15514,7 +15534,7 @@ export const emojis: Emoji[] = [
 		name: 'banana',
 		value: '🍌',
 		category: 'food-drink',
-		order: 662,
+		order: 664,
 		keywords: ['food', 'fruit', 'banana'],
 	},
 	{
@@ -15522,7 +15542,7 @@ export const emojis: Emoji[] = [
 		name: 'watermelon',
 		value: '🍉',
 		category: 'food-drink',
-		order: 663,
+		order: 665,
 		keywords: ['food', 'fruit', 'watermelon'],
 	},
 	{
@@ -15530,7 +15550,7 @@ export const emojis: Emoji[] = [
 		name: 'grapes',
 		value: '🍇',
 		category: 'food-drink',
-		order: 664,
+		order: 666,
 		keywords: ['food', 'fruit', 'grapes'],
 	},
 	{
@@ -15538,7 +15558,7 @@ export const emojis: Emoji[] = [
 		name: 'strawberry',
 		value: '🍓',
 		category: 'food-drink',
-		order: 665,
+		order: 667,
 		keywords: ['food', 'fruit', 'strawberry'],
 	},
 	{
@@ -15546,7 +15566,7 @@ export const emojis: Emoji[] = [
 		name: 'blueberries',
 		value: '🫐',
 		category: 'food-drink',
-		order: 666,
+		order: 668,
 		keywords: ['food', 'fruit', 'blueberries'],
 	},
 	{
@@ -15554,7 +15574,7 @@ export const emojis: Emoji[] = [
 		name: 'melon',
 		value: '🍈',
 		category: 'food-drink',
-		order: 667,
+		order: 669,
 		keywords: ['food', 'fruit', 'melon'],
 	},
 	{
@@ -15562,7 +15582,7 @@ export const emojis: Emoji[] = [
 		name: 'cherries',
 		value: '🍒',
 		category: 'food-drink',
-		order: 668,
+		order: 670,
 		keywords: ['food', 'fruit', 'cherries'],
 	},
 	{
@@ -15570,7 +15590,7 @@ export const emojis: Emoji[] = [
 		name: 'peach',
 		value: '🍑',
 		category: 'food-drink',
-		order: 669,
+		order: 671,
 		keywords: ['food', 'fruit', 'peach'],
 	},
 	{
@@ -15578,7 +15598,7 @@ export const emojis: Emoji[] = [
 		name: 'mango',
 		value: '🥭',
 		category: 'food-drink',
-		order: 670,
+		order: 672,
 		keywords: ['food', 'fruit', 'mango'],
 	},
 	{
@@ -15586,7 +15606,7 @@ export const emojis: Emoji[] = [
 		name: 'pineapple',
 		value: '🍍',
 		category: 'food-drink',
-		order: 671,
+		order: 673,
 		keywords: ['food', 'fruit', 'pineapple'],
 	},
 	{
@@ -15594,7 +15614,7 @@ export const emojis: Emoji[] = [
 		name: 'coconut',
 		value: '🥥',
 		category: 'food-drink',
-		order: 672,
+		order: 674,
 		keywords: ['food', 'fruit', 'coconut'],
 	},
 	{
@@ -15602,7 +15622,7 @@ export const emojis: Emoji[] = [
 		name: 'kiwi fruit',
 		value: '🥝',
 		category: 'food-drink',
-		order: 673,
+		order: 675,
 		keywords: ['food', 'fruit', 'kiwi'],
 	},
 	{
@@ -15610,7 +15630,7 @@ export const emojis: Emoji[] = [
 		name: 'tomato',
 		value: '🍅',
 		category: 'food-drink',
-		order: 674,
+		order: 676,
 		keywords: ['food', 'vegetable', 'tomato'],
 	},
 	{
@@ -15618,7 +15638,7 @@ export const emojis: Emoji[] = [
 		name: 'eggplant',
 		value: '🍆',
 		category: 'food-drink',
-		order: 675,
+		order: 677,
 		keywords: ['food', 'vegetable', 'eggplant'],
 	},
 	{
@@ -15626,7 +15646,7 @@ export const emojis: Emoji[] = [
 		name: 'avocado',
 		value: '🥑',
 		category: 'food-drink',
-		order: 676,
+		order: 678,
 		keywords: ['food', 'fruit', 'avocado'],
 	},
 	{
@@ -15634,7 +15654,7 @@ export const emojis: Emoji[] = [
 		name: 'pea pod',
 		value: '🫛',
 		category: 'food-drink',
-		order: 677,
+		order: 679,
 		keywords: ['food', 'vegetable', 'peas'],
 	},
 	{
@@ -15642,7 +15662,7 @@ export const emojis: Emoji[] = [
 		name: 'broccoli',
 		value: '🥦',
 		category: 'food-drink',
-		order: 678,
+		order: 680,
 		keywords: ['food', 'vegetable', 'broccoli'],
 	},
 	{
@@ -15650,7 +15670,7 @@ export const emojis: Emoji[] = [
 		name: 'leafy green',
 		value: '🥬',
 		category: 'food-drink',
-		order: 679,
+		order: 681,
 		keywords: ['food', 'vegetable', 'leafy'],
 	},
 	{
@@ -15658,7 +15678,7 @@ export const emojis: Emoji[] = [
 		name: 'cucumber',
 		value: '🥒',
 		category: 'food-drink',
-		order: 680,
+		order: 682,
 		keywords: ['food', 'vegetable', 'cucumber'],
 	},
 	{
@@ -15666,7 +15686,7 @@ export const emojis: Emoji[] = [
 		name: 'hot pepper',
 		value: '🌶️',
 		category: 'food-drink',
-		order: 681,
+		order: 683,
 		keywords: ['food', 'vegetable', 'pepper'],
 	},
 	{
@@ -15674,7 +15694,7 @@ export const emojis: Emoji[] = [
 		name: 'bell pepper',
 		value: '🫑',
 		category: 'food-drink',
-		order: 682,
+		order: 684,
 		keywords: ['food', 'vegetable', 'pepper'],
 	},
 	{
@@ -15682,7 +15702,7 @@ export const emojis: Emoji[] = [
 		name: 'corn',
 		value: '🌽',
 		category: 'food-drink',
-		order: 683,
+		order: 685,
 		keywords: ['food', 'vegetable', 'corn'],
 	},
 	{
@@ -15690,7 +15710,7 @@ export const emojis: Emoji[] = [
 		name: 'carrot',
 		value: '🥕',
 		category: 'food-drink',
-		order: 684,
+		order: 686,
 		keywords: ['food', 'vegetable', 'carrot'],
 	},
 	{
@@ -15698,7 +15718,7 @@ export const emojis: Emoji[] = [
 		name: 'olive',
 		value: '🫒',
 		category: 'food-drink',
-		order: 685,
+		order: 687,
 		keywords: ['food', 'vegetable', 'olive'],
 	},
 	{
@@ -15706,7 +15726,7 @@ export const emojis: Emoji[] = [
 		name: 'garlic',
 		value: '🧄',
 		category: 'food-drink',
-		order: 686,
+		order: 688,
 		keywords: ['food', 'vegetable', 'garlic'],
 	},
 	{
@@ -15714,7 +15734,7 @@ export const emojis: Emoji[] = [
 		name: 'onion',
 		value: '🧅',
 		category: 'food-drink',
-		order: 687,
+		order: 689,
 		keywords: ['food', 'vegetable', 'onion'],
 	},
 	{
@@ -15722,7 +15742,7 @@ export const emojis: Emoji[] = [
 		name: 'potato',
 		value: '🥔',
 		category: 'food-drink',
-		order: 688,
+		order: 690,
 		keywords: ['food', 'vegetable', 'potato'],
 	},
 	{
@@ -15730,7 +15750,7 @@ export const emojis: Emoji[] = [
 		name: 'sweet potato',
 		value: '🍠',
 		category: 'food-drink',
-		order: 689,
+		order: 691,
 		keywords: ['food', 'vegetable', 'sweet_potato'],
 	},
 	{
@@ -15738,7 +15758,7 @@ export const emojis: Emoji[] = [
 		name: 'ginger root',
 		value: '🫚',
 		category: 'food-drink',
-		order: 690,
+		order: 692,
 		keywords: ['food', 'vegetable', 'ginger'],
 	},
 	{
@@ -15746,7 +15766,7 @@ export const emojis: Emoji[] = [
 		name: 'croissant',
 		value: '🥐',
 		category: 'food-drink',
-		order: 691,
+		order: 693,
 		keywords: ['food', 'bread', 'croissant'],
 	},
 	{
@@ -15754,7 +15774,7 @@ export const emojis: Emoji[] = [
 		name: 'bagel',
 		value: '🥯',
 		category: 'food-drink',
-		order: 692,
+		order: 694,
 		keywords: ['food', 'bread', 'bagel'],
 	},
 	{
@@ -15762,7 +15782,7 @@ export const emojis: Emoji[] = [
 		name: 'bread',
 		value: '🍞',
 		category: 'food-drink',
-		order: 693,
+		order: 695,
 		keywords: ['food', 'bread'],
 	},
 	{
@@ -15770,7 +15790,7 @@ export const emojis: Emoji[] = [
 		name: 'baguette bread',
 		value: '🥖',
 		category: 'food-drink',
-		order: 694,
+		order: 696,
 		keywords: ['food', 'bread', 'baguette'],
 	},
 	{
@@ -15778,7 +15798,7 @@ export const emojis: Emoji[] = [
 		name: 'pretzel',
 		value: '🥨',
 		category: 'food-drink',
-		order: 695,
+		order: 697,
 		keywords: ['food', 'bread', 'pretzel'],
 	},
 	{
@@ -15786,7 +15806,7 @@ export const emojis: Emoji[] = [
 		name: 'cheese wedge',
 		value: '🧀',
 		category: 'food-drink',
-		order: 696,
+		order: 698,
 		keywords: ['food', 'dairy', 'cheese'],
 	},
 	{
@@ -15794,7 +15814,7 @@ export const emojis: Emoji[] = [
 		name: 'egg',
 		value: '🥚',
 		category: 'food-drink',
-		order: 697,
+		order: 699,
 		keywords: ['food', 'egg'],
 	},
 	{
@@ -15802,7 +15822,7 @@ export const emojis: Emoji[] = [
 		name: 'cooking',
 		value: '🍳',
 		category: 'food-drink',
-		order: 698,
+		order: 700,
 		keywords: ['food', 'cooking', 'egg'],
 	},
 	{
@@ -15810,7 +15830,7 @@ export const emojis: Emoji[] = [
 		name: 'butter',
 		value: '🧈',
 		category: 'food-drink',
-		order: 699,
+		order: 701,
 		keywords: ['food', 'dairy', 'butter'],
 	},
 	{
@@ -15818,7 +15838,7 @@ export const emojis: Emoji[] = [
 		name: 'pancakes',
 		value: '🥞',
 		category: 'food-drink',
-		order: 700,
+		order: 702,
 		keywords: ['food', 'pancakes'],
 	},
 	{
@@ -15826,7 +15846,7 @@ export const emojis: Emoji[] = [
 		name: 'waffle',
 		value: '🧇',
 		category: 'food-drink',
-		order: 701,
+		order: 703,
 		keywords: ['food', 'waffle'],
 	},
 	{
@@ -15834,7 +15854,7 @@ export const emojis: Emoji[] = [
 		name: 'bacon',
 		value: '🥓',
 		category: 'food-drink',
-		order: 702,
+		order: 704,
 		keywords: ['food', 'bacon'],
 	},
 	{
@@ -15842,7 +15862,7 @@ export const emojis: Emoji[] = [
 		name: 'meat on bone',
 		value: '🍖',
 		category: 'food-drink',
-		order: 703,
+		order: 705,
 		keywords: ['food', 'meat'],
 	},
 	{
@@ -15850,7 +15870,7 @@ export const emojis: Emoji[] = [
 		name: 'poultry leg',
 		value: '🍗',
 		category: 'food-drink',
-		order: 704,
+		order: 706,
 		keywords: ['food', 'meat', 'poultry'],
 	},
 	{
@@ -15858,7 +15878,7 @@ export const emojis: Emoji[] = [
 		name: 'cut of meat',
 		value: '🥩',
 		category: 'food-drink',
-		order: 705,
+		order: 707,
 		keywords: ['food', 'meat'],
 	},
 	{
@@ -15866,7 +15886,7 @@ export const emojis: Emoji[] = [
 		name: 'bone',
 		value: '🦴',
 		category: 'food-drink',
-		order: 706,
+		order: 708,
 		keywords: ['food', 'bone'],
 	},
 	{
@@ -15874,7 +15894,7 @@ export const emojis: Emoji[] = [
 		name: 'hot dog',
 		value: '🌭',
 		category: 'food-drink',
-		order: 707,
+		order: 709,
 		keywords: ['food', 'hotdog'],
 	},
 	{
@@ -15882,7 +15902,7 @@ export const emojis: Emoji[] = [
 		name: 'hamburger',
 		value: '🍔',
 		category: 'food-drink',
-		order: 708,
+		order: 710,
 		keywords: ['food', 'burger'],
 	},
 	{
@@ -15890,7 +15910,7 @@ export const emojis: Emoji[] = [
 		name: 'french fries',
 		value: '🍟',
 		category: 'food-drink',
-		order: 709,
+		order: 711,
 		keywords: ['food', 'fries'],
 	},
 	{
@@ -15898,7 +15918,7 @@ export const emojis: Emoji[] = [
 		name: 'pizza',
 		value: '🍕',
 		category: 'food-drink',
-		order: 710,
+		order: 712,
 		keywords: ['food', 'pizza'],
 	},
 	{
@@ -15906,7 +15926,7 @@ export const emojis: Emoji[] = [
 		name: 'flatbread',
 		value: '🫓',
 		category: 'food-drink',
-		order: 711,
+		order: 713,
 		keywords: ['food', 'bread', 'flatbread'],
 	},
 	{
@@ -15914,7 +15934,7 @@ export const emojis: Emoji[] = [
 		name: 'sandwich',
 		value: '🥪',
 		category: 'food-drink',
-		order: 712,
+		order: 714,
 		keywords: ['food', 'sandwich'],
 	},
 	{
@@ -15922,7 +15942,7 @@ export const emojis: Emoji[] = [
 		name: 'stuffed flatbread',
 		value: '🥙',
 		category: 'food-drink',
-		order: 713,
+		order: 715,
 		keywords: ['food', 'bread', 'stuffed'],
 	},
 	{
@@ -15930,7 +15950,7 @@ export const emojis: Emoji[] = [
 		name: 'falafel',
 		value: '🧆',
 		category: 'food-drink',
-		order: 714,
+		order: 716,
 		keywords: ['food', 'falafel'],
 	},
 	{
@@ -15938,7 +15958,7 @@ export const emojis: Emoji[] = [
 		name: 'taco',
 		value: '🌮',
 		category: 'food-drink',
-		order: 715,
+		order: 717,
 		keywords: ['food', 'taco'],
 	},
 	{
@@ -15946,7 +15966,7 @@ export const emojis: Emoji[] = [
 		name: 'burrito',
 		value: '🌯',
 		category: 'food-drink',
-		order: 716,
+		order: 718,
 		keywords: ['food', 'burrito'],
 	},
 	{
@@ -15954,7 +15974,7 @@ export const emojis: Emoji[] = [
 		name: 'tamale',
 		value: '🫔',
 		category: 'food-drink',
-		order: 717,
+		order: 719,
 		keywords: ['food', 'tamale'],
 	},
 	{
@@ -15962,7 +15982,7 @@ export const emojis: Emoji[] = [
 		name: 'salad',
 		value: '🥗',
 		category: 'food-drink',
-		order: 718,
+		order: 720,
 		keywords: ['food', 'salad'],
 	},
 	{
@@ -15970,7 +15990,7 @@ export const emojis: Emoji[] = [
 		name: 'paella',
 		value: '🥘',
 		category: 'food-drink',
-		order: 719,
+		order: 721,
 		keywords: ['food', 'paella'],
 	},
 	{
@@ -15978,7 +15998,7 @@ export const emojis: Emoji[] = [
 		name: 'fondue',
 		value: '🫕',
 		category: 'food-drink',
-		order: 720,
+		order: 722,
 		keywords: ['food', 'fondue'],
 	},
 	{
@@ -15986,7 +16006,7 @@ export const emojis: Emoji[] = [
 		name: 'canned food',
 		value: '🥫',
 		category: 'food-drink',
-		order: 721,
+		order: 723,
 		keywords: ['food', 'canned'],
 	},
 	{
@@ -15994,7 +16014,7 @@ export const emojis: Emoji[] = [
 		name: 'jar',
 		value: '🫙',
 		category: 'food-drink',
-		order: 722,
+		order: 724,
 		keywords: ['food', 'jar'],
 	},
 	{
@@ -16002,7 +16022,7 @@ export const emojis: Emoji[] = [
 		name: 'spaghetti',
 		value: '🍝',
 		category: 'food-drink',
-		order: 723,
+		order: 725,
 		keywords: ['food', 'pasta', 'spaghetti'],
 	},
 	{
@@ -16010,7 +16030,7 @@ export const emojis: Emoji[] = [
 		name: 'steaming bowl',
 		value: '🍜',
 		category: 'food-drink',
-		order: 724,
+		order: 726,
 		keywords: ['food', 'bowl', 'steaming'],
 	},
 	{
@@ -16018,7 +16038,7 @@ export const emojis: Emoji[] = [
 		name: 'pot of food',
 		value: '🍲',
 		category: 'food-drink',
-		order: 725,
+		order: 727,
 		keywords: ['food', 'pot'],
 	},
 	{
@@ -16026,7 +16046,7 @@ export const emojis: Emoji[] = [
 		name: 'curry rice',
 		value: '🍛',
 		category: 'food-drink',
-		order: 726,
+		order: 728,
 		keywords: ['food', 'curry', 'rice'],
 	},
 	{
@@ -16034,7 +16054,7 @@ export const emojis: Emoji[] = [
 		name: 'sushi',
 		value: '🍣',
 		category: 'food-drink',
-		order: 727,
+		order: 729,
 		keywords: ['food', 'sushi'],
 	},
 	{
@@ -16042,7 +16062,7 @@ export const emojis: Emoji[] = [
 		name: 'bento box',
 		value: '🍱',
 		category: 'food-drink',
-		order: 728,
+		order: 730,
 		keywords: ['food', 'bento'],
 	},
 	{
@@ -16050,7 +16070,7 @@ export const emojis: Emoji[] = [
 		name: 'dumpling',
 		value: '🥟',
 		category: 'food-drink',
-		order: 729,
+		order: 731,
 		keywords: ['food', 'dumpling'],
 	},
 	{
@@ -16058,7 +16078,7 @@ export const emojis: Emoji[] = [
 		name: 'oyster',
 		value: '🦪',
 		category: 'food-drink',
-		order: 730,
+		order: 732,
 		keywords: ['food', 'oyster'],
 	},
 	{
@@ -16066,7 +16086,7 @@ export const emojis: Emoji[] = [
 		name: 'fried shrimp',
 		value: '🍤',
 		category: 'food-drink',
-		order: 731,
+		order: 733,
 		keywords: ['food', 'shrimp', 'fried'],
 	},
 	{
@@ -16074,7 +16094,7 @@ export const emojis: Emoji[] = [
 		name: 'rice ball',
 		value: '🍙',
 		category: 'food-drink',
-		order: 732,
+		order: 734,
 		keywords: ['food', 'rice', 'ball'],
 	},
 	{
@@ -16082,7 +16102,7 @@ export const emojis: Emoji[] = [
 		name: 'cooked rice',
 		value: '🍚',
 		category: 'food-drink',
-		order: 733,
+		order: 735,
 		keywords: ['food', 'rice', 'cooked'],
 	},
 	{
@@ -16090,7 +16110,7 @@ export const emojis: Emoji[] = [
 		name: 'rice cracker',
 		value: '🍘',
 		category: 'food-drink',
-		order: 734,
+		order: 736,
 		keywords: ['food', 'rice', 'cracker'],
 	},
 	{
@@ -16098,7 +16118,7 @@ export const emojis: Emoji[] = [
 		name: 'fish cake with swirl',
 		value: '🍥',
 		category: 'food-drink',
-		order: 735,
+		order: 737,
 		keywords: ['food', 'fish', 'cake', 'swirl'],
 	},
 	{
@@ -16106,7 +16126,7 @@ export const emojis: Emoji[] = [
 		name: 'fortune cookie',
 		value: '🥠',
 		category: 'food-drink',
-		order: 736,
+		order: 738,
 		keywords: ['food', 'cookie', 'fortune'],
 	},
 	{
@@ -16114,7 +16134,7 @@ export const emojis: Emoji[] = [
 		name: 'moon cake',
 		value: '🥮',
 		category: 'food-drink',
-		order: 737,
+		order: 739,
 		keywords: ['food', 'cake', 'moon'],
 	},
 	{
@@ -16122,7 +16142,7 @@ export const emojis: Emoji[] = [
 		name: 'oden',
 		value: '🍢',
 		category: 'food-drink',
-		order: 738,
+		order: 740,
 		keywords: ['food', 'oden'],
 	},
 	{
@@ -16130,7 +16150,7 @@ export const emojis: Emoji[] = [
 		name: 'dango',
 		value: '🍡',
 		category: 'food-drink',
-		order: 739,
+		order: 741,
 		keywords: ['food', 'dango'],
 	},
 	{
@@ -16138,7 +16158,7 @@ export const emojis: Emoji[] = [
 		name: 'shaved ice',
 		value: '🍧',
 		category: 'food-drink',
-		order: 740,
+		order: 742,
 		keywords: ['food', 'ice', 'shaved'],
 	},
 	{
@@ -16146,7 +16166,7 @@ export const emojis: Emoji[] = [
 		name: 'ice cream',
 		value: '🍨',
 		category: 'food-drink',
-		order: 741,
+		order: 743,
 		keywords: ['food', 'ice', 'cream'],
 	},
 	{
@@ -16154,7 +16174,7 @@ export const emojis: Emoji[] = [
 		name: 'soft ice cream',
 		value: '🍦',
 		category: 'food-drink',
-		order: 742,
+		order: 744,
 		keywords: ['food', 'ice', 'cream'],
 	},
 	{
@@ -16162,7 +16182,7 @@ export const emojis: Emoji[] = [
 		name: 'pie',
 		value: '🥧',
 		category: 'food-drink',
-		order: 743,
+		order: 745,
 		keywords: ['food', 'pie'],
 	},
 	{
@@ -16170,7 +16190,7 @@ export const emojis: Emoji[] = [
 		name: 'cupcake',
 		value: '🧁',
 		category: 'food-drink',
-		order: 744,
+		order: 746,
 		keywords: ['food', 'cupcake'],
 	},
 	{
@@ -16178,7 +16198,7 @@ export const emojis: Emoji[] = [
 		name: 'birthday cake',
 		value: '🎂',
 		category: 'food-drink',
-		order: 745,
+		order: 747,
 		keywords: ['food', 'cake', 'birthday'],
 	},
 	{
@@ -16186,7 +16206,7 @@ export const emojis: Emoji[] = [
 		name: 'shortcake',
 		value: '🍰',
 		category: 'food-drink',
-		order: 746,
+		order: 748,
 		keywords: ['food', 'cake', 'shortcake'],
 	},
 	{
@@ -16194,7 +16214,7 @@ export const emojis: Emoji[] = [
 		name: 'custard',
 		value: '🍮',
 		category: 'food-drink',
-		order: 747,
+		order: 749,
 		keywords: ['food', 'custard'],
 	},
 	{
@@ -16202,7 +16222,7 @@ export const emojis: Emoji[] = [
 		name: 'lollipop',
 		value: '🍭',
 		category: 'food-drink',
-		order: 748,
+		order: 750,
 		keywords: ['food', 'lollipop'],
 	},
 	{
@@ -16210,7 +16230,7 @@ export const emojis: Emoji[] = [
 		name: 'candy',
 		value: '🍬',
 		category: 'food-drink',
-		order: 749,
+		order: 751,
 		keywords: ['food', 'candy'],
 	},
 	{
@@ -16218,7 +16238,7 @@ export const emojis: Emoji[] = [
 		name: 'chocolate bar',
 		value: '🍫',
 		category: 'food-drink',
-		order: 750,
+		order: 752,
 		keywords: ['food', 'chocolate'],
 	},
 	{
@@ -16226,7 +16246,7 @@ export const emojis: Emoji[] = [
 		name: 'popcorn',
 		value: '🍿',
 		category: 'food-drink',
-		order: 751,
+		order: 753,
 		keywords: ['food', 'popcorn'],
 	},
 	{
@@ -16234,7 +16254,7 @@ export const emojis: Emoji[] = [
 		name: 'doughnut',
 		value: '🍩',
 		category: 'food-drink',
-		order: 752,
+		order: 754,
 		keywords: ['food', 'doughnut'],
 	},
 	{
@@ -16242,7 +16262,7 @@ export const emojis: Emoji[] = [
 		name: 'cookie',
 		value: '🍪',
 		category: 'food-drink',
-		order: 753,
+		order: 755,
 		keywords: ['food', 'cookie'],
 	},
 	{
@@ -16250,7 +16270,7 @@ export const emojis: Emoji[] = [
 		name: 'chestnut',
 		value: '🌰',
 		category: 'food-drink',
-		order: 754,
+		order: 756,
 		keywords: ['food', 'chestnut'],
 	},
 	{
@@ -16258,7 +16278,7 @@ export const emojis: Emoji[] = [
 		name: 'peanuts',
 		value: '🥜',
 		category: 'food-drink',
-		order: 755,
+		order: 757,
 		keywords: ['food', 'peanuts'],
 	},
 	{
@@ -16266,7 +16286,7 @@ export const emojis: Emoji[] = [
 		name: 'beans',
 		value: '🫘',
 		category: 'food-drink',
-		order: 756,
+		order: 758,
 		keywords: ['food', 'beans'],
 	},
 	{
@@ -16274,7 +16294,7 @@ export const emojis: Emoji[] = [
 		name: 'honey pot',
 		value: '🍯',
 		category: 'food-drink',
-		order: 757,
+		order: 759,
 		keywords: ['food', 'honey'],
 	},
 	{
@@ -16282,7 +16302,7 @@ export const emojis: Emoji[] = [
 		name: 'glass of milk',
 		value: '🥛',
 		category: 'food-drink',
-		order: 758,
+		order: 760,
 		keywords: ['food', 'milk'],
 	},
 	{
@@ -16290,7 +16310,7 @@ export const emojis: Emoji[] = [
 		name: 'pouring liquid',
 		value: '🫗',
 		category: 'food-drink',
-		order: 759,
+		order: 761,
 		keywords: ['food', 'pouring', 'liquid'],
 	},
 	{
@@ -16298,7 +16318,7 @@ export const emojis: Emoji[] = [
 		name: 'baby bottle',
 		value: '🍼',
 		category: 'food-drink',
-		order: 760,
+		order: 762,
 		keywords: ['food', 'bottle', 'baby'],
 	},
 	{
@@ -16306,7 +16326,7 @@ export const emojis: Emoji[] = [
 		name: 'teapot',
 		value: '🫖',
 		category: 'food-drink',
-		order: 761,
+		order: 763,
 		keywords: ['food', 'teapot'],
 	},
 	{
@@ -16314,7 +16334,7 @@ export const emojis: Emoji[] = [
 		name: 'hot beverage',
 		value: '☕',
 		category: 'food-drink',
-		order: 762,
+		order: 764,
 		keywords: ['food', 'hot', 'beverage', 'coffee'],
 	},
 	{
@@ -16322,7 +16342,7 @@ export const emojis: Emoji[] = [
 		name: 'teacup without handle',
 		value: '🍵',
 		category: 'food-drink',
-		order: 763,
+		order: 765,
 		keywords: ['food', 'tea'],
 	},
 	{
@@ -16330,7 +16350,7 @@ export const emojis: Emoji[] = [
 		name: 'juice box',
 		value: '🧃',
 		category: 'food-drink',
-		order: 764,
+		order: 766,
 		keywords: ['food', 'juice'],
 	},
 	{
@@ -16338,7 +16358,7 @@ export const emojis: Emoji[] = [
 		name: 'cup with straw',
 		value: '🥤',
 		category: 'food-drink',
-		order: 765,
+		order: 767,
 		keywords: ['food', 'cup', 'straw'],
 	},
 	{
@@ -16346,7 +16366,7 @@ export const emojis: Emoji[] = [
 		name: 'bubble tea',
 		value: '🧋',
 		category: 'food-drink',
-		order: 766,
+		order: 768,
 		keywords: ['food', 'bubble', 'tea'],
 	},
 	{
@@ -16354,7 +16374,7 @@ export const emojis: Emoji[] = [
 		name: 'sake',
 		value: '🍶',
 		category: 'food-drink',
-		order: 767,
+		order: 769,
 		keywords: ['food', 'sake'],
 	},
 	{
@@ -16362,7 +16382,7 @@ export const emojis: Emoji[] = [
 		name: 'beer mug',
 		value: '🍺',
 		category: 'food-drink',
-		order: 768,
+		order: 770,
 		keywords: ['food', 'beer', 'mug'],
 	},
 	{
@@ -16370,7 +16390,7 @@ export const emojis: Emoji[] = [
 		name: 'clinking beer mugs',
 		value: '🍻',
 		category: 'food-drink',
-		order: 769,
+		order: 771,
 		keywords: ['food', 'beer', 'mugs'],
 	},
 	{
@@ -16378,7 +16398,7 @@ export const emojis: Emoji[] = [
 		name: 'clinking glasses',
 		value: '🥂',
 		category: 'food-drink',
-		order: 770,
+		order: 772,
 		keywords: ['food', 'clinking', 'glasses'],
 	},
 	{
@@ -16386,7 +16406,7 @@ export const emojis: Emoji[] = [
 		name: 'wine glass',
 		value: '🍷',
 		category: 'food-drink',
-		order: 771,
+		order: 773,
 		keywords: ['food', 'wine', 'glass'],
 	},
 	{
@@ -16394,7 +16414,7 @@ export const emojis: Emoji[] = [
 		name: 'tumbler glass',
 		value: '🥃',
 		category: 'food-drink',
-		order: 772,
+		order: 774,
 		keywords: ['food', 'tumbler', 'glass'],
 	},
 	{
@@ -16402,7 +16422,7 @@ export const emojis: Emoji[] = [
 		name: 'cocktail glass',
 		value: '🍸',
 		category: 'food-drink',
-		order: 773,
+		order: 775,
 		keywords: ['food', 'cocktail'],
 	},
 	{
@@ -16410,7 +16430,7 @@ export const emojis: Emoji[] = [
 		name: 'tropical drink',
 		value: '🍹',
 		category: 'food-drink',
-		order: 774,
+		order: 776,
 		keywords: ['food', 'tropical', 'drink'],
 	},
 	{
@@ -16418,7 +16438,7 @@ export const emojis: Emoji[] = [
 		name: 'mate',
 		value: '🧉',
 		category: 'food-drink',
-		order: 775,
+		order: 777,
 		keywords: ['food', 'mate'],
 	},
 	{
@@ -16426,7 +16446,7 @@ export const emojis: Emoji[] = [
 		name: 'bottle with popping cork',
 		value: '🍾',
 		category: 'food-drink',
-		order: 776,
+		order: 778,
 		keywords: ['food', 'bottle', 'champagne'],
 	},
 	{
@@ -16434,7 +16454,7 @@ export const emojis: Emoji[] = [
 		name: 'ice',
 		value: '🧊',
 		category: 'food-drink',
-		order: 777,
+		order: 779,
 		keywords: ['food', 'ice'],
 	},
 	{
@@ -16442,7 +16462,7 @@ export const emojis: Emoji[] = [
 		name: 'spoon',
 		value: '🥄',
 		category: 'food-drink',
-		order: 778,
+		order: 780,
 		keywords: ['food', 'spoon'],
 	},
 	{
@@ -16450,7 +16470,7 @@ export const emojis: Emoji[] = [
 		name: 'fork and knife',
 		value: '🍴',
 		category: 'food-drink',
-		order: 779,
+		order: 781,
 		keywords: ['food', 'fork', 'knife'],
 	},
 	{
@@ -16458,7 +16478,7 @@ export const emojis: Emoji[] = [
 		name: 'fork and knife with plate',
 		value: '🍽️',
 		category: 'food-drink',
-		order: 780,
+		order: 782,
 		keywords: ['food', 'fork', 'knife', 'plate'],
 	},
 	{
@@ -16466,7 +16486,7 @@ export const emojis: Emoji[] = [
 		name: 'bowl with spoon',
 		value: '🥣',
 		category: 'food-drink',
-		order: 781,
+		order: 783,
 		keywords: ['food', 'bowl', 'spoon'],
 	},
 	{
@@ -16474,7 +16494,7 @@ export const emojis: Emoji[] = [
 		name: 'takeout box',
 		value: '🥡',
 		category: 'food-drink',
-		order: 782,
+		order: 784,
 		keywords: ['food', 'takeout'],
 	},
 	{
@@ -16482,7 +16502,7 @@ export const emojis: Emoji[] = [
 		name: 'chopsticks',
 		value: '🥢',
 		category: 'food-drink',
-		order: 783,
+		order: 785,
 		keywords: ['food', 'chopsticks'],
 	},
 	{
@@ -16490,7 +16510,7 @@ export const emojis: Emoji[] = [
 		name: 'salt',
 		value: '🧂',
 		category: 'food-drink',
-		order: 784,
+		order: 786,
 		keywords: ['food', 'salt'],
 	},
 	{
@@ -16498,7 +16518,7 @@ export const emojis: Emoji[] = [
 		name: 'soccer ball',
 		value: '⚽',
 		category: 'activities',
-		order: 785,
+		order: 787,
 		keywords: ['sports', 'soccer'],
 	},
 	{
@@ -16506,7 +16526,7 @@ export const emojis: Emoji[] = [
 		name: 'basketball',
 		value: '🏀',
 		category: 'activities',
-		order: 786,
+		order: 788,
 		keywords: ['sports', 'basketball'],
 	},
 	{
@@ -16514,7 +16534,7 @@ export const emojis: Emoji[] = [
 		name: 'football',
 		value: '🏈',
 		category: 'activities',
-		order: 787,
+		order: 789,
 		keywords: ['sports', 'football'],
 	},
 	{
@@ -16522,7 +16542,7 @@ export const emojis: Emoji[] = [
 		name: 'baseball',
 		value: '⚾',
 		category: 'activities',
-		order: 788,
+		order: 790,
 		keywords: ['sports', 'baseball'],
 	},
 	{
@@ -16530,7 +16550,7 @@ export const emojis: Emoji[] = [
 		name: 'softball',
 		value: '🥎',
 		category: 'activities',
-		order: 789,
+		order: 791,
 		keywords: ['sports', 'softball'],
 	},
 	{
@@ -16538,7 +16558,7 @@ export const emojis: Emoji[] = [
 		name: 'tennis',
 		value: '🎾',
 		category: 'activities',
-		order: 790,
+		order: 792,
 		keywords: ['sports', 'tennis'],
 	},
 	{
@@ -16546,7 +16566,7 @@ export const emojis: Emoji[] = [
 		name: 'volleyball',
 		value: '🏐',
 		category: 'activities',
-		order: 791,
+		order: 793,
 		keywords: ['sports', 'volleyball'],
 	},
 	{
@@ -16554,7 +16574,7 @@ export const emojis: Emoji[] = [
 		name: 'rugby football',
 		value: '🏉',
 		category: 'activities',
-		order: 792,
+		order: 794,
 		keywords: ['sports', 'rugby'],
 	},
 	{
@@ -16562,7 +16582,7 @@ export const emojis: Emoji[] = [
 		name: 'flying disc',
 		value: '🥏',
 		category: 'activities',
-		order: 793,
+		order: 795,
 		keywords: ['sports', 'disc'],
 	},
 	{
@@ -16570,7 +16590,7 @@ export const emojis: Emoji[] = [
 		name: 'billiards',
 		value: '🎱',
 		category: 'activities',
-		order: 794,
+		order: 796,
 		keywords: ['sports', 'billiards'],
 	},
 	{
@@ -16578,7 +16598,7 @@ export const emojis: Emoji[] = [
 		name: 'yo-yo',
 		value: '🪀',
 		category: 'activities',
-		order: 795,
+		order: 797,
 		keywords: ['toy', 'yo-yo'],
 	},
 	{
@@ -16586,7 +16606,7 @@ export const emojis: Emoji[] = [
 		name: 'ping pong',
 		value: '🏓',
 		category: 'activities',
-		order: 796,
+		order: 798,
 		keywords: ['sports', 'ping_pong'],
 	},
 	{
@@ -16594,7 +16614,7 @@ export const emojis: Emoji[] = [
 		name: 'badminton',
 		value: '🏸',
 		category: 'activities',
-		order: 797,
+		order: 799,
 		keywords: ['sports', 'badminton'],
 	},
 	{
@@ -16602,7 +16622,7 @@ export const emojis: Emoji[] = [
 		name: 'ice hockey',
 		value: '🏒',
 		category: 'activities',
-		order: 798,
+		order: 800,
 		keywords: ['sports', 'hockey'],
 	},
 	{
@@ -16610,7 +16630,7 @@ export const emojis: Emoji[] = [
 		name: 'field hockey',
 		value: '🏑',
 		category: 'activities',
-		order: 799,
+		order: 801,
 		keywords: ['sports', 'hockey'],
 	},
 	{
@@ -16618,7 +16638,7 @@ export const emojis: Emoji[] = [
 		name: 'lacrosse',
 		value: '🥍',
 		category: 'activities',
-		order: 800,
+		order: 802,
 		keywords: ['sports', 'lacrosse'],
 	},
 	{
@@ -16626,7 +16646,7 @@ export const emojis: Emoji[] = [
 		name: 'cricket game',
 		value: '🏏',
 		category: 'activities',
-		order: 801,
+		order: 803,
 		keywords: ['sports', 'cricket'],
 	},
 	{
@@ -16634,7 +16654,7 @@ export const emojis: Emoji[] = [
 		name: 'boomerang',
 		value: '🪃',
 		category: 'activities',
-		order: 802,
+		order: 804,
 		keywords: ['sports', 'boomerang'],
 	},
 	{
@@ -16642,7 +16662,7 @@ export const emojis: Emoji[] = [
 		name: 'goal net',
 		value: '🥅',
 		category: 'activities',
-		order: 803,
+		order: 805,
 		keywords: ['sports', 'goal'],
 	},
 	{
@@ -16650,7 +16670,7 @@ export const emojis: Emoji[] = [
 		name: 'flag in hole',
 		value: '⛳',
 		category: 'activities',
-		order: 804,
+		order: 806,
 		keywords: ['sports', 'golf'],
 	},
 	{
@@ -16658,7 +16678,7 @@ export const emojis: Emoji[] = [
 		name: 'kite',
 		value: '🪁',
 		category: 'activities',
-		order: 805,
+		order: 807,
 		keywords: ['toy', 'kite'],
 	},
 	{
@@ -16666,7 +16686,7 @@ export const emojis: Emoji[] = [
 		name: 'playground slide',
 		value: '🛝',
 		category: 'activities',
-		order: 806,
+		order: 808,
 		keywords: ['playground', 'slide'],
 	},
 	{
@@ -16674,7 +16694,7 @@ export const emojis: Emoji[] = [
 		name: 'bow and arrow',
 		value: '🏹',
 		category: 'activities',
-		order: 807,
+		order: 809,
 		keywords: ['sports', 'archery'],
 	},
 	{
@@ -16682,7 +16702,7 @@ export const emojis: Emoji[] = [
 		name: 'fishing pole',
 		value: '🎣',
 		category: 'activities',
-		order: 808,
+		order: 810,
 		keywords: ['sports', 'fishing'],
 	},
 	{
@@ -16690,7 +16710,7 @@ export const emojis: Emoji[] = [
 		name: 'diving mask',
 		value: '🤿',
 		category: 'activities',
-		order: 809,
+		order: 811,
 		keywords: ['sports', 'diving'],
 	},
 	{
@@ -16698,7 +16718,7 @@ export const emojis: Emoji[] = [
 		name: 'boxing glove',
 		value: '🥊',
 		category: 'activities',
-		order: 810,
+		order: 812,
 		keywords: ['sports', 'boxing'],
 	},
 	{
@@ -16706,7 +16726,7 @@ export const emojis: Emoji[] = [
 		name: 'martial arts uniform',
 		value: '🥋',
 		category: 'activities',
-		order: 811,
+		order: 813,
 		keywords: ['sports', 'martial_arts'],
 	},
 	{
@@ -16714,7 +16734,7 @@ export const emojis: Emoji[] = [
 		name: 'running shirt',
 		value: '🎽',
 		category: 'activities',
-		order: 812,
+		order: 814,
 		keywords: ['sports', 'running'],
 	},
 	{
@@ -16722,7 +16742,7 @@ export const emojis: Emoji[] = [
 		name: 'skateboard',
 		value: '🛹',
 		category: 'activities',
-		order: 813,
+		order: 815,
 		keywords: ['sports', 'skateboard'],
 	},
 	{
@@ -16730,7 +16750,7 @@ export const emojis: Emoji[] = [
 		name: 'roller skate',
 		value: '🛼',
 		category: 'activities',
-		order: 814,
+		order: 816,
 		keywords: ['sports', 'skate'],
 	},
 	{
@@ -16738,7 +16758,7 @@ export const emojis: Emoji[] = [
 		name: 'sled',
 		value: '🛷',
 		category: 'activities',
-		order: 815,
+		order: 817,
 		keywords: ['sports', 'sled'],
 	},
 	{
@@ -16746,7 +16766,7 @@ export const emojis: Emoji[] = [
 		name: 'ice skate',
 		value: '⛸️',
 		category: 'activities',
-		order: 816,
+		order: 818,
 		keywords: ['sports', 'ice_skate'],
 	},
 	{
@@ -16754,7 +16774,7 @@ export const emojis: Emoji[] = [
 		name: 'curling stone',
 		value: '🥌',
 		category: 'activities',
-		order: 817,
+		order: 819,
 		keywords: ['sports', 'curling'],
 	},
 	{
@@ -16762,7 +16782,7 @@ export const emojis: Emoji[] = [
 		name: 'skis',
 		value: '🎿',
 		category: 'activities',
-		order: 818,
+		order: 820,
 		keywords: ['sports', 'ski'],
 	},
 	{
@@ -16770,7 +16790,7 @@ export const emojis: Emoji[] = [
 		name: 'skier',
 		value: '⛷️',
 		category: 'activities',
-		order: 819,
+		order: 821,
 		keywords: ['sports', 'ski'],
 	},
 	{
@@ -16778,7 +16798,7 @@ export const emojis: Emoji[] = [
 		name: 'snowboarder',
 		value: '🏂',
 		category: 'activities',
-		order: 820,
+		order: 822,
 		skintones: [
 			{
 				skintone: 'default',
@@ -16818,7 +16838,7 @@ export const emojis: Emoji[] = [
 		name: 'parachute',
 		value: '🪂',
 		category: 'activities',
-		order: 821,
+		order: 823,
 		keywords: ['sports', 'parachute'],
 	},
 	{
@@ -16826,7 +16846,7 @@ export const emojis: Emoji[] = [
 		name: 'woman lifting weights',
 		value: '🏋️‍♀️',
 		category: 'activities',
-		order: 822,
+		order: 824,
 		skintones: [
 			{
 				skintone: 'default',
@@ -16866,7 +16886,7 @@ export const emojis: Emoji[] = [
 		name: 'man lifting weights',
 		value: '🏋️‍♂️',
 		category: 'activities',
-		order: 823,
+		order: 825,
 		skintones: [
 			{
 				skintone: 'default',
@@ -16906,7 +16926,7 @@ export const emojis: Emoji[] = [
 		name: 'women wrestling',
 		value: '🤼‍♀️',
 		category: 'activities',
-		order: 824,
+		order: 826,
 		keywords: ['sports', 'wrestling'],
 	},
 	{
@@ -16914,7 +16934,7 @@ export const emojis: Emoji[] = [
 		name: 'men wrestling',
 		value: '🤼‍♂️',
 		category: 'activities',
-		order: 825,
+		order: 827,
 		keywords: ['sports', 'wrestling'],
 	},
 	{
@@ -16922,7 +16942,7 @@ export const emojis: Emoji[] = [
 		name: 'woman cartwheeling',
 		value: '🤸‍♀️',
 		category: 'activities',
-		order: 826,
+		order: 828,
 		skintones: [
 			{
 				skintone: 'default',
@@ -16962,7 +16982,7 @@ export const emojis: Emoji[] = [
 		name: 'man cartwheeling',
 		value: '🤸‍♂️',
 		category: 'activities',
-		order: 827,
+		order: 829,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17002,7 +17022,7 @@ export const emojis: Emoji[] = [
 		name: 'person cartwheeling',
 		value: '🤸',
 		category: 'activities',
-		order: 828,
+		order: 830,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17042,7 +17062,7 @@ export const emojis: Emoji[] = [
 		name: 'woman bouncing ball',
 		value: '⛹️‍♀️',
 		category: 'activities',
-		order: 829,
+		order: 831,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17082,7 +17102,7 @@ export const emojis: Emoji[] = [
 		name: 'man bouncing ball',
 		value: '⛹️‍♂️',
 		category: 'activities',
-		order: 830,
+		order: 832,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17122,7 +17142,7 @@ export const emojis: Emoji[] = [
 		name: 'person bouncing ball',
 		value: '⛹️',
 		category: 'activities',
-		order: 831,
+		order: 833,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17162,7 +17182,7 @@ export const emojis: Emoji[] = [
 		name: 'fencer',
 		value: '🤺',
 		category: 'activities',
-		order: 832,
+		order: 834,
 		keywords: ['sports', 'fencing'],
 	},
 	{
@@ -17170,7 +17190,7 @@ export const emojis: Emoji[] = [
 		name: 'woman playing handball',
 		value: '🤾‍♀️',
 		category: 'activities',
-		order: 833,
+		order: 835,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17210,7 +17230,7 @@ export const emojis: Emoji[] = [
 		name: 'man playing handball',
 		value: '🤾‍♂️',
 		category: 'activities',
-		order: 834,
+		order: 836,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17250,7 +17270,7 @@ export const emojis: Emoji[] = [
 		name: 'person playing handball',
 		value: '🤾',
 		category: 'activities',
-		order: 835,
+		order: 837,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17290,7 +17310,7 @@ export const emojis: Emoji[] = [
 		name: 'woman golfing',
 		value: '🏌️‍♀️',
 		category: 'activities',
-		order: 836,
+		order: 838,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17330,7 +17350,7 @@ export const emojis: Emoji[] = [
 		name: 'man golfing',
 		value: '🏌️‍♂️',
 		category: 'activities',
-		order: 837,
+		order: 839,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17370,7 +17390,7 @@ export const emojis: Emoji[] = [
 		name: 'person golfing',
 		value: '🏌️',
 		category: 'activities',
-		order: 838,
+		order: 840,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17410,7 +17430,7 @@ export const emojis: Emoji[] = [
 		name: 'horse racing',
 		value: '🏇',
 		category: 'activities',
-		order: 839,
+		order: 841,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17450,7 +17470,7 @@ export const emojis: Emoji[] = [
 		name: 'woman in lotus position',
 		value: '🧘‍♀️',
 		category: 'activities',
-		order: 840,
+		order: 842,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17490,7 +17510,7 @@ export const emojis: Emoji[] = [
 		name: 'man in lotus position',
 		value: '🧘‍♂️',
 		category: 'activities',
-		order: 841,
+		order: 843,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17530,7 +17550,7 @@ export const emojis: Emoji[] = [
 		name: 'person in lotus position',
 		value: '🧘',
 		category: 'activities',
-		order: 842,
+		order: 844,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17570,7 +17590,7 @@ export const emojis: Emoji[] = [
 		name: 'woman surfing',
 		value: '🏄‍♀️',
 		category: 'activities',
-		order: 843,
+		order: 845,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17610,7 +17630,7 @@ export const emojis: Emoji[] = [
 		name: 'man surfing',
 		value: '🏄‍♂️',
 		category: 'activities',
-		order: 844,
+		order: 846,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17650,7 +17670,7 @@ export const emojis: Emoji[] = [
 		name: 'person surfing',
 		value: '🏄',
 		category: 'activities',
-		order: 845,
+		order: 847,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17690,7 +17710,7 @@ export const emojis: Emoji[] = [
 		name: 'woman swimming',
 		value: '🏊‍♀️',
 		category: 'activities',
-		order: 846,
+		order: 848,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17730,7 +17750,7 @@ export const emojis: Emoji[] = [
 		name: 'man swimming',
 		value: '🏊‍♂️',
 		category: 'activities',
-		order: 847,
+		order: 849,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17770,7 +17790,7 @@ export const emojis: Emoji[] = [
 		name: 'person swimming',
 		value: '🏊',
 		category: 'activities',
-		order: 848,
+		order: 850,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17810,7 +17830,7 @@ export const emojis: Emoji[] = [
 		name: 'woman playing water polo',
 		value: '🤽‍♀️',
 		category: 'activities',
-		order: 849,
+		order: 851,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17850,7 +17870,7 @@ export const emojis: Emoji[] = [
 		name: 'man playing water polo',
 		value: '🤽‍♂️',
 		category: 'activities',
-		order: 850,
+		order: 852,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17890,7 +17910,7 @@ export const emojis: Emoji[] = [
 		name: 'person playing water polo',
 		value: '🤽',
 		category: 'activities',
-		order: 851,
+		order: 853,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17930,7 +17950,7 @@ export const emojis: Emoji[] = [
 		name: 'woman rowing boat',
 		value: '🚣‍♀️',
 		category: 'activities',
-		order: 852,
+		order: 854,
 		skintones: [
 			{
 				skintone: 'default',
@@ -17970,7 +17990,7 @@ export const emojis: Emoji[] = [
 		name: 'man rowing boat',
 		value: '🚣‍♂️',
 		category: 'activities',
-		order: 853,
+		order: 855,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18010,7 +18030,7 @@ export const emojis: Emoji[] = [
 		name: 'person rowing boat',
 		value: '🚣',
 		category: 'activities',
-		order: 854,
+		order: 856,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18050,7 +18070,7 @@ export const emojis: Emoji[] = [
 		name: 'woman climbing',
 		value: '🧗‍♀️',
 		category: 'activities',
-		order: 855,
+		order: 857,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18090,7 +18110,7 @@ export const emojis: Emoji[] = [
 		name: 'man climbing',
 		value: '🧗‍♂️',
 		category: 'activities',
-		order: 856,
+		order: 858,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18130,7 +18150,7 @@ export const emojis: Emoji[] = [
 		name: 'person climbing',
 		value: '🧗',
 		category: 'activities',
-		order: 857,
+		order: 859,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18170,7 +18190,7 @@ export const emojis: Emoji[] = [
 		name: 'woman mountain biking',
 		value: '🚵‍♀️',
 		category: 'activities',
-		order: 858,
+		order: 860,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18210,7 +18230,7 @@ export const emojis: Emoji[] = [
 		name: 'man mountain biking',
 		value: '🚵‍♂️',
 		category: 'activities',
-		order: 859,
+		order: 861,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18250,7 +18270,7 @@ export const emojis: Emoji[] = [
 		name: 'person mountain biking',
 		value: '🚵',
 		category: 'activities',
-		order: 860,
+		order: 862,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18290,7 +18310,7 @@ export const emojis: Emoji[] = [
 		name: 'woman biking',
 		value: '🚴‍♀️',
 		category: 'activities',
-		order: 861,
+		order: 863,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18330,7 +18350,7 @@ export const emojis: Emoji[] = [
 		name: 'man biking',
 		value: '🚴‍♂️',
 		category: 'activities',
-		order: 862,
+		order: 864,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18370,7 +18390,7 @@ export const emojis: Emoji[] = [
 		name: 'person biking',
 		value: '🚴',
 		category: 'activities',
-		order: 863,
+		order: 865,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18410,7 +18430,7 @@ export const emojis: Emoji[] = [
 		name: 'trophy',
 		value: '🏆',
 		category: 'activities',
-		order: 864,
+		order: 866,
 		keywords: ['award', 'trophy'],
 	},
 	{
@@ -18418,7 +18438,7 @@ export const emojis: Emoji[] = [
 		name: '1st place medal',
 		value: '🥇',
 		category: 'activities',
-		order: 865,
+		order: 867,
 		keywords: ['award', 'gold', 'first_place'],
 	},
 	{
@@ -18426,7 +18446,7 @@ export const emojis: Emoji[] = [
 		name: '2nd place medal',
 		value: '🥈',
 		category: 'activities',
-		order: 866,
+		order: 868,
 		keywords: ['award', 'silver', 'second_place'],
 	},
 	{
@@ -18434,7 +18454,7 @@ export const emojis: Emoji[] = [
 		name: '3rd place medal',
 		value: '🥉',
 		category: 'activities',
-		order: 867,
+		order: 869,
 		keywords: ['award', 'bronze', 'third_place'],
 	},
 	{
@@ -18442,7 +18462,7 @@ export const emojis: Emoji[] = [
 		name: 'sports medal',
 		value: '🏅',
 		category: 'activities',
-		order: 868,
+		order: 870,
 		keywords: ['award', 'sports'],
 	},
 	{
@@ -18450,7 +18470,7 @@ export const emojis: Emoji[] = [
 		name: 'military medal',
 		value: '🎖️',
 		category: 'activities',
-		order: 869,
+		order: 871,
 		keywords: ['award', 'military'],
 	},
 	{
@@ -18458,7 +18478,7 @@ export const emojis: Emoji[] = [
 		name: 'reminder ribbon',
 		value: '🎗️',
 		category: 'activities',
-		order: 870,
+		order: 872,
 		keywords: ['ribbon', 'reminder'],
 	},
 	{
@@ -18466,7 +18486,7 @@ export const emojis: Emoji[] = [
 		name: 'rosette',
 		value: '🏵️',
 		category: 'activities',
-		order: 871,
+		order: 873,
 		keywords: ['rosette', 'award'],
 	},
 	{
@@ -18474,7 +18494,7 @@ export const emojis: Emoji[] = [
 		name: 'ticket',
 		value: '🎫',
 		category: 'activities',
-		order: 872,
+		order: 874,
 		keywords: ['ticket'],
 	},
 	{
@@ -18482,7 +18502,7 @@ export const emojis: Emoji[] = [
 		name: 'admission tickets',
 		value: '🎟️',
 		category: 'activities',
-		order: 873,
+		order: 875,
 		keywords: ['tickets', 'admission'],
 	},
 	{
@@ -18490,7 +18510,7 @@ export const emojis: Emoji[] = [
 		name: 'circus tent',
 		value: '🎪',
 		category: 'activities',
-		order: 874,
+		order: 876,
 		keywords: ['circus', 'tent'],
 	},
 	{
@@ -18498,7 +18518,7 @@ export const emojis: Emoji[] = [
 		name: 'woman juggling',
 		value: '🤹‍♀️',
 		category: 'activities',
-		order: 875,
+		order: 877,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18538,7 +18558,7 @@ export const emojis: Emoji[] = [
 		name: 'man juggling',
 		value: '🤹‍♂️',
 		category: 'activities',
-		order: 876,
+		order: 878,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18578,7 +18598,7 @@ export const emojis: Emoji[] = [
 		name: 'person juggling',
 		value: '🤹',
 		category: 'activities',
-		order: 877,
+		order: 879,
 		skintones: [
 			{
 				skintone: 'default',
@@ -18618,7 +18638,7 @@ export const emojis: Emoji[] = [
 		name: 'performing arts',
 		value: '🎭',
 		category: 'activities',
-		order: 878,
+		order: 880,
 		keywords: ['performing_arts'],
 	},
 	{
@@ -18626,7 +18646,7 @@ export const emojis: Emoji[] = [
 		name: 'ballet shoes',
 		value: '🩰',
 		category: 'activities',
-		order: 879,
+		order: 881,
 		keywords: ['ballet'],
 	},
 	{
@@ -18634,7 +18654,7 @@ export const emojis: Emoji[] = [
 		name: 'art',
 		value: '🎨',
 		category: 'activities',
-		order: 880,
+		order: 882,
 		keywords: ['art'],
 	},
 	{
@@ -18642,7 +18662,7 @@ export const emojis: Emoji[] = [
 		name: 'clapper board',
 		value: '🎬',
 		category: 'activities',
-		order: 881,
+		order: 883,
 		keywords: ['clapper_board', 'movie'],
 	},
 	{
@@ -18650,7 +18670,7 @@ export const emojis: Emoji[] = [
 		name: 'microphone',
 		value: '🎤',
 		category: 'activities',
-		order: 882,
+		order: 884,
 		keywords: ['microphone'],
 	},
 	{
@@ -18658,7 +18678,7 @@ export const emojis: Emoji[] = [
 		name: 'headphone',
 		value: '🎧',
 		category: 'activities',
-		order: 883,
+		order: 885,
 		keywords: ['headphone'],
 	},
 	{
@@ -18666,7 +18686,7 @@ export const emojis: Emoji[] = [
 		name: 'musical score',
 		value: '🎼',
 		category: 'activities',
-		order: 884,
+		order: 886,
 		keywords: ['music'],
 	},
 	{
@@ -18674,7 +18694,7 @@ export const emojis: Emoji[] = [
 		name: 'musical keyboard',
 		value: '🎹',
 		category: 'activities',
-		order: 885,
+		order: 887,
 		keywords: ['keyboard'],
 	},
 	{
@@ -18682,7 +18702,7 @@ export const emojis: Emoji[] = [
 		name: 'drum',
 		value: '🥁',
 		category: 'activities',
-		order: 886,
+		order: 888,
 		keywords: ['drum'],
 	},
 	{
@@ -18690,7 +18710,7 @@ export const emojis: Emoji[] = [
 		name: 'maracas',
 		value: '🪇',
 		category: 'activities',
-		order: 887,
+		order: 889,
 		keywords: ['maracas'],
 	},
 	{
@@ -18698,7 +18718,7 @@ export const emojis: Emoji[] = [
 		name: 'long drum',
 		value: '🪘',
 		category: 'activities',
-		order: 888,
+		order: 890,
 		keywords: ['drum'],
 	},
 	{
@@ -18706,7 +18726,7 @@ export const emojis: Emoji[] = [
 		name: 'saxophone',
 		value: '🎷',
 		category: 'activities',
-		order: 889,
+		order: 891,
 		keywords: ['saxophone'],
 	},
 	{
@@ -18714,7 +18734,7 @@ export const emojis: Emoji[] = [
 		name: 'trumpet',
 		value: '🎺',
 		category: 'activities',
-		order: 890,
+		order: 892,
 		keywords: ['trumpet'],
 	},
 	{
@@ -18722,7 +18742,7 @@ export const emojis: Emoji[] = [
 		name: 'accordion',
 		value: '🪗',
 		category: 'activities',
-		order: 891,
+		order: 893,
 		keywords: ['accordion'],
 	},
 	{
@@ -18730,7 +18750,7 @@ export const emojis: Emoji[] = [
 		name: 'guitar',
 		value: '🎸',
 		category: 'activities',
-		order: 892,
+		order: 894,
 		keywords: ['guitar'],
 	},
 	{
@@ -18738,7 +18758,7 @@ export const emojis: Emoji[] = [
 		name: 'banjo',
 		value: '🪕',
 		category: 'activities',
-		order: 893,
+		order: 895,
 		keywords: ['banjo'],
 	},
 	{
@@ -18746,7 +18766,7 @@ export const emojis: Emoji[] = [
 		name: 'violin',
 		value: '🎻',
 		category: 'activities',
-		order: 894,
+		order: 896,
 		keywords: ['violin'],
 	},
 	{
@@ -18754,7 +18774,7 @@ export const emojis: Emoji[] = [
 		name: 'flute',
 		value: '🪈',
 		category: 'activities',
-		order: 895,
+		order: 897,
 		keywords: ['flute'],
 	},
 	{
@@ -18762,7 +18782,7 @@ export const emojis: Emoji[] = [
 		name: 'game die',
 		value: '🎲',
 		category: 'activities',
-		order: 896,
+		order: 898,
 		keywords: ['game'],
 	},
 	{
@@ -18770,7 +18790,7 @@ export const emojis: Emoji[] = [
 		name: 'chess pawn',
 		value: '♟️',
 		category: 'activities',
-		order: 897,
+		order: 899,
 		keywords: ['chess'],
 	},
 	{
@@ -18778,7 +18798,7 @@ export const emojis: Emoji[] = [
 		name: 'dart',
 		value: '🎯',
 		category: 'activities',
-		order: 898,
+		order: 900,
 		keywords: ['game', 'dart'],
 	},
 	{
@@ -18786,7 +18806,7 @@ export const emojis: Emoji[] = [
 		name: 'bowling',
 		value: '🎳',
 		category: 'activities',
-		order: 899,
+		order: 901,
 		keywords: ['game', 'bowling'],
 	},
 	{
@@ -18794,7 +18814,7 @@ export const emojis: Emoji[] = [
 		name: 'video game',
 		value: '🎮',
 		category: 'activities',
-		order: 900,
+		order: 902,
 		keywords: ['game', 'video'],
 	},
 	{
@@ -18802,7 +18822,7 @@ export const emojis: Emoji[] = [
 		name: 'slot machine',
 		value: '🎰',
 		category: 'activities',
-		order: 901,
+		order: 903,
 		keywords: ['game', 'slot'],
 	},
 	{
@@ -18810,7 +18830,7 @@ export const emojis: Emoji[] = [
 		name: 'puzzle piece',
 		value: '🧩',
 		category: 'activities',
-		order: 902,
+		order: 904,
 		keywords: ['game', 'puzzle'],
 	},
 	{
@@ -18818,7 +18838,7 @@ export const emojis: Emoji[] = [
 		name: 'automobile',
 		value: '🚗',
 		category: 'travel-places',
-		order: 903,
+		order: 905,
 		keywords: ['car', 'automobile', 'vehicle', 'transportation'],
 	},
 	{
@@ -18826,7 +18846,7 @@ export const emojis: Emoji[] = [
 		name: 'taxi',
 		value: '🚕',
 		category: 'travel-places',
-		order: 904,
+		order: 906,
 		keywords: ['taxi', 'vehicle', 'transportation'],
 	},
 	{
@@ -18834,7 +18854,7 @@ export const emojis: Emoji[] = [
 		name: 'recreational vehicle',
 		value: '🚙',
 		category: 'travel-places',
-		order: 905,
+		order: 907,
 		keywords: ['recreational vehicle', 'rv', 'camper', 'vehicle'],
 	},
 	{
@@ -18842,7 +18862,7 @@ export const emojis: Emoji[] = [
 		name: 'bus',
 		value: '🚌',
 		category: 'travel-places',
-		order: 906,
+		order: 908,
 		keywords: [
 			'bus',
 			'vehicle',
@@ -18855,7 +18875,7 @@ export const emojis: Emoji[] = [
 		name: 'trolleybus',
 		value: '🚎',
 		category: 'travel-places',
-		order: 907,
+		order: 909,
 		keywords: [
 			'trolleybus',
 			'vehicle',
@@ -18868,7 +18888,7 @@ export const emojis: Emoji[] = [
 		name: 'racing car',
 		value: '🏎️',
 		category: 'travel-places',
-		order: 908,
+		order: 910,
 		keywords: ['racing car', 'vehicle', 'sports', 'racing'],
 	},
 	{
@@ -18876,7 +18896,7 @@ export const emojis: Emoji[] = [
 		name: 'police car',
 		value: '🚓',
 		category: 'travel-places',
-		order: 909,
+		order: 911,
 		keywords: [
 			'police car',
 			'vehicle',
@@ -18889,7 +18909,7 @@ export const emojis: Emoji[] = [
 		name: 'ambulance',
 		value: '🚑',
 		category: 'travel-places',
-		order: 910,
+		order: 912,
 		keywords: ['ambulance', 'vehicle', 'medical', 'emergency'],
 	},
 	{
@@ -18897,7 +18917,7 @@ export const emojis: Emoji[] = [
 		name: 'fire engine',
 		value: '🚒',
 		category: 'travel-places',
-		order: 911,
+		order: 913,
 		keywords: [
 			'fire engine',
 			'vehicle',
@@ -18910,7 +18930,7 @@ export const emojis: Emoji[] = [
 		name: 'minibus',
 		value: '🚐',
 		category: 'travel-places',
-		order: 912,
+		order: 914,
 		keywords: [
 			'minibus',
 			'vehicle',
@@ -18923,7 +18943,7 @@ export const emojis: Emoji[] = [
 		name: 'pickup truck',
 		value: '🛻',
 		category: 'travel-places',
-		order: 913,
+		order: 915,
 		keywords: ['pickup truck', 'vehicle', 'transportation'],
 	},
 	{
@@ -18931,7 +18951,7 @@ export const emojis: Emoji[] = [
 		name: 'delivery truck',
 		value: '🚚',
 		category: 'travel-places',
-		order: 914,
+		order: 916,
 		keywords: [
 			'delivery truck',
 			'vehicle',
@@ -18944,7 +18964,7 @@ export const emojis: Emoji[] = [
 		name: 'articulated lorry',
 		value: '🚛',
 		category: 'travel-places',
-		order: 915,
+		order: 917,
 		keywords: [
 			'articulated lorry',
 			'vehicle',
@@ -18957,7 +18977,7 @@ export const emojis: Emoji[] = [
 		name: 'tractor',
 		value: '🚜',
 		category: 'travel-places',
-		order: 916,
+		order: 918,
 		keywords: ['tractor', 'vehicle', 'farming', 'agriculture'],
 	},
 	{
@@ -18965,7 +18985,7 @@ export const emojis: Emoji[] = [
 		name: 'white cane',
 		value: '🦯',
 		category: 'travel-places',
-		order: 917,
+		order: 919,
 		keywords: [
 			'white cane',
 			'accessibility',
@@ -18978,7 +18998,7 @@ export const emojis: Emoji[] = [
 		name: 'manual wheelchair',
 		value: '🦽',
 		category: 'travel-places',
-		order: 918,
+		order: 920,
 		keywords: ['manual wheelchair', 'accessibility', 'mobility aid'],
 	},
 	{
@@ -18986,7 +19006,7 @@ export const emojis: Emoji[] = [
 		name: 'motorized wheelchair',
 		value: '🦼',
 		category: 'travel-places',
-		order: 919,
+		order: 921,
 		keywords: [
 			'motorized wheelchair',
 			'accessibility',
@@ -18998,7 +19018,7 @@ export const emojis: Emoji[] = [
 		name: 'crutch',
 		value: '🩼',
 		category: 'travel-places',
-		order: 920,
+		order: 922,
 		keywords: [
 			'crutch',
 			'help',
@@ -19015,7 +19035,7 @@ export const emojis: Emoji[] = [
 		name: 'kick scooter',
 		value: '🛴',
 		category: 'travel-places',
-		order: 921,
+		order: 923,
 		keywords: [
 			'kick scooter',
 			'vehicle',
@@ -19028,7 +19048,7 @@ export const emojis: Emoji[] = [
 		name: 'bicycle',
 		value: '🚲',
 		category: 'travel-places',
-		order: 922,
+		order: 924,
 		keywords: ['bicycle', 'vehicle', 'transportation', 'cycling'],
 	},
 	{
@@ -19036,7 +19056,7 @@ export const emojis: Emoji[] = [
 		name: 'motor scooter',
 		value: '🛵',
 		category: 'travel-places',
-		order: 923,
+		order: 925,
 		keywords: ['motor scooter', 'vehicle', 'transportation'],
 	},
 	{
@@ -19044,7 +19064,7 @@ export const emojis: Emoji[] = [
 		name: 'motorcycle',
 		value: '🏍️',
 		category: 'travel-places',
-		order: 924,
+		order: 926,
 		keywords: ['motorcycle', 'vehicle', 'transportation', 'racing'],
 	},
 	{
@@ -19052,7 +19072,7 @@ export const emojis: Emoji[] = [
 		name: 'auto rickshaw',
 		value: '🛺',
 		category: 'travel-places',
-		order: 925,
+		order: 927,
 		keywords: ['auto rickshaw', 'vehicle', 'transportation'],
 	},
 	{
@@ -19060,7 +19080,7 @@ export const emojis: Emoji[] = [
 		name: 'manual rickshaw',
 		value: '🛞',
 		category: 'travel-places',
-		order: 926,
+		order: 928,
 		keywords: ['manual rickshaw', 'vehicle', 'transportation'],
 	},
 	{
@@ -19068,7 +19088,7 @@ export const emojis: Emoji[] = [
 		name: 'police car light',
 		value: '🚨',
 		category: 'travel-places',
-		order: 927,
+		order: 929,
 		keywords: ['police car light', 'emergency', 'alert'],
 	},
 	{
@@ -19076,7 +19096,7 @@ export const emojis: Emoji[] = [
 		name: 'oncoming police car',
 		value: '🚔',
 		category: 'travel-places',
-		order: 928,
+		order: 930,
 		keywords: ['oncoming police car', 'vehicle', 'law enforcement'],
 	},
 	{
@@ -19084,7 +19104,7 @@ export const emojis: Emoji[] = [
 		name: 'oncoming bus',
 		value: '🚍',
 		category: 'travel-places',
-		order: 929,
+		order: 931,
 		keywords: ['oncoming bus', 'vehicle', 'public transport'],
 	},
 	{
@@ -19092,7 +19112,7 @@ export const emojis: Emoji[] = [
 		name: 'oncoming automobile',
 		value: '🚘',
 		category: 'travel-places',
-		order: 930,
+		order: 932,
 		keywords: ['oncoming automobile', 'vehicle', 'car'],
 	},
 	{
@@ -19100,7 +19120,7 @@ export const emojis: Emoji[] = [
 		name: 'oncoming taxi',
 		value: '🚖',
 		category: 'travel-places',
-		order: 931,
+		order: 933,
 		keywords: ['oncoming taxi', 'vehicle', 'taxi'],
 	},
 	{
@@ -19108,7 +19128,7 @@ export const emojis: Emoji[] = [
 		name: 'aerial tramway',
 		value: '🚡',
 		category: 'travel-places',
-		order: 932,
+		order: 934,
 		keywords: ['aerial tramway', 'transportation', 'vehicle'],
 	},
 	{
@@ -19116,7 +19136,7 @@ export const emojis: Emoji[] = [
 		name: 'mountain cableway',
 		value: '🚠',
 		category: 'travel-places',
-		order: 933,
+		order: 935,
 		keywords: ['mountain cableway', 'transportation', 'vehicle'],
 	},
 	{
@@ -19124,7 +19144,7 @@ export const emojis: Emoji[] = [
 		name: 'suspension railway',
 		value: '🚟',
 		category: 'travel-places',
-		order: 934,
+		order: 936,
 		keywords: ['suspension railway', 'transportation', 'vehicle'],
 	},
 	{
@@ -19132,7 +19152,7 @@ export const emojis: Emoji[] = [
 		name: 'railway car',
 		value: '🚃',
 		category: 'travel-places',
-		order: 935,
+		order: 937,
 		keywords: ['railway car', 'train', 'vehicle'],
 	},
 	{
@@ -19140,7 +19160,7 @@ export const emojis: Emoji[] = [
 		name: 'tram car',
 		value: '🚋',
 		category: 'travel-places',
-		order: 936,
+		order: 938,
 		keywords: ['tram car', 'vehicle', 'transportation'],
 	},
 	{
@@ -19148,7 +19168,7 @@ export const emojis: Emoji[] = [
 		name: 'mountain railway',
 		value: '🚞',
 		category: 'travel-places',
-		order: 937,
+		order: 939,
 		keywords: ['mountain railway', 'vehicle', 'transportation'],
 	},
 	{
@@ -19156,7 +19176,7 @@ export const emojis: Emoji[] = [
 		name: 'monorail',
 		value: '🚝',
 		category: 'travel-places',
-		order: 938,
+		order: 940,
 		keywords: ['monorail', 'vehicle', 'transportation'],
 	},
 	{
@@ -19164,7 +19184,7 @@ export const emojis: Emoji[] = [
 		name: 'high-speed train',
 		value: '🚄',
 		category: 'travel-places',
-		order: 939,
+		order: 941,
 		keywords: [
 			'high-speed train',
 			'vehicle',
@@ -19177,7 +19197,7 @@ export const emojis: Emoji[] = [
 		name: 'bullet train',
 		value: '🚅',
 		category: 'travel-places',
-		order: 940,
+		order: 942,
 		keywords: ['bullet train', 'vehicle', 'transportation', 'train'],
 	},
 	{
@@ -19185,7 +19205,7 @@ export const emojis: Emoji[] = [
 		name: 'light rail',
 		value: '🚈',
 		category: 'travel-places',
-		order: 941,
+		order: 943,
 		keywords: ['light rail', 'vehicle', 'transportation'],
 	},
 	{
@@ -19193,7 +19213,7 @@ export const emojis: Emoji[] = [
 		name: 'steam locomotive',
 		value: '🚂',
 		category: 'travel-places',
-		order: 942,
+		order: 944,
 		keywords: [
 			'steam locomotive',
 			'vehicle',
@@ -19206,7 +19226,7 @@ export const emojis: Emoji[] = [
 		name: 'train',
 		value: '🚆',
 		category: 'travel-places',
-		order: 943,
+		order: 945,
 		keywords: ['train', 'vehicle', 'transportation'],
 	},
 	{
@@ -19214,7 +19234,7 @@ export const emojis: Emoji[] = [
 		name: 'metro',
 		value: '🚇',
 		category: 'travel-places',
-		order: 944,
+		order: 946,
 		keywords: ['metro', 'vehicle', 'transportation', 'subway'],
 	},
 	{
@@ -19222,7 +19242,7 @@ export const emojis: Emoji[] = [
 		name: 'tram',
 		value: '🚊',
 		category: 'travel-places',
-		order: 945,
+		order: 947,
 		keywords: ['tram', 'vehicle', 'transportation'],
 	},
 	{
@@ -19230,7 +19250,7 @@ export const emojis: Emoji[] = [
 		name: 'station',
 		value: '🚉',
 		category: 'travel-places',
-		order: 946,
+		order: 948,
 		keywords: ['station', 'transportation', 'train station'],
 	},
 	{
@@ -19238,7 +19258,7 @@ export const emojis: Emoji[] = [
 		name: 'airplane',
 		value: '✈️',
 		category: 'travel-places',
-		order: 947,
+		order: 949,
 		keywords: ['airplane', 'vehicle', 'transportation', 'flight'],
 	},
 	{
@@ -19246,7 +19266,7 @@ export const emojis: Emoji[] = [
 		name: 'departure',
 		value: '🛫',
 		category: 'travel-places',
-		order: 948,
+		order: 950,
 		keywords: ['departure', 'flight', 'airplane', 'takeoff'],
 	},
 	{
@@ -19254,7 +19274,7 @@ export const emojis: Emoji[] = [
 		name: 'arrival',
 		value: '🛬',
 		category: 'travel-places',
-		order: 949,
+		order: 951,
 		keywords: ['arrival', 'flight', 'airplane', 'landing'],
 	},
 	{
@@ -19262,7 +19282,7 @@ export const emojis: Emoji[] = [
 		name: 'small airplane',
 		value: '🛩️',
 		category: 'travel-places',
-		order: 950,
+		order: 952,
 		keywords: [
 			'small airplane',
 			'vehicle',
@@ -19275,7 +19295,7 @@ export const emojis: Emoji[] = [
 		name: 'seat',
 		value: '💺',
 		category: 'travel-places',
-		order: 951,
+		order: 953,
 		keywords: ['seat', 'flight', 'airplane'],
 	},
 	{
@@ -19283,7 +19303,7 @@ export const emojis: Emoji[] = [
 		name: 'satellite',
 		value: '🛰️',
 		category: 'travel-places',
-		order: 952,
+		order: 954,
 		keywords: ['satellite', 'space', 'communication'],
 	},
 	{
@@ -19291,7 +19311,7 @@ export const emojis: Emoji[] = [
 		name: 'rocket',
 		value: '🚀',
 		category: 'travel-places',
-		order: 953,
+		order: 955,
 		keywords: ['rocket', 'vehicle', 'space', 'transportation'],
 	},
 	{
@@ -19299,7 +19319,7 @@ export const emojis: Emoji[] = [
 		name: 'flying saucer',
 		value: '🛸',
 		category: 'travel-places',
-		order: 954,
+		order: 956,
 		keywords: ['flying saucer', 'vehicle', 'space', 'alien'],
 	},
 	{
@@ -19307,7 +19327,7 @@ export const emojis: Emoji[] = [
 		name: 'helicopter',
 		value: '🚁',
 		category: 'travel-places',
-		order: 955,
+		order: 957,
 		keywords: ['helicopter', 'vehicle', 'transportation', 'flight'],
 	},
 	{
@@ -19315,7 +19335,7 @@ export const emojis: Emoji[] = [
 		name: 'canoe',
 		value: '🛶',
 		category: 'travel-places',
-		order: 956,
+		order: 958,
 		keywords: ['canoe', 'vehicle', 'transportation', 'boat'],
 	},
 	{
@@ -19323,7 +19343,7 @@ export const emojis: Emoji[] = [
 		name: 'sailboat',
 		value: '⛵',
 		category: 'travel-places',
-		order: 957,
+		order: 959,
 		keywords: ['sailboat', 'vehicle', 'transportation', 'boat'],
 	},
 	{
@@ -19331,7 +19351,7 @@ export const emojis: Emoji[] = [
 		name: 'speedboat',
 		value: '🚤',
 		category: 'travel-places',
-		order: 958,
+		order: 960,
 		keywords: ['speedboat', 'vehicle', 'transportation', 'boat'],
 	},
 	{
@@ -19339,7 +19359,7 @@ export const emojis: Emoji[] = [
 		name: 'motor boat',
 		value: '🛥️',
 		category: 'travel-places',
-		order: 959,
+		order: 961,
 		keywords: ['motor boat', 'vehicle', 'transportation', 'boat'],
 	},
 	{
@@ -19347,7 +19367,7 @@ export const emojis: Emoji[] = [
 		name: 'passenger ship',
 		value: '🛳️',
 		category: 'travel-places',
-		order: 960,
+		order: 962,
 		keywords: ['passenger ship', 'vehicle', 'transportation', 'boat'],
 	},
 	{
@@ -19355,7 +19375,7 @@ export const emojis: Emoji[] = [
 		name: 'ferry',
 		value: '⛴️',
 		category: 'travel-places',
-		order: 961,
+		order: 963,
 		keywords: ['ferry', 'vehicle', 'transportation', 'boat'],
 	},
 	{
@@ -19363,7 +19383,7 @@ export const emojis: Emoji[] = [
 		name: 'ship',
 		value: '🚢',
 		category: 'travel-places',
-		order: 962,
+		order: 964,
 		keywords: ['ship', 'vehicle', 'transportation', 'boat'],
 	},
 	{
@@ -19371,7 +19391,7 @@ export const emojis: Emoji[] = [
 		name: 'ring buoy',
 		value: '🛟',
 		category: 'travel-places',
-		order: 963,
+		order: 965,
 		keywords: ['ring buoy', 'safety', 'boat'],
 	},
 	{
@@ -19379,7 +19399,7 @@ export const emojis: Emoji[] = [
 		name: 'anchor',
 		value: '⚓',
 		category: 'travel-places',
-		order: 964,
+		order: 966,
 		keywords: ['anchor', 'boat', 'ship', 'maritime'],
 	},
 	{
@@ -19387,7 +19407,7 @@ export const emojis: Emoji[] = [
 		name: 'hook',
 		value: '🪝',
 		category: 'travel-places',
-		order: 965,
+		order: 967,
 		keywords: ['hook', 'fishing', 'tool'],
 	},
 	{
@@ -19395,7 +19415,7 @@ export const emojis: Emoji[] = [
 		name: 'fuel pump',
 		value: '⛽',
 		category: 'travel-places',
-		order: 966,
+		order: 968,
 		keywords: ['fuel pump', 'gas station', 'vehicle'],
 	},
 	{
@@ -19403,7 +19423,7 @@ export const emojis: Emoji[] = [
 		name: 'construction',
 		value: '🚧',
 		category: 'travel-places',
-		order: 967,
+		order: 969,
 		keywords: ['construction', 'work', 'roadwork'],
 	},
 	{
@@ -19411,7 +19431,7 @@ export const emojis: Emoji[] = [
 		name: 'vertical traffic light',
 		value: '🚦',
 		category: 'travel-places',
-		order: 968,
+		order: 970,
 		keywords: ['vertical traffic light', 'signal', 'stoplight'],
 	},
 	{
@@ -19419,7 +19439,7 @@ export const emojis: Emoji[] = [
 		name: 'horizontal traffic light',
 		value: '🚥',
 		category: 'travel-places',
-		order: 969,
+		order: 971,
 		keywords: ['horizontal traffic light', 'signal', 'stoplight'],
 	},
 	{
@@ -19427,7 +19447,7 @@ export const emojis: Emoji[] = [
 		name: 'bus stop',
 		value: '🚏',
 		category: 'travel-places',
-		order: 970,
+		order: 972,
 		keywords: ['bus stop', 'public transport', 'sign'],
 	},
 	{
@@ -19435,7 +19455,7 @@ export const emojis: Emoji[] = [
 		name: 'map',
 		value: '🗺️',
 		category: 'travel-places',
-		order: 971,
+		order: 973,
 		keywords: ['map', 'navigation', 'travel'],
 	},
 	{
@@ -19443,7 +19463,7 @@ export const emojis: Emoji[] = [
 		name: 'moai',
 		value: '🗿',
 		category: 'travel-places',
-		order: 972,
+		order: 974,
 		keywords: ['moai', 'statue', 'Easter Island'],
 	},
 	{
@@ -19451,7 +19471,7 @@ export const emojis: Emoji[] = [
 		name: 'statue of liberty',
 		value: '🗽',
 		category: 'travel-places',
-		order: 973,
+		order: 975,
 		keywords: ['Statue of Liberty', 'New York', 'landmark'],
 	},
 	{
@@ -19459,7 +19479,7 @@ export const emojis: Emoji[] = [
 		name: 'tokyo tower',
 		value: '🗼',
 		category: 'travel-places',
-		order: 974,
+		order: 976,
 		keywords: ['Tokyo Tower', 'Japan', 'landmark'],
 	},
 	{
@@ -19467,7 +19487,7 @@ export const emojis: Emoji[] = [
 		name: 'castle',
 		value: '🏰',
 		category: 'travel-places',
-		order: 975,
+		order: 977,
 		keywords: ['castle', 'building', 'landmark'],
 	},
 	{
@@ -19475,7 +19495,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese castle',
 		value: '🏯',
 		category: 'travel-places',
-		order: 976,
+		order: 978,
 		keywords: ['Japanese castle', 'building', 'landmark'],
 	},
 	{
@@ -19483,7 +19503,7 @@ export const emojis: Emoji[] = [
 		name: 'stadium',
 		value: '🏟️',
 		category: 'travel-places',
-		order: 977,
+		order: 979,
 		keywords: ['stadium', 'building', 'sports'],
 	},
 	{
@@ -19491,7 +19511,7 @@ export const emojis: Emoji[] = [
 		name: 'ferris wheel',
 		value: '🎡',
 		category: 'travel-places',
-		order: 978,
+		order: 980,
 		keywords: ['ferris wheel', 'amusement park', 'ride'],
 	},
 	{
@@ -19499,7 +19519,7 @@ export const emojis: Emoji[] = [
 		name: 'roller coaster',
 		value: '🎢',
 		category: 'travel-places',
-		order: 979,
+		order: 981,
 		keywords: ['roller coaster', 'amusement park', 'ride'],
 	},
 	{
@@ -19507,7 +19527,7 @@ export const emojis: Emoji[] = [
 		name: 'carousel horse',
 		value: '🎠',
 		category: 'travel-places',
-		order: 980,
+		order: 982,
 		keywords: ['carousel horse', 'amusement park', 'ride'],
 	},
 	{
@@ -19515,7 +19535,7 @@ export const emojis: Emoji[] = [
 		name: 'fountain',
 		value: '⛲',
 		category: 'travel-places',
-		order: 981,
+		order: 983,
 		keywords: ['fountain', 'water', 'park'],
 	},
 	{
@@ -19523,7 +19543,7 @@ export const emojis: Emoji[] = [
 		name: 'umbrella on ground',
 		value: '⛱️',
 		category: 'travel-places',
-		order: 982,
+		order: 984,
 		keywords: ['umbrella on ground', 'beach', 'sunshade'],
 	},
 	{
@@ -19531,7 +19551,7 @@ export const emojis: Emoji[] = [
 		name: 'beach with umbrella',
 		value: '🏖️',
 		category: 'travel-places',
-		order: 983,
+		order: 985,
 		keywords: ['beach with umbrella', 'vacation', 'sunshade'],
 	},
 	{
@@ -19539,7 +19559,7 @@ export const emojis: Emoji[] = [
 		name: 'desert island',
 		value: '🏝️',
 		category: 'travel-places',
-		order: 984,
+		order: 986,
 		keywords: ['desert island', 'vacation', 'beach'],
 	},
 	{
@@ -19547,7 +19567,7 @@ export const emojis: Emoji[] = [
 		name: 'desert',
 		value: '🏜️',
 		category: 'travel-places',
-		order: 985,
+		order: 987,
 		keywords: ['desert', 'sand', 'landscape'],
 	},
 	{
@@ -19555,7 +19575,7 @@ export const emojis: Emoji[] = [
 		name: 'volcano',
 		value: '🌋',
 		category: 'travel-places',
-		order: 986,
+		order: 988,
 		keywords: ['volcano', 'eruption', 'landscape'],
 	},
 	{
@@ -19563,7 +19583,7 @@ export const emojis: Emoji[] = [
 		name: 'mountain',
 		value: '⛰️',
 		category: 'travel-places',
-		order: 987,
+		order: 989,
 		keywords: ['mountain', 'landscape', 'nature'],
 	},
 	{
@@ -19571,7 +19591,7 @@ export const emojis: Emoji[] = [
 		name: 'snow-capped mountain',
 		value: '🏔️',
 		category: 'travel-places',
-		order: 988,
+		order: 990,
 		keywords: ['snow-capped mountain', 'landscape', 'nature'],
 	},
 	{
@@ -19579,7 +19599,7 @@ export const emojis: Emoji[] = [
 		name: 'mount fuji',
 		value: '🗻',
 		category: 'travel-places',
-		order: 989,
+		order: 991,
 		keywords: ['Mount Fuji', 'landscape', 'Japan'],
 	},
 	{
@@ -19587,7 +19607,7 @@ export const emojis: Emoji[] = [
 		name: 'camping',
 		value: '🏕️',
 		category: 'travel-places',
-		order: 990,
+		order: 992,
 		keywords: ['camping', 'tent', 'outdoor'],
 	},
 	{
@@ -19595,7 +19615,7 @@ export const emojis: Emoji[] = [
 		name: 'tent',
 		value: '⛺',
 		category: 'travel-places',
-		order: 991,
+		order: 993,
 		keywords: ['tent', 'camping', 'outdoor'],
 	},
 	{
@@ -19603,7 +19623,7 @@ export const emojis: Emoji[] = [
 		name: 'hut',
 		value: '🛖',
 		category: 'travel-places',
-		order: 992,
+		order: 994,
 		keywords: ['hut', 'house', 'building'],
 	},
 	{
@@ -19611,7 +19631,7 @@ export const emojis: Emoji[] = [
 		name: 'house',
 		value: '🏠',
 		category: 'travel-places',
-		order: 993,
+		order: 995,
 		keywords: ['house', 'building', 'home'],
 	},
 	{
@@ -19619,7 +19639,7 @@ export const emojis: Emoji[] = [
 		name: 'house with garden',
 		value: '🏡',
 		category: 'travel-places',
-		order: 994,
+		order: 996,
 		keywords: ['house with garden', 'building', 'home'],
 	},
 	{
@@ -19627,7 +19647,7 @@ export const emojis: Emoji[] = [
 		name: 'houses',
 		value: '🏘️',
 		category: 'travel-places',
-		order: 995,
+		order: 997,
 		keywords: ['houses', 'building', 'neighborhood'],
 	},
 	{
@@ -19635,7 +19655,7 @@ export const emojis: Emoji[] = [
 		name: 'derelict house',
 		value: '🏚️',
 		category: 'travel-places',
-		order: 996,
+		order: 998,
 		keywords: ['derelict house', 'building', 'abandoned'],
 	},
 	{
@@ -19643,7 +19663,7 @@ export const emojis: Emoji[] = [
 		name: 'building construction',
 		value: '🏗️',
 		category: 'travel-places',
-		order: 997,
+		order: 999,
 		keywords: ['building construction', 'building', 'construction'],
 	},
 	{
@@ -19651,7 +19671,7 @@ export const emojis: Emoji[] = [
 		name: 'factory',
 		value: '🏭',
 		category: 'travel-places',
-		order: 998,
+		order: 1000,
 		keywords: ['factory', 'building', 'industrial'],
 	},
 	{
@@ -19659,7 +19679,7 @@ export const emojis: Emoji[] = [
 		name: 'office building',
 		value: '🏢',
 		category: 'travel-places',
-		order: 999,
+		order: 1001,
 		keywords: ['office building', 'building', 'work'],
 	},
 	{
@@ -19667,7 +19687,7 @@ export const emojis: Emoji[] = [
 		name: 'department store',
 		value: '🏬',
 		category: 'travel-places',
-		order: 1000,
+		order: 1002,
 		keywords: ['department store', 'building', 'shopping'],
 	},
 	{
@@ -19675,7 +19695,7 @@ export const emojis: Emoji[] = [
 		name: 'post office',
 		value: '🏣',
 		category: 'travel-places',
-		order: 1001,
+		order: 1003,
 		keywords: ['post office', 'building', 'mail'],
 	},
 	{
@@ -19683,7 +19703,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese post office',
 		value: '🏤',
 		category: 'travel-places',
-		order: 1002,
+		order: 1004,
 		keywords: ['Japanese post office', 'building', 'mail'],
 	},
 	{
@@ -19691,7 +19711,7 @@ export const emojis: Emoji[] = [
 		name: 'hospital',
 		value: '🏥',
 		category: 'travel-places',
-		order: 1003,
+		order: 1005,
 		keywords: ['hospital', 'building', 'medical'],
 	},
 	{
@@ -19699,7 +19719,7 @@ export const emojis: Emoji[] = [
 		name: 'bank',
 		value: '🏦',
 		category: 'travel-places',
-		order: 1004,
+		order: 1006,
 		keywords: ['bank', 'building', 'money'],
 	},
 	{
@@ -19707,7 +19727,7 @@ export const emojis: Emoji[] = [
 		name: 'hotel',
 		value: '🏨',
 		category: 'travel-places',
-		order: 1005,
+		order: 1007,
 		keywords: ['hotel', 'building', 'accommodation'],
 	},
 	{
@@ -19715,7 +19735,7 @@ export const emojis: Emoji[] = [
 		name: 'convenience store',
 		value: '🏪',
 		category: 'travel-places',
-		order: 1006,
+		order: 1008,
 		keywords: ['convenience store', 'building', 'shopping'],
 	},
 	{
@@ -19723,7 +19743,7 @@ export const emojis: Emoji[] = [
 		name: 'school',
 		value: '🏫',
 		category: 'travel-places',
-		order: 1007,
+		order: 1009,
 		keywords: ['school', 'building', 'education'],
 	},
 	{
@@ -19731,7 +19751,7 @@ export const emojis: Emoji[] = [
 		name: 'love hotel',
 		value: '🏩',
 		category: 'travel-places',
-		order: 1008,
+		order: 1010,
 		keywords: ['love hotel', 'building', 'accommodation'],
 	},
 	{
@@ -19739,7 +19759,7 @@ export const emojis: Emoji[] = [
 		name: 'wedding',
 		value: '💒',
 		category: 'travel-places',
-		order: 1009,
+		order: 1011,
 		keywords: ['wedding', 'building', 'ceremony'],
 	},
 	{
@@ -19747,7 +19767,7 @@ export const emojis: Emoji[] = [
 		name: 'classical building',
 		value: '🏛️',
 		category: 'travel-places',
-		order: 1010,
+		order: 1012,
 		keywords: ['classical building', 'building', 'architecture'],
 	},
 	{
@@ -19755,7 +19775,7 @@ export const emojis: Emoji[] = [
 		name: 'church',
 		value: '⛪',
 		category: 'travel-places',
-		order: 1011,
+		order: 1013,
 		keywords: ['church', 'building', 'religion'],
 	},
 	{
@@ -19763,7 +19783,7 @@ export const emojis: Emoji[] = [
 		name: 'mosque',
 		value: '🕌',
 		category: 'travel-places',
-		order: 1012,
+		order: 1014,
 		keywords: ['mosque', 'building', 'religion'],
 	},
 	{
@@ -19771,7 +19791,7 @@ export const emojis: Emoji[] = [
 		name: 'synagogue',
 		value: '🕍',
 		category: 'travel-places',
-		order: 1013,
+		order: 1015,
 		keywords: ['synagogue', 'building', 'religion'],
 	},
 	{
@@ -19779,7 +19799,7 @@ export const emojis: Emoji[] = [
 		name: 'hindu temple',
 		value: '🛕',
 		category: 'travel-places',
-		order: 1014,
+		order: 1016,
 		keywords: ['Hindu temple', 'building', 'religion'],
 	},
 	{
@@ -19787,7 +19807,7 @@ export const emojis: Emoji[] = [
 		name: 'kaaba',
 		value: '🕋',
 		category: 'travel-places',
-		order: 1015,
+		order: 1017,
 		keywords: ['Kaaba', 'building', 'religion'],
 	},
 	{
@@ -19795,7 +19815,7 @@ export const emojis: Emoji[] = [
 		name: 'shinto shrine',
 		value: '⛩️',
 		category: 'travel-places',
-		order: 1016,
+		order: 1018,
 		keywords: ['Shinto shrine', 'building', 'religion'],
 	},
 	{
@@ -19803,7 +19823,7 @@ export const emojis: Emoji[] = [
 		name: 'railway track',
 		value: '🛤️',
 		category: 'travel-places',
-		order: 1017,
+		order: 1019,
 		keywords: ['railway track', 'vehicle', 'transportation'],
 	},
 	{
@@ -19811,7 +19831,7 @@ export const emojis: Emoji[] = [
 		name: 'motorway',
 		value: '🛣️',
 		category: 'travel-places',
-		order: 1018,
+		order: 1020,
 		keywords: ['motorway', 'vehicle', 'transportation'],
 	},
 	{
@@ -19819,7 +19839,7 @@ export const emojis: Emoji[] = [
 		name: 'japan',
 		value: '🗾',
 		category: 'travel-places',
-		order: 1019,
+		order: 1021,
 		keywords: ['Japan', 'map', 'country'],
 	},
 	{
@@ -19827,7 +19847,7 @@ export const emojis: Emoji[] = [
 		name: 'moon viewing ceremony',
 		value: '🎑',
 		category: 'travel-places',
-		order: 1020,
+		order: 1022,
 		keywords: ['moon viewing ceremony', 'festival', 'Japan'],
 	},
 	{
@@ -19835,7 +19855,7 @@ export const emojis: Emoji[] = [
 		name: 'national park',
 		value: '🏞️',
 		category: 'travel-places',
-		order: 1021,
+		order: 1023,
 		keywords: ['national park', 'landscape', 'nature'],
 	},
 	{
@@ -19843,7 +19863,7 @@ export const emojis: Emoji[] = [
 		name: 'sunrise',
 		value: '🌅',
 		category: 'travel-places',
-		order: 1022,
+		order: 1024,
 		keywords: ['sunrise', 'morning', 'landscape'],
 	},
 	{
@@ -19851,7 +19871,7 @@ export const emojis: Emoji[] = [
 		name: 'sunrise over mountains',
 		value: '🌄',
 		category: 'travel-places',
-		order: 1023,
+		order: 1025,
 		keywords: ['sunrise over mountains', 'morning', 'landscape'],
 	},
 	{
@@ -19859,7 +19879,7 @@ export const emojis: Emoji[] = [
 		name: 'shooting star',
 		value: '🌠',
 		category: 'travel-places',
-		order: 1024,
+		order: 1026,
 		keywords: ['shooting star', 'night', 'star'],
 	},
 	{
@@ -19867,7 +19887,7 @@ export const emojis: Emoji[] = [
 		name: 'sparkler',
 		value: '🎇',
 		category: 'travel-places',
-		order: 1025,
+		order: 1027,
 		keywords: ['sparkler', 'celebration', 'fireworks'],
 	},
 	{
@@ -19875,7 +19895,7 @@ export const emojis: Emoji[] = [
 		name: 'fireworks',
 		value: '🎆',
 		category: 'travel-places',
-		order: 1026,
+		order: 1028,
 		keywords: ['fireworks', 'celebration', 'festival'],
 	},
 	{
@@ -19883,7 +19903,7 @@ export const emojis: Emoji[] = [
 		name: 'sunset',
 		value: '🌇',
 		category: 'travel-places',
-		order: 1027,
+		order: 1029,
 		keywords: ['sunset', 'evening', 'landscape'],
 	},
 	{
@@ -19891,7 +19911,7 @@ export const emojis: Emoji[] = [
 		name: 'cityscape at dusk',
 		value: '🌆',
 		category: 'travel-places',
-		order: 1028,
+		order: 1030,
 		keywords: ['cityscape at dusk', 'evening', 'landscape'],
 	},
 	{
@@ -19899,7 +19919,7 @@ export const emojis: Emoji[] = [
 		name: 'cityscape',
 		value: '🏙️',
 		category: 'travel-places',
-		order: 1029,
+		order: 1031,
 		keywords: ['cityscape', 'building', 'urban'],
 	},
 	{
@@ -19907,7 +19927,7 @@ export const emojis: Emoji[] = [
 		name: 'night with stars',
 		value: '🌃',
 		category: 'travel-places',
-		order: 1030,
+		order: 1032,
 		keywords: ['night with stars', 'night', 'landscape'],
 	},
 	{
@@ -19915,7 +19935,7 @@ export const emojis: Emoji[] = [
 		name: 'milky way',
 		value: '🌌',
 		category: 'travel-places',
-		order: 1031,
+		order: 1033,
 		keywords: ['Milky Way', 'space', 'night'],
 	},
 	{
@@ -19923,7 +19943,7 @@ export const emojis: Emoji[] = [
 		name: 'bridge at night',
 		value: '🌉',
 		category: 'travel-places',
-		order: 1032,
+		order: 1034,
 		keywords: ['bridge at night', 'night', 'landscape'],
 	},
 	{
@@ -19931,7 +19951,7 @@ export const emojis: Emoji[] = [
 		name: 'foggy',
 		value: '🌁',
 		category: 'travel-places',
-		order: 1033,
+		order: 1035,
 		keywords: ['foggy', 'weather', 'landscape'],
 	},
 	{
@@ -19939,7 +19959,7 @@ export const emojis: Emoji[] = [
 		name: 'watch',
 		value: '⌚',
 		category: 'objects',
-		order: 1034,
+		order: 1036,
 		keywords: ['watch', 'time', 'accessory'],
 	},
 	{
@@ -19947,7 +19967,7 @@ export const emojis: Emoji[] = [
 		name: 'mobile phone',
 		value: '📱',
 		category: 'objects',
-		order: 1035,
+		order: 1037,
 		keywords: ['mobile phone', 'cellphone', 'communication'],
 	},
 	{
@@ -19955,7 +19975,7 @@ export const emojis: Emoji[] = [
 		name: 'mobile phone with arrow',
 		value: '📲',
 		category: 'objects',
-		order: 1036,
+		order: 1038,
 		keywords: [
 			'mobile phone with arrow',
 			'communication',
@@ -19967,7 +19987,7 @@ export const emojis: Emoji[] = [
 		name: 'laptop',
 		value: '💻',
 		category: 'objects',
-		order: 1037,
+		order: 1039,
 		keywords: ['laptop', 'computer', 'technology'],
 	},
 	{
@@ -19975,7 +19995,7 @@ export const emojis: Emoji[] = [
 		name: 'keyboard',
 		value: '⌨️',
 		category: 'objects',
-		order: 1038,
+		order: 1040,
 		keywords: ['keyboard', 'computer', 'technology'],
 	},
 	{
@@ -19983,7 +20003,7 @@ export const emojis: Emoji[] = [
 		name: 'desktop computer',
 		value: '🖥️',
 		category: 'objects',
-		order: 1039,
+		order: 1041,
 		keywords: ['desktop computer', 'technology', 'monitor'],
 	},
 	{
@@ -19991,7 +20011,7 @@ export const emojis: Emoji[] = [
 		name: 'printer',
 		value: '🖨️',
 		category: 'objects',
-		order: 1040,
+		order: 1042,
 		keywords: ['printer', 'technology', 'office'],
 	},
 	{
@@ -19999,7 +20019,7 @@ export const emojis: Emoji[] = [
 		name: 'computer mouse',
 		value: '🖱️',
 		category: 'objects',
-		order: 1041,
+		order: 1043,
 		keywords: ['computer mouse', 'technology', 'device'],
 	},
 	{
@@ -20007,7 +20027,7 @@ export const emojis: Emoji[] = [
 		name: 'trackball',
 		value: '🖲️',
 		category: 'objects',
-		order: 1042,
+		order: 1044,
 		keywords: ['trackball', 'technology', 'device'],
 	},
 	{
@@ -20015,7 +20035,7 @@ export const emojis: Emoji[] = [
 		name: 'joystick',
 		value: '🕹️',
 		category: 'objects',
-		order: 1043,
+		order: 1045,
 		keywords: ['joystick', 'gaming', 'technology'],
 	},
 	{
@@ -20023,7 +20043,7 @@ export const emojis: Emoji[] = [
 		name: 'clamp',
 		value: '🗜️',
 		category: 'objects',
-		order: 1044,
+		order: 1046,
 		keywords: ['clamp', 'tool', 'device'],
 	},
 	{
@@ -20031,7 +20051,7 @@ export const emojis: Emoji[] = [
 		name: 'computer disk',
 		value: '💽',
 		category: 'objects',
-		order: 1045,
+		order: 1047,
 		keywords: ['computer disk', 'technology', 'storage'],
 	},
 	{
@@ -20039,7 +20059,7 @@ export const emojis: Emoji[] = [
 		name: 'floppy disk',
 		value: '💾',
 		category: 'objects',
-		order: 1046,
+		order: 1048,
 		keywords: ['floppy disk', 'technology', 'storage'],
 	},
 	{
@@ -20047,7 +20067,7 @@ export const emojis: Emoji[] = [
 		name: 'optical disk',
 		value: '💿',
 		category: 'objects',
-		order: 1047,
+		order: 1049,
 		keywords: ['optical disk', 'technology', 'storage'],
 	},
 	{
@@ -20055,7 +20075,7 @@ export const emojis: Emoji[] = [
 		name: 'dvd',
 		value: '📀',
 		category: 'objects',
-		order: 1048,
+		order: 1050,
 		keywords: ['dvd', 'technology', 'storage'],
 	},
 	{
@@ -20063,7 +20083,7 @@ export const emojis: Emoji[] = [
 		name: 'videocassette',
 		value: '📼',
 		category: 'objects',
-		order: 1049,
+		order: 1051,
 		keywords: ['videocassette', 'technology', 'video'],
 	},
 	{
@@ -20071,7 +20091,7 @@ export const emojis: Emoji[] = [
 		name: 'camera',
 		value: '📷',
 		category: 'objects',
-		order: 1050,
+		order: 1052,
 		keywords: ['camera', 'photography', 'technology'],
 	},
 	{
@@ -20079,7 +20099,7 @@ export const emojis: Emoji[] = [
 		name: 'camera with flash',
 		value: '📸',
 		category: 'objects',
-		order: 1051,
+		order: 1053,
 		keywords: ['camera with flash', 'photography', 'technology'],
 	},
 	{
@@ -20087,7 +20107,7 @@ export const emojis: Emoji[] = [
 		name: 'video camera',
 		value: '📹',
 		category: 'objects',
-		order: 1052,
+		order: 1054,
 		keywords: ['video camera', 'photography', 'technology'],
 	},
 	{
@@ -20095,7 +20115,7 @@ export const emojis: Emoji[] = [
 		name: 'movie camera',
 		value: '🎥',
 		category: 'objects',
-		order: 1053,
+		order: 1055,
 		keywords: ['movie camera', 'photography', 'technology'],
 	},
 	{
@@ -20103,7 +20123,7 @@ export const emojis: Emoji[] = [
 		name: 'film projector',
 		value: '📽️',
 		category: 'objects',
-		order: 1054,
+		order: 1056,
 		keywords: ['film projector', 'photography', 'technology'],
 	},
 	{
@@ -20111,7 +20131,7 @@ export const emojis: Emoji[] = [
 		name: 'film frames',
 		value: '🎞️',
 		category: 'objects',
-		order: 1055,
+		order: 1057,
 		keywords: ['film frames', 'photography', 'technology'],
 	},
 	{
@@ -20119,7 +20139,7 @@ export const emojis: Emoji[] = [
 		name: 'telephone receiver',
 		value: '📞',
 		category: 'objects',
-		order: 1056,
+		order: 1058,
 		keywords: ['telephone receiver', 'communication', 'technology'],
 	},
 	{
@@ -20127,7 +20147,7 @@ export const emojis: Emoji[] = [
 		name: 'telephone',
 		value: '☎️',
 		category: 'objects',
-		order: 1057,
+		order: 1059,
 		keywords: ['telephone', 'communication', 'technology'],
 	},
 	{
@@ -20135,7 +20155,7 @@ export const emojis: Emoji[] = [
 		name: 'pager',
 		value: '📟',
 		category: 'objects',
-		order: 1058,
+		order: 1060,
 		keywords: ['pager', 'communication', 'technology'],
 	},
 	{
@@ -20143,7 +20163,7 @@ export const emojis: Emoji[] = [
 		name: 'fax machine',
 		value: '📠',
 		category: 'objects',
-		order: 1059,
+		order: 1061,
 		keywords: ['fax machine', 'communication', 'technology'],
 	},
 	{
@@ -20151,7 +20171,7 @@ export const emojis: Emoji[] = [
 		name: 'television',
 		value: '📺',
 		category: 'objects',
-		order: 1060,
+		order: 1062,
 		keywords: ['television', 'entertainment', 'technology'],
 	},
 	{
@@ -20159,7 +20179,7 @@ export const emojis: Emoji[] = [
 		name: 'radio',
 		value: '📻',
 		category: 'objects',
-		order: 1061,
+		order: 1063,
 		keywords: ['radio', 'entertainment', 'communication'],
 	},
 	{
@@ -20167,7 +20187,7 @@ export const emojis: Emoji[] = [
 		name: 'studio microphone',
 		value: '🎙️',
 		category: 'objects',
-		order: 1062,
+		order: 1064,
 		keywords: ['studio microphone', 'music', 'entertainment'],
 	},
 	{
@@ -20175,7 +20195,7 @@ export const emojis: Emoji[] = [
 		name: 'level slider',
 		value: '🎚️',
 		category: 'objects',
-		order: 1063,
+		order: 1065,
 		keywords: ['level slider', 'music', 'technology'],
 	},
 	{
@@ -20183,7 +20203,7 @@ export const emojis: Emoji[] = [
 		name: 'control knobs',
 		value: '🎛️',
 		category: 'objects',
-		order: 1064,
+		order: 1066,
 		keywords: ['control knobs', 'music', 'technology'],
 	},
 	{
@@ -20191,7 +20211,7 @@ export const emojis: Emoji[] = [
 		name: 'compass',
 		value: '🧭',
 		category: 'objects',
-		order: 1065,
+		order: 1067,
 		keywords: ['compass', 'navigation', 'direction'],
 	},
 	{
@@ -20199,7 +20219,7 @@ export const emojis: Emoji[] = [
 		name: 'stopwatch',
 		value: '⏱️',
 		category: 'objects',
-		order: 1066,
+		order: 1068,
 		keywords: ['stopwatch', 'time', 'clock'],
 	},
 	{
@@ -20207,7 +20227,7 @@ export const emojis: Emoji[] = [
 		name: 'timer clock',
 		value: '⏲️',
 		category: 'objects',
-		order: 1067,
+		order: 1069,
 		keywords: ['timer clock', 'time', 'clock'],
 	},
 	{
@@ -20215,7 +20235,7 @@ export const emojis: Emoji[] = [
 		name: 'alarm clock',
 		value: '⏰',
 		category: 'objects',
-		order: 1068,
+		order: 1070,
 		keywords: ['alarm clock', 'time', 'clock'],
 	},
 	{
@@ -20223,7 +20243,7 @@ export const emojis: Emoji[] = [
 		name: 'mantelpiece clock',
 		value: '🕰️',
 		category: 'objects',
-		order: 1069,
+		order: 1071,
 		keywords: ['mantelpiece clock', 'time', 'clock'],
 	},
 	{
@@ -20231,7 +20251,7 @@ export const emojis: Emoji[] = [
 		name: 'hourglass done',
 		value: '⌛',
 		category: 'objects',
-		order: 1070,
+		order: 1072,
 		keywords: ['hourglass done', 'time', 'sand'],
 	},
 	{
@@ -20239,7 +20259,7 @@ export const emojis: Emoji[] = [
 		name: 'hourglass not done',
 		value: '⏳',
 		category: 'objects',
-		order: 1071,
+		order: 1073,
 		keywords: ['hourglass not done', 'time', 'sand'],
 	},
 	{
@@ -20247,7 +20267,7 @@ export const emojis: Emoji[] = [
 		name: 'satellite antenna',
 		value: '📡',
 		category: 'objects',
-		order: 1072,
+		order: 1074,
 		keywords: ['satellite antenna', 'communication', 'technology'],
 	},
 	{
@@ -20255,7 +20275,7 @@ export const emojis: Emoji[] = [
 		name: 'battery',
 		value: '🔋',
 		category: 'objects',
-		order: 1073,
+		order: 1075,
 		keywords: ['battery', 'power', 'technology'],
 	},
 	{
@@ -20263,7 +20283,7 @@ export const emojis: Emoji[] = [
 		name: 'low battery',
 		value: '🪫',
 		category: 'objects',
-		order: 1074,
+		order: 1076,
 		keywords: ['low battery', 'power', 'technology'],
 	},
 	{
@@ -20271,7 +20291,7 @@ export const emojis: Emoji[] = [
 		name: 'electric plug',
 		value: '🔌',
 		category: 'objects',
-		order: 1075,
+		order: 1077,
 		keywords: ['electric plug', 'power', 'technology'],
 	},
 	{
@@ -20279,7 +20299,7 @@ export const emojis: Emoji[] = [
 		name: 'light bulb',
 		value: '💡',
 		category: 'objects',
-		order: 1076,
+		order: 1078,
 		keywords: ['light bulb', 'idea', 'technology'],
 	},
 	{
@@ -20287,7 +20307,7 @@ export const emojis: Emoji[] = [
 		name: 'flashlight',
 		value: '🔦',
 		category: 'objects',
-		order: 1077,
+		order: 1079,
 		keywords: ['flashlight', 'light', 'technology'],
 	},
 	{
@@ -20295,7 +20315,7 @@ export const emojis: Emoji[] = [
 		name: 'candle',
 		value: '🕯️',
 		category: 'objects',
-		order: 1078,
+		order: 1080,
 		keywords: ['candle', 'light', 'flame'],
 	},
 	{
@@ -20303,7 +20323,7 @@ export const emojis: Emoji[] = [
 		name: 'diya lamp',
 		value: '🪔',
 		category: 'objects',
-		order: 1079,
+		order: 1081,
 		keywords: ['diya lamp', 'light', 'festival'],
 	},
 	{
@@ -20311,7 +20331,7 @@ export const emojis: Emoji[] = [
 		name: 'fire extinguisher',
 		value: '🧯',
 		category: 'objects',
-		order: 1080,
+		order: 1082,
 		keywords: ['fire extinguisher', 'safety', 'fire'],
 	},
 	{
@@ -20319,7 +20339,7 @@ export const emojis: Emoji[] = [
 		name: 'oil drum',
 		value: '🛢️',
 		category: 'objects',
-		order: 1081,
+		order: 1083,
 		keywords: ['oil drum', 'container', 'oil'],
 	},
 	{
@@ -20327,7 +20347,7 @@ export const emojis: Emoji[] = [
 		name: 'money with wings',
 		value: '💸',
 		category: 'objects',
-		order: 1082,
+		order: 1084,
 		keywords: ['money with wings', 'dollar', 'money'],
 	},
 	{
@@ -20335,7 +20355,7 @@ export const emojis: Emoji[] = [
 		name: 'dollar banknote',
 		value: '💵',
 		category: 'objects',
-		order: 1083,
+		order: 1085,
 		keywords: ['dollar banknote', 'money', 'currency'],
 	},
 	{
@@ -20343,7 +20363,7 @@ export const emojis: Emoji[] = [
 		name: 'yen banknote',
 		value: '💴',
 		category: 'objects',
-		order: 1084,
+		order: 1086,
 		keywords: ['yen banknote', 'money', 'currency'],
 	},
 	{
@@ -20351,7 +20371,7 @@ export const emojis: Emoji[] = [
 		name: 'euro banknote',
 		value: '💶',
 		category: 'objects',
-		order: 1085,
+		order: 1087,
 		keywords: ['euro banknote', 'money', 'currency'],
 	},
 	{
@@ -20359,7 +20379,7 @@ export const emojis: Emoji[] = [
 		name: 'pound banknote',
 		value: '💷',
 		category: 'objects',
-		order: 1086,
+		order: 1088,
 		keywords: ['pound banknote', 'money', 'currency'],
 	},
 	{
@@ -20367,7 +20387,7 @@ export const emojis: Emoji[] = [
 		name: 'coin',
 		value: '🪙',
 		category: 'objects',
-		order: 1087,
+		order: 1089,
 		keywords: ['coin', 'money', 'currency'],
 	},
 	{
@@ -20375,7 +20395,7 @@ export const emojis: Emoji[] = [
 		name: 'money bag',
 		value: '💰',
 		category: 'objects',
-		order: 1088,
+		order: 1090,
 		keywords: ['money bag', 'money', 'currency'],
 	},
 	{
@@ -20383,7 +20403,7 @@ export const emojis: Emoji[] = [
 		name: 'credit card',
 		value: '💳',
 		category: 'objects',
-		order: 1089,
+		order: 1091,
 		keywords: ['credit card', 'money', 'payment'],
 	},
 	{
@@ -20391,7 +20411,7 @@ export const emojis: Emoji[] = [
 		name: 'identification card',
 		value: '🪪',
 		category: 'objects',
-		order: 1090,
+		order: 1092,
 		keywords: ['identification card', 'id', 'identity'],
 	},
 	{
@@ -20399,7 +20419,7 @@ export const emojis: Emoji[] = [
 		name: 'gem stone',
 		value: '💎',
 		category: 'objects',
-		order: 1091,
+		order: 1093,
 		keywords: ['gem stone', 'jewel', 'diamond'],
 	},
 	{
@@ -20407,7 +20427,7 @@ export const emojis: Emoji[] = [
 		name: 'balance scale',
 		value: '⚖️',
 		category: 'objects',
-		order: 1092,
+		order: 1094,
 		keywords: ['balance scale', 'justice', 'law'],
 	},
 	{
@@ -20415,7 +20435,7 @@ export const emojis: Emoji[] = [
 		name: 'ladder',
 		value: '🪜',
 		category: 'objects',
-		order: 1093,
+		order: 1095,
 		keywords: ['ladder', 'climb', 'tool'],
 	},
 	{
@@ -20423,7 +20443,7 @@ export const emojis: Emoji[] = [
 		name: 'toolbox',
 		value: '🧰',
 		category: 'objects',
-		order: 1094,
+		order: 1096,
 		keywords: ['toolbox', 'tools', 'repair'],
 	},
 	{
@@ -20431,7 +20451,7 @@ export const emojis: Emoji[] = [
 		name: 'screwdriver',
 		value: '🪛',
 		category: 'objects',
-		order: 1095,
+		order: 1097,
 		keywords: ['screwdriver', 'tool', 'repair'],
 	},
 	{
@@ -20439,7 +20459,7 @@ export const emojis: Emoji[] = [
 		name: 'wrench',
 		value: '🔧',
 		category: 'objects',
-		order: 1096,
+		order: 1098,
 		keywords: ['wrench', 'tool', 'repair'],
 	},
 	{
@@ -20447,7 +20467,7 @@ export const emojis: Emoji[] = [
 		name: 'hammer',
 		value: '🔨',
 		category: 'objects',
-		order: 1097,
+		order: 1099,
 		keywords: ['hammer', 'tool', 'repair'],
 	},
 	{
@@ -20455,7 +20475,7 @@ export const emojis: Emoji[] = [
 		name: 'hammer and pick',
 		value: '⚒️',
 		category: 'objects',
-		order: 1098,
+		order: 1100,
 		keywords: ['hammer and pick', 'tool', 'mining'],
 	},
 	{
@@ -20463,7 +20483,7 @@ export const emojis: Emoji[] = [
 		name: 'hammer and wrench',
 		value: '🛠️',
 		category: 'objects',
-		order: 1099,
+		order: 1101,
 		keywords: ['hammer and wrench', 'tool', 'repair'],
 	},
 	{
@@ -20471,7 +20491,7 @@ export const emojis: Emoji[] = [
 		name: 'pick',
 		value: '⛏️',
 		category: 'objects',
-		order: 1100,
+		order: 1102,
 		keywords: ['pick', 'tool', 'mining'],
 	},
 	{
@@ -20479,7 +20499,7 @@ export const emojis: Emoji[] = [
 		name: 'saw',
 		value: '🪚',
 		category: 'objects',
-		order: 1101,
+		order: 1103,
 		keywords: ['saw', 'tool', 'cut'],
 	},
 	{
@@ -20487,7 +20507,7 @@ export const emojis: Emoji[] = [
 		name: 'nut and bolt',
 		value: '🔩',
 		category: 'objects',
-		order: 1102,
+		order: 1104,
 		keywords: ['nut and bolt', 'tool', 'repair'],
 	},
 	{
@@ -20495,7 +20515,7 @@ export const emojis: Emoji[] = [
 		name: 'gear',
 		value: '⚙️',
 		category: 'objects',
-		order: 1103,
+		order: 1105,
 		keywords: ['gear', 'tool', 'mechanical'],
 	},
 	{
@@ -20503,7 +20523,7 @@ export const emojis: Emoji[] = [
 		name: 'mouse trap',
 		value: '🪤',
 		category: 'objects',
-		order: 1104,
+		order: 1106,
 		keywords: ['mouse trap', 'trap', 'pest'],
 	},
 	{
@@ -20511,7 +20531,7 @@ export const emojis: Emoji[] = [
 		name: 'brick',
 		value: '🧱',
 		category: 'objects',
-		order: 1105,
+		order: 1107,
 		keywords: ['brick', 'construction', 'building'],
 	},
 	{
@@ -20519,7 +20539,7 @@ export const emojis: Emoji[] = [
 		name: 'chains',
 		value: '⛓️',
 		category: 'objects',
-		order: 1106,
+		order: 1108,
 		keywords: ['chains', 'link', 'metal'],
 	},
 	{
@@ -20527,7 +20547,7 @@ export const emojis: Emoji[] = [
 		name: 'magnet',
 		value: '🧲',
 		category: 'objects',
-		order: 1107,
+		order: 1109,
 		keywords: ['magnet', 'attract', 'metal'],
 	},
 	{
@@ -20535,7 +20555,7 @@ export const emojis: Emoji[] = [
 		name: 'pistol',
 		value: '🔫',
 		category: 'objects',
-		order: 1108,
+		order: 1110,
 		keywords: ['pistol', 'weapon', 'gun'],
 	},
 	{
@@ -20543,7 +20563,7 @@ export const emojis: Emoji[] = [
 		name: 'bomb',
 		value: '💣',
 		category: 'objects',
-		order: 1109,
+		order: 1111,
 		keywords: ['bomb', 'weapon', 'explosive'],
 	},
 	{
@@ -20551,7 +20571,7 @@ export const emojis: Emoji[] = [
 		name: 'firecracker',
 		value: '🧨',
 		category: 'objects',
-		order: 1110,
+		order: 1112,
 		keywords: ['firecracker', 'explosive', 'fireworks'],
 	},
 	{
@@ -20559,7 +20579,7 @@ export const emojis: Emoji[] = [
 		name: 'axe',
 		value: '🪓',
 		category: 'objects',
-		order: 1111,
+		order: 1113,
 		keywords: ['axe', 'tool', 'cut'],
 	},
 	{
@@ -20567,7 +20587,7 @@ export const emojis: Emoji[] = [
 		name: 'kitchen knife',
 		value: '🔪',
 		category: 'objects',
-		order: 1112,
+		order: 1114,
 		keywords: ['kitchen knife', 'tool', 'cut'],
 	},
 	{
@@ -20575,7 +20595,7 @@ export const emojis: Emoji[] = [
 		name: 'dagger',
 		value: '🗡️',
 		category: 'objects',
-		order: 1113,
+		order: 1115,
 		keywords: ['dagger', 'weapon', 'knife'],
 	},
 	{
@@ -20583,7 +20603,7 @@ export const emojis: Emoji[] = [
 		name: 'crossed swords',
 		value: '⚔️',
 		category: 'objects',
-		order: 1114,
+		order: 1116,
 		keywords: ['crossed swords', 'weapon', 'sword'],
 	},
 	{
@@ -20591,7 +20611,7 @@ export const emojis: Emoji[] = [
 		name: 'shield',
 		value: '🛡️',
 		category: 'objects',
-		order: 1115,
+		order: 1117,
 		keywords: ['shield', 'protection', 'defense'],
 	},
 	{
@@ -20599,7 +20619,7 @@ export const emojis: Emoji[] = [
 		name: 'cigarette',
 		value: '🚬',
 		category: 'objects',
-		order: 1116,
+		order: 1118,
 		keywords: ['cigarette', 'smoking', 'tobacco'],
 	},
 	{
@@ -20607,7 +20627,7 @@ export const emojis: Emoji[] = [
 		name: 'coffin',
 		value: '⚰️',
 		category: 'objects',
-		order: 1117,
+		order: 1119,
 		keywords: ['coffin', 'death', 'funeral'],
 	},
 	{
@@ -20615,7 +20635,7 @@ export const emojis: Emoji[] = [
 		name: 'headstone',
 		value: '🪦',
 		category: 'objects',
-		order: 1118,
+		order: 1120,
 		keywords: ['headstone', 'grave', 'death'],
 	},
 	{
@@ -20623,7 +20643,7 @@ export const emojis: Emoji[] = [
 		name: 'funeral urn',
 		value: '⚱️',
 		category: 'objects',
-		order: 1119,
+		order: 1121,
 		keywords: ['funeral urn', 'ashes', 'death'],
 	},
 	{
@@ -20631,7 +20651,7 @@ export const emojis: Emoji[] = [
 		name: 'amphora',
 		value: '🏺',
 		category: 'objects',
-		order: 1120,
+		order: 1122,
 		keywords: ['amphora', 'vase', 'container'],
 	},
 	{
@@ -20639,7 +20659,7 @@ export const emojis: Emoji[] = [
 		name: 'crystal ball',
 		value: '🔮',
 		category: 'objects',
-		order: 1121,
+		order: 1123,
 		keywords: ['crystal ball', 'magic', 'fortune'],
 	},
 	{
@@ -20647,7 +20667,7 @@ export const emojis: Emoji[] = [
 		name: 'prayer beads',
 		value: '📿',
 		category: 'objects',
-		order: 1122,
+		order: 1124,
 		keywords: ['prayer beads', 'religion', 'rosary'],
 	},
 	{
@@ -20655,7 +20675,7 @@ export const emojis: Emoji[] = [
 		name: 'nazar amulet',
 		value: '🧿',
 		category: 'objects',
-		order: 1123,
+		order: 1125,
 		keywords: ['nazar amulet', 'protection', 'evil eye'],
 	},
 	{
@@ -20663,7 +20683,7 @@ export const emojis: Emoji[] = [
 		name: 'hamsa',
 		value: '🪬',
 		category: 'objects',
-		order: 1124,
+		order: 1126,
 		keywords: ['hamsa', 'protection', 'amulet'],
 	},
 	{
@@ -20671,7 +20691,7 @@ export const emojis: Emoji[] = [
 		name: 'barber pole',
 		value: '💈',
 		category: 'objects',
-		order: 1125,
+		order: 1127,
 		keywords: ['barber pole', 'barber', 'haircut'],
 	},
 	{
@@ -20679,7 +20699,7 @@ export const emojis: Emoji[] = [
 		name: 'alembic',
 		value: '⚗️',
 		category: 'objects',
-		order: 1126,
+		order: 1128,
 		keywords: ['alembic', 'chemistry', 'tool'],
 	},
 	{
@@ -20687,7 +20707,7 @@ export const emojis: Emoji[] = [
 		name: 'telescope',
 		value: '🔭',
 		category: 'objects',
-		order: 1127,
+		order: 1129,
 		keywords: ['telescope', 'astronomy', 'tool'],
 	},
 	{
@@ -20695,7 +20715,7 @@ export const emojis: Emoji[] = [
 		name: 'microscope',
 		value: '🔬',
 		category: 'objects',
-		order: 1128,
+		order: 1130,
 		keywords: ['microscope', 'science', 'tool'],
 	},
 	{
@@ -20703,7 +20723,7 @@ export const emojis: Emoji[] = [
 		name: 'hole',
 		value: '🕳️',
 		category: 'objects',
-		order: 1129,
+		order: 1131,
 		keywords: ['hole', 'gap', 'empty'],
 	},
 	{
@@ -20711,7 +20731,7 @@ export const emojis: Emoji[] = [
 		name: 'x-ray',
 		value: '🩻',
 		category: 'objects',
-		order: 1130,
+		order: 1132,
 		keywords: ['x-ray', 'medical', 'scan'],
 	},
 	{
@@ -20719,7 +20739,7 @@ export const emojis: Emoji[] = [
 		name: 'bandage',
 		value: '🩹',
 		category: 'objects',
-		order: 1131,
+		order: 1133,
 		keywords: ['bandage', 'medical', 'first aid'],
 	},
 	{
@@ -20727,7 +20747,7 @@ export const emojis: Emoji[] = [
 		name: 'stethoscope',
 		value: '🩺',
 		category: 'objects',
-		order: 1132,
+		order: 1134,
 		keywords: ['stethoscope', 'medical', 'doctor'],
 	},
 	{
@@ -20735,7 +20755,7 @@ export const emojis: Emoji[] = [
 		name: 'pill',
 		value: '💊',
 		category: 'objects',
-		order: 1133,
+		order: 1135,
 		keywords: ['pill', 'medicine', 'drug'],
 	},
 	{
@@ -20743,7 +20763,7 @@ export const emojis: Emoji[] = [
 		name: 'syringe',
 		value: '💉',
 		category: 'objects',
-		order: 1134,
+		order: 1136,
 		keywords: ['syringe', 'medical', 'injection'],
 	},
 	{
@@ -20751,7 +20771,7 @@ export const emojis: Emoji[] = [
 		name: 'drop of blood',
 		value: '🩸',
 		category: 'objects',
-		order: 1135,
+		order: 1137,
 		keywords: ['drop of blood', 'medical', 'donation'],
 	},
 	{
@@ -20759,7 +20779,7 @@ export const emojis: Emoji[] = [
 		name: 'dna',
 		value: '🧬',
 		category: 'objects',
-		order: 1136,
+		order: 1138,
 		keywords: ['dna', 'science', 'genetics'],
 	},
 	{
@@ -20767,7 +20787,7 @@ export const emojis: Emoji[] = [
 		name: 'microbe',
 		value: '🦠',
 		category: 'objects',
-		order: 1137,
+		order: 1139,
 		keywords: ['microbe', 'bacteria', 'virus'],
 	},
 	{
@@ -20775,7 +20795,7 @@ export const emojis: Emoji[] = [
 		name: 'petri dish',
 		value: '🧫',
 		category: 'objects',
-		order: 1138,
+		order: 1140,
 		keywords: ['petri dish', 'science', 'lab'],
 	},
 	{
@@ -20783,7 +20803,7 @@ export const emojis: Emoji[] = [
 		name: 'test tube',
 		value: '🧪',
 		category: 'objects',
-		order: 1139,
+		order: 1141,
 		keywords: ['test tube', 'science', 'lab'],
 	},
 	{
@@ -20791,7 +20811,7 @@ export const emojis: Emoji[] = [
 		name: 'thermometer',
 		value: '🌡️',
 		category: 'objects',
-		order: 1140,
+		order: 1142,
 		keywords: ['thermometer', 'temperature', 'weather'],
 	},
 	{
@@ -20799,7 +20819,7 @@ export const emojis: Emoji[] = [
 		name: 'broom',
 		value: '🧹',
 		category: 'objects',
-		order: 1141,
+		order: 1143,
 		keywords: ['broom', 'cleaning', 'sweeping'],
 	},
 	{
@@ -20807,7 +20827,7 @@ export const emojis: Emoji[] = [
 		name: 'plunger',
 		value: '🪠',
 		category: 'objects',
-		order: 1142,
+		order: 1144,
 		keywords: ['plunger', 'tool', 'cleaning'],
 	},
 	{
@@ -20815,7 +20835,7 @@ export const emojis: Emoji[] = [
 		name: 'basket',
 		value: '🧺',
 		category: 'objects',
-		order: 1143,
+		order: 1145,
 		keywords: ['basket', 'container', 'storage'],
 	},
 	{
@@ -20823,7 +20843,7 @@ export const emojis: Emoji[] = [
 		name: 'roll of paper',
 		value: '🧻',
 		category: 'objects',
-		order: 1144,
+		order: 1146,
 		keywords: ['roll of paper', 'toilet paper', 'tissue'],
 	},
 	{
@@ -20831,7 +20851,7 @@ export const emojis: Emoji[] = [
 		name: 'toilet',
 		value: '🚽',
 		category: 'objects',
-		order: 1145,
+		order: 1147,
 		keywords: ['toilet', 'bathroom', 'restroom'],
 	},
 	{
@@ -20839,7 +20859,7 @@ export const emojis: Emoji[] = [
 		name: 'potable water',
 		value: '🚰',
 		category: 'objects',
-		order: 1146,
+		order: 1148,
 		keywords: ['potable water', 'water', 'drinking'],
 	},
 	{
@@ -20847,7 +20867,7 @@ export const emojis: Emoji[] = [
 		name: 'shower',
 		value: '🚿',
 		category: 'objects',
-		order: 1147,
+		order: 1149,
 		keywords: ['shower', 'bathroom', 'clean'],
 	},
 	{
@@ -20855,7 +20875,7 @@ export const emojis: Emoji[] = [
 		name: 'bathtub',
 		value: '🛁',
 		category: 'objects',
-		order: 1148,
+		order: 1150,
 		keywords: ['bathtub', 'bathroom', 'clean'],
 	},
 	{
@@ -20863,7 +20883,7 @@ export const emojis: Emoji[] = [
 		name: 'person taking bath',
 		value: '🛀',
 		category: 'objects',
-		order: 1149,
+		order: 1151,
 		keywords: ['person taking bath', 'bathroom', 'clean'],
 	},
 	{
@@ -20871,7 +20891,7 @@ export const emojis: Emoji[] = [
 		name: 'soap',
 		value: '🧼',
 		category: 'objects',
-		order: 1150,
+		order: 1152,
 		keywords: ['soap', 'cleaning', 'hygiene'],
 	},
 	{
@@ -20879,7 +20899,7 @@ export const emojis: Emoji[] = [
 		name: 'toothbrush',
 		value: '🪥',
 		category: 'objects',
-		order: 1151,
+		order: 1153,
 		keywords: ['toothbrush', 'dental', 'hygiene'],
 	},
 	{
@@ -20887,7 +20907,7 @@ export const emojis: Emoji[] = [
 		name: 'razor',
 		value: '🪒',
 		category: 'objects',
-		order: 1152,
+		order: 1154,
 		keywords: ['razor', 'shaving', 'hygiene'],
 	},
 	{
@@ -20895,7 +20915,7 @@ export const emojis: Emoji[] = [
 		name: 'puck',
 		value: '🪮',
 		category: 'objects',
-		order: 1153,
+		order: 1155,
 		keywords: ['puck', 'cleaning', 'tool'],
 	},
 	{
@@ -20903,7 +20923,7 @@ export const emojis: Emoji[] = [
 		name: 'sponge',
 		value: '🧽',
 		category: 'objects',
-		order: 1154,
+		order: 1156,
 		keywords: ['sponge', 'cleaning', 'hygiene'],
 	},
 	{
@@ -20911,7 +20931,7 @@ export const emojis: Emoji[] = [
 		name: 'bucket',
 		value: '🪣',
 		category: 'objects',
-		order: 1155,
+		order: 1157,
 		keywords: ['bucket', 'cleaning', 'container'],
 	},
 	{
@@ -20919,7 +20939,7 @@ export const emojis: Emoji[] = [
 		name: 'lotion bottle',
 		value: '🧴',
 		category: 'objects',
-		order: 1156,
+		order: 1158,
 		keywords: ['lotion bottle', 'hygiene', 'skincare'],
 	},
 	{
@@ -20927,7 +20947,7 @@ export const emojis: Emoji[] = [
 		name: 'bellhop bell',
 		value: '🛎️',
 		category: 'objects',
-		order: 1157,
+		order: 1159,
 		keywords: ['bellhop bell', 'hotel', 'service'],
 	},
 	{
@@ -20935,7 +20955,7 @@ export const emojis: Emoji[] = [
 		name: 'key',
 		value: '🔑',
 		category: 'objects',
-		order: 1158,
+		order: 1160,
 		keywords: ['key', 'lock', 'security'],
 	},
 	{
@@ -20943,7 +20963,7 @@ export const emojis: Emoji[] = [
 		name: 'old key',
 		value: '🗝️',
 		category: 'objects',
-		order: 1159,
+		order: 1161,
 		keywords: ['old key', 'lock', 'security'],
 	},
 	{
@@ -20951,7 +20971,7 @@ export const emojis: Emoji[] = [
 		name: 'door',
 		value: '🚪',
 		category: 'objects',
-		order: 1160,
+		order: 1162,
 		keywords: ['door', 'entry', 'exit'],
 	},
 	{
@@ -20959,7 +20979,7 @@ export const emojis: Emoji[] = [
 		name: 'chair',
 		value: '🪑',
 		category: 'objects',
-		order: 1161,
+		order: 1163,
 		keywords: ['chair', 'furniture', 'seat'],
 	},
 	{
@@ -20967,7 +20987,7 @@ export const emojis: Emoji[] = [
 		name: 'couch and lamp',
 		value: '🛋️',
 		category: 'objects',
-		order: 1162,
+		order: 1164,
 		keywords: ['couch and lamp', 'furniture', 'living room'],
 	},
 	{
@@ -20975,7 +20995,7 @@ export const emojis: Emoji[] = [
 		name: 'bed',
 		value: '🛏️',
 		category: 'objects',
-		order: 1163,
+		order: 1165,
 		keywords: ['bed', 'furniture', 'sleep'],
 	},
 	{
@@ -20983,7 +21003,7 @@ export const emojis: Emoji[] = [
 		name: 'person in bed',
 		value: '🛌',
 		category: 'objects',
-		order: 1164,
+		order: 1166,
 		keywords: ['person in bed', 'sleep', 'rest'],
 	},
 	{
@@ -20991,7 +21011,7 @@ export const emojis: Emoji[] = [
 		name: 'teddy bear',
 		value: '🧸',
 		category: 'objects',
-		order: 1165,
+		order: 1167,
 		keywords: ['teddy bear', 'toy', 'stuffed animal'],
 	},
 	{
@@ -20999,7 +21019,7 @@ export const emojis: Emoji[] = [
 		name: 'nesting dolls',
 		value: '🪆',
 		category: 'objects',
-		order: 1166,
+		order: 1168,
 		keywords: ['nesting dolls', 'toy', 'matryoshka'],
 	},
 	{
@@ -21007,7 +21027,7 @@ export const emojis: Emoji[] = [
 		name: 'framed picture',
 		value: '🖼️',
 		category: 'objects',
-		order: 1167,
+		order: 1169,
 		keywords: ['framed picture', 'art', 'decoration'],
 	},
 	{
@@ -21015,7 +21035,7 @@ export const emojis: Emoji[] = [
 		name: 'mirror',
 		value: '🪞',
 		category: 'objects',
-		order: 1168,
+		order: 1170,
 		keywords: ['mirror', 'reflection', 'glass'],
 	},
 	{
@@ -21023,7 +21043,7 @@ export const emojis: Emoji[] = [
 		name: 'window',
 		value: '🪟',
 		category: 'objects',
-		order: 1169,
+		order: 1171,
 		keywords: ['window', 'view', 'glass'],
 	},
 	{
@@ -21031,7 +21051,7 @@ export const emojis: Emoji[] = [
 		name: 'shopping bags',
 		value: '🛍️',
 		category: 'objects',
-		order: 1170,
+		order: 1172,
 		keywords: ['shopping bags', 'shopping', 'bags'],
 	},
 	{
@@ -21039,7 +21059,7 @@ export const emojis: Emoji[] = [
 		name: 'shopping cart',
 		value: '🛒',
 		category: 'objects',
-		order: 1171,
+		order: 1173,
 		keywords: ['shopping cart', 'shopping', 'cart'],
 	},
 	{
@@ -21047,7 +21067,7 @@ export const emojis: Emoji[] = [
 		name: 'wrapped gift',
 		value: '🎁',
 		category: 'objects',
-		order: 1172,
+		order: 1174,
 		keywords: ['wrapped gift', 'present', 'gift'],
 	},
 	{
@@ -21055,7 +21075,7 @@ export const emojis: Emoji[] = [
 		name: 'balloon',
 		value: '🎈',
 		category: 'objects',
-		order: 1173,
+		order: 1175,
 		keywords: ['balloon', 'celebration', 'party'],
 	},
 	{
@@ -21063,7 +21083,7 @@ export const emojis: Emoji[] = [
 		name: 'carp streamer',
 		value: '🎏',
 		category: 'objects',
-		order: 1174,
+		order: 1176,
 		keywords: ['carp streamer', 'celebration', 'Japan'],
 	},
 	{
@@ -21071,7 +21091,7 @@ export const emojis: Emoji[] = [
 		name: 'ribbon',
 		value: '🎀',
 		category: 'objects',
-		order: 1175,
+		order: 1177,
 		keywords: ['ribbon', 'decoration', 'gift'],
 	},
 	{
@@ -21079,7 +21099,7 @@ export const emojis: Emoji[] = [
 		name: 'magic wand',
 		value: '🪄',
 		category: 'objects',
-		order: 1176,
+		order: 1178,
 		keywords: ['magic wand', 'magic', 'trick'],
 	},
 	{
@@ -21087,7 +21107,7 @@ export const emojis: Emoji[] = [
 		name: 'piñata',
 		value: '🪅',
 		category: 'objects',
-		order: 1177,
+		order: 1179,
 		keywords: ['piñata', 'celebration', 'party'],
 	},
 	{
@@ -21095,7 +21115,7 @@ export const emojis: Emoji[] = [
 		name: 'confetti ball',
 		value: '🎊',
 		category: 'objects',
-		order: 1178,
+		order: 1180,
 		keywords: ['confetti ball', 'celebration', 'party'],
 	},
 	{
@@ -21103,7 +21123,7 @@ export const emojis: Emoji[] = [
 		name: 'party popper',
 		value: '🎉',
 		category: 'objects',
-		order: 1179,
+		order: 1181,
 		keywords: ['party popper', 'celebration', 'party'],
 	},
 	{
@@ -21111,7 +21131,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese dolls',
 		value: '🎎',
 		category: 'objects',
-		order: 1180,
+		order: 1182,
 		keywords: ['Japanese dolls', 'celebration', 'Japan'],
 	},
 	{
@@ -21119,7 +21139,7 @@ export const emojis: Emoji[] = [
 		name: 'ding ding bell',
 		value: '🪭',
 		category: 'objects',
-		order: 1181,
+		order: 1183,
 		keywords: ['ding ding bell', 'sound', 'notification'],
 	},
 	{
@@ -21127,7 +21147,7 @@ export const emojis: Emoji[] = [
 		name: 'lantern',
 		value: '🏮',
 		category: 'objects',
-		order: 1182,
+		order: 1184,
 		keywords: ['lantern', 'light', 'decoration'],
 	},
 	{
@@ -21135,7 +21155,7 @@ export const emojis: Emoji[] = [
 		name: 'wind chime',
 		value: '🎐',
 		category: 'objects',
-		order: 1183,
+		order: 1185,
 		keywords: ['wind chime', 'decoration', 'sound'],
 	},
 	{
@@ -21143,7 +21163,7 @@ export const emojis: Emoji[] = [
 		name: 'disco ball',
 		value: '🪩',
 		category: 'objects',
-		order: 1184,
+		order: 1186,
 		keywords: ['disco ball', 'party', 'celebration'],
 	},
 	{
@@ -21151,7 +21171,7 @@ export const emojis: Emoji[] = [
 		name: 'red envelope',
 		value: '🧧',
 		category: 'objects',
-		order: 1185,
+		order: 1187,
 		keywords: ['red envelope', 'celebration', 'gift'],
 	},
 	{
@@ -21159,7 +21179,7 @@ export const emojis: Emoji[] = [
 		name: 'envelope',
 		value: '✉️',
 		category: 'objects',
-		order: 1186,
+		order: 1188,
 		keywords: ['envelope', 'letter', 'mail'],
 	},
 	{
@@ -21167,7 +21187,7 @@ export const emojis: Emoji[] = [
 		name: 'incoming envelope',
 		value: '📩',
 		category: 'objects',
-		order: 1187,
+		order: 1189,
 		keywords: ['incoming envelope', 'letter', 'mail'],
 	},
 	{
@@ -21175,7 +21195,7 @@ export const emojis: Emoji[] = [
 		name: 'envelope with arrow',
 		value: '📨',
 		category: 'objects',
-		order: 1188,
+		order: 1190,
 		keywords: ['envelope with arrow', 'letter', 'mail'],
 	},
 	{
@@ -21183,7 +21203,7 @@ export const emojis: Emoji[] = [
 		name: 'e-mail',
 		value: '📧',
 		category: 'objects',
-		order: 1189,
+		order: 1191,
 		keywords: ['e-mail', 'letter', 'mail'],
 	},
 	{
@@ -21191,7 +21211,7 @@ export const emojis: Emoji[] = [
 		name: 'love letter',
 		value: '💌',
 		category: 'objects',
-		order: 1190,
+		order: 1192,
 		keywords: ['love letter', 'letter', 'love'],
 	},
 	{
@@ -21199,7 +21219,7 @@ export const emojis: Emoji[] = [
 		name: 'inbox tray',
 		value: '📥',
 		category: 'objects',
-		order: 1191,
+		order: 1193,
 		keywords: ['inbox tray', 'letter', 'mail'],
 	},
 	{
@@ -21207,7 +21227,7 @@ export const emojis: Emoji[] = [
 		name: 'outbox tray',
 		value: '📤',
 		category: 'objects',
-		order: 1192,
+		order: 1194,
 		keywords: ['outbox tray', 'letter', 'mail'],
 	},
 	{
@@ -21215,7 +21235,7 @@ export const emojis: Emoji[] = [
 		name: 'package',
 		value: '📦',
 		category: 'objects',
-		order: 1193,
+		order: 1195,
 		keywords: ['package', 'box', 'mail'],
 	},
 	{
@@ -21223,7 +21243,7 @@ export const emojis: Emoji[] = [
 		name: 'label',
 		value: '🏷️',
 		category: 'objects',
-		order: 1194,
+		order: 1196,
 		keywords: ['label', 'tag', 'identifier'],
 	},
 	{
@@ -21231,7 +21251,7 @@ export const emojis: Emoji[] = [
 		name: 'placard',
 		value: '🪧',
 		category: 'objects',
-		order: 1195,
+		order: 1197,
 		keywords: ['placard', 'sign', 'message'],
 	},
 	{
@@ -21239,7 +21259,7 @@ export const emojis: Emoji[] = [
 		name: 'closed mailbox with raised flag',
 		value: '📪',
 		category: 'objects',
-		order: 1196,
+		order: 1198,
 		keywords: ['closed mailbox with raised flag', 'mail', 'post'],
 	},
 	{
@@ -21247,7 +21267,7 @@ export const emojis: Emoji[] = [
 		name: 'closed mailbox with lowered flag',
 		value: '📫',
 		category: 'objects',
-		order: 1197,
+		order: 1199,
 		keywords: ['closed mailbox with lowered flag', 'mail', 'post'],
 	},
 	{
@@ -21255,7 +21275,7 @@ export const emojis: Emoji[] = [
 		name: 'open mailbox with raised flag',
 		value: '📬',
 		category: 'objects',
-		order: 1198,
+		order: 1200,
 		keywords: ['open mailbox with raised flag', 'mail', 'post'],
 	},
 	{
@@ -21263,7 +21283,7 @@ export const emojis: Emoji[] = [
 		name: 'open mailbox with lowered flag',
 		value: '📭',
 		category: 'objects',
-		order: 1199,
+		order: 1201,
 		keywords: ['open mailbox with lowered flag', 'mail', 'post'],
 	},
 	{
@@ -21271,7 +21291,7 @@ export const emojis: Emoji[] = [
 		name: 'postbox',
 		value: '📮',
 		category: 'objects',
-		order: 1200,
+		order: 1202,
 		keywords: ['postbox', 'mail', 'post'],
 	},
 	{
@@ -21279,7 +21299,7 @@ export const emojis: Emoji[] = [
 		name: 'postal horn',
 		value: '📯',
 		category: 'objects',
-		order: 1201,
+		order: 1203,
 		keywords: ['postal horn', 'mail', 'post'],
 	},
 	{
@@ -21287,7 +21307,7 @@ export const emojis: Emoji[] = [
 		name: 'scroll',
 		value: '📜',
 		category: 'objects',
-		order: 1202,
+		order: 1204,
 		keywords: ['scroll', 'document', 'paper'],
 	},
 	{
@@ -21295,7 +21315,7 @@ export const emojis: Emoji[] = [
 		name: 'page with curl',
 		value: '📃',
 		category: 'objects',
-		order: 1203,
+		order: 1205,
 		keywords: ['page with curl', 'document', 'paper'],
 	},
 	{
@@ -21303,7 +21323,7 @@ export const emojis: Emoji[] = [
 		name: 'page facing up',
 		value: '📄',
 		category: 'objects',
-		order: 1204,
+		order: 1206,
 		keywords: ['page facing up', 'document', 'paper'],
 	},
 	{
@@ -21311,7 +21331,7 @@ export const emojis: Emoji[] = [
 		name: 'bookmark tabs',
 		value: '📑',
 		category: 'objects',
-		order: 1205,
+		order: 1207,
 		keywords: ['bookmark tabs', 'document', 'paper'],
 	},
 	{
@@ -21319,7 +21339,7 @@ export const emojis: Emoji[] = [
 		name: 'receipt',
 		value: '🧾',
 		category: 'objects',
-		order: 1206,
+		order: 1208,
 		keywords: ['receipt', 'document', 'paper'],
 	},
 	{
@@ -21327,7 +21347,7 @@ export const emojis: Emoji[] = [
 		name: 'chart increasing',
 		value: '📊',
 		category: 'objects',
-		order: 1207,
+		order: 1209,
 		keywords: ['chart increasing', 'graph', 'statistics'],
 	},
 	{
@@ -21335,7 +21355,7 @@ export const emojis: Emoji[] = [
 		name: 'chart decreasing',
 		value: '📉',
 		category: 'objects',
-		order: 1208,
+		order: 1210,
 		keywords: ['chart decreasing', 'graph', 'statistics'],
 	},
 	{
@@ -21343,7 +21363,7 @@ export const emojis: Emoji[] = [
 		name: 'chart with upwards trend',
 		value: '📈',
 		category: 'objects',
-		order: 1209,
+		order: 1211,
 		keywords: ['chart with upwards trend', 'graph', 'statistics'],
 	},
 	{
@@ -21351,7 +21371,7 @@ export const emojis: Emoji[] = [
 		name: 'notebook',
 		value: '📓',
 		category: 'objects',
-		order: 1210,
+		order: 1212,
 		keywords: ['notebook', 'document', 'paper'],
 	},
 	{
@@ -21359,7 +21379,7 @@ export const emojis: Emoji[] = [
 		name: 'ledger',
 		value: '📒',
 		category: 'objects',
-		order: 1211,
+		order: 1213,
 		keywords: ['ledger', 'document', 'paper'],
 	},
 	{
@@ -21367,7 +21387,7 @@ export const emojis: Emoji[] = [
 		name: 'notebook with decorative cover',
 		value: '📔',
 		category: 'objects',
-		order: 1212,
+		order: 1214,
 		keywords: ['notebook with decorative cover', 'document', 'paper'],
 	},
 	{
@@ -21375,7 +21395,7 @@ export const emojis: Emoji[] = [
 		name: 'closed book',
 		value: '📕',
 		category: 'objects',
-		order: 1213,
+		order: 1215,
 		keywords: ['closed book', 'document', 'paper'],
 	},
 	{
@@ -21383,7 +21403,7 @@ export const emojis: Emoji[] = [
 		name: 'green book',
 		value: '📗',
 		category: 'objects',
-		order: 1214,
+		order: 1216,
 		keywords: ['green book', 'document', 'paper'],
 	},
 	{
@@ -21391,7 +21411,7 @@ export const emojis: Emoji[] = [
 		name: 'blue book',
 		value: '📘',
 		category: 'objects',
-		order: 1215,
+		order: 1217,
 		keywords: ['blue book', 'document', 'paper'],
 	},
 	{
@@ -21399,7 +21419,7 @@ export const emojis: Emoji[] = [
 		name: 'orange book',
 		value: '📙',
 		category: 'objects',
-		order: 1216,
+		order: 1218,
 		keywords: ['orange book', 'document', 'paper'],
 	},
 	{
@@ -21407,7 +21427,7 @@ export const emojis: Emoji[] = [
 		name: 'books',
 		value: '📚',
 		category: 'objects',
-		order: 1217,
+		order: 1219,
 		keywords: ['books', 'document', 'paper'],
 	},
 	{
@@ -21415,7 +21435,7 @@ export const emojis: Emoji[] = [
 		name: 'open book',
 		value: '📖',
 		category: 'objects',
-		order: 1218,
+		order: 1220,
 		keywords: ['open book', 'document', 'paper'],
 	},
 	{
@@ -21423,7 +21443,7 @@ export const emojis: Emoji[] = [
 		name: 'bookmark',
 		value: '🔖',
 		category: 'objects',
-		order: 1219,
+		order: 1221,
 		keywords: ['bookmark', 'document', 'paper'],
 	},
 	{
@@ -21431,7 +21451,7 @@ export const emojis: Emoji[] = [
 		name: 'safety pin',
 		value: '🧷',
 		category: 'objects',
-		order: 1220,
+		order: 1222,
 		keywords: ['safety pin', 'tool', 'fastener'],
 	},
 	{
@@ -21439,7 +21459,7 @@ export const emojis: Emoji[] = [
 		name: 'link',
 		value: '🔗',
 		category: 'objects',
-		order: 1221,
+		order: 1223,
 		keywords: ['link', 'connection', 'chain'],
 	},
 	{
@@ -21447,7 +21467,7 @@ export const emojis: Emoji[] = [
 		name: 'paperclip',
 		value: '📎',
 		category: 'objects',
-		order: 1222,
+		order: 1224,
 		keywords: ['paperclip', 'tool', 'office'],
 	},
 	{
@@ -21455,7 +21475,7 @@ export const emojis: Emoji[] = [
 		name: 'linked paperclips',
 		value: '🖇️',
 		category: 'objects',
-		order: 1223,
+		order: 1225,
 		keywords: ['linked paperclips', 'tool', 'office'],
 	},
 	{
@@ -21463,7 +21483,7 @@ export const emojis: Emoji[] = [
 		name: 'straight ruler',
 		value: '📏',
 		category: 'objects',
-		order: 1224,
+		order: 1226,
 		keywords: ['straight ruler', 'tool', 'measurement'],
 	},
 	{
@@ -21471,7 +21491,7 @@ export const emojis: Emoji[] = [
 		name: 'triangular ruler',
 		value: '📐',
 		category: 'objects',
-		order: 1225,
+		order: 1227,
 		keywords: ['triangular ruler', 'tool', 'measurement'],
 	},
 	{
@@ -21479,7 +21499,7 @@ export const emojis: Emoji[] = [
 		name: 'abacus',
 		value: '🧮',
 		category: 'objects',
-		order: 1226,
+		order: 1228,
 		keywords: ['abacus', 'tool', 'math'],
 	},
 	{
@@ -21487,7 +21507,7 @@ export const emojis: Emoji[] = [
 		name: 'pushpin',
 		value: '📌',
 		category: 'objects',
-		order: 1227,
+		order: 1229,
 		keywords: ['pushpin', 'tool', 'office'],
 	},
 	{
@@ -21495,7 +21515,7 @@ export const emojis: Emoji[] = [
 		name: 'round pushpin',
 		value: '📍',
 		category: 'objects',
-		order: 1228,
+		order: 1230,
 		keywords: ['round pushpin', 'tool', 'office'],
 	},
 	{
@@ -21503,7 +21523,7 @@ export const emojis: Emoji[] = [
 		name: 'scissors',
 		value: '✂️',
 		category: 'objects',
-		order: 1229,
+		order: 1231,
 		keywords: ['scissors', 'tool', 'cut'],
 	},
 	{
@@ -21511,7 +21531,7 @@ export const emojis: Emoji[] = [
 		name: 'pen',
 		value: '🖊️',
 		category: 'objects',
-		order: 1230,
+		order: 1232,
 		keywords: ['pen', 'writing', 'tool'],
 	},
 	{
@@ -21519,7 +21539,7 @@ export const emojis: Emoji[] = [
 		name: 'fountain pen',
 		value: '🖋️',
 		category: 'objects',
-		order: 1231,
+		order: 1233,
 		keywords: ['fountain pen', 'writing', 'tool'],
 	},
 	{
@@ -21527,7 +21547,7 @@ export const emojis: Emoji[] = [
 		name: 'black nib',
 		value: '✒️',
 		category: 'objects',
-		order: 1232,
+		order: 1234,
 		keywords: ['black nib', 'writing', 'tool'],
 	},
 	{
@@ -21535,7 +21555,7 @@ export const emojis: Emoji[] = [
 		name: 'paintbrush',
 		value: '🖌️',
 		category: 'objects',
-		order: 1233,
+		order: 1235,
 		keywords: ['paintbrush', 'art', 'tool'],
 	},
 	{
@@ -21543,7 +21563,7 @@ export const emojis: Emoji[] = [
 		name: 'crayon',
 		value: '🖍️',
 		category: 'objects',
-		order: 1234,
+		order: 1236,
 		keywords: ['crayon', 'art', 'tool'],
 	},
 	{
@@ -21551,7 +21571,7 @@ export const emojis: Emoji[] = [
 		name: 'memo',
 		value: '📝',
 		category: 'objects',
-		order: 1235,
+		order: 1237,
 		keywords: ['memo', 'writing', 'document'],
 	},
 	{
@@ -21559,7 +21579,7 @@ export const emojis: Emoji[] = [
 		name: 'pencil',
 		value: '✏️',
 		category: 'objects',
-		order: 1236,
+		order: 1238,
 		keywords: ['pencil', 'writing', 'tool'],
 	},
 	{
@@ -21567,7 +21587,7 @@ export const emojis: Emoji[] = [
 		name: 'magnifying glass tilted left',
 		value: '🔍',
 		category: 'objects',
-		order: 1237,
+		order: 1239,
 		keywords: ['magnifying glass tilted left', 'search', 'tool'],
 	},
 	{
@@ -21575,7 +21595,7 @@ export const emojis: Emoji[] = [
 		name: 'magnifying glass tilted right',
 		value: '🔎',
 		category: 'objects',
-		order: 1238,
+		order: 1240,
 		keywords: ['magnifying glass tilted right', 'search', 'tool'],
 	},
 	{
@@ -21583,7 +21603,7 @@ export const emojis: Emoji[] = [
 		name: 'lock with pen',
 		value: '🔏',
 		category: 'objects',
-		order: 1239,
+		order: 1241,
 		keywords: ['lock with pen', 'security', 'writing'],
 	},
 	{
@@ -21591,7 +21611,7 @@ export const emojis: Emoji[] = [
 		name: 'closed lock with key',
 		value: '🔐',
 		category: 'objects',
-		order: 1240,
+		order: 1242,
 		keywords: ['closed lock with key', 'security', 'lock'],
 	},
 	{
@@ -21599,7 +21619,7 @@ export const emojis: Emoji[] = [
 		name: 'locked',
 		value: '🔒',
 		category: 'objects',
-		order: 1241,
+		order: 1243,
 		keywords: ['locked', 'security', 'lock'],
 	},
 	{
@@ -21607,7 +21627,7 @@ export const emojis: Emoji[] = [
 		name: 'unlocked',
 		value: '🔓',
 		category: 'objects',
-		order: 1242,
+		order: 1244,
 		keywords: ['unlocked', 'security', 'lock'],
 	},
 	{
@@ -21615,7 +21635,7 @@ export const emojis: Emoji[] = [
 		name: 'pink heart',
 		value: '🩷',
 		category: 'symbols',
-		order: 1243,
+		order: 1245,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21623,7 +21643,7 @@ export const emojis: Emoji[] = [
 		name: 'red heart',
 		value: '❤️',
 		category: 'symbols',
-		order: 1244,
+		order: 1246,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21631,7 +21651,7 @@ export const emojis: Emoji[] = [
 		name: 'orange heart',
 		value: '🧡',
 		category: 'symbols',
-		order: 1245,
+		order: 1247,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21639,7 +21659,7 @@ export const emojis: Emoji[] = [
 		name: 'yellow heart',
 		value: '💛',
 		category: 'symbols',
-		order: 1246,
+		order: 1248,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21647,7 +21667,7 @@ export const emojis: Emoji[] = [
 		name: 'green heart',
 		value: '💚',
 		category: 'symbols',
-		order: 1247,
+		order: 1249,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21655,7 +21675,7 @@ export const emojis: Emoji[] = [
 		name: 'light blue heart',
 		value: '🩵',
 		category: 'symbols',
-		order: 1248,
+		order: 1250,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21663,7 +21683,7 @@ export const emojis: Emoji[] = [
 		name: 'blue heart',
 		value: '💙',
 		category: 'symbols',
-		order: 1249,
+		order: 1251,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21671,7 +21691,7 @@ export const emojis: Emoji[] = [
 		name: 'purple heart',
 		value: '💜',
 		category: 'symbols',
-		order: 1250,
+		order: 1252,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21679,7 +21699,7 @@ export const emojis: Emoji[] = [
 		name: 'black heart',
 		value: '🖤',
 		category: 'symbols',
-		order: 1251,
+		order: 1253,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21687,7 +21707,7 @@ export const emojis: Emoji[] = [
 		name: 'grey heart',
 		value: '🩶',
 		category: 'symbols',
-		order: 1252,
+		order: 1254,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21695,7 +21715,7 @@ export const emojis: Emoji[] = [
 		name: 'white heart',
 		value: '🤍',
 		category: 'symbols',
-		order: 1253,
+		order: 1255,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21703,7 +21723,7 @@ export const emojis: Emoji[] = [
 		name: 'brown heart',
 		value: '🤎',
 		category: 'symbols',
-		order: 1254,
+		order: 1256,
 		keywords: ['love', 'heart', 'affection'],
 	},
 	{
@@ -21711,7 +21731,7 @@ export const emojis: Emoji[] = [
 		name: 'broken heart',
 		value: '💔',
 		category: 'symbols',
-		order: 1255,
+		order: 1257,
 		keywords: ['sad', 'heartbreak', 'love'],
 	},
 	{
@@ -21719,7 +21739,7 @@ export const emojis: Emoji[] = [
 		name: 'heart on fire',
 		value: '❤️‍🔥',
 		category: 'symbols',
-		order: 1256,
+		order: 1258,
 		keywords: ['love', 'passion', 'fire'],
 	},
 	{
@@ -21727,7 +21747,7 @@ export const emojis: Emoji[] = [
 		name: 'mending heart',
 		value: '❤️‍🩹',
 		category: 'symbols',
-		order: 1257,
+		order: 1259,
 		keywords: ['healing', 'love', 'heart'],
 	},
 	{
@@ -21735,7 +21755,7 @@ export const emojis: Emoji[] = [
 		name: 'heart exclamation',
 		value: '❣️',
 		category: 'symbols',
-		order: 1258,
+		order: 1260,
 		keywords: ['love', 'exclamation', 'heart'],
 	},
 	{
@@ -21743,7 +21763,7 @@ export const emojis: Emoji[] = [
 		name: 'two hearts',
 		value: '💕',
 		category: 'symbols',
-		order: 1259,
+		order: 1261,
 		keywords: ['love', 'hearts', 'affection'],
 	},
 	{
@@ -21751,7 +21771,7 @@ export const emojis: Emoji[] = [
 		name: 'revolving hearts',
 		value: '💞',
 		category: 'symbols',
-		order: 1260,
+		order: 1262,
 		keywords: ['love', 'hearts', 'affection'],
 	},
 	{
@@ -21759,7 +21779,7 @@ export const emojis: Emoji[] = [
 		name: 'beating heart',
 		value: '💓',
 		category: 'symbols',
-		order: 1261,
+		order: 1263,
 		keywords: ['love', 'heart', 'beat'],
 	},
 	{
@@ -21767,7 +21787,7 @@ export const emojis: Emoji[] = [
 		name: 'growing heart',
 		value: '💗',
 		category: 'symbols',
-		order: 1262,
+		order: 1264,
 		keywords: ['love', 'heart', 'growth'],
 	},
 	{
@@ -21775,7 +21795,7 @@ export const emojis: Emoji[] = [
 		name: 'sparkling heart',
 		value: '💖',
 		category: 'symbols',
-		order: 1263,
+		order: 1265,
 		keywords: ['love', 'heart', 'sparkle'],
 	},
 	{
@@ -21783,7 +21803,7 @@ export const emojis: Emoji[] = [
 		name: 'heart with arrow',
 		value: '💘',
 		category: 'symbols',
-		order: 1264,
+		order: 1266,
 		keywords: ['love', 'heart', 'arrow'],
 	},
 	{
@@ -21791,7 +21811,7 @@ export const emojis: Emoji[] = [
 		name: 'heart with ribbon',
 		value: '💝',
 		category: 'symbols',
-		order: 1265,
+		order: 1267,
 		keywords: ['love', 'heart', 'ribbon'],
 	},
 	{
@@ -21799,7 +21819,7 @@ export const emojis: Emoji[] = [
 		name: 'heart decoration',
 		value: '💟',
 		category: 'symbols',
-		order: 1266,
+		order: 1268,
 		keywords: ['love', 'heart', 'decoration'],
 	},
 	{
@@ -21807,7 +21827,7 @@ export const emojis: Emoji[] = [
 		name: 'peace symbol',
 		value: '☮️',
 		category: 'symbols',
-		order: 1267,
+		order: 1269,
 		keywords: ['peace', 'symbol', 'harmony'],
 	},
 	{
@@ -21815,7 +21835,7 @@ export const emojis: Emoji[] = [
 		name: 'latin cross',
 		value: '✝️',
 		category: 'symbols',
-		order: 1268,
+		order: 1270,
 		keywords: ['cross', 'latin', 'religion'],
 	},
 	{
@@ -21823,7 +21843,7 @@ export const emojis: Emoji[] = [
 		name: 'star and crescent',
 		value: '☪️',
 		category: 'symbols',
-		order: 1269,
+		order: 1271,
 		keywords: ['star', 'crescent', 'religion'],
 	},
 	{
@@ -21831,7 +21851,7 @@ export const emojis: Emoji[] = [
 		name: 'om symbol',
 		value: '🕉️',
 		category: 'symbols',
-		order: 1270,
+		order: 1272,
 		keywords: ['om', 'symbol', 'religion'],
 	},
 	{
@@ -21839,7 +21859,7 @@ export const emojis: Emoji[] = [
 		name: 'wheel of dharma',
 		value: '☸️',
 		category: 'symbols',
-		order: 1271,
+		order: 1273,
 		keywords: ['dharma', 'wheel', 'religion'],
 	},
 	{
@@ -21847,7 +21867,7 @@ export const emojis: Emoji[] = [
 		name: 'khanda',
 		value: '🪯',
 		category: 'symbols',
-		order: 1272,
+		order: 1274,
 		keywords: ['khanda', 'symbol', 'sikhism'],
 	},
 	{
@@ -21855,7 +21875,7 @@ export const emojis: Emoji[] = [
 		name: 'star of david',
 		value: '✡️',
 		category: 'symbols',
-		order: 1273,
+		order: 1275,
 		keywords: ['star', 'david', 'religion'],
 	},
 	{
@@ -21863,7 +21883,7 @@ export const emojis: Emoji[] = [
 		name: 'six pointed star with middle dot',
 		value: '🔯',
 		category: 'symbols',
-		order: 1274,
+		order: 1276,
 		keywords: ['star', 'dot', 'symbol'],
 	},
 	{
@@ -21871,7 +21891,7 @@ export const emojis: Emoji[] = [
 		name: 'menorah',
 		value: '🕎',
 		category: 'symbols',
-		order: 1275,
+		order: 1277,
 		keywords: ['menorah', 'symbol', 'judaism'],
 	},
 	{
@@ -21879,7 +21899,7 @@ export const emojis: Emoji[] = [
 		name: 'yin yang',
 		value: '☯️',
 		category: 'symbols',
-		order: 1276,
+		order: 1278,
 		keywords: ['yin', 'yang', 'balance'],
 	},
 	{
@@ -21887,7 +21907,7 @@ export const emojis: Emoji[] = [
 		name: 'orthodox cross',
 		value: '☦️',
 		category: 'symbols',
-		order: 1277,
+		order: 1279,
 		keywords: ['cross', 'orthodox', 'religion'],
 	},
 	{
@@ -21895,7 +21915,7 @@ export const emojis: Emoji[] = [
 		name: 'place of worship',
 		value: '🛐',
 		category: 'symbols',
-		order: 1278,
+		order: 1280,
 		keywords: ['worship', 'place', 'religion'],
 	},
 	{
@@ -21903,7 +21923,7 @@ export const emojis: Emoji[] = [
 		name: 'ophiuchus',
 		value: '⛎',
 		category: 'symbols',
-		order: 1279,
+		order: 1281,
 		keywords: ['ophiuchus', 'zodiac', 'astrology'],
 	},
 	{
@@ -21911,7 +21931,7 @@ export const emojis: Emoji[] = [
 		name: 'aries',
 		value: '♈',
 		category: 'symbols',
-		order: 1280,
+		order: 1282,
 		keywords: ['aries', 'zodiac', 'astrology'],
 	},
 	{
@@ -21919,7 +21939,7 @@ export const emojis: Emoji[] = [
 		name: 'taurus',
 		value: '♉',
 		category: 'symbols',
-		order: 1281,
+		order: 1283,
 		keywords: ['taurus', 'zodiac', 'astrology'],
 	},
 	{
@@ -21927,7 +21947,7 @@ export const emojis: Emoji[] = [
 		name: 'gemini',
 		value: '♊',
 		category: 'symbols',
-		order: 1282,
+		order: 1284,
 		keywords: ['gemini', 'zodiac', 'astrology'],
 	},
 	{
@@ -21935,7 +21955,7 @@ export const emojis: Emoji[] = [
 		name: 'cancer',
 		value: '♋',
 		category: 'symbols',
-		order: 1283,
+		order: 1285,
 		keywords: ['cancer', 'zodiac', 'astrology'],
 	},
 	{
@@ -21943,7 +21963,7 @@ export const emojis: Emoji[] = [
 		name: 'leo',
 		value: '♌',
 		category: 'symbols',
-		order: 1284,
+		order: 1286,
 		keywords: ['leo', 'zodiac', 'astrology'],
 	},
 	{
@@ -21951,7 +21971,7 @@ export const emojis: Emoji[] = [
 		name: 'virgo',
 		value: '♍',
 		category: 'symbols',
-		order: 1285,
+		order: 1287,
 		keywords: ['virgo', 'zodiac', 'astrology'],
 	},
 	{
@@ -21959,7 +21979,7 @@ export const emojis: Emoji[] = [
 		name: 'libra',
 		value: '♎',
 		category: 'symbols',
-		order: 1286,
+		order: 1288,
 		keywords: ['libra', 'zodiac', 'astrology'],
 	},
 	{
@@ -21967,7 +21987,7 @@ export const emojis: Emoji[] = [
 		name: 'scorpius',
 		value: '♏',
 		category: 'symbols',
-		order: 1287,
+		order: 1289,
 		keywords: ['scorpio', 'zodiac', 'astrology'],
 	},
 	{
@@ -21975,7 +21995,7 @@ export const emojis: Emoji[] = [
 		name: 'sagittarius',
 		value: '♐',
 		category: 'symbols',
-		order: 1288,
+		order: 1290,
 		keywords: ['sagittarius', 'zodiac', 'astrology'],
 	},
 	{
@@ -21983,7 +22003,7 @@ export const emojis: Emoji[] = [
 		name: 'capricorn',
 		value: '♑',
 		category: 'symbols',
-		order: 1289,
+		order: 1291,
 		keywords: ['capricorn', 'zodiac', 'astrology'],
 	},
 	{
@@ -21991,7 +22011,7 @@ export const emojis: Emoji[] = [
 		name: 'aquarius',
 		value: '♒',
 		category: 'symbols',
-		order: 1290,
+		order: 1292,
 		keywords: ['aquarius', 'zodiac', 'astrology'],
 	},
 	{
@@ -21999,7 +22019,7 @@ export const emojis: Emoji[] = [
 		name: 'pisces',
 		value: '♓',
 		category: 'symbols',
-		order: 1291,
+		order: 1293,
 		keywords: ['pisces', 'zodiac', 'astrology'],
 	},
 	{
@@ -22007,7 +22027,7 @@ export const emojis: Emoji[] = [
 		name: 'id button',
 		value: '🆔',
 		category: 'symbols',
-		order: 1292,
+		order: 1294,
 		keywords: ['id', 'button', 'identifier'],
 	},
 	{
@@ -22015,7 +22035,7 @@ export const emojis: Emoji[] = [
 		name: 'atom symbol',
 		value: '⚛️',
 		category: 'symbols',
-		order: 1293,
+		order: 1295,
 		keywords: ['atom', 'symbol', 'science'],
 	},
 	{
@@ -22023,7 +22043,7 @@ export const emojis: Emoji[] = [
 		name: 'accept button',
 		value: '🉑',
 		category: 'symbols',
-		order: 1294,
+		order: 1296,
 		keywords: ['accept', 'button', 'ok'],
 	},
 	{
@@ -22031,7 +22051,7 @@ export const emojis: Emoji[] = [
 		name: 'radioactive',
 		value: '☢️',
 		category: 'symbols',
-		order: 1295,
+		order: 1297,
 		keywords: ['radioactive', 'hazard', 'warning'],
 	},
 	{
@@ -22039,7 +22059,7 @@ export const emojis: Emoji[] = [
 		name: 'biohazard',
 		value: '☣️',
 		category: 'symbols',
-		order: 1296,
+		order: 1298,
 		keywords: ['biohazard', 'hazard', 'warning'],
 	},
 	{
@@ -22047,7 +22067,7 @@ export const emojis: Emoji[] = [
 		name: 'mobile phone off',
 		value: '📴',
 		category: 'symbols',
-		order: 1297,
+		order: 1299,
 		keywords: ['mobile', 'phone', 'off'],
 	},
 	{
@@ -22055,7 +22075,7 @@ export const emojis: Emoji[] = [
 		name: 'vibration mode',
 		value: '📳',
 		category: 'symbols',
-		order: 1298,
+		order: 1300,
 		keywords: ['vibration', 'mode', 'phone'],
 	},
 	{
@@ -22063,7 +22083,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese not free of charge',
 		value: '🈶',
 		category: 'symbols',
-		order: 1299,
+		order: 1301,
 		keywords: ['japanese', 'free', 'charge'],
 	},
 	{
@@ -22071,7 +22091,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese free of charge',
 		value: '🈚',
 		category: 'symbols',
-		order: 1300,
+		order: 1302,
 		keywords: ['japanese', 'free', 'charge'],
 	},
 	{
@@ -22079,7 +22099,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese application',
 		value: '🈸',
 		category: 'symbols',
-		order: 1301,
+		order: 1303,
 		keywords: ['japanese', 'application', 'request'],
 	},
 	{
@@ -22087,7 +22107,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese open for business',
 		value: '🈺',
 		category: 'symbols',
-		order: 1302,
+		order: 1304,
 		keywords: ['japanese', 'open', 'business'],
 	},
 	{
@@ -22095,7 +22115,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese monthly amount',
 		value: '🈷️',
 		category: 'symbols',
-		order: 1303,
+		order: 1305,
 		keywords: ['japanese', 'monthly', 'amount'],
 	},
 	{
@@ -22103,7 +22123,7 @@ export const emojis: Emoji[] = [
 		name: 'eight pointed star',
 		value: '✴️',
 		category: 'symbols',
-		order: 1304,
+		order: 1306,
 		keywords: ['star', 'eight', 'pointed'],
 	},
 	{
@@ -22111,7 +22131,7 @@ export const emojis: Emoji[] = [
 		name: 'vs button',
 		value: '🆚',
 		category: 'symbols',
-		order: 1305,
+		order: 1307,
 		keywords: ['vs', 'button', 'versus'],
 	},
 	{
@@ -22119,7 +22139,7 @@ export const emojis: Emoji[] = [
 		name: 'white flower',
 		value: '💮',
 		category: 'symbols',
-		order: 1306,
+		order: 1308,
 		keywords: ['flower', 'white', 'decoration'],
 	},
 	{
@@ -22127,7 +22147,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese bargain',
 		value: '🉐',
 		category: 'symbols',
-		order: 1307,
+		order: 1309,
 		keywords: ['japanese', 'bargain', 'discount'],
 	},
 	{
@@ -22135,7 +22155,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese secret',
 		value: '㊙️',
 		category: 'symbols',
-		order: 1308,
+		order: 1310,
 		keywords: ['japanese', 'secret', 'confidential'],
 	},
 	{
@@ -22143,7 +22163,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese congratulations',
 		value: '㊗️',
 		category: 'symbols',
-		order: 1309,
+		order: 1311,
 		keywords: ['japanese', 'congratulations', 'celebrate'],
 	},
 	{
@@ -22151,7 +22171,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese passing grade',
 		value: '🈴',
 		category: 'symbols',
-		order: 1310,
+		order: 1312,
 		keywords: ['japanese', 'passing', 'grade'],
 	},
 	{
@@ -22159,7 +22179,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese no vacancy',
 		value: '🈵',
 		category: 'symbols',
-		order: 1311,
+		order: 1313,
 		keywords: ['japanese', 'vacancy', 'no'],
 	},
 	{
@@ -22167,7 +22187,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese discount',
 		value: '🈹',
 		category: 'symbols',
-		order: 1312,
+		order: 1314,
 		keywords: ['japanese', 'discount', 'sale'],
 	},
 	{
@@ -22175,7 +22195,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese prohibited',
 		value: '🈲',
 		category: 'symbols',
-		order: 1313,
+		order: 1315,
 		keywords: ['japanese', 'prohibited', 'forbidden'],
 	},
 	{
@@ -22183,7 +22203,7 @@ export const emojis: Emoji[] = [
 		name: 'a button (blood type)',
 		value: '🅰️',
 		category: 'symbols',
-		order: 1314,
+		order: 1316,
 		keywords: ['blood', 'type', 'a'],
 	},
 	{
@@ -22191,7 +22211,7 @@ export const emojis: Emoji[] = [
 		name: 'b button (blood type)',
 		value: '🅱️',
 		category: 'symbols',
-		order: 1315,
+		order: 1317,
 		keywords: ['blood', 'type', 'b'],
 	},
 	{
@@ -22199,7 +22219,7 @@ export const emojis: Emoji[] = [
 		name: 'ab button (blood type)',
 		value: '🆎',
 		category: 'symbols',
-		order: 1316,
+		order: 1318,
 		keywords: ['blood', 'type', 'ab'],
 	},
 	{
@@ -22207,7 +22227,7 @@ export const emojis: Emoji[] = [
 		name: 'cl button',
 		value: '🆑',
 		category: 'symbols',
-		order: 1317,
+		order: 1319,
 		keywords: ['cl', 'button', 'clear'],
 	},
 	{
@@ -22215,7 +22235,7 @@ export const emojis: Emoji[] = [
 		name: 'o button (blood type)',
 		value: '🅾️',
 		category: 'symbols',
-		order: 1318,
+		order: 1320,
 		keywords: ['blood', 'type', 'o'],
 	},
 	{
@@ -22223,7 +22243,7 @@ export const emojis: Emoji[] = [
 		name: 'sos button',
 		value: '🆘',
 		category: 'symbols',
-		order: 1319,
+		order: 1321,
 		keywords: ['sos', 'button', 'help'],
 	},
 	{
@@ -22231,7 +22251,7 @@ export const emojis: Emoji[] = [
 		name: 'cross mark',
 		value: '❌',
 		category: 'symbols',
-		order: 1320,
+		order: 1322,
 		keywords: ['cross', 'mark', 'x'],
 	},
 	{
@@ -22239,7 +22259,7 @@ export const emojis: Emoji[] = [
 		name: 'hollow red circle',
 		value: '⭕',
 		category: 'symbols',
-		order: 1321,
+		order: 1323,
 		keywords: ['circle', 'hollow', 'red'],
 	},
 	{
@@ -22247,7 +22267,7 @@ export const emojis: Emoji[] = [
 		name: 'stop sign',
 		value: '🛑',
 		category: 'symbols',
-		order: 1322,
+		order: 1324,
 		keywords: ['stop', 'sign', 'warning'],
 	},
 	{
@@ -22255,7 +22275,7 @@ export const emojis: Emoji[] = [
 		name: 'no entry',
 		value: '⛔',
 		category: 'symbols',
-		order: 1323,
+		order: 1325,
 		keywords: ['no', 'entry', 'forbidden'],
 	},
 	{
@@ -22263,7 +22283,7 @@ export const emojis: Emoji[] = [
 		name: 'name badge',
 		value: '📛',
 		category: 'symbols',
-		order: 1324,
+		order: 1326,
 		keywords: ['name', 'badge', 'identification'],
 	},
 	{
@@ -22271,7 +22291,7 @@ export const emojis: Emoji[] = [
 		name: 'prohibited',
 		value: '🚫',
 		category: 'symbols',
-		order: 1325,
+		order: 1327,
 		keywords: ['prohibited', 'forbidden', 'no'],
 	},
 	{
@@ -22279,7 +22299,7 @@ export const emojis: Emoji[] = [
 		name: 'hundred points',
 		value: '💯',
 		category: 'symbols',
-		order: 1326,
+		order: 1328,
 		keywords: ['hundred', 'points', 'score'],
 	},
 	{
@@ -22287,7 +22307,7 @@ export const emojis: Emoji[] = [
 		name: 'anger symbol',
 		value: '💢',
 		category: 'symbols',
-		order: 1327,
+		order: 1329,
 		keywords: ['anger', 'symbol', 'mad'],
 	},
 	{
@@ -22295,7 +22315,7 @@ export const emojis: Emoji[] = [
 		name: 'hot springs',
 		value: '♨️',
 		category: 'symbols',
-		order: 1328,
+		order: 1330,
 		keywords: ['hot', 'springs', 'steam'],
 	},
 	{
@@ -22303,7 +22323,7 @@ export const emojis: Emoji[] = [
 		name: 'no pedestrians',
 		value: '🚷',
 		category: 'symbols',
-		order: 1329,
+		order: 1331,
 		keywords: ['no', 'pedestrians', 'forbidden'],
 	},
 	{
@@ -22311,7 +22331,7 @@ export const emojis: Emoji[] = [
 		name: 'no littering',
 		value: '🚯',
 		category: 'symbols',
-		order: 1330,
+		order: 1332,
 		keywords: ['no', 'littering', 'forbidden'],
 	},
 	{
@@ -22319,7 +22339,7 @@ export const emojis: Emoji[] = [
 		name: 'no bicycles',
 		value: '🚳',
 		category: 'symbols',
-		order: 1331,
+		order: 1333,
 		keywords: ['no', 'bicycles', 'forbidden'],
 	},
 	{
@@ -22327,7 +22347,7 @@ export const emojis: Emoji[] = [
 		name: 'non-potable water',
 		value: '🚱',
 		category: 'symbols',
-		order: 1332,
+		order: 1334,
 		keywords: ['non-potable', 'water', 'forbidden'],
 	},
 	{
@@ -22335,7 +22355,7 @@ export const emojis: Emoji[] = [
 		name: 'no one under eighteen',
 		value: '🔞',
 		category: 'symbols',
-		order: 1333,
+		order: 1335,
 		keywords: ['no', 'under', 'eighteen'],
 	},
 	{
@@ -22343,7 +22363,7 @@ export const emojis: Emoji[] = [
 		name: 'no mobile phones',
 		value: '📵',
 		category: 'symbols',
-		order: 1334,
+		order: 1336,
 		keywords: ['no', 'mobile', 'phones'],
 	},
 	{
@@ -22351,7 +22371,7 @@ export const emojis: Emoji[] = [
 		name: 'no smoking',
 		value: '🚭',
 		category: 'symbols',
-		order: 1335,
+		order: 1337,
 		keywords: ['no', 'smoking', 'forbidden'],
 	},
 	{
@@ -22359,7 +22379,7 @@ export const emojis: Emoji[] = [
 		name: 'exclamation mark',
 		value: '❗',
 		category: 'symbols',
-		order: 1336,
+		order: 1338,
 		keywords: ['exclamation', 'mark', 'warning'],
 	},
 	{
@@ -22367,7 +22387,7 @@ export const emojis: Emoji[] = [
 		name: 'white exclamation mark',
 		value: '❕',
 		category: 'symbols',
-		order: 1337,
+		order: 1339,
 		keywords: ['exclamation', 'mark', 'white'],
 	},
 	{
@@ -22375,7 +22395,7 @@ export const emojis: Emoji[] = [
 		name: 'question mark',
 		value: '❓',
 		category: 'symbols',
-		order: 1338,
+		order: 1340,
 		keywords: ['question', 'mark', 'confused'],
 	},
 	{
@@ -22383,7 +22403,7 @@ export const emojis: Emoji[] = [
 		name: 'white question mark',
 		value: '❔',
 		category: 'symbols',
-		order: 1339,
+		order: 1341,
 		keywords: ['question', 'mark', 'white'],
 	},
 	{
@@ -22391,7 +22411,7 @@ export const emojis: Emoji[] = [
 		name: 'double exclamation mark',
 		value: '‼️',
 		category: 'symbols',
-		order: 1340,
+		order: 1342,
 		keywords: ['exclamation', 'mark', 'double'],
 	},
 	{
@@ -22399,7 +22419,7 @@ export const emojis: Emoji[] = [
 		name: 'exclamation question mark',
 		value: '⁉️',
 		category: 'symbols',
-		order: 1341,
+		order: 1343,
 		keywords: ['exclamation', 'question', 'mark'],
 	},
 	{
@@ -22407,7 +22427,7 @@ export const emojis: Emoji[] = [
 		name: 'dim button',
 		value: '🔅',
 		category: 'symbols',
-		order: 1342,
+		order: 1344,
 		keywords: ['dim', 'button', 'light'],
 	},
 	{
@@ -22415,7 +22435,7 @@ export const emojis: Emoji[] = [
 		name: 'bright button',
 		value: '🔆',
 		category: 'symbols',
-		order: 1343,
+		order: 1345,
 		keywords: ['bright', 'button', 'light'],
 	},
 	{
@@ -22423,7 +22443,7 @@ export const emojis: Emoji[] = [
 		name: 'part alternation mark',
 		value: '〽️',
 		category: 'symbols',
-		order: 1344,
+		order: 1346,
 		keywords: ['part', 'alternation', 'mark'],
 	},
 	{
@@ -22431,7 +22451,7 @@ export const emojis: Emoji[] = [
 		name: 'warning',
 		value: '⚠️',
 		category: 'symbols',
-		order: 1345,
+		order: 1347,
 		keywords: ['warning', 'caution', 'alert'],
 	},
 	{
@@ -22439,7 +22459,7 @@ export const emojis: Emoji[] = [
 		name: 'children crossing',
 		value: '🚸',
 		category: 'symbols',
-		order: 1346,
+		order: 1348,
 		keywords: ['children', 'crossing', 'warning'],
 	},
 	{
@@ -22447,7 +22467,7 @@ export const emojis: Emoji[] = [
 		name: 'trident emblem',
 		value: '🔱',
 		category: 'symbols',
-		order: 1347,
+		order: 1349,
 		keywords: ['trident', 'emblem', 'symbol'],
 	},
 	{
@@ -22455,7 +22475,7 @@ export const emojis: Emoji[] = [
 		name: 'fleur-de-lis',
 		value: '⚜️',
 		category: 'symbols',
-		order: 1348,
+		order: 1350,
 		keywords: ['fleur-de-lis', 'symbol', 'decorative'],
 	},
 	{
@@ -22463,7 +22483,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese beginner symbol',
 		value: '🔰',
 		category: 'symbols',
-		order: 1349,
+		order: 1351,
 		keywords: ['japanese', 'beginner', 'symbol'],
 	},
 	{
@@ -22471,7 +22491,7 @@ export const emojis: Emoji[] = [
 		name: 'recycling symbol',
 		value: '♻️',
 		category: 'symbols',
-		order: 1350,
+		order: 1352,
 		keywords: ['recycling', 'symbol', 'green'],
 	},
 	{
@@ -22479,7 +22499,7 @@ export const emojis: Emoji[] = [
 		name: 'check mark button',
 		value: '✅',
 		category: 'symbols',
-		order: 1351,
+		order: 1353,
 		keywords: ['check', 'mark', 'button'],
 	},
 	{
@@ -22487,7 +22507,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese reserved button',
 		value: '🈯',
 		category: 'symbols',
-		order: 1352,
+		order: 1354,
 		keywords: ['japanese', 'reserved', 'button'],
 	},
 	{
@@ -22495,7 +22515,7 @@ export const emojis: Emoji[] = [
 		name: 'chart increasing with yen',
 		value: '💹',
 		category: 'symbols',
-		order: 1353,
+		order: 1355,
 		keywords: ['chart', 'increasing', 'yen'],
 	},
 	{
@@ -22503,7 +22523,7 @@ export const emojis: Emoji[] = [
 		name: 'sparkle',
 		value: '❇️',
 		category: 'symbols',
-		order: 1354,
+		order: 1356,
 		keywords: ['sparkle', 'symbol', 'shine'],
 	},
 	{
@@ -22511,7 +22531,7 @@ export const emojis: Emoji[] = [
 		name: 'eight-spoked asterisk',
 		value: '✳️',
 		category: 'symbols',
-		order: 1355,
+		order: 1357,
 		keywords: ['asterisk', 'eight', 'spoked'],
 	},
 	{
@@ -22519,7 +22539,7 @@ export const emojis: Emoji[] = [
 		name: 'cross mark button',
 		value: '❎',
 		category: 'symbols',
-		order: 1356,
+		order: 1358,
 		keywords: ['cross', 'mark', 'button'],
 	},
 	{
@@ -22527,7 +22547,7 @@ export const emojis: Emoji[] = [
 		name: 'globe with meridians',
 		value: '🌐',
 		category: 'symbols',
-		order: 1357,
+		order: 1359,
 		keywords: ['globe', 'meridians', 'world'],
 	},
 	{
@@ -22535,7 +22555,7 @@ export const emojis: Emoji[] = [
 		name: 'diamond with a dot',
 		value: '💠',
 		category: 'symbols',
-		order: 1358,
+		order: 1360,
 		keywords: ['diamond', 'dot', 'symbol'],
 	},
 	{
@@ -22543,7 +22563,7 @@ export const emojis: Emoji[] = [
 		name: 'circled m',
 		value: 'Ⓜ️',
 		category: 'symbols',
-		order: 1359,
+		order: 1361,
 		keywords: ['m', 'circled', 'letter'],
 	},
 	{
@@ -22551,7 +22571,7 @@ export const emojis: Emoji[] = [
 		name: 'cyclone',
 		value: '🌀',
 		category: 'symbols',
-		order: 1360,
+		order: 1362,
 		keywords: ['cyclone', 'storm', 'symbol'],
 	},
 	{
@@ -22559,7 +22579,7 @@ export const emojis: Emoji[] = [
 		name: 'zzz',
 		value: '💤',
 		category: 'symbols',
-		order: 1361,
+		order: 1363,
 		keywords: ['zzz', 'sleep', 'tired'],
 	},
 	{
@@ -22567,7 +22587,7 @@ export const emojis: Emoji[] = [
 		name: 'atm sign',
 		value: '🏧',
 		category: 'symbols',
-		order: 1362,
+		order: 1364,
 		keywords: ['atm', 'sign', 'money'],
 	},
 	{
@@ -22575,7 +22595,7 @@ export const emojis: Emoji[] = [
 		name: 'water closet',
 		value: '🚾',
 		category: 'symbols',
-		order: 1363,
+		order: 1365,
 		keywords: ['restroom', 'bathroom', 'toilet', 'water closet'],
 	},
 	{
@@ -22583,7 +22603,7 @@ export const emojis: Emoji[] = [
 		name: 'wheelchair symbol',
 		value: '♿',
 		category: 'symbols',
-		order: 1364,
+		order: 1366,
 		keywords: ['wheelchair', 'symbol', 'accessibility'],
 	},
 	{
@@ -22591,7 +22611,7 @@ export const emojis: Emoji[] = [
 		name: 'parking',
 		value: '🅿️',
 		category: 'symbols',
-		order: 1365,
+		order: 1367,
 		keywords: ['parking', 'symbol', 'car'],
 	},
 	{
@@ -22599,7 +22619,7 @@ export const emojis: Emoji[] = [
 		name: 'elevator',
 		value: '🛗',
 		category: 'symbols',
-		order: 1366,
+		order: 1368,
 		keywords: ['elevator', 'symbol', 'building'],
 	},
 	{
@@ -22607,7 +22627,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese vacant button',
 		value: '🈳',
 		category: 'symbols',
-		order: 1367,
+		order: 1369,
 		keywords: ['japanese', 'vacant', 'button'],
 	},
 	{
@@ -22615,7 +22635,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese service charge button',
 		value: '🈂️',
 		category: 'symbols',
-		order: 1368,
+		order: 1370,
 		keywords: ['japanese', 'service', 'charge'],
 	},
 	{
@@ -22623,7 +22643,7 @@ export const emojis: Emoji[] = [
 		name: 'passport control',
 		value: '🛂',
 		category: 'symbols',
-		order: 1369,
+		order: 1371,
 		keywords: ['passport', 'control', 'customs'],
 	},
 	{
@@ -22631,7 +22651,7 @@ export const emojis: Emoji[] = [
 		name: 'customs',
 		value: '🛃',
 		category: 'symbols',
-		order: 1370,
+		order: 1372,
 		keywords: ['customs', 'control', 'border'],
 	},
 	{
@@ -22639,7 +22659,7 @@ export const emojis: Emoji[] = [
 		name: 'baggage claim',
 		value: '🛄',
 		category: 'symbols',
-		order: 1371,
+		order: 1373,
 		keywords: ['baggage', 'claim', 'airport'],
 	},
 	{
@@ -22647,7 +22667,7 @@ export const emojis: Emoji[] = [
 		name: 'left luggage',
 		value: '🛅',
 		category: 'symbols',
-		order: 1372,
+		order: 1374,
 		keywords: ['luggage', 'left', 'airport'],
 	},
 	{
@@ -22655,7 +22675,7 @@ export const emojis: Emoji[] = [
 		name: 'wireless',
 		value: '🛜',
 		category: 'symbols',
-		order: 1373,
+		order: 1375,
 		keywords: ['wireless', 'symbol', 'signal'],
 	},
 	{
@@ -22663,7 +22683,7 @@ export const emojis: Emoji[] = [
 		name: 'men’s room',
 		value: '🚹',
 		category: 'symbols',
-		order: 1374,
+		order: 1376,
 		keywords: ['men', 'room', 'bathroom'],
 	},
 	{
@@ -22671,7 +22691,7 @@ export const emojis: Emoji[] = [
 		name: 'women’s room',
 		value: '🚺',
 		category: 'symbols',
-		order: 1375,
+		order: 1377,
 		keywords: ['women', 'room', 'bathroom'],
 	},
 	{
@@ -22679,7 +22699,7 @@ export const emojis: Emoji[] = [
 		name: 'baby symbol',
 		value: '🚼',
 		category: 'symbols',
-		order: 1376,
+		order: 1378,
 		keywords: ['baby', 'symbol', 'diaper'],
 	},
 	{
@@ -22687,7 +22707,7 @@ export const emojis: Emoji[] = [
 		name: 'transgender symbol',
 		value: '⚧',
 		category: 'symbols',
-		order: 1377,
+		order: 1379,
 		keywords: ['transgender', 'symbol', 'gender'],
 	},
 	{
@@ -22695,7 +22715,7 @@ export const emojis: Emoji[] = [
 		name: 'restroom',
 		value: '🚻',
 		category: 'symbols',
-		order: 1378,
+		order: 1380,
 		keywords: ['restroom', 'symbol', 'toilet'],
 	},
 	{
@@ -22703,7 +22723,7 @@ export const emojis: Emoji[] = [
 		name: 'litter in bin sign',
 		value: '🚮',
 		category: 'symbols',
-		order: 1379,
+		order: 1381,
 		keywords: ['litter', 'bin', 'sign'],
 	},
 	{
@@ -22711,7 +22731,7 @@ export const emojis: Emoji[] = [
 		name: 'cinema',
 		value: '🎦',
 		category: 'symbols',
-		order: 1380,
+		order: 1382,
 		keywords: ['cinema', 'movie', 'film'],
 	},
 	{
@@ -22719,7 +22739,7 @@ export const emojis: Emoji[] = [
 		name: 'antenna bars',
 		value: '📶',
 		category: 'symbols',
-		order: 1381,
+		order: 1383,
 		keywords: ['antenna', 'bars', 'signal'],
 	},
 	{
@@ -22727,7 +22747,7 @@ export const emojis: Emoji[] = [
 		name: 'japanese here button',
 		value: '🈁',
 		category: 'symbols',
-		order: 1382,
+		order: 1384,
 		keywords: ['japanese', 'here', 'button'],
 	},
 	{
@@ -22735,7 +22755,7 @@ export const emojis: Emoji[] = [
 		name: 'input symbols',
 		value: '🔣',
 		category: 'symbols',
-		order: 1383,
+		order: 1385,
 		keywords: ['input', 'symbols', 'typing'],
 	},
 	{
@@ -22743,7 +22763,7 @@ export const emojis: Emoji[] = [
 		name: 'information',
 		value: 'ℹ️',
 		category: 'symbols',
-		order: 1384,
+		order: 1386,
 		keywords: ['information', 'symbol', 'info'],
 	},
 	{
@@ -22751,7 +22771,7 @@ export const emojis: Emoji[] = [
 		name: 'input latin letters',
 		value: '🔤',
 		category: 'symbols',
-		order: 1385,
+		order: 1387,
 		keywords: ['input', 'latin', 'letters'],
 	},
 	{
@@ -22759,7 +22779,7 @@ export const emojis: Emoji[] = [
 		name: 'input latin lowercase',
 		value: '🔡',
 		category: 'symbols',
-		order: 1386,
+		order: 1388,
 		keywords: ['input', 'latin', 'lowercase'],
 	},
 	{
@@ -22767,7 +22787,7 @@ export const emojis: Emoji[] = [
 		name: 'input latin uppercase',
 		value: '🔠',
 		category: 'symbols',
-		order: 1387,
+		order: 1389,
 		keywords: ['input', 'latin', 'uppercase'],
 	},
 	{
@@ -22775,7 +22795,7 @@ export const emojis: Emoji[] = [
 		name: 'ng button',
 		value: '🆖',
 		category: 'symbols',
-		order: 1388,
+		order: 1390,
 		keywords: ['ng', 'button', 'no_good'],
 	},
 	{
@@ -22783,7 +22803,7 @@ export const emojis: Emoji[] = [
 		name: 'ok button',
 		value: '🆗',
 		category: 'symbols',
-		order: 1389,
+		order: 1391,
 		keywords: ['ok', 'button', 'okay'],
 	},
 	{
@@ -22791,7 +22811,7 @@ export const emojis: Emoji[] = [
 		name: 'up! button',
 		value: '🆙',
 		category: 'symbols',
-		order: 1390,
+		order: 1392,
 		keywords: ['up', 'button', 'rise'],
 	},
 	{
@@ -22799,7 +22819,7 @@ export const emojis: Emoji[] = [
 		name: 'cool button',
 		value: '🆒',
 		category: 'symbols',
-		order: 1391,
+		order: 1393,
 		keywords: ['cool', 'button', 'awesome'],
 	},
 	{
@@ -22807,7 +22827,7 @@ export const emojis: Emoji[] = [
 		name: 'new button',
 		value: '🆕',
 		category: 'symbols',
-		order: 1392,
+		order: 1394,
 		keywords: ['new', 'button', 'fresh'],
 	},
 	{
@@ -22815,7 +22835,7 @@ export const emojis: Emoji[] = [
 		name: 'free button',
 		value: '🆓',
 		category: 'symbols',
-		order: 1393,
+		order: 1395,
 		keywords: ['free', 'button', 'no_cost'],
 	},
 	{
@@ -22823,7 +22843,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 0',
 		value: '0️⃣',
 		category: 'symbols',
-		order: 1394,
+		order: 1396,
 		keywords: ['keycap', '0', 'zero'],
 	},
 	{
@@ -22831,7 +22851,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 1',
 		value: '1️⃣',
 		category: 'symbols',
-		order: 1395,
+		order: 1397,
 		keywords: ['keycap', '1', 'one'],
 	},
 	{
@@ -22839,7 +22859,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 2',
 		value: '2️⃣',
 		category: 'symbols',
-		order: 1396,
+		order: 1398,
 		keywords: ['keycap', '2', 'two'],
 	},
 	{
@@ -22847,7 +22867,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 3',
 		value: '3️⃣',
 		category: 'symbols',
-		order: 1397,
+		order: 1399,
 		keywords: ['keycap', '3', 'three'],
 	},
 	{
@@ -22855,7 +22875,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 4',
 		value: '4️⃣',
 		category: 'symbols',
-		order: 1398,
+		order: 1400,
 		keywords: ['keycap', '4', 'four'],
 	},
 	{
@@ -22863,7 +22883,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 5',
 		value: '5️⃣',
 		category: 'symbols',
-		order: 1399,
+		order: 1401,
 		keywords: ['keycap', '5', 'five'],
 	},
 	{
@@ -22871,7 +22891,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 6',
 		value: '6️⃣',
 		category: 'symbols',
-		order: 1400,
+		order: 1402,
 		keywords: ['keycap', '6', 'six'],
 	},
 	{
@@ -22879,7 +22899,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 7',
 		value: '7️⃣',
 		category: 'symbols',
-		order: 1401,
+		order: 1403,
 		keywords: ['keycap', '7', 'seven'],
 	},
 	{
@@ -22887,7 +22907,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 8',
 		value: '8️⃣',
 		category: 'symbols',
-		order: 1402,
+		order: 1404,
 		keywords: ['keycap', '8', 'eight'],
 	},
 	{
@@ -22895,7 +22915,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 9',
 		value: '9️⃣',
 		category: 'symbols',
-		order: 1403,
+		order: 1405,
 		keywords: ['keycap', '9', 'nine'],
 	},
 	{
@@ -22903,7 +22923,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap 10',
 		value: '🔟',
 		category: 'symbols',
-		order: 1404,
+		order: 1406,
 		keywords: ['keycap', '10', 'ten'],
 	},
 	{
@@ -22911,7 +22931,7 @@ export const emojis: Emoji[] = [
 		name: 'input numbers',
 		value: '🔢',
 		category: 'symbols',
-		order: 1405,
+		order: 1407,
 		keywords: ['input', 'numbers', 'typing'],
 	},
 	{
@@ -22919,7 +22939,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap #',
 		value: '#️⃣',
 		category: 'symbols',
-		order: 1406,
+		order: 1408,
 		keywords: ['keycap', 'hash', 'number'],
 	},
 	{
@@ -22927,7 +22947,7 @@ export const emojis: Emoji[] = [
 		name: 'keycap *',
 		value: '*️⃣',
 		category: 'symbols',
-		order: 1407,
+		order: 1409,
 		keywords: ['keycap', 'star', 'asterisk'],
 	},
 	{
@@ -22935,7 +22955,7 @@ export const emojis: Emoji[] = [
 		name: 'eject button',
 		value: '⏏️',
 		category: 'symbols',
-		order: 1408,
+		order: 1410,
 		keywords: ['eject', 'button', 'symbol'],
 	},
 	{
@@ -22943,7 +22963,7 @@ export const emojis: Emoji[] = [
 		name: 'play button',
 		value: '▶️',
 		category: 'symbols',
-		order: 1409,
+		order: 1411,
 		keywords: ['play', 'button', 'symbol'],
 	},
 	{
@@ -22951,7 +22971,7 @@ export const emojis: Emoji[] = [
 		name: 'pause button',
 		value: '⏸️',
 		category: 'symbols',
-		order: 1410,
+		order: 1412,
 		keywords: ['pause', 'button', 'symbol'],
 	},
 	{
@@ -22959,7 +22979,7 @@ export const emojis: Emoji[] = [
 		name: 'play or pause button',
 		value: '⏯️',
 		category: 'symbols',
-		order: 1411,
+		order: 1413,
 		keywords: ['play', 'pause', 'button'],
 	},
 	{
@@ -22967,7 +22987,7 @@ export const emojis: Emoji[] = [
 		name: 'stop button',
 		value: '⏹️',
 		category: 'symbols',
-		order: 1412,
+		order: 1414,
 		keywords: ['stop', 'button', 'symbol'],
 	},
 	{
@@ -22975,7 +22995,7 @@ export const emojis: Emoji[] = [
 		name: 'record button',
 		value: '⏺️',
 		category: 'symbols',
-		order: 1413,
+		order: 1415,
 		keywords: ['record', 'button', 'symbol'],
 	},
 	{
@@ -22983,7 +23003,7 @@ export const emojis: Emoji[] = [
 		name: 'next track button',
 		value: '⏭️',
 		category: 'symbols',
-		order: 1414,
+		order: 1416,
 		keywords: ['next', 'track', 'button'],
 	},
 	{
@@ -22991,7 +23011,7 @@ export const emojis: Emoji[] = [
 		name: 'last track button',
 		value: '⏮️',
 		category: 'symbols',
-		order: 1415,
+		order: 1417,
 		keywords: ['last', 'track', 'button'],
 	},
 	{
@@ -22999,7 +23019,7 @@ export const emojis: Emoji[] = [
 		name: 'fast forward button',
 		value: '⏩',
 		category: 'symbols',
-		order: 1416,
+		order: 1418,
 		keywords: ['fast', 'forward', 'button'],
 	},
 	{
@@ -23007,7 +23027,7 @@ export const emojis: Emoji[] = [
 		name: 'fast reverse button',
 		value: '⏪',
 		category: 'symbols',
-		order: 1417,
+		order: 1419,
 		keywords: ['fast', 'reverse', 'button'],
 	},
 	{
@@ -23015,7 +23035,7 @@ export const emojis: Emoji[] = [
 		name: 'fast up button',
 		value: '⏫',
 		category: 'symbols',
-		order: 1418,
+		order: 1420,
 		keywords: ['fast', 'up', 'button'],
 	},
 	{
@@ -23023,7 +23043,7 @@ export const emojis: Emoji[] = [
 		name: 'fast down button',
 		value: '⏬',
 		category: 'symbols',
-		order: 1419,
+		order: 1421,
 		keywords: ['fast', 'down', 'button'],
 	},
 	{
@@ -23031,7 +23051,7 @@ export const emojis: Emoji[] = [
 		name: 'reverse button',
 		value: '◀️',
 		category: 'symbols',
-		order: 1420,
+		order: 1422,
 		keywords: ['reverse', 'button', 'symbol'],
 	},
 	{
@@ -23039,7 +23059,7 @@ export const emojis: Emoji[] = [
 		name: 'upwards button',
 		value: '🔼',
 		category: 'symbols',
-		order: 1421,
+		order: 1423,
 		keywords: ['upwards', 'button', 'symbol'],
 	},
 	{
@@ -23047,7 +23067,7 @@ export const emojis: Emoji[] = [
 		name: 'downwards button',
 		value: '🔽',
 		category: 'symbols',
-		order: 1422,
+		order: 1424,
 		keywords: ['downwards', 'button', 'symbol'],
 	},
 	{
@@ -23055,7 +23075,7 @@ export const emojis: Emoji[] = [
 		name: 'right arrow',
 		value: '➡️',
 		category: 'symbols',
-		order: 1423,
+		order: 1425,
 		keywords: ['right', 'arrow', 'direction'],
 	},
 	{
@@ -23063,7 +23083,7 @@ export const emojis: Emoji[] = [
 		name: 'left arrow',
 		value: '⬅️',
 		category: 'symbols',
-		order: 1424,
+		order: 1426,
 		keywords: ['left', 'arrow', 'direction'],
 	},
 	{
@@ -23071,7 +23091,7 @@ export const emojis: Emoji[] = [
 		name: 'up arrow',
 		value: '⬆️',
 		category: 'symbols',
-		order: 1425,
+		order: 1427,
 		keywords: ['up', 'arrow', 'direction'],
 	},
 	{
@@ -23079,7 +23099,7 @@ export const emojis: Emoji[] = [
 		name: 'down arrow',
 		value: '⬇️',
 		category: 'symbols',
-		order: 1426,
+		order: 1428,
 		keywords: ['down', 'arrow', 'direction'],
 	},
 	{
@@ -23087,7 +23107,7 @@ export const emojis: Emoji[] = [
 		name: 'up-right arrow',
 		value: '↗️',
 		category: 'symbols',
-		order: 1427,
+		order: 1429,
 		keywords: ['up-right', 'arrow', 'direction'],
 	},
 	{
@@ -23095,7 +23115,7 @@ export const emojis: Emoji[] = [
 		name: 'down-right arrow',
 		value: '↘️',
 		category: 'symbols',
-		order: 1428,
+		order: 1430,
 		keywords: ['down-right', 'arrow', 'direction'],
 	},
 	{
@@ -23103,7 +23123,7 @@ export const emojis: Emoji[] = [
 		name: 'down-left arrow',
 		value: '↙️',
 		category: 'symbols',
-		order: 1429,
+		order: 1431,
 		keywords: ['down-left', 'arrow', 'direction'],
 	},
 	{
@@ -23111,7 +23131,7 @@ export const emojis: Emoji[] = [
 		name: 'up-left arrow',
 		value: '↖️',
 		category: 'symbols',
-		order: 1430,
+		order: 1432,
 		keywords: ['up-left', 'arrow', 'direction'],
 	},
 	{
@@ -23119,7 +23139,7 @@ export const emojis: Emoji[] = [
 		name: 'up-down arrow',
 		value: '↕️',
 		category: 'symbols',
-		order: 1431,
+		order: 1433,
 		keywords: ['up-down', 'arrow', 'direction'],
 	},
 	{
@@ -23127,7 +23147,7 @@ export const emojis: Emoji[] = [
 		name: 'left-right arrow',
 		value: '↔️',
 		category: 'symbols',
-		order: 1432,
+		order: 1434,
 		keywords: ['left-right', 'arrow', 'direction'],
 	},
 	{
@@ -23135,7 +23155,7 @@ export const emojis: Emoji[] = [
 		name: 'right arrow curving left',
 		value: '↪️',
 		category: 'symbols',
-		order: 1433,
+		order: 1435,
 		keywords: ['right', 'arrow', 'curving_left'],
 	},
 	{
@@ -23143,7 +23163,7 @@ export const emojis: Emoji[] = [
 		name: 'left arrow curving right',
 		value: '↩️',
 		category: 'symbols',
-		order: 1434,
+		order: 1436,
 		keywords: ['left', 'arrow', 'curving_right'],
 	},
 	{
@@ -23151,7 +23171,7 @@ export const emojis: Emoji[] = [
 		name: 'right arrow curving up',
 		value: '⤴️',
 		category: 'symbols',
-		order: 1435,
+		order: 1437,
 		keywords: ['right', 'arrow', 'curving_up'],
 	},
 	{
@@ -23159,7 +23179,7 @@ export const emojis: Emoji[] = [
 		name: 'right arrow curving down',
 		value: '⤵️',
 		category: 'symbols',
-		order: 1436,
+		order: 1438,
 		keywords: ['right', 'arrow', 'curving_down'],
 	},
 	{
@@ -23167,7 +23187,7 @@ export const emojis: Emoji[] = [
 		name: 'shuffle tracks button',
 		value: '🔀',
 		category: 'symbols',
-		order: 1437,
+		order: 1439,
 		keywords: ['shuffle', 'tracks', 'button'],
 	},
 	{
@@ -23175,7 +23195,7 @@ export const emojis: Emoji[] = [
 		name: 'repeat button',
 		value: '🔁',
 		category: 'symbols',
-		order: 1438,
+		order: 1440,
 		keywords: ['repeat', 'button', 'symbol'],
 	},
 	{
@@ -23183,7 +23203,7 @@ export const emojis: Emoji[] = [
 		name: 'repeat single button',
 		value: '🔂',
 		category: 'symbols',
-		order: 1439,
+		order: 1441,
 		keywords: ['repeat', 'single', 'button'],
 	},
 	{
@@ -23191,7 +23211,7 @@ export const emojis: Emoji[] = [
 		name: 'clockwise vertical arrows',
 		value: '🔄',
 		category: 'symbols',
-		order: 1440,
+		order: 1442,
 		keywords: ['clockwise', 'vertical', 'arrows'],
 	},
 	{
@@ -23199,7 +23219,7 @@ export const emojis: Emoji[] = [
 		name: 'counterclockwise arrows button',
 		value: '🔃',
 		category: 'symbols',
-		order: 1441,
+		order: 1443,
 		keywords: ['counterclockwise', 'arrows', 'button'],
 	},
 	{
@@ -23207,7 +23227,7 @@ export const emojis: Emoji[] = [
 		name: 'musical note',
 		value: '🎵',
 		category: 'symbols',
-		order: 1442,
+		order: 1444,
 		keywords: ['musical', 'note', 'music'],
 	},
 	{
@@ -23215,7 +23235,7 @@ export const emojis: Emoji[] = [
 		name: 'musical notes',
 		value: '🎶',
 		category: 'symbols',
-		order: 1443,
+		order: 1445,
 		keywords: ['musical', 'notes', 'music'],
 	},
 	{
@@ -23223,7 +23243,7 @@ export const emojis: Emoji[] = [
 		name: 'heavy plus sign',
 		value: '➕',
 		category: 'symbols',
-		order: 1444,
+		order: 1446,
 		keywords: ['plus', 'sign', 'addition'],
 	},
 	{
@@ -23231,7 +23251,7 @@ export const emojis: Emoji[] = [
 		name: 'heavy minus sign',
 		value: '➖',
 		category: 'symbols',
-		order: 1445,
+		order: 1447,
 		keywords: ['minus', 'sign', 'subtraction'],
 	},
 	{
@@ -23239,7 +23259,7 @@ export const emojis: Emoji[] = [
 		name: 'heavy division sign',
 		value: '➗',
 		category: 'symbols',
-		order: 1446,
+		order: 1448,
 		keywords: ['division', 'sign', 'division'],
 	},
 	{
@@ -23247,7 +23267,7 @@ export const emojis: Emoji[] = [
 		name: 'heavy multiplication x',
 		value: '✖️',
 		category: 'symbols',
-		order: 1447,
+		order: 1449,
 		keywords: ['multiplication', 'x', 'symbol'],
 	},
 	{
@@ -23255,7 +23275,7 @@ export const emojis: Emoji[] = [
 		name: 'heavy equals sign',
 		value: '🟰',
 		category: 'symbols',
-		order: 1448,
+		order: 1450,
 		keywords: ['equals', 'sign', 'symbol'],
 	},
 	{
@@ -23263,7 +23283,7 @@ export const emojis: Emoji[] = [
 		name: 'infinity',
 		value: '♾️',
 		category: 'symbols',
-		order: 1449,
+		order: 1451,
 		keywords: ['infinity', 'symbol', 'endless'],
 	},
 	{
@@ -23271,7 +23291,7 @@ export const emojis: Emoji[] = [
 		name: 'heavy dollar sign',
 		value: '💲',
 		category: 'symbols',
-		order: 1450,
+		order: 1452,
 		keywords: ['dollar', 'sign', 'money'],
 	},
 	{
@@ -23279,7 +23299,7 @@ export const emojis: Emoji[] = [
 		name: 'currency exchange',
 		value: '💱',
 		category: 'symbols',
-		order: 1451,
+		order: 1453,
 		keywords: ['currency', 'exchange', 'money'],
 	},
 	{
@@ -23287,7 +23307,7 @@ export const emojis: Emoji[] = [
 		name: 'trade mark',
 		value: '™️',
 		category: 'symbols',
-		order: 1452,
+		order: 1454,
 		keywords: ['trade', 'mark', 'trademark'],
 	},
 	{
@@ -23295,7 +23315,7 @@ export const emojis: Emoji[] = [
 		name: 'copyright',
 		value: '©️',
 		category: 'symbols',
-		order: 1453,
+		order: 1455,
 		keywords: ['copyright', 'symbol', 'intellectual_property'],
 	},
 	{
@@ -23303,7 +23323,7 @@ export const emojis: Emoji[] = [
 		name: 'registered',
 		value: '®️',
 		category: 'symbols',
-		order: 1454,
+		order: 1456,
 		keywords: ['registered', 'symbol', 'trademark'],
 	},
 	{
@@ -23311,7 +23331,7 @@ export const emojis: Emoji[] = [
 		name: 'eye in speech bubble',
 		value: '👁️‍🗨️',
 		category: 'symbols',
-		order: 1455,
+		order: 1457,
 		keywords: ['eye', 'speech', 'bubble'],
 	},
 	{
@@ -23319,7 +23339,7 @@ export const emojis: Emoji[] = [
 		name: 'end button',
 		value: '🔚',
 		category: 'symbols',
-		order: 1456,
+		order: 1458,
 		keywords: ['end', 'button', 'symbol'],
 	},
 	{
@@ -23327,7 +23347,7 @@ export const emojis: Emoji[] = [
 		name: 'back arrow',
 		value: '🔙',
 		category: 'symbols',
-		order: 1457,
+		order: 1459,
 		keywords: ['back', 'arrow', 'symbol'],
 	},
 	{
@@ -23335,7 +23355,7 @@ export const emojis: Emoji[] = [
 		name: 'on! arrow',
 		value: '🔛',
 		category: 'symbols',
-		order: 1458,
+		order: 1460,
 		keywords: ['on', 'arrow', 'symbol'],
 	},
 	{
@@ -23343,7 +23363,7 @@ export const emojis: Emoji[] = [
 		name: 'top arrow',
 		value: '🔝',
 		category: 'symbols',
-		order: 1459,
+		order: 1461,
 		keywords: ['top', 'arrow', 'symbol'],
 	},
 	{
@@ -23351,7 +23371,7 @@ export const emojis: Emoji[] = [
 		name: 'soon arrow',
 		value: '🔜',
 		category: 'symbols',
-		order: 1460,
+		order: 1462,
 		keywords: ['soon', 'arrow', 'symbol'],
 	},
 	{
@@ -23359,7 +23379,7 @@ export const emojis: Emoji[] = [
 		name: 'wavy dash',
 		value: '〰️',
 		category: 'symbols',
-		order: 1461,
+		order: 1463,
 		keywords: ['wavy', 'dash', 'symbol'],
 	},
 	{
@@ -23367,7 +23387,7 @@ export const emojis: Emoji[] = [
 		name: 'curly loop',
 		value: '➰',
 		category: 'symbols',
-		order: 1462,
+		order: 1464,
 		keywords: ['curly', 'loop', 'symbol'],
 	},
 	{
@@ -23375,7 +23395,7 @@ export const emojis: Emoji[] = [
 		name: 'double curly loop',
 		value: '➿',
 		category: 'symbols',
-		order: 1463,
+		order: 1465,
 		keywords: ['double', 'curly', 'loop'],
 	},
 	{
@@ -23383,7 +23403,7 @@ export const emojis: Emoji[] = [
 		name: 'check mark',
 		value: '✔️',
 		category: 'symbols',
-		order: 1464,
+		order: 1466,
 		keywords: ['check', 'mark', 'symbol'],
 	},
 	{
@@ -23391,7 +23411,7 @@ export const emojis: Emoji[] = [
 		name: 'check box with check',
 		value: '☑️',
 		category: 'symbols',
-		order: 1465,
+		order: 1467,
 		keywords: ['check', 'box', 'symbol'],
 	},
 	{
@@ -23399,7 +23419,7 @@ export const emojis: Emoji[] = [
 		name: 'radio button',
 		value: '🔘',
 		category: 'symbols',
-		order: 1466,
+		order: 1468,
 		keywords: ['radio', 'button', 'symbol'],
 	},
 	{
@@ -23407,7 +23427,7 @@ export const emojis: Emoji[] = [
 		name: 'red circle',
 		value: '🔴',
 		category: 'symbols',
-		order: 1467,
+		order: 1469,
 		keywords: ['red', 'circle', 'symbol'],
 	},
 	{
@@ -23415,7 +23435,7 @@ export const emojis: Emoji[] = [
 		name: 'orange circle',
 		value: '🟠',
 		category: 'symbols',
-		order: 1468,
+		order: 1470,
 		keywords: ['orange', 'circle', 'symbol'],
 	},
 	{
@@ -23423,7 +23443,7 @@ export const emojis: Emoji[] = [
 		name: 'yellow circle',
 		value: '🟡',
 		category: 'symbols',
-		order: 1469,
+		order: 1471,
 		keywords: ['yellow', 'circle', 'symbol'],
 	},
 	{
@@ -23431,7 +23451,7 @@ export const emojis: Emoji[] = [
 		name: 'green circle',
 		value: '🟢',
 		category: 'symbols',
-		order: 1470,
+		order: 1472,
 		keywords: ['green', 'circle', 'symbol'],
 	},
 	{
@@ -23439,7 +23459,7 @@ export const emojis: Emoji[] = [
 		name: 'blue circle',
 		value: '🔵',
 		category: 'symbols',
-		order: 1471,
+		order: 1473,
 		keywords: ['blue', 'circle', 'symbol'],
 	},
 	{
@@ -23447,7 +23467,7 @@ export const emojis: Emoji[] = [
 		name: 'purple circle',
 		value: '🟣',
 		category: 'symbols',
-		order: 1472,
+		order: 1474,
 		keywords: ['purple', 'circle', 'symbol'],
 	},
 	{
@@ -23455,7 +23475,7 @@ export const emojis: Emoji[] = [
 		name: 'black circle',
 		value: '⚫',
 		category: 'symbols',
-		order: 1473,
+		order: 1475,
 		keywords: ['black', 'circle', 'symbol'],
 	},
 	{
@@ -23463,7 +23483,7 @@ export const emojis: Emoji[] = [
 		name: 'white circle',
 		value: '⚪',
 		category: 'symbols',
-		order: 1474,
+		order: 1476,
 		keywords: ['white', 'circle', 'symbol'],
 	},
 	{
@@ -23471,7 +23491,7 @@ export const emojis: Emoji[] = [
 		name: 'brown circle',
 		value: '🟤',
 		category: 'symbols',
-		order: 1475,
+		order: 1477,
 		keywords: ['brown', 'circle', 'symbol'],
 	},
 	{
@@ -23479,7 +23499,7 @@ export const emojis: Emoji[] = [
 		name: 'red triangle pointed up',
 		value: '🔺',
 		category: 'symbols',
-		order: 1476,
+		order: 1478,
 		keywords: ['red', 'triangle', 'up'],
 	},
 	{
@@ -23487,7 +23507,7 @@ export const emojis: Emoji[] = [
 		name: 'red triangle pointed down',
 		value: '🔻',
 		category: 'symbols',
-		order: 1477,
+		order: 1479,
 		keywords: ['red', 'triangle', 'down'],
 	},
 	{
@@ -23495,7 +23515,7 @@ export const emojis: Emoji[] = [
 		name: 'small orange diamond',
 		value: '🔸',
 		category: 'symbols',
-		order: 1478,
+		order: 1480,
 		keywords: ['small', 'orange', 'diamond'],
 	},
 	{
@@ -23503,7 +23523,7 @@ export const emojis: Emoji[] = [
 		name: 'small blue diamond',
 		value: '🔹',
 		category: 'symbols',
-		order: 1479,
+		order: 1481,
 		keywords: ['small', 'blue', 'diamond'],
 	},
 	{
@@ -23511,7 +23531,7 @@ export const emojis: Emoji[] = [
 		name: 'large orange diamond',
 		value: '🔶',
 		category: 'symbols',
-		order: 1480,
+		order: 1482,
 		keywords: ['large', 'orange', 'diamond'],
 	},
 	{
@@ -23519,7 +23539,7 @@ export const emojis: Emoji[] = [
 		name: 'large blue diamond',
 		value: '🔷',
 		category: 'symbols',
-		order: 1481,
+		order: 1483,
 		keywords: ['large', 'blue', 'diamond'],
 	},
 	{
@@ -23527,7 +23547,7 @@ export const emojis: Emoji[] = [
 		name: 'white square button',
 		value: '🔳',
 		category: 'symbols',
-		order: 1482,
+		order: 1484,
 		keywords: ['white', 'square', 'button'],
 	},
 	{
@@ -23535,7 +23555,7 @@ export const emojis: Emoji[] = [
 		name: 'black square button',
 		value: '🔲',
 		category: 'symbols',
-		order: 1483,
+		order: 1485,
 		keywords: ['black', 'square', 'button'],
 	},
 	{
@@ -23543,7 +23563,7 @@ export const emojis: Emoji[] = [
 		name: 'black small square',
 		value: '▪️',
 		category: 'symbols',
-		order: 1484,
+		order: 1486,
 		keywords: ['black', 'small', 'square'],
 	},
 	{
@@ -23551,7 +23571,7 @@ export const emojis: Emoji[] = [
 		name: 'white small square',
 		value: '▫️',
 		category: 'symbols',
-		order: 1485,
+		order: 1487,
 		keywords: ['white', 'small', 'square'],
 	},
 	{
@@ -23559,7 +23579,7 @@ export const emojis: Emoji[] = [
 		name: 'black medium-small square',
 		value: '◾',
 		category: 'symbols',
-		order: 1486,
+		order: 1488,
 		keywords: ['black', 'medium-small', 'square'],
 	},
 	{
@@ -23567,7 +23587,7 @@ export const emojis: Emoji[] = [
 		name: 'white medium-small square',
 		value: '◽',
 		category: 'symbols',
-		order: 1487,
+		order: 1489,
 		keywords: ['white', 'medium-small', 'square'],
 	},
 	{
@@ -23575,7 +23595,7 @@ export const emojis: Emoji[] = [
 		name: 'black medium square',
 		value: '◼️',
 		category: 'symbols',
-		order: 1488,
+		order: 1490,
 		keywords: ['black', 'medium', 'square'],
 	},
 	{
@@ -23583,7 +23603,7 @@ export const emojis: Emoji[] = [
 		name: 'white medium square',
 		value: '◻️',
 		category: 'symbols',
-		order: 1489,
+		order: 1491,
 		keywords: ['white', 'medium', 'square'],
 	},
 	{
@@ -23591,7 +23611,7 @@ export const emojis: Emoji[] = [
 		name: 'red square',
 		value: '🟥',
 		category: 'symbols',
-		order: 1490,
+		order: 1492,
 		keywords: ['red', 'square', 'symbol'],
 	},
 	{
@@ -23599,7 +23619,7 @@ export const emojis: Emoji[] = [
 		name: 'orange square',
 		value: '🟧',
 		category: 'symbols',
-		order: 1491,
+		order: 1493,
 		keywords: ['orange', 'square', 'symbol'],
 	},
 	{
@@ -23607,7 +23627,7 @@ export const emojis: Emoji[] = [
 		name: 'yellow square',
 		value: '🟨',
 		category: 'symbols',
-		order: 1492,
+		order: 1494,
 		keywords: ['yellow', 'square', 'symbol'],
 	},
 	{
@@ -23615,7 +23635,7 @@ export const emojis: Emoji[] = [
 		name: 'green square',
 		value: '🟩',
 		category: 'symbols',
-		order: 1493,
+		order: 1495,
 		keywords: ['green', 'square', 'symbol'],
 	},
 	{
@@ -23623,7 +23643,7 @@ export const emojis: Emoji[] = [
 		name: 'blue square',
 		value: '🟦',
 		category: 'symbols',
-		order: 1494,
+		order: 1496,
 		keywords: ['blue', 'square', 'symbol'],
 	},
 	{
@@ -23631,7 +23651,7 @@ export const emojis: Emoji[] = [
 		name: 'purple square',
 		value: '🟪',
 		category: 'symbols',
-		order: 1495,
+		order: 1497,
 		keywords: ['purple', 'square', 'symbol'],
 	},
 	{
@@ -23639,7 +23659,7 @@ export const emojis: Emoji[] = [
 		name: 'black large square',
 		value: '⬛',
 		category: 'symbols',
-		order: 1496,
+		order: 1498,
 		keywords: ['black', 'large', 'square'],
 	},
 	{
@@ -23647,7 +23667,7 @@ export const emojis: Emoji[] = [
 		name: 'white large square',
 		value: '⬜',
 		category: 'symbols',
-		order: 1497,
+		order: 1499,
 		keywords: ['white', 'large', 'square'],
 	},
 	{
@@ -23655,7 +23675,7 @@ export const emojis: Emoji[] = [
 		name: 'brown square',
 		value: '🟫',
 		category: 'symbols',
-		order: 1498,
+		order: 1500,
 		keywords: ['brown', 'square', 'symbol'],
 	},
 	{
@@ -23663,7 +23683,7 @@ export const emojis: Emoji[] = [
 		name: 'speaker low volume',
 		value: '🔈',
 		category: 'symbols',
-		order: 1499,
+		order: 1501,
 		keywords: ['speaker', 'low', 'volume'],
 	},
 	{
@@ -23671,7 +23691,7 @@ export const emojis: Emoji[] = [
 		name: 'muted speaker',
 		value: '🔇',
 		category: 'symbols',
-		order: 1500,
+		order: 1502,
 		keywords: ['muted', 'speaker', 'volume'],
 	},
 	{
@@ -23679,7 +23699,7 @@ export const emojis: Emoji[] = [
 		name: 'speaker medium volume',
 		value: '🔉',
 		category: 'symbols',
-		order: 1501,
+		order: 1503,
 		keywords: ['speaker', 'medium', 'volume'],
 	},
 	{
@@ -23687,7 +23707,7 @@ export const emojis: Emoji[] = [
 		name: 'speaker high volume',
 		value: '🔊',
 		category: 'symbols',
-		order: 1502,
+		order: 1504,
 		keywords: ['speaker', 'high', 'volume'],
 	},
 	{
@@ -23695,7 +23715,7 @@ export const emojis: Emoji[] = [
 		name: 'bell',
 		value: '🔔',
 		category: 'symbols',
-		order: 1503,
+		order: 1505,
 		keywords: ['bell', 'sound', 'notification'],
 	},
 	{
@@ -23703,7 +23723,7 @@ export const emojis: Emoji[] = [
 		name: 'bell with slash',
 		value: '🔕',
 		category: 'symbols',
-		order: 1504,
+		order: 1506,
 		keywords: ['bell', 'slash', 'mute'],
 	},
 	{
@@ -23711,7 +23731,7 @@ export const emojis: Emoji[] = [
 		name: 'megaphone',
 		value: '📣',
 		category: 'symbols',
-		order: 1505,
+		order: 1507,
 		keywords: ['megaphone', 'announcement', 'sound'],
 	},
 	{
@@ -23719,7 +23739,7 @@ export const emojis: Emoji[] = [
 		name: 'loudspeaker',
 		value: '📢',
 		category: 'symbols',
-		order: 1506,
+		order: 1508,
 		keywords: ['loudspeaker', 'announcement', 'sound'],
 	},
 	{
@@ -23727,7 +23747,7 @@ export const emojis: Emoji[] = [
 		name: 'speech balloon',
 		value: '💬',
 		category: 'symbols',
-		order: 1507,
+		order: 1509,
 		keywords: ['speech', 'balloon', 'talk'],
 	},
 	{
@@ -23735,7 +23755,7 @@ export const emojis: Emoji[] = [
 		name: 'thought balloon',
 		value: '💭',
 		category: 'symbols',
-		order: 1508,
+		order: 1510,
 		keywords: ['thought', 'balloon', 'think'],
 	},
 	{
@@ -23743,7 +23763,7 @@ export const emojis: Emoji[] = [
 		name: 'right anger bubble',
 		value: '🗯️',
 		category: 'symbols',
-		order: 1509,
+		order: 1511,
 		keywords: ['right', 'anger', 'bubble'],
 	},
 	{
@@ -23751,7 +23771,7 @@ export const emojis: Emoji[] = [
 		name: 'spade suit',
 		value: '♠️',
 		category: 'symbols',
-		order: 1510,
+		order: 1512,
 		keywords: ['spade', 'suit', 'card'],
 	},
 	{
@@ -23759,7 +23779,7 @@ export const emojis: Emoji[] = [
 		name: 'club suit',
 		value: '♣️',
 		category: 'symbols',
-		order: 1511,
+		order: 1513,
 		keywords: ['club', 'suit', 'card'],
 	},
 	{
@@ -23767,7 +23787,7 @@ export const emojis: Emoji[] = [
 		name: 'heart suit',
 		value: '♥️',
 		category: 'symbols',
-		order: 1512,
+		order: 1514,
 		keywords: ['heart', 'suit', 'card'],
 	},
 	{
@@ -23775,7 +23795,7 @@ export const emojis: Emoji[] = [
 		name: 'diamond suit',
 		value: '♦️',
 		category: 'symbols',
-		order: 1513,
+		order: 1515,
 		keywords: ['diamond', 'suit', 'card'],
 	},
 	{
@@ -23783,7 +23803,7 @@ export const emojis: Emoji[] = [
 		name: 'joker',
 		value: '🃏',
 		category: 'symbols',
-		order: 1514,
+		order: 1516,
 		keywords: ['joker', 'card', 'deck'],
 	},
 	{
@@ -23791,7 +23811,7 @@ export const emojis: Emoji[] = [
 		name: 'flower playing cards',
 		value: '🎴',
 		category: 'symbols',
-		order: 1515,
+		order: 1517,
 		keywords: ['flower', 'playing', 'cards'],
 	},
 	{
@@ -23799,7 +23819,7 @@ export const emojis: Emoji[] = [
 		name: 'mahjong red dragon',
 		value: '🀄',
 		category: 'symbols',
-		order: 1516,
+		order: 1518,
 		keywords: ['mahjong', 'red', 'dragon'],
 	},
 	{
@@ -23807,7 +23827,7 @@ export const emojis: Emoji[] = [
 		name: 'one o’clock',
 		value: '🕐',
 		category: 'symbols',
-		order: 1517,
+		order: 1519,
 		keywords: ['one', 'o’clock', 'time'],
 	},
 	{
@@ -23815,7 +23835,7 @@ export const emojis: Emoji[] = [
 		name: 'two o’clock',
 		value: '🕑',
 		category: 'symbols',
-		order: 1518,
+		order: 1520,
 		keywords: ['two', 'o’clock', 'time'],
 	},
 	{
@@ -23823,7 +23843,7 @@ export const emojis: Emoji[] = [
 		name: 'three o’clock',
 		value: '🕒',
 		category: 'symbols',
-		order: 1519,
+		order: 1521,
 		keywords: ['three', 'o’clock', 'time'],
 	},
 	{
@@ -23831,7 +23851,7 @@ export const emojis: Emoji[] = [
 		name: 'four o’clock',
 		value: '🕓',
 		category: 'symbols',
-		order: 1520,
+		order: 1522,
 		keywords: ['four', 'o’clock', 'time'],
 	},
 	{
@@ -23839,7 +23859,7 @@ export const emojis: Emoji[] = [
 		name: 'five o’clock',
 		value: '🕔',
 		category: 'symbols',
-		order: 1521,
+		order: 1523,
 		keywords: ['five', 'o’clock', 'time'],
 	},
 	{
@@ -23847,7 +23867,7 @@ export const emojis: Emoji[] = [
 		name: 'six o’clock',
 		value: '🕕',
 		category: 'symbols',
-		order: 1522,
+		order: 1524,
 		keywords: ['six', 'o’clock', 'time'],
 	},
 	{
@@ -23855,7 +23875,7 @@ export const emojis: Emoji[] = [
 		name: 'seven o’clock',
 		value: '🕖',
 		category: 'symbols',
-		order: 1523,
+		order: 1525,
 		keywords: ['seven', 'o’clock', 'time'],
 	},
 	{
@@ -23863,7 +23883,7 @@ export const emojis: Emoji[] = [
 		name: 'eight o’clock',
 		value: '🕗',
 		category: 'symbols',
-		order: 1524,
+		order: 1526,
 		keywords: ['eight', 'o’clock', 'time'],
 	},
 	{
@@ -23871,7 +23891,7 @@ export const emojis: Emoji[] = [
 		name: 'nine o’clock',
 		value: '🕘',
 		category: 'symbols',
-		order: 1525,
+		order: 1527,
 		keywords: ['nine', 'o’clock', 'time'],
 	},
 	{
@@ -23879,7 +23899,7 @@ export const emojis: Emoji[] = [
 		name: 'ten o’clock',
 		value: '🕙',
 		category: 'symbols',
-		order: 1526,
+		order: 1528,
 		keywords: ['ten', 'o’clock', 'time'],
 	},
 	{
@@ -23887,7 +23907,7 @@ export const emojis: Emoji[] = [
 		name: 'eleven o’clock',
 		value: '🕚',
 		category: 'symbols',
-		order: 1527,
+		order: 1529,
 		keywords: ['eleven', 'o’clock', 'time'],
 	},
 	{
@@ -23895,7 +23915,7 @@ export const emojis: Emoji[] = [
 		name: 'twelve o’clock',
 		value: '🕛',
 		category: 'symbols',
-		order: 1528,
+		order: 1530,
 		keywords: ['twelve', 'o’clock', 'time'],
 	},
 	{
@@ -23903,7 +23923,7 @@ export const emojis: Emoji[] = [
 		name: 'one-thirty',
 		value: '🕜',
 		category: 'symbols',
-		order: 1529,
+		order: 1531,
 		keywords: ['one', 'thirty', 'time'],
 	},
 	{
@@ -23911,7 +23931,7 @@ export const emojis: Emoji[] = [
 		name: 'two-thirty',
 		value: '🕝',
 		category: 'symbols',
-		order: 1530,
+		order: 1532,
 		keywords: ['two', 'thirty', 'time'],
 	},
 	{
@@ -23919,7 +23939,7 @@ export const emojis: Emoji[] = [
 		name: 'three-thirty',
 		value: '🕞',
 		category: 'symbols',
-		order: 1531,
+		order: 1533,
 		keywords: ['three', 'thirty', 'time'],
 	},
 	{
@@ -23927,7 +23947,7 @@ export const emojis: Emoji[] = [
 		name: 'four-thirty',
 		value: '🕟',
 		category: 'symbols',
-		order: 1532,
+		order: 1534,
 		keywords: ['four', 'thirty', 'time'],
 	},
 	{
@@ -23935,7 +23955,7 @@ export const emojis: Emoji[] = [
 		name: 'five-thirty',
 		value: '🕠',
 		category: 'symbols',
-		order: 1533,
+		order: 1535,
 		keywords: ['five', 'thirty', 'time'],
 	},
 	{
@@ -23943,7 +23963,7 @@ export const emojis: Emoji[] = [
 		name: 'six-thirty',
 		value: '🕡',
 		category: 'symbols',
-		order: 1534,
+		order: 1536,
 		keywords: ['six', 'thirty', 'time'],
 	},
 	{
@@ -23951,7 +23971,7 @@ export const emojis: Emoji[] = [
 		name: 'seven-thirty',
 		value: '🕢',
 		category: 'symbols',
-		order: 1535,
+		order: 1537,
 		keywords: ['seven', 'thirty', 'time'],
 	},
 	{
@@ -23959,7 +23979,7 @@ export const emojis: Emoji[] = [
 		name: 'eight-thirty',
 		value: '🕣',
 		category: 'symbols',
-		order: 1536,
+		order: 1538,
 		keywords: ['eight', 'thirty', 'time'],
 	},
 	{
@@ -23967,7 +23987,7 @@ export const emojis: Emoji[] = [
 		name: 'nine-thirty',
 		value: '🕤',
 		category: 'symbols',
-		order: 1537,
+		order: 1539,
 		keywords: ['nine', 'thirty', 'time'],
 	},
 	{
@@ -23975,7 +23995,7 @@ export const emojis: Emoji[] = [
 		name: 'ten-thirty',
 		value: '🕥',
 		category: 'symbols',
-		order: 1538,
+		order: 1540,
 		keywords: ['ten', 'thirty', 'time'],
 	},
 	{
@@ -23983,7 +24003,7 @@ export const emojis: Emoji[] = [
 		name: 'eleven-thirty',
 		value: '🕦',
 		category: 'symbols',
-		order: 1539,
+		order: 1541,
 		keywords: ['eleven', 'thirty', 'time'],
 	},
 	{
@@ -23991,7 +24011,7 @@ export const emojis: Emoji[] = [
 		name: 'twelve-thirty',
 		value: '🕧',
 		category: 'symbols',
-		order: 1540,
+		order: 1542,
 		keywords: ['twelve', 'thirty', 'time'],
 	},
 	{
@@ -23999,7 +24019,7 @@ export const emojis: Emoji[] = [
 		name: 'white flag',
 		value: '🏳️',
 		category: 'flags',
-		order: 1541,
+		order: 1543,
 		keywords: ['white', 'flag', 'surrender'],
 	},
 	{
@@ -24007,7 +24027,7 @@ export const emojis: Emoji[] = [
 		name: 'black flag',
 		value: '🏴',
 		category: 'flags',
-		order: 1542,
+		order: 1544,
 		keywords: ['black', 'flag'],
 	},
 	{
@@ -24015,7 +24035,7 @@ export const emojis: Emoji[] = [
 		name: 'pirate flag',
 		value: '🏴‍☠️',
 		category: 'flags',
-		order: 1543,
+		order: 1545,
 		keywords: ['pirate', 'flag', 'skull'],
 	},
 	{
@@ -24023,7 +24043,7 @@ export const emojis: Emoji[] = [
 		name: 'chequered flag',
 		value: '🏁',
 		category: 'flags',
-		order: 1544,
+		order: 1546,
 		keywords: ['chequered', 'flag', 'race'],
 	},
 	{
@@ -24031,7 +24051,7 @@ export const emojis: Emoji[] = [
 		name: 'triangular flag',
 		value: '🚩',
 		category: 'flags',
-		order: 1545,
+		order: 1547,
 		keywords: ['triangular', 'flag'],
 	},
 	{
@@ -24039,7 +24059,7 @@ export const emojis: Emoji[] = [
 		name: 'rainbow flag',
 		value: '🏳️‍🌈',
 		category: 'flags',
-		order: 1546,
+		order: 1548,
 		keywords: ['rainbow', 'flag', 'pride'],
 	},
 	{
@@ -24047,7 +24067,7 @@ export const emojis: Emoji[] = [
 		name: 'transgender flag',
 		value: '🏳️‍⚧️',
 		category: 'flags',
-		order: 1547,
+		order: 1549,
 		keywords: ['transgender', 'flag', 'pride'],
 	},
 	{
@@ -24055,7 +24075,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of the united nations',
 		value: '🇺🇳',
 		category: 'flags',
-		order: 1548,
+		order: 1550,
 		keywords: ['flag', 'un', 'united nations'],
 	},
 	{
@@ -24063,7 +24083,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of afghanistan',
 		value: '🇦🇫',
 		category: 'flags',
-		order: 1549,
+		order: 1551,
 		keywords: ['flag', 'afghanistan'],
 	},
 	{
@@ -24071,7 +24091,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of åland islands',
 		value: '🇦🇽',
 		category: 'flags',
-		order: 1550,
+		order: 1552,
 		keywords: ['flag', 'aland islands'],
 	},
 	{
@@ -24079,7 +24099,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of albania',
 		value: '🇦🇱',
 		category: 'flags',
-		order: 1551,
+		order: 1553,
 		keywords: ['flag', 'albania'],
 	},
 	{
@@ -24087,7 +24107,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of algeria',
 		value: '🇩🇿',
 		category: 'flags',
-		order: 1552,
+		order: 1554,
 		keywords: ['flag', 'algeria'],
 	},
 	{
@@ -24095,7 +24115,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of american samoa',
 		value: '🇦🇸',
 		category: 'flags',
-		order: 1553,
+		order: 1555,
 		keywords: ['flag', 'american samoa'],
 	},
 	{
@@ -24103,7 +24123,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of andorra',
 		value: '🇦🇩',
 		category: 'flags',
-		order: 1554,
+		order: 1556,
 		keywords: ['flag', 'andorra'],
 	},
 	{
@@ -24111,7 +24131,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of angola',
 		value: '🇦🇴',
 		category: 'flags',
-		order: 1555,
+		order: 1557,
 		keywords: ['flag', 'angola'],
 	},
 	{
@@ -24119,7 +24139,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of anguilla',
 		value: '🇦🇮',
 		category: 'flags',
-		order: 1556,
+		order: 1558,
 		keywords: ['flag', 'anguilla'],
 	},
 	{
@@ -24127,7 +24147,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of antarctica',
 		value: '🇦🇶',
 		category: 'flags',
-		order: 1557,
+		order: 1559,
 		keywords: ['flag', 'antarctica'],
 	},
 	{
@@ -24135,7 +24155,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of antigua and barbuda',
 		value: '🇦🇬',
 		category: 'flags',
-		order: 1558,
+		order: 1560,
 		keywords: ['flag', 'antigua and barbuda'],
 	},
 	{
@@ -24143,7 +24163,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of argentina',
 		value: '🇦🇷',
 		category: 'flags',
-		order: 1559,
+		order: 1561,
 		keywords: ['flag', 'argentina'],
 	},
 	{
@@ -24151,7 +24171,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of armenia',
 		value: '🇦🇲',
 		category: 'flags',
-		order: 1560,
+		order: 1562,
 		keywords: ['flag', 'armenia'],
 	},
 	{
@@ -24159,7 +24179,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of aruba',
 		value: '🇦🇼',
 		category: 'flags',
-		order: 1561,
+		order: 1563,
 		keywords: ['flag', 'aruba'],
 	},
 	{
@@ -24167,7 +24187,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of australia',
 		value: '🇦🇺',
 		category: 'flags',
-		order: 1562,
+		order: 1564,
 		keywords: ['flag', 'australia'],
 	},
 	{
@@ -24175,7 +24195,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of austria',
 		value: '🇦🇹',
 		category: 'flags',
-		order: 1563,
+		order: 1565,
 		keywords: ['flag', 'austria'],
 	},
 	{
@@ -24183,7 +24203,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of azerbaijan',
 		value: '🇦🇿',
 		category: 'flags',
-		order: 1564,
+		order: 1566,
 		keywords: ['flag', 'azerbaijan'],
 	},
 	{
@@ -24191,7 +24211,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bahamas',
 		value: '🇧🇸',
 		category: 'flags',
-		order: 1565,
+		order: 1567,
 		keywords: ['flag', 'bahamas'],
 	},
 	{
@@ -24199,7 +24219,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bahrain',
 		value: '🇧🇭',
 		category: 'flags',
-		order: 1566,
+		order: 1568,
 		keywords: ['flag', 'bahrain'],
 	},
 	{
@@ -24207,7 +24227,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bangladesh',
 		value: '🇧🇩',
 		category: 'flags',
-		order: 1567,
+		order: 1569,
 		keywords: ['flag', 'bangladesh'],
 	},
 	{
@@ -24215,7 +24235,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of barbados',
 		value: '🇧🇧',
 		category: 'flags',
-		order: 1568,
+		order: 1570,
 		keywords: ['flag', 'barbados'],
 	},
 	{
@@ -24223,7 +24243,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of belarus',
 		value: '🇧🇾',
 		category: 'flags',
-		order: 1569,
+		order: 1571,
 		keywords: ['flag', 'belarus'],
 	},
 	{
@@ -24231,7 +24251,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of belgium',
 		value: '🇧🇪',
 		category: 'flags',
-		order: 1570,
+		order: 1572,
 		keywords: ['flag', 'belgium'],
 	},
 	{
@@ -24239,7 +24259,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of belize',
 		value: '🇧🇿',
 		category: 'flags',
-		order: 1571,
+		order: 1573,
 		keywords: ['flag', 'belize'],
 	},
 	{
@@ -24247,7 +24267,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of benin',
 		value: '🇧🇯',
 		category: 'flags',
-		order: 1572,
+		order: 1574,
 		keywords: ['flag', 'benin'],
 	},
 	{
@@ -24255,7 +24275,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bermuda',
 		value: '🇧🇲',
 		category: 'flags',
-		order: 1573,
+		order: 1575,
 		keywords: ['flag', 'bermuda'],
 	},
 	{
@@ -24263,7 +24283,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bhutan',
 		value: '🇧🇹',
 		category: 'flags',
-		order: 1574,
+		order: 1576,
 		keywords: ['flag', 'bhutan'],
 	},
 	{
@@ -24271,7 +24291,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bolivia',
 		value: '🇧🇴',
 		category: 'flags',
-		order: 1575,
+		order: 1577,
 		keywords: ['flag', 'bolivia'],
 	},
 	{
@@ -24279,7 +24299,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bosnia and herzegovina',
 		value: '🇧🇦',
 		category: 'flags',
-		order: 1576,
+		order: 1578,
 		keywords: ['flag', 'bosnia and herzegovina'],
 	},
 	{
@@ -24287,7 +24307,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of botswana',
 		value: '🇧🇼',
 		category: 'flags',
-		order: 1577,
+		order: 1579,
 		keywords: ['flag', 'botswana'],
 	},
 	{
@@ -24295,7 +24315,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of brazil',
 		value: '🇧🇷',
 		category: 'flags',
-		order: 1578,
+		order: 1580,
 		keywords: ['flag', 'brazil'],
 	},
 	{
@@ -24303,7 +24323,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of british virgin islands',
 		value: '🇻🇬',
 		category: 'flags',
-		order: 1579,
+		order: 1581,
 		keywords: ['flag', 'british virgin islands'],
 	},
 	{
@@ -24311,7 +24331,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of brunei',
 		value: '🇧🇳',
 		category: 'flags',
-		order: 1580,
+		order: 1582,
 		keywords: ['flag', 'brunei'],
 	},
 	{
@@ -24319,7 +24339,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of bulgaria',
 		value: '🇧🇬',
 		category: 'flags',
-		order: 1581,
+		order: 1583,
 		keywords: ['flag', 'bulgaria'],
 	},
 	{
@@ -24327,7 +24347,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of burkina faso',
 		value: '🇧🇫',
 		category: 'flags',
-		order: 1582,
+		order: 1584,
 		keywords: ['flag', 'burkina faso'],
 	},
 	{
@@ -24335,7 +24355,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of burundi',
 		value: '🇧🇮',
 		category: 'flags',
-		order: 1583,
+		order: 1585,
 		keywords: ['flag', 'burundi'],
 	},
 	{
@@ -24343,7 +24363,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cambodia',
 		value: '🇰🇭',
 		category: 'flags',
-		order: 1584,
+		order: 1586,
 		keywords: ['flag', 'cambodia'],
 	},
 	{
@@ -24351,7 +24371,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cameroon',
 		value: '🇨🇲',
 		category: 'flags',
-		order: 1585,
+		order: 1587,
 		keywords: ['flag', 'cameroon'],
 	},
 	{
@@ -24359,7 +24379,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of canada',
 		value: '🇨🇦',
 		category: 'flags',
-		order: 1586,
+		order: 1588,
 		keywords: ['flag', 'canada'],
 	},
 	{
@@ -24367,7 +24387,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of canary islands',
 		value: '🇮🇨',
 		category: 'flags',
-		order: 1587,
+		order: 1589,
 		keywords: ['flag', 'canary islands'],
 	},
 	{
@@ -24375,7 +24395,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cape verde',
 		value: '🇨🇻',
 		category: 'flags',
-		order: 1588,
+		order: 1590,
 		keywords: ['flag', 'cape verde'],
 	},
 	{
@@ -24383,7 +24403,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of caribbean netherlands',
 		value: '🇧🇶',
 		category: 'flags',
-		order: 1589,
+		order: 1591,
 		keywords: ['flag', 'caribbean netherlands'],
 	},
 	{
@@ -24391,7 +24411,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cayman islands',
 		value: '🇰🇾',
 		category: 'flags',
-		order: 1590,
+		order: 1592,
 		keywords: ['flag', 'cayman islands'],
 	},
 	{
@@ -24399,7 +24419,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of central african republic',
 		value: '🇨🇫',
 		category: 'flags',
-		order: 1591,
+		order: 1593,
 		keywords: ['flag', 'central african republic'],
 	},
 	{
@@ -24407,7 +24427,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of chad',
 		value: '🇹🇩',
 		category: 'flags',
-		order: 1592,
+		order: 1594,
 		keywords: ['flag', 'chad'],
 	},
 	{
@@ -24415,7 +24435,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of chile',
 		value: '🇨🇱',
 		category: 'flags',
-		order: 1593,
+		order: 1595,
 		keywords: ['flag', 'chile'],
 	},
 	{
@@ -24423,7 +24443,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of china',
 		value: '🇨🇳',
 		category: 'flags',
-		order: 1594,
+		order: 1596,
 		keywords: ['flag', 'china'],
 	},
 	{
@@ -24431,7 +24451,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of christmas island',
 		value: '🇨🇽',
 		category: 'flags',
-		order: 1595,
+		order: 1597,
 		keywords: ['flag', 'christmas island'],
 	},
 	{
@@ -24439,7 +24459,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cocos (keeling) islands',
 		value: '🇨🇨',
 		category: 'flags',
-		order: 1596,
+		order: 1598,
 		keywords: ['flag', 'cocos islands'],
 	},
 	{
@@ -24447,7 +24467,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of colombia',
 		value: '🇨🇴',
 		category: 'flags',
-		order: 1597,
+		order: 1599,
 		keywords: ['flag', 'colombia'],
 	},
 	{
@@ -24455,7 +24475,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of comoros',
 		value: '🇰🇲',
 		category: 'flags',
-		order: 1598,
+		order: 1600,
 		keywords: ['flag', 'comoros'],
 	},
 	{
@@ -24463,7 +24483,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of congo - brazzaville',
 		value: '🇨🇬',
 		category: 'flags',
-		order: 1599,
+		order: 1601,
 		keywords: ['flag', 'congo-brazzaville'],
 	},
 	{
@@ -24471,7 +24491,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of congo - kinshasa',
 		value: '🇨🇩',
 		category: 'flags',
-		order: 1600,
+		order: 1602,
 		keywords: ['flag', 'congo-kinshasa'],
 	},
 	{
@@ -24479,7 +24499,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cook islands',
 		value: '🇨🇰',
 		category: 'flags',
-		order: 1601,
+		order: 1603,
 		keywords: ['flag', 'cook islands'],
 	},
 	{
@@ -24487,7 +24507,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of costa rica',
 		value: '🇨🇷',
 		category: 'flags',
-		order: 1602,
+		order: 1604,
 		keywords: ['flag', 'costa rica'],
 	},
 	{
@@ -24495,7 +24515,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of côte d’ivoire',
 		value: '🇨🇮',
 		category: 'flags',
-		order: 1603,
+		order: 1605,
 		keywords: ['flag', 'cote d’ivoire'],
 	},
 	{
@@ -24503,7 +24523,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of croatia',
 		value: '🇭🇷',
 		category: 'flags',
-		order: 1604,
+		order: 1606,
 		keywords: ['flag', 'croatia'],
 	},
 	{
@@ -24511,7 +24531,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cuba',
 		value: '🇨🇺',
 		category: 'flags',
-		order: 1605,
+		order: 1607,
 		keywords: ['flag', 'cuba'],
 	},
 	{
@@ -24519,7 +24539,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of curaçao',
 		value: '🇨🇼',
 		category: 'flags',
-		order: 1606,
+		order: 1608,
 		keywords: ['flag', 'curacao'],
 	},
 	{
@@ -24527,7 +24547,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of cyprus',
 		value: '🇨🇾',
 		category: 'flags',
-		order: 1607,
+		order: 1609,
 		keywords: ['flag', 'cyprus'],
 	},
 	{
@@ -24535,7 +24555,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of czechia',
 		value: '🇨🇿',
 		category: 'flags',
-		order: 1608,
+		order: 1610,
 		keywords: ['flag', 'czechia'],
 	},
 	{
@@ -24543,7 +24563,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of denmark',
 		value: '🇩🇰',
 		category: 'flags',
-		order: 1609,
+		order: 1611,
 		keywords: ['flag', 'denmark'],
 	},
 	{
@@ -24551,7 +24571,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of djibouti',
 		value: '🇩🇯',
 		category: 'flags',
-		order: 1610,
+		order: 1612,
 		keywords: ['flag', 'djibouti'],
 	},
 	{
@@ -24559,7 +24579,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of dominica',
 		value: '🇩🇲',
 		category: 'flags',
-		order: 1611,
+		order: 1613,
 		keywords: ['flag', 'dominica'],
 	},
 	{
@@ -24567,7 +24587,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of dominican republic',
 		value: '🇩🇴',
 		category: 'flags',
-		order: 1612,
+		order: 1614,
 		keywords: ['flag', 'dominican republic'],
 	},
 	{
@@ -24575,7 +24595,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of ecuador',
 		value: '🇪🇨',
 		category: 'flags',
-		order: 1613,
+		order: 1615,
 		keywords: ['flag', 'ecuador'],
 	},
 	{
@@ -24583,7 +24603,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of egypt',
 		value: '🇪🇬',
 		category: 'flags',
-		order: 1614,
+		order: 1616,
 		keywords: ['flag', 'egypt'],
 	},
 	{
@@ -24591,7 +24611,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of el salvador',
 		value: '🇸🇻',
 		category: 'flags',
-		order: 1615,
+		order: 1617,
 		keywords: ['flag', 'el salvador'],
 	},
 	{
@@ -24599,7 +24619,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of equatorial guinea',
 		value: '🇬🇶',
 		category: 'flags',
-		order: 1616,
+		order: 1618,
 		keywords: ['flag', 'equatorial guinea'],
 	},
 	{
@@ -24607,7 +24627,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of eritrea',
 		value: '🇪🇷',
 		category: 'flags',
-		order: 1617,
+		order: 1619,
 		keywords: ['flag', 'eritrea'],
 	},
 	{
@@ -24615,7 +24635,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of estonia',
 		value: '🇪🇪',
 		category: 'flags',
-		order: 1618,
+		order: 1620,
 		keywords: ['flag', 'estonia'],
 	},
 	{
@@ -24623,7 +24643,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of eswatini',
 		value: '🇸🇿',
 		category: 'flags',
-		order: 1619,
+		order: 1621,
 		keywords: ['flag', 'eswatini'],
 	},
 	{
@@ -24631,7 +24651,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of ethiopia',
 		value: '🇪🇹',
 		category: 'flags',
-		order: 1620,
+		order: 1622,
 		keywords: ['flag', 'ethiopia'],
 	},
 	{
@@ -24639,7 +24659,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of european union',
 		value: '🇪🇺',
 		category: 'flags',
-		order: 1621,
+		order: 1623,
 		keywords: ['flag', 'european union'],
 	},
 	{
@@ -24647,7 +24667,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of falkland islands',
 		value: '🇫🇰',
 		category: 'flags',
-		order: 1622,
+		order: 1624,
 		keywords: ['flag', 'falkland islands'],
 	},
 	{
@@ -24655,7 +24675,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of faroe islands',
 		value: '🇫🇴',
 		category: 'flags',
-		order: 1623,
+		order: 1625,
 		keywords: ['flag', 'faroe islands'],
 	},
 	{
@@ -24663,7 +24683,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of fiji',
 		value: '🇫🇯',
 		category: 'flags',
-		order: 1624,
+		order: 1626,
 		keywords: ['flag', 'fiji'],
 	},
 	{
@@ -24671,7 +24691,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of finland',
 		value: '🇫🇮',
 		category: 'flags',
-		order: 1625,
+		order: 1627,
 		keywords: ['flag', 'finland'],
 	},
 	{
@@ -24679,7 +24699,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of france',
 		value: '🇫🇷',
 		category: 'flags',
-		order: 1626,
+		order: 1628,
 		keywords: ['flag', 'france'],
 	},
 	{
@@ -24687,7 +24707,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of french guiana',
 		value: '🇬🇫',
 		category: 'flags',
-		order: 1627,
+		order: 1629,
 		keywords: ['flag', 'french guiana'],
 	},
 	{
@@ -24695,7 +24715,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of french polynesia',
 		value: '🇵🇫',
 		category: 'flags',
-		order: 1628,
+		order: 1630,
 		keywords: ['flag', 'french polynesia'],
 	},
 	{
@@ -24703,7 +24723,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of french southern territories',
 		value: '🇹🇫',
 		category: 'flags',
-		order: 1629,
+		order: 1631,
 		keywords: ['flag', 'french southern territories'],
 	},
 	{
@@ -24711,7 +24731,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of gabon',
 		value: '🇬🇦',
 		category: 'flags',
-		order: 1630,
+		order: 1632,
 		keywords: ['flag', 'gabon'],
 	},
 	{
@@ -24719,7 +24739,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of gambia',
 		value: '🇬🇲',
 		category: 'flags',
-		order: 1631,
+		order: 1633,
 		keywords: ['flag', 'gambia'],
 	},
 	{
@@ -24727,7 +24747,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of georgia',
 		value: '🇬🇪',
 		category: 'flags',
-		order: 1632,
+		order: 1634,
 		keywords: ['flag', 'georgia'],
 	},
 	{
@@ -24735,7 +24755,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of germany',
 		value: '🇩🇪',
 		category: 'flags',
-		order: 1633,
+		order: 1635,
 		keywords: ['flag', 'germany'],
 	},
 	{
@@ -24743,7 +24763,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of ghana',
 		value: '🇬🇭',
 		category: 'flags',
-		order: 1634,
+		order: 1636,
 		keywords: ['flag', 'ghana'],
 	},
 	{
@@ -24751,7 +24771,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of gibraltar',
 		value: '🇬🇮',
 		category: 'flags',
-		order: 1635,
+		order: 1637,
 		keywords: ['flag', 'gibraltar'],
 	},
 	{
@@ -24759,7 +24779,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of greece',
 		value: '🇬🇷',
 		category: 'flags',
-		order: 1636,
+		order: 1638,
 		keywords: ['flag', 'greece'],
 	},
 	{
@@ -24767,7 +24787,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of greenland',
 		value: '🇬🇱',
 		category: 'flags',
-		order: 1637,
+		order: 1639,
 		keywords: ['flag', 'greenland'],
 	},
 	{
@@ -24775,7 +24795,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of grenada',
 		value: '🇬🇩',
 		category: 'flags',
-		order: 1638,
+		order: 1640,
 		keywords: ['flag', 'grenada'],
 	},
 	{
@@ -24783,7 +24803,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of guadeloupe',
 		value: '🇬🇵',
 		category: 'flags',
-		order: 1639,
+		order: 1641,
 		keywords: ['flag', 'guadeloupe'],
 	},
 	{
@@ -24791,7 +24811,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of guam',
 		value: '🇬🇺',
 		category: 'flags',
-		order: 1640,
+		order: 1642,
 		keywords: ['flag', 'guam'],
 	},
 	{
@@ -24799,7 +24819,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of guatemala',
 		value: '🇬🇹',
 		category: 'flags',
-		order: 1641,
+		order: 1643,
 		keywords: ['flag', 'guatemala'],
 	},
 	{
@@ -24807,7 +24827,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of guernsey',
 		value: '🇬🇬',
 		category: 'flags',
-		order: 1642,
+		order: 1644,
 		keywords: ['flag', 'guernsey'],
 	},
 	{
@@ -24815,7 +24835,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of guinea',
 		value: '🇬🇳',
 		category: 'flags',
-		order: 1643,
+		order: 1645,
 		keywords: ['flag', 'guinea'],
 	},
 	{
@@ -24823,7 +24843,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of guinea-bissau',
 		value: '🇬🇼',
 		category: 'flags',
-		order: 1644,
+		order: 1646,
 		keywords: ['flag', 'guinea-bissau'],
 	},
 	{
@@ -24831,7 +24851,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of guyana',
 		value: '🇬🇾',
 		category: 'flags',
-		order: 1645,
+		order: 1647,
 		keywords: ['flag', 'guyana'],
 	},
 	{
@@ -24839,7 +24859,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of haiti',
 		value: '🇭🇹',
 		category: 'flags',
-		order: 1646,
+		order: 1648,
 		keywords: ['flag', 'haiti'],
 	},
 	{
@@ -24847,7 +24867,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of honduras',
 		value: '🇭🇳',
 		category: 'flags',
-		order: 1647,
+		order: 1649,
 		keywords: ['flag', 'honduras'],
 	},
 	{
@@ -24855,7 +24875,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of hong kong',
 		value: '🇭🇰',
 		category: 'flags',
-		order: 1648,
+		order: 1650,
 		keywords: ['flag', 'hong kong'],
 	},
 	{
@@ -24863,7 +24883,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of hungary',
 		value: '🇭🇺',
 		category: 'flags',
-		order: 1649,
+		order: 1651,
 		keywords: ['flag', 'hungary'],
 	},
 	{
@@ -24871,7 +24891,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of iceland',
 		value: '🇮🇸',
 		category: 'flags',
-		order: 1650,
+		order: 1652,
 		keywords: ['flag', 'iceland'],
 	},
 	{
@@ -24879,7 +24899,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of india',
 		value: '🇮🇳',
 		category: 'flags',
-		order: 1651,
+		order: 1653,
 		keywords: ['flag', 'india'],
 	},
 	{
@@ -24887,7 +24907,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of indonesia',
 		value: '🇮🇩',
 		category: 'flags',
-		order: 1652,
+		order: 1654,
 		keywords: ['flag', 'indonesia'],
 	},
 	{
@@ -24895,7 +24915,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of iran',
 		value: '🇮🇷',
 		category: 'flags',
-		order: 1653,
+		order: 1655,
 		keywords: ['flag', 'iran'],
 	},
 	{
@@ -24903,7 +24923,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of iraq',
 		value: '🇮🇶',
 		category: 'flags',
-		order: 1654,
+		order: 1656,
 		keywords: ['flag', 'iraq'],
 	},
 	{
@@ -24911,7 +24931,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of ireland',
 		value: '🇮🇪',
 		category: 'flags',
-		order: 1655,
+		order: 1657,
 		keywords: ['flag', 'ireland'],
 	},
 	{
@@ -24919,7 +24939,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of isle of man',
 		value: '🇮🇲',
 		category: 'flags',
-		order: 1656,
+		order: 1658,
 		keywords: ['flag', 'isle of man'],
 	},
 	{
@@ -24927,7 +24947,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of israel',
 		value: '🇮🇱',
 		category: 'flags',
-		order: 1657,
+		order: 1659,
 		keywords: ['flag', 'israel'],
 	},
 	{
@@ -24935,7 +24955,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of italy',
 		value: '🇮🇹',
 		category: 'flags',
-		order: 1658,
+		order: 1660,
 		keywords: ['flag', 'italy'],
 	},
 	{
@@ -24943,7 +24963,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of jamaica',
 		value: '🇯🇲',
 		category: 'flags',
-		order: 1659,
+		order: 1661,
 		keywords: ['flag', 'jamaica'],
 	},
 	{
@@ -24951,7 +24971,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of japan',
 		value: '🇯🇵',
 		category: 'flags',
-		order: 1660,
+		order: 1662,
 		keywords: ['flag', 'japan'],
 	},
 	{
@@ -24959,7 +24979,7 @@ export const emojis: Emoji[] = [
 		name: 'crossed flags',
 		value: '🎌',
 		category: 'flags',
-		order: 1661,
+		order: 1663,
 		keywords: ['crossed', 'flags'],
 	},
 	{
@@ -24967,7 +24987,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of jersey',
 		value: '🇯🇪',
 		category: 'flags',
-		order: 1662,
+		order: 1664,
 		keywords: ['flag', 'jersey'],
 	},
 	{
@@ -24975,7 +24995,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of jordan',
 		value: '🇯🇴',
 		category: 'flags',
-		order: 1663,
+		order: 1665,
 		keywords: ['flag', 'jordan'],
 	},
 	{
@@ -24983,7 +25003,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of kazakhstan',
 		value: '🇰🇿',
 		category: 'flags',
-		order: 1664,
+		order: 1666,
 		keywords: ['flag', 'kazakhstan'],
 	},
 	{
@@ -24991,7 +25011,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of kenya',
 		value: '🇰🇪',
 		category: 'flags',
-		order: 1665,
+		order: 1667,
 		keywords: ['flag', 'kenya'],
 	},
 	{
@@ -24999,7 +25019,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of kiribati',
 		value: '🇰🇮',
 		category: 'flags',
-		order: 1666,
+		order: 1668,
 		keywords: ['flag', 'kiribati'],
 	},
 	{
@@ -25007,7 +25027,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of kosovo',
 		value: '🇽🇰',
 		category: 'flags',
-		order: 1667,
+		order: 1669,
 		keywords: ['flag', 'kosovo'],
 	},
 	{
@@ -25015,7 +25035,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of kuwait',
 		value: '🇰🇼',
 		category: 'flags',
-		order: 1668,
+		order: 1670,
 		keywords: ['flag', 'kuwait'],
 	},
 	{
@@ -25023,7 +25043,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of kyrgyzstan',
 		value: '🇰🇬',
 		category: 'flags',
-		order: 1669,
+		order: 1671,
 		keywords: ['flag', 'kyrgyzstan'],
 	},
 	{
@@ -25031,7 +25051,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of laos',
 		value: '🇱🇦',
 		category: 'flags',
-		order: 1670,
+		order: 1672,
 		keywords: ['flag', 'laos'],
 	},
 	{
@@ -25039,7 +25059,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of latvia',
 		value: '🇱🇻',
 		category: 'flags',
-		order: 1671,
+		order: 1673,
 		keywords: ['flag', 'latvia'],
 	},
 	{
@@ -25047,7 +25067,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of lebanon',
 		value: '🇱🇧',
 		category: 'flags',
-		order: 1672,
+		order: 1674,
 		keywords: ['flag', 'lebanon'],
 	},
 	{
@@ -25055,7 +25075,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of lesotho',
 		value: '🇱🇸',
 		category: 'flags',
-		order: 1673,
+		order: 1675,
 		keywords: ['flag', 'lesotho'],
 	},
 	{
@@ -25063,7 +25083,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of liberia',
 		value: '🇱🇷',
 		category: 'flags',
-		order: 1674,
+		order: 1676,
 		keywords: ['flag', 'liberia'],
 	},
 	{
@@ -25071,7 +25091,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of libya',
 		value: '🇱🇾',
 		category: 'flags',
-		order: 1675,
+		order: 1677,
 		keywords: ['flag', 'libya'],
 	},
 	{
@@ -25079,7 +25099,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of liechtenstein',
 		value: '🇱🇮',
 		category: 'flags',
-		order: 1676,
+		order: 1678,
 		keywords: ['flag', 'liechtenstein'],
 	},
 	{
@@ -25087,7 +25107,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of lithuania',
 		value: '🇱🇹',
 		category: 'flags',
-		order: 1677,
+		order: 1679,
 		keywords: ['flag', 'lithuania'],
 	},
 	{
@@ -25095,7 +25115,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of luxembourg',
 		value: '🇱🇺',
 		category: 'flags',
-		order: 1678,
+		order: 1680,
 		keywords: ['flag', 'luxembourg'],
 	},
 	{
@@ -25103,7 +25123,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of macau',
 		value: '🇲🇴',
 		category: 'flags',
-		order: 1679,
+		order: 1681,
 		keywords: ['flag', 'macau'],
 	},
 	{
@@ -25111,7 +25131,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of madagascar',
 		value: '🇲🇬',
 		category: 'flags',
-		order: 1680,
+		order: 1682,
 		keywords: ['flag', 'madagascar'],
 	},
 	{
@@ -25119,7 +25139,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of malawi',
 		value: '🇲🇼',
 		category: 'flags',
-		order: 1681,
+		order: 1683,
 		keywords: ['flag', 'malawi'],
 	},
 	{
@@ -25127,7 +25147,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of malaysia',
 		value: '🇲🇾',
 		category: 'flags',
-		order: 1682,
+		order: 1684,
 		keywords: ['flag', 'malaysia'],
 	},
 	{
@@ -25135,7 +25155,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of maldives',
 		value: '🇲🇻',
 		category: 'flags',
-		order: 1683,
+		order: 1685,
 		keywords: ['flag', 'maldives'],
 	},
 	{
@@ -25143,7 +25163,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of mali',
 		value: '🇲🇱',
 		category: 'flags',
-		order: 1684,
+		order: 1686,
 		keywords: ['flag', 'mali'],
 	},
 	{
@@ -25151,7 +25171,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of malta',
 		value: '🇲🇹',
 		category: 'flags',
-		order: 1685,
+		order: 1687,
 		keywords: ['flag', 'malta'],
 	},
 	{
@@ -25159,7 +25179,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of marshall islands',
 		value: '🇲🇭',
 		category: 'flags',
-		order: 1686,
+		order: 1688,
 		keywords: ['flag', 'marshall islands'],
 	},
 	{
@@ -25167,7 +25187,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of martinique',
 		value: '🇲🇶',
 		category: 'flags',
-		order: 1687,
+		order: 1689,
 		keywords: ['flag', 'martinique'],
 	},
 	{
@@ -25175,7 +25195,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of mauritania',
 		value: '🇲🇷',
 		category: 'flags',
-		order: 1688,
+		order: 1690,
 		keywords: ['flag', 'mauritania'],
 	},
 	{
@@ -25183,7 +25203,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of mauritius',
 		value: '🇲🇺',
 		category: 'flags',
-		order: 1689,
+		order: 1691,
 		keywords: ['flag', 'mauritius'],
 	},
 	{
@@ -25191,7 +25211,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of mayotte',
 		value: '🇾🇹',
 		category: 'flags',
-		order: 1690,
+		order: 1692,
 		keywords: ['flag', 'mayotte'],
 	},
 	{
@@ -25199,7 +25219,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of mexico',
 		value: '🇲🇽',
 		category: 'flags',
-		order: 1691,
+		order: 1693,
 		keywords: ['flag', 'mexico'],
 	},
 	{
@@ -25207,7 +25227,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of micronesia',
 		value: '🇫🇲',
 		category: 'flags',
-		order: 1692,
+		order: 1694,
 		keywords: ['flag', 'micronesia'],
 	},
 	{
@@ -25215,7 +25235,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of moldova',
 		value: '🇲🇩',
 		category: 'flags',
-		order: 1693,
+		order: 1695,
 		keywords: ['flag', 'moldova'],
 	},
 	{
@@ -25223,7 +25243,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of monaco',
 		value: '🇲🇨',
 		category: 'flags',
-		order: 1694,
+		order: 1696,
 		keywords: ['flag', 'monaco'],
 	},
 	{
@@ -25231,7 +25251,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of mongolia',
 		value: '🇲🇳',
 		category: 'flags',
-		order: 1695,
+		order: 1697,
 		keywords: ['flag', 'mongolia'],
 	},
 	{
@@ -25239,7 +25259,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of montenegro',
 		value: '🇲🇪',
 		category: 'flags',
-		order: 1696,
+		order: 1698,
 		keywords: ['flag', 'montenegro'],
 	},
 	{
@@ -25247,7 +25267,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of montserrat',
 		value: '🇲🇸',
 		category: 'flags',
-		order: 1697,
+		order: 1699,
 		keywords: ['flag', 'montserrat'],
 	},
 	{
@@ -25255,7 +25275,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of morocco',
 		value: '🇲🇦',
 		category: 'flags',
-		order: 1698,
+		order: 1700,
 		keywords: ['flag', 'morocco'],
 	},
 	{
@@ -25263,7 +25283,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of mozambique',
 		value: '🇲🇿',
 		category: 'flags',
-		order: 1699,
+		order: 1701,
 		keywords: ['flag', 'mozambique'],
 	},
 	{
@@ -25271,7 +25291,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of myanmar (burma)',
 		value: '🇲🇲',
 		category: 'flags',
-		order: 1700,
+		order: 1702,
 		keywords: ['flag', 'myanmar', 'burma'],
 	},
 	{
@@ -25279,7 +25299,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of namibia',
 		value: '🇳🇦',
 		category: 'flags',
-		order: 1701,
+		order: 1703,
 		keywords: ['flag', 'namibia'],
 	},
 	{
@@ -25287,7 +25307,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of nauru',
 		value: '🇳🇷',
 		category: 'flags',
-		order: 1702,
+		order: 1704,
 		keywords: ['flag', 'nauru'],
 	},
 	{
@@ -25295,7 +25315,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of nepal',
 		value: '🇳🇵',
 		category: 'flags',
-		order: 1703,
+		order: 1705,
 		keywords: ['flag', 'nepal'],
 	},
 	{
@@ -25303,7 +25323,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of netherlands',
 		value: '🇳🇱',
 		category: 'flags',
-		order: 1704,
+		order: 1706,
 		keywords: ['flag', 'netherlands'],
 	},
 	{
@@ -25311,7 +25331,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of new caledonia',
 		value: '🇳🇨',
 		category: 'flags',
-		order: 1705,
+		order: 1707,
 		keywords: ['flag', 'new caledonia'],
 	},
 	{
@@ -25319,7 +25339,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of new zealand',
 		value: '🇳🇿',
 		category: 'flags',
-		order: 1706,
+		order: 1708,
 		keywords: ['flag', 'new zealand'],
 	},
 	{
@@ -25327,7 +25347,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of nicaragua',
 		value: '🇳🇮',
 		category: 'flags',
-		order: 1707,
+		order: 1709,
 		keywords: ['flag', 'nicaragua'],
 	},
 	{
@@ -25335,7 +25355,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of niger',
 		value: '🇳🇪',
 		category: 'flags',
-		order: 1708,
+		order: 1710,
 		keywords: ['flag', 'niger'],
 	},
 	{
@@ -25343,7 +25363,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of nigeria',
 		value: '🇳🇬',
 		category: 'flags',
-		order: 1709,
+		order: 1711,
 		keywords: ['flag', 'nigeria'],
 	},
 	{
@@ -25351,7 +25371,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of niue',
 		value: '🇳🇺',
 		category: 'flags',
-		order: 1710,
+		order: 1712,
 		keywords: ['flag', 'niue'],
 	},
 	{
@@ -25359,7 +25379,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of norfolk island',
 		value: '🇳🇫',
 		category: 'flags',
-		order: 1711,
+		order: 1713,
 		keywords: ['flag', 'norfolk island'],
 	},
 	{
@@ -25367,7 +25387,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of north korea',
 		value: '🇰🇵',
 		category: 'flags',
-		order: 1712,
+		order: 1714,
 		keywords: ['flag', 'north korea'],
 	},
 	{
@@ -25375,7 +25395,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of north macedonia',
 		value: '🇲🇰',
 		category: 'flags',
-		order: 1713,
+		order: 1715,
 		keywords: ['flag', 'north macedonia'],
 	},
 	{
@@ -25383,7 +25403,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of northern mariana islands',
 		value: '🇲🇵',
 		category: 'flags',
-		order: 1714,
+		order: 1716,
 		keywords: ['flag', 'northern mariana islands'],
 	},
 	{
@@ -25391,7 +25411,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of norway',
 		value: '🇳🇴',
 		category: 'flags',
-		order: 1715,
+		order: 1717,
 		keywords: ['flag', 'norway'],
 	},
 	{
@@ -25399,7 +25419,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of oman',
 		value: '🇴🇲',
 		category: 'flags',
-		order: 1716,
+		order: 1718,
 		keywords: ['flag', 'oman'],
 	},
 	{
@@ -25407,7 +25427,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of pakistan',
 		value: '🇵🇰',
 		category: 'flags',
-		order: 1717,
+		order: 1719,
 		keywords: ['flag', 'pakistan'],
 	},
 	{
@@ -25415,7 +25435,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of palau',
 		value: '🇵🇼',
 		category: 'flags',
-		order: 1718,
+		order: 1720,
 		keywords: ['flag', 'palau'],
 	},
 	{
@@ -25423,7 +25443,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of palestine',
 		value: '🇵🇸',
 		category: 'flags',
-		order: 1719,
+		order: 1721,
 		keywords: ['flag', 'palestine'],
 	},
 	{
@@ -25431,7 +25451,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of panama',
 		value: '🇵🇦',
 		category: 'flags',
-		order: 1720,
+		order: 1722,
 		keywords: ['flag', 'panama'],
 	},
 	{
@@ -25439,7 +25459,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of papua new guinea',
 		value: '🇵🇬',
 		category: 'flags',
-		order: 1721,
+		order: 1723,
 		keywords: ['flag', 'papua new guinea'],
 	},
 	{
@@ -25447,7 +25467,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of paraguay',
 		value: '🇵🇾',
 		category: 'flags',
-		order: 1722,
+		order: 1724,
 		keywords: ['flag', 'paraguay'],
 	},
 	{
@@ -25455,7 +25475,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of peru',
 		value: '🇵🇪',
 		category: 'flags',
-		order: 1723,
+		order: 1725,
 		keywords: ['flag', 'peru'],
 	},
 	{
@@ -25463,7 +25483,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of philippines',
 		value: '🇵🇭',
 		category: 'flags',
-		order: 1724,
+		order: 1726,
 		keywords: ['flag', 'philippines'],
 	},
 	{
@@ -25471,7 +25491,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of pitcairn islands',
 		value: '🇵🇳',
 		category: 'flags',
-		order: 1725,
+		order: 1727,
 		keywords: ['flag', 'pitcairn islands'],
 	},
 	{
@@ -25479,7 +25499,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of poland',
 		value: '🇵🇱',
 		category: 'flags',
-		order: 1726,
+		order: 1728,
 		keywords: ['flag', 'poland'],
 	},
 	{
@@ -25487,7 +25507,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of portugal',
 		value: '🇵🇹',
 		category: 'flags',
-		order: 1727,
+		order: 1729,
 		keywords: ['flag', 'portugal'],
 	},
 	{
@@ -25495,7 +25515,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of puerto rico',
 		value: '🇵🇷',
 		category: 'flags',
-		order: 1728,
+		order: 1730,
 		keywords: ['flag', 'puerto rico'],
 	},
 	{
@@ -25503,7 +25523,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of qatar',
 		value: '🇶🇦',
 		category: 'flags',
-		order: 1729,
+		order: 1731,
 		keywords: ['flag', 'qatar'],
 	},
 	{
@@ -25511,7 +25531,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of réunion',
 		value: '🇷🇪',
 		category: 'flags',
-		order: 1730,
+		order: 1732,
 		keywords: ['flag', 'reunion'],
 	},
 	{
@@ -25519,7 +25539,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of romania',
 		value: '🇷🇴',
 		category: 'flags',
-		order: 1731,
+		order: 1733,
 		keywords: ['flag', 'romania'],
 	},
 	{
@@ -25527,7 +25547,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of russia',
 		value: '🇷🇺',
 		category: 'flags',
-		order: 1732,
+		order: 1734,
 		keywords: ['flag', 'russia'],
 	},
 	{
@@ -25535,7 +25555,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of rwanda',
 		value: '🇷🇼',
 		category: 'flags',
-		order: 1733,
+		order: 1735,
 		keywords: ['flag', 'rwanda'],
 	},
 	{
@@ -25543,7 +25563,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of samoa',
 		value: '🇼🇸',
 		category: 'flags',
-		order: 1734,
+		order: 1736,
 		keywords: ['flag', 'samoa'],
 	},
 	{
@@ -25551,7 +25571,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of san marino',
 		value: '🇸🇲',
 		category: 'flags',
-		order: 1735,
+		order: 1737,
 		keywords: ['flag', 'san marino'],
 	},
 	{
@@ -25559,7 +25579,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of são tomé and príncipe',
 		value: '🇸🇹',
 		category: 'flags',
-		order: 1736,
+		order: 1738,
 		keywords: ['flag', 'sao tome and principe'],
 	},
 	{
@@ -25567,7 +25587,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of saudi arabia',
 		value: '🇸🇦',
 		category: 'flags',
-		order: 1737,
+		order: 1739,
 		keywords: ['flag', 'saudi arabia'],
 	},
 	{
@@ -25575,7 +25595,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of senegal',
 		value: '🇸🇳',
 		category: 'flags',
-		order: 1738,
+		order: 1740,
 		keywords: ['flag', 'senegal'],
 	},
 	{
@@ -25583,7 +25603,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of serbia',
 		value: '🇷🇸',
 		category: 'flags',
-		order: 1739,
+		order: 1741,
 		keywords: ['flag', 'serbia'],
 	},
 	{
@@ -25591,7 +25611,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of seychelles',
 		value: '🇸🇨',
 		category: 'flags',
-		order: 1740,
+		order: 1742,
 		keywords: ['flag', 'seychelles'],
 	},
 	{
@@ -25599,7 +25619,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of sierra leone',
 		value: '🇸🇱',
 		category: 'flags',
-		order: 1741,
+		order: 1743,
 		keywords: ['flag', 'sierra leone'],
 	},
 	{
@@ -25607,7 +25627,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of singapore',
 		value: '🇸🇬',
 		category: 'flags',
-		order: 1742,
+		order: 1744,
 		keywords: ['flag', 'singapore'],
 	},
 	{
@@ -25615,7 +25635,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of sint maarten',
 		value: '🇸🇽',
 		category: 'flags',
-		order: 1743,
+		order: 1745,
 		keywords: ['flag', 'sint maarten'],
 	},
 	{
@@ -25623,7 +25643,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of slovakia',
 		value: '🇸🇰',
 		category: 'flags',
-		order: 1744,
+		order: 1746,
 		keywords: ['flag', 'slovakia'],
 	},
 	{
@@ -25631,7 +25651,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of slovenia',
 		value: '🇸🇮',
 		category: 'flags',
-		order: 1745,
+		order: 1747,
 		keywords: ['flag', 'slovenia'],
 	},
 	{
@@ -25639,7 +25659,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of solomon islands',
 		value: '🇸🇧',
 		category: 'flags',
-		order: 1746,
+		order: 1748,
 		keywords: ['flag', 'solomon islands'],
 	},
 	{
@@ -25647,7 +25667,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of somalia',
 		value: '🇸🇴',
 		category: 'flags',
-		order: 1747,
+		order: 1749,
 		keywords: ['flag', 'somalia'],
 	},
 	{
@@ -25655,7 +25675,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of south africa',
 		value: '🇿🇦',
 		category: 'flags',
-		order: 1748,
+		order: 1750,
 		keywords: ['flag', 'south africa'],
 	},
 	{
@@ -25663,7 +25683,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of south korea',
 		value: '🇰🇷',
 		category: 'flags',
-		order: 1749,
+		order: 1751,
 		keywords: ['flag', 'south korea'],
 	},
 	{
@@ -25671,7 +25691,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of south sudan',
 		value: '🇸🇸',
 		category: 'flags',
-		order: 1750,
+		order: 1752,
 		keywords: ['flag', 'south sudan'],
 	},
 	{
@@ -25679,7 +25699,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of spain',
 		value: '🇪🇸',
 		category: 'flags',
-		order: 1751,
+		order: 1753,
 		keywords: ['flag', 'spain'],
 	},
 	{
@@ -25687,7 +25707,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of sri lanka',
 		value: '🇱🇰',
 		category: 'flags',
-		order: 1752,
+		order: 1754,
 		keywords: ['flag', 'sri lanka'],
 	},
 	{
@@ -25695,7 +25715,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of st. barthélemy',
 		value: '🇧🇱',
 		category: 'flags',
-		order: 1753,
+		order: 1755,
 		keywords: ['flag', 'st. barthelemy'],
 	},
 	{
@@ -25703,7 +25723,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of st. helena',
 		value: '🇸🇭',
 		category: 'flags',
-		order: 1754,
+		order: 1756,
 		keywords: ['flag', 'st. helena'],
 	},
 	{
@@ -25711,7 +25731,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of st. kitts & nevis',
 		value: '🇰🇳',
 		category: 'flags',
-		order: 1755,
+		order: 1757,
 		keywords: ['flag', 'st. kitts & nevis'],
 	},
 	{
@@ -25719,7 +25739,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of st. lucia',
 		value: '🇱🇨',
 		category: 'flags',
-		order: 1756,
+		order: 1758,
 		keywords: ['flag', 'st. lucia'],
 	},
 	{
@@ -25727,7 +25747,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of st. pierre & miquelon',
 		value: '🇵🇲',
 		category: 'flags',
-		order: 1757,
+		order: 1759,
 		keywords: ['flag', 'st. pierre & miquelon'],
 	},
 	{
@@ -25735,7 +25755,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of st. vincent & grenadines',
 		value: '🇻🇨',
 		category: 'flags',
-		order: 1758,
+		order: 1760,
 		keywords: ['flag', 'st. vincent & grenadines'],
 	},
 	{
@@ -25743,7 +25763,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of sudan',
 		value: '🇸🇩',
 		category: 'flags',
-		order: 1759,
+		order: 1761,
 		keywords: ['flag', 'sudan'],
 	},
 	{
@@ -25751,7 +25771,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of suriname',
 		value: '🇸🇷',
 		category: 'flags',
-		order: 1760,
+		order: 1762,
 		keywords: ['flag', 'suriname'],
 	},
 	{
@@ -25759,7 +25779,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of sweden',
 		value: '🇸🇪',
 		category: 'flags',
-		order: 1761,
+		order: 1763,
 		keywords: ['flag', 'sweden'],
 	},
 	{
@@ -25767,7 +25787,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of switzerland',
 		value: '🇨🇭',
 		category: 'flags',
-		order: 1762,
+		order: 1764,
 		keywords: ['flag', 'switzerland'],
 	},
 	{
@@ -25775,7 +25795,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of syria',
 		value: '🇸🇾',
 		category: 'flags',
-		order: 1763,
+		order: 1765,
 		keywords: ['flag', 'syria'],
 	},
 	{
@@ -25783,7 +25803,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of taiwan',
 		value: '🇹🇼',
 		category: 'flags',
-		order: 1764,
+		order: 1766,
 		keywords: ['flag', 'taiwan'],
 	},
 	{
@@ -25791,7 +25811,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of tajikistan',
 		value: '🇹🇯',
 		category: 'flags',
-		order: 1765,
+		order: 1767,
 		keywords: ['flag', 'tajikistan'],
 	},
 	{
@@ -25799,7 +25819,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of tanzania',
 		value: '🇹🇿',
 		category: 'flags',
-		order: 1766,
+		order: 1768,
 		keywords: ['flag', 'tanzania'],
 	},
 	{
@@ -25807,7 +25827,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of thailand',
 		value: '🇹🇭',
 		category: 'flags',
-		order: 1767,
+		order: 1769,
 		keywords: ['flag', 'thailand'],
 	},
 	{
@@ -25815,7 +25835,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of timor-leste',
 		value: '🇹🇱',
 		category: 'flags',
-		order: 1768,
+		order: 1770,
 		keywords: ['flag', 'timor-leste'],
 	},
 	{
@@ -25823,7 +25843,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of togo',
 		value: '🇹🇬',
 		category: 'flags',
-		order: 1769,
+		order: 1771,
 		keywords: ['flag', 'togo'],
 	},
 	{
@@ -25831,7 +25851,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of tokelau',
 		value: '🇹🇰',
 		category: 'flags',
-		order: 1770,
+		order: 1772,
 		keywords: ['flag', 'tokelau'],
 	},
 	{
@@ -25839,7 +25859,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of tonga',
 		value: '🇹🇴',
 		category: 'flags',
-		order: 1771,
+		order: 1773,
 		keywords: ['flag', 'tonga'],
 	},
 	{
@@ -25847,7 +25867,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of trinidad & tobago',
 		value: '🇹🇹',
 		category: 'flags',
-		order: 1772,
+		order: 1774,
 		keywords: ['flag', 'trinidad & tobago'],
 	},
 	{
@@ -25855,7 +25875,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of tunisia',
 		value: '🇹🇳',
 		category: 'flags',
-		order: 1773,
+		order: 1775,
 		keywords: ['flag', 'tunisia'],
 	},
 	{
@@ -25863,7 +25883,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of turkey',
 		value: '🇹🇷',
 		category: 'flags',
-		order: 1774,
+		order: 1776,
 		keywords: ['flag', 'turkey'],
 	},
 	{
@@ -25871,7 +25891,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of turkmenistan',
 		value: '🇹🇲',
 		category: 'flags',
-		order: 1775,
+		order: 1777,
 		keywords: ['flag', 'turkmenistan'],
 	},
 	{
@@ -25879,7 +25899,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of turks & caicos islands',
 		value: '🇹🇨',
 		category: 'flags',
-		order: 1776,
+		order: 1778,
 		keywords: ['flag', 'turks & caicos islands'],
 	},
 	{
@@ -25887,7 +25907,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of tuvalu',
 		value: '🇹🇻',
 		category: 'flags',
-		order: 1777,
+		order: 1779,
 		keywords: ['flag', 'tuvalu'],
 	},
 	{
@@ -25895,7 +25915,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of u.s. virgin islands',
 		value: '🇻🇮',
 		category: 'flags',
-		order: 1778,
+		order: 1780,
 		keywords: ['flag', 'u.s. virgin islands'],
 	},
 	{
@@ -25903,7 +25923,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of uganda',
 		value: '🇺🇬',
 		category: 'flags',
-		order: 1779,
+		order: 1781,
 		keywords: ['flag', 'uganda'],
 	},
 	{
@@ -25911,7 +25931,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of ukraine',
 		value: '🇺🇦',
 		category: 'flags',
-		order: 1780,
+		order: 1782,
 		keywords: ['flag', 'ukraine'],
 	},
 	{
@@ -25919,7 +25939,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of united arab emirates',
 		value: '🇦🇪',
 		category: 'flags',
-		order: 1781,
+		order: 1783,
 		keywords: ['flag', 'united arab emirates'],
 	},
 	{
@@ -25927,7 +25947,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of united kingdom',
 		value: '🇬🇧',
 		category: 'flags',
-		order: 1782,
+		order: 1784,
 		keywords: ['flag', 'united kingdom'],
 	},
 	{
@@ -25935,7 +25955,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of united states',
 		value: '🇺🇸',
 		category: 'flags',
-		order: 1783,
+		order: 1785,
 		keywords: ['flag', 'united states'],
 	},
 	{
@@ -25943,7 +25963,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of uruguay',
 		value: '🇺🇾',
 		category: 'flags',
-		order: 1784,
+		order: 1786,
 		keywords: ['flag', 'uruguay'],
 	},
 	{
@@ -25951,7 +25971,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of uzbekistan',
 		value: '🇺🇿',
 		category: 'flags',
-		order: 1785,
+		order: 1787,
 		keywords: ['flag', 'uzbekistan'],
 	},
 	{
@@ -25959,7 +25979,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of vanuatu',
 		value: '🇻🇺',
 		category: 'flags',
-		order: 1786,
+		order: 1788,
 		keywords: ['flag', 'vanuatu'],
 	},
 	{
@@ -25967,7 +25987,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of vatican city',
 		value: '🇻🇦',
 		category: 'flags',
-		order: 1787,
+		order: 1789,
 		keywords: ['flag', 'vatican city'],
 	},
 	{
@@ -25975,7 +25995,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of venezuela',
 		value: '🇻🇪',
 		category: 'flags',
-		order: 1788,
+		order: 1790,
 		keywords: ['flag', 'venezuela'],
 	},
 	{
@@ -25983,7 +26003,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of vietnam',
 		value: '🇻🇳',
 		category: 'flags',
-		order: 1789,
+		order: 1791,
 		keywords: ['flag', 'vietnam'],
 	},
 	{
@@ -25991,7 +26011,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of wallis & futuna',
 		value: '🇼🇫',
 		category: 'flags',
-		order: 1790,
+		order: 1792,
 		keywords: ['flag', 'wallis & futuna'],
 	},
 	{
@@ -25999,7 +26019,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of western sahara',
 		value: '🇪🇭',
 		category: 'flags',
-		order: 1791,
+		order: 1793,
 		keywords: ['flag', 'western sahara'],
 	},
 	{
@@ -26007,7 +26027,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of yemen',
 		value: '🇾🇪',
 		category: 'flags',
-		order: 1792,
+		order: 1794,
 		keywords: ['flag', 'yemen'],
 	},
 	{
@@ -26015,7 +26035,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of zambia',
 		value: '🇿🇲',
 		category: 'flags',
-		order: 1793,
+		order: 1795,
 		keywords: ['flag', 'zambia'],
 	},
 	{
@@ -26023,7 +26043,7 @@ export const emojis: Emoji[] = [
 		name: 'flag of zimbabwe',
 		value: '🇿🇼',
 		category: 'flags',
-		order: 1794,
+		order: 1796,
 		keywords: ['flag', 'zimbabwe'],
 	},
 ] as const;

@@ -38,12 +38,14 @@
 	padding-inline: calc(var(--ch-padding-inline) * 1px);
 	margin-block: 1em;
 	min-width: 0;
+	height: 30px;
 
 	.ch-searchbar-container {
 		flex: 1;
 		display: flex;
 		min-width: 0;
 		position: relative;
+		height: 100%;
 
 		.ch-searchbar {
 			transition: all 0.2s ease-in-out;

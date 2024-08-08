@@ -12,7 +12,7 @@ export class EmojiPickerStateService {
 		this.emojiItemSizeMultiplier$,
 	]).pipe(
 		map(([size, multiplier]) =>
-			NumberHelper.toFixedAndFloor(size * multiplier, 2)
+			NumberHelper.toFixedAndFloor(size * multiplier, 0)
 		)
 	);
 

@@ -1,7 +1,7 @@
 import { Skintone } from './skin-tone.model';
 
 export const skintoneColors: SkintoneColor[] = [
-	{ skintone: 'default', color: '#ffb02e' },
+	{ skintone: 'default', color: '#ffc83d' },
 	{ skintone: 'light', color: '#ffd7c2' },
 	{ skintone: 'medium-light', color: '#eebfaa' },
 	{ skintone: 'medium', color: '#c68d7b' },

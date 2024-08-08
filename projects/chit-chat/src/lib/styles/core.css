@@ -1,5 +1,5 @@
 :root {
-	--ch-scrollbar-width: 6px;
+	--ch-scrollbar-size: 6px;
 	--ch-scrollbar-border-radius: 6px;
 	--ch-ripple-color: rgba(255, 255, 255, 0.5);
 }
@@ -94,13 +94,16 @@
 }
 
 body:not(.ch-mobile) .ch-vscroll-viewport::-webkit-scrollbar,
+body:not(.ch-mobile) .ch-scroll-viewport::-webkit-scrollbar,
 body:not(.ch-mobile)
 	.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar {
-	width: var(--ch-scrollbar-width);
+	width: var(--ch-scrollbar-size);
+	height: var(--ch-scrollbar-size);
 }
 
 body:not(.ch-mobile) .ch-vscroll-viewport::-webkit-scrollbar-track,
+body:not(.ch-mobile) .ch-scroll-viewport::-webkit-scrollbar-track,
 body:not(.ch-mobile)
 	.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar-track {
@@ -109,6 +112,7 @@ body:not(.ch-mobile)
 }
 
 body:not(.ch-mobile) .ch-vscroll-viewport::-webkit-scrollbar-thumb,
+body:not(.ch-mobile) .ch-scroll-viewport::-webkit-scrollbar-thumb,
 body:not(.ch-mobile)
 	.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar-thumb {
@@ -119,11 +123,15 @@ body:not(.ch-mobile)
 body:not(.ch-mobile)
 	.ch-vscroll-viewport::-webkit-scrollbar-thumb:hover,
 body:not(.ch-mobile)
+	.ch-scroll-viewport::-webkit-scrollbar-thumb:hover,
+body:not(.ch-mobile)
 	.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar-thumb:hover {
 	background-color: var(--ch-color-scroll-hover, rgb(201, 201, 210));
 }
+
 body .ch-scroll-hidden.ch-vscroll-viewport::-webkit-scrollbar,
+body:not(.ch-mobile) .ch-scroll-viewport::-webkit-scrollbar,
 body
 	.ch-scroll-hidden.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar,
