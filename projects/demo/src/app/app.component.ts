@@ -7,6 +7,10 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
 import { AuthService } from 'chit-chat/src/lib/auth';
 import { ButtonComponent } from 'chit-chat/src/lib/components/button';
+import {
+	nlTranslations,
+	TranslationService,
+} from 'chit-chat/src/lib/localization';
 import { ScreenService } from 'chit-chat/src/lib/utils';
 import { NavigationItem, navigationItems } from './app-navigation';
 
@@ -30,6 +34,7 @@ export class AppComponent implements OnInit {
 	private renderer = inject(Renderer2);
 	private authenticationService = inject(AuthService);
 	private screenService = inject(ScreenService);
+	private translationsService = inject(TranslationService);
 
 	readonly navigationItems = [...navigationItems];
 
@@ -50,6 +55,11 @@ export class AppComponent implements OnInit {
 		});
 
 		this.enableLightTheme();
+
+		this.translationsService.loadTranslations('nl', nlTranslations);
+		// this.translationsService.loadTranslations('en', enTranslations);
+		// this.translationsService.loadTranslations('fr', frTranslations);
+		this.translationsService.setLanguage('nl');
 	}
 
 	calcSideNavMode = (): 'over' | 'push' | 'side' => {

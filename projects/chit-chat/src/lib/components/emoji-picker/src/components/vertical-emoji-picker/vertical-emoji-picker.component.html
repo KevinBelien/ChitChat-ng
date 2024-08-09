@@ -24,8 +24,13 @@
 			<div class="ch-emoji-group-title">
 				{{
 					currentCategory === 'suggestions' && !!suggestionEmojis
-						? suggestionEmojis.suggestionMode
-						: currentCategory
+						? ('emojipicker.category.' +
+								suggestionEmojis.suggestionMode
+						  | translate
+						  | titlecase)
+						: ('emojipicker.category.' + currentCategory
+						  | translate
+						  | titlecase)
 				}}
 			</div>
 		</div>
@@ -45,7 +50,7 @@
 		>
 			<ng-container *ngIf="row.type === 'category'">
 				<div class="ch-emoji-group-title">
-					{{ row.translationKey }}
+					{{ row.translationKey | translate | titlecase }}
 				</div>
 			</ng-container>
 

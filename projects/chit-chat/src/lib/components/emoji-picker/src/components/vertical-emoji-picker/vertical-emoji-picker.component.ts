@@ -37,6 +37,7 @@ import {
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 import { SuggestionEmojis } from './../../models/suggestion-emojis.model';
 
+import { TranslatePipe } from 'chit-chat/src/lib/localization';
 import {
 	ClickEvent,
 	ClickTouchHoldDirective,
@@ -55,6 +56,7 @@ import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.ser
 		ClickTouchHoldDirective,
 		EmojiButtonComponent,
 		RippleDirective,
+		TranslatePipe,
 	],
 	providers: [VerticalEmojiPickerService],
 	templateUrl: './vertical-emoji-picker.component.html',

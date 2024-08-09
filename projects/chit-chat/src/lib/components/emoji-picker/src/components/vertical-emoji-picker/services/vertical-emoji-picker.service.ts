@@ -89,7 +89,7 @@ export class VerticalEmojiPickerService {
 				id: crypto.randomUUID(),
 				type: 'category',
 				value: 'suggestions',
-				translationKey: suggestionEmojis.suggestionMode,
+				translationKey: `emojipicker.category.${suggestionEmojis.suggestionMode}`,
 			},
 		];
 
@@ -142,7 +142,7 @@ export class VerticalEmojiPickerService {
 					id: crypto.randomUUID(),
 					type: 'category',
 					value: emoji.category,
-					translationKey: emoji.category,
+					translationKey: `emojipicker.category.${emoji.category}`,
 				});
 			}
 
