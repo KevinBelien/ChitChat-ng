@@ -46,6 +46,15 @@ export class TranslationService {
 		this.translations$.next(mappedTranslations);
 	};
 
+	unloadTranslations = (language: Language) => {
+		const mappedTranslations: LocaleTranslations =
+			this.translations$.getValue();
+
+		mappedTranslations.delete(language);
+
+		this.translations$.next(mappedTranslations);
+	};
+
 	getAllTranslations = (): LocaleTranslations => {
 		return this.translations$.getValue();
 	};

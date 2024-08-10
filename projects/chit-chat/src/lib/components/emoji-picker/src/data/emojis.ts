@@ -123,7 +123,7 @@ export const emojis: Emoji[] = [
 			'cry',
 			'resist',
 			'emotion',
-			'tears of joy',
+			'tears_of_joy',
 		],
 	},
 	{
@@ -158,7 +158,7 @@ export const emojis: Emoji[] = [
 			'rofl',
 			'tear',
 			'tears',
-			'crying laughing',
+			'crying_laughing',
 			'funny',
 			'joy',
 			'face',
@@ -205,7 +205,7 @@ export const emojis: Emoji[] = [
 			'roflmao',
 			'rofl',
 			'tear',
-			'crying laughing',
+			'crying_laughing',
 			'funny',
 			'joy',
 			'crying',
@@ -233,7 +233,7 @@ export const emojis: Emoji[] = [
 			'tear',
 			'relieved',
 			'smiling',
-			'smiling face with tear',
+			'smiling_face_with_tear',
 		],
 	},
 	{
@@ -525,14 +525,14 @@ export const emojis: Emoji[] = [
 			'hat',
 			'horn',
 			'party',
-			'partying face',
+			'partying_face',
 			'celebrate',
 			'hooray',
 			'birthday',
 			'excited',
 			'face',
-			'happy birthday',
-			'happy bday',
+			'happy_birthday',
+			'happy_bday',
 		],
 	},
 	{
@@ -562,7 +562,7 @@ export const emojis: Emoji[] = [
 			'face',
 			'indifference',
 			'bored',
-			'straight face',
+			'straight_face',
 			'unimpressed',
 			'displeased',
 		],
@@ -692,7 +692,7 @@ export const emojis: Emoji[] = [
 		keywords: [
 			'face',
 			'pleading',
-			'puppy eyes',
+			'puppy_eyes',
 			'beseeching',
 			'begging',
 			'hopeful',
@@ -787,7 +787,7 @@ export const emojis: Emoji[] = [
 			'face',
 			'swearing',
 			'cussing',
-			'cuss words',
+			'cuss_words',
 			'angry',
 			'expletive',
 			'furious',
@@ -809,13 +809,13 @@ export const emojis: Emoji[] = [
 		keywords: [
 			'face',
 			'shocked',
-			'mind blown',
+			'mind_blown',
 			'explosive',
 			'surprised',
 			'amazed',
 			'astonished',
 			'wow',
-			'blown away',
+			'blown_away',
 			'mindblown',
 			'stunned',
 			'incredible',
@@ -906,7 +906,7 @@ export const emojis: Emoji[] = [
 			'hushed',
 			'voiceless',
 			'zip',
-			'no comment',
+			'no_comment',
 		],
 	},
 	{
@@ -950,7 +950,7 @@ export const emojis: Emoji[] = [
 			'mute',
 			'hush-hush',
 			'shhh',
-			'be quiet',
+			'be_quiet',
 		],
 	},
 	{
@@ -1080,7 +1080,7 @@ export const emojis: Emoji[] = [
 			'disgusted',
 			'queasy',
 			'retching',
-			'upset stomach',
+			'upset_stomach',
 			'yuck',
 			'sickened',
 		],
@@ -1100,7 +1100,7 @@ export const emojis: Emoji[] = [
 			'ill',
 			'nauseous',
 			'disgusted',
-			'throwing up',
+			'throwing_up',
 			'retching',
 			'barf',
 			'puke',
@@ -1162,7 +1162,7 @@ export const emojis: Emoji[] = [
 			'western',
 			'yee-haw',
 			'rodeo',
-			'wild west',
+			'wild_west',
 			'rancher',
 			'country',
 			'sheriff',
@@ -1348,8 +1348,8 @@ export const emojis: Emoji[] = [
 			'martian',
 			'alien',
 			'invasion',
-			'outer space',
-			'science fiction',
+			'outer_space',
+			'science_fiction',
 			'ET',
 		],
 	},
@@ -1367,7 +1367,7 @@ export const emojis: Emoji[] = [
 			'play',
 			'alien',
 			'retro',
-			'video game',
+			'video_game',
 			'creature',
 			'invader',
 		],
@@ -1387,7 +1387,7 @@ export const emojis: Emoji[] = [
 			'automation',
 			'future',
 			'cyber',
-			'artificial intelligence',
+			'artificial_intelligence',
 			'AI',
 		],
 	},
@@ -1444,7 +1444,7 @@ export const emojis: Emoji[] = [
 			'feline',
 			'joy',
 			'cheerful',
-			'smiling eyes',
+			'smiling_eyes',
 		],
 	},
 	{
@@ -1819,7 +1819,7 @@ export const emojis: Emoji[] = [
 			'applause',
 			'congratulations',
 			'bravo',
-			'well done',
+			'well_done',
 			'praise',
 			'appreciation',
 		],
@@ -1970,7 +1970,7 @@ export const emojis: Emoji[] = [
 			'negative',
 			'disagree',
 			'bad',
-			'not okay',
+			'not_okay',
 		],
 	},
 	{
@@ -2314,7 +2314,7 @@ export const emojis: Emoji[] = [
 			'hope',
 			'wish',
 			'superstition',
-			'good luck',
+			'good_luck',
 			'praying',
 		],
 	},
@@ -3045,7 +3045,7 @@ export const emojis: Emoji[] = [
 			'raised',
 			'hand',
 			'stop',
-			'high five',
+			'high_five',
 			'gesture',
 			'halt',
 			'attention',
@@ -3095,7 +3095,7 @@ export const emojis: Emoji[] = [
 			'hand',
 			'gesture',
 			'hello',
-			'high five',
+			'high_five',
 			'stop',
 		],
 	},
@@ -3190,8 +3190,8 @@ export const emojis: Emoji[] = [
 			'salute',
 			'hand',
 			'gesture',
-			'star trek',
-			'live long',
+			'star_trek',
+			'live_long',
 			'prosper',
 		],
 	},
@@ -3288,7 +3288,7 @@ export const emojis: Emoji[] = [
 			'gesture',
 			'phone',
 			'shaka',
-			'hang loose',
+			'hang_loose',
 			'hawaiian',
 		],
 	},
@@ -8315,8 +8315,8 @@ export const emojis: Emoji[] = [
 			},
 		],
 		keywords: [
-			'Mother Christmas',
-			'Mrs Claus',
+			'Mother_Christmas',
+			'Mrs_Claus',
 			'Christmas',
 			'holiday',
 		],
@@ -8359,7 +8359,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['Mx Claus', 'Christmas', 'holiday'],
+		keywords: ['Mx_Claus', 'Christmas', 'holiday'],
 	},
 	{
 		id: '7b37c8c7-656a-4df0-a98c-8340ed78d7cc',
@@ -8399,7 +8399,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['Santa Claus', 'Christmas', 'holiday'],
+		keywords: ['Santa_Claus', 'Christmas', 'holiday'],
 	},
 	{
 		id: 'ed16dd9f-ef51-4d83-bf2e-b2f2e14efa21',
@@ -9535,7 +9535,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['tipping hand', 'woman', 'sassy'],
+		keywords: ['tipping_hand', 'woman', 'sassy'],
 	},
 	{
 		id: '80c20305-083e-4bc2-adc6-f0db3c46a852',
@@ -9575,7 +9575,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['tipping hand', 'person', 'sassy'],
+		keywords: ['tipping_hand', 'person', 'sassy'],
 	},
 	{
 		id: '078970d1-e916-4809-8e27-4fab359c9366',
@@ -9615,7 +9615,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['tipping hand', 'man', 'sassy'],
+		keywords: ['tipping_hand', 'man', 'sassy'],
 	},
 	{
 		id: '1367148a-417a-4313-bb69-a885f34395c9',
@@ -9655,7 +9655,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['gesturing no', 'woman', 'no', 'stop'],
+		keywords: ['gesturing_no', 'woman', 'no', 'stop'],
 	},
 	{
 		id: 'ac17693d-0f03-449d-b7c9-75cee9b33684',
@@ -9695,7 +9695,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['gesturing no', 'person', 'no', 'stop'],
+		keywords: ['gesturing_no', 'person', 'no', 'stop'],
 	},
 	{
 		id: 'ce346d55-5afc-4e05-a918-e001d83114df',
@@ -9735,7 +9735,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['gesturing no', 'man', 'no', 'stop'],
+		keywords: ['gesturing_no', 'man', 'no', 'stop'],
 	},
 	{
 		id: '644c3f61-48ee-4a24-8668-9a7a79a29d43',
@@ -9775,7 +9775,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['gesturing ok', 'woman', 'ok', 'yes'],
+		keywords: ['gesturing_ok', 'woman', 'ok', 'yes'],
 	},
 	{
 		id: '153e3529-2595-4635-942b-d6ac6dc0f97f',
@@ -9815,7 +9815,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['gesturing ok', 'person', 'ok', 'yes'],
+		keywords: ['gesturing_ok', 'person', 'ok', 'yes'],
 	},
 	{
 		id: 'd745e5d5-1691-4507-9ce7-2fcc8a531636',
@@ -9855,7 +9855,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['gesturing ok', 'man', 'ok', 'yes'],
+		keywords: ['gesturing_ok', 'man', 'ok', 'yes'],
 	},
 	{
 		id: '1c4f8c4f-3e2c-4c6a-9196-06a486c827cb',
@@ -9895,7 +9895,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['raising hand', 'woman', 'hand', 'raise'],
+		keywords: ['raising_hand', 'woman', 'hand', 'raise'],
 	},
 	{
 		id: 'a4096e22-52b4-4dca-bf26-a34ff81cc658',
@@ -9935,7 +9935,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['raising hand', 'person', 'hand', 'raise'],
+		keywords: ['raising_hand', 'person', 'hand', 'raise'],
 	},
 	{
 		id: '96a28c49-a8ad-4bdd-b607-83707e74435b',
@@ -9975,7 +9975,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['raising hand', 'man', 'hand', 'raise'],
+		keywords: ['raising_hand', 'man', 'hand', 'raise'],
 	},
 	{
 		id: '178fb6d3-da81-49e3-a835-52bbed43eef5',
@@ -10015,7 +10015,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['hearing aid', 'woman', 'accessibility'],
+		keywords: ['hearing_aid', 'woman', 'accessibility'],
 	},
 	{
 		id: '0d10d0d6-2efd-4e69-b99f-fd19c61ba54b',
@@ -10055,7 +10055,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['hearing aid', 'person', 'accessibility'],
+		keywords: ['hearing_aid', 'person', 'accessibility'],
 	},
 	{
 		id: 'bf98501b-192e-4a9f-8571-353dab0becdb',
@@ -10095,7 +10095,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['hearing aid', 'man', 'accessibility'],
+		keywords: ['hearing_aid', 'man', 'accessibility'],
 	},
 	{
 		id: '22ab5979-1ddf-4ffe-b612-d4a9c58fb41f',
@@ -10855,7 +10855,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['steamy room', 'woman', 'sauna'],
+		keywords: ['steamy_room', 'woman', 'sauna'],
 	},
 	{
 		id: '8a8fd4b0-4196-488f-b8d7-21e2f36a5b75',
@@ -10895,7 +10895,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['steamy room', 'person', 'sauna'],
+		keywords: ['steamy_room', 'person', 'sauna'],
 	},
 	{
 		id: 'd32b11f9-eb1a-402b-9f0c-6f8346eb7a08',
@@ -10935,7 +10935,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['steamy room', 'man', 'sauna'],
+		keywords: ['steamy_room', 'man', 'sauna'],
 	},
 	{
 		id: '6a8e6b72-77fd-4035-afb0-f83900026890',
@@ -10975,7 +10975,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['nail care', 'beauty', 'nail polish'],
+		keywords: ['nail_care', 'beauty', 'nail_polish'],
 	},
 	{
 		id: '850774d6-b179-46c1-b04a-515228b28a8b',
@@ -11103,7 +11103,7 @@ export const emojis: Emoji[] = [
 		value: '👯‍♀',
 		category: 'smileys-people',
 		order: 342,
-		keywords: ['women', 'bunny ears', 'partying'],
+		keywords: ['women', 'bunny_ears', 'partying'],
 	},
 	{
 		id: '04ba6365-d386-495d-885a-47155075404e',
@@ -11111,7 +11111,7 @@ export const emojis: Emoji[] = [
 		value: '👯‍♂',
 		category: 'smileys-people',
 		order: 343,
-		keywords: ['men', 'bunny ears', 'partying'],
+		keywords: ['men', 'bunny_ears', 'partying'],
 	},
 	{
 		id: 'c5989eea-c84a-4afd-a0d0-492ded61e347',
@@ -11191,7 +11191,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['woman', 'manual wheelchair'],
+		keywords: ['woman', 'manual_wheelchair'],
 	},
 	{
 		id: '67b2d0f2-5165-4f8b-9d75-4cff01cf8e7a',
@@ -11231,7 +11231,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['person', 'manual wheelchair'],
+		keywords: ['person', 'manual_wheelchair'],
 	},
 	{
 		id: '196a23c3-9153-4c63-9135-c042b87f7f19',
@@ -11271,7 +11271,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['man', 'manual wheelchair'],
+		keywords: ['man', 'manual_wheelchair'],
 	},
 	{
 		id: '0eb59024-884f-4667-9cd1-68b8e1abe116',
@@ -11311,7 +11311,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['woman', 'motorized wheelchair'],
+		keywords: ['woman', 'motorized_wheelchair'],
 	},
 	{
 		id: 'de4c1036-f45e-4a86-af3c-46584b30ce72',
@@ -11351,7 +11351,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['person', 'motorized wheelchair'],
+		keywords: ['person', 'motorized_wheelchair'],
 	},
 	{
 		id: '5a96f979-b2cb-41d3-a2bc-21cd89ac8c24',
@@ -11391,7 +11391,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['man', 'motorized wheelchair'],
+		keywords: ['man', 'motorized_wheelchair'],
 	},
 	{
 		id: 'b770b83b-0629-4ad4-af38-30b772306ac8',
@@ -11551,7 +11551,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['woman', 'white cane'],
+		keywords: ['woman', 'white_cane'],
 	},
 	{
 		id: '2ca377ec-4ae8-464d-8506-c511f10fd336',
@@ -11591,7 +11591,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['person', 'white cane'],
+		keywords: ['person', 'white_cane'],
 	},
 	{
 		id: '04e84ef8-47d9-4347-9223-3f96cb1f76f4',
@@ -11631,7 +11631,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['man', 'white cane'],
+		keywords: ['man', 'white_cane'],
 	},
 	{
 		id: 'af740396-5624-45a8-a504-cf026ce36c33',
@@ -12031,7 +12031,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['woman', 'man', 'holding hands'],
+		keywords: ['woman', 'man', 'holding_hands'],
 	},
 	{
 		id: 'f5b7bbe2-8a80-4bcf-9284-2c4dcc75ce00',
@@ -12071,7 +12071,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['women', 'holding hands'],
+		keywords: ['women', 'holding_hands'],
 	},
 	{
 		id: '43d30f22-c2c2-453d-b150-1967194d1c5e',
@@ -12111,7 +12111,7 @@ export const emojis: Emoji[] = [
 				order: 6,
 			},
 		],
-		keywords: ['men', 'holding hands'],
+		keywords: ['men', 'holding_hands'],
 	},
 	{
 		id: '2b25696d-34a8-4111-9d93-e9c1abd89b46',
@@ -13479,7 +13479,7 @@ export const emojis: Emoji[] = [
 		value: '🥼',
 		category: 'smileys-people',
 		order: 407,
-		keywords: ['lab coat', 'scientist', 'doctor'],
+		keywords: ['lab_coat', 'scientist', 'doctor'],
 	},
 	{
 		id: 'ef3f1256-4247-41e7-a8ac-eafb2957808d',
@@ -13487,7 +13487,7 @@ export const emojis: Emoji[] = [
 		value: '🦺',
 		category: 'smileys-people',
 		order: 408,
-		keywords: ['safety vest', 'high visibility', 'protection'],
+		keywords: ['safety_vest', 'high_visibility', 'protection'],
 	},
 	{
 		id: 'def5677a-ff74-45e4-818b-a86e1dc912c7',
@@ -13591,7 +13591,7 @@ export const emojis: Emoji[] = [
 		value: '🥿',
 		category: 'smileys-people',
 		order: 421,
-		keywords: ['flat shoe', 'shoes', 'footwear'],
+		keywords: ['flat_shoe', 'shoes', 'footwear'],
 	},
 	{
 		id: '8634d705-c628-4ee5-9741-d7d59f5c69ba',
@@ -13599,7 +13599,7 @@ export const emojis: Emoji[] = [
 		value: '👠',
 		category: 'smileys-people',
 		order: 422,
-		keywords: ['high-heeled shoe', 'heels', 'footwear'],
+		keywords: ['high-heeled_shoe', 'heels', 'footwear'],
 	},
 	{
 		id: '0bbd8ca9-fe6e-4341-911f-0df8156af005',
@@ -13631,7 +13631,7 @@ export const emojis: Emoji[] = [
 		value: '👟',
 		category: 'smileys-people',
 		order: 426,
-		keywords: ['running shoe', 'sneakers', 'footwear'],
+		keywords: ['running_shoe', 'sneakers', 'footwear'],
 	},
 	{
 		id: '5e5cbf49-1f9e-4ed8-9c11-99f07d9acf8b',
@@ -13639,7 +13639,7 @@ export const emojis: Emoji[] = [
 		value: '🥾',
 		category: 'smileys-people',
 		order: 427,
-		keywords: ['hiking boot', 'boots', 'footwear'],
+		keywords: ['hiking_boot', 'boots', 'footwear'],
 	},
 	{
 		id: 'a5814512-2f93-40a8-8f2f-b29e079e7421',
@@ -13671,7 +13671,7 @@ export const emojis: Emoji[] = [
 		value: '🎩',
 		category: 'smileys-people',
 		order: 431,
-		keywords: ['top hat', 'hat', 'headwear'],
+		keywords: ['top_hat', 'hat', 'headwear'],
 	},
 	{
 		id: '84bf760b-fd39-4d19-9bf9-3919053eb100',
@@ -13687,7 +13687,7 @@ export const emojis: Emoji[] = [
 		value: '👒',
 		category: 'smileys-people',
 		order: 433,
-		keywords: ["woman's hat", 'hat', 'headwear'],
+		keywords: ["woman's_hat", 'hat', 'headwear'],
 	},
 	{
 		id: '0332a565-472b-4b81-98f2-d5c116db40db',
@@ -13695,7 +13695,7 @@ export const emojis: Emoji[] = [
 		value: '🎓',
 		category: 'smileys-people',
 		order: 434,
-		keywords: ['graduation cap', 'graduation', 'education'],
+		keywords: ['graduation_cap', 'graduation', 'education'],
 	},
 	{
 		id: 'ab94d8b7-ab25-4089-8a64-6576a299940b',
@@ -13735,7 +13735,7 @@ export const emojis: Emoji[] = [
 		value: '👝',
 		category: 'smileys-people',
 		order: 439,
-		keywords: ['clutch bag', 'bag', 'fashion'],
+		keywords: ['clutch_bag', 'bag', 'fashion'],
 	},
 	{
 		id: 'be27bbe8-9c3d-4b62-9151-df9e0f99db85',
@@ -15119,7 +15119,7 @@ export const emojis: Emoji[] = [
 		value: '🌛',
 		category: 'animals-nature',
 		order: 612,
-		keywords: ['nature', 'moon', 'face', 'first quarter'],
+		keywords: ['nature', 'moon', 'face', 'first_quarter'],
 	},
 	{
 		id: '3c2a52d7-2df0-46c6-ae35-86aaecf7c099',
@@ -15127,7 +15127,7 @@ export const emojis: Emoji[] = [
 		value: '🌜',
 		category: 'animals-nature',
 		order: 613,
-		keywords: ['nature', 'moon', 'face', 'last quarter'],
+		keywords: ['nature', 'moon', 'face', 'last_quarter'],
 	},
 	{
 		id: '2f27d3dd-c619-47a7-86f3-68789643df53',
@@ -15199,7 +15199,7 @@ export const emojis: Emoji[] = [
 		value: '🌔',
 		category: 'animals-nature',
 		order: 622,
-		keywords: ['nature', 'moon', 'waxing gibbous moon'],
+		keywords: ['nature', 'moon', 'waxing_gibbous_moon'],
 	},
 	{
 		id: '7b16bc17-33b3-46ea-819c-91621be52a20',
@@ -15247,7 +15247,7 @@ export const emojis: Emoji[] = [
 		value: '💫',
 		category: 'animals-nature',
 		order: 628,
-		keywords: ['nature', 'star', 'dizzy', 'shooting star', 'shiny'],
+		keywords: ['nature', 'star', 'dizzy', 'shooting_star', 'shiny'],
 	},
 	{
 		id: '440dd369-2322-4f4f-9b51-0b257d7ef67a',
@@ -18855,7 +18855,7 @@ export const emojis: Emoji[] = [
 		value: '🚙',
 		category: 'travel-places',
 		order: 907,
-		keywords: ['recreational vehicle', 'rv', 'camper', 'vehicle'],
+		keywords: ['recreational_vehicle', 'rv', 'camper', 'vehicle'],
 	},
 	{
 		id: 'af87166a-5e98-4372-b48b-1f41b3f52acc',
@@ -18867,7 +18867,7 @@ export const emojis: Emoji[] = [
 			'bus',
 			'vehicle',
 			'transportation',
-			'public transport',
+			'public_transport',
 		],
 	},
 	{
@@ -18880,7 +18880,7 @@ export const emojis: Emoji[] = [
 			'trolleybus',
 			'vehicle',
 			'transportation',
-			'electric bus',
+			'electric_bus',
 		],
 	},
 	{
@@ -18889,7 +18889,7 @@ export const emojis: Emoji[] = [
 		value: '🏎️',
 		category: 'travel-places',
 		order: 910,
-		keywords: ['racing car', 'vehicle', 'sports', 'racing'],
+		keywords: ['racing_car', 'vehicle', 'sports', 'racing'],
 	},
 	{
 		id: '3fedd31f-ab2f-4752-994f-09fef2613da7',
@@ -18898,9 +18898,9 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 911,
 		keywords: [
-			'police car',
+			'police_car',
 			'vehicle',
-			'law enforcement',
+			'law_enforcement',
 			'transportation',
 		],
 	},
@@ -18919,10 +18919,10 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 913,
 		keywords: [
-			'fire engine',
+			'fire_engine',
 			'vehicle',
 			'emergency',
-			'fire department',
+			'fire_department',
 		],
 	},
 	{
@@ -18935,7 +18935,7 @@ export const emojis: Emoji[] = [
 			'minibus',
 			'vehicle',
 			'transportation',
-			'public transport',
+			'public_transport',
 		],
 	},
 	{
@@ -18944,7 +18944,7 @@ export const emojis: Emoji[] = [
 		value: '🛻',
 		category: 'travel-places',
 		order: 915,
-		keywords: ['pickup truck', 'vehicle', 'transportation'],
+		keywords: ['pickup_truck', 'vehicle', 'transportation'],
 	},
 	{
 		id: '24d279bb-cab2-4da7-9722-6821f1a7a76b',
@@ -18953,7 +18953,7 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 916,
 		keywords: [
-			'delivery truck',
+			'delivery_truck',
 			'vehicle',
 			'transportation',
 			'logistics',
@@ -18966,7 +18966,7 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 917,
 		keywords: [
-			'articulated lorry',
+			'articulated_lorry',
 			'vehicle',
 			'transportation',
 			'logistics',
@@ -18987,9 +18987,9 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 919,
 		keywords: [
-			'white cane',
+			'white_cane',
 			'accessibility',
-			'mobility aid',
+			'mobility_aid',
 			'blind',
 		],
 	},
@@ -18999,7 +18999,7 @@ export const emojis: Emoji[] = [
 		value: '🦽',
 		category: 'travel-places',
 		order: 920,
-		keywords: ['manual wheelchair', 'accessibility', 'mobility aid'],
+		keywords: ['manual_wheelchair', 'accessibility', 'mobility_aid'],
 	},
 	{
 		id: 'bb0fe2e9-3c52-4e4e-9ab6-58100328d292',
@@ -19008,9 +19008,9 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 921,
 		keywords: [
-			'motorized wheelchair',
+			'motorized_wheelchair',
 			'accessibility',
-			'mobility aid',
+			'mobility_aid',
 		],
 	},
 	{
@@ -19037,7 +19037,7 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 923,
 		keywords: [
-			'kick scooter',
+			'kick_scooter',
 			'vehicle',
 			'transportation',
 			'recreation',
@@ -19057,7 +19057,7 @@ export const emojis: Emoji[] = [
 		value: '🛵',
 		category: 'travel-places',
 		order: 925,
-		keywords: ['motor scooter', 'vehicle', 'transportation'],
+		keywords: ['motor_scooter', 'vehicle', 'transportation'],
 	},
 	{
 		id: '31feafca-706c-4b10-91b4-186cda0ad857',
@@ -19073,7 +19073,7 @@ export const emojis: Emoji[] = [
 		value: '🛺',
 		category: 'travel-places',
 		order: 927,
-		keywords: ['auto rickshaw', 'vehicle', 'transportation'],
+		keywords: ['auto_rickshaw', 'vehicle', 'transportation'],
 	},
 	{
 		id: '2cfedaf8-b9ac-4f7b-ae71-da1142211a6e',
@@ -19081,7 +19081,7 @@ export const emojis: Emoji[] = [
 		value: '🛞',
 		category: 'travel-places',
 		order: 928,
-		keywords: ['manual rickshaw', 'vehicle', 'transportation'],
+		keywords: ['manual_rickshaw', 'vehicle', 'transportation'],
 	},
 	{
 		id: 'e285259c-cffe-4353-9b8e-c12a63891197',
@@ -19089,7 +19089,7 @@ export const emojis: Emoji[] = [
 		value: '🚨',
 		category: 'travel-places',
 		order: 929,
-		keywords: ['police car light', 'emergency', 'alert'],
+		keywords: ['police_car_light', 'emergency', 'alert'],
 	},
 	{
 		id: '8f69b2d9-cffd-4c70-ab69-1c832f897ca0',
@@ -19097,7 +19097,7 @@ export const emojis: Emoji[] = [
 		value: '🚔',
 		category: 'travel-places',
 		order: 930,
-		keywords: ['oncoming police car', 'vehicle', 'law enforcement'],
+		keywords: ['oncoming_police_car', 'vehicle', 'law_enforcement'],
 	},
 	{
 		id: '2e1d6700-7994-43fa-8242-3b1e98a4ed8a',
@@ -19105,7 +19105,7 @@ export const emojis: Emoji[] = [
 		value: '🚍',
 		category: 'travel-places',
 		order: 931,
-		keywords: ['oncoming bus', 'vehicle', 'public transport'],
+		keywords: ['oncoming_bus', 'vehicle', 'public_transport'],
 	},
 	{
 		id: 'ac042ea0-1e8a-428a-948f-4e189a2f93f1',
@@ -19113,7 +19113,7 @@ export const emojis: Emoji[] = [
 		value: '🚘',
 		category: 'travel-places',
 		order: 932,
-		keywords: ['oncoming automobile', 'vehicle', 'car'],
+		keywords: ['oncoming_automobile', 'vehicle', 'car'],
 	},
 	{
 		id: '6e473225-dc56-4470-95b1-6c8bd271cf1a',
@@ -19121,7 +19121,7 @@ export const emojis: Emoji[] = [
 		value: '🚖',
 		category: 'travel-places',
 		order: 933,
-		keywords: ['oncoming taxi', 'vehicle', 'taxi'],
+		keywords: ['oncoming_taxi', 'vehicle', 'taxi'],
 	},
 	{
 		id: '704305f0-f83f-44b5-bb58-5b62ad527ff2',
@@ -19129,7 +19129,7 @@ export const emojis: Emoji[] = [
 		value: '🚡',
 		category: 'travel-places',
 		order: 934,
-		keywords: ['aerial tramway', 'transportation', 'vehicle'],
+		keywords: ['aerial_tramway', 'transportation', 'vehicle'],
 	},
 	{
 		id: 'cd383820-6546-42fb-9234-47bc99ff0bcf',
@@ -19137,7 +19137,7 @@ export const emojis: Emoji[] = [
 		value: '🚠',
 		category: 'travel-places',
 		order: 935,
-		keywords: ['mountain cableway', 'transportation', 'vehicle'],
+		keywords: ['mountain_cableway', 'transportation', 'vehicle'],
 	},
 	{
 		id: '0d471a17-3df2-41ad-aa0c-9fdebc6821f4',
@@ -19145,7 +19145,7 @@ export const emojis: Emoji[] = [
 		value: '🚟',
 		category: 'travel-places',
 		order: 936,
-		keywords: ['suspension railway', 'transportation', 'vehicle'],
+		keywords: ['suspension_railway', 'transportation', 'vehicle'],
 	},
 	{
 		id: '849c85e6-cabd-482d-9f46-01f2536cb1c3',
@@ -19153,7 +19153,7 @@ export const emojis: Emoji[] = [
 		value: '🚃',
 		category: 'travel-places',
 		order: 937,
-		keywords: ['railway car', 'train', 'vehicle'],
+		keywords: ['railway_car', 'train', 'vehicle'],
 	},
 	{
 		id: '707c8d1f-ce16-4570-882b-0d85fa1ee866',
@@ -19161,7 +19161,7 @@ export const emojis: Emoji[] = [
 		value: '🚋',
 		category: 'travel-places',
 		order: 938,
-		keywords: ['tram car', 'vehicle', 'transportation'],
+		keywords: ['tram_car', 'vehicle', 'transportation'],
 	},
 	{
 		id: '52c88519-efb3-41dd-ad7e-73794ca2980a',
@@ -19169,7 +19169,7 @@ export const emojis: Emoji[] = [
 		value: '🚞',
 		category: 'travel-places',
 		order: 939,
-		keywords: ['mountain railway', 'vehicle', 'transportation'],
+		keywords: ['mountain_railway', 'vehicle', 'transportation'],
 	},
 	{
 		id: 'c66d1884-6ee4-4c3a-b2c2-31350d78f8b9',
@@ -19186,7 +19186,7 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 941,
 		keywords: [
-			'high-speed train',
+			'high-speed_train',
 			'vehicle',
 			'transportation',
 			'train',
@@ -19198,7 +19198,7 @@ export const emojis: Emoji[] = [
 		value: '🚅',
 		category: 'travel-places',
 		order: 942,
-		keywords: ['bullet train', 'vehicle', 'transportation', 'train'],
+		keywords: ['bullet_train', 'vehicle', 'transportation', 'train'],
 	},
 	{
 		id: '6a9b8540-3b69-40e9-8cc4-bf1137241560',
@@ -19206,7 +19206,7 @@ export const emojis: Emoji[] = [
 		value: '🚈',
 		category: 'travel-places',
 		order: 943,
-		keywords: ['light rail', 'vehicle', 'transportation'],
+		keywords: ['light_rail', 'vehicle', 'transportation'],
 	},
 	{
 		id: 'de340263-612e-4333-9937-5b2594124709',
@@ -19215,7 +19215,7 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 944,
 		keywords: [
-			'steam locomotive',
+			'steam_locomotive',
 			'vehicle',
 			'transportation',
 			'train',
@@ -19251,7 +19251,7 @@ export const emojis: Emoji[] = [
 		value: '🚉',
 		category: 'travel-places',
 		order: 948,
-		keywords: ['station', 'transportation', 'train station'],
+		keywords: ['station', 'transportation', 'train_station'],
 	},
 	{
 		id: 'add0cbef-084f-48da-988c-0a44f81a92ac',
@@ -19284,7 +19284,7 @@ export const emojis: Emoji[] = [
 		category: 'travel-places',
 		order: 952,
 		keywords: [
-			'small airplane',
+			'small_airplane',
 			'vehicle',
 			'transportation',
 			'flight',
@@ -19320,7 +19320,7 @@ export const emojis: Emoji[] = [
 		value: '🛸',
 		category: 'travel-places',
 		order: 956,
-		keywords: ['flying saucer', 'vehicle', 'space', 'alien'],
+		keywords: ['flying_saucer', 'vehicle', 'space', 'alien'],
 	},
 	{
 		id: '611b0681-bea7-4695-b8c4-f1345cb7cc50',
@@ -19360,7 +19360,7 @@ export const emojis: Emoji[] = [
 		value: '🛥️',
 		category: 'travel-places',
 		order: 961,
-		keywords: ['motor boat', 'vehicle', 'transportation', 'boat'],
+		keywords: ['motor_boat', 'vehicle', 'transportation', 'boat'],
 	},
 	{
 		id: '94af72ab-e9fb-42d0-9580-10364e74e2de',
@@ -19368,7 +19368,7 @@ export const emojis: Emoji[] = [
 		value: '🛳️',
 		category: 'travel-places',
 		order: 962,
-		keywords: ['passenger ship', 'vehicle', 'transportation', 'boat'],
+		keywords: ['passenger_ship', 'vehicle', 'transportation', 'boat'],
 	},
 	{
 		id: '35fbd940-22ca-48f2-b895-8d15f9ac032f',
@@ -19392,7 +19392,7 @@ export const emojis: Emoji[] = [
 		value: '🛟',
 		category: 'travel-places',
 		order: 965,
-		keywords: ['ring buoy', 'safety', 'boat'],
+		keywords: ['ring_buoy', 'safety', 'boat'],
 	},
 	{
 		id: 'e4962a9c-ec11-4df4-9e5a-1da99e2c40dc',
@@ -19416,7 +19416,7 @@ export const emojis: Emoji[] = [
 		value: '⛽',
 		category: 'travel-places',
 		order: 968,
-		keywords: ['fuel pump', 'gas station', 'vehicle'],
+		keywords: ['fuel_pump', 'gas_station', 'vehicle'],
 	},
 	{
 		id: 'b47cabe4-689e-41f2-b894-ae9ed488a892',
@@ -19432,7 +19432,7 @@ export const emojis: Emoji[] = [
 		value: '🚦',
 		category: 'travel-places',
 		order: 970,
-		keywords: ['vertical traffic light', 'signal', 'stoplight'],
+		keywords: ['vertical_traffic_light', 'signal', 'stoplight'],
 	},
 	{
 		id: 'cf7e7655-9ad9-479e-bd8b-824c62949242',
@@ -19440,7 +19440,7 @@ export const emojis: Emoji[] = [
 		value: '🚥',
 		category: 'travel-places',
 		order: 971,
-		keywords: ['horizontal traffic light', 'signal', 'stoplight'],
+		keywords: ['horizontal_traffic_light', 'signal', 'stoplight'],
 	},
 	{
 		id: '7fc85d4e-4027-4352-9b0a-d0f2e4289d49',
@@ -19448,7 +19448,7 @@ export const emojis: Emoji[] = [
 		value: '🚏',
 		category: 'travel-places',
 		order: 972,
-		keywords: ['bus stop', 'public transport', 'sign'],
+		keywords: ['bus_stop', 'public_transport', 'sign'],
 	},
 	{
 		id: 'ebdfdf7c-584b-4b79-b615-9993345937a2',
@@ -19464,7 +19464,7 @@ export const emojis: Emoji[] = [
 		value: '🗿',
 		category: 'travel-places',
 		order: 974,
-		keywords: ['moai', 'statue', 'Easter Island'],
+		keywords: ['moai', 'statue', 'Easter_Island'],
 	},
 	{
 		id: 'c5d2aa7e-6bc2-4e5f-9aea-afa8e2d2ab63',
@@ -19472,7 +19472,7 @@ export const emojis: Emoji[] = [
 		value: '🗽',
 		category: 'travel-places',
 		order: 975,
-		keywords: ['Statue of Liberty', 'New York', 'landmark'],
+		keywords: ['Statue_of_Liberty', 'New_York', 'landmark'],
 	},
 	{
 		id: '10f968d7-941e-4f8d-af7b-9543df7c5804',
@@ -19480,7 +19480,7 @@ export const emojis: Emoji[] = [
 		value: '🗼',
 		category: 'travel-places',
 		order: 976,
-		keywords: ['Tokyo Tower', 'Japan', 'landmark'],
+		keywords: ['Tokyo_Tower', 'Japan', 'landmark'],
 	},
 	{
 		id: '84ebaff0-4938-4ca0-9207-11afb9c7ef2e',
@@ -19496,7 +19496,7 @@ export const emojis: Emoji[] = [
 		value: '🏯',
 		category: 'travel-places',
 		order: 978,
-		keywords: ['Japanese castle', 'building', 'landmark'],
+		keywords: ['Japanese_castle', 'building', 'landmark'],
 	},
 	{
 		id: 'f855261b-aeda-4696-8913-3c13e4d17407',
@@ -19512,7 +19512,7 @@ export const emojis: Emoji[] = [
 		value: '🎡',
 		category: 'travel-places',
 		order: 980,
-		keywords: ['ferris wheel', 'amusement park', 'ride'],
+		keywords: ['ferris_wheel', 'amusement_park', 'ride'],
 	},
 	{
 		id: '267b0911-f02c-49b5-9ba9-730691f33660',
@@ -19520,7 +19520,7 @@ export const emojis: Emoji[] = [
 		value: '🎢',
 		category: 'travel-places',
 		order: 981,
-		keywords: ['roller coaster', 'amusement park', 'ride'],
+		keywords: ['roller_coaster', 'amusement_park', 'ride'],
 	},
 	{
 		id: 'ca8607dc-5733-4dcb-ab47-bc97570b1308',
@@ -19528,7 +19528,7 @@ export const emojis: Emoji[] = [
 		value: '🎠',
 		category: 'travel-places',
 		order: 982,
-		keywords: ['carousel horse', 'amusement park', 'ride'],
+		keywords: ['carousel_horse', 'amusement_park', 'ride'],
 	},
 	{
 		id: '7803b16c-ca54-4829-847d-8cb47a006d44',
@@ -19544,7 +19544,7 @@ export const emojis: Emoji[] = [
 		value: '⛱️',
 		category: 'travel-places',
 		order: 984,
-		keywords: ['umbrella on ground', 'beach', 'sunshade'],
+		keywords: ['umbrella_on_ground', 'beach', 'sunshade'],
 	},
 	{
 		id: 'f51d0634-f9a9-410e-8102-f1f83c195447',
@@ -19552,7 +19552,7 @@ export const emojis: Emoji[] = [
 		value: '🏖️',
 		category: 'travel-places',
 		order: 985,
-		keywords: ['beach with umbrella', 'vacation', 'sunshade'],
+		keywords: ['beach_with_umbrella', 'vacation', 'sunshade'],
 	},
 	{
 		id: 'f0d7f9bc-a728-44c6-b718-d54e4b0d4a64',
@@ -19560,7 +19560,7 @@ export const emojis: Emoji[] = [
 		value: '🏝️',
 		category: 'travel-places',
 		order: 986,
-		keywords: ['desert island', 'vacation', 'beach'],
+		keywords: ['desert_island', 'vacation', 'beach'],
 	},
 	{
 		id: 'fd667b92-e670-408c-9654-ca07a59f7bef',
@@ -19592,7 +19592,7 @@ export const emojis: Emoji[] = [
 		value: '🏔️',
 		category: 'travel-places',
 		order: 990,
-		keywords: ['snow-capped mountain', 'landscape', 'nature'],
+		keywords: ['snow-capped_mountain', 'landscape', 'nature'],
 	},
 	{
 		id: '58301631-294b-4d0d-814e-08f6a60e7d29',
@@ -19600,7 +19600,7 @@ export const emojis: Emoji[] = [
 		value: '🗻',
 		category: 'travel-places',
 		order: 991,
-		keywords: ['Mount Fuji', 'landscape', 'Japan'],
+		keywords: ['Mount_Fuji', 'landscape', 'Japan'],
 	},
 	{
 		id: 'd0d9c537-e27d-4c46-8cda-b481114245da',
@@ -19640,7 +19640,7 @@ export const emojis: Emoji[] = [
 		value: '🏡',
 		category: 'travel-places',
 		order: 996,
-		keywords: ['house with garden', 'building', 'home'],
+		keywords: ['house_with_garden', 'building', 'home'],
 	},
 	{
 		id: '9fbd1442-d769-4c0a-958b-f266e06ee516',
@@ -19656,7 +19656,7 @@ export const emojis: Emoji[] = [
 		value: '🏚️',
 		category: 'travel-places',
 		order: 998,
-		keywords: ['derelict house', 'building', 'abandoned'],
+		keywords: ['derelict_house', 'building', 'abandoned'],
 	},
 	{
 		id: '4986799f-9577-4486-ae7a-3266a76a12bc',
@@ -19664,7 +19664,7 @@ export const emojis: Emoji[] = [
 		value: '🏗️',
 		category: 'travel-places',
 		order: 999,
-		keywords: ['building construction', 'building', 'construction'],
+		keywords: ['building_construction', 'building', 'construction'],
 	},
 	{
 		id: '24a44262-2407-4fc8-a5e1-c645b202e426',
@@ -19680,7 +19680,7 @@ export const emojis: Emoji[] = [
 		value: '🏢',
 		category: 'travel-places',
 		order: 1001,
-		keywords: ['office building', 'building', 'work'],
+		keywords: ['office_building', 'building', 'work'],
 	},
 	{
 		id: '9c7f7f3b-29b9-4aa8-a52a-77e4d3d1ae71',
@@ -19688,7 +19688,7 @@ export const emojis: Emoji[] = [
 		value: '🏬',
 		category: 'travel-places',
 		order: 1002,
-		keywords: ['department store', 'building', 'shopping'],
+		keywords: ['department_store', 'building', 'shopping'],
 	},
 	{
 		id: 'f83f5bc2-a625-4120-aecf-3756805af0fb',
@@ -19696,7 +19696,7 @@ export const emojis: Emoji[] = [
 		value: '🏣',
 		category: 'travel-places',
 		order: 1003,
-		keywords: ['post office', 'building', 'mail'],
+		keywords: ['post_office', 'building', 'mail'],
 	},
 	{
 		id: 'f8ce9b8d-ca41-45d4-bf8e-25df7ee74b9f',
@@ -19704,7 +19704,7 @@ export const emojis: Emoji[] = [
 		value: '🏤',
 		category: 'travel-places',
 		order: 1004,
-		keywords: ['Japanese post office', 'building', 'mail'],
+		keywords: ['Japanese_post_office', 'building', 'mail'],
 	},
 	{
 		id: 'f7de4652-05dd-451f-b87d-ed8a1ab543eb',
@@ -19736,7 +19736,7 @@ export const emojis: Emoji[] = [
 		value: '🏪',
 		category: 'travel-places',
 		order: 1008,
-		keywords: ['convenience store', 'building', 'shopping'],
+		keywords: ['convenience_store', 'building', 'shopping'],
 	},
 	{
 		id: '29f3a345-15bf-4652-9264-96a7bc54486c',
@@ -19752,7 +19752,7 @@ export const emojis: Emoji[] = [
 		value: '🏩',
 		category: 'travel-places',
 		order: 1010,
-		keywords: ['love hotel', 'building', 'accommodation'],
+		keywords: ['love_hotel', 'building', 'accommodation'],
 	},
 	{
 		id: 'ac566182-634d-4a5c-b191-28c9c7c98ed0',
@@ -19768,7 +19768,7 @@ export const emojis: Emoji[] = [
 		value: '🏛️',
 		category: 'travel-places',
 		order: 1012,
-		keywords: ['classical building', 'building', 'architecture'],
+		keywords: ['classical_building', 'building', 'architecture'],
 	},
 	{
 		id: '8d885696-8bcd-46ff-8938-2a53d65da8ba',
@@ -19800,7 +19800,7 @@ export const emojis: Emoji[] = [
 		value: '🛕',
 		category: 'travel-places',
 		order: 1016,
-		keywords: ['Hindu temple', 'building', 'religion'],
+		keywords: ['Hindu_temple', 'building', 'religion'],
 	},
 	{
 		id: '012d056b-93e0-433b-b618-c22bca0e139b',
@@ -19816,7 +19816,7 @@ export const emojis: Emoji[] = [
 		value: '⛩️',
 		category: 'travel-places',
 		order: 1018,
-		keywords: ['Shinto shrine', 'building', 'religion'],
+		keywords: ['Shinto_shrine', 'building', 'religion'],
 	},
 	{
 		id: '4f7661bd-053b-41d9-bb1e-cfe1343b9683',
@@ -19824,7 +19824,7 @@ export const emojis: Emoji[] = [
 		value: '🛤️',
 		category: 'travel-places',
 		order: 1019,
-		keywords: ['railway track', 'vehicle', 'transportation'],
+		keywords: ['railway_track', 'vehicle', 'transportation'],
 	},
 	{
 		id: '253d6709-9c9a-4178-9e23-0189a8324bff',
@@ -19848,7 +19848,7 @@ export const emojis: Emoji[] = [
 		value: '🎑',
 		category: 'travel-places',
 		order: 1022,
-		keywords: ['moon viewing ceremony', 'festival', 'Japan'],
+		keywords: ['moon_viewing_ceremony', 'festival', 'Japan'],
 	},
 	{
 		id: '75053a3a-bf16-42d9-b230-ea639af3605e',
@@ -19856,7 +19856,7 @@ export const emojis: Emoji[] = [
 		value: '🏞️',
 		category: 'travel-places',
 		order: 1023,
-		keywords: ['national park', 'landscape', 'nature'],
+		keywords: ['national_park', 'landscape', 'nature'],
 	},
 	{
 		id: 'f8314f35-107d-4d1d-a6fb-22df6d40d618',
@@ -19872,7 +19872,7 @@ export const emojis: Emoji[] = [
 		value: '🌄',
 		category: 'travel-places',
 		order: 1025,
-		keywords: ['sunrise over mountains', 'morning', 'landscape'],
+		keywords: ['sunrise_over_mountains', 'morning', 'landscape'],
 	},
 	{
 		id: 'db53a542-7286-4eed-adb6-8328fbe7be61',
@@ -19880,7 +19880,7 @@ export const emojis: Emoji[] = [
 		value: '🌠',
 		category: 'travel-places',
 		order: 1026,
-		keywords: ['shooting star', 'night', 'star'],
+		keywords: ['shooting_star', 'night', 'star'],
 	},
 	{
 		id: 'ca44726a-8881-4bf4-8a8b-05425e473cee',
@@ -19912,7 +19912,7 @@ export const emojis: Emoji[] = [
 		value: '🌆',
 		category: 'travel-places',
 		order: 1030,
-		keywords: ['cityscape at dusk', 'evening', 'landscape'],
+		keywords: ['cityscape_at_dusk', 'evening', 'landscape'],
 	},
 	{
 		id: '2a640156-93ce-43ab-9254-301568dcd324',
@@ -19928,7 +19928,7 @@ export const emojis: Emoji[] = [
 		value: '🌃',
 		category: 'travel-places',
 		order: 1032,
-		keywords: ['night with stars', 'night', 'landscape'],
+		keywords: ['night_with_stars', 'night', 'landscape'],
 	},
 	{
 		id: 'eae0a345-d54f-4285-95d0-8f476912db2e',
@@ -19936,7 +19936,7 @@ export const emojis: Emoji[] = [
 		value: '🌌',
 		category: 'travel-places',
 		order: 1033,
-		keywords: ['Milky Way', 'space', 'night'],
+		keywords: ['Milky_Way', 'space', 'night'],
 	},
 	{
 		id: 'b25093d1-e79b-43cf-8501-88f1970860de',
@@ -19944,7 +19944,7 @@ export const emojis: Emoji[] = [
 		value: '🌉',
 		category: 'travel-places',
 		order: 1034,
-		keywords: ['bridge at night', 'night', 'landscape'],
+		keywords: ['bridge_at_night', 'night', 'landscape'],
 	},
 	{
 		id: '75f93895-34c9-45f0-b116-643096bf2444',
@@ -19968,7 +19968,7 @@ export const emojis: Emoji[] = [
 		value: '📱',
 		category: 'objects',
 		order: 1037,
-		keywords: ['mobile phone', 'cellphone', 'communication'],
+		keywords: ['mobile_phone', 'cellphone', 'communication'],
 	},
 	{
 		id: 'afa4082a-1fb1-4575-8dd0-4f97ae6a1f30',
@@ -19977,7 +19977,7 @@ export const emojis: Emoji[] = [
 		category: 'objects',
 		order: 1038,
 		keywords: [
-			'mobile phone with arrow',
+			'mobile_phone_with_arrow',
 			'communication',
 			'technology',
 		],
@@ -20004,7 +20004,7 @@ export const emojis: Emoji[] = [
 		value: '🖥️',
 		category: 'objects',
 		order: 1041,
-		keywords: ['desktop computer', 'technology', 'monitor'],
+		keywords: ['desktop_computer', 'technology', 'monitor'],
 	},
 	{
 		id: '8b5631f5-3b18-4fc4-be62-858c30b8022c',
@@ -20020,7 +20020,7 @@ export const emojis: Emoji[] = [
 		value: '🖱️',
 		category: 'objects',
 		order: 1043,
-		keywords: ['computer mouse', 'technology', 'device'],
+		keywords: ['computer_mouse', 'technology', 'device'],
 	},
 	{
 		id: '6493dbf6-08d6-4375-aab5-a049d62f052b',
@@ -20052,7 +20052,7 @@ export const emojis: Emoji[] = [
 		value: '💽',
 		category: 'objects',
 		order: 1047,
-		keywords: ['computer disk', 'technology', 'storage'],
+		keywords: ['computer_disk', 'technology', 'storage'],
 	},
 	{
 		id: '22953346-8734-4efa-bd5c-8587cac7412e',
@@ -20060,7 +20060,7 @@ export const emojis: Emoji[] = [
 		value: '💾',
 		category: 'objects',
 		order: 1048,
-		keywords: ['floppy disk', 'technology', 'storage'],
+		keywords: ['floppy_disk', 'technology', 'storage'],
 	},
 	{
 		id: '0d301f61-7b76-4ae1-9039-06c2d2037695',
@@ -20068,7 +20068,7 @@ export const emojis: Emoji[] = [
 		value: '💿',
 		category: 'objects',
 		order: 1049,
-		keywords: ['optical disk', 'technology', 'storage'],
+		keywords: ['optical_disk', 'technology', 'storage'],
 	},
 	{
 		id: '7ebe7143-49d4-4d77-8f60-5d35429faccd',
@@ -20100,7 +20100,7 @@ export const emojis: Emoji[] = [
 		value: '📸',
 		category: 'objects',
 		order: 1053,
-		keywords: ['camera with flash', 'photography', 'technology'],
+		keywords: ['camera_with_flash', 'photography', 'technology'],
 	},
 	{
 		id: '92623438-cb27-4efe-963b-f4c3599933fa',
@@ -20108,7 +20108,7 @@ export const emojis: Emoji[] = [
 		value: '📹',
 		category: 'objects',
 		order: 1054,
-		keywords: ['video camera', 'photography', 'technology'],
+		keywords: ['video_camera', 'photography', 'technology'],
 	},
 	{
 		id: '16e7a353-fd69-4c7f-91e1-64e3fcb77ffe',
@@ -20116,7 +20116,7 @@ export const emojis: Emoji[] = [
 		value: '🎥',
 		category: 'objects',
 		order: 1055,
-		keywords: ['movie camera', 'photography', 'technology'],
+		keywords: ['movie_camera', 'photography', 'technology'],
 	},
 	{
 		id: 'f4b96def-84a3-4988-9af0-a2a45cef5590',
@@ -20124,7 +20124,7 @@ export const emojis: Emoji[] = [
 		value: '📽️',
 		category: 'objects',
 		order: 1056,
-		keywords: ['film projector', 'photography', 'technology'],
+		keywords: ['film_projector', 'photography', 'technology'],
 	},
 	{
 		id: '5695e01c-4a0f-484e-9570-9f57c5923ca7',
@@ -20132,7 +20132,7 @@ export const emojis: Emoji[] = [
 		value: '🎞️',
 		category: 'objects',
 		order: 1057,
-		keywords: ['film frames', 'photography', 'technology'],
+		keywords: ['film_frames', 'photography', 'technology'],
 	},
 	{
 		id: 'f19c7985-e795-4d7b-8210-e27156620eae',
@@ -20140,7 +20140,7 @@ export const emojis: Emoji[] = [
 		value: '📞',
 		category: 'objects',
 		order: 1058,
-		keywords: ['telephone receiver', 'communication', 'technology'],
+		keywords: ['telephone_receiver', 'communication', 'technology'],
 	},
 	{
 		id: '13061e5c-046b-470e-906f-25fcbda079e9',
@@ -20164,7 +20164,7 @@ export const emojis: Emoji[] = [
 		value: '📠',
 		category: 'objects',
 		order: 1061,
-		keywords: ['fax machine', 'communication', 'technology'],
+		keywords: ['fax_machine', 'communication', 'technology'],
 	},
 	{
 		id: 'bc8bf0d0-25e4-4c16-8cb8-5f19929c108b',
@@ -20188,7 +20188,7 @@ export const emojis: Emoji[] = [
 		value: '🎙️',
 		category: 'objects',
 		order: 1064,
-		keywords: ['studio microphone', 'music', 'entertainment'],
+		keywords: ['studio_microphone', 'music', 'entertainment'],
 	},
 	{
 		id: '3741cd0f-898f-4f28-8cc2-df284261d526',
@@ -20196,7 +20196,7 @@ export const emojis: Emoji[] = [
 		value: '🎚️',
 		category: 'objects',
 		order: 1065,
-		keywords: ['level slider', 'music', 'technology'],
+		keywords: ['level_slider', 'music', 'technology'],
 	},
 	{
 		id: 'c2840409-f386-458b-84a1-896a079ae42c',
@@ -20204,7 +20204,7 @@ export const emojis: Emoji[] = [
 		value: '🎛️',
 		category: 'objects',
 		order: 1066,
-		keywords: ['control knobs', 'music', 'technology'],
+		keywords: ['control_knobs', 'music', 'technology'],
 	},
 	{
 		id: 'fadf82a6-1f48-4042-a791-09d8ac54b39e',
@@ -20228,7 +20228,7 @@ export const emojis: Emoji[] = [
 		value: '⏲️',
 		category: 'objects',
 		order: 1069,
-		keywords: ['timer clock', 'time', 'clock'],
+		keywords: ['timer_clock', 'time', 'clock'],
 	},
 	{
 		id: 'd68075c1-b808-4837-8f60-0cbaccb897b4',
@@ -20236,7 +20236,7 @@ export const emojis: Emoji[] = [
 		value: '⏰',
 		category: 'objects',
 		order: 1070,
-		keywords: ['alarm clock', 'time', 'clock'],
+		keywords: ['alarm_clock', 'time', 'clock'],
 	},
 	{
 		id: '13838fb2-cb59-4a53-9898-c875a314183f',
@@ -20244,7 +20244,7 @@ export const emojis: Emoji[] = [
 		value: '🕰️',
 		category: 'objects',
 		order: 1071,
-		keywords: ['mantelpiece clock', 'time', 'clock'],
+		keywords: ['mantelpiece_clock', 'time', 'clock'],
 	},
 	{
 		id: '863d8601-51d4-4e44-b634-8ac4665f06ff',
@@ -20252,7 +20252,7 @@ export const emojis: Emoji[] = [
 		value: '⌛',
 		category: 'objects',
 		order: 1072,
-		keywords: ['hourglass done', 'time', 'sand'],
+		keywords: ['hourglass_done', 'time', 'sand'],
 	},
 	{
 		id: '757ac652-3a22-4f36-aaa4-318233fad996',
@@ -20260,7 +20260,7 @@ export const emojis: Emoji[] = [
 		value: '⏳',
 		category: 'objects',
 		order: 1073,
-		keywords: ['hourglass not done', 'time', 'sand'],
+		keywords: ['hourglass_not_done', 'time', 'sand'],
 	},
 	{
 		id: 'ae9ce814-a791-4168-b3a5-820491517e1a',
@@ -20268,7 +20268,7 @@ export const emojis: Emoji[] = [
 		value: '📡',
 		category: 'objects',
 		order: 1074,
-		keywords: ['satellite antenna', 'communication', 'technology'],
+		keywords: ['satellite_antenna', 'communication', 'technology'],
 	},
 	{
 		id: '638b545b-ac5b-44f6-943d-97034840bbce',
@@ -20284,7 +20284,7 @@ export const emojis: Emoji[] = [
 		value: '🪫',
 		category: 'objects',
 		order: 1076,
-		keywords: ['low battery', 'power', 'technology'],
+		keywords: ['low_battery', 'power', 'technology'],
 	},
 	{
 		id: '2c35ef1d-2daa-4d84-b709-9b819971952b',
@@ -20292,7 +20292,7 @@ export const emojis: Emoji[] = [
 		value: '🔌',
 		category: 'objects',
 		order: 1077,
-		keywords: ['electric plug', 'power', 'technology'],
+		keywords: ['electric_plug', 'power', 'technology'],
 	},
 	{
 		id: '8c796aad-585f-4b97-9632-68d7cee74960',
@@ -20300,7 +20300,7 @@ export const emojis: Emoji[] = [
 		value: '💡',
 		category: 'objects',
 		order: 1078,
-		keywords: ['light bulb', 'idea', 'technology'],
+		keywords: ['light_bulb', 'idea', 'technology'],
 	},
 	{
 		id: '7e085dcb-fa5d-48f8-8709-823851d4919a',
@@ -20324,7 +20324,7 @@ export const emojis: Emoji[] = [
 		value: '🪔',
 		category: 'objects',
 		order: 1081,
-		keywords: ['diya lamp', 'light', 'festival'],
+		keywords: ['diya_lamp', 'light', 'festival'],
 	},
 	{
 		id: 'e69e1327-e08b-4c02-9f2c-2c4c114a960a',
@@ -20332,7 +20332,7 @@ export const emojis: Emoji[] = [
 		value: '🧯',
 		category: 'objects',
 		order: 1082,
-		keywords: ['fire extinguisher', 'safety', 'fire'],
+		keywords: ['fire_extinguisher', 'safety', 'fire'],
 	},
 	{
 		id: '094a630c-8e66-45c3-ba48-8867e7854a35',
@@ -20340,7 +20340,7 @@ export const emojis: Emoji[] = [
 		value: '🛢️',
 		category: 'objects',
 		order: 1083,
-		keywords: ['oil drum', 'container', 'oil'],
+		keywords: ['oil_drum', 'container', 'oil'],
 	},
 	{
 		id: '5e104a56-05c6-4845-a900-46de955b340c',
@@ -20348,7 +20348,7 @@ export const emojis: Emoji[] = [
 		value: '💸',
 		category: 'objects',
 		order: 1084,
-		keywords: ['money with wings', 'dollar', 'money'],
+		keywords: ['money_with_wings', 'dollar', 'money'],
 	},
 	{
 		id: '3acc1a31-0eed-4dff-ae27-9ca62a73c67d',
@@ -20356,7 +20356,7 @@ export const emojis: Emoji[] = [
 		value: '💵',
 		category: 'objects',
 		order: 1085,
-		keywords: ['dollar banknote', 'money', 'currency'],
+		keywords: ['dollar_banknote', 'money', 'currency'],
 	},
 	{
 		id: '870b95bc-1dce-4eaf-a108-bf45420e0729',
@@ -20364,7 +20364,7 @@ export const emojis: Emoji[] = [
 		value: '💴',
 		category: 'objects',
 		order: 1086,
-		keywords: ['yen banknote', 'money', 'currency'],
+		keywords: ['yen_banknote', 'money', 'currency'],
 	},
 	{
 		id: '3c5f8a91-cc5f-490b-a3a9-59555df32075',
@@ -20372,7 +20372,7 @@ export const emojis: Emoji[] = [
 		value: '💶',
 		category: 'objects',
 		order: 1087,
-		keywords: ['euro banknote', 'money', 'currency'],
+		keywords: ['euro_banknote', 'money', 'currency'],
 	},
 	{
 		id: '9fe2d0f6-1619-4a89-9ab4-80dfb2c4bc72',
@@ -20380,7 +20380,7 @@ export const emojis: Emoji[] = [
 		value: '💷',
 		category: 'objects',
 		order: 1088,
-		keywords: ['pound banknote', 'money', 'currency'],
+		keywords: ['pound_banknote', 'money', 'currency'],
 	},
 	{
 		id: '4c692e0c-d8be-4cc3-9a37-dad8b628904c',
@@ -20396,7 +20396,7 @@ export const emojis: Emoji[] = [
 		value: '💰',
 		category: 'objects',
 		order: 1090,
-		keywords: ['money bag', 'money', 'currency'],
+		keywords: ['money_bag', 'money', 'currency'],
 	},
 	{
 		id: '65ee1b11-8576-4c89-901c-cac9211cf976',
@@ -20404,7 +20404,7 @@ export const emojis: Emoji[] = [
 		value: '💳',
 		category: 'objects',
 		order: 1091,
-		keywords: ['credit card', 'money', 'payment'],
+		keywords: ['credit_card', 'money', 'payment'],
 	},
 	{
 		id: 'c87a5abf-cbf2-4c1a-8c75-d92e1cd30fa3',
@@ -20412,7 +20412,7 @@ export const emojis: Emoji[] = [
 		value: '🪪',
 		category: 'objects',
 		order: 1092,
-		keywords: ['identification card', 'id', 'identity'],
+		keywords: ['identification_card', 'id', 'identity'],
 	},
 	{
 		id: 'b27d9e8b-723e-4afa-ad04-e9f4e0c88b2f',
@@ -20420,7 +20420,7 @@ export const emojis: Emoji[] = [
 		value: '💎',
 		category: 'objects',
 		order: 1093,
-		keywords: ['gem stone', 'jewel', 'diamond'],
+		keywords: ['gem_stone', 'jewel', 'diamond'],
 	},
 	{
 		id: 'b88bf97c-23be-4361-9f69-0e8a488b97f1',
@@ -20428,7 +20428,7 @@ export const emojis: Emoji[] = [
 		value: '⚖️',
 		category: 'objects',
 		order: 1094,
-		keywords: ['balance scale', 'justice', 'law'],
+		keywords: ['balance_scale', 'justice', 'law'],
 	},
 	{
 		id: 'c3758288-50ee-4ffe-a1f4-3479d675a106',
@@ -20476,7 +20476,7 @@ export const emojis: Emoji[] = [
 		value: '⚒️',
 		category: 'objects',
 		order: 1100,
-		keywords: ['hammer and pick', 'tool', 'mining'],
+		keywords: ['hammer_and_pick', 'tool', 'mining'],
 	},
 	{
 		id: '71a50615-682c-4ee7-bd7b-085c19ff6f80',
@@ -20484,7 +20484,7 @@ export const emojis: Emoji[] = [
 		value: '🛠️',
 		category: 'objects',
 		order: 1101,
-		keywords: ['hammer and wrench', 'tool', 'repair'],
+		keywords: ['hammer_and_wrench', 'tool', 'repair'],
 	},
 	{
 		id: 'e877d5db-b356-4bfb-9515-ad3bee8e4514',
@@ -20508,7 +20508,7 @@ export const emojis: Emoji[] = [
 		value: '🔩',
 		category: 'objects',
 		order: 1104,
-		keywords: ['nut and bolt', 'tool', 'repair'],
+		keywords: ['nut_and_bolt', 'tool', 'repair'],
 	},
 	{
 		id: '3a785b1a-bc9f-4624-b96f-309fbef49017',
@@ -20524,7 +20524,7 @@ export const emojis: Emoji[] = [
 		value: '🪤',
 		category: 'objects',
 		order: 1106,
-		keywords: ['mouse trap', 'trap', 'pest'],
+		keywords: ['mouse_trap', 'trap', 'pest'],
 	},
 	{
 		id: 'fe0e063e-e870-4f0b-b666-449241bb9af5',
@@ -20588,7 +20588,7 @@ export const emojis: Emoji[] = [
 		value: '🔪',
 		category: 'objects',
 		order: 1114,
-		keywords: ['kitchen knife', 'tool', 'cut'],
+		keywords: ['kitchen_knife', 'tool', 'cut'],
 	},
 	{
 		id: '1501e561-0bde-4214-b249-db2e33e1f240',
@@ -20604,7 +20604,7 @@ export const emojis: Emoji[] = [
 		value: '⚔️',
 		category: 'objects',
 		order: 1116,
-		keywords: ['crossed swords', 'weapon', 'sword'],
+		keywords: ['crossed_swords', 'weapon', 'sword'],
 	},
 	{
 		id: 'ca395898-06a2-4f4e-87ed-a90b8388ea99',
@@ -20644,7 +20644,7 @@ export const emojis: Emoji[] = [
 		value: '⚱️',
 		category: 'objects',
 		order: 1121,
-		keywords: ['funeral urn', 'ashes', 'death'],
+		keywords: ['funeral_urn', 'ashes', 'death'],
 	},
 	{
 		id: 'fd6a93cc-eaa4-4bb3-9939-57a049da038f',
@@ -20660,7 +20660,7 @@ export const emojis: Emoji[] = [
 		value: '🔮',
 		category: 'objects',
 		order: 1123,
-		keywords: ['crystal ball', 'magic', 'fortune'],
+		keywords: ['crystal_ball', 'magic', 'fortune'],
 	},
 	{
 		id: 'de62b997-8b88-4b79-99a2-a947ea8616bd',
@@ -20668,7 +20668,7 @@ export const emojis: Emoji[] = [
 		value: '📿',
 		category: 'objects',
 		order: 1124,
-		keywords: ['prayer beads', 'religion', 'rosary'],
+		keywords: ['prayer_beads', 'religion', 'rosary'],
 	},
 	{
 		id: '0cb785a7-de78-476f-8c1b-6865a9f3ac4b',
@@ -20676,7 +20676,7 @@ export const emojis: Emoji[] = [
 		value: '🧿',
 		category: 'objects',
 		order: 1125,
-		keywords: ['nazar amulet', 'protection', 'evil eye'],
+		keywords: ['nazar_amulet', 'protection', 'evil_eye'],
 	},
 	{
 		id: 'f59218db-ad09-46f6-86d9-e3c94e285c03',
@@ -20692,7 +20692,7 @@ export const emojis: Emoji[] = [
 		value: '💈',
 		category: 'objects',
 		order: 1127,
-		keywords: ['barber pole', 'barber', 'haircut'],
+		keywords: ['barber_pole', 'barber', 'haircut'],
 	},
 	{
 		id: '09d18e4c-ea5a-4626-9c5e-2b070b4a76c2',
@@ -20740,7 +20740,7 @@ export const emojis: Emoji[] = [
 		value: '🩹',
 		category: 'objects',
 		order: 1133,
-		keywords: ['bandage', 'medical', 'first aid'],
+		keywords: ['bandage', 'medical', 'first_aid'],
 	},
 	{
 		id: '4f92ae07-1ff1-4a92-bdb5-3df62c352f79',
@@ -20772,7 +20772,7 @@ export const emojis: Emoji[] = [
 		value: '🩸',
 		category: 'objects',
 		order: 1137,
-		keywords: ['drop of blood', 'medical', 'donation'],
+		keywords: ['drop_of_blood', 'medical', 'donation'],
 	},
 	{
 		id: '8db8cb94-036a-4751-8bd2-d601a1150a77',
@@ -20796,7 +20796,7 @@ export const emojis: Emoji[] = [
 		value: '🧫',
 		category: 'objects',
 		order: 1140,
-		keywords: ['petri dish', 'science', 'lab'],
+		keywords: ['petri_dish', 'science', 'lab'],
 	},
 	{
 		id: '58982f1d-a72e-41e9-aeea-563636aa219a',
@@ -20804,7 +20804,7 @@ export const emojis: Emoji[] = [
 		value: '🧪',
 		category: 'objects',
 		order: 1141,
-		keywords: ['test tube', 'science', 'lab'],
+		keywords: ['test_tube', 'science', 'lab'],
 	},
 	{
 		id: '6c569557-22f6-4809-bd0c-cdee1b047375',
@@ -20844,7 +20844,7 @@ export const emojis: Emoji[] = [
 		value: '🧻',
 		category: 'objects',
 		order: 1146,
-		keywords: ['roll of paper', 'toilet paper', 'tissue'],
+		keywords: ['roll_of_paper', 'toilet_paper', 'tissue'],
 	},
 	{
 		id: '7d89bb7b-1fc6-4613-bc95-a382fc735a10',
@@ -20860,7 +20860,7 @@ export const emojis: Emoji[] = [
 		value: '🚰',
 		category: 'objects',
 		order: 1148,
-		keywords: ['potable water', 'water', 'drinking'],
+		keywords: ['potable_water', 'water', 'drinking'],
 	},
 	{
 		id: '19fbfd94-1265-4c56-aa0f-a1f31451045e',
@@ -20884,7 +20884,7 @@ export const emojis: Emoji[] = [
 		value: '🛀',
 		category: 'objects',
 		order: 1151,
-		keywords: ['person taking bath', 'bathroom', 'clean'],
+		keywords: ['person_taking_bath', 'bathroom', 'clean'],
 	},
 	{
 		id: '64135244-5217-4bc9-952a-9763bfcc6880',
@@ -20940,7 +20940,7 @@ export const emojis: Emoji[] = [
 		value: '🧴',
 		category: 'objects',
 		order: 1158,
-		keywords: ['lotion bottle', 'hygiene', 'skincare'],
+		keywords: ['lotion_bottle', 'hygiene', 'skincare'],
 	},
 	{
 		id: 'd0fcd12f-6774-4451-9dcd-d186cd6b08be',
@@ -20948,7 +20948,7 @@ export const emojis: Emoji[] = [
 		value: '🛎️',
 		category: 'objects',
 		order: 1159,
-		keywords: ['bellhop bell', 'hotel', 'service'],
+		keywords: ['bellhop_bell', 'hotel', 'service'],
 	},
 	{
 		id: 'e4a16173-344d-46e2-a7e1-89b9fc3df49a',
@@ -20964,7 +20964,7 @@ export const emojis: Emoji[] = [
 		value: '🗝️',
 		category: 'objects',
 		order: 1161,
-		keywords: ['old key', 'lock', 'security'],
+		keywords: ['old_key', 'lock', 'security'],
 	},
 	{
 		id: '159f1e7b-3c19-4ae7-af65-154ca861a4f9',
@@ -20988,7 +20988,7 @@ export const emojis: Emoji[] = [
 		value: '🛋️',
 		category: 'objects',
 		order: 1164,
-		keywords: ['couch and lamp', 'furniture', 'living room'],
+		keywords: ['couch_and_lamp', 'furniture', 'living_room'],
 	},
 	{
 		id: '720bb781-acd8-43fc-9262-b0dd1cb27284',
@@ -21004,7 +21004,7 @@ export const emojis: Emoji[] = [
 		value: '🛌',
 		category: 'objects',
 		order: 1166,
-		keywords: ['person in bed', 'sleep', 'rest'],
+		keywords: ['person_in_bed', 'sleep', 'rest'],
 	},
 	{
 		id: '4b8a6ee8-aeea-4823-a33d-9999329d06d6',
@@ -21012,7 +21012,7 @@ export const emojis: Emoji[] = [
 		value: '🧸',
 		category: 'objects',
 		order: 1167,
-		keywords: ['teddy bear', 'toy', 'stuffed animal'],
+		keywords: ['teddy_bear', 'toy', 'stuffed_animal'],
 	},
 	{
 		id: '516291b7-1254-44af-8468-f86003d04bf9',
@@ -21020,7 +21020,7 @@ export const emojis: Emoji[] = [
 		value: '🪆',
 		category: 'objects',
 		order: 1168,
-		keywords: ['nesting dolls', 'toy', 'matryoshka'],
+		keywords: ['nesting_dolls', 'toy', 'matryoshka'],
 	},
 	{
 		id: 'd878425f-2bc0-4e1f-8127-bcc2e5065281',
@@ -21028,7 +21028,7 @@ export const emojis: Emoji[] = [
 		value: '🖼️',
 		category: 'objects',
 		order: 1169,
-		keywords: ['framed picture', 'art', 'decoration'],
+		keywords: ['framed_picture', 'art', 'decoration'],
 	},
 	{
 		id: '46864b42-6f76-4f32-b5e5-e826381d0b3a',
@@ -21052,7 +21052,7 @@ export const emojis: Emoji[] = [
 		value: '🛍️',
 		category: 'objects',
 		order: 1172,
-		keywords: ['shopping bags', 'shopping', 'bags'],
+		keywords: ['shopping_bags', 'shopping', 'bags'],
 	},
 	{
 		id: 'ec060de3-acd9-46c5-b6a9-6370b33103ec',
@@ -21060,7 +21060,7 @@ export const emojis: Emoji[] = [
 		value: '🛒',
 		category: 'objects',
 		order: 1173,
-		keywords: ['shopping cart', 'shopping', 'cart'],
+		keywords: ['shopping_cart', 'shopping', 'cart'],
 	},
 	{
 		id: '948d7fe0-79d3-4c1a-9287-2eda8fe2472a',
@@ -21068,7 +21068,7 @@ export const emojis: Emoji[] = [
 		value: '🎁',
 		category: 'objects',
 		order: 1174,
-		keywords: ['wrapped gift', 'present', 'gift'],
+		keywords: ['wrapped_gift', 'present', 'gift'],
 	},
 	{
 		id: '94abb0a4-f333-476c-95a7-58e139a2d99d',
@@ -21084,7 +21084,7 @@ export const emojis: Emoji[] = [
 		value: '🎏',
 		category: 'objects',
 		order: 1176,
-		keywords: ['carp streamer', 'celebration', 'Japan'],
+		keywords: ['carp_streamer', 'celebration', 'Japan'],
 	},
 	{
 		id: '1d7835d9-6f91-4644-92ed-aa1f84073bc7',
@@ -21100,7 +21100,7 @@ export const emojis: Emoji[] = [
 		value: '🪄',
 		category: 'objects',
 		order: 1178,
-		keywords: ['magic wand', 'magic', 'trick'],
+		keywords: ['magic_wand', 'magic', 'trick'],
 	},
 	{
 		id: '9580a0d0-4b4f-48e6-9482-76f87d981d1e',
@@ -21116,7 +21116,7 @@ export const emojis: Emoji[] = [
 		value: '🎊',
 		category: 'objects',
 		order: 1180,
-		keywords: ['confetti ball', 'celebration', 'party'],
+		keywords: ['confetti_ball', 'celebration', 'party'],
 	},
 	{
 		id: '097ae4e1-0580-4749-b2ba-d34a80b53c61',
@@ -21124,7 +21124,7 @@ export const emojis: Emoji[] = [
 		value: '🎉',
 		category: 'objects',
 		order: 1181,
-		keywords: ['party popper', 'celebration', 'party'],
+		keywords: ['party_popper', 'celebration', 'party'],
 	},
 	{
 		id: '2393c4a6-d01f-44a2-a5dd-30c16b340190',
@@ -21132,7 +21132,7 @@ export const emojis: Emoji[] = [
 		value: '🎎',
 		category: 'objects',
 		order: 1182,
-		keywords: ['Japanese dolls', 'celebration', 'Japan'],
+		keywords: ['Japanese_dolls', 'celebration', 'Japan'],
 	},
 	{
 		id: '20b413fa-cddd-43de-a66a-d1995f1358be',
@@ -21140,7 +21140,7 @@ export const emojis: Emoji[] = [
 		value: '🪭',
 		category: 'objects',
 		order: 1183,
-		keywords: ['ding ding bell', 'sound', 'notification'],
+		keywords: ['ding_ding_bell', 'sound', 'notification'],
 	},
 	{
 		id: 'c606520f-cf48-4517-83d3-be8e4e1f3ddb',
@@ -21156,7 +21156,7 @@ export const emojis: Emoji[] = [
 		value: '🎐',
 		category: 'objects',
 		order: 1185,
-		keywords: ['wind chime', 'decoration', 'sound'],
+		keywords: ['wind_chime', 'decoration', 'sound'],
 	},
 	{
 		id: 'e7427855-1e12-4fd2-a902-e378c43ba733',
@@ -21164,7 +21164,7 @@ export const emojis: Emoji[] = [
 		value: '🪩',
 		category: 'objects',
 		order: 1186,
-		keywords: ['disco ball', 'party', 'celebration'],
+		keywords: ['disco_ball', 'party', 'celebration'],
 	},
 	{
 		id: '218976fe-0d7f-4436-9363-a3d25059ed2a',
@@ -21172,7 +21172,7 @@ export const emojis: Emoji[] = [
 		value: '🧧',
 		category: 'objects',
 		order: 1187,
-		keywords: ['red envelope', 'celebration', 'gift'],
+		keywords: ['red_envelope', 'celebration', 'gift'],
 	},
 	{
 		id: 'f5c9cecc-598b-44ec-b015-a0b3f75b06b4',
@@ -21188,7 +21188,7 @@ export const emojis: Emoji[] = [
 		value: '📩',
 		category: 'objects',
 		order: 1189,
-		keywords: ['incoming envelope', 'letter', 'mail'],
+		keywords: ['incoming_envelope', 'letter', 'mail'],
 	},
 	{
 		id: '5fadbf98-e102-40b5-83e2-10890b62436f',
@@ -21196,7 +21196,7 @@ export const emojis: Emoji[] = [
 		value: '📨',
 		category: 'objects',
 		order: 1190,
-		keywords: ['envelope with arrow', 'letter', 'mail'],
+		keywords: ['envelope_with_arrow', 'letter', 'mail'],
 	},
 	{
 		id: '6d3f9c4c-6629-4ea7-ba59-d42ff32bde32',
@@ -21212,7 +21212,7 @@ export const emojis: Emoji[] = [
 		value: '💌',
 		category: 'objects',
 		order: 1192,
-		keywords: ['love letter', 'letter', 'love'],
+		keywords: ['love_letter', 'letter', 'love'],
 	},
 	{
 		id: '09738763-7c8a-4c08-b381-c8e04c841d77',
@@ -21220,7 +21220,7 @@ export const emojis: Emoji[] = [
 		value: '📥',
 		category: 'objects',
 		order: 1193,
-		keywords: ['inbox tray', 'letter', 'mail'],
+		keywords: ['inbox_tray', 'letter', 'mail'],
 	},
 	{
 		id: '9af45475-4694-469f-a889-c15ab633dee2',
@@ -21228,7 +21228,7 @@ export const emojis: Emoji[] = [
 		value: '📤',
 		category: 'objects',
 		order: 1194,
-		keywords: ['outbox tray', 'letter', 'mail'],
+		keywords: ['outbox_tray', 'letter', 'mail'],
 	},
 	{
 		id: '8f855797-133d-499c-9001-255e420a2f00',
@@ -21260,7 +21260,7 @@ export const emojis: Emoji[] = [
 		value: '📪',
 		category: 'objects',
 		order: 1198,
-		keywords: ['closed mailbox with raised flag', 'mail', 'post'],
+		keywords: ['closed_mailbox_with_raised_flag', 'mail', 'post'],
 	},
 	{
 		id: 'e1962358-759c-4133-92ce-9c6bd34cbf41',
@@ -21268,7 +21268,7 @@ export const emojis: Emoji[] = [
 		value: '📫',
 		category: 'objects',
 		order: 1199,
-		keywords: ['closed mailbox with lowered flag', 'mail', 'post'],
+		keywords: ['closed_mailbox_with_lowered_flag', 'mail', 'post'],
 	},
 	{
 		id: 'd628b0c8-3e50-4fc7-92eb-06e42631dc41',
@@ -21276,7 +21276,7 @@ export const emojis: Emoji[] = [
 		value: '📬',
 		category: 'objects',
 		order: 1200,
-		keywords: ['open mailbox with raised flag', 'mail', 'post'],
+		keywords: ['open_mailbox_with_raised_flag', 'mail', 'post'],
 	},
 	{
 		id: '436b0669-6830-4172-9bc5-e6e180266336',
@@ -21284,7 +21284,7 @@ export const emojis: Emoji[] = [
 		value: '📭',
 		category: 'objects',
 		order: 1201,
-		keywords: ['open mailbox with lowered flag', 'mail', 'post'],
+		keywords: ['open_mailbox_with_lowered_flag', 'mail', 'post'],
 	},
 	{
 		id: 'd4d375a9-f535-4f38-91bf-d0d2f2312fce',
@@ -21300,7 +21300,7 @@ export const emojis: Emoji[] = [
 		value: '📯',
 		category: 'objects',
 		order: 1203,
-		keywords: ['postal horn', 'mail', 'post'],
+		keywords: ['postal_horn', 'mail', 'post'],
 	},
 	{
 		id: '7a1ed4c1-b2d6-45cd-bbde-c0164d91599c',
@@ -21316,7 +21316,7 @@ export const emojis: Emoji[] = [
 		value: '📃',
 		category: 'objects',
 		order: 1205,
-		keywords: ['page with curl', 'document', 'paper'],
+		keywords: ['page_with_curl', 'document', 'paper'],
 	},
 	{
 		id: '51ed85e6-aef0-4d0a-91f3-a6ebb52e3e7a',
@@ -21324,7 +21324,7 @@ export const emojis: Emoji[] = [
 		value: '📄',
 		category: 'objects',
 		order: 1206,
-		keywords: ['page facing up', 'document', 'paper'],
+		keywords: ['page_facing_up', 'document', 'paper'],
 	},
 	{
 		id: '6a98a099-062e-4e17-ada8-1e2c75253daf',
@@ -21332,7 +21332,7 @@ export const emojis: Emoji[] = [
 		value: '📑',
 		category: 'objects',
 		order: 1207,
-		keywords: ['bookmark tabs', 'document', 'paper'],
+		keywords: ['bookmark_tabs', 'document', 'paper'],
 	},
 	{
 		id: '2d064443-92b0-4ec2-a294-301d3d906fcc',
@@ -21348,7 +21348,7 @@ export const emojis: Emoji[] = [
 		value: '📊',
 		category: 'objects',
 		order: 1209,
-		keywords: ['chart increasing', 'graph', 'statistics'],
+		keywords: ['chart_increasing', 'graph', 'statistics'],
 	},
 	{
 		id: 'af7ca7dc-b128-4119-851f-14adebc59eb4',
@@ -21356,7 +21356,7 @@ export const emojis: Emoji[] = [
 		value: '📉',
 		category: 'objects',
 		order: 1210,
-		keywords: ['chart decreasing', 'graph', 'statistics'],
+		keywords: ['chart_decreasing', 'graph', 'statistics'],
 	},
 	{
 		id: '7814a85e-102d-4f0e-84cd-b344fc8a2f87',
@@ -21364,7 +21364,7 @@ export const emojis: Emoji[] = [
 		value: '📈',
 		category: 'objects',
 		order: 1211,
-		keywords: ['chart with upwards trend', 'graph', 'statistics'],
+		keywords: ['chart_with_upwards_trend', 'graph', 'statistics'],
 	},
 	{
 		id: '006494dd-0bbc-4220-9627-043060db68ed',
@@ -21388,7 +21388,7 @@ export const emojis: Emoji[] = [
 		value: '📔',
 		category: 'objects',
 		order: 1214,
-		keywords: ['notebook with decorative cover', 'document', 'paper'],
+		keywords: ['notebook_with_decorative_cover', 'document', 'paper'],
 	},
 	{
 		id: 'e0a400cc-1450-42dc-9893-c00ac1caa405',
@@ -21396,7 +21396,7 @@ export const emojis: Emoji[] = [
 		value: '📕',
 		category: 'objects',
 		order: 1215,
-		keywords: ['closed book', 'document', 'paper'],
+		keywords: ['closed_book', 'document', 'paper'],
 	},
 	{
 		id: '1a6755f0-7d22-4d25-9767-8261d232f1fa',
@@ -21404,7 +21404,7 @@ export const emojis: Emoji[] = [
 		value: '📗',
 		category: 'objects',
 		order: 1216,
-		keywords: ['green book', 'document', 'paper'],
+		keywords: ['green_book', 'document', 'paper'],
 	},
 	{
 		id: '4cf1bf46-fd8c-4842-b531-ce48e712e4bb',
@@ -21412,7 +21412,7 @@ export const emojis: Emoji[] = [
 		value: '📘',
 		category: 'objects',
 		order: 1217,
-		keywords: ['blue book', 'document', 'paper'],
+		keywords: ['blue_book', 'document', 'paper'],
 	},
 	{
 		id: '0b84f0d9-80ba-47bc-a580-985d8995c6d7',
@@ -21420,7 +21420,7 @@ export const emojis: Emoji[] = [
 		value: '📙',
 		category: 'objects',
 		order: 1218,
-		keywords: ['orange book', 'document', 'paper'],
+		keywords: ['orange_book', 'document', 'paper'],
 	},
 	{
 		id: '1e19f446-e7a9-4ecd-9b5e-724a6f95c8b7',
@@ -21436,7 +21436,7 @@ export const emojis: Emoji[] = [
 		value: '📖',
 		category: 'objects',
 		order: 1220,
-		keywords: ['open book', 'document', 'paper'],
+		keywords: ['open_book', 'document', 'paper'],
 	},
 	{
 		id: 'bcf7c664-53c0-4cbb-ad6b-4f7a47a1e98a',
@@ -21452,7 +21452,7 @@ export const emojis: Emoji[] = [
 		value: '🧷',
 		category: 'objects',
 		order: 1222,
-		keywords: ['safety pin', 'tool', 'fastener'],
+		keywords: ['safety_pin', 'tool', 'fastener'],
 	},
 	{
 		id: '64543cb9-a6b0-4347-ac43-fd32ef7fae58',
@@ -21476,7 +21476,7 @@ export const emojis: Emoji[] = [
 		value: '🖇️',
 		category: 'objects',
 		order: 1225,
-		keywords: ['linked paperclips', 'tool', 'office'],
+		keywords: ['linked_paperclips', 'tool', 'office'],
 	},
 	{
 		id: '2d38b5b3-582d-4913-9257-daa6a9fc3c1f',
@@ -21484,7 +21484,7 @@ export const emojis: Emoji[] = [
 		value: '📏',
 		category: 'objects',
 		order: 1226,
-		keywords: ['straight ruler', 'tool', 'measurement'],
+		keywords: ['straight_ruler', 'tool', 'measurement'],
 	},
 	{
 		id: '82b6cca6-e993-4307-8e24-6b17ae92f2a6',
@@ -21492,7 +21492,7 @@ export const emojis: Emoji[] = [
 		value: '📐',
 		category: 'objects',
 		order: 1227,
-		keywords: ['triangular ruler', 'tool', 'measurement'],
+		keywords: ['triangular_ruler', 'tool', 'measurement'],
 	},
 	{
 		id: '39e29c05-bc67-459e-be92-6339de514b9a',
@@ -21516,7 +21516,7 @@ export const emojis: Emoji[] = [
 		value: '📍',
 		category: 'objects',
 		order: 1230,
-		keywords: ['round pushpin', 'tool', 'office'],
+		keywords: ['round_pushpin', 'tool', 'office'],
 	},
 	{
 		id: '966003d3-5e03-4360-a1e9-6cfb5b214c77',
@@ -21540,7 +21540,7 @@ export const emojis: Emoji[] = [
 		value: '🖋️',
 		category: 'objects',
 		order: 1233,
-		keywords: ['fountain pen', 'writing', 'tool'],
+		keywords: ['fountain_pen', 'writing', 'tool'],
 	},
 	{
 		id: 'b08749d8-26e4-4cc8-81be-20d2403c8ec1',
@@ -21548,7 +21548,7 @@ export const emojis: Emoji[] = [
 		value: '✒️',
 		category: 'objects',
 		order: 1234,
-		keywords: ['black nib', 'writing', 'tool'],
+		keywords: ['black_nib', 'writing', 'tool'],
 	},
 	{
 		id: '58186ad5-f853-4b80-a0f9-d0e3fda679af',
@@ -21588,7 +21588,7 @@ export const emojis: Emoji[] = [
 		value: '🔍',
 		category: 'objects',
 		order: 1239,
-		keywords: ['magnifying glass tilted left', 'search', 'tool'],
+		keywords: ['magnifying_glass_tilted_left', 'search', 'tool'],
 	},
 	{
 		id: '4e90c31f-c176-49c3-96db-8d59cb0c08d0',
@@ -21596,7 +21596,7 @@ export const emojis: Emoji[] = [
 		value: '🔎',
 		category: 'objects',
 		order: 1240,
-		keywords: ['magnifying glass tilted right', 'search', 'tool'],
+		keywords: ['magnifying_glass_tilted_right', 'search', 'tool'],
 	},
 	{
 		id: 'a1253c5a-c41e-4273-926e-05a97b299d84',
@@ -21604,7 +21604,7 @@ export const emojis: Emoji[] = [
 		value: '🔏',
 		category: 'objects',
 		order: 1241,
-		keywords: ['lock with pen', 'security', 'writing'],
+		keywords: ['lock_with_pen', 'security', 'writing'],
 	},
 	{
 		id: '3178dfa8-1e06-46f4-844e-1a71b4874930',
@@ -21612,7 +21612,7 @@ export const emojis: Emoji[] = [
 		value: '🔐',
 		category: 'objects',
 		order: 1242,
-		keywords: ['closed lock with key', 'security', 'lock'],
+		keywords: ['closed_lock_with_key', 'security', 'lock'],
 	},
 	{
 		id: 'a27c1073-b12b-4733-ba79-87f2877bd136',
@@ -22596,7 +22596,7 @@ export const emojis: Emoji[] = [
 		value: '🚾',
 		category: 'symbols',
 		order: 1365,
-		keywords: ['restroom', 'bathroom', 'toilet', 'water closet'],
+		keywords: ['restroom', 'bathroom', 'toilet', 'water_closet'],
 	},
 	{
 		id: 'ce9c2dc3-afa7-4b36-9e80-0ba396791e38',
@@ -24076,7 +24076,7 @@ export const emojis: Emoji[] = [
 		value: '🇺🇳',
 		category: 'flags',
 		order: 1550,
-		keywords: ['flag', 'un', 'united nations'],
+		keywords: ['flag', 'un', 'united_nations'],
 	},
 	{
 		id: 'ce47ead3-c631-4b0b-9de7-82abd363740b',
@@ -24092,7 +24092,7 @@ export const emojis: Emoji[] = [
 		value: '🇦🇽',
 		category: 'flags',
 		order: 1552,
-		keywords: ['flag', 'aland islands'],
+		keywords: ['flag', 'aland_islands'],
 	},
 	{
 		id: 'fe3de7f7-3ed1-4b41-a020-a564be882b50',
@@ -24116,7 +24116,7 @@ export const emojis: Emoji[] = [
 		value: '🇦🇸',
 		category: 'flags',
 		order: 1555,
-		keywords: ['flag', 'american samoa'],
+		keywords: ['flag', 'american_samoa'],
 	},
 	{
 		id: 'db58ee3e-ba39-409f-9304-a1164f159fea',
@@ -24156,7 +24156,7 @@ export const emojis: Emoji[] = [
 		value: '🇦🇬',
 		category: 'flags',
 		order: 1560,
-		keywords: ['flag', 'antigua and barbuda'],
+		keywords: ['flag', 'antigua_and_barbuda'],
 	},
 	{
 		id: '010346e2-106c-4f66-b7aa-1d2562b360c5',
@@ -24300,7 +24300,7 @@ export const emojis: Emoji[] = [
 		value: '🇧🇦',
 		category: 'flags',
 		order: 1578,
-		keywords: ['flag', 'bosnia and herzegovina'],
+		keywords: ['flag', 'bosnia_and_herzegovina'],
 	},
 	{
 		id: 'a9173143-af65-413b-bddd-b080f8ded474',
@@ -24324,7 +24324,7 @@ export const emojis: Emoji[] = [
 		value: '🇻🇬',
 		category: 'flags',
 		order: 1581,
-		keywords: ['flag', 'british virgin islands'],
+		keywords: ['flag', 'british_virgin_islands'],
 	},
 	{
 		id: '52282b28-4fb2-4799-93de-08c70c82f325',
@@ -24348,7 +24348,7 @@ export const emojis: Emoji[] = [
 		value: '🇧🇫',
 		category: 'flags',
 		order: 1584,
-		keywords: ['flag', 'burkina faso'],
+		keywords: ['flag', 'burkina_faso'],
 	},
 	{
 		id: '7f077bdf-74e4-43a5-89a7-c60010f13bc5',
@@ -24388,7 +24388,7 @@ export const emojis: Emoji[] = [
 		value: '🇮🇨',
 		category: 'flags',
 		order: 1589,
-		keywords: ['flag', 'canary islands'],
+		keywords: ['flag', 'canary_islands'],
 	},
 	{
 		id: '2a29ff3c-cf4b-4674-8bde-ec4256cab71e',
@@ -24396,7 +24396,7 @@ export const emojis: Emoji[] = [
 		value: '🇨🇻',
 		category: 'flags',
 		order: 1590,
-		keywords: ['flag', 'cape verde'],
+		keywords: ['flag', 'cape_verde'],
 	},
 	{
 		id: '878d8a42-65e2-41cb-8106-17e13bd5cea2',
@@ -24404,7 +24404,7 @@ export const emojis: Emoji[] = [
 		value: '🇧🇶',
 		category: 'flags',
 		order: 1591,
-		keywords: ['flag', 'caribbean netherlands'],
+		keywords: ['flag', 'caribbean_netherlands'],
 	},
 	{
 		id: '715572fb-d46c-42ee-a071-939c57e0ff6e',
@@ -24412,7 +24412,7 @@ export const emojis: Emoji[] = [
 		value: '🇰🇾',
 		category: 'flags',
 		order: 1592,
-		keywords: ['flag', 'cayman islands'],
+		keywords: ['flag', 'cayman_islands'],
 	},
 	{
 		id: 'a6239192-6ec7-48d2-a1ac-c983eeed6863',
@@ -24420,7 +24420,7 @@ export const emojis: Emoji[] = [
 		value: '🇨🇫',
 		category: 'flags',
 		order: 1593,
-		keywords: ['flag', 'central african republic'],
+		keywords: ['flag', 'central_african_republic'],
 	},
 	{
 		id: 'aaacb110-49a9-4009-b07d-15b7b0a15625',
@@ -24452,7 +24452,7 @@ export const emojis: Emoji[] = [
 		value: '🇨🇽',
 		category: 'flags',
 		order: 1597,
-		keywords: ['flag', 'christmas island'],
+		keywords: ['flag', 'christmas_island'],
 	},
 	{
 		id: '28fae0a1-f0cb-4888-b419-976e4c7b314a',
@@ -24460,7 +24460,7 @@ export const emojis: Emoji[] = [
 		value: '🇨🇨',
 		category: 'flags',
 		order: 1598,
-		keywords: ['flag', 'cocos islands'],
+		keywords: ['flag', 'cocos_islands'],
 	},
 	{
 		id: '3ee415ac-6868-486b-a9b7-d0f4ddbe0ec6',
@@ -24500,7 +24500,7 @@ export const emojis: Emoji[] = [
 		value: '🇨🇰',
 		category: 'flags',
 		order: 1603,
-		keywords: ['flag', 'cook islands'],
+		keywords: ['flag', 'cook_islands'],
 	},
 	{
 		id: 'ce4008ed-8e2a-4298-ac60-6b5fb4a01fd8',
@@ -24508,7 +24508,7 @@ export const emojis: Emoji[] = [
 		value: '🇨🇷',
 		category: 'flags',
 		order: 1604,
-		keywords: ['flag', 'costa rica'],
+		keywords: ['flag', 'costa_rica'],
 	},
 	{
 		id: 'f2fa2a2f-3f3f-4583-856a-52e38767030a',
@@ -24516,7 +24516,7 @@ export const emojis: Emoji[] = [
 		value: '🇨🇮',
 		category: 'flags',
 		order: 1605,
-		keywords: ['flag', 'cote d’ivoire'],
+		keywords: ['flag', 'cote_d’ivoire'],
 	},
 	{
 		id: '0eccb20d-4143-4679-8f6e-736089c7fae1',
@@ -24588,7 +24588,7 @@ export const emojis: Emoji[] = [
 		value: '🇩🇴',
 		category: 'flags',
 		order: 1614,
-		keywords: ['flag', 'dominican republic'],
+		keywords: ['flag', 'dominican_republic'],
 	},
 	{
 		id: '0ba53ad4-2203-4d65-a448-4b216b0e3ebb',
@@ -24612,7 +24612,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇻',
 		category: 'flags',
 		order: 1617,
-		keywords: ['flag', 'el salvador'],
+		keywords: ['flag', 'el_salvador'],
 	},
 	{
 		id: '9844471f-e526-4b8a-ba74-81abbd78798b',
@@ -24620,7 +24620,7 @@ export const emojis: Emoji[] = [
 		value: '🇬🇶',
 		category: 'flags',
 		order: 1618,
-		keywords: ['flag', 'equatorial guinea'],
+		keywords: ['flag', 'equatorial_guinea'],
 	},
 	{
 		id: '300fd946-7399-4e09-be1a-1d6b4dbfbe3d',
@@ -24660,7 +24660,7 @@ export const emojis: Emoji[] = [
 		value: '🇪🇺',
 		category: 'flags',
 		order: 1623,
-		keywords: ['flag', 'european union'],
+		keywords: ['flag', 'european_union'],
 	},
 	{
 		id: '01966310-4ba1-405f-8707-b269033fbd38',
@@ -24668,7 +24668,7 @@ export const emojis: Emoji[] = [
 		value: '🇫🇰',
 		category: 'flags',
 		order: 1624,
-		keywords: ['flag', 'falkland islands'],
+		keywords: ['flag', 'falkland_islands'],
 	},
 	{
 		id: 'f8a31ace-911e-4f54-ac57-2b0fd8fde5ce',
@@ -24676,7 +24676,7 @@ export const emojis: Emoji[] = [
 		value: '🇫🇴',
 		category: 'flags',
 		order: 1625,
-		keywords: ['flag', 'faroe islands'],
+		keywords: ['flag', 'faroe_islands'],
 	},
 	{
 		id: '518529d2-2416-4e0d-8728-f8d88ac8cb1a',
@@ -24708,7 +24708,7 @@ export const emojis: Emoji[] = [
 		value: '🇬🇫',
 		category: 'flags',
 		order: 1629,
-		keywords: ['flag', 'french guiana'],
+		keywords: ['flag', 'french_guiana'],
 	},
 	{
 		id: '119b039d-2b37-48b1-a902-236e3e312346',
@@ -24716,7 +24716,7 @@ export const emojis: Emoji[] = [
 		value: '🇵🇫',
 		category: 'flags',
 		order: 1630,
-		keywords: ['flag', 'french polynesia'],
+		keywords: ['flag', 'french_polynesia'],
 	},
 	{
 		id: 'a74888d5-20cf-42c9-8128-89c6156247ca',
@@ -24724,7 +24724,7 @@ export const emojis: Emoji[] = [
 		value: '🇹🇫',
 		category: 'flags',
 		order: 1631,
-		keywords: ['flag', 'french southern territories'],
+		keywords: ['flag', 'french_southern_territories'],
 	},
 	{
 		id: 'e463d579-f182-4c0b-bf27-0fb2d56518b4',
@@ -24876,7 +24876,7 @@ export const emojis: Emoji[] = [
 		value: '🇭🇰',
 		category: 'flags',
 		order: 1650,
-		keywords: ['flag', 'hong kong'],
+		keywords: ['flag', 'hong_kong'],
 	},
 	{
 		id: 'c92b6113-d59b-4f0a-8ab1-6f4603830dfb',
@@ -24940,7 +24940,7 @@ export const emojis: Emoji[] = [
 		value: '🇮🇲',
 		category: 'flags',
 		order: 1658,
-		keywords: ['flag', 'isle of man'],
+		keywords: ['flag', 'isle_of_man'],
 	},
 	{
 		id: '1724fb60-8bb3-4e58-8b04-d9d40c14209e',
@@ -25180,7 +25180,7 @@ export const emojis: Emoji[] = [
 		value: '🇲🇭',
 		category: 'flags',
 		order: 1688,
-		keywords: ['flag', 'marshall islands'],
+		keywords: ['flag', 'marshall_islands'],
 	},
 	{
 		id: 'e58c3e74-edf1-4228-8e75-ff2b6333c527',
@@ -25332,7 +25332,7 @@ export const emojis: Emoji[] = [
 		value: '🇳🇨',
 		category: 'flags',
 		order: 1707,
-		keywords: ['flag', 'new caledonia'],
+		keywords: ['flag', 'new_caledonia'],
 	},
 	{
 		id: 'b90749cb-a8d6-4a3f-aaaa-cf7c00f797f9',
@@ -25340,7 +25340,7 @@ export const emojis: Emoji[] = [
 		value: '🇳🇿',
 		category: 'flags',
 		order: 1708,
-		keywords: ['flag', 'new zealand'],
+		keywords: ['flag', 'new_zealand'],
 	},
 	{
 		id: 'efb05c87-f7f8-4b09-a0df-e9d0039fa8b2',
@@ -25380,7 +25380,7 @@ export const emojis: Emoji[] = [
 		value: '🇳🇫',
 		category: 'flags',
 		order: 1713,
-		keywords: ['flag', 'norfolk island'],
+		keywords: ['flag', 'norfolk_island'],
 	},
 	{
 		id: 'd09cee07-7e09-418e-b16d-aa8fbaa6ebc6',
@@ -25388,7 +25388,7 @@ export const emojis: Emoji[] = [
 		value: '🇰🇵',
 		category: 'flags',
 		order: 1714,
-		keywords: ['flag', 'north korea'],
+		keywords: ['flag', 'north_korea'],
 	},
 	{
 		id: '29a63086-62ed-49dd-a317-f64d31d03b2d',
@@ -25396,7 +25396,7 @@ export const emojis: Emoji[] = [
 		value: '🇲🇰',
 		category: 'flags',
 		order: 1715,
-		keywords: ['flag', 'north macedonia'],
+		keywords: ['flag', 'north_macedonia'],
 	},
 	{
 		id: 'ac3dce9e-c160-4b4f-b375-865025d3febc',
@@ -25404,7 +25404,7 @@ export const emojis: Emoji[] = [
 		value: '🇲🇵',
 		category: 'flags',
 		order: 1716,
-		keywords: ['flag', 'northern mariana islands'],
+		keywords: ['flag', 'northern_mariana_islands'],
 	},
 	{
 		id: '6da4be40-2056-4536-b17a-bf36845f21b8',
@@ -25460,7 +25460,7 @@ export const emojis: Emoji[] = [
 		value: '🇵🇬',
 		category: 'flags',
 		order: 1723,
-		keywords: ['flag', 'papua new guinea'],
+		keywords: ['flag', 'papua_new_guinea'],
 	},
 	{
 		id: '78068427-2ab8-45f7-b9f8-c9b1bf6ece2d',
@@ -25492,7 +25492,7 @@ export const emojis: Emoji[] = [
 		value: '🇵🇳',
 		category: 'flags',
 		order: 1727,
-		keywords: ['flag', 'pitcairn islands'],
+		keywords: ['flag', 'pitcairn_islands'],
 	},
 	{
 		id: 'ac68871b-99b1-4d99-b92d-313c1615ff6a',
@@ -25516,7 +25516,7 @@ export const emojis: Emoji[] = [
 		value: '🇵🇷',
 		category: 'flags',
 		order: 1730,
-		keywords: ['flag', 'puerto rico'],
+		keywords: ['flag', 'puerto_rico'],
 	},
 	{
 		id: 'c721db26-b622-4376-87c3-1b5d492d733c',
@@ -25572,7 +25572,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇲',
 		category: 'flags',
 		order: 1737,
-		keywords: ['flag', 'san marino'],
+		keywords: ['flag', 'san_marino'],
 	},
 	{
 		id: '09d95494-b122-443d-8f32-84635f363681',
@@ -25580,7 +25580,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇹',
 		category: 'flags',
 		order: 1738,
-		keywords: ['flag', 'sao tome and principe'],
+		keywords: ['flag', 'sao_tome_and_principe'],
 	},
 	{
 		id: 'f61aa782-1db6-4b1a-8211-64881a6129ff',
@@ -25588,7 +25588,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇦',
 		category: 'flags',
 		order: 1739,
-		keywords: ['flag', 'saudi arabia'],
+		keywords: ['flag', 'saudi_arabia'],
 	},
 	{
 		id: '909a72f7-b17b-4880-b15b-9bb077d8be14',
@@ -25620,7 +25620,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇱',
 		category: 'flags',
 		order: 1743,
-		keywords: ['flag', 'sierra leone'],
+		keywords: ['flag', 'sierra_leone'],
 	},
 	{
 		id: '439d54e8-fe35-4251-a9aa-95e20575ce18',
@@ -25636,7 +25636,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇽',
 		category: 'flags',
 		order: 1745,
-		keywords: ['flag', 'sint maarten'],
+		keywords: ['flag', 'sint_maarten'],
 	},
 	{
 		id: '68dfecc7-1e09-4f1e-9bf8-f4ad60c8240c',
@@ -25660,7 +25660,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇧',
 		category: 'flags',
 		order: 1748,
-		keywords: ['flag', 'solomon islands'],
+		keywords: ['flag', 'solomon_islands'],
 	},
 	{
 		id: 'eb6e3fb4-2828-430c-aec4-6f8d669311ed',
@@ -25676,7 +25676,7 @@ export const emojis: Emoji[] = [
 		value: '🇿🇦',
 		category: 'flags',
 		order: 1750,
-		keywords: ['flag', 'south africa'],
+		keywords: ['flag', 'south_africa'],
 	},
 	{
 		id: '73eff904-3800-4289-afa4-f5778d1f1113',
@@ -25684,7 +25684,7 @@ export const emojis: Emoji[] = [
 		value: '🇰🇷',
 		category: 'flags',
 		order: 1751,
-		keywords: ['flag', 'south korea'],
+		keywords: ['flag', 'south_korea'],
 	},
 	{
 		id: '5f5fc8b5-ee5f-4ce9-ade6-094133bcd980',
@@ -25692,7 +25692,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇸',
 		category: 'flags',
 		order: 1752,
-		keywords: ['flag', 'south sudan'],
+		keywords: ['flag', 'south_sudan'],
 	},
 	{
 		id: '3983fe4c-b442-46bd-826d-548cc6620074',
@@ -25708,7 +25708,7 @@ export const emojis: Emoji[] = [
 		value: '🇱🇰',
 		category: 'flags',
 		order: 1754,
-		keywords: ['flag', 'sri lanka'],
+		keywords: ['flag', 'sri_lanka'],
 	},
 	{
 		id: '5fbc4010-dcb7-4cf9-9e6c-cac3185f077b',
@@ -25716,7 +25716,7 @@ export const emojis: Emoji[] = [
 		value: '🇧🇱',
 		category: 'flags',
 		order: 1755,
-		keywords: ['flag', 'st. barthelemy'],
+		keywords: ['flag', 'st._barthelemy'],
 	},
 	{
 		id: 'cba707fe-0d15-410d-a43b-0df370ad8dee',
@@ -25724,7 +25724,7 @@ export const emojis: Emoji[] = [
 		value: '🇸🇭',
 		category: 'flags',
 		order: 1756,
-		keywords: ['flag', 'st. helena'],
+		keywords: ['flag', 'st._helena'],
 	},
 	{
 		id: 'dcfc43ea-3419-4d4b-8407-ad9b65ce82a1',
@@ -25732,7 +25732,7 @@ export const emojis: Emoji[] = [
 		value: '🇰🇳',
 		category: 'flags',
 		order: 1757,
-		keywords: ['flag', 'st. kitts & nevis'],
+		keywords: ['flag', 'st._kitts_&_nevis'],
 	},
 	{
 		id: 'a370468b-1141-4afb-a6a8-442e0b80fc9a',
@@ -25740,7 +25740,7 @@ export const emojis: Emoji[] = [
 		value: '🇱🇨',
 		category: 'flags',
 		order: 1758,
-		keywords: ['flag', 'st. lucia'],
+		keywords: ['flag', 'st._lucia'],
 	},
 	{
 		id: 'a86ff34b-f27a-4bc6-840a-9826ef389e39',
@@ -25748,7 +25748,7 @@ export const emojis: Emoji[] = [
 		value: '🇵🇲',
 		category: 'flags',
 		order: 1759,
-		keywords: ['flag', 'st. pierre & miquelon'],
+		keywords: ['flag', 'st._pierre_&_miquelon'],
 	},
 	{
 		id: '7a758b0f-daea-43d3-b20c-f4c1646bc3da',
@@ -25756,7 +25756,7 @@ export const emojis: Emoji[] = [
 		value: '🇻🇨',
 		category: 'flags',
 		order: 1760,
-		keywords: ['flag', 'st. vincent & grenadines'],
+		keywords: ['flag', 'st._vincent_&_grenadines'],
 	},
 	{
 		id: 'd85d96b0-b5cd-443f-9512-f2f9f88a967d',
@@ -25868,7 +25868,7 @@ export const emojis: Emoji[] = [
 		value: '🇹🇹',
 		category: 'flags',
 		order: 1774,
-		keywords: ['flag', 'trinidad & tobago'],
+		keywords: ['flag', 'trinidad_&_tobago'],
 	},
 	{
 		id: 'b7002380-1174-4bca-8ee5-c751515dbcc3',
@@ -25900,7 +25900,7 @@ export const emojis: Emoji[] = [
 		value: '🇹🇨',
 		category: 'flags',
 		order: 1778,
-		keywords: ['flag', 'turks & caicos islands'],
+		keywords: ['flag', 'turks_&_caicos_islands'],
 	},
 	{
 		id: 'f3dcf5dd-c369-4d8b-b45a-f34d65d5f776',
@@ -25916,7 +25916,7 @@ export const emojis: Emoji[] = [
 		value: '🇻🇮',
 		category: 'flags',
 		order: 1780,
-		keywords: ['flag', 'u.s. virgin islands'],
+		keywords: ['flag', 'u.s._virgin_islands'],
 	},
 	{
 		id: '145c23f7-777d-4cd0-9d07-5e38db8454ab',
@@ -25940,7 +25940,7 @@ export const emojis: Emoji[] = [
 		value: '🇦🇪',
 		category: 'flags',
 		order: 1783,
-		keywords: ['flag', 'united arab emirates'],
+		keywords: ['flag', 'united_arab_emirates'],
 	},
 	{
 		id: 'dbebe7f0-c955-4d57-9f3d-f602596f3169',
@@ -25948,7 +25948,7 @@ export const emojis: Emoji[] = [
 		value: '🇬🇧',
 		category: 'flags',
 		order: 1784,
-		keywords: ['flag', 'united kingdom'],
+		keywords: ['flag', 'united_kingdom'],
 	},
 	{
 		id: 'cdd8aba0-c385-4132-907c-b737c8cb6743',
@@ -25956,7 +25956,7 @@ export const emojis: Emoji[] = [
 		value: '🇺🇸',
 		category: 'flags',
 		order: 1785,
-		keywords: ['flag', 'united states'],
+		keywords: ['flag', 'united_states'],
 	},
 	{
 		id: 'ed49fb43-6506-4c1a-a08e-92c848d1c004',
@@ -25988,7 +25988,7 @@ export const emojis: Emoji[] = [
 		value: '🇻🇦',
 		category: 'flags',
 		order: 1789,
-		keywords: ['flag', 'vatican city'],
+		keywords: ['flag', 'vatican_city'],
 	},
 	{
 		id: '0512f95d-8f9c-4f9b-a34a-4f18b2087e9e',
@@ -26012,7 +26012,7 @@ export const emojis: Emoji[] = [
 		value: '🇼🇫',
 		category: 'flags',
 		order: 1792,
-		keywords: ['flag', 'wallis & futuna'],
+		keywords: ['flag', 'wallis_&_futuna'],
 	},
 	{
 		id: 'daf4170f-e2f0-4fa5-a770-d38f67eccd08',
@@ -26020,7 +26020,7 @@ export const emojis: Emoji[] = [
 		value: '🇪🇭',
 		category: 'flags',
 		order: 1793,
-		keywords: ['flag', 'western sahara'],
+		keywords: ['flag', 'western_sahara'],
 	},
 	{
 		id: 'c8308b3e-c3f4-41f8-84b5-b8d4c6668778',

@@ -1,3 +1,3 @@
 export const languages = ['en', 'nl', 'fr', 'de'] as const;
 
-export type Language = (typeof languages)[number];
+export type Language = (typeof languages)[number] | string;

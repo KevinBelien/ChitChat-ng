@@ -14,6 +14,7 @@ import {
 	Input,
 	OnChanges,
 	OnDestroy,
+	OnInit,
 	Output,
 	SimpleChanges,
 	ViewChild,
@@ -68,7 +69,7 @@ import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.ser
 	},
 })
 export class VerticalEmojiPickerComponent
-	implements AfterViewInit, OnDestroy, OnChanges
+	implements OnInit, AfterViewInit, OnDestroy, OnChanges
 {
 	private dataService = inject(VerticalEmojiPickerService);
 	private emojiPickerStateService = inject(EmojiPickerStateService);
@@ -109,6 +110,8 @@ export class VerticalEmojiPickerComponent
 
 	@HostBinding('style.--sticky-offset')
 	stickyHeaderOffset: number = 0;
+
+	ngOnInit(): void {}
 
 	ngAfterViewInit(): void {
 		this.viewport?.renderedRangeStream

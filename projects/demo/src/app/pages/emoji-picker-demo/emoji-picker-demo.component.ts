@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectorRef, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -15,6 +15,7 @@ import {
 	EmojiSuggestionMode,
 	SkintoneSetting,
 } from 'chit-chat/src/lib/components/emoji-picker';
+import { TranslationService } from 'chit-chat/src/lib/localization';
 import {
 	BehaviorSubject,
 	combineLatest,
@@ -38,6 +39,8 @@ import {
 	styleUrl: './emoji-picker-demo.component.scss',
 })
 export class EmojiPickerDemoComponent {
+	private translationsService = inject(TranslationService);
+	private cdr = inject(ChangeDetectorRef);
 	categories = [...emojiCategories];
 
 	form: {
@@ -75,7 +78,6 @@ export class EmojiPickerDemoComponent {
 		this.width$.next(this.form.width);
 	};
 	handleHeightChange = () => {
-		console.log('gets here');
 		this.height$.next(this.form.height);
 	};
 }

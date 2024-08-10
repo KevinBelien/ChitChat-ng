@@ -8,6 +8,7 @@ import { RouterModule, RouterOutlet } from '@angular/router';
 import { AuthService } from 'chit-chat/src/lib/auth';
 import { ButtonComponent } from 'chit-chat/src/lib/components/button';
 import {
+	frTranslations,
 	nlTranslations,
 	TranslationService,
 } from 'chit-chat/src/lib/localization';
@@ -57,8 +58,7 @@ export class AppComponent implements OnInit {
 		this.enableLightTheme();
 
 		this.translationsService.loadTranslations('nl', nlTranslations);
-		// this.translationsService.loadTranslations('en', enTranslations);
-		// this.translationsService.loadTranslations('fr', frTranslations);
+		this.translationsService.loadTranslations('fr', frTranslations);
 		this.translationsService.setLanguage('nl');
 	}
 

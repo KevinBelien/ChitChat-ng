@@ -52,6 +52,7 @@ import { CategoryBarPosition } from './models/category-bar-position.model';
 import { EmojiSuggestionMode } from './models/emoji-suggestion-mode.model';
 import { SuggestionEmojis } from './models/suggestion-emojis.model';
 import { EmojiDataService } from './services';
+import { EmojiFilterService } from './services/emoji-filter.service';
 import { EmojiPickerStateService } from './services/emoji-picker-state.service';
 
 @Component({
@@ -76,6 +77,7 @@ export class EmojiPickerComponent
 	implements OnInit, OnChanges, OnDestroy
 {
 	private emojiDataService = inject(EmojiDataService);
+	private emojiFilterService = inject(EmojiFilterService);
 	private renderer = inject(Renderer2);
 	private elementRef = inject(ElementRef);
 	private overlay = inject(Overlay);
@@ -173,7 +175,39 @@ export class EmojiPickerComponent
 			this.isSkintoneSettingEnabled();
 		this.isGlobalSkintoneEnabled =
 			this.isGlobalSkintoneSettingEnabled();
+
+		// console.log(this.loseDuplicates());
 	}
+
+	// getAllKeywords = () => {
+	// 	const result: any = {};
+
+	// 	emojis.forEach((emoji) => {
+	// 		result[emoji.id] = [
+	// 			emoji.keywords.map((keyword) => keyword.replaceAll('_', ' ')),
+	// 			emoji.name,
+	// 		].flat();
+	// 	});
+
+	// 	return result;
+	// };
+
+	// loseDuplicates = () => {
+	// 	const obj: any = {};
+	// 	Object.keys(deKeywordTranslations).forEach((key: string) => {
+	// 		obj[key] = [
+	// 			...new Set(
+	// 				deKeywordTranslations[key].map((k: string) =>
+	// 					k.toLowerCase()
+	// 				)
+	// 			),
+	// 		];
+	// 	});
+
+	// 	console.log(obj['d6139ca7-a4ff-49c1-a69d-cc61a08f64b3']);
+
+	// 	return obj;
+	// };
 
 	ngOnInit(): void {
 		this.loadCountryFlagEmojiPolyfill();
