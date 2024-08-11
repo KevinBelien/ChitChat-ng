@@ -25,7 +25,7 @@ export class TranslatePipe implements PipeTransform, OnDestroy {
 				this.cdr.markForCheck();
 			});
 	}
-	transform(value: string): string | null {
+	transform(value: string): string {
 		return (
 			this.translationsService.getTranslationByKey(value) ?? value
 		);

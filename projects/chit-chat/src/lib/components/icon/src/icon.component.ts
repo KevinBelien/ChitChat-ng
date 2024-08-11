@@ -19,6 +19,9 @@ import {
 })
 export class IconComponent {
 	@Input()
+	cssClass: string = '';
+
+	@Input()
 	iconPath: string = '';
 
 	@Input()

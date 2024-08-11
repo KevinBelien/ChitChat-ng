@@ -43,8 +43,10 @@
 							[activeStateEnabled]="!form.activeStateDisabled"
 							[hoverStateEnabled]="!form.hoverStateDisabled"
 							[focusStateEnabled]="!form.focusStateDisabled"
-							[iconPosition]="form.selectedIconPosition"
-							[icon]="icon"
+							[icon]="{
+								path: icon,
+								position: form.selectedIconPosition
+							}"
 							(onClick)="handleClick($event)"
 						></ch-button>
 					</ng-container>
@@ -70,7 +72,7 @@
 							[activeStateEnabled]="!form.activeStateDisabled"
 							[focusStateEnabled]="!form.focusStateDisabled"
 							[hoverStateEnabled]="!form.hoverStateDisabled"
-							[icon]="icon"
+							[icon]="{ cssClass: '', path: icon }"
 							(onClick)="handleClick($event)"
 						></ch-button>
 					</ng-container>

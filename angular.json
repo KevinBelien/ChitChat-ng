@@ -9,7 +9,9 @@
 				"@schematics/angular:component": {
 					"style": "scss",
 					"standalone": true,
-					"skipTests": true
+					"skipTests": true,
+					"changeDetection": "OnPush",
+					"path": "projects/chit-chat/src/lib/components"
 				}
 			},
 			"root": "projects/chit-chat",

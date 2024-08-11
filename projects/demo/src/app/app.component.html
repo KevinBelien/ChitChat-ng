@@ -3,7 +3,9 @@
 		cssClass="menu-btn"
 		type="contrast"
 		fill="clear"
-		icon="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+		[icon]="{
+			path: 'M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z'
+		}"
 		(onClick)="handleMenuBtnClick($event)"
 	></ch-button>
 	<h3 class="top-bar-content">Chit Chat</h3>

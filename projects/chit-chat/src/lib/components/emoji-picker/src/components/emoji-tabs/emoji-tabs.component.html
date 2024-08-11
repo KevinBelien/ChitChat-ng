@@ -11,8 +11,8 @@
 			[icon]="
 				(!isMobile && categoryHovered === category) ||
 				selectedTab === category
-					? emojiCategoryIcons[category].solid
-					: emojiCategoryIcons[category].outline
+					? { path: emojiCategoryIcons[category].solid }
+					: { path: emojiCategoryIcons[category].outline }
 			"
 			(onClick)="handleCategoryButtonClick($event, category)"
 		>

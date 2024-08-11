@@ -50,7 +50,7 @@
 	overflow-x: hidden;
 }
 
-.ch-searchbar-container {
+/* .ch-searchbar-container {
 	background-color: var(
 		--ch-searchbar-background,
 		--ion-background-color,
@@ -63,7 +63,7 @@
 
 .ch-searchbar-container ion-searchbar .searchbar-input-container {
 	height: 30px;
-}
+} */
 
 .ch-searchbar-container
 	ion-searchbar

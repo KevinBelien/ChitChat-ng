@@ -14,7 +14,13 @@
 
 	<ng-container *ngIf="!!icon">
 		<div [ngClass]="iconClass()">
-			<ch-icon [iconPath]="icon"></ch-icon>
+			<ch-icon
+				[cssClass]="icon.cssClass ?? ''"
+				[iconPath]="icon.path ?? ''"
+				[height]="icon.height ?? 24"
+				[width]="icon.width ?? 24"
+				[viewBox]="icon.viewBox ?? '0 -960 960 960'"
+			></ch-icon>
 		</div>
 	</ng-container>
 	<span

@@ -18,6 +18,11 @@ import {
 	ViewChild,
 } from '@angular/core';
 import {
+	TextBoxComponent,
+	ValueChangeEvent,
+} from 'chit-chat/src/lib/components/text-box';
+import { TranslatePipe } from 'chit-chat/src/lib/localization';
+import {
 	ClickActionType,
 	ClickEvent,
 	TouchHoldEvent,
@@ -64,6 +69,8 @@ import { EmojiPickerStateService } from './services/emoji-picker-state.service';
 		HorizontalEmojiPickerComponent,
 		EmojiTabsComponent,
 		SkintonePickerComponent,
+		TextBoxComponent,
+		TranslatePipe,
 	],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	templateUrl: './emoji-picker.component.html',
@@ -115,6 +122,8 @@ export class EmojiPickerComponent
 
 	isIndividualSkintoneEnabled: boolean;
 	isGlobalSkintoneEnabled: boolean;
+
+	searchValue: string = '';
 
 	destroy$ = new Subject<void>();
 
@@ -178,6 +187,10 @@ export class EmojiPickerComponent
 
 		// console.log(this.loseDuplicates());
 	}
+
+	handleSearchValueChanged = (evt: ValueChangeEvent) => {
+		console.log('search changed', evt);
+	};
 
 	// getAllKeywords = () => {
 	// 	const result: any = {};

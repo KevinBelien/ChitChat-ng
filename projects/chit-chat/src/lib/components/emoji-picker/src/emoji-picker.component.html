@@ -1,7 +1,18 @@
 <div class="ch-emoji-picker">
 	<div class="ch-emoji-header-container">
 		<div class="ch-searchbar-container">
-			<input class="ch-searchbar" />
+			<div class="ch-searchbar">
+				<ch-text-box
+					mode="search"
+					variant="filled"
+					[autofocus]="true"
+					[placeholder]="'emojipicker.search' | translate"
+					valueChangeEvent="input"
+					[showClearButton]="true"
+					[(value)]="searchValue"
+					(onValueChanged)="handleSearchValueChanged($event)"
+				/>
+			</div>
 		</div>
 		<ng-container *ngIf="isGlobalSkintoneEnabled">
 			<ch-skintone-picker

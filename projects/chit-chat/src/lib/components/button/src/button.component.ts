@@ -8,9 +8,8 @@ import {
 } from '@angular/core';
 import { IconComponent } from 'chit-chat/src/lib/components/icon';
 import { RippleDirective } from 'chit-chat/src/lib/utils';
-import { ButtonShape, ButtonType } from './types';
+import { ButtonIconProps, ButtonShape, ButtonType } from './types';
 import { ButtonFill } from './types/button-fill.type';
-import { IconPosition } from './types/icon-position.type';
 
 @Component({
 	selector: 'ch-button',
@@ -27,7 +26,7 @@ import { IconPosition } from './types/icon-position.type';
 })
 export class ButtonComponent {
 	@Input() label?: string;
-	@Input() icon?: string;
+	@Input() icon?: Partial<ButtonIconProps>;
 	@Input() cssClass?: string;
 	@Input() width?: number;
 	@Input() height?: number;
@@ -37,7 +36,6 @@ export class ButtonComponent {
 	@Input() hoverStateEnabled: boolean = true;
 	@Input() type: ButtonType = 'primary';
 	@Input() fill: ButtonFill = 'solid';
-	@Input() iconPosition: IconPosition = 'left';
 	@Input() raised: boolean = false;
 	@Input() shape: ButtonShape = 'square';
 	@Input() tabIndex: number | null = null;
@@ -57,6 +55,14 @@ export class ButtonComponent {
 		};
 
 		return iconClasses;
+	}
+
+	get iconPosition() {
+		if (!!this.icon && 'position' in this.icon) {
+			return this.icon.position;
+		}
+
+		return 'left';
 	}
 
 	get buttonClass() {
