@@ -257,7 +257,11 @@ export class VerticalEmojiPickerComponent
 
 		this.manuallyNavigated = true;
 
-		this.viewport?.scrollToIndex(index === 0 ? index : index + 1);
+		this.scrollIndex = index;
+
+		setTimeout(() =>
+			this.viewport?.scrollToIndex(index === 0 ? index : index + 1)
+		);
 	};
 
 	private calculateIndexOfCategory = async (
