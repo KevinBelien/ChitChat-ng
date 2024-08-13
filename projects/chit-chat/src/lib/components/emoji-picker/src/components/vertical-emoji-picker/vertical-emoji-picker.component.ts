@@ -36,6 +36,7 @@ import {
 	EmojiPickerRow,
 } from '../../models';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
+import { FilteredEmojis } from './../../models/filtered-emojis.model';
 import { SuggestionEmojis } from './../../models/suggestion-emojis.model';
 
 import { TranslatePipe } from 'chit-chat/src/lib/localization';
@@ -83,6 +84,10 @@ export class VerticalEmojiPickerComponent
 	@Input() width: number = 350;
 	@Input() scrollbarVisible: boolean = true;
 	@Input() suggestionEmojis: SuggestionEmojis | null = null;
+	@Input() filteredEmojis: FilteredEmojis = {
+		filterActive: true,
+		emojis: [],
+	};
 	@Input() emojiCategories: EmojiCategory[] = [...emojiCategories];
 	@Input() emojis: Emoji[] = [...emojis];
 	@Input() currentCategory: EmojiCategory = this.emojiCategories[0];
@@ -166,6 +171,9 @@ export class VerticalEmojiPickerComponent
 		) {
 			this.updateSuggestionRows();
 		}
+		if (changes['filteredEmojis']) {
+			this.updateFilteredRows();
+		}
 	}
 
 	ngOnDestroy(): void {
@@ -209,6 +217,18 @@ export class VerticalEmojiPickerComponent
 			this.emojiPickerStateService.emojiItemSizeMultiplier$.getValue()
 		);
 	}
+
+	private updateFilteredRows = (): void => {
+		const viewportWidth = this.getViewportWidth();
+		const emojiSizeInPx =
+			this.emojiPickerStateService.emojiSizeInPx$.getValue();
+		this.dataService.updateFilterRows(
+			this.filteredEmojis,
+			emojiSizeInPx,
+			viewportWidth,
+			this.emojiPickerStateService.emojiItemSizeMultiplier$.getValue()
+		);
+	};
 
 	private calculateEmojiSize(viewportWidth: number): number {
 		return this.dataService.calculateEmojiSize(
@@ -257,6 +277,7 @@ export class VerticalEmojiPickerComponent
 
 		this.manuallyNavigated = true;
 
+		//MAKE SURE THE STICKY FALLBACK HEADER IS DISPLAYED BEFORE WE NAVIGATE ELSE VIEWPORT COULD SCROLL BACK 1 ROW AFTER WE HAVE NAVIGATED.
 		this.scrollIndex = index;
 
 		setTimeout(() =>
@@ -345,8 +366,8 @@ export class VerticalEmojiPickerComponent
 		return emoji.value;
 	};
 
-	protected fetchEmojiById = (id: string) => {
-		return this.dataService.fetchEmojiById(id)?.value;
+	protected fetchEmojiById = (id: string): Emoji | undefined => {
+		return this.dataService.fetchEmojiById(id);
 	};
 
 	requestChangeDetection = () => {

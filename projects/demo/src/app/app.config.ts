@@ -18,6 +18,11 @@ export const appConfig: ApplicationConfig = {
 	providers: [
 		provideZoneChangeDetection({ eventCoalescing: true }),
 		provideRouter(routes),
+		// importProvidersFrom(
+		// 	ChitChatModule.forRoot({
+		// 		firebaseConfig: environment.FIREBASE_CONFIG,
+		// 	})
+		// ),
 		provideChitChat(chitChatConfig),
 		provideFirebaseApp(() =>
 			initializeApp(environment.FIREBASE_CONFIG)

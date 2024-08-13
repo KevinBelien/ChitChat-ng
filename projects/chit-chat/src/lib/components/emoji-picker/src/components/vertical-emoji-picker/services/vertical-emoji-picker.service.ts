@@ -14,6 +14,7 @@ import {
 } from '../../../models';
 import { SuggestionEmojis } from '../../../models/suggestion-emojis.model';
 import { EmojiDataService } from '../../../services';
+import { FilteredEmojis } from './../../../models/filtered-emojis.model';
 
 @Injectable()
 export class VerticalEmojiPickerService {
@@ -22,17 +23,27 @@ export class VerticalEmojiPickerService {
 	private suggestionRows$: BehaviorSubject<EmojiPickerRow[]> =
 		new BehaviorSubject<EmojiPickerRow[]>([]);
 
-	private emojiRows$: BehaviorSubject<EmojiPickerRow[]> =
+	private defaultEmojiRows$: BehaviorSubject<EmojiPickerRow[]> =
 		new BehaviorSubject<EmojiPickerRow[]>([]);
+
+	private filteredEmojiRows$: BehaviorSubject<{
+		filterActive: boolean;
+		rows: EmojiPickerRow[];
+	}> = new BehaviorSubject<{
+		filterActive: boolean;
+		rows: EmojiPickerRow[];
+	}>({ filterActive: false, rows: [] });
 
 	allEmojiRows$: Observable<EmojiPickerRow[]> = combineLatest([
 		this.suggestionRows$,
-		this.emojiRows$,
+		this.defaultEmojiRows$,
+		this.filteredEmojiRows$,
 	]).pipe(
-		map(([suggestionRows, emojiRows]) => [
-			...suggestionRows,
-			...emojiRows,
-		])
+		map(([suggestionRows, defaultEmojiRows, filteredEmojis]) =>
+			!filteredEmojis.filterActive
+				? [...suggestionRows, ...defaultEmojiRows]
+				: filteredEmojis.rows
+		)
 	);
 
 	updateSuggestionRows = (
@@ -67,9 +78,62 @@ export class VerticalEmojiPickerService {
 			viewportWidth,
 			itemSizeMultiplier
 		);
-		this.emojiRows$.next(emojiRows);
+		this.defaultEmojiRows$.next(emojiRows);
 	};
 
+	updateFilterRows = (
+		emojis: FilteredEmojis,
+		emojiSize: number,
+		viewportWidth: number,
+		itemSizeMultiplier: number
+	) => {
+		const filterRows = emojis.filterActive
+			? this.generateFilterRows(
+					emojis,
+					emojiSize,
+					viewportWidth,
+					itemSizeMultiplier
+			  )
+			: [];
+
+		this.filteredEmojiRows$.next({
+			filterActive: emojis.filterActive,
+			rows: filterRows,
+		});
+	};
+
+	generateFilterRows = (
+		emojis: FilteredEmojis,
+		emojiSize: number,
+		viewportWidth: number,
+		itemSizeMultiplier: number
+	) => {
+		const maxEmojisPerRow = this.calculateAmountEmojiInRows(
+			emojiSize,
+			viewportWidth,
+			itemSizeMultiplier
+		);
+
+		const rows: EmojiPickerRow[] = [
+			{
+				id: crypto.randomUUID(),
+				type: 'category',
+				value: 'suggestions',
+				translationKey: `emojipicker.category.search`,
+			},
+		];
+
+		for (let i = 0; i < emojis.emojis.length; i += maxEmojisPerRow) {
+			const chunk = emojis.emojis.slice(i, i + maxEmojisPerRow);
+			rows.push({
+				id: crypto.randomUUID(),
+				type: 'emoji',
+				value: chunk,
+			});
+		}
+
+		return rows;
+	};
 	generateSuggestionRows = (
 		categories: EmojiCategory[],
 		suggestionEmojis: SuggestionEmojis,

@@ -1,23 +1,9 @@
 import { Injectable } from '@angular/core';
 import { Language } from 'chit-chat/src/lib/localization';
-import {
-	ArrayMap,
-	DateHelper,
-	ObjectHelper,
-} from 'chit-chat/src/lib/utils';
+import { ArrayMap, ObjectHelper } from 'chit-chat/src/lib/utils';
 
 @Injectable({ providedIn: 'root' })
 export class EmojiFilterService {
-	constructor() {
-		const now = new Date();
-		this.filter('e', 'nl').then((result) => {
-			console.log(
-				DateHelper.getDifferenceInMs(now, new Date()),
-				result
-			);
-		});
-	}
-
 	filter = async (
 		searchValue: string,
 		language: Language
@@ -52,8 +38,6 @@ export class EmojiFilterService {
 
 		scoredResults.sort((a, b) => b.score - a.score);
 
-		console.log(scoredResults);
-
 		return scoredResults.map((result) => result.key);
 	};
 
@@ -62,6 +46,7 @@ export class EmojiFilterService {
 		searchValue: string
 	): number {
 		if (keyword === searchValue) {
+			console.log(keyword, searchValue);
 			return Infinity; // Exact match gets the highest possible score
 		}
 

@@ -46,7 +46,6 @@ export const emojis: Emoji[] = [
 		category: 'smileys-people',
 		order: 3,
 		keywords: [
-			'eye',
 			'face',
 			'grin',
 			'happy',
@@ -67,7 +66,6 @@ export const emojis: Emoji[] = [
 		category: 'smileys-people',
 		order: 4,
 		keywords: [
-			'eye',
 			'face',
 			'happy',
 			'nice',
@@ -98,7 +96,6 @@ export const emojis: Emoji[] = [
 			'open',
 			'hahahaha',
 			'closed',
-			'eyes',
 		],
 	},
 	{

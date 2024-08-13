@@ -59,16 +59,17 @@
 					*ngFor="let emoji of row.value; trackBy: trackEmoji"
 				>
 					<!-- <div class="emoji-container"> -->
-
-					<ch-emoji-button
-						[emoji]="fetchEmojiById(emoji.id)"
-						[attr.data-emoji]="emoji.id"
-						[showSkintoneIndicator]="
-							showSkintoneIndicator &&
-							!!emoji.skintones &&
-							emoji.skintones.length > 0
-						"
-					></ch-emoji-button>
+					<ng-container *ngIf="fetchEmojiById(emoji.id) as emojiData">
+						<ch-emoji-button
+							[emoji]="emojiData.value"
+							[attr.data-emoji]="emojiData.id"
+							[showSkintoneIndicator]="
+								showSkintoneIndicator &&
+								!!emojiData.skintones &&
+								emojiData.skintones.length > 0
+							"
+						></ch-emoji-button
+					></ng-container>
 				</ng-container>
 			</ng-container>
 		</div>

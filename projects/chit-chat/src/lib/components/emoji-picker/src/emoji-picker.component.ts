@@ -21,7 +21,10 @@ import {
 	TextBoxComponent,
 	ValueChangeEvent,
 } from 'chit-chat/src/lib/components/text-box';
-import { TranslatePipe } from 'chit-chat/src/lib/localization';
+import {
+	TranslatePipe,
+	TranslationService,
+} from 'chit-chat/src/lib/localization';
 import {
 	ClickActionType,
 	ClickEvent,
@@ -30,9 +33,13 @@ import {
 import {
 	BehaviorSubject,
 	combineLatest,
+	debounce,
+	from,
 	map,
 	Observable,
 	of,
+	shareReplay,
+	startWith,
 	Subject,
 	switchMap,
 	take,
@@ -55,6 +62,7 @@ import {
 } from './models';
 import { CategoryBarPosition } from './models/category-bar-position.model';
 import { EmojiSuggestionMode } from './models/emoji-suggestion-mode.model';
+import { FilteredEmojis } from './models/filtered-emojis.model';
 import { SuggestionEmojis } from './models/suggestion-emojis.model';
 import { EmojiDataService } from './services';
 import { EmojiFilterService } from './services/emoji-filter.service';
@@ -89,6 +97,7 @@ export class EmojiPickerComponent
 	private elementRef = inject(ElementRef);
 	private overlay = inject(Overlay);
 	private emojiPickerStateService = inject(EmojiPickerStateService);
+	private translationService = inject(TranslationService);
 
 	@ViewChild(VerticalEmojiPickerComponent, { static: false })
 	verticalEmojiPickerComponent?: VerticalEmojiPickerComponent;
@@ -124,6 +133,7 @@ export class EmojiPickerComponent
 	isGlobalSkintoneEnabled: boolean;
 
 	searchValue: string = '';
+	private searchValueSubject = new Subject<ValueChangeEvent>();
 
 	destroy$ = new Subject<void>();
 
@@ -160,15 +170,56 @@ export class EmojiPickerComponent
 	emojiCategories$: BehaviorSubject<EmojiCategory[]> =
 		this.emojiDataService.emojiCategories$;
 
-	emojis$ = combineLatest([
+	filteredEmojis$: Observable<FilteredEmojis> =
+		this.searchValueSubject
+			.pipe(
+				// Apply debounce here but only for events that are not 'clear' or empty
+				debounce((evt) => {
+					if (evt.action === 'clear' || evt.value.trim() === '') {
+						return of(0);
+					}
+
+					return timer(250);
+				}),
+				switchMap((evt) => {
+					if (evt.action === 'clear' || evt.value.trim() === '') {
+						return of({ filterActive: false, emojis: [] });
+					}
+
+					return from(
+						this.emojiFilterService.filter(
+							evt.value,
+							this.translationService.getLanguage()
+						)
+					).pipe(
+						map<string[], FilteredEmojis>((emojiIds) => ({
+							filterActive: true,
+							emojis:
+								this.emojiDataService.fetchEmojisByIds(emojiIds),
+						}))
+					);
+				})
+			)
+			.pipe(startWith({ filterActive: false, emojis: [] }))
+			.pipe(shareReplay(1));
+
+	emojis$: Observable<{
+		emojis: Emoji[];
+		suggestionEmojis: SuggestionEmojis | null;
+		filteredEmojis: FilteredEmojis;
+	}> = combineLatest([
 		this.emojiDataService.emojis$,
 		this.suggestionEmojis$,
+		this.filteredEmojis$,
 	]).pipe(
-		map(([emojis, suggestionEmojis]) => ({
+		map(([emojis, suggestionEmojis, filteredEmojis]) => ({
 			emojis,
 			suggestionEmojis,
+			filteredEmojis,
 		}))
 	);
+
+	noDataEmoji: string = '🕵';
 
 	globalSkintone$ = this.emojiDataService.globalSkintoneSetting$;
 
@@ -184,43 +235,11 @@ export class EmojiPickerComponent
 			this.isSkintoneSettingEnabled();
 		this.isGlobalSkintoneEnabled =
 			this.isGlobalSkintoneSettingEnabled();
-
-		// console.log(this.loseDuplicates());
 	}
 
 	handleSearchValueChanged = (evt: ValueChangeEvent) => {
-		console.log('search changed', evt);
+		this.searchValueSubject.next(evt);
 	};
-
-	// getAllKeywords = () => {
-	// 	const result: any = {};
-
-	// 	emojis.forEach((emoji) => {
-	// 		result[emoji.id] = [
-	// 			emoji.keywords.map((keyword) => keyword.replaceAll('_', ' ')),
-	// 			emoji.name,
-	// 		].flat();
-	// 	});
-
-	// 	return result;
-	// };
-
-	// loseDuplicates = () => {
-	// 	const obj: any = {};
-	// 	Object.keys(deKeywordTranslations).forEach((key: string) => {
-	// 		obj[key] = [
-	// 			...new Set(
-	// 				deKeywordTranslations[key].map((k: string) =>
-	// 					k.toLowerCase()
-	// 				)
-	// 			),
-	// 		];
-	// 	});
-
-	// 	console.log(obj['d6139ca7-a4ff-49c1-a69d-cc61a08f64b3']);
-
-	// 	return obj;
-	// };
 
 	ngOnInit(): void {
 		this.loadCountryFlagEmojiPolyfill();
@@ -250,6 +269,10 @@ export class EmojiPickerComponent
 			.pipe(takeUntil(this.destroy$))
 			.subscribe((emojis) => {
 				this.verticalEmojiPickerComponent?.requestChangeDetection();
+				this.noDataEmoji =
+					this.emojiDataService.fetchEmojiById(
+						'01e96f83-c3d6-49ce-82be-07be658c7846'
+					)?.value ?? '🕵';
 			});
 
 		this.emojiDataService.setSkintoneSetting(this.skintoneSetting);
@@ -340,9 +363,9 @@ export class EmojiPickerComponent
 
 	handleCategoryTabClicked = (category: EmojiCategory) => {
 		this.selectedCategory = category;
-		if (this.verticalEmojiPickerComponent) {
-			this.verticalEmojiPickerComponent.navigateToCategory(category);
-		}
+		// if (this.verticalEmojiPickerComponent) {
+		// 	this.verticalEmojiPickerComponent.navigateToCategory(category);
+		// }
 	};
 
 	addEmojiToSuggestions = (emojiId: string) => {

@@ -293,4 +293,32 @@ export class EmojiDataService implements OnDestroy {
 
 		this.frequentEmojis$.next(emojis);
 	};
+
+	// getAllKeywords = () => {
+	// 	const result: any = {};
+
+	// 	emojis.forEach((emoji) => {
+	// 		result[emoji.id] = [
+	// 			emoji.keywords.map((keyword) => keyword.replaceAll('_', ' ')),
+	// 			emoji.name,
+	// 		].flat();
+	// 	});
+
+	// 	return result;
+	// };
+
+	// loseDuplicates = () => {
+	// 	const obj: any = {};
+	// 	Object.keys(deKeywordTranslations).forEach((key: string) => {
+	// 		obj[key] = [
+	// 			...new Set(
+	// 				deKeywordTranslations[key].map((k: string) =>
+	// 					k.toLowerCase()
+	// 				)
+	// 			),
+	// 		];
+	// 	});
+
+	// 	return obj;
+	// };
 }
