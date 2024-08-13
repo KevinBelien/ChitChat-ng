@@ -219,7 +219,7 @@ export class EmojiPickerComponent
 		}))
 	);
 
-	noDataEmoji: string = '🕵';
+	noDataEmoji: string = '🤷';
 
 	globalSkintone$ = this.emojiDataService.globalSkintoneSetting$;
 
@@ -271,8 +271,8 @@ export class EmojiPickerComponent
 				this.verticalEmojiPickerComponent?.requestChangeDetection();
 				this.noDataEmoji =
 					this.emojiDataService.fetchEmojiById(
-						'01e96f83-c3d6-49ce-82be-07be658c7846'
-					)?.value ?? '🕵';
+						'a4922734-f424-469c-aee2-7e8f89a8e411'
+					)?.value ?? '🤷';
 			});
 
 		this.emojiDataService.setSkintoneSetting(this.skintoneSetting);
@@ -363,9 +363,9 @@ export class EmojiPickerComponent
 
 	handleCategoryTabClicked = (category: EmojiCategory) => {
 		this.selectedCategory = category;
-		// if (this.verticalEmojiPickerComponent) {
-		// 	this.verticalEmojiPickerComponent.navigateToCategory(category);
-		// }
+		if (this.verticalEmojiPickerComponent) {
+			this.verticalEmojiPickerComponent.navigateToCategory(category);
+		}
 	};
 
 	addEmojiToSuggestions = (emojiId: string) => {

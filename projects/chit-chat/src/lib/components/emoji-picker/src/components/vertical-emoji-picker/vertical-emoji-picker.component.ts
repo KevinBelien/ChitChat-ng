@@ -173,6 +173,7 @@ export class VerticalEmojiPickerComponent
 		}
 		if (changes['filteredEmojis']) {
 			this.updateFilteredRows();
+			this.viewport?.scrollToIndex(0);
 		}
 	}
 
