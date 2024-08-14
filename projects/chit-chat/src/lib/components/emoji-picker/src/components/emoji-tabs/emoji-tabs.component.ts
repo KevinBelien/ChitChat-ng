@@ -2,10 +2,12 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
+	effect,
 	EventEmitter,
 	inject,
-	Input,
+	input,
 	Output,
+	signal,
 } from '@angular/core';
 import { ButtonComponent } from 'chit-chat/src/lib/components/button';
 import { IconComponent } from 'chit-chat/src/lib/components/icon';
@@ -37,19 +39,31 @@ import { emojiCategories, EmojiCategory } from '../../models';
 export class EmojiTabsComponent {
 	private screenService = inject(ScreenService);
 
-	@Input()
-	emojiCategories: EmojiCategory[] = [...emojiCategories];
+	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
+
+	selectedTab = input<EmojiCategory>(this.emojiCategories()[0]);
+
+	internalSelectedTab = signal<EmojiCategory>(
+		this.emojiCategories()[0]
+	);
 
 	readonly emojiCategoryIcons = emojiCategoryIcons;
 
-	categoryHovered: EmojiCategory | null = null;
-
-	@Input()
-	selectedTab: EmojiCategory = this.emojiCategories[0];
+	categoryHovered = signal<EmojiCategory | null>(null);
 
 	@Output()
 	onTabClicked = new EventEmitter<EmojiCategory>();
 
+	constructor() {
+		effect(
+			() => {
+				this.internalSelectedTab.set(this.selectedTab());
+			},
+			{
+				allowSignalWrites: true,
+			}
+		);
+	}
 	readonly isMobile = this.screenService.isMobile();
 
 	protected trackCategory = (
@@ -63,16 +77,16 @@ export class EmojiTabsComponent {
 		evt: HoverEvent,
 		category: EmojiCategory
 	) => {
-		if (evt.isHovered) this.categoryHovered = category;
-		else if (this.categoryHovered === category)
-			this.categoryHovered = null;
+		if (evt.isHovered) this.categoryHovered.set(category);
+		else if (this.categoryHovered() === category)
+			this.categoryHovered.set(null);
 	};
 
 	protected handleCategoryButtonClick = (
 		evt: MouseEvent,
 		category: EmojiCategory
 	) => {
-		this.selectedTab = category;
+		this.internalSelectedTab.set(category);
 		this.onTabClicked.emit(category);
 	};
 }

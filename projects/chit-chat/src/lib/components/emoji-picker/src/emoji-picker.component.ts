@@ -125,7 +125,8 @@ export class EmojiPickerComponent
 	@Input() categoryBarPosition: CategoryBarPosition = 'top';
 	@Input() scrollbarVisible: boolean = true;
 	@Input() emojiCategories: EmojiCategory[] = [...emojiCategories];
-	@Input() selectedCategory: EmojiCategory = this.emojiCategories[0];
+	selectedCategory: EmojiCategory = this.emojiCategories[0];
+
 	@Input() suggestionLimit: number = 50;
 	@Input() autoUpdateSuggestions: boolean = true;
 	@Input() skintoneSetting: SkintoneSetting = 'both';
@@ -320,9 +321,10 @@ export class EmojiPickerComponent
 
 			const isActiveCategoryInCategories =
 				this.emojiCategories.includes(this.selectedCategory);
-			this.selectedCategory = currentCategories[0];
 
 			if (!isActiveCategoryInCategories) {
+				this.selectedCategory = currentCategories[0];
+
 				this.verticalEmojiPickerComponent()?.navigateToCategory(
 					currentCategories[0]
 				);

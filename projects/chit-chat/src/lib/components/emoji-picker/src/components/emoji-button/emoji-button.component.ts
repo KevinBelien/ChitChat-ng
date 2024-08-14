@@ -2,7 +2,7 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
-	Input,
+	input,
 } from '@angular/core';
 
 import { RippleDirective } from 'chit-chat/src/lib/utils';
@@ -20,9 +20,7 @@ import { RippleDirective } from 'chit-chat/src/lib/utils';
 	},
 })
 export class EmojiButtonComponent {
-	@Input()
-	emoji?: string;
+	emoji = input<string>();
 
-	@Input()
-	showSkintoneIndicator: boolean = false;
+	showSkintoneIndicator = input<boolean>(false);
 }
