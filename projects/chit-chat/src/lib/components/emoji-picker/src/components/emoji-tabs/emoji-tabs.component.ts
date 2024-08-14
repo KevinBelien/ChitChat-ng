@@ -3,10 +3,9 @@ import {
 	ChangeDetectionStrategy,
 	Component,
 	effect,
-	EventEmitter,
 	inject,
 	input,
-	Output,
+	output,
 	signal,
 } from '@angular/core';
 import { ButtonComponent } from 'chit-chat/src/lib/components/button';
@@ -47,12 +46,11 @@ export class EmojiTabsComponent {
 		this.emojiCategories()[0]
 	);
 
-	readonly emojiCategoryIcons = emojiCategoryIcons;
-
 	categoryHovered = signal<EmojiCategory | null>(null);
 
-	@Output()
-	onTabClicked = new EventEmitter<EmojiCategory>();
+	readonly emojiCategoryIcons = emojiCategoryIcons;
+
+	onTabClicked = output<EmojiCategory>();
 
 	constructor() {
 		effect(
