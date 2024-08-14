@@ -1,32 +1,31 @@
 <button
 	chRipple
-	[rippleEnabled]="activeStateEnabled"
-	[ngClass]="buttonClass"
-	[disabled]="disabled"
+	[rippleEnabled]="activeStateEnabled()"
+	[ngClass]="buttonClass()"
+	[disabled]="disabled()"
 	[ngStyle]="{
-		width: width ? width + 'px' : 'auto',
-		height: height ? height + 'px' : 'auto'
+		width: width() ? width() + 'px' : 'auto',
+		height: height() ? height() + 'px' : 'auto'
 	}"
-	[tabIndex]="tabIndex"
+	[tabIndex]="tabIndex()"
 	(click)="handleClick($event)"
 >
 	<ng-content></ng-content>
 
-	<ng-container *ngIf="!!icon">
+	<ng-container *ngIf="icon() as ico">
 		<div [ngClass]="iconClass()">
 			<ch-icon
-				[cssClass]="icon.cssClass ?? ''"
-				[iconPath]="icon.path ?? ''"
-				[height]="icon.height ?? 24"
-				[width]="icon.width ?? 24"
-				[viewBox]="icon.viewBox ?? '0 -960 960 960'"
+				[cssClass]="ico.cssClass ?? ''"
+				[iconPath]="ico.path ?? ''"
+				[height]="ico.height ?? 24"
+				[width]="ico.width ?? 24"
+				[viewBox]="ico.viewBox ?? '0 -960 960 960'"
 			></ch-icon>
 		</div>
 	</ng-container>
 	<span
-		*ngIf="label"
 		class="ch-button-label"
-		[attr.aria-hidden]="icon && !label"
-		>{{ label }}</span
+		[attr.aria-hidden]="icon() && !label()"
+		>{{ label() }}</span
 	>
 </button>
