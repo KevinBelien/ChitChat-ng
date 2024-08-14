@@ -6,15 +6,26 @@ import { ArrayMap, ObjectHelper } from 'chit-chat/src/lib/utils';
 export class EmojiFilterService {
 	filter = async (
 		searchValue: string,
-		language: Language
+		language: Language,
+		includedEmojis?: Array<string>
 	): Promise<string[]> => {
 		const translatedKeywords = await this.getTranslations(language);
+
+		const filteredTranslations = !!includedEmojis
+			? Object.keys(translatedKeywords)
+					.filter((key) => includedEmojis.includes(key))
+					.reduce((obj: ArrayMap<string>, key: string) => {
+						obj[key] = translatedKeywords[key];
+						return obj;
+					}, {})
+			: translatedKeywords;
+
 		const normalizedSearchValue = searchValue.trim().toLowerCase();
 
 		const scoredResults = [];
 
-		for (const key in translatedKeywords) {
-			const keywords = translatedKeywords[key];
+		for (const key in filteredTranslations) {
+			const keywords = filteredTranslations[key];
 			let bestScore = 0;
 
 			for (let i = 0; i < keywords.length; i++) {
@@ -46,7 +57,6 @@ export class EmojiFilterService {
 		searchValue: string
 	): number {
 		if (keyword === searchValue) {
-			console.log(keyword, searchValue);
 			return Infinity; // Exact match gets the highest possible score
 		}
 

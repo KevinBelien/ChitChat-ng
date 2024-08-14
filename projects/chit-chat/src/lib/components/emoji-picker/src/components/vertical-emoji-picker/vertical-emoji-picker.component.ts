@@ -17,7 +17,7 @@ import {
 	OnInit,
 	Output,
 	SimpleChanges,
-	ViewChild,
+	viewChild,
 } from '@angular/core';
 import {
 	BehaviorSubject,
@@ -76,8 +76,9 @@ export class VerticalEmojiPickerComponent
 	private emojiPickerStateService = inject(EmojiPickerStateService);
 	private cdr = inject(ChangeDetectorRef);
 
-	@ViewChild(CdkVirtualScrollViewport, { static: false })
-	viewport?: CdkVirtualScrollViewport;
+	viewport = viewChild<CdkVirtualScrollViewport>(
+		CdkVirtualScrollViewport
+	);
 
 	@Input() emojiSize: EmojiSizeKey = 'default';
 	@Input() height: number = 400;
@@ -119,16 +120,16 @@ export class VerticalEmojiPickerComponent
 	ngOnInit(): void {}
 
 	ngAfterViewInit(): void {
-		this.viewport?.renderedRangeStream
-			.pipe(takeUntil(this.destroy$))
+		this.viewport()
+			?.renderedRangeStream.pipe(takeUntil(this.destroy$))
 			.subscribe(() => {
-				this.viewport?.checkViewportSize();
+				this.viewport()?.checkViewportSize();
 				this.stickyHeaderOffset = -(
-					this.viewport?.getOffsetToRenderedContentStart() || 0
+					this.viewport()?.getOffsetToRenderedContentStart() || 0
 				);
 			});
 
-		this.viewport
+		this.viewport()
 			?.elementScrolled()
 			.pipe(takeUntil(this.destroy$))
 			.subscribe(() => this.onScroll.emit());
@@ -173,7 +174,7 @@ export class VerticalEmojiPickerComponent
 		}
 		if (changes['filteredEmojis']) {
 			this.updateFilteredRows();
-			this.viewport?.scrollToIndex(0);
+			this.viewport()?.scrollToIndex(0);
 		}
 	}
 
@@ -282,7 +283,7 @@ export class VerticalEmojiPickerComponent
 		this.scrollIndex = index;
 
 		setTimeout(() =>
-			this.viewport?.scrollToIndex(index === 0 ? index : index + 1)
+			this.viewport()?.scrollToIndex(index === 0 ? index : index + 1)
 		);
 	};
 
@@ -346,13 +347,17 @@ export class VerticalEmojiPickerComponent
 	};
 
 	protected handleWheelScroll(event: WheelEvent): void {
+		const viewport = this.viewport();
+		if (!viewport) return;
+
 		event.preventDefault();
 		const step =
 			this.scrollWheelStep ??
 			this.emojiPickerStateService.emojiSizeInPx$.getValue() * 4;
 		const scrollAmount = Math.sign(event.deltaY) * step;
-		this.viewport?.scrollToOffset(
-			this.viewport?.measureScrollOffset() + scrollAmount
+
+		viewport?.scrollToOffset(
+			viewport?.measureScrollOffset() + scrollAmount
 		);
 	}
 

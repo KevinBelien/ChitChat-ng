@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
+	effect,
 	ElementRef,
 	EventEmitter,
 	HostBinding,
@@ -15,8 +16,10 @@ import {
 	Output,
 	Renderer2,
 	SimpleChanges,
-	ViewChild,
+	viewChild,
 } from '@angular/core';
+
+import { toSignal } from '@angular/core/rxjs-interop';
 import {
 	TextBoxComponent,
 	ValueChangeEvent,
@@ -99,11 +102,14 @@ export class EmojiPickerComponent
 	private emojiPickerStateService = inject(EmojiPickerStateService);
 	private translationService = inject(TranslationService);
 
-	@ViewChild(VerticalEmojiPickerComponent, { static: false })
-	verticalEmojiPickerComponent?: VerticalEmojiPickerComponent;
+	verticalEmojiPickerComponent =
+		viewChild<VerticalEmojiPickerComponent>(
+			VerticalEmojiPickerComponent
+		);
 
-	@ViewChild(SkintonePickerComponent, { static: false })
-	SkintonePickerComponent?: SkintonePickerComponent;
+	skintonePickerComponent = viewChild<SkintonePickerComponent>(
+		SkintonePickerComponent
+	);
 
 	@Input()
 	@HostBinding('style.--picker-height')
@@ -189,7 +195,10 @@ export class EmojiPickerComponent
 					return from(
 						this.emojiFilterService.filter(
 							evt.value,
-							this.translationService.getLanguage()
+							this.translationService.getLanguage(),
+							this.emojiDataService.emojis$
+								.getValue()
+								.map((emoji) => emoji.id)
 						)
 					).pipe(
 						map<string[], FilteredEmojis>((emojiIds) => ({
@@ -226,7 +235,9 @@ export class EmojiPickerComponent
 	@HostBinding('style.--ch-emoji-size') emojiSizeInPx?: number;
 	@HostBinding('style.--ch-emoji-btn-size-multiplier')
 	itemSizeMultiplier?: number;
+
 	@HostBinding('style.--ch-padding-inline') padding?: number;
+	paddingState = toSignal(this.emojiPickerStateService.padding$);
 
 	private pointerDownListener?: () => void;
 
@@ -235,6 +246,8 @@ export class EmojiPickerComponent
 			this.isSkintoneSettingEnabled();
 		this.isGlobalSkintoneEnabled =
 			this.isGlobalSkintoneSettingEnabled();
+
+		effect(() => (this.padding = this.paddingState()));
 	}
 
 	handleSearchValueChanged = (evt: ValueChangeEvent) => {
@@ -260,15 +273,18 @@ export class EmojiPickerComponent
 			.subscribe((emojiContainerSizeMultiplier) => {
 				this.itemSizeMultiplier = emojiContainerSizeMultiplier;
 			});
-		this.emojiPickerStateService.padding$.subscribe((padding) => {
-			this.padding = padding;
-		});
+
+		this.emojiPickerStateService.padding$
+			.pipe(takeUntil(this.destroy$))
+			.subscribe((padding) => {
+				this.padding = padding;
+			});
 
 		// //Whenever data in the emoji-map is changed, check for changes in child components
 		this.emojiDataService.emojiMap$
 			.pipe(takeUntil(this.destroy$))
 			.subscribe((emojis) => {
-				this.verticalEmojiPickerComponent?.requestChangeDetection();
+				this.verticalEmojiPickerComponent()?.requestChangeDetection();
 				this.noDataEmoji =
 					this.emojiDataService.fetchEmojiById(
 						'a4922734-f424-469c-aee2-7e8f89a8e411'
@@ -286,7 +302,7 @@ export class EmojiPickerComponent
 						'.ch-color-picker-container'
 					)
 				) {
-					this.SkintonePickerComponent?.close();
+					this.skintonePickerComponent()?.close();
 				}
 			}
 		);
@@ -306,11 +322,8 @@ export class EmojiPickerComponent
 				this.emojiCategories.includes(this.selectedCategory);
 			this.selectedCategory = currentCategories[0];
 
-			if (
-				!isActiveCategoryInCategories &&
-				this.verticalEmojiPickerComponent
-			) {
-				this.verticalEmojiPickerComponent.navigateToCategory(
+			if (!isActiveCategoryInCategories) {
+				this.verticalEmojiPickerComponent()?.navigateToCategory(
 					currentCategories[0]
 				);
 			}
@@ -347,7 +360,7 @@ export class EmojiPickerComponent
 	}
 
 	handleScroll = () => {
-		this.SkintonePickerComponent?.close();
+		this.skintonePickerComponent()?.close();
 	};
 
 	private loadCountryFlagEmojiPolyfill() {
@@ -363,9 +376,7 @@ export class EmojiPickerComponent
 
 	handleCategoryTabClicked = (category: EmojiCategory) => {
 		this.selectedCategory = category;
-		if (this.verticalEmojiPickerComponent) {
-			this.verticalEmojiPickerComponent.navigateToCategory(category);
-		}
+		this.verticalEmojiPickerComponent()?.navigateToCategory(category);
 	};
 
 	addEmojiToSuggestions = (emojiId: string) => {

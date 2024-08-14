@@ -63,7 +63,6 @@ export class TextBoxComponent
 	private elementRef = inject(ElementRef);
 	private renderer = inject(Renderer2);
 
-	// Input signals
 	value = input<string>('');
 	autofocus = input<boolean>(false);
 	mode = input<TextBoxMode>('text');
@@ -73,13 +72,11 @@ export class TextBoxComponent
 	variant = input<TextBoxVariant>('filled');
 	showClearButton = input<boolean>(false);
 
-	// Output signals
 	valueChange = output<string>();
 	onValueChanged = output<ValueChangeEvent>();
 
 	internalValue = signal<string>('');
 
-	// Computed signal for the CSS classes
 	textBoxClass = computed(() => {
 		return {
 			'ch-editor-outlined': this.variant() === 'outlined',
