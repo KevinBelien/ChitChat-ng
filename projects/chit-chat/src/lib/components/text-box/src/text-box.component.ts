@@ -10,12 +10,11 @@ import {
 	HostListener,
 	inject,
 	input,
-	OnChanges,
+	model,
 	OnDestroy,
 	output,
 	Renderer2,
-	signal,
-	SimpleChanges,
+	untracked,
 } from '@angular/core';
 import {
 	ControlValueAccessor,
@@ -54,16 +53,12 @@ import { TextBoxVariant } from './models/text-box-variant.type';
 	},
 })
 export class TextBoxComponent
-	implements
-		ControlValueAccessor,
-		OnChanges,
-		AfterViewInit,
-		OnDestroy
+	implements ControlValueAccessor, AfterViewInit, OnDestroy
 {
 	private elementRef = inject(ElementRef);
 	private renderer = inject(Renderer2);
 
-	value = input<string>('');
+	value = model<string>('');
 	autofocus = input<boolean>(false);
 	mode = input<TextBoxMode>('text');
 	valueChangeEvent = input<string>('change');
@@ -72,10 +67,7 @@ export class TextBoxComponent
 	variant = input<TextBoxVariant>('filled');
 	showClearButton = input<boolean>(false);
 
-	valueChange = output<string>();
 	onValueChanged = output<ValueChangeEvent>();
-
-	internalValue = signal<string>('');
 
 	textBoxClass = computed(() => {
 		return {
@@ -98,19 +90,13 @@ export class TextBoxComponent
 	}
 
 	constructor() {
-		effect(
-			() => {
-				this.internalValue.set(this.value());
-			},
-			{
-				allowSignalWrites: true,
-			}
-		);
+		effect(() => {
+			const valueChangeEvent = this.valueChangeEvent();
+			untracked(() => this.updateEventListener(valueChangeEvent));
+		});
 	}
 
 	ngAfterViewInit(): void {
-		this.updateEventListener();
-
 		this.elementClickListener = this.renderer.listen(
 			this.elementRef.nativeElement,
 			'pointerdown',
@@ -138,22 +124,13 @@ export class TextBoxComponent
 		}
 	}
 
-	ngOnChanges(changes: SimpleChanges): void {
-		if (
-			changes['valueChangeEvent'] &&
-			!changes['valueChangeEvent'].isFirstChange()
-		) {
-			this.updateEventListener();
-		}
-	}
-
 	writeValue(value: string): void {
-		this.internalValue.set(value || '');
+		this.value.set(value || '');
 	}
 
 	protected handleClearClick = (evt: MouseEvent) => {
-		this.internalValue.set('');
-		this.setValue(this.internalValue(), evt, 'clear');
+		this.value.set('');
+		this.setValue(this.value(), evt, 'clear');
 	};
 
 	registerOnChange(fn: (value: string) => void): void {
@@ -170,12 +147,12 @@ export class TextBoxComponent
 		}
 	};
 
-	private updateEventListener(): void {
+	private updateEventListener(valueChangeEvent: string): void {
 		this.cleanupCurrentListener();
 
 		this.currentListenerFn = this.renderer.listen(
 			this.elementRef.nativeElement.querySelector('input'),
-			this.valueChangeEvent(),
+			valueChangeEvent,
 			(event: Event) => this.onEvent(event)
 		);
 	}
@@ -188,8 +165,7 @@ export class TextBoxComponent
 
 	private setValue = (value: string, evt: Event, action: string) => {
 		this.onChange(value);
-		this.internalValue.set(value); // Update internal value
-		this.valueChange.emit(value);
+		this.value.set(value); // Update internal value
 		this.onValueChanged.emit({
 			event: evt,
 			value: value,

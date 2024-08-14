@@ -8,11 +8,11 @@
 			fill="clear"
 			type="contrast"
 			[cssClass]="
-				internalSelectedTab() === category ? 'ch-button-active' : ''
+				selectedTab() === category ? 'ch-button-active' : ''
 			"
 			[icon]="
 				(!isMobile && categoryHovered() === category) ||
-				internalSelectedTab() === category
+				selectedTab() === category
 					? { path: emojiCategoryIcons[category].solid }
 					: { path: emojiCategoryIcons[category].outline }
 			"

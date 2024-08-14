@@ -2,9 +2,9 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
-	effect,
 	inject,
 	input,
+	model,
 	output,
 	signal,
 } from '@angular/core';
@@ -40,11 +40,7 @@ export class EmojiTabsComponent {
 
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
 
-	selectedTab = input<EmojiCategory>(this.emojiCategories()[0]);
-
-	internalSelectedTab = signal<EmojiCategory>(
-		this.emojiCategories()[0]
-	);
+	selectedTab = model<EmojiCategory>(this.emojiCategories()[0]);
 
 	categoryHovered = signal<EmojiCategory | null>(null);
 
@@ -52,16 +48,7 @@ export class EmojiTabsComponent {
 
 	onTabClicked = output<EmojiCategory>();
 
-	constructor() {
-		effect(
-			() => {
-				this.internalSelectedTab.set(this.selectedTab());
-			},
-			{
-				allowSignalWrites: true,
-			}
-		);
-	}
+	constructor() {}
 	readonly isMobile = this.screenService.isMobile();
 
 	protected trackCategory = (
@@ -84,7 +71,7 @@ export class EmojiTabsComponent {
 		evt: MouseEvent,
 		category: EmojiCategory
 	) => {
-		this.internalSelectedTab.set(category);
+		this.selectedTab.set(category);
 		this.onTabClicked.emit(category);
 	};
 }
