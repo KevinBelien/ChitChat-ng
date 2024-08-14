@@ -1,6 +1,6 @@
-<div class="ch-text-box-container" [ngClass]="textBoxClass">
+<div class="ch-text-box-container" [ngClass]="textBoxClass()">
 	<div class="ch-text-box-addon">
-		<ng-container *ngIf="mode === 'search'">
+		<ng-container *ngIf="mode() === 'search'">
 			<ng-content select="[addon-before]"></ng-content>
 			<ch-icon
 				cssClass="ch-search-icon"
@@ -12,17 +12,18 @@
 	</div>
 	<input
 		chAutofocus
-		[autofocus]="autofocus"
+		[autofocus]="autofocus()"
 		class="ch-text-input"
-		[type]="mode === 'search' ? 'text' : mode"
-		[placeholder]="placeholder"
-		[value]="value"
-		[disabled]="disabled"
-		valueChangeEvent="input"
+		[type]="mode() === 'search' ? 'text' : mode()"
+		[placeholder]="placeholder()"
+		[value]="value()"
+		[disabled]="disabled()"
 	/>
 	<div class="ch-text-box-addon">
 		<ng-content select="[addon-after]"></ng-content>
-		<ng-container *ngIf="showClearButton && value.length > 0">
+		<ng-container
+			*ngIf="!!showClearButton() && internalValue().length > 0"
+		>
 			<ch-button
 				cssClass="ch-clear-button"
 				shape="round"

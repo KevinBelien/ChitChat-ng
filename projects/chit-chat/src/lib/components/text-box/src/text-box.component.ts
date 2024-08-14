@@ -3,16 +3,18 @@ import {
 	AfterViewInit,
 	ChangeDetectionStrategy,
 	Component,
+	computed,
+	effect,
 	ElementRef,
-	EventEmitter,
 	forwardRef,
 	HostListener,
 	inject,
-	Input,
+	input,
 	OnChanges,
 	OnDestroy,
-	Output,
+	output,
 	Renderer2,
+	signal,
 	SimpleChanges,
 } from '@angular/core';
 import {
@@ -45,7 +47,7 @@ import { TextBoxVariant } from './models/text-box-variant.type';
 	],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	templateUrl: './text-box.component.html',
-	styleUrl: './text-box.component.scss',
+	styleUrls: ['./text-box.component.scss'],
 	host: {
 		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
@@ -61,26 +63,29 @@ export class TextBoxComponent
 	private elementRef = inject(ElementRef);
 	private renderer = inject(Renderer2);
 
-	@Input() value: string = '';
-	@Input()
-	autofocus: boolean = false;
-	@Input() mode: TextBoxMode = 'text';
-	@Input() valueChangeEvent: string = 'change';
-	@Input() placeholder: string = '';
-	@Input()
-	disabled: boolean = false;
+	// Input signals
+	value = input<string>('');
+	autofocus = input<boolean>(false);
+	mode = input<TextBoxMode>('text');
+	valueChangeEvent = input<string>('change');
+	placeholder = input<string>('');
+	disabled = input<boolean>(false);
+	variant = input<TextBoxVariant>('filled');
+	showClearButton = input<boolean>(false);
 
-	@Input()
-	variant: TextBoxVariant = 'filled';
+	// Output signals
+	valueChange = output<string>();
+	onValueChanged = output<ValueChangeEvent>();
 
-	@Input()
-	showClearButton: boolean = false;
+	internalValue = signal<string>('');
 
-	@Output() valueChange: EventEmitter<string> =
-		new EventEmitter<string>();
-
-	@Output() onValueChanged: EventEmitter<ValueChangeEvent> =
-		new EventEmitter<ValueChangeEvent>();
+	// Computed signal for the CSS classes
+	textBoxClass = computed(() => {
+		return {
+			'ch-editor-outlined': this.variant() === 'outlined',
+			'ch-editor-filled': this.variant() === 'filled',
+		};
+	});
 
 	readonly icons = { ...icons };
 
@@ -89,6 +94,22 @@ export class TextBoxComponent
 
 	private onChange: (value: string) => void = () => {};
 	private onTouched: () => void = () => {};
+
+	@HostListener('blur', ['$event'])
+	onBlur(event: FocusEvent): void {
+		this.onTouched();
+	}
+
+	constructor() {
+		effect(
+			() => {
+				this.internalValue.set(this.value());
+			},
+			{
+				allowSignalWrites: true,
+			}
+		);
+	}
 
 	ngAfterViewInit(): void {
 		this.updateEventListener();
@@ -130,13 +151,12 @@ export class TextBoxComponent
 	}
 
 	writeValue(value: string): void {
-		this.value = value || '';
+		this.internalValue.set(value || '');
 	}
 
 	protected handleClearClick = (evt: MouseEvent) => {
-		this.value = '';
-
-		this.setValue(this.value, evt, 'clear');
+		this.internalValue.set('');
+		this.setValue(this.internalValue(), evt, 'clear');
 	};
 
 	registerOnChange(fn: (value: string) => void): void {
@@ -158,7 +178,7 @@ export class TextBoxComponent
 
 		this.currentListenerFn = this.renderer.listen(
 			this.elementRef.nativeElement.querySelector('input'),
-			this.valueChangeEvent,
+			this.valueChangeEvent(),
 			(event: Event) => this.onEvent(event)
 		);
 	}
@@ -166,30 +186,17 @@ export class TextBoxComponent
 	onEvent = (evt: Event): void => {
 		const inputElement = evt.target as HTMLInputElement;
 
-		this.setValue(inputElement.value, evt, this.valueChangeEvent);
+		this.setValue(inputElement.value, evt, this.valueChangeEvent());
 	};
 
 	private setValue = (value: string, evt: Event, action: string) => {
-		this.value = value;
-
 		this.onChange(value);
-		this.valueChange.emit(this.value);
+		this.internalValue.set(value); // Update internal value
+		this.valueChange.emit(value);
 		this.onValueChanged.emit({
 			event: evt,
 			value: value,
 			action,
 		});
 	};
-
-	@HostListener('blur', ['$event'])
-	onBlur(event: FocusEvent): void {
-		this.onTouched();
-	}
-
-	get textBoxClass() {
-		return {
-			'ch-editor-outlined': this.variant === 'outlined',
-			'ch-editor-filled': this.variant === 'filled',
-		};
-	}
 }
