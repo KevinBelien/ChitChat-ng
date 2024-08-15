@@ -2,14 +2,13 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
-	EventEmitter,
+	computed,
 	HostBinding,
 	Input,
-	OnChanges,
-	Output,
-	SimpleChanges,
+	model,
+	output,
+	signal,
 } from '@angular/core';
-import { BehaviorSubject } from 'rxjs';
 import {
 	Skintone,
 	SkintoneColor,
@@ -24,17 +23,16 @@ import {
 	templateUrl: './skintone-picker.component.html',
 	styleUrl: './skintone-picker.component.scss',
 })
-export class SkintonePickerComponent implements OnChanges {
-	isOpen$ = new BehaviorSubject<boolean>(false);
+export class SkintonePickerComponent {
+	isOpen = signal<boolean>(false);
 
-	skintoneColors = [...skintoneColors];
+	readonly skintoneColors: SkintoneColor[] = [...skintoneColors];
 
-	@Input()
-	selectedSkintone: Skintone = 'default';
+	selectedSkintone = model<Skintone>('default');
 
 	@Input()
 	@HostBinding('style.--ch-skincolor-swatch-size')
-	size: number = 20;
+	size = 20;
 
 	@HostBinding('style.--ch-skincolor-swatch-padding')
 	itemPadding: number = 12;
@@ -42,18 +40,11 @@ export class SkintonePickerComponent implements OnChanges {
 	@HostBinding('style.--ch-skincolor-swatch-count')
 	skintoneCount: number = this.skintoneColors.length;
 
-	@Output()
-	onSelectionChanged = new EventEmitter<Skintone>();
+	onSelectionChanged = output<Skintone>();
 
-	selectedColor: SkintoneColor = this.skintoneColors[0];
-
-	ngOnChanges(changes: SimpleChanges): void {
-		if (changes['selectedSkintone']) {
-			this.selectedColor = this.getColorBySkintone(
-				changes['selectedSkintone'].currentValue
-			);
-		}
-	}
+	selectedColor = computed(() => {
+		return this.getColorBySkintone(this.selectedSkintone());
+	});
 
 	getColorBySkintone = (skintone: Skintone): SkintoneColor => {
 		return (
@@ -64,29 +55,29 @@ export class SkintonePickerComponent implements OnChanges {
 	};
 
 	toggle() {
-		this.isOpen$.next(!this.isOpen$.getValue());
+		this.isOpen.set(!this.isOpen());
 	}
 
 	close = () => {
-		this.isOpen$.next(false);
+		this.isOpen.set(false);
 	};
 
 	handleClick = (skintoneColor: SkintoneColor, event: Event) => {
 		event.stopPropagation();
 
-		if (this.isOpen$.getValue()) {
-			this.selectedColor = skintoneColor;
+		if (!!this.isOpen()) {
+			this.selectedSkintone.set(skintoneColor.skintone);
 			this.onSelectionChanged.emit(skintoneColor.skintone);
 		}
 		this.toggle();
 	};
 
 	getPosition = (index: number) => {
-		if (!this.isOpen$.getValue()) return 'translateX(0px)';
+		if (!this.isOpen()) return 'translateX(0px)';
 
 		const position = -(index * (this.size + this.itemPadding));
 		return `translateX(${position}px) ${
-			this.selectedColor === this.skintoneColors[index]
+			this.selectedColor() === this.skintoneColors[index]
 				? 'scale(1.2)'
 				: ''
 		}`;

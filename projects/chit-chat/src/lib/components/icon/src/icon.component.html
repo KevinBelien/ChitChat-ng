@@ -1,10 +1,10 @@
 <svg
-	[ngClass]="cssClass"
+	[ngClass]="cssClass()"
 	class="ch-icon"
 	xmlns="http://www.w3.org/2000/svg"
-	[attr.height]="height"
-	[attr.width]="width"
-	[attr.viewBox]="viewBox"
+	[attr.height]="height()"
+	[attr.width]="width()"
+	[attr.viewBox]="viewBox()"
 >
-	<path [attr.d]="iconPath"></path>
+	<path [attr.d]="iconPath()"></path>
 </svg>

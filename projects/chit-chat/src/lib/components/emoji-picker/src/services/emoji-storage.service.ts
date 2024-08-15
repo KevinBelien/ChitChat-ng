@@ -103,7 +103,7 @@ export class EmojiStorageService {
 		});
 	};
 
-	fetchEmojisSkintone = (): IndividualEmojiSkintone[] => {
+	fetchIndividualEmojisSkintones = (): IndividualEmojiSkintone[] => {
 		return this.retrieveFromStorage<IndividualEmojiSkintone>(
 			'emojisSkintone'
 		);
@@ -113,7 +113,8 @@ export class EmojiStorageService {
 		emojiId: string,
 		emojiValue: string
 	): IndividualEmojiSkintone[] => {
-		const storageEmojiSkintones = this.fetchEmojisSkintone();
+		const storageEmojiSkintones =
+			this.fetchIndividualEmojisSkintones();
 
 		const dto: IndividualEmojiSkintone = { emojiId, emojiValue };
 
