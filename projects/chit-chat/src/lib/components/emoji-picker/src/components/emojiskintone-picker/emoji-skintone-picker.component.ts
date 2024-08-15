@@ -15,7 +15,7 @@ import {
 	ClickEvent,
 	ClickTouchHoldDirective,
 } from 'chit-chat/src/lib/utils';
-import { AlternativeSkintone, Emoji } from '../../models';
+import { Emoji } from '../../models';
 import { EmojiPickerStateService } from '../../services/emoji-picker-state.service';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 
@@ -72,13 +72,6 @@ export class EmojiSkintonePickerComponent {
 				(event: MouseEvent) => event.preventDefault()
 			);
 		}
-	};
-
-	protected trackSkintone = (
-		index: number,
-		skintone: AlternativeSkintone
-	) => {
-		return skintone.skintone;
 	};
 
 	protected handleEmojiClick = (evt: ClickEvent) => {

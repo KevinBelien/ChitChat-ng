@@ -108,6 +108,8 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		SkintonePickerComponent
 	);
 
+	private destroy$ = new Subject<void>();
+
 	@Input()
 	@HostBinding('style.--picker-height')
 	height = 450;
@@ -126,20 +128,20 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	autoUpdateSuggestions = input<boolean>(true);
 	skintoneSetting = input<SkintoneSetting>('both');
 
-	emojiCategoriesStream$ = toObservable(
-		this.emojiCategories
-	).subscribe((categories) => {
-		this.selectedCategory.set(categories[0]);
-		this.verticalEmojiPickerComponent()?.navigateToCategory(
-			categories[0]
-		);
-	});
+	emojiCategoriesStream$ = toObservable(this.emojiCategories)
+		.pipe(takeUntil(this.destroy$))
+		.subscribe((categories) => {
+			this.selectedCategory.set(categories[0]);
+			this.verticalEmojiPickerComponent()?.navigateToCategory(
+				categories[0]
+			);
+		});
 
-	skintoneSettingStream$ = toObservable(
-		this.skintoneSetting
-	).subscribe((setting) =>
-		this.emojiDataService.setSkintoneSetting(setting)
-	);
+	skintoneSettingStream$ = toObservable(this.skintoneSetting)
+		.pipe(takeUntil(this.destroy$))
+		.subscribe((setting) =>
+			this.emojiDataService.setSkintoneSetting(setting)
+		);
 
 	selectedCategory = signal<EmojiCategory>(this.emojiCategories()[0]);
 
@@ -257,8 +259,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 
 	private pointerDownListener?: () => void;
 
-	private destroy$ = new Subject<void>();
-
 	constructor() {
 		effect(() => (this.padding = this.paddingState()));
 
@@ -273,7 +273,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	};
 
 	handleEmojiSizeCalculated = (value: number) => {
-		console.log('gets here', value);
 		this.emojiSizeInPx = value;
 	};
 

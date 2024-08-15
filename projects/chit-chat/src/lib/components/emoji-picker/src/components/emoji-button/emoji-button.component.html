@@ -1,10 +1,11 @@
+@if({data: emoji()}; as emoji){
 <button
-	*ngIf="emoji"
 	class="ch-emoji-btn"
 	[ngClass]="{
 		'ch-emoji-variation-indicator': showSkintoneIndicator()
 	}"
 	chRipple
 >
-	<span class="ch-emoji">{{ emoji() }}</span>
+	<span class="ch-emoji">{{ emoji.data }}</span>
 </button>
+}

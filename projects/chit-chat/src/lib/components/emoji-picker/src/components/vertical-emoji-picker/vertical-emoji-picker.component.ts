@@ -8,7 +8,6 @@ import {
 	ChangeDetectionStrategy,
 	Component,
 	computed,
-	effect,
 	HostBinding,
 	inject,
 	input,
@@ -73,12 +72,21 @@ export class VerticalEmojiPickerComponent
 		CdkVirtualScrollViewport
 	);
 
+	destroy$ = new Subject<void>();
+
 	emojis = input<Emoji[]>([...emojis]);
 	suggestionEmojis = input<SuggestionEmojis | null>(null);
 	filteredEmojis = input<FilteredEmojis>({
 		filterActive: true,
 		emojis: [],
 	});
+
+	filteredEmojiStream$ = toObservable(this.filteredEmojis)
+		.pipe(takeUntil(this.destroy$))
+		.subscribe(() => {
+			this.currentCategory.set(this.emojiCategories()[0]);
+			this.viewport()?.scrollToIndex(0);
+		});
 
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
 	emojiSize = input<EmojiSizeKey>('default');
@@ -162,7 +170,7 @@ export class VerticalEmojiPickerComponent
 		);
 	});
 
-	emojiRows = computed(() => {
+	emojiRows = computed((): EmojiPickerRow[] => {
 		const filteredEmojis = this.filteredEmojis();
 
 		return !filteredEmojis.filterActive
@@ -174,8 +182,6 @@ export class VerticalEmojiPickerComponent
 
 	// emojiRows = this.dataService.allEmojiRows;
 
-	destroy$ = new Subject<void>();
-
 	emojiSIzeInPx$ = toObservable(this.emojiSizeInPx)
 		.pipe(takeUntil(this.destroy$))
 		.subscribe((emojiSIzeInPx) => {
@@ -184,13 +190,6 @@ export class VerticalEmojiPickerComponent
 
 	@HostBinding('style.--sticky-offset')
 	stickyHeaderOffset: number = 0;
-
-	constructor() {
-		effect(() => {
-			const filteredEmojis = this.filteredEmojis();
-			this.viewport()?.scrollToIndex(0);
-		});
-	}
 
 	ngAfterViewInit(): void {
 		this.viewport()
@@ -375,9 +374,5 @@ export class VerticalEmojiPickerComponent
 		row: EmojiPickerRow
 	): string => {
 		return row.id;
-	};
-
-	protected trackEmoji = (index: number, emoji: Emoji): string => {
-		return emoji.value;
 	};
 }

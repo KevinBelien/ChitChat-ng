@@ -1,14 +1,16 @@
 <div class="ch-color-picker-container" [class.open]="isOpen()">
 	<div class="ch-skintone-select">
+		@for(skintoneColor of skintoneColors; track skintoneColor; let
+		index = $index){
 		<button
-			*ngFor="let skintoneColor of skintoneColors; let i = index"
 			class="ch-color-swatch"
 			[class.selected]="
 				selectedColor().skintone === skintoneColor.skintone
 			"
-			[style.transform]="getPosition(i)"
+			[style.transform]="getPosition(index)"
 			[style.background]="skintoneColor.color"
 			(click)="handleClick(skintoneColor, $event)"
 		></button>
+		}
 	</div>
 </div>

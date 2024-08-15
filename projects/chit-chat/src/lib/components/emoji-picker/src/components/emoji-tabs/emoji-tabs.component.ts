@@ -51,13 +51,6 @@ export class EmojiTabsComponent {
 	constructor() {}
 	readonly isMobile = this.screenService.isMobile();
 
-	protected trackCategory = (
-		index: number,
-		category: EmojiCategory
-	) => {
-		return category;
-	};
-
 	protected handleHoverChange = (
 		evt: HoverEvent,
 		category: EmojiCategory

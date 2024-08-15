@@ -4,14 +4,11 @@
 	dataAttribute="data-skintone"
 	(onClick)="handleEmojiClick($event)"
 >
-	<ng-container *ngIf="emoji() as emoji">
-		<ng-container
-			*ngFor="let skintone of emoji.skintones; trackBy: trackSkintone"
-		>
-			<ch-emoji-button
-				[emoji]="skintone.value"
-				[attr.data-skintone]="skintone.value"
-			></ch-emoji-button>
-		</ng-container>
-	</ng-container>
+	@if({data: emoji()}; as emoji){ @for (alternativeSkintone of
+	emoji.data?.skintones; track alternativeSkintone.skintone) {
+	<ch-emoji-button
+		[emoji]="alternativeSkintone.value"
+		[attr.data-skintone]="alternativeSkintone.value"
+	></ch-emoji-button>
+	} }
 </div>

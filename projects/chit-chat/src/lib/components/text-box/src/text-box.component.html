@@ -1,14 +1,14 @@
 <div class="ch-text-box-container" [ngClass]="textBoxClass()">
 	<div class="ch-text-box-addon">
-		<ng-container *ngIf="mode() === 'search'">
-			<ng-content select="[addon-before]"></ng-content>
-			<ch-icon
-				cssClass="ch-search-icon"
-				[height]="19"
-				[width]="19"
-				[iconPath]="icons.search"
-			></ch-icon>
-		</ng-container>
+		@if ({data: mode}; as mode) { @if (!!mode) {
+		<ng-content select="[addon-before]"></ng-content>
+		<ch-icon
+			cssClass="ch-search-icon"
+			[height]="19"
+			[width]="19"
+			[iconPath]="icons.search"
+		></ch-icon>
+		} }
 	</div>
 	<input
 		chAutofocus
@@ -21,17 +21,18 @@
 	/>
 	<div class="ch-text-box-addon">
 		<ng-content select="[addon-after]"></ng-content>
-		<ng-container *ngIf="!!showClearButton() && value().length > 0">
-			<ch-button
-				cssClass="ch-clear-button"
-				shape="round"
-				[width]="18"
-				[height]="18"
-				[focusStateEnabled]="false"
-				[activeStateEnabled]="false"
-				[icon]="{ path: icons.clear, height: 14, width: 14 }"
-				(onClick)="handleClearClick($event)"
-			></ch-button>
-		</ng-container>
+
+		@if (!!showClearButton() && value().length > 0){
+		<ch-button
+			cssClass="ch-clear-button"
+			shape="round"
+			[width]="18"
+			[height]="18"
+			[focusStateEnabled]="false"
+			[activeStateEnabled]="false"
+			[icon]="{ path: icons.clear, height: 14, width: 14 }"
+			(onClick)="handleClearClick($event)"
+		></ch-button>
+		}
 	</div>
 </div>
