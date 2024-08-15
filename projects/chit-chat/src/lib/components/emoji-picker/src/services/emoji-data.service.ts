@@ -1,157 +1,72 @@
-import { inject, Injectable, OnDestroy } from '@angular/core';
 import {
-	BehaviorSubject,
-	combineLatest,
-	Subject,
-	takeUntil,
-} from 'rxjs';
+	computed,
+	inject,
+	Injectable,
+	Signal,
+	signal,
+	WritableSignal,
+} from '@angular/core';
 import { emojis } from '../data';
-import {
-	Emoji,
-	emojiCategories,
-	EmojiCategory,
-	IndividualEmojiSkintone,
-	Skintone,
-	SkintoneSetting,
-} from '../models';
+import { Emoji, EmojiCategory, Skintone } from '../models';
+import { IndividualEmojiSkintone } from './../models/skin-tone.model';
+import { SkintoneSetting } from './../models/skintone-setting.model';
 import { EmojiStorageService } from './emoji-storage.service';
 
 @Injectable({ providedIn: 'root' })
-export class EmojiDataService implements OnDestroy {
+export class EmojiDataService {
 	private emojiStorageService = inject(EmojiStorageService);
 
-	readonly emojis$: BehaviorSubject<Emoji[]> = new BehaviorSubject<
-		Emoji[]
-	>([...emojis]);
+	recentEmojis: WritableSignal<Emoji[]>;
 
-	readonly recentEmojis$: BehaviorSubject<Emoji[]>;
-	readonly frequentEmojis$: BehaviorSubject<Emoji[]>;
+	frequentEmojis: WritableSignal<Emoji[]>;
 
-	readonly emojiCategories$: BehaviorSubject<EmojiCategory[]> =
-		new BehaviorSubject<EmojiCategory[]>([...emojiCategories]);
+	globalSkintoneSetting: WritableSignal<Skintone>;
 
-	readonly emojiMap$: BehaviorSubject<Map<string, Emoji>>;
+	individualSkintones: WritableSignal<IndividualEmojiSkintone[]>;
 
-	readonly skintoneSetting$ = new BehaviorSubject<SkintoneSetting>(
-		'none'
-	);
-	readonly globalSkintoneSetting$: BehaviorSubject<Skintone>;
+	skintoneSetting = signal<SkintoneSetting>('none');
+	emojis = signal<Emoji[]>([...emojis]);
 
-	destroy$ = new Subject<void>();
+	emojiMap: Signal<Map<string, Emoji>>;
 
 	constructor() {
-		this.emojiMap$ = new BehaviorSubject<Map<string, Emoji>>(
-			this.createEmojiMap()
-		);
-
-		this.recentEmojis$ = new BehaviorSubject<Emoji[]>(
-			this.fetchRecentEmojisFromStorage()
-		);
-
-		this.frequentEmojis$ = new BehaviorSubject<Emoji[]>(
-			this.fetchFrequentEmojisFromStorage()
-		);
-
-		this.emojiCategories$
-			.pipe(takeUntil(this.destroy$))
-			.subscribe((categories) => {
-				this.emojis$.next(
-					this.filterAndSortEmojis(
-						categories.filter(
-							(category) => category !== 'suggestions'
-						)
-					)
-				);
-			});
-
-		this.globalSkintoneSetting$ = new BehaviorSubject<Skintone>(
+		this.globalSkintoneSetting = signal<Skintone>(
 			this.fetchGlobalSkintone()
 		);
 
-		combineLatest([
-			this.skintoneSetting$,
-			this.globalSkintoneSetting$,
-		])
-			.pipe(takeUntil(this.destroy$))
-			.subscribe(([skintoneSetting, globalSkintone]) => {
-				this.applySkintoneSetting(skintoneSetting);
-			});
-	}
+		this.individualSkintones = signal<IndividualEmojiSkintone[]>(
+			this.emojiStorageService.fetchIndividualEmojisSkintones()
+		);
 
-	ngOnDestroy(): void {
-		this.destroy$.next();
-		this.destroy$.complete();
-	}
-
-	setSkintoneSetting = (value: SkintoneSetting) => {
-		this.skintoneSetting$.next(value);
-	};
-
-	applySkintoneSetting = (skintoneConfig: SkintoneSetting) => {
-		switch (skintoneConfig) {
-			case 'none':
-				this.applyUniformSkintone('default');
-				break;
-			case 'individual':
-				this.applyIndividualSkintoneSetting();
-				break;
-			default:
-				this.applyGlobalSkintoneSetting();
-				break;
-		}
-	};
-
-	updateGlobalSkintone = (skintone: Skintone) => {
-		this.emojiStorageService.updateGlobalSkintone(skintone);
-		this.globalSkintoneSetting$.next(skintone);
-	};
-
-	applyGlobalSkintoneSetting = (): void => {
-		const globalSkintone = this.fetchGlobalSkintone();
-
-		this.applyUniformSkintone(globalSkintone);
-	};
-
-	applyIndividualSkintoneSetting = () => {
-		const response: IndividualEmojiSkintone[] =
-			this.emojiStorageService.fetchEmojisSkintone();
-
-		const emojiMap = this.emojiMap$.getValue();
-
-		emojiMap.forEach((emoji: Emoji) => {
-			if (!emoji.skintones) {
-				return;
-			}
-
-			const record = response.find(
-				(item) => item.emojiId === emoji.id
+		this.emojiMap = computed((): Map<string, Emoji> => {
+			return this.generateEmojiMap(
+				this.emojis(),
+				this.skintoneSetting(),
+				this.globalSkintoneSetting(),
+				this.individualSkintones()
 			);
-			const newEmoji = {
-				...emoji,
-				value: !!record
-					? record.emojiValue
-					: this.fetchSkintoneFromEmoji(emoji, 'default'),
-			};
-			emojiMap.set(emoji.id, newEmoji);
 		});
-		this.emojiMap$.next(emojiMap);
-	};
+
+		this.recentEmojis = signal<Emoji[]>(
+			this.fetchRecentEmojisFromStorage()
+		);
+		this.frequentEmojis = signal<Emoji[]>(
+			this.fetchFrequentEmojisFromStorage()
+		);
+	}
 
 	updateEmojiSkintone = (emojiId: string, value: string) => {
 		this.emojiStorageService.updateEmojiSkintone(emojiId, value);
 
-		const map = this.emojiMap$.getValue();
-		const previousValue = this.fetchEmojiById(emojiId);
-
-		if (!previousValue) return;
-
-		map.set(emojiId, Object.assign({ ...previousValue }, { value }));
-
-		this.emojiMap$.next(map);
+		this.individualSkintones.set(
+			this.emojiStorageService.fetchIndividualEmojisSkintones()
+		);
 	};
 
-	applyUniformSkintone = (skintone: Skintone): void => {
-		const emojiMap = this.emojiMap$.getValue();
+	applyGlobalSkintone = (
+		emojiMap: Map<string, Emoji>,
+		skintone: Skintone
+	): Map<string, Emoji> => {
 		emojiMap.forEach((emoji: Emoji) => {
 			if (!!emoji.skintones) {
 				const newEmoji = Object.assign(
@@ -162,7 +77,7 @@ export class EmojiDataService implements OnDestroy {
 			}
 		});
 
-		this.emojiMap$.next(emojiMap);
+		return emojiMap;
 	};
 
 	fetchGlobalSkintone = () => {
@@ -184,7 +99,10 @@ export class EmojiDataService implements OnDestroy {
 	};
 
 	fetchEmojiById = (id: string): Emoji | undefined => {
-		return this.emojiMap$.getValue().get(id);
+		if (!this.emojiMap) return undefined;
+		const emojiMap = this.emojiMap();
+
+		return emojiMap?.get(id);
 	};
 
 	fetchEmojisByIds = (emojiIds: string[]): Emoji[] => {
@@ -226,21 +144,65 @@ export class EmojiDataService implements OnDestroy {
 	};
 
 	getEmojis = (): Emoji[] => {
-		return this.emojis$.getValue();
+		return this.emojis();
 	};
 
-	createEmojiMap = (): Map<string, Emoji> => {
-		const emojis = this.getEmojis();
-		return new Map(emojis.map((emoji) => [emoji.id, emoji]));
+	generateEmojiMap = (
+		emojis: Emoji[],
+		skintoneSetting: SkintoneSetting,
+		globalSkintoneSetting: Skintone,
+		individualEmojiSkintones: IndividualEmojiSkintone[]
+	): Map<string, Emoji> => {
+		return new Map(
+			emojis.map((emoji) => [
+				emoji.id,
+				this.getEmojiBySkintoneSettings(
+					emoji,
+					skintoneSetting,
+					globalSkintoneSetting,
+					individualEmojiSkintones
+				),
+			])
+		);
 	};
 
-	setEmojiCategories = (categories: EmojiCategory[]): void => {
-		this.emojiCategories$.next(
-			categories.sort((a, b) => {
-				if (a === 'suggestions') return -1;
-				if (b === 'suggestions') return 1;
-				return 0;
-			})
+	getEmojiBySkintoneSettings = (
+		emoji: Emoji,
+		skintoneSetting: SkintoneSetting,
+		globalSkintoneSetting: Skintone,
+		individualEmojisSkintones: IndividualEmojiSkintone[]
+	) => {
+		if (
+			!emoji.skintones ||
+			emoji.skintones.length === 0 ||
+			skintoneSetting === 'none'
+		)
+			return emoji;
+
+		if (skintoneSetting === 'individual') {
+			const individualEmoji = individualEmojisSkintones.find(
+				(e) => e.emojiId === emoji.id
+			);
+
+			return !!individualEmoji
+				? Object.assign(
+						{ ...emoji },
+						{ value: individualEmoji.emojiValue }
+				  )
+				: emoji;
+		}
+
+		const alternativeSkintone = emoji.skintones.find(
+			(skintone) => skintone.skintone === globalSkintoneSetting
+		);
+
+		return Object.assign(
+			{ ...emoji },
+			{
+				value: !!alternativeSkintone
+					? alternativeSkintone.value
+					: emoji.value,
+			}
 		);
 	};
 
@@ -278,7 +240,7 @@ export class EmojiDataService implements OnDestroy {
 			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);
 
-		this.recentEmojis$.next(emojis);
+		this.recentEmojis.set(emojis);
 	};
 
 	increaseEmojiFrequency = (id: string): void => {
@@ -291,7 +253,11 @@ export class EmojiDataService implements OnDestroy {
 			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);
 
-		this.frequentEmojis$.next(emojis);
+		this.frequentEmojis.set(emojis);
+	};
+
+	setSkintoneSetting = (setting: SkintoneSetting) => {
+		this.skintoneSetting.set(setting);
 	};
 
 	// getAllKeywords = () => {

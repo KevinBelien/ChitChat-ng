@@ -9,63 +9,66 @@
 					[placeholder]="'emojipicker.search' | translate"
 					valueChangeEvent="input"
 					[showClearButton]="true"
-					[(value)]="searchValue"
+					[value]="searchValue()"
 					(onValueChanged)="handleSearchValueChanged($event)"
 				></ch-text-box>
 			</div>
 		</div>
 		<ng-container *ngIf="isGlobalSkintoneEnabled">
 			<ch-skintone-picker
-				*ngIf="globalSkintone$ | async as globalSkintone"
-				[selectedSkintone]="globalSkintone"
+				*ngIf="!!isGlobalSkintoneEnabled()"
+				[selectedSkintone]="globalSkintone()"
 				[size]="20"
 				(onSelectionChanged)="handleGlobalSkintoneChanged($event)"
 			></ch-skintone-picker>
 		</ng-container>
 	</div>
 
-	<ng-container *ngIf="filteredEmojis$ | async as filteredEmojis">
+	<ng-container *ngIf="!!filteredEmojis()">
 		<ng-container
 			*ngIf="
-				!filteredEmojis.filterActive ||
-					filteredEmojis.emojis.length > 0;
+				!filteredEmojis()!.filterActive ||
+					filteredEmojis()!.emojis.length > 0;
 				else noData
 			"
 		>
 			<div
-				*ngIf="!filteredEmojis.filterActive"
+				*ngIf="!filteredEmojis()!.filterActive"
 				class="emoji-tab-bar"
-				[ngClass]="{ 'bar-bottom': categoryBarPosition === 'bottom' }"
+				[ngClass]="{
+					'bar-bottom': categoryBarPosition() === 'bottom'
+				}"
 			>
 				<ch-emoji-tabs
-					*ngIf="emojiCategories$ | async as categories"
-					[emojiCategories]="categories"
-					[selectedTab]="selectedCategory"
+					[emojiCategories]="emojiCategories()"
+					[selectedTab]="selectedCategory()"
 					(onTabClicked)="handleCategoryTabClicked($event)"
 				></ch-emoji-tabs>
 			</div>
 			<div class="ch-emoji-picker-container">
 				<ng-container
 					*ngIf="
-						orientation === 'vertical';
+						orientation() === 'vertical';
 						else horizontalEmojiPicker
 					"
 				>
 					<ch-vertical-emoji-picker
-						*ngIf="emojis$ | async as emojis"
 						[height]="height"
 						[width]="width"
-						[emojis]="emojis.emojis"
-						[suggestionEmojis]="emojis.suggestionEmojis"
-						[filteredEmojis]="emojis.filteredEmojis"
-						[showSkintoneIndicator]="isIndividualSkintoneEnabled"
-						[emojiSize]="emojiSize"
+						[emojis]="emojis().defaultEmojis"
+						[suggestionEmojis]="emojis().suggestionEmojis"
+						[filteredEmojis]="emojis().filteredEmojis"
+						[showSkintoneIndicator]="isIndividualSkintoneEnabled()"
+						[emojiSize]="emojiSize()"
 						[(currentCategory)]="selectedCategory"
-						[scrollbarVisible]="scrollbarVisible"
-						[emojiCategories]="emojiCategories"
+						[scrollbarVisible]="scrollbarVisible()"
+						[emojiCategories]="emojiCategories()"
 						(onClick)="handleEmojiClick($event)"
 						(onScroll)="handleScroll()"
 						(onTouchHold)="handleEmojiTouchHold($event)"
+						(onEmojiSizeCalculated)="
+							handleEmojiSizeCalculated($event)
+						"
 					></ch-vertical-emoji-picker>
 				</ng-container>
 
@@ -78,7 +81,7 @@
 
 	<ng-template #noData>
 		<div class="ch-no-data-container">
-			<div class="ch-no-data-emoji">{{ noDataEmoji }}</div>
+			<div class="ch-no-data-emoji">{{ noDataEmoji() }}</div>
 			<div class="ch-no-data-text">No results</div>
 		</div>
 	</ng-template>

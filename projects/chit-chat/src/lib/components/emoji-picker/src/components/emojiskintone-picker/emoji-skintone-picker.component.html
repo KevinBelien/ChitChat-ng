@@ -4,7 +4,7 @@
 	dataAttribute="data-skintone"
 	(onClick)="handleEmojiClick($event)"
 >
-	<ng-container *ngIf="!!emoji">
+	<ng-container *ngIf="emoji() as emoji">
 		<ng-container
 			*ngFor="let skintone of emoji.skintones; trackBy: trackSkintone"
 		>

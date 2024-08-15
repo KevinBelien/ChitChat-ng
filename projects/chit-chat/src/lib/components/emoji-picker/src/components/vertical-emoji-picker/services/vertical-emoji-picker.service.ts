@@ -1,11 +1,5 @@
 import { inject, Injectable } from '@angular/core';
 import { NumberHelper } from 'chit-chat/src/lib/utils';
-import {
-	BehaviorSubject,
-	combineLatest,
-	map,
-	Observable,
-} from 'rxjs';
 import { EmojiSize } from '../../../enums';
 import {
 	Emoji,
@@ -14,96 +8,15 @@ import {
 } from '../../../models';
 import { SuggestionEmojis } from '../../../models/suggestion-emojis.model';
 import { EmojiDataService } from '../../../services';
-import { FilteredEmojis } from './../../../models/filtered-emojis.model';
 
 @Injectable()
 export class VerticalEmojiPickerService {
 	private emojiDataService = inject(EmojiDataService);
 
-	private suggestionRows$: BehaviorSubject<EmojiPickerRow[]> =
-		new BehaviorSubject<EmojiPickerRow[]>([]);
-
-	private defaultEmojiRows$: BehaviorSubject<EmojiPickerRow[]> =
-		new BehaviorSubject<EmojiPickerRow[]>([]);
-
-	private filteredEmojiRows$: BehaviorSubject<{
-		filterActive: boolean;
-		rows: EmojiPickerRow[];
-	}> = new BehaviorSubject<{
-		filterActive: boolean;
-		rows: EmojiPickerRow[];
-	}>({ filterActive: false, rows: [] });
-
-	allEmojiRows$: Observable<EmojiPickerRow[]> = combineLatest([
-		this.suggestionRows$,
-		this.defaultEmojiRows$,
-		this.filteredEmojiRows$,
-	]).pipe(
-		map(([suggestionRows, defaultEmojiRows, filteredEmojis]) =>
-			!filteredEmojis.filterActive
-				? [...suggestionRows, ...defaultEmojiRows]
-				: filteredEmojis.rows
-		)
-	);
-
-	updateSuggestionRows = (
-		emojis: SuggestionEmojis | null,
-		emojiCategories: EmojiCategory[],
-		emojiSize: number,
-		viewportWidth: number,
-		itemSizeMultiplier: number
-	): void => {
-		const emojiRows = !!emojis
-			? this.generateSuggestionRows(
-					emojiCategories,
-					emojis,
-					emojiSize,
-					viewportWidth,
-					itemSizeMultiplier
-			  )
-			: [];
-
-		this.suggestionRows$.next(emojiRows);
-	};
-
-	updateEmojiRows = (
-		emojis: Emoji[],
-		emojiSize: number,
-		viewportWidth: number,
-		itemSizeMultiplier: number
-	): void => {
-		const emojiRows = this.generateEmojiRows(
-			emojis,
-			emojiSize,
-			viewportWidth,
-			itemSizeMultiplier
-		);
-		this.defaultEmojiRows$.next(emojiRows);
-	};
-
-	updateFilterRows = (
-		emojis: FilteredEmojis,
-		emojiSize: number,
-		viewportWidth: number,
-		itemSizeMultiplier: number
-	) => {
-		const filterRows = emojis.filterActive
-			? this.generateFilterRows(
-					emojis,
-					emojiSize,
-					viewportWidth,
-					itemSizeMultiplier
-			  )
-			: [];
-
-		this.filteredEmojiRows$.next({
-			filterActive: emojis.filterActive,
-			rows: filterRows,
-		});
-	};
+	emojiDataMap = this.emojiDataService.emojiMap;
 
 	generateFilterRows = (
-		emojis: FilteredEmojis,
+		emojis: Emoji[],
 		emojiSize: number,
 		viewportWidth: number,
 		itemSizeMultiplier: number
@@ -118,13 +31,13 @@ export class VerticalEmojiPickerService {
 			{
 				id: crypto.randomUUID(),
 				type: 'category',
-				value: 'suggestions',
+				value: 'search',
 				translationKey: `emojipicker.category.search`,
 			},
 		];
 
-		for (let i = 0; i < emojis.emojis.length; i += maxEmojisPerRow) {
-			const chunk = emojis.emojis.slice(i, i + maxEmojisPerRow);
+		for (let i = 0; i < emojis.length; i += maxEmojisPerRow) {
+			const chunk = emojis.slice(i, i + maxEmojisPerRow);
 			rows.push({
 				id: crypto.randomUUID(),
 				type: 'emoji',
@@ -135,8 +48,8 @@ export class VerticalEmojiPickerService {
 		return rows;
 	};
 	generateSuggestionRows = (
-		categories: EmojiCategory[],
 		suggestionEmojis: SuggestionEmojis,
+		categories: EmojiCategory[],
 		emojiSize: number,
 		viewportWidth: number,
 		itemSizeMultiplier: number
@@ -176,7 +89,7 @@ export class VerticalEmojiPickerService {
 		return rows;
 	};
 
-	generateEmojiRows = (
+	generateDefaultEmojiRows = (
 		emojis: Emoji[],
 		emojiSize: number,
 		viewportWidth: number,

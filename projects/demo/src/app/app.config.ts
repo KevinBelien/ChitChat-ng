@@ -24,6 +24,7 @@ export const appConfig: ApplicationConfig = {
 		// 	})
 		// ),
 		provideChitChat(chitChatConfig),
+
 		provideFirebaseApp(() =>
 			initializeApp(environment.FIREBASE_CONFIG)
 		),

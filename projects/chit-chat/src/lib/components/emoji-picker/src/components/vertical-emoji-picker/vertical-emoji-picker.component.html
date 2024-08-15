@@ -1,8 +1,8 @@
 <cdk-virtual-scroll-viewport
 	class="ch-vscroll-viewport"
-	[ngClass]="{ 'ch-scroll-hidden': !scrollbarVisible }"
+	[ngClass]="{ 'ch-scroll-hidden': !scrollbarVisible() }"
 	[style.height]="'100%'"
-	[itemSize]="itemSize$ | async"
+	[itemSize]="itemSize()"
 	[minBufferPx]="300"
 	[maxBufferPx]="450"
 	(wheel)="handleWheelScroll($event)"
@@ -16,19 +16,19 @@
 		<div
 			class="ch-static-category ch-sticky ch-row"
 			[style.display]="
-				scrollIndex === 0 || emojiCategories.length === 0
+				scrollIndex() === 0 || emojiCategories().length === 0
 					? 'none'
 					: 'block'
 			"
 		>
 			<div class="ch-emoji-group-title">
 				{{
-					currentCategory === 'suggestions' && !!suggestionEmojis
+					currentCategory() === 'suggestions' && !!suggestionEmojis()
 						? ('emojipicker.category.' +
-								suggestionEmojis.suggestionMode
+								suggestionEmojis()!.suggestionMode
 						  | translate
 						  | titlecase)
-						: ('emojipicker.category.' + currentCategory
+						: ('emojipicker.category.' + currentCategory()
 						  | translate
 						  | titlecase)
 				}}
@@ -37,7 +37,7 @@
 
 		<div
 			*cdkVirtualFor="
-				let row of emojiRows$ | async;
+				let row of emojiRows();
 				templateCacheSize: 30;
 				let index = index;
 				trackBy: trackEmojiRow
@@ -59,12 +59,14 @@
 					*ngFor="let emoji of row.value; trackBy: trackEmoji"
 				>
 					<!-- <div class="emoji-container"> -->
-					<ng-container *ngIf="fetchEmojiById(emoji.id) as emojiData">
+					<ng-container
+						*ngIf="emojiDataMap()?.get(emoji.id) as emojiData"
+					>
 						<ch-emoji-button
 							[emoji]="emojiData.value"
 							[attr.data-emoji]="emojiData.id"
 							[showSkintoneIndicator]="
-								showSkintoneIndicator &&
+								showSkintoneIndicator() &&
 								!!emojiData.skintones &&
 								emojiData.skintones.length > 0
 							"

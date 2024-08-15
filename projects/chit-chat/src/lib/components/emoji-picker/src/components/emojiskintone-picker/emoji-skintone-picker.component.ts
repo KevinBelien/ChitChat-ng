@@ -2,12 +2,14 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
-	EventEmitter,
+	effect,
 	HostBinding,
 	inject,
 	Input,
-	Output,
+	model,
+	output,
 	Renderer2,
+	ViewEncapsulation,
 } from '@angular/core';
 import {
 	ClickEvent,
@@ -28,6 +30,8 @@ import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 	templateUrl: './emoji-skintone-picker.component.html',
 	styleUrl: './emoji-skintone-picker.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
+	encapsulation: ViewEncapsulation.None,
+
 	host: {
 		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
@@ -37,28 +41,22 @@ export class EmojiSkintonePickerComponent {
 	private emojiPickerStateService = inject(EmojiPickerStateService);
 	private renderer = inject(Renderer2);
 
-	@Input()
-	emoji?: Emoji;
+	emoji = model<Emoji>();
 
-	@HostBinding('style.--ch-emoji-size') emojiSizeInPx?: number;
+	@Input()
+	@HostBinding('style.--ch-emoji-size')
+	emojiSizeInPx?: number;
 
 	@HostBinding('style.--ch-emoji-btn-size-multiplier')
 	itemSizeMultiplier?: number;
 
-	@Output()
-	onSelectionChanged = new EventEmitter<ClickEvent>();
+	onSelectionChanged = output<ClickEvent>();
 
 	constructor() {
-		this.emojiPickerStateService.emojiSizeInPx$.subscribe(
-			(emojiSizeInPx) => {
-				this.emojiSizeInPx = emojiSizeInPx;
-			}
-		);
-		this.emojiPickerStateService.emojiItemSizeMultiplier$.subscribe(
-			(emojiContainerSizeMultiplier) => {
-				this.itemSizeMultiplier = emojiContainerSizeMultiplier;
-			}
-		);
+		effect(() => {
+			this.itemSizeMultiplier =
+				this.emojiPickerStateService.emojiItemSizeMultiplier();
+		});
 
 		this.disableContextMenu();
 	}

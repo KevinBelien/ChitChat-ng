@@ -4,22 +4,24 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
+	computed,
 	effect,
 	ElementRef,
-	EventEmitter,
 	HostBinding,
 	inject,
 	Input,
-	OnChanges,
+	input,
+	model,
 	OnDestroy,
 	OnInit,
-	Output,
+	output,
 	Renderer2,
-	SimpleChanges,
+	signal,
 	viewChild,
 } from '@angular/core';
 
-import { toSignal } from '@angular/core/rxjs-interop';
+import { toObservable, toSignal } from '@angular/core/rxjs-interop';
+
 import {
 	TextBoxComponent,
 	ValueChangeEvent,
@@ -34,9 +36,8 @@ import {
 	TouchHoldEvent,
 } from 'chit-chat/src/lib/utils';
 import {
-	BehaviorSubject,
-	combineLatest,
 	debounce,
+	distinctUntilChanged,
 	from,
 	map,
 	Observable,
@@ -45,7 +46,6 @@ import {
 	startWith,
 	Subject,
 	switchMap,
-	take,
 	takeUntil,
 	timer,
 } from 'rxjs';
@@ -66,7 +66,6 @@ import {
 import { CategoryBarPosition } from './models/category-bar-position.model';
 import { EmojiSuggestionMode } from './models/emoji-suggestion-mode.model';
 import { FilteredEmojis } from './models/filtered-emojis.model';
-import { SuggestionEmojis } from './models/suggestion-emojis.model';
 import { EmojiDataService } from './services';
 import { EmojiFilterService } from './services/emoji-filter.service';
 import { EmojiPickerStateService } from './services/emoji-picker-state.service';
@@ -91,9 +90,7 @@ import { EmojiPickerStateService } from './services/emoji-picker-state.service';
 		class: 'ch-element',
 	},
 })
-export class EmojiPickerComponent
-	implements OnInit, OnChanges, OnDestroy
-{
+export class EmojiPickerComponent implements OnInit, OnDestroy {
 	private emojiDataService = inject(EmojiDataService);
 	private emojiFilterService = inject(EmojiFilterService);
 	private renderer = inject(Renderer2);
@@ -113,186 +110,177 @@ export class EmojiPickerComponent
 
 	@Input()
 	@HostBinding('style.--picker-height')
-	height: number = 450;
+	height = 450;
 
 	@Input()
 	@HostBinding('style.--picker-width')
-	width: number = 400;
+	width = 400;
 
-	@Input() emojiSize: EmojiSizeKey = 'default';
-	@Input() suggestionMode: EmojiSuggestionMode = 'recent';
-	@Input() orientation: EmojiPickerOrientation = 'vertical';
-	@Input() categoryBarPosition: CategoryBarPosition = 'top';
-	@Input() scrollbarVisible: boolean = true;
-	@Input() emojiCategories: EmojiCategory[] = [...emojiCategories];
-	selectedCategory: EmojiCategory = this.emojiCategories[0];
+	emojiSize = input<EmojiSizeKey>('default');
+	suggestionMode = input<EmojiSuggestionMode>('recent');
+	orientation = input<EmojiPickerOrientation>('vertical');
+	categoryBarPosition = input<CategoryBarPosition>('top');
+	scrollbarVisible = input<boolean>(true);
+	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
+	suggestionLimit = input<number>(50);
+	autoUpdateSuggestions = input<boolean>(true);
+	skintoneSetting = input<SkintoneSetting>('both');
 
-	@Input() suggestionLimit: number = 50;
-	@Input() autoUpdateSuggestions: boolean = true;
-	@Input() skintoneSetting: SkintoneSetting = 'both';
+	emojiCategoriesStream$ = toObservable(
+		this.emojiCategories
+	).subscribe((categories) => {
+		this.selectedCategory.set(categories[0]);
+		this.verticalEmojiPickerComponent()?.navigateToCategory(
+			categories[0]
+		);
+	});
 
-	@Output() onEmojiSelected = new EventEmitter<Emoji>();
+	skintoneSettingStream$ = toObservable(
+		this.skintoneSetting
+	).subscribe((setting) =>
+		this.emojiDataService.setSkintoneSetting(setting)
+	);
+
+	selectedCategory = signal<EmojiCategory>(this.emojiCategories()[0]);
+
+	onEmojiSelected = output<Emoji>();
 
 	emojiTouchHoldEventActive: boolean = false;
 	private overlayRef?: OverlayRef;
 
-	isIndividualSkintoneEnabled: boolean;
-	isGlobalSkintoneEnabled: boolean;
-
-	searchValue: string = '';
-	private searchValueSubject = new Subject<ValueChangeEvent>();
-
-	destroy$ = new Subject<void>();
-
-	suggestionMode$ = new BehaviorSubject<EmojiSuggestionMode>(
-		this.suggestionMode
-	);
-	suggestionLimit$ = new BehaviorSubject<number>(
-		this.suggestionLimit
-	);
-
-	suggestionEmojis$: Observable<SuggestionEmojis | null> =
-		combineLatest([
-			this.suggestionMode$,
-			this.suggestionLimit$,
-			this.emojiDataService.emojiCategories$,
-		]).pipe(
-			switchMap(([mode, size, emojiCategories]) => {
-				if (!emojiCategories.includes('suggestions')) return of(null);
-				return mode === 'recent'
-					? this.emojiDataService.recentEmojis$.pipe(
-							map((emojis) => ({
-								suggestionMode: mode,
-								emojis: emojis.slice(0, size),
-							}))
-					  )
-					: this.emojiDataService.frequentEmojis$.pipe(
-							map((emojis) => ({
-								suggestionMode: mode,
-								emojis: emojis.slice(0, size),
-							}))
-					  );
-			})
+	isIndividualSkintoneEnabled = computed(() => {
+		return this.isIndividualSkintoneSettingEnabled(
+			this.skintoneSetting()
 		);
-	emojiCategories$: BehaviorSubject<EmojiCategory[]> =
-		this.emojiDataService.emojiCategories$;
+	});
+	isGlobalSkintoneEnabled = computed(() => {
+		return this.isGlobalSkintoneSettingEnabled(
+			this.skintoneSetting()
+		);
+	});
 
-	filteredEmojis$: Observable<FilteredEmojis> =
-		this.searchValueSubject
-			.pipe(
-				// Apply debounce here but only for events that are not 'clear' or empty
-				debounce((evt) => {
-					if (evt.action === 'clear' || evt.value.trim() === '') {
-						return of(0);
-					}
+	searchValue = model<string>('');
 
-					return timer(250);
-				}),
-				switchMap((evt) => {
-					if (evt.action === 'clear' || evt.value.trim() === '') {
-						return of({ filterActive: false, emojis: [] });
-					}
+	defaultEmojis = computed(() => {
+		const categories = this.emojiCategories();
+		return this.emojiDataService.filterAndSortEmojis(categories);
+	});
 
-					return from(
-						this.emojiFilterService.filter(
-							evt.value,
-							this.translationService.getLanguage(),
-							this.emojiDataService.emojis$
-								.getValue()
-								.map((emoji) => emoji.id)
-						)
-					).pipe(
-						map<string[], FilteredEmojis>((emojiIds) => ({
-							filterActive: true,
-							emojis:
-								this.emojiDataService.fetchEmojisByIds(emojiIds),
-						}))
-					);
-				})
-			)
-			.pipe(startWith({ filterActive: false, emojis: [] }))
-			.pipe(shareReplay(1));
+	suggestionEmojis = computed(() => {
+		const suggestionMode = this.suggestionMode();
+		const suggestionLimit = this.suggestionLimit();
+		const categories = this.emojiCategories();
+		const recentEmojis = this.emojiDataService.recentEmojis();
+		const frequentEmojis = this.emojiDataService.frequentEmojis();
 
-	emojis$: Observable<{
-		emojis: Emoji[];
-		suggestionEmojis: SuggestionEmojis | null;
-		filteredEmojis: FilteredEmojis;
-	}> = combineLatest([
-		this.emojiDataService.emojis$,
-		this.suggestionEmojis$,
-		this.filteredEmojis$,
-	]).pipe(
-		map(([emojis, suggestionEmojis, filteredEmojis]) => ({
-			emojis,
+		if (!categories.includes('suggestions')) return null;
+
+		return suggestionMode === 'recent'
+			? {
+					suggestionMode,
+					emojis: recentEmojis.slice(0, suggestionLimit),
+			  }
+			: {
+					suggestionMode: suggestionMode,
+					emojis: frequentEmojis.slice(0, suggestionLimit),
+			  };
+	});
+
+	filteredEmojis$: Observable<FilteredEmojis> = toObservable(
+		this.searchValue
+	)
+		.pipe(
+			debounce((searchValue) => {
+				if (searchValue.trim() === '') {
+					return of(0);
+				}
+
+				return timer(250);
+			}),
+			distinctUntilChanged(),
+			switchMap((searchValue) => {
+				if (searchValue === '') {
+					return of({ filterActive: false, emojis: [] });
+				}
+
+				return from(
+					this.emojiFilterService.filter(
+						searchValue,
+						this.translationService.getLanguage(),
+						this.defaultEmojis().map((emoji) => emoji.id)
+					)
+				).pipe(
+					map<string[], FilteredEmojis>((emojiIds) => ({
+						filterActive: true,
+						emojis: this.emojiDataService.fetchEmojisByIds(emojiIds),
+					}))
+				);
+			})
+		)
+		.pipe(startWith({ filterActive: false, emojis: [] }))
+		.pipe(shareReplay(1));
+
+	filteredEmojis = toSignal(this.filteredEmojis$);
+
+	emojis = computed(() => {
+		const defaultEmojis = this.defaultEmojis();
+		const suggestionEmojis = this.suggestionEmojis();
+		const filteredEmojis = this.filteredEmojis();
+
+		return {
+			defaultEmojis,
 			suggestionEmojis,
-			filteredEmojis,
-		}))
-	);
+			filteredEmojis: filteredEmojis || {
+				filterActive: false,
+				emojis: [],
+			},
+		};
+	});
 
-	noDataEmoji: string = '🤷';
+	noDataEmoji = computed(() => {
+		return (
+			this.emojiDataService
+				.emojiMap()
+				?.get('a4922734-f424-469c-aee2-7e8f89a8e411')?.value ?? '🤷'
+		);
+	});
 
-	globalSkintone$ = this.emojiDataService.globalSkintoneSetting$;
+	globalSkintone = this.emojiDataService.globalSkintoneSetting;
 
 	@HostBinding('style.--ch-emoji-size') emojiSizeInPx?: number;
 	@HostBinding('style.--ch-emoji-btn-size-multiplier')
 	itemSizeMultiplier?: number;
 
 	@HostBinding('style.--ch-padding-inline') padding?: number;
-	paddingState = toSignal(this.emojiPickerStateService.padding$);
+
+	paddingState = this.emojiPickerStateService.padding;
 
 	private pointerDownListener?: () => void;
 
-	constructor() {
-		this.isIndividualSkintoneEnabled =
-			this.isSkintoneSettingEnabled();
-		this.isGlobalSkintoneEnabled =
-			this.isGlobalSkintoneSettingEnabled();
+	private destroy$ = new Subject<void>();
 
+	constructor() {
 		effect(() => (this.padding = this.paddingState()));
+
+		effect(() => {
+			this.itemSizeMultiplier =
+				this.emojiPickerStateService.emojiItemSizeMultiplier();
+		});
 	}
 
 	handleSearchValueChanged = (evt: ValueChangeEvent) => {
-		this.searchValueSubject.next(evt);
+		this.searchValue.set(evt.value);
+	};
+
+	handleEmojiSizeCalculated = (value: number) => {
+		console.log('gets here', value);
+		this.emojiSizeInPx = value;
 	};
 
 	ngOnInit(): void {
 		this.loadCountryFlagEmojiPolyfill();
 
-		this.emojiPickerStateService.emojiSizeInPx$
-			.pipe(
-				switchMap((emojiSizeInPx) =>
-					timer(0).pipe(map(() => emojiSizeInPx))
-				),
-				takeUntil(this.destroy$)
-			)
-			.subscribe((emojiSizeInPx) => {
-				this.emojiSizeInPx = emojiSizeInPx;
-			});
-
-		this.emojiPickerStateService.emojiItemSizeMultiplier$
-			.pipe(takeUntil(this.destroy$))
-			.subscribe((emojiContainerSizeMultiplier) => {
-				this.itemSizeMultiplier = emojiContainerSizeMultiplier;
-			});
-
-		this.emojiPickerStateService.padding$
-			.pipe(takeUntil(this.destroy$))
-			.subscribe((padding) => {
-				this.padding = padding;
-			});
-
-		// //Whenever data in the emoji-map is changed, check for changes in child components
-		this.emojiDataService.emojiMap$
-			.pipe(takeUntil(this.destroy$))
-			.subscribe((emojis) => {
-				this.verticalEmojiPickerComponent()?.requestChangeDetection();
-				this.noDataEmoji =
-					this.emojiDataService.fetchEmojiById(
-						'a4922734-f424-469c-aee2-7e8f89a8e411'
-					)?.value ?? '🤷';
-			});
-
-		this.emojiDataService.setSkintoneSetting(this.skintoneSetting);
+		this.emojiDataService.skintoneSetting.set(this.skintoneSetting());
 
 		this.pointerDownListener = this.renderer.listen(
 			this.elementRef.nativeElement,
@@ -309,56 +297,10 @@ export class EmojiPickerComponent
 		);
 	}
 
-	ngOnChanges(changes: SimpleChanges): void {
-		if (changes['emojiCategories']) {
-			this.emojiDataService.setEmojiCategories(
-				changes['emojiCategories'].currentValue
-			);
-
-			const currentCategories =
-				this.emojiDataService.emojiCategories$.getValue();
-			if (currentCategories.length === 0) return;
-
-			const isActiveCategoryInCategories =
-				this.emojiCategories.includes(this.selectedCategory);
-
-			if (!isActiveCategoryInCategories) {
-				this.selectedCategory = currentCategories[0];
-
-				this.verticalEmojiPickerComponent()?.navigateToCategory(
-					currentCategories[0]
-				);
-			}
-		}
-		if (changes['suggestionMode']) {
-			this.suggestionMode$.next(
-				changes['suggestionMode'].currentValue
-			);
-		}
-		if (changes['suggestionLimit']) {
-			this.suggestionLimit$.next(
-				changes['suggestionLimit'].currentValue
-			);
-		}
-
-		if (changes['skintoneSetting']) {
-			this.emojiDataService.setSkintoneSetting(
-				changes['skintoneSetting'].currentValue
-			);
-
-			this.isIndividualSkintoneEnabled =
-				this.isSkintoneSettingEnabled();
-			this.isGlobalSkintoneEnabled =
-				this.isGlobalSkintoneSettingEnabled();
-		}
-	}
-
 	ngOnDestroy(): void {
 		if (!!this.pointerDownListener) {
 			this.pointerDownListener();
 		}
-		this.destroy$.next();
-		this.destroy$.complete();
 	}
 
 	handleScroll = () => {
@@ -377,7 +319,6 @@ export class EmojiPickerComponent
 	}
 
 	handleCategoryTabClicked = (category: EmojiCategory) => {
-		this.selectedCategory = category;
 		this.verticalEmojiPickerComponent()?.navigateToCategory(category);
 	};
 
@@ -399,7 +340,9 @@ export class EmojiPickerComponent
 		) {
 			if (
 				this.emojiDataService.hasEmojiSkintones(emoji) &&
-				this.isSkintoneSettingEnabled()
+				this.isIndividualSkintoneSettingEnabled(
+					this.skintoneSetting()
+				)
 			) {
 				this.openSkintoneDialog(evt.targetElement, emoji);
 			}
@@ -420,17 +363,21 @@ export class EmojiPickerComponent
 		if (
 			this.emojiTouchHoldEventActive &&
 			!!emoji &&
-			this.isSkintoneSettingEnabled()
+			this.isIndividualSkintoneSettingEnabled(this.skintoneSetting())
 		) {
 			this.openSkintoneDialog(evt.targetElement, emoji);
 		}
 	};
 
-	isSkintoneSettingEnabled = () => {
-		return ['both', 'individual'].includes(this.skintoneSetting);
+	isIndividualSkintoneSettingEnabled = (
+		skintoneSetting: SkintoneSetting
+	) => {
+		return ['both', 'individual'].includes(skintoneSetting);
 	};
-	isGlobalSkintoneSettingEnabled = () => {
-		return ['both', 'global'].includes(this.skintoneSetting);
+	isGlobalSkintoneSettingEnabled = (
+		skintoneSetting: SkintoneSetting
+	) => {
+		return ['both', 'global'].includes(skintoneSetting);
 	};
 
 	openSkintoneDialog = (targetElement: HTMLElement, emoji: Emoji) => {
@@ -458,12 +405,12 @@ export class EmojiPickerComponent
 			EmojiSkintonePickerComponent
 		);
 		const componentRef = this.overlayRef.attach(emojiPortal);
-		componentRef.instance.emoji = emoji;
+		componentRef.instance.emoji.set(emoji);
+		componentRef.instance.emojiSizeInPx = this.emojiSizeInPx;
 
-		componentRef.instance.onSelectionChanged
-			.pipe(take(1))
-			.subscribe((evt: ClickEvent) => {
-				if (this.skintoneSetting === 'individual')
+		componentRef.instance.onSelectionChanged.subscribe(
+			(evt: ClickEvent) => {
+				if (this.skintoneSetting() === 'individual')
 					this.emojiDataService.updateEmojiSkintone(
 						emoji.id,
 						evt.data
@@ -471,8 +418,10 @@ export class EmojiPickerComponent
 				this.selectEmoji(
 					Object.assign({ ...emoji }, { value: evt.data })
 				);
+
 				this.overlayRef?.dispose();
-			});
+			}
+		);
 
 		this.overlayRef
 			.backdropClick()
@@ -481,11 +430,11 @@ export class EmojiPickerComponent
 	};
 
 	handleGlobalSkintoneChanged = (skintone: Skintone) => {
-		this.emojiDataService.updateGlobalSkintone(skintone);
+		this.emojiDataService.globalSkintoneSetting.set(skintone);
 	};
 
 	selectEmoji = (emoji: Emoji) => {
-		if (this.autoUpdateSuggestions) {
+		if (this.autoUpdateSuggestions()) {
 			this.addEmojiToSuggestions(emoji.id);
 		}
 		this.onEmojiSelected.emit(emoji);
