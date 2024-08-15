@@ -18,7 +18,6 @@ import {
 	Renderer2,
 	signal,
 	viewChild,
-	ViewEncapsulation,
 } from '@angular/core';
 
 import { toObservable, toSignal } from '@angular/core/rxjs-interop';
@@ -84,7 +83,6 @@ import { EmojiPickerStateService } from './services/emoji-picker-state.service';
 		TranslatePipe,
 	],
 	changeDetection: ChangeDetectionStrategy.OnPush,
-	encapsulation: ViewEncapsulation.None,
 	templateUrl: './emoji-picker.component.html',
 	styleUrl: './emoji-picker.component.scss',
 	host: {
@@ -127,6 +125,15 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	suggestionLimit = input<number>(50);
 	autoUpdateSuggestions = input<boolean>(true);
 	skintoneSetting = input<SkintoneSetting>('both');
+
+	emojiCategoriesStream$ = toObservable(
+		this.emojiCategories
+	).subscribe((categories) => {
+		this.selectedCategory.set(categories[0]);
+		this.verticalEmojiPickerComponent()?.navigateToCategory(
+			categories[0]
+		);
+	});
 
 	skintoneSettingStream$ = toObservable(
 		this.skintoneSetting
