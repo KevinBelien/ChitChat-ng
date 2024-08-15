@@ -54,8 +54,8 @@ export class EmojiPickerDemoComponent {
 		emojiSize: 'default',
 		categories: [...emojiCategories],
 		categoryBarPosition: 'top',
-		suggestionMode: 'frequent',
-		skintoneSettings: 'both',
+		suggestionMode: 'recent',
+		skintoneSettings: 'individual',
 	};
 
 	width$ = new BehaviorSubject<number>(this.form.width);

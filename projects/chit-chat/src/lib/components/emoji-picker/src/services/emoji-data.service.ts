@@ -1,11 +1,4 @@
-import {
-	computed,
-	inject,
-	Injectable,
-	Signal,
-	signal,
-	WritableSignal,
-} from '@angular/core';
+import { computed, inject, Injectable, signal } from '@angular/core';
 import { emojis } from '../data';
 import { Emoji, EmojiCategory, Skintone } from '../models';
 import { IndividualEmojiSkintone } from './../models/skin-tone.model';
@@ -16,41 +9,41 @@ import { EmojiStorageService } from './emoji-storage.service';
 export class EmojiDataService {
 	private emojiStorageService = inject(EmojiStorageService);
 
-	recentEmojis: WritableSignal<Emoji[]>;
+	recentEmojis = signal<Emoji[]>([]);
 
-	frequentEmojis: WritableSignal<Emoji[]>;
+	frequentEmojis = signal<Emoji[]>([]);
 
-	globalSkintoneSetting: WritableSignal<Skintone>;
+	globalSkintoneSetting = signal<Skintone>('default');
 
-	individualSkintones: WritableSignal<IndividualEmojiSkintone[]>;
+	individualSkintones = signal<IndividualEmojiSkintone[]>([]);
 
 	skintoneSetting = signal<SkintoneSetting>('none');
 	emojis = signal<Emoji[]>([...emojis]);
 
-	emojiMap: Signal<Map<string, Emoji>>;
-
-	constructor() {
-		this.globalSkintoneSetting = signal<Skintone>(
-			this.fetchGlobalSkintone()
-		);
-
-		this.individualSkintones = signal<IndividualEmojiSkintone[]>(
-			this.emojiStorageService.fetchIndividualEmojisSkintones()
-		);
-
-		this.emojiMap = computed((): Map<string, Emoji> => {
-			return this.generateEmojiMap(
+	emojiMap = computed(
+		(): Map<string, Emoji> =>
+			this.generateEmojiMap(
 				this.emojis(),
 				this.skintoneSetting(),
 				this.globalSkintoneSetting(),
 				this.individualSkintones()
-			);
-		});
+			)
+	);
 
-		this.recentEmojis = signal<Emoji[]>(
+	constructor() {
+		this.globalSkintoneSetting.update(() =>
+			this.fetchGlobalSkintone()
+		);
+
+		this.individualSkintones.update(() =>
+			this.emojiStorageService.fetchIndividualEmojisSkintones()
+		);
+
+		this.recentEmojis.update(() =>
 			this.fetchRecentEmojisFromStorage()
 		);
-		this.frequentEmojis = signal<Emoji[]>(
+
+		this.frequentEmojis.update(() =>
 			this.fetchFrequentEmojisFromStorage()
 		);
 	}
@@ -61,23 +54,6 @@ export class EmojiDataService {
 		this.individualSkintones.set(
 			this.emojiStorageService.fetchIndividualEmojisSkintones()
 		);
-	};
-
-	applyGlobalSkintone = (
-		emojiMap: Map<string, Emoji>,
-		skintone: Skintone
-	): Map<string, Emoji> => {
-		emojiMap.forEach((emoji: Emoji) => {
-			if (!!emoji.skintones) {
-				const newEmoji = Object.assign(
-					{ ...emoji },
-					{ value: this.fetchSkintoneFromEmoji(emoji, skintone) }
-				);
-				emojiMap.set(emoji.id, newEmoji);
-			}
-		});
-
-		return emojiMap;
 	};
 
 	fetchGlobalSkintone = () => {
@@ -258,6 +234,11 @@ export class EmojiDataService {
 
 	setSkintoneSetting = (setting: SkintoneSetting) => {
 		this.skintoneSetting.set(setting);
+	};
+
+	setGlobalEmojiSkintone = (skintone: Skintone) => {
+		this.emojiStorageService.updateGlobalSkintone(skintone);
+		this.globalSkintoneSetting.update(() => skintone);
 	};
 
 	// getAllKeywords = () => {

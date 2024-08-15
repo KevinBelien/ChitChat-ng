@@ -131,10 +131,12 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	emojiCategoriesStream$ = toObservable(this.emojiCategories)
 		.pipe(takeUntil(this.destroy$))
 		.subscribe((categories) => {
-			this.selectedCategory.set(categories[0]);
-			this.verticalEmojiPickerComponent()?.navigateToCategory(
-				categories[0]
-			);
+			if (!categories.includes(this.selectedCategory())) {
+				this.selectedCategory.set(categories[0]);
+				this.verticalEmojiPickerComponent()?.navigateToCategory(
+					categories[0]
+				);
+			}
 		});
 
 	skintoneSettingStream$ = toObservable(this.skintoneSetting)
@@ -429,7 +431,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	};
 
 	handleGlobalSkintoneChanged = (skintone: Skintone) => {
-		this.emojiDataService.globalSkintoneSetting.set(skintone);
+		this.emojiDataService.setGlobalEmojiSkintone(skintone);
 	};
 
 	selectEmoji = (emoji: Emoji) => {
