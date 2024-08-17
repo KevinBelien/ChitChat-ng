@@ -9,14 +9,13 @@ import {
 	model,
 	output,
 	Renderer2,
-	ViewEncapsulation,
 } from '@angular/core';
 import {
 	ClickEvent,
 	ClickTouchHoldDirective,
 } from 'chit-chat/src/lib/utils';
 import { Emoji } from '../../models';
-import { EmojiPickerStateService } from '../../services/emoji-picker-state.service';
+import { EmojiPickerService } from '../../services';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 
 @Component({
@@ -30,15 +29,13 @@ import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 	templateUrl: './emoji-skintone-picker.component.html',
 	styleUrl: './emoji-skintone-picker.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
-	encapsulation: ViewEncapsulation.None,
-
 	host: {
 		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })
 export class EmojiSkintonePickerComponent {
-	private emojiPickerStateService = inject(EmojiPickerStateService);
+	private emojiPickerService = inject(EmojiPickerService);
 	private renderer = inject(Renderer2);
 
 	emoji = model<Emoji>();
@@ -55,7 +52,7 @@ export class EmojiSkintonePickerComponent {
 	constructor() {
 		effect(() => {
 			this.itemSizeMultiplier =
-				this.emojiPickerStateService.emojiItemSizeMultiplier();
+				this.emojiPickerService.emojiItemSizeMultiplier();
 		});
 
 		this.disableContextMenu();

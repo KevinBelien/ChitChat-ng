@@ -39,8 +39,7 @@ import {
 	RippleDirective,
 	TouchHoldEvent,
 } from 'chit-chat/src/lib/utils';
-import { EmojiPickerStateService } from '../../services/emoji-picker-state.service';
-import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.service';
+import { EmojiPickerService } from '../../services';
 
 @Component({
 	selector: 'ch-vertical-emoji-picker',
@@ -53,7 +52,6 @@ import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.ser
 		RippleDirective,
 		TranslatePipe,
 	],
-	providers: [VerticalEmojiPickerService],
 	templateUrl: './vertical-emoji-picker.component.html',
 	styleUrls: ['./vertical-emoji-picker.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -65,8 +63,7 @@ import { VerticalEmojiPickerService } from './services/vertical-emoji-picker.ser
 export class VerticalEmojiPickerComponent
 	implements AfterViewInit, OnDestroy
 {
-	private dataService = inject(VerticalEmojiPickerService);
-	private emojiPickerStateService = inject(EmojiPickerStateService);
+	private emojiPickerService = inject(EmojiPickerService);
 
 	viewport = viewChild<CdkVirtualScrollViewport>(
 		CdkVirtualScrollViewport
@@ -112,7 +109,7 @@ export class VerticalEmojiPickerComponent
 	viewportWidth = computed(() => {
 		return this.getViewportWidth(
 			this.width(),
-			this.emojiPickerStateService.padding(),
+			this.emojiPickerService.padding(),
 			this.scrollBarWidth()
 		);
 	});
@@ -121,7 +118,7 @@ export class VerticalEmojiPickerComponent
 		const emojiSizeInPx = this.calculateEmojiSize(
 			this.viewportWidth(),
 			EmojiSize[this.emojiSize()],
-			this.emojiPickerStateService.emojiItemSizeMultiplier()
+			this.emojiPickerService.emojiItemSizeMultiplier()
 		);
 
 		return emojiSizeInPx;
@@ -130,22 +127,28 @@ export class VerticalEmojiPickerComponent
 	itemSize = computed(() => {
 		return NumberHelper.toFixedAndFloor(
 			this.emojiSizeInPx() *
-				this.emojiPickerStateService.emojiItemSizeMultiplier(),
+				this.emojiPickerService.emojiItemSizeMultiplier(),
 			0
 		);
 	});
 
 	suggestionEmojiRows = computed(() => {
 		const suggestionEmojis = this.suggestionEmojis();
-		if (!suggestionEmojis) return [];
+		if (
+			!suggestionEmojis ||
+			!this.emojiCategories().includes('suggestions')
+		)
+			return [];
 
-		return this.dataService.generateSuggestionRows(
-			suggestionEmojis,
-			this.emojiCategories(),
-			this.emojiSizeInPx(),
-			this.viewportWidth(),
-			this.emojiPickerStateService.emojiItemSizeMultiplier()
-		);
+		return this.emojiPickerService.generateEmojiRows({
+			emojiSize: this.emojiSizeInPx(),
+			viewportWidth: this.viewportWidth(),
+			itemSizeMultiplier:
+				this.emojiPickerService.emojiItemSizeMultiplier(),
+			generateCategoryRows: true,
+			type: 'suggestions',
+			emojis: suggestionEmojis,
+		});
 	});
 
 	filteredEmojiRows = computed(() => {
@@ -153,21 +156,27 @@ export class VerticalEmojiPickerComponent
 
 		if (!filteredEmojis.filterActive) return [];
 
-		return this.dataService.generateFilterRows(
-			filteredEmojis.emojis,
-			this.emojiSizeInPx(),
-			this.viewportWidth(),
-			this.emojiPickerStateService.emojiItemSizeMultiplier()
-		);
+		return this.emojiPickerService.generateEmojiRows({
+			emojiSize: this.emojiSizeInPx(),
+			viewportWidth: this.viewportWidth(),
+			itemSizeMultiplier:
+				this.emojiPickerService.emojiItemSizeMultiplier(),
+			generateCategoryRows: true,
+			type: 'filter',
+			emojis: filteredEmojis.emojis,
+		});
 	});
 
 	defaultEmojiRows = computed(() => {
-		return this.dataService.generateDefaultEmojiRows(
-			this.emojis(),
-			this.emojiSizeInPx(),
-			this.viewportWidth(),
-			this.emojiPickerStateService.emojiItemSizeMultiplier()
-		);
+		return this.emojiPickerService.generateEmojiRows({
+			emojiSize: this.emojiSizeInPx(),
+			viewportWidth: this.viewportWidth(),
+			itemSizeMultiplier:
+				this.emojiPickerService.emojiItemSizeMultiplier(),
+			generateCategoryRows: true,
+			type: 'default',
+			emojis: this.emojis(),
+		});
 	});
 
 	emojiRows = computed((): EmojiPickerRow[] => {
@@ -178,9 +187,9 @@ export class VerticalEmojiPickerComponent
 			: this.filteredEmojiRows();
 	});
 
-	emojiDataMap = this.dataService.emojiDataMap;
+	emojiDataMap = this.emojiPickerService.emojiDataMap;
 
-	// emojiRows = this.dataService.allEmojiRows;
+	// emojiRows = this.emojiPickerService.allEmojiRows;
 
 	emojiSIzeInPx$ = toObservable(this.emojiSizeInPx)
 		.pipe(takeUntil(this.destroy$))
@@ -217,7 +226,7 @@ export class VerticalEmojiPickerComponent
 		emojiSize: EmojiSize,
 		itemSizeMultiplier: number
 	): number {
-		return this.dataService.calculateEmojiSize(
+		return this.emojiPickerService.calculateEmojiSize(
 			viewportWidth,
 			emojiSize,
 			itemSizeMultiplier

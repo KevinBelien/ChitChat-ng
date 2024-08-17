@@ -1,6 +1,6 @@
 import { computed, inject, Injectable, signal } from '@angular/core';
 import { emojis } from '../data';
-import { Emoji, EmojiCategory, Skintone } from '../models';
+import { Emoji, Skintone } from '../models';
 import { IndividualEmojiSkintone } from './../models/skin-tone.model';
 import { SkintoneSetting } from './../models/skintone-setting.model';
 import { EmojiStorageService } from './emoji-storage.service';
@@ -85,38 +85,6 @@ export class EmojiDataService {
 		return emojiIds
 			.map((id) => this.fetchEmojiById(id))
 			.filter((emoji) => !!emoji);
-	};
-
-	filterEmojisByCategories = (
-		emojis: Emoji[],
-		includedCategories: EmojiCategory[]
-	): Emoji[] => {
-		return emojis.filter((emoji) =>
-			includedCategories.includes(emoji.category)
-		);
-	};
-
-	filterAndSortEmojis = (categories: EmojiCategory[]): Emoji[] => {
-		const filteredEmojis = this.filterEmojisByCategories(
-			[...emojis],
-			categories
-		);
-		return this.sortEmojis(filteredEmojis, categories);
-	};
-
-	sortEmojis = (
-		emojis: Emoji[],
-		categories: EmojiCategory[]
-	): Emoji[] => {
-		return emojis.sort((a, b) => {
-			const categoryComparison =
-				categories.indexOf(a.category) -
-				categories.indexOf(b.category);
-			if (categoryComparison !== 0) {
-				return categoryComparison;
-			}
-			return a.order - b.order;
-		});
 	};
 
 	getEmojis = (): Emoji[] => {

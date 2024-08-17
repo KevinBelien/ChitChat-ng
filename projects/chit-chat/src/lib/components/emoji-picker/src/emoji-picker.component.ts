@@ -54,7 +54,9 @@ import { EmojiSkintonePickerComponent } from './components/emojiskintone-picker/
 import { HorizontalEmojiPickerComponent } from './components/horizontal-emoji-picker/horizontal-emoji-picker.component';
 import { SkintonePickerComponent } from './components/skintone-picker/skintone-picker.component';
 import { VerticalEmojiPickerComponent } from './components/vertical-emoji-picker/vertical-emoji-picker.component';
+import { emojis } from './data';
 import { EmojiSizeKey } from './enums/emoji-size.enum';
+import { EmojiDataHelper } from './helpers';
 import {
 	Emoji,
 	emojiCategories,
@@ -66,9 +68,8 @@ import {
 import { CategoryBarPosition } from './models/category-bar-position.model';
 import { EmojiSuggestionMode } from './models/emoji-suggestion-mode.model';
 import { FilteredEmojis } from './models/filtered-emojis.model';
-import { EmojiDataService } from './services';
+import { EmojiDataService, EmojiPickerService } from './services';
 import { EmojiFilterService } from './services/emoji-filter.service';
-import { EmojiPickerStateService } from './services/emoji-picker-state.service';
 
 @Component({
 	selector: 'ch-emoji-picker',
@@ -96,7 +97,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	private renderer = inject(Renderer2);
 	private elementRef = inject(ElementRef);
 	private overlay = inject(Overlay);
-	private emojiPickerStateService = inject(EmojiPickerStateService);
+	private emojiPickerService = inject(EmojiPickerService);
 	private translationService = inject(TranslationService);
 
 	verticalEmojiPickerComponent =
@@ -167,7 +168,10 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 
 	defaultEmojis = computed(() => {
 		const categories = this.emojiCategories();
-		return this.emojiDataService.filterAndSortEmojis(categories);
+		return EmojiDataHelper.filterAndSortEmojis(
+			[...emojis],
+			categories
+		);
 	});
 
 	suggestionEmojis = computed(() => {
@@ -257,16 +261,14 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 
 	@HostBinding('style.--ch-padding-inline') padding?: number;
 
-	paddingState = this.emojiPickerStateService.padding;
-
 	private pointerDownListener?: () => void;
 
 	constructor() {
-		effect(() => (this.padding = this.paddingState()));
+		effect(() => (this.padding = this.emojiPickerService.padding()));
 
 		effect(() => {
 			this.itemSizeMultiplier =
-				this.emojiPickerStateService.emojiItemSizeMultiplier();
+				this.emojiPickerService.emojiItemSizeMultiplier();
 		});
 	}
 
