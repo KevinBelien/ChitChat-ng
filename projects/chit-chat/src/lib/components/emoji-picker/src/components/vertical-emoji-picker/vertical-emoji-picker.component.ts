@@ -213,12 +213,15 @@ export class VerticalEmojiPickerComponent
 			.pipe(takeUntil(this.destroy$))
 			.subscribe(() => {
 				//SET NEW CURRENT CATEGORY FOR STICKY ELEMENT HEADER + MAKE SURE THE THE RIGHT CATEGORY IS SELECTED
-				const offset = this.viewport()!.measureScrollOffset();
-				const scrollIndex = Math.floor(offset / this.itemSize());
+				const scrollIndex = this.calculateCurrentScrollIndex();
 
-				const currentCategoryRow = this.navigatedManually()
-					? this.emojiRows()[scrollIndex]
-					: this.emojiRows()[scrollIndex - 1];
+				const currentRow = this.emojiRows()[scrollIndex];
+				const previousRow = this.emojiRows()[scrollIndex - 1];
+
+				const currentCategoryRow =
+					this.navigatedManually() || !previousRow
+						? currentRow
+						: previousRow;
 
 				this.navigatedManually.set(false);
 
@@ -247,6 +250,11 @@ export class VerticalEmojiPickerComponent
 			itemSizeMultiplier
 		);
 	}
+
+	private calculateCurrentScrollIndex = () => {
+		const offset = this.viewport()?.measureScrollOffset() || 0;
+		return Math.floor(offset / this.itemSize());
+	};
 
 	private getViewportWidth = (
 		width: number,
