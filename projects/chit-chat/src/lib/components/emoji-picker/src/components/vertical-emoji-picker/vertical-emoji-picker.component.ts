@@ -90,6 +90,9 @@ export class VerticalEmojiPickerComponent
 	width = input<number>(350);
 	scrollbarVisible = input<boolean>(true);
 	currentCategory = model<EmojiCategory>(this.emojiCategories()[0]);
+	stickyHeaderCategory = signal<EmojiCategory>(
+		this.emojiCategories()[0]
+	);
 	scrollWheelStep = input<number>();
 	showSkintoneIndicator = input<boolean>(true);
 
@@ -184,13 +187,13 @@ export class VerticalEmojiPickerComponent
 
 	emojiDataMap = this.emojiPickerService.emojiDataMap;
 
-	// emojiRows = this.emojiPickerService.allEmojiRows;
-
 	emojiSIzeInPx$ = toObservable(this.emojiSizeInPx)
 		.pipe(takeUntil(this.destroy$))
 		.subscribe((emojiSIzeInPx) => {
 			this.onEmojiSizeCalculated.emit(emojiSIzeInPx);
 		});
+
+	navigatedManually = signal<boolean>(false);
 
 	@HostBinding('style.--sticky-offset')
 	stickyHeaderOffset: number = 0;
@@ -208,7 +211,24 @@ export class VerticalEmojiPickerComponent
 		this.viewport()
 			?.elementScrolled()
 			.pipe(takeUntil(this.destroy$))
-			.subscribe(() => this.onScroll.emit());
+			.subscribe(() => {
+				//SET NEW CURRENT CATEGORY FOR STICKY ELEMENT HEADER + MAKE SURE THE THE RIGHT CATEGORY IS SELECTED
+				const offset = this.viewport()!.measureScrollOffset();
+				const scrollIndex = Math.floor(offset / this.itemSize());
+
+				const currentCategoryRow = this.navigatedManually()
+					? this.emojiRows()[scrollIndex]
+					: this.emojiRows()[scrollIndex - 1];
+
+				this.navigatedManually.set(false);
+
+				const stickyHeaderCategory = this.determineCurrentCategory(
+					currentCategoryRow
+				);
+				this.stickyHeaderCategory.set(stickyHeaderCategory);
+
+				this.onScroll.emit();
+			});
 	}
 
 	ngOnDestroy(): void {
@@ -270,6 +290,7 @@ export class VerticalEmojiPickerComponent
 			const navigateIfReady = () => {
 				const displayStyle = targetNode.style.display;
 				if (displayStyle === 'block') {
+					this.navigatedManually.set(true);
 					this.viewport()?.scrollToIndex(
 						index === 0 ? index : index + 1
 					);
@@ -314,10 +335,6 @@ export class VerticalEmojiPickerComponent
 		);
 	};
 
-	setCurrentCategory = (category: EmojiCategory): void => {
-		this.currentCategory.set(category);
-	};
-
 	protected handleScrolledIndexChanged = (index: number): void => {
 		const rows = this.emojiRows();
 		if (rows.length === 0) return;
@@ -325,9 +342,8 @@ export class VerticalEmojiPickerComponent
 		this.scrollIndex.set(index);
 
 		const currentRow = rows[index];
-
 		const currentCategory = this.determineCurrentCategory(currentRow);
-		this.setCurrentCategory(currentCategory);
+		this.currentCategory.set(currentCategory);
 	};
 
 	private determineCurrentCategory(

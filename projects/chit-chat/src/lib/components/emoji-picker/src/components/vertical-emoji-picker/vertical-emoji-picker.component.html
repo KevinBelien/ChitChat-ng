@@ -1,10 +1,10 @@
 <cdk-virtual-scroll-viewport
-	class="ch-vscroll-viewport"
+	class="ch-vscroll-viewport ch-focus-disabled"
 	[ngClass]="{ 'ch-scroll-hidden': !scrollbarVisible() }"
 	[style.height]="'100%'"
 	[itemSize]="itemSize()"
 	[minBufferPx]="300"
-	[maxBufferPx]="800"
+	[maxBufferPx]="500"
 	(wheel)="handleWheelScroll($event)"
 	(scrolledIndexChange)="handleScrolledIndexChanged($event)"
 	chClickTouchHold
@@ -23,12 +23,13 @@
 		>
 			<div class="ch-emoji-group-title">
 				{{
-					currentCategory() === 'suggestions' && !!suggestionEmojis()
+					stickyHeaderCategory() === 'suggestions' &&
+					!!suggestionEmojis()
 						? ('emojipicker.category.' +
 								suggestionEmojis()!.suggestionMode
 						  | translate
 						  | titlecase)
-						: ('emojipicker.category.' + currentCategory()
+						: ('emojipicker.category.' + stickyHeaderCategory()
 						  | translate
 						  | titlecase)
 				}}
@@ -39,6 +40,7 @@
 			*cdkVirtualFor="
 				let row of emojiRows();
 				let index = index;
+				templateCacheSize: 30;
 				trackBy: trackEmojiRow
 			"
 			class="ch-row"
