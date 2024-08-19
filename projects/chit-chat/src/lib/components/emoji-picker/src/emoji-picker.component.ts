@@ -129,16 +129,16 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	autoUpdateSuggestions = input<boolean>(true);
 	skintoneSetting = input<SkintoneSetting>('both');
 
-	emojiCategoriesStream$ = toObservable(this.emojiCategories)
-		.pipe(takeUntil(this.destroy$))
-		.subscribe((categories) => {
-			if (!categories.includes(this.selectedCategory())) {
-				this.selectedCategory.set(categories[0]);
-				this.verticalEmojiPickerComponent()?.navigateToCategory(
-					categories[0]
-				);
-			}
-		});
+	// emojiCategoriesStream$ = toObservable(this.emojiCategories)
+	// 	.pipe(takeUntil(this.destroy$))
+	// 	.subscribe((categories) => {
+	// 		if (!categories.includes(this.selectedCategory())) {
+	// 			this.selectedCategory.set(categories[0]);
+	// 			this.verticalEmojiPickerComponent()?.navigateToCategory(
+	// 				categories[0]
+	// 			);
+	// 		}
+	// 	});
 
 	skintoneSettingStream$ = toObservable(this.skintoneSetting)
 		.pipe(takeUntil(this.destroy$))

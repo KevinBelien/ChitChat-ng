@@ -35,7 +35,6 @@ import { TranslatePipe } from 'chit-chat/src/lib/localization';
 import {
 	ClickEvent,
 	ClickTouchHoldDirective,
-	NumberHelper,
 	RippleDirective,
 	TouchHoldEvent,
 } from 'chit-chat/src/lib/utils';
@@ -106,31 +105,27 @@ export class VerticalEmojiPickerComponent
 		return scrollbarVisible ? this.getGlobalScrollbarWidth() : 0;
 	});
 
-	viewportWidth = computed(() => {
-		return this.getViewportWidth(
+	viewportWidth = computed(() =>
+		this.getViewportWidth(
 			this.width(),
 			this.emojiPickerService.padding(),
 			this.scrollBarWidth()
-		);
-	});
+		)
+	);
 
-	emojiSizeInPx = computed(() => {
-		const emojiSizeInPx = this.calculateEmojiSize(
+	emojiSizeInPx = computed(() =>
+		this.calculateEmojiSize(
 			this.viewportWidth(),
 			EmojiSize[this.emojiSize()],
 			this.emojiPickerService.emojiItemSizeMultiplier()
-		);
+		)
+	);
 
-		return emojiSizeInPx;
-	});
-
-	itemSize = computed(() => {
-		return NumberHelper.toFixedAndFloor(
+	itemSize = computed(
+		() =>
 			this.emojiSizeInPx() *
-				this.emojiPickerService.emojiItemSizeMultiplier(),
-			0
-		);
-	});
+			this.emojiPickerService.emojiItemSizeMultiplier()
+	);
 
 	suggestionEmojiRows = computed(() => {
 		const suggestionEmojis = this.suggestionEmojis();
@@ -275,7 +270,6 @@ export class VerticalEmojiPickerComponent
 			const navigateIfReady = () => {
 				const displayStyle = targetNode.style.display;
 				if (displayStyle === 'block') {
-					// Navigate once the element is fully rendered as a block
 					this.viewport()?.scrollToIndex(
 						index === 0 ? index : index + 1
 					);
@@ -330,26 +324,15 @@ export class VerticalEmojiPickerComponent
 
 		this.scrollIndex.set(index);
 
-		const previousRow = rows[index - 1];
 		const currentRow = rows[index];
 
-		const currentCategory = this.determineCurrentCategory(
-			currentRow,
-			previousRow
-		);
+		const currentCategory = this.determineCurrentCategory(currentRow);
 		this.setCurrentCategory(currentCategory);
 	};
 
 	private determineCurrentCategory(
-		currentRow: EmojiPickerRow,
-		previousRow?: EmojiPickerRow
+		currentRow: EmojiPickerRow
 	): EmojiCategory {
-		if (!!previousRow) {
-			return previousRow.type === 'emoji'
-				? previousRow.value[0].category
-				: (previousRow.value as EmojiCategory);
-		}
-
 		return currentRow.type === 'emoji'
 			? currentRow.value[0].category
 			: (currentRow.value as EmojiCategory);

@@ -4,7 +4,7 @@
 	[style.height]="'100%'"
 	[itemSize]="itemSize()"
 	[minBufferPx]="300"
-	[maxBufferPx]="450"
+	[maxBufferPx]="800"
 	(wheel)="handleWheelScroll($event)"
 	(scrolledIndexChange)="handleScrolledIndexChanged($event)"
 	chClickTouchHold
@@ -38,7 +38,6 @@
 		<div
 			*cdkVirtualFor="
 				let row of emojiRows();
-				templateCacheSize: 30;
 				let index = index;
 				trackBy: trackEmojiRow
 			"

@@ -39,6 +39,9 @@
 
 .ch-row {
 	display: flex;
-	height: 100%;
 	width: 100%;
+	height: calc(
+		var(--ch-emoji-size, 24px) *
+			var(--ch-emoji-btn-size-multiplier, 1.5) * 1px
+	);
 }
