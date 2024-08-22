@@ -11,7 +11,7 @@ import {
 	emojiCategories,
 	EmojiCategory,
 	EmojiPickerComponent,
-	EmojiSizeKey,
+	EmojiSizeOption,
 	EmojiSuggestionMode,
 	SkintoneSetting,
 } from 'chit-chat/src/lib/components/emoji-picker';
@@ -43,7 +43,7 @@ export class EmojiPickerDemoComponent {
 	form: {
 		height: number;
 		width: number;
-		emojiSize: EmojiSizeKey;
+		emojiSize: EmojiSizeOption;
 		categories: EmojiCategory[];
 		categoryBarPosition: CategoryBarPosition;
 		suggestionMode: EmojiSuggestionMode;
@@ -69,7 +69,7 @@ export class EmojiPickerDemoComponent {
 		}))
 	);
 
-	emojiSizes: EmojiSizeKey[] = ['default', 'xs', 'sm', 'lg', 'xl'];
+	emojiSizes: EmojiSizeOption[] = ['default', 'xs', 'sm', 'lg', 'xl'];
 
 	handleWidthChange = () => {
 		this.width$.next(this.form.width);

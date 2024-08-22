@@ -6,4 +6,4 @@ export enum EmojiSize {
 	'xl' = 32,
 }
 
-export type EmojiSizeKey = keyof typeof EmojiSize;
+export type EmojiSizeOption = keyof typeof EmojiSize;

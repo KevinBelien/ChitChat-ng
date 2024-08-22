@@ -62,11 +62,11 @@ import {
 	Emoji,
 	emojiCategories,
 	EmojiCategory,
+	EmojiSizeOption,
 	Skintone,
 	SkintoneSetting,
 } from './models';
 import { CategoryBarPosition } from './models/category-bar-position.model';
-import { EmojiSizeKey } from './models/emoji-size.enum';
 import { EmojiSuggestionMode } from './models/emoji-suggestion-mode.model';
 import { FilteredEmojis } from './models/filtered-emojis.model';
 import { EmojiDataService, EmojiPickerService } from './services';
@@ -114,22 +114,91 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		SkintoneSwatchPickerComponent
 	);
 
+	/**
+	 * Height of the emoji picker
+	 * @group Props
+	 */
 	@Input()
 	@HostBinding('style.--picker-height')
 	height = 450;
 
+	/**
+	 * Width of the emoji picker
+	 * @group Props
+	 */
 	@Input()
 	@HostBinding('style.--picker-width')
 	width = 400;
 
-	emojiSize = input<EmojiSizeKey>('default');
+	/**
+	 * Determines the display size of the emojis
+	 *
+	 * This will be used to calculate the emoji size in pixels
+	 *
+	 * @group Props
+	 */
+	emojiSize = input<EmojiSizeOption>('default');
+
+	/**
+	 * Determines the mode of emoji suggestions in the picker
+	 * @group Props
+	 */
 	suggestionMode = input<EmojiSuggestionMode>('recent');
+
+	/**
+	 * Location of the category bar
+	 * @group Props
+	 */
 	categoryBarPosition = input<CategoryBarPosition>('top');
-	scrollbarVisible = input<boolean>(true);
+
+	/**
+	 * Decides if the scrollbar is visible
+	 *
+	 * This property is also essential for accurately calculating the viewport width,
+	 * which in turn influences the number of emojis displayed per row and their size.
+	 *
+	 * @group Props
+	 */
+	scrollbarVisible = input<boolean>(false);
+
+	/**
+	 * Categories to be included in the emoji picker
+	 * Order will be respected, excepts for suggestion category
+	 * @group Props
+	 */
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
+
+	/**
+	 * The maximum amount of suggestion emojis that will be shown in the emoji picker
+	 * @group Props
+	 */
 	suggestionLimit = input<number>(50);
+
+	/**
+	 * Determines if suggestions will automatically be updated in storage
+	 * @group Props
+	 */
 	autoUpdateSuggestions = input<boolean>(true);
+
+	/**
+	 * Defines the approach for handling skintone variations within the emoji picker.
+	 * @group Props
+	 */
 	skintoneSetting = input<SkintoneSetting>('both');
+
+	/**
+	 * Callback to execute when button is clicked.
+	 * This event is intended to be used with the <p-button> component. Using a regular <button> element, use (click).
+	 * @param {Emoji} emoji - selected emoji.
+	 * @group Props
+	 */
+	onEmojiSelected = output<Emoji>();
+
+	@HostBinding('style.--ch-emoji-size') emojiSizeInPx?: number;
+	@HostBinding('style.--ch-emoji-btn-size-multiplier')
+	itemSizeMultiplier?: number;
+
+	@HostBinding('style.--ch-padding-inline') padding?: number;
 
 	emojiCategoriesStream$ = toObservable(this.emojiCategories)
 		.pipe(takeUntilDestroyed())
@@ -149,8 +218,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		);
 
 	selectedCategory = signal<EmojiCategory>(this.emojiCategories()[0]);
-
-	onEmojiSelected = output<Emoji>();
 
 	emojiTouchHoldEventActive: boolean = false;
 	private skintoneDialogRef?: OverlayRef;
@@ -253,12 +320,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 
 	globalSkintone = this.emojiDataService.globalSkintoneSetting;
 
-	@HostBinding('style.--ch-emoji-size') emojiSizeInPx?: number;
-	@HostBinding('style.--ch-emoji-btn-size-multiplier')
-	itemSizeMultiplier?: number;
-
-	@HostBinding('style.--ch-padding-inline') padding?: number;
-
 	private pointerDownListener?: () => void;
 
 	constructor() {
@@ -269,14 +330,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 				this.emojiPickerService.emojiItemSizeMultiplier();
 		});
 	}
-
-	handleSearchValueChanged = (evt: ValueChangeEvent) => {
-		this.searchValue.set(evt.value);
-	};
-
-	handleEmojiSizeCalculated = (value: number) => {
-		this.emojiSizeInPx = value;
-	};
 
 	ngOnInit(): void {
 		this.loadCountryFlagEmojiPolyfill();
@@ -308,10 +361,11 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		);
 	};
 
-	handleScroll = () => {
+	protected handleScroll = () => {
 		this.swatchPickerComponent()?.close();
 	};
 
+	//Load a polyfill for flag emojis. Windows doesn't support flag emojis
 	private loadCountryFlagEmojiPolyfill() {
 		const script = this.renderer.createElement('script');
 		script.type = 'module';
@@ -323,21 +377,47 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		this.renderer.appendChild(document.body, script);
 	}
 
-	handleCategoryTabClicked = (category: EmojiCategory) => {
+	protected handleSearchValueChanged = (evt: ValueChangeEvent) => {
+		this.searchValue.set(evt.value);
+	};
+
+	protected handleEmojiSizeCalculated = (value: number) => {
+		this.emojiSizeInPx = value;
+	};
+
+	protected handleCategoryTabClicked = (category: EmojiCategory) => {
 		this.emojiViewportComponent()?.navigateToCategory(category);
 	};
 
-	addEmojiToSuggestions = (emojiId: string) => {
-		this.emojiDataService.addEmojiToRecents(emojiId);
-		this.emojiDataService.increaseEmojiFrequency(emojiId);
-	};
-
-	handleEmojiClick = (evt: ClickEvent) => {
+	protected handleEmojiClick = (evt: ClickEvent) => {
 		if (!evt.data || this.emojiTouchHoldEventActive) {
 			this.emojiTouchHoldEventActive = false;
 			return;
 		}
 		this.processEmojiSelection(evt);
+	};
+
+	protected handleEmojiTouchHold = (evt: TouchHoldEvent) => {
+		const emoji = this.emojiDataService.fetchEmojiById(evt.data);
+
+		if (!emoji) return;
+
+		this.emojiTouchHoldEventActive = this.isTouchHoldValid(
+			evt,
+			emoji
+		);
+
+		if (
+			this.emojiTouchHoldEventActive &&
+			this.isIndividualSkintoneSettingEnabled(this.skintoneSetting())
+		) {
+			this.openSkintoneDialog(evt.targetElement, emoji);
+			console.log(evt);
+		}
+	};
+
+	protected handleGlobalSkintoneChanged = (skintone: Skintone) => {
+		this.emojiDataService.setGlobalEmojiSkintone(skintone);
 	};
 
 	private processEmojiSelection = (evt: ClickEvent) => {
@@ -363,25 +443,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		);
 	}
 
-	handleEmojiTouchHold = (evt: TouchHoldEvent) => {
-		const emoji = this.emojiDataService.fetchEmojiById(evt.data);
-
-		if (!emoji) return;
-
-		this.emojiTouchHoldEventActive = this.isTouchHoldValid(
-			evt,
-			emoji
-		);
-
-		if (
-			this.emojiTouchHoldEventActive &&
-			this.isIndividualSkintoneSettingEnabled(this.skintoneSetting())
-		) {
-			this.openSkintoneDialog(evt.targetElement, emoji);
-			console.log(evt);
-		}
-	};
-
 	private isTouchHoldValid(
 		evt: TouchHoldEvent,
 		emoji: Emoji | null
@@ -394,33 +455,15 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		);
 	}
 
-	isIndividualSkintoneSettingEnabled = (
+	private isIndividualSkintoneSettingEnabled = (
 		skintoneSetting: SkintoneSetting
 	) => {
 		return ['both', 'individual'].includes(skintoneSetting);
 	};
-	isGlobalSkintoneSettingEnabled = (
+	private isGlobalSkintoneSettingEnabled = (
 		skintoneSetting: SkintoneSetting
 	) => {
 		return ['both', 'global'].includes(skintoneSetting);
-	};
-
-	openSkintoneDialog = (targetElement: HTMLElement, emoji: Emoji) => {
-		this.disposeSkintoneDialog();
-
-		const positionStrategy =
-			this.createSkintoneDialogPositionStrategy(targetElement);
-
-		this.skintoneDialogRef =
-			this.createSkintoneDialog(positionStrategy);
-
-		this.attachEmojiSkintonePickerToDialog(
-			this.skintoneDialogRef,
-			emoji,
-			this.skintoneSetting()
-		);
-
-		this.setupOnBackdropClickHandler(targetElement);
 	};
 
 	private setupOnBackdropClickHandler(
@@ -531,10 +574,42 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		);
 	};
 
-	handleGlobalSkintoneChanged = (skintone: Skintone) => {
-		this.emojiDataService.setGlobalEmojiSkintone(skintone);
+	private openSkintoneDialog = (
+		targetElement: HTMLElement,
+		emoji: Emoji
+	) => {
+		this.disposeSkintoneDialog();
+
+		const positionStrategy =
+			this.createSkintoneDialogPositionStrategy(targetElement);
+
+		this.skintoneDialogRef =
+			this.createSkintoneDialog(positionStrategy);
+
+		this.attachEmojiSkintonePickerToDialog(
+			this.skintoneDialogRef,
+			emoji,
+			this.skintoneSetting()
+		);
+
+		this.setupOnBackdropClickHandler(targetElement);
 	};
 
+	/**
+	 * Update suggestions (recent and frequently) in storage
+	 * @param {string} emojiId - The id of the emoji to be updated.
+	 * @group Method
+	 */
+	addEmojiToSuggestions = (emojiId: string) => {
+		this.emojiDataService.addEmojiToRecents(emojiId);
+		this.emojiDataService.increaseEmojiFrequency(emojiId);
+	};
+
+	/**
+	 * Select an emoji manually and update the suggestion in storage if option was enabled
+	 * @param {Emoji} emoji - Emoji object.
+	 * @group Method
+	 */
 	selectEmoji = (emoji: Emoji) => {
 		if (this.autoUpdateSuggestions()) {
 			this.addEmojiToSuggestions(emoji.id);

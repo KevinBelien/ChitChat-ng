@@ -24,7 +24,7 @@ import {
 	EmojiCategory,
 	EmojiPickerRow,
 	EmojiSize,
-	EmojiSizeKey,
+	EmojiSizeOption,
 	FilteredEmojis,
 	SuggestionEmojis,
 } from '../../models';
@@ -86,7 +86,7 @@ export class EmojiViewportComponent implements AfterViewInit {
 		});
 
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
-	emojiSize = input<EmojiSizeKey>('default');
+	emojiSize = input<EmojiSizeOption>('default');
 	height = input<number>(400);
 	width = input<number>(350);
 	scrollbarVisible = input<boolean>(true);
