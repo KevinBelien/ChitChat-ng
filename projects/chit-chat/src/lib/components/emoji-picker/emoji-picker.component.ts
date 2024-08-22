@@ -115,7 +115,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	);
 
 	/**
-	 * Height of the emoji picker
+	 * Specifies the height of the button
 	 * @group Props
 	 */
 	@Input()
@@ -123,7 +123,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	height = 450;
 
 	/**
-	 * Width of the emoji picker
+	 * Specifies the width of the button
 	 * @group Props
 	 */
 	@Input()
@@ -131,57 +131,51 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	width = 400;
 
 	/**
-	 * Determines the display size of the emojis
-	 *
-	 * This will be used to calculate the emoji size in pixels
-	 *
+	 * Specifies the display size of the emoji.
+	 * This will be used to determine the emoji size in pixels.
 	 * @group Props
 	 */
 	emojiSize = input<EmojiSizeOption>('default');
 
 	/**
-	 * Determines the mode of emoji suggestions in the picker
+	 * Specifies the mode for displaying emoji suggestions in the picker.
 	 * @group Props
 	 */
 	suggestionMode = input<EmojiSuggestionMode>('recent');
 
 	/**
-	 * Location of the category bar
+	 * Specifies the location of the category bar.
 	 * @group Props
 	 */
 	categoryBarPosition = input<CategoryBarPosition>('top');
 
 	/**
-	 * Decides if the scrollbar is visible
-	 *
-	 * This property is also essential for accurately calculating the viewport width,
-	 * which in turn influences the number of emojis displayed per row and their size.
-	 *
+	 * Specifies if the scrollbar is visible.
 	 * @group Props
 	 */
 	scrollbarVisible = input<boolean>(false);
 
 	/**
-	 * Categories to be included in the emoji picker
-	 * Order will be respected, excepts for suggestion category
+	 * Specifies the categories to be included in the emoji picker
+	 * The order will be respected, except for suggestion category
 	 * @group Props
 	 */
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
 
 	/**
-	 * The maximum amount of suggestion emojis that will be shown in the emoji picker
+	 * Specifies the maximum amount of suggestion emojis that will be shown in the emoji picker.
 	 * @group Props
 	 */
 	suggestionLimit = input<number>(50);
 
 	/**
-	 * Determines if suggestions will automatically be updated in storage
+	 * Specifies if suggestions will automatically be updated in storage.
 	 * @group Props
 	 */
 	autoUpdateSuggestions = input<boolean>(true);
 
 	/**
-	 * Defines the approach for handling skintone variations within the emoji picker.
+	 * Specifies the approach for handling skintone variations within the emoji picker.
 	 * @group Props
 	 */
 	skintoneSetting = input<SkintoneSetting>('both');
@@ -190,7 +184,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	 * Callback to execute when button is clicked.
 	 * This event is intended to be used with the <p-button> component. Using a regular <button> element, use (click).
 	 * @param {Emoji} emoji - selected emoji.
-	 * @group Props
+	 * @group Outputs
 	 */
 	onEmojiSelected = output<Emoji>();
 

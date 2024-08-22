@@ -1,13 +1,13 @@
 <button
 	chRipple
 	[rippleEnabled]="activeStateEnabled()"
-	[ngClass]="buttonClass()"
-	[disabled]="disabled()"
 	[attr.aria-label]="ariaLabel()"
 	[ngStyle]="{
 		width: width() ? width() + 'px' : 'auto',
 		height: height() ? height() + 'px' : 'auto'
 	}"
+	[ngClass]="buttonClass()"
+	[disabled]="disabled()"
 	[tabIndex]="tabIndex()"
 	(click)="handleClick($event)"
 >

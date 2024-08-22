@@ -25,21 +25,102 @@ import { ButtonFill } from './models/button-fill.type';
 	},
 })
 export class ButtonComponent {
+	/**
+	 * Text of the button.
+	 * @group Props
+	 */
 	label = input<string>();
+
+	/**
+	 * Icon of the button.
+	 * @group Props
+	 */
 	icon = input<Partial<ButtonIconProps>>();
+
+	/**
+	 * Specifies the name of the CSS class to be applied to the root button level.
+	 * @group Props
+	 */
 	cssClass = input<string>();
+
+	/**
+	 * Specifies the width of the button
+	 * @group Props
+	 */
 	width = input<number>();
+
+	/**
+	 * Specifies the height of the button
+	 * @group Props
+	 */
 	height = input<number>();
+
+	/**
+	 * 	Specifies whether the button responds to user interaction.
+	 * @group Props
+	 */
 	disabled = input<boolean>(false);
+
+	/**
+	 * Specifies whether the button changes its visual state as a result of user interaction.
+	 * @group Props
+	 */
 	activeStateEnabled = input<boolean>(true);
+
+	/**
+	 * Specifies whether the button can be focused.
+	 * @group Props
+	 */
 	focusStateEnabled = input<boolean>(true);
+
+	/**
+	 * Specifies whether the button changes its state when a user pauses on it.
+	 * @group Props
+	 */
 	hoverStateEnabled = input<boolean>(true);
+
+	/**
+	 * Specifies the button's visual type.
+	 * @group Props
+	 */
 	type = input<ButtonType>('primary');
+
+	/**
+	 * Specifies how the button is styled.
+	 * @group Props
+	 */
 	fill = input<ButtonFill>('solid');
+
+	/**
+	 * Indicates whether the button should have an elevated appearance.
+	 * @group Props
+	 */
 	raised = input<boolean>(false);
+
+	/**
+	 * Indicates the shape of the button
+	 * @group Props
+	 */
 	shape = input<ButtonShape>('square');
+
+	/**
+	 * Specifies a tabindex to the button.
+	 * @group Props
+	 */
 	tabIndex = input<number | null>(null);
+
+	/**
+	 * Provides an accessible label for the button, enhancing screen reader support.
+	 * @group Props
+	 */
 	ariaLabel = input<string>();
+
+	/**
+	 * Callback to execute when button is clicked.
+	 * @param {MouseEvent} event - Mouse event.
+	 * @group Outputs
+	 */
+	onClick = output<MouseEvent>();
 
 	iconPosition = computed(() => {
 		const icon = this.icon();
@@ -86,8 +167,6 @@ export class ButtonComponent {
 			...(!!extraClasses ? { [extraClasses]: true } : undefined),
 		};
 	});
-
-	onClick = output<MouseEvent>();
 
 	handleClick = (evt: MouseEvent) => {
 		this.onClick.emit(evt);

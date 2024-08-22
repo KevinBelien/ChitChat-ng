@@ -58,6 +58,10 @@ export class TextBoxComponent
 	private elementRef = inject(ElementRef);
 	private renderer = inject(Renderer2);
 
+	/**
+	 * The input's current value
+	 * @group Props
+	 */
 	value = model<string>('');
 	autofocus = input<boolean>(false);
 	mode = input<TextBoxMode>('text');
