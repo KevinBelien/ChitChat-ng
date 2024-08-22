@@ -1,2 +1,2 @@
-export * from './src/models';
-export * from './src/text-box.component';
+export * from './models';
+export * from './text-box.component';

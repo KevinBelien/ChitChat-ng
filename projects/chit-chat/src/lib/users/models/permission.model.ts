@@ -2,7 +2,7 @@ import {
 	MapResult,
 	MapResultCollection,
 } from 'chit-chat/src/lib/utils';
-import { DtoPermission } from '../dto';
+import { DtoPermission } from '../models';
 
 export class Permission implements Omit<DtoPermission, 'role'> {
 	id: string;

@@ -12,5 +12,6 @@
 			"chit-chat/*": ["src/lib/*"]
 		}
 	},
+
 	"exclude": ["**/*.spec.ts"]
 }

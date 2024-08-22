@@ -1,6 +1,5 @@
 import { MapResult } from 'chit-chat/src/lib/utils';
-import { DtoPermission, DtoUserRole } from '../dto';
-import { Permission } from './permission.model';
+import { DtoPermission, DtoUserRole, Permission } from '../models';
 
 export class UserRole implements DtoUserRole {
 	id: string;

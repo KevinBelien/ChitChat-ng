@@ -21,9 +21,14 @@ import {
 	startWith,
 	throwError,
 } from 'rxjs';
-import { DtoPermission, DtoUser, DtoUserRole } from '../dto';
-import { User, UserRole } from '../models';
-import { UserStatus } from '../types';
+import {
+	DtoPermission,
+	DtoUser,
+	DtoUserRole,
+	User,
+	UserRole,
+	UserStatus,
+} from '../models';
 
 @Injectable({
 	providedIn: 'root',

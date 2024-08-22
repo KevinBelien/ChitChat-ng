@@ -1,7 +1,10 @@
 import { Injectable } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
-import { Language } from '../data';
-import { LocaleTranslations, Translations } from '../models';
+import {
+	Language,
+	LocaleTranslations,
+	Translations,
+} from '../models';
 import { enTranslations } from '../public-api';
 
 @Injectable({

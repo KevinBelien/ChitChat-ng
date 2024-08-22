@@ -1,52 +1,100 @@
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
-import { Injectable, OnDestroy } from '@angular/core';
-import { Subject, Subscription } from 'rxjs';
+import {
+	BreakpointObserver,
+	Breakpoints,
+	BreakpointState as CdkBreakpointState,
+} from '@angular/cdk/layout';
+import {
+	DestroyRef,
+	inject,
+	Injectable,
+	Signal,
+} from '@angular/core';
+import { toSignal } from '@angular/core/rxjs-interop';
+import { map } from 'rxjs';
+import {
+	Breakpoint,
+	breakpoints,
+	BreakpointState,
+	BreakpointStatus,
+} from '../models';
 
 @Injectable({ providedIn: 'root' })
-export class ScreenService implements OnDestroy {
-	breakPointChanged = new Subject<void>();
+export class ScreenService {
+	destroyRef = inject(DestroyRef);
+	breakpointObserver = inject(BreakpointObserver);
 
-	breakPointObserverSubscription: Subscription;
+	breakpointState: Signal<BreakpointState>;
 
-	constructor(private breakpointObserver: BreakpointObserver) {
-		this.breakPointObserverSubscription = this.breakpointObserver
-			.observe([
-				Breakpoints.XSmall,
-				Breakpoints.Small,
-				Breakpoints.Medium,
-				Breakpoints.Large,
-			])
-			.subscribe(() => {
-				this.breakPointChanged.next();
-			});
+	constructor() {
+		this.breakpointState = toSignal(
+			this.breakpointObserver
+				.observe([
+					Breakpoints.XSmall,
+					Breakpoints.Small,
+					Breakpoints.Medium,
+					Breakpoints.Large,
+				])
+				.pipe(
+					map<CdkBreakpointState, BreakpointState>(() =>
+						this.calculateBreakpoints()
+					)
+				),
+			{ initialValue: this.calculateBreakpoints() }
+		);
 	}
 
-	public get sizes(): Record<string, boolean> {
-		const breakPoints = {
+	calculateBreakpoints = (): BreakpointState => {
+		const breakpointStatus = this.getBreakpoints();
+
+		return {
+			current: this.getCurrentBreakpoint(breakpointStatus),
+			breakpoints: this.calculateBreakpointStatus(breakpointStatus),
+		};
+	};
+
+	getBreakpoints = (): BreakpointStatus => {
+		return {
 			xs: this.breakpointObserver.isMatched(Breakpoints.XSmall),
 			sm: this.breakpointObserver.isMatched(Breakpoints.Small),
 			md: this.breakpointObserver.isMatched(Breakpoints.Medium),
 			lg: this.breakpointObserver.isMatched(Breakpoints.Large),
 			xl: this.breakpointObserver.isMatched(Breakpoints.XLarge),
 		};
+	};
 
+	getCurrentBreakpoint = (
+		breakpointStatus: BreakpointStatus
+	): Breakpoint => {
+		return (
+			breakpoints.find(
+				(breakpoint) => breakpointStatus[breakpoint]
+			) || 'xs'
+		);
+	};
+
+	calculateBreakpointStatus = (
+		breakpointStatus: BreakpointStatus
+	): BreakpointStatus => {
 		return {
 			xs:
-				breakPoints.xs ||
-				breakPoints.sm ||
-				breakPoints.md ||
-				breakPoints.lg ||
-				breakPoints.xl,
+				breakpointStatus.xs ||
+				breakpointStatus.sm ||
+				breakpointStatus.md ||
+				breakpointStatus.lg ||
+				breakpointStatus.xl,
 			sm:
-				breakPoints.sm ||
-				breakPoints.md ||
-				breakPoints.lg ||
-				breakPoints.xl,
-			md: breakPoints.md || breakPoints.lg || breakPoints.xl,
-			lg: breakPoints.lg || breakPoints.xl,
-			xl: breakPoints.xl,
+				breakpointStatus.sm ||
+				breakpointStatus.md ||
+				breakpointStatus.lg ||
+				breakpointStatus.xl,
+			md:
+				breakpointStatus.md ||
+				breakpointStatus.lg ||
+				breakpointStatus.xl,
+			lg: breakpointStatus.lg || breakpointStatus.xl,
+			xl: breakpointStatus.xl,
 		};
-	}
+	};
 
 	isMobile = () => {
 		return (
@@ -61,8 +109,4 @@ export class ScreenService implements OnDestroy {
 	isIos = () => {
 		return /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 	};
-
-	ngOnDestroy(): void {
-		this.breakPointObserverSubscription.unsubscribe();
-	}
 }

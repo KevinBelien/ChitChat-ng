@@ -8,7 +8,7 @@ import {
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { provideAnimations } from '@angular/platform-browser/animations';
 import { ScreenService } from 'chit-chat/src/lib/utils';
-import { LibConfig } from '../lib-config/interfaces';
+import { LibConfig } from '../lib-config/models';
 import { LibConfigService } from '../lib-config/services/lib-config.service';
 
 export function initializeDocument(

@@ -2,8 +2,7 @@ import {
 	MapResult,
 	MapResultCollection,
 } from 'chit-chat/src/lib/utils';
-import { DtoUser } from '../dto';
-import { UserStatus, userStatuses } from '../types';
+import { DtoUser, UserStatus, userStatuses } from '../models';
 
 export class User implements DtoUser {
 	uid: string;

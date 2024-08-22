@@ -1,2 +1,2 @@
-export * from './src/button.component';
-export * from './src/types/';
+export * from './button.component';
+export * from './models';

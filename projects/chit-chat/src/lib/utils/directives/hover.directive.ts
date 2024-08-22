@@ -4,7 +4,7 @@ import {
 	HostListener,
 	Output,
 } from '@angular/core';
-import { HoverEvent } from '../interfaces';
+import { HoverEvent } from '../models';
 
 @Directive({
 	standalone: true,

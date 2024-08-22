@@ -19,8 +19,7 @@ import {
 	startWith,
 	throwError,
 } from 'rxjs';
-import { DtoMessage } from '../dto';
-import { Message } from './../models/message.model';
+import { DtoMessage, Message } from '../models';
 
 @Injectable({
 	providedIn: 'root',

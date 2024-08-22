@@ -1,4 +1,4 @@
-import { Language } from '../data/languages';
+import { Language } from './languages.type';
 
 export type LocaleTranslations = Map<Language, Translations>;
 

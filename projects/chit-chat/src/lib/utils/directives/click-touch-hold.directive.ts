@@ -1,14 +1,15 @@
 import {
+	DestroyRef,
 	Directive,
 	ElementRef,
 	EventEmitter,
 	inject,
 	Input,
-	OnDestroy,
 	OnInit,
 	Output,
 	Renderer2,
 } from '@angular/core';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { fromEvent, Subject, timer } from 'rxjs';
 import {
 	debounceTime,
@@ -16,16 +17,21 @@ import {
 	takeUntil,
 	tap,
 } from 'rxjs/operators';
-import { ClickActionType, PointerDeviceType } from '../enums';
-import { ClickEvent, TouchHoldEvent } from '../interfaces';
+import {
+	ClickActionType,
+	ClickEvent,
+	PointerDeviceType,
+	TouchHoldEvent,
+} from '../models';
 
 @Directive({
 	selector: '[chClickTouchHold]',
 	standalone: true,
 })
-export class ClickTouchHoldDirective implements OnInit, OnDestroy {
+export class ClickTouchHoldDirective implements OnInit {
 	private renderer = inject(Renderer2);
 	private elementRef = inject(ElementRef);
+	private destroyRef = inject(DestroyRef);
 
 	@Input() touchHoldTimeInMillis = 500;
 	@Input() preventContextMenu = true;
@@ -33,7 +39,6 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 	@Output() onClick = new EventEmitter<ClickEvent>();
 	@Output() onTouchHold = new EventEmitter<TouchHoldEvent>();
 
-	private destroy$ = new Subject<void>();
 	private pointerDown$ = new Subject<PointerEvent>();
 	private pointerUp$ = new Subject<PointerEvent>();
 	private pointerMove$ = new Subject<PointerEvent>();
@@ -60,22 +65,20 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 						tap(() => this.handleTouchHold(event))
 					)
 				),
-				takeUntil(this.destroy$)
+				takeUntilDestroyed(this.destroyRef)
 			)
 			.subscribe();
 
 		this.pointerUp$
 			.pipe(
 				tap((event) => this.handlePointerUp(event)),
-				takeUntil(this.destroy$)
+				takeUntilDestroyed(this.destroyRef)
 			)
 			.subscribe();
 	}
 
 	ngOnDestroy(): void {
 		this.removeEventListeners();
-		this.destroy$.next();
-		this.destroy$.complete();
 	}
 
 	private addEventListeners = (): void => {
@@ -105,11 +108,11 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 		];
 
 		fromEvent<PointerEvent>(nativeElement, 'pointermove')
-			.pipe(debounceTime(50), takeUntil(this.destroy$))
+			.pipe(debounceTime(50), takeUntilDestroyed(this.destroyRef))
 			.subscribe((evt: PointerEvent) => this.onPointerMove(evt));
 
 		fromEvent<TouchEvent>(nativeElement, 'touchmove')
-			.pipe(debounceTime(50), takeUntil(this.destroy$))
+			.pipe(debounceTime(50), takeUntilDestroyed(this.destroyRef))
 			.subscribe((evt: TouchEvent) => this.onTouchMove(evt));
 
 		if (this.preventContextMenu) {

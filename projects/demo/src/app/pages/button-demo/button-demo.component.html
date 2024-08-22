@@ -8,6 +8,7 @@
 				<div class="btn-row">
 					<ng-container *ngFor="let type of buttonTypes">
 						<ch-button
+							[ariaLabel]="fill + '-' + type"
 							[label]="type | titlecase"
 							[type]="type"
 							[fill]="fill"
@@ -34,6 +35,7 @@
 				<div class="btn-row">
 					<ng-container *ngFor="let type of buttonTypes">
 						<ch-button
+							[ariaLabel]="'icon' + fill + '-' + type"
 							[label]="type | titlecase"
 							[type]="type"
 							[fill]="fill"
@@ -64,6 +66,7 @@
 				<div class="btn-row">
 					<ng-container *ngFor="let type of buttonTypes">
 						<ch-button
+							[ariaLabel]="'icon-only-' + fill + '-' + type"
 							[type]="type"
 							[fill]="fill"
 							[raised]="form.isRaised"

@@ -1,5 +1,11 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, OnInit, Renderer2 } from '@angular/core';
+import {
+	Component,
+	effect,
+	inject,
+	OnInit,
+	Renderer2,
+} from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
@@ -42,7 +48,8 @@ export class AppComponent implements OnInit {
 	selectedNavItem: NavigationItem = navigationItems[0];
 	sideNavMode: 'over' | 'push' | 'side';
 
-	isMenuOpened: boolean = this.screenService.sizes['lg'];
+	isMenuOpened: boolean =
+		this.screenService.breakpointState()?.current === 'lg';
 
 	isDarkTheme: boolean = false;
 
@@ -50,7 +57,10 @@ export class AppComponent implements OnInit {
 	constructor() {
 		this.sideNavMode = this.calcSideNavMode();
 		this.contentHeight = this.calculatePageHeight();
-		this.screenService.breakPointChanged.subscribe(() => {
+
+		effect(() => {
+			const breakpoint = this.screenService.breakpointState();
+
 			this.sideNavMode = this.calcSideNavMode();
 			this.contentHeight = this.calculatePageHeight();
 		});
@@ -63,7 +73,9 @@ export class AppComponent implements OnInit {
 	}
 
 	calcSideNavMode = (): 'over' | 'push' | 'side' => {
-		return this.screenService.sizes['lg'] ? 'side' : 'over';
+		return this.screenService.breakpointState()?.current === 'lg'
+			? 'side'
+			: 'over';
 	};
 	calculatePageHeight = () => {
 		return window.innerHeight - 50;

@@ -2,8 +2,7 @@ import {
 	MapResult,
 	MapResultCollection,
 } from 'chit-chat/src/lib/utils';
-import { DtoMessage } from '../dto/message.dto';
-import { MessageContent } from '../types';
+import { DtoMessage, MessageContent } from '../models';
 
 export class Message {
 	id: string;

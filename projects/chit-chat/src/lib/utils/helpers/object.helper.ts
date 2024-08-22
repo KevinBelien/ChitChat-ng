@@ -1,4 +1,4 @@
-import { ArrayMap } from '../types';
+import { ArrayMap } from '../models';
 
 export class ObjectHelper {
 	public static objectEquals = (
