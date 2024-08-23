@@ -71,3 +71,9 @@
 		font-weight: 500;
 	}
 }
+
+::ng-deep .skintone-dialog {
+	.ch-dialog-content {
+		padding: 0.3em;
+	}
+}

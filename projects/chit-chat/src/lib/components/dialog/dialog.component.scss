@@ -30,4 +30,10 @@
 	display: flex;
 	margin-top: auto;
 	padding: 0.4em 0.5em;
+	border-top: 1px solid var(--ch-border-color, #ddd);
+
+	&:empty {
+		border-top: none;
+		padding: 0;
+	}
 }

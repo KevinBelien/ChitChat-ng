@@ -18,6 +18,7 @@ import {
 	model,
 	OnDestroy,
 	viewChild,
+	ViewEncapsulation,
 } from '@angular/core';
 import { filter } from 'rxjs';
 
@@ -27,6 +28,7 @@ import { filter } from 'rxjs';
 	imports: [CommonModule, CdkPortal],
 	templateUrl: './dialog.component.html',
 	styleUrl: './dialog.component.scss',
+	encapsulation: ViewEncapsulation.None,
 	changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class DialogComponent implements OnDestroy {
@@ -52,6 +54,8 @@ export class DialogComponent implements OnDestroy {
 			overlayY: 'center',
 		},
 	]);
+	cssClass = input<string | string[]>('');
+
 	scrollStrategy = input<ScrollStrategy>(
 		this.overlay.scrollStrategies.block()
 	);

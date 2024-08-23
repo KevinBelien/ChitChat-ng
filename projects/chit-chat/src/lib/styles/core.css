@@ -98,8 +98,8 @@ body:not(.ch-mobile) .ch-scroll-viewport::-webkit-scrollbar,
 body:not(.ch-mobile)
 	.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar {
-	width: var(--ch-scrollbar-size);
-	height: var(--ch-scrollbar-size);
+	width: var(--ch-scrollbar-size, 6px);
+	height: var(--ch-scrollbar-size, 6px);
 }
 
 body:not(.ch-mobile) .ch-vscroll-viewport::-webkit-scrollbar-track,
@@ -108,7 +108,7 @@ body:not(.ch-mobile)
 	.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar-track {
 	background-color: transparent;
-	border-radius: var(--ch-scrollbar-border-radius);
+	border-radius: var(--ch-scrollbar-border-radius, 6px);
 }
 
 body:not(.ch-mobile) .ch-vscroll-viewport::-webkit-scrollbar-thumb,
@@ -117,7 +117,7 @@ body:not(.ch-mobile)
 	.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar-thumb {
 	background-color: var(--ch-color-scroll, rgba(204, 204, 215, 0.8));
-	border-radius: var(--ch-scrollbar-border-radius);
+	border-radius: var(--ch-scrollbar-border-radius, 6px);
 }
 
 body:not(.ch-mobile)
@@ -131,7 +131,9 @@ body:not(.ch-mobile)
 }
 
 body .ch-scroll-hidden.ch-vscroll-viewport::-webkit-scrollbar,
-body:not(.ch-mobile) .ch-scroll-viewport::-webkit-scrollbar,
+body:not(.ch-mobile)
+	.ch-scroll-hidden
+	.ch-scroll-viewport::-webkit-scrollbar,
 body
 	.ch-scroll-hidden.ch-vscroll-viewport
 	.rx-virtual-scroll__runway::-webkit-scrollbar,
