@@ -88,12 +88,16 @@ export class ClickTouchHoldDirective implements OnInit {
 			this.renderer.listen(
 				nativeElement,
 				'pointerdown',
-				(event: PointerEvent) => this.onPointerDown(event)
+				(event: PointerEvent) => {
+					this.onPointerDown(event);
+				}
 			),
 			this.renderer.listen(
 				nativeElement,
 				'pointerup',
-				(event: PointerEvent) => this.onPointerUp(event)
+				(event: PointerEvent) => {
+					this.onPointerUp(event);
+				}
 			),
 
 			this.renderer.listen(nativeElement, 'scroll', () =>

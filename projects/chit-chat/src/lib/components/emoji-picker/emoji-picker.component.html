@@ -66,3 +66,27 @@
 	</div>
 	} }
 </div>
+
+<ch-dialog
+	skintoneDialog
+	[(visible)]="isSkintoneDialogVisible"
+	backdropClass="cdk-overlay-transparent-backdrop"
+	[target]="targetElement"
+	[positions]="[
+		{
+			originX: 'center',
+			originY: 'top',
+			overlayX: 'center',
+			overlayY: 'bottom',
+			offsetY: -5
+		}
+	]"
+>
+	<ng-container content
+		><ch-emoji-skintone-picker
+			[emoji]="selectedEmoji()"
+			[emojiSizeInPx]="emojiSizeInPx"
+			(onSelectionChanged)="handleEmojiSkintoneSelected($event)"
+		></ch-emoji-skintone-picker>
+	</ng-container>
+</ch-dialog>

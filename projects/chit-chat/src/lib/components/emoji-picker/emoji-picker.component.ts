@@ -1,9 +1,4 @@
-import {
-	Overlay,
-	OverlayRef,
-	PositionStrategy,
-} from '@angular/cdk/overlay';
-import { ComponentPortal } from '@angular/cdk/portal';
+import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
@@ -30,6 +25,7 @@ import {
 	toSignal,
 } from '@angular/core/rxjs-interop';
 
+import { DialogComponent } from 'chit-chat/src/lib/components/dialog';
 import {
 	TextBoxComponent,
 	ValueChangeEvent,
@@ -46,7 +42,6 @@ import {
 import {
 	debounce,
 	distinctUntilChanged,
-	filter,
 	from,
 	map,
 	Observable,
@@ -74,7 +69,6 @@ import { EmojiFilterService } from './services/emoji-filter.service';
 import { EmojiSkintonePickerComponent } from './ui/emoji-skintone-picker/emoji-skintone-picker.component';
 import { EmojiTabsComponent } from './ui/emoji-tabs/emoji-tabs.component';
 import { EmojiViewportComponent } from './ui/emoji-viewport/emoji-viewport.component';
-import { HorizontalEmojiPickerComponent } from './ui/horizontal-emoji-picker/horizontal-emoji-picker.component';
 import { SkintoneSwatchPickerComponent } from './ui/skintone-swatch-picker/skintone-swatch-picker.component';
 
 @Component({
@@ -83,11 +77,12 @@ import { SkintoneSwatchPickerComponent } from './ui/skintone-swatch-picker/skint
 	imports: [
 		CommonModule,
 		EmojiViewportComponent,
-		HorizontalEmojiPickerComponent,
 		EmojiTabsComponent,
 		SkintoneSwatchPickerComponent,
+		EmojiSkintonePickerComponent,
 		TextBoxComponent,
 		TranslatePipe,
+		DialogComponent,
 	],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	templateUrl: './emoji-picker.component.html',
@@ -113,6 +108,9 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	swatchPickerComponent = viewChild<SkintoneSwatchPickerComponent>(
 		SkintoneSwatchPickerComponent
 	);
+
+	emojiSkintonePickerDialog =
+		viewChild<DialogComponent>('skintoneDialog');
 
 	/**
 	 * Specifies the height of the button
@@ -153,7 +151,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	 * Specifies if the scrollbar is visible.
 	 * @group Props
 	 */
-	scrollbarVisible = input<boolean>(false);
+	scrollbarVisible = input<boolean>(true);
 
 	/**
 	 * Specifies the categories to be included in the emoji picker
@@ -187,6 +185,10 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	 * @group Outputs
 	 */
 	onEmojiSelected = output<Emoji>();
+
+	isSkintoneDialogVisible = model<boolean>(false);
+	targetElement?: HTMLElement;
+	selectedEmoji = signal<Emoji | null>(null);
 
 	@HostBinding('style.--ch-emoji-size') emojiSizeInPx?: number;
 	@HostBinding('style.--ch-emoji-btn-size-multiplier')
@@ -406,7 +408,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 			this.isIndividualSkintoneSettingEnabled(this.skintoneSetting())
 		) {
 			this.openSkintoneDialog(evt.targetElement, emoji);
-			console.log(evt);
 		}
 	};
 
@@ -460,99 +461,16 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		return ['both', 'global'].includes(skintoneSetting);
 	};
 
-	private setupOnBackdropClickHandler(
-		targetElement: HTMLElement
-	): void {
-		let allowBackdropDismissal = false;
+	protected handleEmojiSkintoneSelected = (evt: ClickEvent) => {
+		const selectedEmoji = this.selectedEmoji();
 
-		const enableBackdropDismissal = () => {
-			allowBackdropDismissal = true;
-			this.setupBackdropClickHandler(() => allowBackdropDismissal);
-		};
-
-		const onInteractionEnd = () => {
-			setTimeout(enableBackdropDismissal, 1);
-			targetElement.removeEventListener(
-				'pointerup',
-				onInteractionEnd
-			);
-			targetElement.removeEventListener('mouseup', onInteractionEnd);
-		};
-
-		targetElement.addEventListener('pointerup', onInteractionEnd);
-		targetElement.addEventListener('mouseup', onInteractionEnd, {
-			once: true,
-		});
-	}
-
-	private setupBackdropClickHandler(
-		isDismissalAllowed: () => boolean
-	): void {
-		this.skintoneDialogRef
-			?.backdropClick()
-			.pipe(filter(isDismissalAllowed))
-			.subscribe(() => this.disposeSkintoneDialog());
-	}
-
-	private disposeSkintoneDialog = () => {
-		if (this.skintoneDialogRef) {
-			this.skintoneDialogRef.dispose();
-		}
-	};
-
-	private createSkintoneDialogPositionStrategy = (
-		targetElement: HTMLElement
-	) => {
-		return this.overlay
-			.position()
-			.flexibleConnectedTo(targetElement)
-			.withPush(true)
-			.withPositions([
-				{
-					originX: 'center',
-					originY: 'top',
-					overlayX: 'center',
-					overlayY: 'bottom',
-				},
-			]);
-	};
-
-	private createSkintoneDialog = (
-		positionStrategy?: PositionStrategy
-	) => {
-		return this.overlay.create({
-			positionStrategy,
-			hasBackdrop: true,
-			backdropClass: 'cdk-overlay-transparent-backdrop',
-		});
-	};
-
-	private attachEmojiSkintonePickerToDialog = (
-		dialogRef: OverlayRef,
-		emoji: Emoji,
-		skintoneSetting: SkintoneSetting
-	) => {
-		const emojiPortal = new ComponentPortal(
-			EmojiSkintonePickerComponent
+		if (!selectedEmoji) return;
+		this.handleIndividualEmojiSkintoneChanged(
+			this.skintoneSetting(),
+			selectedEmoji,
+			evt.data
 		);
-		const componentRef = dialogRef.attach(emojiPortal);
-
-		componentRef.setInput('emoji', emoji);
-		componentRef.setInput('emojiSizeInPx', this.emojiSizeInPx);
-
-		//No need to unsubscribe (output signals gets unsubscribed automatically)
-		componentRef.instance.onSelectionChanged.subscribe(
-			(evt: ClickEvent) => {
-				this.handleIndividualEmojiSkintoneChanged(
-					skintoneSetting,
-					emoji,
-					evt.data
-				);
-
-				dialogRef.dispose();
-			}
-		);
-		return componentRef;
+		this.isSkintoneDialogVisible.set(false);
 	};
 
 	private handleIndividualEmojiSkintoneChanged = (
@@ -572,21 +490,9 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		targetElement: HTMLElement,
 		emoji: Emoji
 	) => {
-		this.disposeSkintoneDialog();
-
-		const positionStrategy =
-			this.createSkintoneDialogPositionStrategy(targetElement);
-
-		this.skintoneDialogRef =
-			this.createSkintoneDialog(positionStrategy);
-
-		this.attachEmojiSkintonePickerToDialog(
-			this.skintoneDialogRef,
-			emoji,
-			this.skintoneSetting()
-		);
-
-		this.setupOnBackdropClickHandler(targetElement);
+		this.selectedEmoji.set(emoji);
+		this.targetElement = targetElement;
+		this.isSkintoneDialogVisible.set(true);
 	};
 
 	/**

@@ -19,7 +19,7 @@ import { EmojiPickerService } from '../../services';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 
 @Component({
-	selector: 'lib-skintone-picker',
+	selector: 'ch-emoji-skintone-picker',
 	standalone: true,
 	imports: [
 		CommonModule,
@@ -38,7 +38,7 @@ export class EmojiSkintonePickerComponent {
 	private emojiPickerService = inject(EmojiPickerService);
 	private renderer = inject(Renderer2);
 
-	emoji = model<Emoji>();
+	emoji = model<Emoji | null>(null);
 
 	@Input()
 	@HostBinding('style.--ch-emoji-size')
