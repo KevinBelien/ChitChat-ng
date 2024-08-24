@@ -7,7 +7,7 @@ import {
 } from '@angular/core';
 import { FIREBASE_OPTIONS } from '@angular/fire/compat';
 import { provideAnimations } from '@angular/platform-browser/animations';
-import { ScreenService } from 'chit-chat/src/lib/utils';
+import { ScreenService } from '@chit-chat/ng-chat/src/lib/utils';
 import { LibConfig } from '../lib-config/models';
 import { LibConfigService } from '../lib-config/services/lib-config.service';
 

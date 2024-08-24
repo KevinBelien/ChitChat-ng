@@ -14,7 +14,7 @@ import {
 	EmojiSizeOption,
 	EmojiSuggestionMode,
 	SkintoneSetting,
-} from 'chit-chat/src/lib/components/emoji-picker';
+} from '@chit-chat/ng-chat/src/lib/components/emoji-picker';
 import {
 	BehaviorSubject,
 	combineLatest,

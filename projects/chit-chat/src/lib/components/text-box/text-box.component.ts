@@ -20,9 +20,9 @@ import {
 	ControlValueAccessor,
 	NG_VALUE_ACCESSOR,
 } from '@angular/forms';
-import { ButtonComponent } from 'chit-chat/src/lib/components/button';
-import { IconComponent } from 'chit-chat/src/lib/components/icon';
-import { AutofocusDirective } from 'chit-chat/src/lib/utils';
+import { ButtonComponent } from '@chit-chat/ng-chat/src/lib/components/button';
+import { IconComponent } from '@chit-chat/ng-chat/src/lib/components/icon';
+import { AutofocusDirective } from '@chit-chat/ng-chat/src/lib/utils';
 import { icons } from './icons';
 import { ValueChangeEvent } from './models';
 import { TextBoxMode } from './models/text-box-mode.type';

@@ -3,8 +3,8 @@ import {
 	AngularFirestore,
 	DocumentChangeAction,
 } from '@angular/fire/compat/firestore';
-import { ConversationContext } from 'chit-chat/src/lib/conversations';
-import { FireStoreCollection } from 'chit-chat/src/lib/utils';
+import { ConversationContext } from '@chit-chat/ng-chat/src/lib/conversations';
+import { FireStoreCollection } from '@chit-chat/ng-chat/src/lib/utils';
 import {
 	collection,
 	doc,

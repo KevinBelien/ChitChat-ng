@@ -1,4 +1,4 @@
-import { User } from 'chit-chat/src/lib/users';
+import { User } from '@chit-chat/ng-chat/src/lib/users';
 
 export type ConversationContext =
 	| { participantIds: string[]; isGroup: true; group: any }

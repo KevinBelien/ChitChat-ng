@@ -1,6 +1,14 @@
 {
-	"name": "chit-chat",
-	"version": "0.0.1",
+	"name": "@chit-chat/ng-chat",
+	"version": "0.1.2",
+	"main": "fesm2022/chit-chat-ng-chat.mjs",
+	"typings": "index.d.ts",
+	"private": false,
+	"exports": {
+		"./styles": {
+			"default": "./lib/styles/core.css"
+		}
+	},
 	"peerDependencies": {
 		"@angular/common": "^18.1.0",
 		"@angular/core": "^18.1.0",

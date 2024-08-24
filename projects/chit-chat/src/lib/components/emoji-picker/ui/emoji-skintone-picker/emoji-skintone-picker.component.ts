@@ -13,7 +13,7 @@ import {
 import {
 	ClickEvent,
 	ClickTouchHoldDirective,
-} from 'chit-chat/src/lib/utils';
+} from '@chit-chat/ng-chat/src/lib/utils';
 import { Emoji } from '../../models';
 import { EmojiPickerService } from '../../services';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';

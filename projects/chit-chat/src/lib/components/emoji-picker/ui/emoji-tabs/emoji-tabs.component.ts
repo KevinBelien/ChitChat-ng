@@ -8,13 +8,13 @@ import {
 	output,
 	signal,
 } from '@angular/core';
-import { ButtonComponent } from 'chit-chat/src/lib/components/button';
-import { IconComponent } from 'chit-chat/src/lib/components/icon';
+import { ButtonComponent } from '@chit-chat/ng-chat/src/lib/components/button';
+import { IconComponent } from '@chit-chat/ng-chat/src/lib/components/icon';
 import {
 	HoverDirective,
 	HoverEvent,
 	ScreenService,
-} from 'chit-chat/src/lib/utils';
+} from '@chit-chat/ng-chat/src/lib/utils';
 import { emojiCategories, EmojiCategory } from '../../models';
 import { emojiCategoryIcons } from '../icons';
 

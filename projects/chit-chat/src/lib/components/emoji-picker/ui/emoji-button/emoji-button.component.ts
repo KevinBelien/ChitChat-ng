@@ -5,7 +5,7 @@ import {
 	input,
 } from '@angular/core';
 
-import { RippleDirective } from 'chit-chat/src/lib/utils';
+import { RippleDirective } from '@chit-chat/ng-chat/src/lib/utils';
 
 @Component({
 	selector: 'ch-emoji-button',

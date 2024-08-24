@@ -1,7 +1,7 @@
 import {
 	MapResult,
 	MapResultCollection,
-} from 'chit-chat/src/lib/utils';
+} from '@chit-chat/ng-chat/src/lib/utils';
 import { DtoMessage, MessageContent } from '../models';
 
 export class Message {

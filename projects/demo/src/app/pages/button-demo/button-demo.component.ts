@@ -5,7 +5,7 @@ import {
 	ButtonComponent,
 	ButtonFill,
 	ButtonType,
-} from 'chit-chat/src/lib/components/button';
+} from '@chit-chat/ng-chat/src/lib/components/button';
 
 @Component({
 	selector: 'app-button-demo',

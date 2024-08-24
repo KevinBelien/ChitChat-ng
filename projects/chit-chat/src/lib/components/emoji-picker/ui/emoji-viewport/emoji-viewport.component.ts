@@ -34,13 +34,13 @@ import {
 	takeUntilDestroyed,
 	toObservable,
 } from '@angular/core/rxjs-interop';
-import { TranslatePipe } from 'chit-chat/src/lib/localization';
+import { TranslatePipe } from '@chit-chat/ng-chat/src/lib/localization';
 import {
 	ClickEvent,
 	ClickTouchHoldDirective,
 	RippleDirective,
 	TouchHoldEvent,
-} from 'chit-chat/src/lib/utils';
+} from '@chit-chat/ng-chat/src/lib/utils';
 import { EmojiPickerService } from '../../services';
 
 @Component({

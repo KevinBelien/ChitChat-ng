@@ -11,14 +11,14 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { AuthService } from 'chit-chat/src/lib/auth';
-import { ButtonComponent } from 'chit-chat/src/lib/components/button';
+import { AuthService } from '@chit-chat/ng-chat/src/lib/auth';
+import { ButtonComponent } from '@chit-chat/ng-chat/src/lib/components/button';
 import {
 	frTranslations,
 	nlTranslations,
 	TranslationService,
-} from 'chit-chat/src/lib/localization';
-import { ScreenService } from 'chit-chat/src/lib/utils';
+} from '@chit-chat/ng-chat/src/lib/localization';
+import { ScreenService } from '@chit-chat/ng-chat/src/lib/utils';
 import { NavigationItem, navigationItems } from './app-navigation';
 
 @Component({

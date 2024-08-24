@@ -6,8 +6,8 @@ import {
 	input,
 	output,
 } from '@angular/core';
-import { IconComponent } from 'chit-chat/src/lib/components/icon';
-import { RippleDirective } from 'chit-chat/src/lib/utils';
+import { IconComponent } from '@chit-chat/ng-chat/src/lib/components/icon';
+import { RippleDirective } from '@chit-chat/ng-chat/src/lib/utils';
 import { ButtonIconProps, ButtonShape, ButtonType } from './models';
 import { ButtonFill } from './models/button-fill.type';
 

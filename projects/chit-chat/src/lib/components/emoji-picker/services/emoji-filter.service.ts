@@ -1,6 +1,9 @@
 import { Injectable } from '@angular/core';
-import { Language } from 'chit-chat/src/lib/localization';
-import { ArrayMap, ObjectHelper } from 'chit-chat/src/lib/utils';
+import { Language } from '@chit-chat/ng-chat/src/lib/localization';
+import {
+	ArrayMap,
+	ObjectHelper,
+} from '@chit-chat/ng-chat/src/lib/utils';
 
 @Injectable({ providedIn: 'root' })
 export class EmojiFilterService {

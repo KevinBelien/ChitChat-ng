@@ -25,20 +25,20 @@ import {
 	toSignal,
 } from '@angular/core/rxjs-interop';
 
-import { DialogComponent } from 'chit-chat/src/lib/components/dialog';
+import { DialogComponent } from '@chit-chat/ng-chat/src/lib/components/dialog';
 import {
 	TextBoxComponent,
 	ValueChangeEvent,
-} from 'chit-chat/src/lib/components/text-box';
+} from '@chit-chat/ng-chat/src/lib/components/text-box';
 import {
 	TranslatePipe,
 	TranslationService,
-} from 'chit-chat/src/lib/localization';
+} from '@chit-chat/ng-chat/src/lib/localization';
 import {
 	ClickActionType,
 	ClickEvent,
 	TouchHoldEvent,
-} from 'chit-chat/src/lib/utils';
+} from '@chit-chat/ng-chat/src/lib/utils';
 import {
 	debounce,
 	distinctUntilChanged,
