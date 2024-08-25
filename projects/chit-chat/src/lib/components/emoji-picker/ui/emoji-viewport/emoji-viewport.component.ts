@@ -283,7 +283,7 @@ export class EmojiViewportComponent implements AfterViewInit {
 		padding: number,
 		scrollbarWidth: number
 	): number => {
-		return width - 1 - scrollbarWidth - padding * 2;
+		return width - scrollbarWidth - padding * 2;
 	};
 
 	private getGlobalScrollbarWidth = (): number => {
