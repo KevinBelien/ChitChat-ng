@@ -1,4 +1,5 @@
 import { inject, Injectable, signal } from '@angular/core';
+import { NumberHelper } from '@chit-chat/ng-chat/src/lib/utils';
 import { EmojiRowGenerator } from '../helpers';
 import {
 	Emoji,
@@ -136,7 +137,10 @@ export class EmojiPickerService {
 			itemSizeMultiplier
 		);
 
-		return viewportSize / (maxEmojisPerRow * itemSizeMultiplier);
+		return NumberHelper.toFixedAndFloor(
+			viewportSize / (maxEmojisPerRow * itemSizeMultiplier),
+			2
+		);
 	};
 
 	calculateEmojisPerRow = (
@@ -145,7 +149,11 @@ export class EmojiPickerService {
 		itemSizeMultiplier: number
 	): number => {
 		return Math.floor(
-			viewportSize / (emojiSize * itemSizeMultiplier)
+			viewportSize /
+				NumberHelper.toFixedAndFloor(
+					emojiSize * itemSizeMultiplier,
+					2
+				)
 		);
 	};
 }

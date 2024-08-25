@@ -38,9 +38,11 @@ import { TranslatePipe } from '@chit-chat/ng-chat/src/lib/localization';
 import {
 	ClickEvent,
 	ClickTouchHoldDirective,
+	NumberHelper,
 	RippleDirective,
 	TouchHoldEvent,
 } from '@chit-chat/ng-chat/src/lib/utils';
+import { zip } from 'rxjs';
 import { EmojiPickerService } from '../../services';
 
 @Component({
@@ -64,8 +66,7 @@ import { EmojiPickerService } from '../../services';
 })
 export class EmojiViewportComponent implements AfterViewInit {
 	private emojiPickerService = inject(EmojiPickerService);
-
-	destroyRef = inject(DestroyRef);
+	private destroyRef = inject(DestroyRef);
 
 	viewport = viewChild<CdkVirtualScrollViewport>(
 		CdkVirtualScrollViewport
@@ -102,7 +103,10 @@ export class EmojiViewportComponent implements AfterViewInit {
 	onClick = output<ClickEvent>();
 	onScroll = output<void>();
 	onTouchHold = output<TouchHoldEvent>();
-	onEmojiSizeCalculated = output<number>();
+	onEmojiSizeCalculated = output<{
+		fontSize: number;
+		buttonSize: number;
+	}>();
 
 	scrollBarWidth = computed(() => {
 		const scrollbarVisible = this.scrollbarVisible();
@@ -125,11 +129,13 @@ export class EmojiViewportComponent implements AfterViewInit {
 		)
 	);
 
-	itemSize = computed(
-		() =>
+	itemSize = computed(() => {
+		return NumberHelper.toFixedAndFloor(
 			this.emojiSizeInPx() *
-			this.emojiPickerService.emojiItemSizeMultiplier()
-	);
+				this.emojiPickerService.emojiItemSizeMultiplier(),
+			2
+		);
+	});
 
 	suggestionEmojiRows = computed(() => {
 		const suggestionEmojis = this.suggestionEmojis();
@@ -180,7 +186,6 @@ export class EmojiViewportComponent implements AfterViewInit {
 
 	emojiRows = computed((): EmojiPickerRow[] => {
 		const filteredEmojis = this.filteredEmojis();
-
 		return !filteredEmojis.filterActive
 			? [...this.suggestionEmojiRows(), ...this.defaultEmojiRows()]
 			: this.filteredEmojiRows();
@@ -188,10 +193,16 @@ export class EmojiViewportComponent implements AfterViewInit {
 
 	emojiDataMap = this.emojiPickerService.emojiDataMap;
 
-	emojiSizeInPx$ = toObservable(this.emojiSizeInPx)
+	emojiSizeInPx$ = zip([
+		toObservable(this.emojiSizeInPx),
+		toObservable(this.itemSize),
+	])
 		.pipe(takeUntilDestroyed())
-		.subscribe((emojiSizeInPx) => {
-			this.onEmojiSizeCalculated.emit(emojiSizeInPx);
+		.subscribe(([emojiSizeInPx, itemSize]) => {
+			this.onEmojiSizeCalculated.emit({
+				fontSize: emojiSizeInPx,
+				buttonSize: itemSize,
+			});
 		});
 
 	navigatedManually = signal<boolean>(false);
@@ -272,7 +283,7 @@ export class EmojiViewportComponent implements AfterViewInit {
 		padding: number,
 		scrollbarWidth: number
 	): number => {
-		return width - 0.1 - scrollbarWidth - padding * 2;
+		return width - 1 - scrollbarWidth - padding * 2;
 	};
 
 	private getGlobalScrollbarWidth = (): number => {
@@ -306,6 +317,7 @@ export class EmojiViewportComponent implements AfterViewInit {
 				this.viewport()?.scrollToIndex(
 					index === 0 ? index : index + 1
 				);
+
 				return true;
 			}
 			return false;

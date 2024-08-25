@@ -22,10 +22,8 @@
 	color: var(--ch-text-color, #000);
 	font-weight: 500;
 	user-select: none;
-	height: calc(
-		var(--ch-emoji-size, 24px) *
-			var(--ch-emoji-btn-size-multiplier, 1.5) * 1px
-	);
+	height: calc(var(--ch-emoji-buttonsize) * 1px);
+
 	display: flex;
 	align-items: center;
 	width: 100%;

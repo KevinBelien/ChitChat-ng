@@ -2,7 +2,6 @@ import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
 	Component,
-	effect,
 	HostBinding,
 	inject,
 	Input,
@@ -41,20 +40,16 @@ export class EmojiSkintonePickerComponent {
 	emoji = model<Emoji | null>(null);
 
 	@Input()
-	@HostBinding('style.--ch-emoji-size')
+	@HostBinding('style.--ch-emoji-fontsize')
 	emojiSizeInPx?: number;
 
-	@HostBinding('style.--ch-emoji-btn-size-multiplier')
-	itemSizeMultiplier?: number;
+	@Input()
+	@HostBinding('style.--ch-emoji-buttonsize')
+	emojiButtonSizeInPx?: number;
 
 	onSelectionChanged = output<ClickEvent>();
 
 	constructor() {
-		effect(() => {
-			this.itemSizeMultiplier =
-				this.emojiPickerService.emojiItemSizeMultiplier();
-		});
-
 		this.disableContextMenu();
 	}
 

@@ -190,9 +190,9 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	targetElement?: HTMLElement;
 	selectedEmoji = signal<Emoji | null>(null);
 
-	@HostBinding('style.--ch-emoji-size') emojiSizeInPx?: number;
-	@HostBinding('style.--ch-emoji-btn-size-multiplier')
-	itemSizeMultiplier?: number;
+	@HostBinding('style.--ch-emoji-fontsize') emojiSizeInPx?: number;
+	@HostBinding('style.--ch-emoji-buttonsize')
+	emojiButtonSizeInPx?: number;
 
 	@HostBinding('style.--ch-padding-inline') padding?: number;
 
@@ -320,11 +320,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 
 	constructor() {
 		effect(() => (this.padding = this.emojiPickerService.padding()));
-
-		effect(() => {
-			this.itemSizeMultiplier =
-				this.emojiPickerService.emojiItemSizeMultiplier();
-		});
 	}
 
 	ngOnInit(): void {
@@ -377,8 +372,15 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		this.searchValue.set(evt.value);
 	};
 
-	protected handleEmojiSizeCalculated = (value: number) => {
-		this.emojiSizeInPx = value;
+	protected handleEmojiSizeCalculated = ({
+		fontSize,
+		buttonSize,
+	}: {
+		fontSize: number;
+		buttonSize: number;
+	}) => {
+		this.emojiSizeInPx = fontSize;
+		this.emojiButtonSizeInPx = buttonSize;
 	};
 
 	protected handleCategoryTabClicked = (category: EmojiCategory) => {

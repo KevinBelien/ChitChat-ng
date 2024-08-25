@@ -3,8 +3,8 @@
 	[ngClass]="{ 'ch-scroll-hidden': !scrollbarVisible() }"
 	[style.height]="'100%'"
 	[itemSize]="itemSize()"
-	[minBufferPx]="300"
-	[maxBufferPx]="500"
+	[minBufferPx]="100"
+	[maxBufferPx]="300"
 	(wheel)="handleWheelScroll($event)"
 	(scrolledIndexChange)="handleScrolledIndexChanged($event)"
 	chClickTouchHold
@@ -40,7 +40,7 @@
 			*cdkVirtualFor="
 				let row of emojiRows();
 				let index = index;
-				templateCacheSize: 30;
+				templateCacheSize: 20;
 				trackBy: trackEmojiRow
 			"
 			class="ch-row"

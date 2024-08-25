@@ -3,19 +3,13 @@ $emoji-btn-border-radius: 6px;
 button.ch-emoji-btn {
 	position: relative;
 	border-radius: $emoji-btn-border-radius;
-	font-size: calc(var(--ch-emoji-size, 24) * 1px);
+	font-size: calc(var(--ch-emoji-fontsize, 24) * 1px);
 	font-family: 'Apple Color Emoji', 'Noto Color Emoji',
 		'Twemoji Mozilla', 'EmojiOne', 'Twemoji Country Flags',
 		'Segoe UI Emoji', Segoe UI Symbol, Segoe UI;
 
-	width: calc(
-		var(--ch-emoji-size, 24) *
-			var(--ch-emoji-btn-size-multiplier, 1.5) * 1px
-	);
-	height: calc(
-		var(--ch-emoji-size, 24) *
-			var(--ch-emoji-btn-size-multiplier, 1.5) * 1px
-	);
+	width: calc(var(--ch-emoji-buttonsize) * 1px);
+	height: calc(var(--ch-emoji-buttonsize) * 1px);
 	background-color: transparent;
 	user-select: none;
 	border: none;

@@ -8,7 +8,9 @@
 		"serve": "ng serve --port 4223",
 		"build-chitchat:watch": "ng build chit-chat --watch",
 		"watch": "ng build --watch --configuration development",
-		"test": "ng test"
+		"test": "ng test",
+		"build-prod": "ng build chit-chat --configuration=production",
+		"publish": "npm run build-prod && cd dist/chit-chat && npm publish --access public"
 	},
 	"private": false,
 	"dependencies": {

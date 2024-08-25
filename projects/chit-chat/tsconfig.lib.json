@@ -1,32 +1,37 @@
 {
 	"extends": "../../tsconfig.json",
 	"compilerOptions": {
-		"outDir": "../../dist/out-tsc/lib", // Directory where the compiled files will be placed
-		"declaration": true, // Generate .d.ts files
-		"declarationMap": true, // Generate source maps for .d.ts files
-		"inlineSources": true, // Include original source in the source maps
-		"sourceMap": true, // Generate source maps for .js files
-		"types": [], // List of type definitions to include
-		"rootDir": "src", // Root directory of the library's source code
-		"baseUrl": ".", // Base URL for module resolution
-		"moduleResolution": "node", // Use Node.js module resolution strategy
-		"target": "es2022", // Set the ECMAScript target version
-		"module": "es2022", // Set the module code generation
-		"experimentalDecorators": true, // Enable experimental support for decorators
-		"importHelpers": true // Use import helpers to reduce bundle size
+		"outDir": "../../dist/out-tsc/lib",
+		"declaration": true,
+		"declarationMap": true,
+		"inlineSources": true,
+		"sourceMap": true,
+		"types": [],
+		"rootDir": "src",
+		"baseUrl": ".",
+		"moduleResolution": "node",
+		"target": "es2022",
+		"module": "es2022",
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"stripInternal": true,
+		"emitDecoratorMetadata": false,
+		"lib": ["es2022", "dom"],
+		"skipLibCheck": true,
+		"paths": {
+			"@chit-chat/ng-chat/*": ["src/app/components/*"]
+		}
 	},
 	"angularCompilerOptions": {
-		"flatModuleId": "@chit-chat/ng-chat", // Name of the flat module
-		"flatModuleOutFile": "chit-chat-ng-chat.js", // Output file name for the flat module
-		"annotateForClosureCompiler": true, // Enable annotations for Closure Compiler
-		"skipTemplateCodegen": true, // Skip generating code for templates
-		"strictMetadataEmit": true, // Strict metadata generation
-		"fullTemplateTypeCheck": true, // Enable full template type checking
-		"strictInjectionParameters": true, // Enable strict DI parameters checking
-		"enableIvy": true // Enable Ivy compilation
+		"flatModuleId": "@chit-chat/ng-chat",
+		"flatModuleOutFile": "chit-chat-ng-chat.js",
+		"annotateForClosureCompiler": false,
+		"strictMetadataEmit": true,
+		"skipTemplateCodegen": true,
+		"enableI18nLegacyMessageIdFormat": false,
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true
 	},
-	"exclude": [
-		"**/*.spec.ts", // Exclude test files
-		"**/test.ts"
-	]
+	"files": ["./public_api.ts"],
+	"exclude": ["**/*.spec.ts", "**/test.ts"]
 }
