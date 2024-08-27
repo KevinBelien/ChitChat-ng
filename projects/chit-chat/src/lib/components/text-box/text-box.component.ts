@@ -63,14 +63,54 @@ export class TextBoxComponent
 	 * @group Props
 	 */
 	value = model<string>('');
+
+	/**
+	 * Specifies whether the textbox should automatically receive focus when the page loads.
+	 * @group Props
+	 */
 	autofocus = input<boolean>(false);
+
+	/**
+	 * Specifies the mode of the textbox, determining its type and behavior.
+	 * @group Props
+	 */
 	mode = input<TextBoxMode>('text');
+
+	/**
+	 * Specifies the event that triggers the value change in the textbox.
+	 * @group Props
+	 */
 	valueChangeEvent = input<string>('change');
+
+	/**
+	 * Specifies the placeholder text to be displayed inside the textbox when it is empty.
+	 * @group Props
+	 */
 	placeholder = input<string>('');
+
+	/**
+	 * Specifies whether the textbox is disabled.
+	 * @group Props
+	 */
 	disabled = input<boolean>(false);
+
+	/**
+	 * Specifies the visual variant of the textbox, affecting its appearance.
+	 * @group Props
+	 */
 	variant = input<TextBoxVariant>('filled');
+
+	/**
+	 * Specifies whether a clear button should be displayed inside the textbox.
+	 * @group Props
+	 */
 	showClearButton = input<boolean>(false);
 
+	/**
+	 * Callback to execute when the value is changed.
+	 * @param {ValueChangeEvent} event - The event object containing details of the value change.
+	 * @group Outputs
+	 */
 	onValueChanged = output<ValueChangeEvent>();
 
 	textBoxClass = computed(() => {
@@ -110,7 +150,7 @@ export class TextBoxComponent
 		);
 	}
 
-	handleElementClick(event: Event): void {
+	handleElementClick = (event: Event): void => {
 		const inputElement =
 			this.elementRef.nativeElement.querySelector('input');
 
@@ -118,7 +158,7 @@ export class TextBoxComponent
 			event.preventDefault();
 			inputElement.focus();
 		}
-	}
+	};
 
 	ngOnDestroy(): void {
 		this.cleanupCurrentListener();
@@ -128,22 +168,17 @@ export class TextBoxComponent
 		}
 	}
 
-	writeValue(value: string): void {
-		this.value.set(value || '');
-	}
-
-	protected handleClearClick = (evt: MouseEvent) => {
-		this.value.set('');
-		this.setValue(this.value(), evt, 'clear');
+	registerOnChange = (fn: (value: string) => void): void => {
+		this.onChange = fn;
 	};
 
-	registerOnChange(fn: (value: string) => void): void {
-		this.onChange = fn;
-	}
-
-	registerOnTouched(fn: () => void): void {
+	registerOnTouched = (fn: () => void): void => {
 		this.onTouched = fn;
-	}
+	};
+
+	writeValue = (value: string): void => {
+		this.value.set(value || '');
+	};
 
 	private cleanupCurrentListener = () => {
 		if (this.currentListenerFn) {
@@ -151,7 +186,7 @@ export class TextBoxComponent
 		}
 	};
 
-	private updateEventListener(valueChangeEvent: string): void {
+	private updateEventListener = (valueChangeEvent: string): void => {
 		this.cleanupCurrentListener();
 
 		this.currentListenerFn = this.renderer.listen(
@@ -159,9 +194,9 @@ export class TextBoxComponent
 			valueChangeEvent,
 			(event: Event) => this.onEvent(event)
 		);
-	}
+	};
 
-	onEvent = (evt: Event): void => {
+	private onEvent = (evt: Event): void => {
 		const inputElement = evt.target as HTMLInputElement;
 
 		this.setValue(inputElement.value, evt, this.valueChangeEvent());
@@ -175,5 +210,10 @@ export class TextBoxComponent
 			value: value,
 			action,
 		});
+	};
+
+	protected handleClearClick = (evt: MouseEvent) => {
+		this.value.set('');
+		this.setValue(this.value(), evt, 'clear');
 	};
 }

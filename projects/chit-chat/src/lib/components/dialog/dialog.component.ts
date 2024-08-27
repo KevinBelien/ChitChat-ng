@@ -37,15 +37,55 @@ export class DialogComponent implements OnDestroy {
 
 	private portal = viewChild(CdkPortal);
 
+	/**
+	 * Specifies if popup is visible.
+	 * @group Props
+	 */
 	visible = model<boolean>(false);
+
+	/**
+	 * Specifies teh height of the popup.
+	 * @group Props
+	 */
 	height = input<number | string>('auto');
+
+	/**
+	 * Specifies the width of the popup.
+	 * @group Props
+	 */
 	width = input<number | string>('auto');
+
+	/**
+	 * Specifies the target element relative to which the popup should be positioned.
+	 * @group Props
+	 */
 	target = input<HTMLElement>();
+
+	/**
+	 * Specifies whether the popup should display a backdrop behind it.
+	 * @group Props
+	 */
 	hasBackdrop = input<boolean>(true);
-	closeOnBackdropClick = input<boolean>(true);
+
+	/**
+	 * Specifies the CSS class or classes to be applied to the backdrop element.
+	 * @group Props
+	 */
 	backdropClass = input<string | string[]>(
 		'cdk-overlay-dark-backdrop'
 	);
+
+	/**
+	 * Specifies whether the popup should close when the backdrop is clicked.
+	 * This property is only relevant if `hasBackdrop` is set to `true`.
+	 * @group Props
+	 */
+	closeOnBackdropClick = input<boolean>(true);
+
+	/**
+	 * Specifies an array of possible positions for the popup relative to the target element.
+	 * @group Props
+	 */
 	positions = input<ConnectedPosition[]>([
 		{
 			originX: 'center',
@@ -54,8 +94,17 @@ export class DialogComponent implements OnDestroy {
 			overlayY: 'center',
 		},
 	]);
+
+	/**
+	 * Specifies the CSS class or classes to be applied to the popup container element.
+	 * @group Props
+	 */
 	cssClass = input<string | string[]>('');
 
+	/**
+	 * Specifies the scroll strategy to be used for the popup.
+	 * @group Props
+	 */
 	scrollStrategy = input<ScrollStrategy>(
 		this.overlay.scrollStrategies.block()
 	);
@@ -100,9 +149,9 @@ export class DialogComponent implements OnDestroy {
 			);
 	};
 
-	private setupOnBackdropClickHandler(
+	private setupOnBackdropClickHandler = (
 		targetElement: HTMLElement | ElementRef
-	): void {
+	): void => {
 		const element =
 			targetElement instanceof ElementRef
 				? targetElement.nativeElement
@@ -135,13 +184,6 @@ export class DialogComponent implements OnDestroy {
 			.subscribe(() => {
 				this.close();
 			});
-	}
-
-	close = () => {
-		if (this.dialogRef) {
-			this.dialogRef.dispose();
-			this.visible.set(false);
-		}
 	};
 
 	private handleDialogPositionStrategy = (
@@ -180,5 +222,16 @@ export class DialogComponent implements OnDestroy {
 	private attachComponentToDialog = () => {
 		const componentRef = this.dialogRef?.attach(this.portal());
 		return componentRef;
+	};
+
+	/**
+	 * Close the dialog
+	 * @group Method
+	 */
+	close = () => {
+		if (this.dialogRef) {
+			this.dialogRef.dispose();
+			this.visible.set(false);
+		}
 	};
 }

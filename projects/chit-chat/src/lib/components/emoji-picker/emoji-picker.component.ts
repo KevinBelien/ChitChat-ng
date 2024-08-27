@@ -112,6 +112,13 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	emojiSkintonePickerDialog =
 		viewChild<DialogComponent>('skintoneDialog');
 
+	@HostBinding('style.--ch-emoji-fontsize') emojiSizeInPx?: number;
+
+	@HostBinding('style.--ch-emoji-buttonsize')
+	emojiButtonSizeInPx?: number;
+
+	@HostBinding('style.--ch-padding-inline') padding?: number;
+
 	/**
 	 * Specifies the height of the button
 	 * @group Props
@@ -187,14 +194,10 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	onEmojiSelected = output<Emoji>();
 
 	isSkintoneDialogVisible = model<boolean>(false);
+
 	targetElement?: HTMLElement;
+
 	selectedEmoji = signal<Emoji | null>(null);
-
-	@HostBinding('style.--ch-emoji-fontsize') emojiSizeInPx?: number;
-	@HostBinding('style.--ch-emoji-buttonsize')
-	emojiButtonSizeInPx?: number;
-
-	@HostBinding('style.--ch-padding-inline') padding?: number;
 
 	emojiCategoriesStream$ = toObservable(this.emojiCategories)
 		.pipe(takeUntilDestroyed())
@@ -356,7 +359,9 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		this.swatchPickerComponent()?.close();
 	};
 
-	//Load a polyfill for flag emojis. Windows doesn't support flag emojis
+	/**
+	 * Load a polyfill for flag emojis. Windows doesn't support flag emojis
+	 */
 	private loadCountryFlagEmojiPolyfill() {
 		const script = this.renderer.createElement('script');
 		script.type = 'module';

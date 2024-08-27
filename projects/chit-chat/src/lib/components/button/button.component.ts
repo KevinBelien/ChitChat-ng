@@ -168,7 +168,7 @@ export class ButtonComponent {
 		};
 	});
 
-	handleClick = (evt: MouseEvent) => {
+	protected handleClick = (evt: MouseEvent) => {
 		this.onClick.emit(evt);
 	};
 }
