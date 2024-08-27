@@ -4,7 +4,6 @@ import { AlternativeSkintone } from './skin-tone.model';
 /**
  * Representing an emoji object.
  * @group Interfaces
- * @interface Emoji
  */
 export interface Emoji {
 	id: string;

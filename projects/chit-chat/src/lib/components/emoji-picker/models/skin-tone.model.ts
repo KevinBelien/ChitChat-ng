@@ -2,7 +2,6 @@
  * Represents an alternative skintone variation for an emoji.
  *
  * @group Interfaces
- * @interface AlternativeSkintone
  */
 export interface AlternativeSkintone {
 	skintone: Skintone;
@@ -36,7 +35,6 @@ export type Skintone = (typeof skintones)[number];
  * Represents a specific skintone variation applied to an individual emoji.
  *
  * @group Interfaces
- * @interface IndividualEmojiSkintone
  */
 export interface IndividualEmojiSkintone {
 	emojiId: string;

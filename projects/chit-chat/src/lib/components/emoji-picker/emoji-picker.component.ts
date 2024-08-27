@@ -174,18 +174,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	 * Specifies the categories to be included in the emoji picker
 	 * The order will be respected, except for suggestion category
 	 * @group Props
-	 * @default
-	 * 	[
-	 *   "suggestions",
-	 *   "smileys-people",
-	 *   "animals-nature",
-	 *   "food-drink",
-	 *   "travel-places",
-	 *   "objects",
-	 *   "activities",
-	 *   "symbols",
-	 *   "flags"
-	 * ]
 	 */
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
 
