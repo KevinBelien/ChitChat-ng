@@ -28,6 +28,10 @@ import { ValueChangeEvent } from './models';
 import { TextBoxMode } from './models/text-box-mode.type';
 import { TextBoxVariant } from './models/text-box-variant.type';
 
+/**
+ * A customizable text box component that supports different modes, visual variants, and value change handling.
+ * @component
+ */
 @Component({
 	selector: 'ch-text-box',
 	standalone: true,
@@ -60,7 +64,7 @@ export class TextBoxComponent
 
 	/**
 	 * The input's current value
-	 * @group Props
+	 * @group TwoWayBindings
 	 */
 	value = model<string>('');
 

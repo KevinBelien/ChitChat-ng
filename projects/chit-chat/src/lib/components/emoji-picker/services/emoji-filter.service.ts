@@ -5,8 +5,24 @@ import {
 	ObjectHelper,
 } from '@chit-chat/ng-chat/src/lib/utils';
 
+/**
+ * A service responsible for filtering emojis based on a search value and language.
+ * It provides methods to match and score emojis according to their keywords in different languages.
+ *
+ * @service
+ * @providedIn root
+ */
 @Injectable({ providedIn: 'root' })
 export class EmojiFilterService {
+	/**
+	 * Filters emojis based on a search value and language.
+	 * Optionally restricts the search to a specified list of included emojis.
+	 * @group Method
+	 * @param {string} searchValue - The value to search for within emoji keywords.
+	 * @param {Language} language - The language in which to perform the search.
+	 * @param {string[]} [includedEmojis] - An optional list of emoji IDs to include in the search.
+	 * @returns {Promise<string[]>} A promise that resolves to a list of emoji IDs that match the search criteria.
+	 */
 	filter = async (
 		searchValue: string,
 		language: Language,
@@ -25,7 +41,7 @@ export class EmojiFilterService {
 
 		const normalizedSearchValue = searchValue.trim().toLowerCase();
 
-		const scoredResults = [];
+		const scoredResults: Array<{ key: string; score: number }> = [];
 
 		for (const key in filteredTranslations) {
 			const keywords = filteredTranslations[key];
@@ -92,7 +108,7 @@ export class EmojiFilterService {
 		}
 	};
 
-	getTranslationFilename = (
+	private getTranslationFilename = (
 		language: Language
 	): TranslationFilename | null => {
 		switch (language) {

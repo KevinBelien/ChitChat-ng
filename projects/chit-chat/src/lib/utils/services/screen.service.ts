@@ -3,12 +3,7 @@ import {
 	Breakpoints,
 	BreakpointState as CdkBreakpointState,
 } from '@angular/cdk/layout';
-import {
-	DestroyRef,
-	inject,
-	Injectable,
-	Signal,
-} from '@angular/core';
+import { inject, Injectable, Signal } from '@angular/core';
 import { toSignal } from '@angular/core/rxjs-interop';
 import { map } from 'rxjs';
 import {
@@ -18,11 +13,23 @@ import {
 	BreakpointStatus,
 } from '../models';
 
+/**
+ * A service that provides information about the current screen size and device type.
+ * It leverages Angular's CDK BreakpointObserver to monitor screen size changes and determine the current breakpoint.
+ *
+ * @service
+ * @providedIn root
+ */
 @Injectable({ providedIn: 'root' })
 export class ScreenService {
-	destroyRef = inject(DestroyRef);
 	breakpointObserver = inject(BreakpointObserver);
 
+	/**
+	 * A signal that represents the current breakpoint state, including the active breakpoint and status of all breakpoints.
+	 *
+	 * @type {Signal<BreakpointState>}
+	 * @description This signal updates automatically when the screen size changes.
+	 */
 	breakpointState: Signal<BreakpointState>;
 
 	constructor() {
@@ -43,7 +50,7 @@ export class ScreenService {
 		);
 	}
 
-	calculateBreakpoints = (): BreakpointState => {
+	private calculateBreakpoints = (): BreakpointState => {
 		const breakpointStatus = this.getBreakpoints();
 
 		return {
@@ -52,7 +59,7 @@ export class ScreenService {
 		};
 	};
 
-	getBreakpoints = (): BreakpointStatus => {
+	private getBreakpoints = (): BreakpointStatus => {
 		return {
 			xs: this.breakpointObserver.isMatched(Breakpoints.XSmall),
 			sm: this.breakpointObserver.isMatched(Breakpoints.Small),
@@ -62,6 +69,12 @@ export class ScreenService {
 		};
 	};
 
+	/**
+	 * Determines the current active breakpoint based on the status of all breakpoints.
+	 * @group Method
+	 * @param {BreakpointStatus} breakpointStatus - The status of each breakpoint.
+	 * @returns {Breakpoint} The current active breakpoint.
+	 */
 	getCurrentBreakpoint = (
 		breakpointStatus: BreakpointStatus
 	): Breakpoint => {
@@ -72,6 +85,12 @@ export class ScreenService {
 		);
 	};
 
+	/**
+	 * Calculates a consolidated status for each breakpoint, indicating whether a breakpoint or any larger breakpoint is active.
+	 * @group Method
+	 * @param {BreakpointStatus} breakpointStatus - The status of each breakpoint.
+	 * @returns {BreakpointStatus} A consolidated status for each breakpoint.
+	 */
 	calculateBreakpointStatus = (
 		breakpointStatus: BreakpointStatus
 	): BreakpointStatus => {
@@ -96,7 +115,12 @@ export class ScreenService {
 		};
 	};
 
-	isMobile = () => {
+	/**
+	 * Determines whether the application is running on a mobile device based on the user agent string.
+	 * @group Method
+	 * @returns {boolean} True if the application is running on a mobile device, otherwise false.
+	 */
+	isMobile = (): boolean => {
 		return (
 			/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
 				navigator.userAgent
@@ -106,7 +130,12 @@ export class ScreenService {
 		);
 	};
 
-	isIos = () => {
+	/**
+	 * Determines whether the application is running on an iOS device based on the user agent string.
+	 * @group Method
+	 * @returns {boolean} True if the application is running on an iOS device, otherwise false.
+	 */
+	isIos = (): boolean => {
 		return /(iPad|iPhone|iPod)/g.test(navigator.userAgent);
 	};
 }

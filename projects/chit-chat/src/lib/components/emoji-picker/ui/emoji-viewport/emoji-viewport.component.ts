@@ -39,12 +39,18 @@ import {
 	ClickEvent,
 	ClickTouchHoldDirective,
 	NumberHelper,
+	PreventContextMenuDirective,
 	RippleDirective,
 	TouchHoldEvent,
 } from '@chit-chat/ng-chat/src/lib/utils';
 import { zip } from 'rxjs';
 import { EmojiPickerService } from '../../services';
 
+/**
+ * A virtual scroll viewport component for displaying emojis in different categories.
+ * Supports filtering, category navigation, and size calculations for efficient rendering.
+ * @component
+ */
 @Component({
 	selector: 'ch-emoji-viewport',
 	standalone: true,
@@ -52,6 +58,7 @@ import { EmojiPickerService } from '../../services';
 		CommonModule,
 		ScrollingModule,
 		ClickTouchHoldDirective,
+		PreventContextMenuDirective,
 		EmojiButtonComponent,
 		RippleDirective,
 		TranslatePipe,
@@ -59,6 +66,7 @@ import { EmojiPickerService } from '../../services';
 	templateUrl: './emoji-viewport.component.html',
 	styleUrls: ['./emoji-viewport.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
+	hostDirectives: [PreventContextMenuDirective],
 	host: {
 		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
@@ -72,10 +80,26 @@ export class EmojiViewportComponent implements AfterViewInit {
 		CdkVirtualScrollViewport
 	);
 
+	/**
+	 * Specifies the list of default emojis to be displayed.
+	 * @group Props
+	 */
 	emojis = input<Emoji[]>([...emojis]);
+
+	/**
+	 * Specifies the suggested emojis that should be displayed.
+	 * This includes a list of emojis to be suggested in either 'recent' or 'frequent' mode.
+	 * @group Props
+	 */
 	suggestionEmojis = input<SuggestionEmojis | null>(null);
+
+	/**
+	 * Filtered emojis based on active filters.
+	 * Contains filter state and the list of emojis that match the filter criteria.
+	 * @group Props
+	 */
 	filteredEmojis = input<FilteredEmojis>({
-		filterActive: true,
+		filterActive: false,
 		emojis: [],
 	});
 
@@ -86,27 +110,99 @@ export class EmojiViewportComponent implements AfterViewInit {
 			this.viewport()?.scrollToIndex(0);
 		});
 
+	/**
+	 * List of emoji categories to be displayed.
+	 * @group Props
+	 */
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
+
+	/**
+	 * Specifies the size option for the emojis.
+	 * @group Props
+	 * @default 'default'
+	 */
 	emojiSize = input<EmojiSizeOption>('default');
+
+	/**
+	 * Height of the viewport in pixels.
+	 * @group Props
+	 * @default 400
+	 */
 	height = input<number>(400);
+
+	/**
+	 * Width of the viewport in pixels.
+	 * @group Props
+	 * @default 350
+	 */
 	width = input<number>(350);
+
+	/**
+	 * Specifies whether the scrollbar should be visible.
+	 * @group Props
+	 * @default true
+	 */
 	scrollbarVisible = input<boolean>(true);
+
+	/**
+	 * The currently selected emoji category.
+	 * @group TwoWayBindings
+	 * @default 0
+	 */
 	currentCategory = model<EmojiCategory>(this.emojiCategories()[0]);
-	stickyHeaderCategory = signal<EmojiCategory>(
-		this.emojiCategories()[0]
-	);
+
+	/**
+	 * Step size for scrolling using the scroll wheel, in pixels.
+	 * @group Props
+	 */
 	scrollWheelStep = input<number>();
+
+	/**
+	 * This indicator signifies that skintone variations are available for the associated emoji.
+	 * @group Props
+	 * @default true
+	 */
 	showSkintoneIndicator = input<boolean>(true);
 
-	scrollIndex = signal<number>(0);
-
+	/**
+	 * Callback function to be executed when an emoji is clicked.
+	 * @param {ClickEvent} event - The event object containing details about the click.
+	 * @group Outputs
+	 */
 	onClick = output<ClickEvent>();
+
+	/**
+	 * Callback function to be executed when the component is scrolled.
+	 * @group Outputs
+	 */
 	onScroll = output<void>();
+
+	/**
+	 * Callback function to be executed when an emoji is held down (long press).
+	 * @param {TouchHoldEvent} event - The event object containing details about the touch hold.
+	 * @group Outputs
+	 */
 	onTouchHold = output<TouchHoldEvent>();
+
+	/**
+	 * Callback function to be executed when the emoji size is calculated in pixels.
+	 * @param {Object} size - An object containing the calculated font size and button size.
+	 * @param {number} size.fontSize - The calculated font size in pixels.
+	 * @param {number} size.buttonSize - The calculated button size in pixels.
+	 * @group Outputs
+	 */
 	onEmojiSizeCalculated = output<{
 		fontSize: number;
 		buttonSize: number;
 	}>();
+
+	scrollIndex = signal<number>(0);
+
+	stickyHeaderCategory = signal<EmojiCategory>(
+		this.emojiCategories()[0]
+	);
+
+	navigatedManually = signal<boolean>(false);
 
 	scrollBarWidth = computed(() => {
 		const scrollbarVisible = this.scrollbarVisible();
@@ -205,8 +301,6 @@ export class EmojiViewportComponent implements AfterViewInit {
 			});
 		});
 
-	navigatedManually = signal<boolean>(false);
-
 	@HostBinding('style.--sticky-offset')
 	stickyHeaderOffset: number = 0;
 
@@ -292,17 +386,6 @@ export class EmojiViewportComponent implements AfterViewInit {
 			'--ch-scrollbar-size'
 		);
 		return parseFloat(scrollbarWidth.replace('px', '').trim());
-	};
-
-	navigateToCategory = (category: EmojiCategory): void => {
-		const index = this.calculateIndexOfCategory(category);
-
-		if (index !== -1) {
-			this.scrollIndex.set(index);
-			this.handleNavigation(index);
-		} else {
-			console.error(`Invalid category: ${category}.`);
-		}
 	};
 
 	private handleNavigation = (index: number): void => {
@@ -409,5 +492,22 @@ export class EmojiViewportComponent implements AfterViewInit {
 		row: EmojiPickerRow
 	): string => {
 		return row.id;
+	};
+
+	/**
+	 * Navigates to the specified emoji category.
+	 * Scrolls the emoji picker to the first emoji in the specified category if it exists.
+	 * @param {EmojiCategory} category - The `EmojiCategory` to navigate to.
+	 * @group Method
+	 */
+	navigateToCategory = (category: EmojiCategory): void => {
+		const index = this.calculateIndexOfCategory(category);
+
+		if (index !== -1) {
+			this.scrollIndex.set(index);
+			this.handleNavigation(index);
+		} else {
+			console.error(`Invalid category: ${category}.`);
+		}
 	};
 }

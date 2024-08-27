@@ -22,6 +22,10 @@ import {
 } from '@angular/core';
 import { filter } from 'rxjs';
 
+/**
+ * Dialog is a container to display content in an overlay window.
+ * @component
+ */
 @Component({
 	selector: 'ch-dialog',
 	standalone: true,
@@ -39,19 +43,22 @@ export class DialogComponent implements OnDestroy {
 
 	/**
 	 * Specifies if popup is visible.
-	 * @group Props
+	 * @group TwoWayBindings
+	 * @default false
 	 */
 	visible = model<boolean>(false);
 
 	/**
 	 * Specifies teh height of the popup.
 	 * @group Props
+	 * @default 'auto'
 	 */
 	height = input<number | string>('auto');
 
 	/**
 	 * Specifies the width of the popup.
 	 * @group Props
+	 * @default 'auto'
 	 */
 	width = input<number | string>('auto');
 
@@ -64,12 +71,14 @@ export class DialogComponent implements OnDestroy {
 	/**
 	 * Specifies whether the popup should display a backdrop behind it.
 	 * @group Props
+	 * @default true
 	 */
 	hasBackdrop = input<boolean>(true);
 
 	/**
 	 * Specifies the CSS class or classes to be applied to the backdrop element.
 	 * @group Props
+	 * @default 'cdk-overlay-dark-backdrop'
 	 */
 	backdropClass = input<string | string[]>(
 		'cdk-overlay-dark-backdrop'
@@ -79,12 +88,21 @@ export class DialogComponent implements OnDestroy {
 	 * Specifies whether the popup should close when the backdrop is clicked.
 	 * This property is only relevant if `hasBackdrop` is set to `true`.
 	 * @group Props
+	 * @default true
 	 */
 	closeOnBackdropClick = input<boolean>(true);
 
 	/**
 	 * Specifies an array of possible positions for the popup relative to the target element.
 	 * @group Props
+	 * @default [
+	 *{
+	 *	originX: 'center',
+	 *	originY: 'center',
+	 *	overlayX: 'center',
+	 *	overlayY: 'center',
+	 *},
+	 *]
 	 */
 	positions = input<ConnectedPosition[]>([
 		{
@@ -98,12 +116,14 @@ export class DialogComponent implements OnDestroy {
 	/**
 	 * Specifies the CSS class or classes to be applied to the popup container element.
 	 * @group Props
+	 * @default ''
 	 */
 	cssClass = input<string | string[]>('');
 
 	/**
 	 * Specifies the scroll strategy to be used for the popup.
 	 * @group Props
+	 * @default overlay.scrollStrategies.block()
 	 */
 	scrollStrategy = input<ScrollStrategy>(
 		this.overlay.scrollStrategies.block()

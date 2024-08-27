@@ -1,48 +1,58 @@
-import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { isPlatformBrowser } from '@angular/common';
 import {
 	booleanAttribute,
 	Directive,
 	ElementRef,
 	inject,
-	Input,
+	input,
 	PLATFORM_ID,
+	signal,
 } from '@angular/core';
 
+/**
+ * AutoFocus manages focus on focusable element on load.
+ * @directive
+ * @selector [chAutofocus]
+ */
 @Directive({
 	selector: '[chAutofocus]',
 	standalone: true,
 })
 export class AutofocusDirective {
-	@Input({ transform: booleanAttribute }) autofocus: boolean = false;
+	private platformId = inject(PLATFORM_ID);
+	private host: ElementRef = inject(ElementRef);
 
-	focused: boolean = false;
+	/**
+	 * When present, it specifies that the component should automatically get focus on load.
+	 * @group Props
+	 * @default true
+	 */
+	autofocus = input(true, {
+		transform: booleanAttribute,
+	});
 
-	platformId = inject(PLATFORM_ID);
-
-	document: Document = inject(DOCUMENT);
-
-	host: ElementRef = inject(ElementRef);
+	private focused = signal<boolean>(false);
 
 	ngAfterContentChecked() {
-		if (this.autofocus === false) {
+		if (!this.autofocus()) {
 			this.host.nativeElement.removeAttribute('autofocus');
 		} else {
 			this.host.nativeElement.setAttribute('autofocus', true);
 		}
 
-		if (!this.focused) {
-			this.autoFocus();
+		if (!this.focused()) {
+			this.startAutoFocus();
 		}
 	}
 
 	ngAfterViewChecked() {
-		if (!this.focused) {
-			this.autoFocus();
+		if (!this.focused()) {
+			this.startAutoFocus();
 		}
 	}
 
-	autoFocus() {
-		if (isPlatformBrowser(this.platformId) && this.autofocus) {
+	startAutoFocus() {
+		if (isPlatformBrowser(this.platformId) && this.autofocus()) {
 			setTimeout(() => {
 				const focusableElements = this.getFocusableElements(
 					this.host?.nativeElement
@@ -55,7 +65,7 @@ export class AutofocusDirective {
 					focusableElements[0].focus();
 				}
 
-				this.focused = true;
+				this.focused.set(true);
 			});
 		}
 	}

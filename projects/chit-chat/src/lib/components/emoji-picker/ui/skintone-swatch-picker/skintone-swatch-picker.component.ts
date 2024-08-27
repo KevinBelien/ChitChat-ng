@@ -15,6 +15,10 @@ import {
 	skintoneColors,
 } from '../../models';
 
+/**
+ * A component that provides a swatch picker for selecting different global skintones.
+ * @component
+ */
 @Component({
 	selector: 'ch-skintone-swatch-picker',
 	standalone: true,
@@ -24,15 +28,24 @@ import {
 	styleUrl: './skintone-swatch-picker.component.scss',
 })
 export class SkintoneSwatchPickerComponent {
+	readonly skintoneColors: SkintoneColor[] = [...skintoneColors];
 	isOpen = signal<boolean>(false);
 
-	readonly skintoneColors: SkintoneColor[] = [...skintoneColors];
-
+	/**
+	 * Specifies the currently selected skintone.
+	 * @group TwoWayBindings
+	 * @default 'default'
+	 */
 	selectedSkintone = model<Skintone>('default');
 
+	/**
+	 * Specifies the size of the skintone swatch in pixels.
+	 * @group Props
+	 * @default 20
+	 */
 	@Input()
 	@HostBinding('style.--ch-skincolor-swatch-size')
-	size = 20;
+	size: number = 20;
 
 	@HostBinding('style.--ch-skincolor-swatch-padding')
 	itemPadding: number = 12;
@@ -40,13 +53,20 @@ export class SkintoneSwatchPickerComponent {
 	@HostBinding('style.--ch-skincolor-swatch-count')
 	skintoneCount: number = this.skintoneColors.length;
 
+	/**
+	 * Callback function to be executed when a skintone is selected.
+	 * @param {Skintone} skintone - The `Skintone` object representing the selected skintone.
+	 * @group Outputs
+	 */
 	onSelectionChanged = output<Skintone>();
 
 	selectedColor = computed(() => {
 		return this.getColorBySkintone(this.selectedSkintone());
 	});
 
-	getColorBySkintone = (skintone: Skintone): SkintoneColor => {
+	private getColorBySkintone = (
+		skintone: Skintone
+	): SkintoneColor => {
 		return (
 			this.skintoneColors.find(
 				(color) => color.skintone === skintone
@@ -54,15 +74,26 @@ export class SkintoneSwatchPickerComponent {
 		);
 	};
 
+	/**
+	 * Toggles the visibility of the swatch picker.
+	 * @group Method
+	 */
 	toggle() {
 		this.isOpen.set(!this.isOpen());
 	}
 
+	/**
+	 * Closes the swatch picker.
+	 * @group Method
+	 */
 	close = () => {
 		this.isOpen.set(false);
 	};
 
-	handleClick = (skintoneColor: SkintoneColor, event: Event) => {
+	protected handleClick = (
+		skintoneColor: SkintoneColor,
+		event: Event
+	) => {
 		event.stopPropagation();
 
 		if (!!this.isOpen()) {
@@ -72,7 +103,7 @@ export class SkintoneSwatchPickerComponent {
 		this.toggle();
 	};
 
-	getPosition = (index: number) => {
+	protected getPosition = (index: number) => {
 		if (!this.isOpen()) return 'translateX(0px)';
 
 		const position = -(index * (this.size + this.itemPadding));

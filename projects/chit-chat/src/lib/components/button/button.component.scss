@@ -133,7 +133,7 @@
 }
 
 // Button Styles
-.ch-button {
+::ng-deep .ch-button {
 	display: inline-flex;
 	font-family: inherit;
 	cursor: pointer;

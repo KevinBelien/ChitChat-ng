@@ -5,6 +5,11 @@ import {
 	input,
 } from '@angular/core';
 
+/**
+ * Icon component that supports rendering SVG icons.
+ *
+ * @component
+ */
 @Component({
 	selector: 'ch-icon',
 	standalone: true,

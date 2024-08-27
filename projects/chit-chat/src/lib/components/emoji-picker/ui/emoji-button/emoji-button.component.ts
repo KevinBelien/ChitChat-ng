@@ -7,6 +7,10 @@ import {
 
 import { RippleDirective } from '@chit-chat/ng-chat/src/lib/utils';
 
+/**
+ * A button component for displaying an emoji, with optional support for indicating skintone variations.
+ * @component
+ */
 @Component({
 	selector: 'ch-emoji-button',
 	standalone: true,
@@ -20,7 +24,16 @@ import { RippleDirective } from '@chit-chat/ng-chat/src/lib/utils';
 	},
 })
 export class EmojiButtonComponent {
+	/**
+	 * Specifies the emoji that should be displayed.
+	 * @group Props
+	 */
 	emoji = input<string>();
 
+	/**
+	 * This indicator signifies that skintone variations are available for the associated emoji.
+	 * @group Props
+	 * @default false
+	 */
 	showSkintoneIndicator = input<boolean>(false);
 }

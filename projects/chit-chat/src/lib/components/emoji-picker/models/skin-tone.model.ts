@@ -19,3 +19,7 @@ export interface IndividualEmojiSkintone {
 	emojiId: string;
 	emojiValue: string;
 }
+
+export const isValidSkintone = (value: string): value is Skintone => {
+	return skintones.includes(value as Skintone);
+};

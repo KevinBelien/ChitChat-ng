@@ -12,11 +12,15 @@ import {
 import {
 	ClickEvent,
 	ClickTouchHoldDirective,
+	PreventContextMenuDirective,
 } from '@chit-chat/ng-chat/src/lib/utils';
 import { Emoji } from '../../models';
-import { EmojiPickerService } from '../../services';
 import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 
+/**
+ * A component for selecting different skintones of an emoji.
+ * @component
+ */
 @Component({
 	selector: 'ch-emoji-skintone-picker',
 	standalone: true,
@@ -27,6 +31,7 @@ import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 	],
 	templateUrl: './emoji-skintone-picker.component.html',
 	styleUrl: './emoji-skintone-picker.component.scss',
+	hostDirectives: [PreventContextMenuDirective],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
 		'collision-id': crypto.randomUUID(),
@@ -34,20 +39,38 @@ import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 	},
 })
 export class EmojiSkintonePickerComponent {
-	private emojiPickerService = inject(EmojiPickerService);
 	private renderer = inject(Renderer2);
 
+	/**
+	 * Specifies the emoji that should be displayed.
+	 * @group TwoWayBindings
+	 */
 	emoji = model<Emoji | null>(null);
 
+	/**
+	 * Specifies the font size of the emoji in pixels.
+	 * @group Props
+	 */
 	@Input()
 	@HostBinding('style.--ch-emoji-fontsize')
 	emojiSizeInPx?: number;
 
+	/**
+	 * Specifies the button size of the emoji in pixels.
+	 * @group Props
+	 */
 	@Input()
 	@HostBinding('style.--ch-emoji-buttonsize')
 	emojiButtonSizeInPx?: number;
 
+	/**
+	 * Callback function to be executed when a skintone is selected.
+	 * @param {ClickEvent} clickEvent - The event object representing the user's selection.
+	 * @group Outputs
+	 */
 	onSelectionChanged = output<ClickEvent>();
+
+	readonly dataAttribute = 'data-skintone';
 
 	constructor() {
 		this.disableContextMenu();

@@ -18,6 +18,10 @@ import {
 import { emojiCategories, EmojiCategory } from '../../models';
 import { emojiCategoryIcons } from '../icons';
 
+/**
+ * A component that renders tabs for different emoji categories.
+ * @component
+ */
 @Component({
 	selector: 'ch-emoji-tabs',
 	standalone: true,
@@ -38,18 +42,33 @@ import { emojiCategoryIcons } from '../icons';
 export class EmojiTabsComponent {
 	private screenService = inject(ScreenService);
 
+	/**
+	 * Specifies the list of emoji categories that should be displayed.
+	 * @group Props
+	 */
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
 
+	/**
+	 * Specifies the currently selected emoji category tab.
+	 * @group TwoWayBindings
+	 * @default 0
+	 */
 	selectedTab = model<EmojiCategory>(this.emojiCategories()[0]);
 
 	categoryHovered = signal<EmojiCategory | null>(null);
 
-	readonly emojiCategoryIcons = emojiCategoryIcons;
-
+	/**
+	 * Callback function to be executed when an emoji category tab is clicked.
+	 * @param {EmojiCategory} category - The `EmojiCategory` object representing the clicked tab.
+	 * @group Outputs
+	 */
 	onTabClicked = output<EmojiCategory>();
 
-	constructor() {}
+	readonly emojiCategoryIcons = emojiCategoryIcons;
+
 	readonly isMobile = this.screenService.isMobile();
+
+	constructor() {}
 
 	protected handleHoverChange = (
 		evt: HoverEvent,

@@ -11,7 +11,7 @@ import { ScreenService } from '@chit-chat/ng-chat/src/lib/utils';
 import { LibConfig } from '../lib-config/models';
 import { LibConfigService } from '../lib-config/services/lib-config.service';
 
-export function initializeDocument(
+function initializeDocument(
 	document: Document,
 	screenService: ScreenService
 ): () => void {
@@ -22,6 +22,13 @@ export function initializeDocument(
 	};
 }
 
+/**
+ * Provides the configuration and necessary services for the ChitChat module.
+ * This function is used in the module's `forRoot` method to configure the library at the application level.
+ *
+ * @param {LibConfig} config - The configuration object for the library, including Firebase options.
+ * @returns {Provider[]} An array of providers required for the ChitChat module.
+ */
 export function provideChitChat(config: LibConfig): Provider[] {
 	return [
 		{
@@ -42,6 +49,13 @@ export function provideChitChat(config: LibConfig): Provider[] {
 		},
 	];
 }
+
+/**
+ * A module that provides all the necessary services and configuration for the ChitChat library.
+ * Use the `forRoot` method to configure the module with a custom `LibConfig`.
+ *
+ * @module ChitChatModule
+ */
 
 @NgModule()
 export class ChitChatModule {

@@ -1,6 +1,7 @@
 export * from './category-bar-position.model';
 export * from './emoji-category.model';
 export * from './emoji-picker-row.model';
+export * from './emoji-row-generation-config.type';
 export * from './emoji-size.enum';
 export * from './emoji-suggestion-mode.model';
 export * from './emoji.model';

@@ -4,12 +4,20 @@ import {
 	Directive,
 	ElementRef,
 	Inject,
-	Input,
+	input,
 	NgZone,
 	OnDestroy,
 	Renderer2,
 } from '@angular/core';
 
+/**
+ * A directive that adds a ripple effect to an element when it is clicked or tapped.
+ * The ripple effect is a visual feedback indicating the point of interaction.
+ *
+ * @directive
+ * @selector [chRipple]
+ * @hostclass ch-ripple
+ */
 @Directive({
 	selector: '[chRipple]',
 	standalone: true,
@@ -18,11 +26,18 @@ import {
 	},
 })
 export class RippleDirective implements AfterViewInit, OnDestroy {
-	@Input() rippleEnabled: boolean = true;
-
 	private hostEl: HTMLElement;
-	private pointerDownListener?: () => void;
 	private inkElement?: HTMLElement;
+
+	/**
+	 * Controls whether the ripple effect is enabled.
+	 *
+	 * @group Props
+	 * @default true
+	 */
+	rippleEnabled = input<boolean>(true);
+
+	private pointerDownListener?: () => void;
 
 	constructor(
 		private renderer: Renderer2,
@@ -81,7 +96,7 @@ export class RippleDirective implements AfterViewInit, OnDestroy {
 	}
 
 	private onPointerDown(evt: MouseEvent) {
-		if (!this.rippleEnabled) return;
+		if (!this.rippleEnabled()) return;
 
 		this.createInkElement();
 		if (!this.inkElement) return;

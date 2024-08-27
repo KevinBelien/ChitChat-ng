@@ -1,4 +1,4 @@
-import { Skintone } from './skin-tone.model';
+import { Skintone } from '.';
 
 export const skintoneColors: SkintoneColor[] = [
 	{ skintone: 'default', color: '#ffc83d' },

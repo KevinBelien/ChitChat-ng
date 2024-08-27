@@ -11,6 +11,11 @@ import { RippleDirective } from '@chit-chat/ng-chat/src/lib/utils';
 import { ButtonIconProps, ButtonShape, ButtonType } from './models';
 import { ButtonFill } from './models/button-fill.type';
 
+/**
+ * A customizable button component that supports different styles, sizes, shapes, and behaviors.
+ * @component
+ * @standalone
+ */
 @Component({
 	selector: 'ch-button',
 	standalone: true,
@@ -58,48 +63,56 @@ export class ButtonComponent {
 	/**
 	 * 	Specifies whether the button responds to user interaction.
 	 * @group Props
+	 * @default false
 	 */
 	disabled = input<boolean>(false);
 
 	/**
 	 * Specifies whether the button changes its visual state as a result of user interaction.
 	 * @group Props
+	 * @default true
 	 */
 	activeStateEnabled = input<boolean>(true);
 
 	/**
 	 * Specifies whether the button can be focused.
 	 * @group Props
+	 * @default true
 	 */
 	focusStateEnabled = input<boolean>(true);
 
 	/**
 	 * Specifies whether the button changes its state when a user pauses on it.
 	 * @group Props
+	 * @default true
 	 */
 	hoverStateEnabled = input<boolean>(true);
 
 	/**
 	 * Specifies the button's visual type.
 	 * @group Props
+	 * @default 'primary'
 	 */
 	type = input<ButtonType>('primary');
 
 	/**
 	 * Specifies how the button is styled.
 	 * @group Props
+	 * @default 'solid'
 	 */
 	fill = input<ButtonFill>('solid');
 
 	/**
 	 * Indicates whether the button should have an elevated appearance.
 	 * @group Props
+	 * @default false
 	 */
 	raised = input<boolean>(false);
 
 	/**
 	 * Indicates the shape of the button
 	 * @group Props
+	 * @default 'square'
 	 */
 	shape = input<ButtonShape>('square');
 

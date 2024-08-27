@@ -1,4 +1,3 @@
-import { Overlay, OverlayRef } from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
 import {
 	ChangeDetectionStrategy,
@@ -71,6 +70,12 @@ import { EmojiTabsComponent } from './ui/emoji-tabs/emoji-tabs.component';
 import { EmojiViewportComponent } from './ui/emoji-viewport/emoji-viewport.component';
 import { SkintoneSwatchPickerComponent } from './ui/skintone-swatch-picker/skintone-swatch-picker.component';
 
+/**
+ * A highly customizable emoji picker that allows users to select emojis,
+ * filter them, and adjust settings like skintone. This component supports
+ * multiple categories, custom emoji sizes, and skintone selection.
+ * @component
+ */
 @Component({
 	selector: 'ch-emoji-picker',
 	standalone: true,
@@ -97,7 +102,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	private emojiFilterService = inject(EmojiFilterService);
 	private renderer = inject(Renderer2);
 	private elementRef = inject(ElementRef);
-	private overlay = inject(Overlay);
 	private emojiPickerService = inject(EmojiPickerService);
 	private translationService = inject(TranslationService);
 
@@ -122,6 +126,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	/**
 	 * Specifies the height of the button
 	 * @group Props
+	 * @default 450
 	 */
 	@Input()
 	@HostBinding('style.--picker-height')
@@ -130,6 +135,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	/**
 	 * Specifies the width of the button
 	 * @group Props
+	 * @default 400
 	 */
 	@Input()
 	@HostBinding('style.--picker-width')
@@ -139,24 +145,28 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	 * Specifies the display size of the emoji.
 	 * This will be used to determine the emoji size in pixels.
 	 * @group Props
+	 * @default 'default'
 	 */
 	emojiSize = input<EmojiSizeOption>('default');
 
 	/**
 	 * Specifies the mode for displaying emoji suggestions in the picker.
 	 * @group Props
+	 * @default 'recent'
 	 */
 	suggestionMode = input<EmojiSuggestionMode>('recent');
 
 	/**
 	 * Specifies the location of the category bar.
 	 * @group Props
+	 * @default 'top'
 	 */
 	categoryBarPosition = input<CategoryBarPosition>('top');
 
 	/**
 	 * Specifies if the scrollbar is visible.
 	 * @group Props
+	 * @default true
 	 */
 	scrollbarVisible = input<boolean>(true);
 
@@ -164,34 +174,50 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	 * Specifies the categories to be included in the emoji picker
 	 * The order will be respected, except for suggestion category
 	 * @group Props
+	 * @default
+	 * 	[
+	 *   "suggestions",
+	 *   "smileys-people",
+	 *   "animals-nature",
+	 *   "food-drink",
+	 *   "travel-places",
+	 *   "objects",
+	 *   "activities",
+	 *   "symbols",
+	 *   "flags"
+	 * ]
 	 */
 	emojiCategories = input<EmojiCategory[]>([...emojiCategories]);
 
 	/**
 	 * Specifies the maximum amount of suggestion emojis that will be shown in the emoji picker.
 	 * @group Props
+	 * @default 50
 	 */
 	suggestionLimit = input<number>(50);
 
 	/**
 	 * Specifies if suggestions will automatically be updated in storage.
 	 * @group Props
+	 * @default true
 	 */
 	autoUpdateSuggestions = input<boolean>(true);
 
 	/**
 	 * Specifies the approach for handling skintone variations within the emoji picker.
 	 * @group Props
+	 * @default 'both'
 	 */
 	skintoneSetting = input<SkintoneSetting>('both');
 
 	/**
 	 * Callback to execute when button is clicked.
-	 * This event is intended to be used with the <p-button> component. Using a regular <button> element, use (click).
 	 * @param {Emoji} emoji - selected emoji.
 	 * @group Outputs
 	 */
 	onEmojiSelected = output<Emoji>();
+
+	searchValue = model<string>('');
 
 	isSkintoneDialogVisible = model<boolean>(false);
 
@@ -219,7 +245,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	selectedCategory = signal<EmojiCategory>(this.emojiCategories()[0]);
 
 	emojiTouchHoldEventActive: boolean = false;
-	private skintoneDialogRef?: OverlayRef;
 
 	isIndividualSkintoneEnabled = computed(() =>
 		this.isIndividualSkintoneSettingEnabled(this.skintoneSetting())
@@ -227,8 +252,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	isGlobalSkintoneEnabled = computed(() =>
 		this.isGlobalSkintoneSettingEnabled(this.skintoneSetting())
 	);
-
-	searchValue = model<string>('');
 
 	defaultEmojis = computed(() => {
 		const categories = this.emojiCategories();
