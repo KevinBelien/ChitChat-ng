@@ -65,48 +65,56 @@ export class TextBoxComponent
 	/**
 	 * The input's current value
 	 * @group TwoWayBindings
+	 * @default ''
 	 */
 	value = model<string>('');
 
 	/**
 	 * Specifies whether the textbox should automatically receive focus when the page loads.
 	 * @group Props
+	 * @default false
 	 */
 	autofocus = input<boolean>(false);
 
 	/**
 	 * Specifies the mode of the textbox, determining its type and behavior.
 	 * @group Props
+	 * @default 'text'
 	 */
 	mode = input<TextBoxMode>('text');
 
 	/**
 	 * Specifies the event that triggers the value change in the textbox.
 	 * @group Props
+	 * @default 'change'
 	 */
 	valueChangeEvent = input<string>('change');
 
 	/**
 	 * Specifies the placeholder text to be displayed inside the textbox when it is empty.
 	 * @group Props
+	 * @default ''
 	 */
 	placeholder = input<string>('');
 
 	/**
 	 * Specifies whether the textbox is disabled.
 	 * @group Props
+	 * @default false
 	 */
 	disabled = input<boolean>(false);
 
 	/**
 	 * Specifies the visual variant of the textbox, affecting its appearance.
 	 * @group Props
+	 * @default 'filled'
 	 */
 	variant = input<TextBoxVariant>('filled');
 
 	/**
 	 * Specifies whether a clear button should be displayed inside the textbox.
 	 * @group Props
+	 * @default false
 	 */
 	showClearButton = input<boolean>(false);
 
