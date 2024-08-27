@@ -1,5 +1,10 @@
 import { Emoji, EmojiCategory } from '.';
 
+/**
+ * Represents a row in the emoji picker, which can either be a category row or an emoji row.
+ * @group Types
+ * @typedef {Object} EmojiPickerRow
+ */
 export type EmojiPickerRow = { id: string } & (
 	| {
 			type: 'category';

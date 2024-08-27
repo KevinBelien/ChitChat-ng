@@ -1,3 +1,8 @@
+/**
+ * Representing different emoji sizes in pixels.
+ * @group Enums
+ * @enum {number} EmojiSize
+ */
 export enum EmojiSize {
 	'xs' = 16,
 	'sm' = 20,
@@ -6,4 +11,9 @@ export enum EmojiSize {
 	'xl' = 32,
 }
 
+/**
+ * Representing the available options for emoji sizes.
+ * @group Types
+ * @typedef {('xs' | 'sm' | 'default' | 'lg' | 'xl')} EmojiSizeOption
+ */
 export type EmojiSizeOption = keyof typeof EmojiSize;
