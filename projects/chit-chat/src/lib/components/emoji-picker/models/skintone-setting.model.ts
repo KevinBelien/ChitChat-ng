@@ -7,7 +7,6 @@
  * - `none`: Do not apply any skintone setting.
  *
  * @group Types
- * @typedef {('global' | 'individual' | 'both' | 'none')} SkintoneSetting
  */
 export type SkintoneSetting =
 	| 'global'

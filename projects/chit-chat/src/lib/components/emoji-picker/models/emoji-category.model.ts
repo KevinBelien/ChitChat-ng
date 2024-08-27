@@ -19,6 +19,5 @@ export const emojiCategories = [
  * Represents a single emoji category from the predefined list.
  * This type is a union of string literals representing the possible values of emoji categories.
  * @group Types
- * @typedef {('suggestions' | 'smileys-people' | 'animals-nature' | 'food-drink' | 'travel-places' | 'objects' | 'activities' | 'symbols' | 'flags')} EmojiCategory
  */
 export type EmojiCategory = (typeof emojiCategories)[number];

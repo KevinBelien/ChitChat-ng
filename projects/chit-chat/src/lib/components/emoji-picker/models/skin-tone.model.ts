@@ -29,7 +29,6 @@ export const skintones = [
  * Represents a skintone type derived from the supported skintones.
  *
  * @group Types
- * @typedef {('default' | 'light' | 'medium-light' | 'medium' | 'medium-dark' | 'dark')} Skintone
  */
 export type Skintone = (typeof skintones)[number];
 

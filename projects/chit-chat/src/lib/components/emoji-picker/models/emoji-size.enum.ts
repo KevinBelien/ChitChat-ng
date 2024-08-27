@@ -14,6 +14,5 @@ export enum EmojiSize {
 /**
  * Representing the available options for emoji sizes.
  * @group Types
- * @typedef {('xs' | 'sm' | 'default' | 'lg' | 'xl')} EmojiSizeOption
  */
 export type EmojiSizeOption = keyof typeof EmojiSize;

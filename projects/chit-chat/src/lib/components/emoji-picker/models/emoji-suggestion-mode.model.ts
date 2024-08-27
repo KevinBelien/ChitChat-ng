@@ -5,6 +5,5 @@
  * - `frequent`: Shows frequently used emojis.
  *
  * @group Types
- * @typedef {('recent' | 'frequent')} EmojiSuggestionMode
  */
 export type EmojiSuggestionMode = 'recent' | 'frequent';

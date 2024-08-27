@@ -4,7 +4,6 @@ import { Skintone } from '.';
  * Represents a skintone and its associated color.
  *
  * @group Types
- * @typedef {Object} SkintoneColor
  */
 export type SkintoneColor = { skintone: Skintone; color: string };
 
