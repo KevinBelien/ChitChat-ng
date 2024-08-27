@@ -4,8 +4,19 @@
  * @group Interfaces
  */
 export interface AlternativeSkintone {
+	/**
+	 * The skintone option for the emoji.
+	 */
 	skintone: Skintone;
+
+	/**
+	 * The value representing the emoji with this skintone.
+	 */
 	value: string;
+
+	/**
+	 * The order in which this skintone variation appears relative to others.
+	 */
 	order: number;
 }
 
@@ -37,7 +48,14 @@ export type Skintone = (typeof skintones)[number];
  * @group Interfaces
  */
 export interface IndividualEmojiSkintone {
+	/**
+	 * The unique identifier of the emoji.
+	 */
 	emojiId: string;
+
+	/**
+	 * The value representing the emoji with the applied skintone.
+	 */
 	emojiValue: string;
 }
 
