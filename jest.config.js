@@ -8,5 +8,9 @@ module.exports = {
       tsconfig: '<rootDir>/tsconfig.spec.json',
     },
   },
+   moduleNameMapper: {
+    '^@chit-chat/ng-chat/src/lib/(.*)$': '<rootDir>/projects/chit-chat/src/lib/$1',
+    // add other mappings if necessary
+  },
 
 };
