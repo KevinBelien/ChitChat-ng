@@ -18,7 +18,6 @@ import {
 	styleUrl: './icon.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })

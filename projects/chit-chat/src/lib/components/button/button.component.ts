@@ -24,7 +24,6 @@ import { ButtonFill } from './models/button-fill.type';
 	styleUrls: ['./button.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 		'[class.ch-disabled]': 'disabled()',
 	},
@@ -162,7 +161,7 @@ export class ButtonComponent {
 		const extraClasses = this.cssClass();
 
 		return {
-			'ch-element ch-button': true,
+			'ch-button': true,
 			'ch-button-icon-only': !!this.icon() && !this.label(),
 			'ch-button-vertical':
 				(this.iconPosition() === 'top' ||
