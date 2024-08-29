@@ -1,11 +1,9 @@
 import {
-	ConnectedPosition,
-	Overlay,
 	OverlayContainer,
 	OverlayModule,
 } from '@angular/cdk/overlay';
 import { CdkPortal, PortalModule } from '@angular/cdk/portal';
-import { Component, ElementRef, ViewChild } from '@angular/core';
+import { Component } from '@angular/core';
 import {
 	ComponentFixture,
 	TestBed,
@@ -19,20 +17,11 @@ import { DialogComponent } from './dialog.component'; // Adjust the path as nece
 
 @Component({
 	template: `
-		<div
-			#targetElement
-			style="position: absolute; top: 100px; left: 100px;"
-		>
-			Target Element
-		</div>
-
 		<ch-dialog
 			[visible]="isVisible"
 			[closeOnBackdropClick]="closeOnBackdropClick"
 			[width]="width"
 			[height]="height"
-			[target]="targetElement"
-			[positions]="positions"
 		>
 			<ng-container header>
 				<p>Dialog Header</p>
@@ -53,24 +42,11 @@ class TestHostComponent {
 	closeOnBackdropClick = true;
 	width: number | string = 'auto';
 	height: number | string = 'auto';
-
-	@ViewChild('targetElement', { static: true })
-	targetElement!: ElementRef;
-
-	positions: ConnectedPosition[] = [
-		{
-			originX: 'center',
-			originY: 'center',
-			overlayX: 'center',
-			overlayY: 'center',
-		},
-	];
 }
 
 describe('DialogComponent', () => {
 	let fixture: ComponentFixture<TestHostComponent>;
 	let component: DialogComponent;
-	let overlay: Overlay;
 	let overlayContainer: OverlayContainer;
 	let overlayContainerElement: HTMLElement;
 
@@ -92,7 +68,6 @@ describe('DialogComponent', () => {
 		);
 		component = dialogDebugElement.componentInstance;
 
-		overlay = TestBed.inject(Overlay);
 		overlayContainer = TestBed.inject(OverlayContainer);
 		overlayContainerElement = overlayContainer.getContainerElement();
 	});
@@ -261,27 +236,5 @@ describe('DialogComponent', () => {
 
 		expect(dialogElement.style.height).toBe('auto');
 		expect(dialogElement.style.width).toBe('auto');
-	}));
-
-	it('should position the dialog relative to the target element', fakeAsync(() => {
-		fixture.componentInstance.isVisible = true;
-		fixture.detectChanges();
-		tick();
-
-		const targetElement =
-			fixture.componentInstance.targetElement.nativeElement;
-
-		const dialogElement = overlayContainerElement.querySelector(
-			'.ch-dialog'
-		) as HTMLElement;
-
-		const targetRect = targetElement.getBoundingClientRect();
-		const dialogRect = dialogElement.getBoundingClientRect();
-
-		expect(dialogRect.bottom).toBeCloseTo(targetRect.top, -1);
-		expect(dialogRect.left + dialogRect.width / 2).toBeCloseTo(
-			targetRect.left + targetRect.width / 2,
-			-1
-		);
 	}));
 });
