@@ -7,7 +7,10 @@ import {
 	output,
 } from '@angular/core';
 import { IconComponent } from '@chit-chat/ng-chat/src/lib/components/icon';
-import { RippleDirective } from '@chit-chat/ng-chat/src/lib/utils';
+import {
+	AutofocusDirective,
+	RippleDirective,
+} from '@chit-chat/ng-chat/src/lib/utils';
 import { ButtonIconProps, ButtonShape, ButtonType } from './models';
 import { ButtonFill } from './models/button-fill.type';
 
@@ -19,7 +22,12 @@ import { ButtonFill } from './models/button-fill.type';
 @Component({
 	selector: 'ch-button',
 	standalone: true,
-	imports: [CommonModule, IconComponent, RippleDirective],
+	imports: [
+		CommonModule,
+		IconComponent,
+		RippleDirective,
+		AutofocusDirective,
+	],
 	templateUrl: './button.component.html',
 	styleUrls: ['./button.component.scss'],
 	changeDetection: ChangeDetectionStrategy.OnPush,
@@ -126,6 +134,13 @@ export class ButtonComponent {
 	 * @group Props
 	 */
 	ariaLabel = input<string>();
+
+	/**
+	 * Specifies whether the button should automatically receive focus when the page loads.
+	 * @group Props
+	 * @default false
+	 */
+	autofocus = input<boolean>(false);
 
 	/**
 	 * Callback to execute when button is clicked.

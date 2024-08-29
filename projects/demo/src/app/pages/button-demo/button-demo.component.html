@@ -1,13 +1,18 @@
 <div class="button-demo-container">
 	<div class="button-collection-section">
 		<h3 class="header">Basic</h3>
-		<ng-container *ngFor="let fill of buttonFills">
+		<ng-container
+			*ngFor="let fill of buttonFills; let fillIndex = index"
+		>
 			<div class="fill-container">
 				<div class="fill-title">{{ fill | titlecase }}</div>
 
 				<div class="btn-row">
-					<ng-container *ngFor="let type of buttonTypes">
+					<ng-container
+						*ngFor="let type of buttonTypes; let typeIndex = index"
+					>
 						<ch-button
+							[autofocus]="fillIndex === 0 && typeIndex === 0"
 							[ariaLabel]="fill + '-' + type"
 							[label]="type | titlecase"
 							[type]="type"

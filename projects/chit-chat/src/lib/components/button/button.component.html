@@ -1,6 +1,8 @@
 <button
 	chRipple
 	[rippleEnabled]="activeStateEnabled()"
+	chAutofocus
+	[autofocus]="autofocus()"
 	[attr.aria-label]="ariaLabel()"
 	[ngStyle]="{
 		width: width() ? width() + 'px' : 'auto',
