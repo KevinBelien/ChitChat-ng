@@ -52,7 +52,6 @@ import { TextBoxVariant } from './models/text-box-variant.type';
 	templateUrl: './text-box.component.html',
 	styleUrls: ['./text-box.component.scss'],
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })
