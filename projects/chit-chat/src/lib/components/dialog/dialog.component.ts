@@ -38,7 +38,6 @@ import { filter } from 'rxjs';
 export class DialogComponent implements OnDestroy {
 	private elementRef = inject(ElementRef);
 	private overlay = inject(Overlay);
-
 	private portal = viewChild(CdkPortal);
 
 	/**
@@ -95,14 +94,6 @@ export class DialogComponent implements OnDestroy {
 	/**
 	 * Specifies an array of possible positions for the popup relative to the target element.
 	 * @group Props
-	 * @default [
-	 *{
-	 *	originX: 'center',
-	 *	originY: 'center',
-	 *	overlayX: 'center',
-	 *	overlayY: 'center',
-	 *},
-	 *]
 	 */
 	positions = input<ConnectedPosition[]>([
 		{
@@ -143,7 +134,9 @@ export class DialogComponent implements OnDestroy {
 
 	constructor() {
 		effect(() => {
-			this.visible() ? this.open(this.target()) : this.close();
+			this.visible()
+				? this.open(this.target())
+				: this.disposeDialogRef();
 		});
 	}
 
@@ -162,6 +155,12 @@ export class DialogComponent implements OnDestroy {
 		);
 
 		this.attachComponentToDialog();
+
+		document.addEventListener('keyup', (event: KeyboardEvent) => {
+			if (event.key === 'Escape') {
+				this.close();
+			}
+		});
 
 		if (this.closeOnBackdropClick())
 			this.setupOnBackdropClickHandler(
@@ -249,9 +248,13 @@ export class DialogComponent implements OnDestroy {
 	 * @group Method
 	 */
 	close = () => {
+		this.disposeDialogRef();
+		this.visible.set(false);
+	};
+
+	private disposeDialogRef = () => {
 		if (this.dialogRef) {
 			this.dialogRef.dispose();
-			this.visible.set(false);
 		}
 	};
 }
