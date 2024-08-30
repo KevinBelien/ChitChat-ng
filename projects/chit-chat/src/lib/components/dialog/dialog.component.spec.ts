@@ -1,4 +1,5 @@
 import {
+	Overlay,
 	OverlayContainer,
 	OverlayModule,
 } from '@angular/cdk/overlay';
@@ -47,6 +48,7 @@ class TestHostComponent {
 describe('DialogComponent', () => {
 	let fixture: ComponentFixture<TestHostComponent>;
 	let component: DialogComponent;
+	let overlay: Overlay;
 	let overlayContainer: OverlayContainer;
 	let overlayContainerElement: HTMLElement;
 
@@ -68,6 +70,7 @@ describe('DialogComponent', () => {
 		);
 		component = dialogDebugElement.componentInstance;
 
+		overlay = TestBed.inject(Overlay);
 		overlayContainer = TestBed.inject(OverlayContainer);
 		overlayContainerElement = overlayContainer.getContainerElement();
 	});
