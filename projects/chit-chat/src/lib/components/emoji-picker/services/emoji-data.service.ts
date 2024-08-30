@@ -292,8 +292,10 @@ export class EmojiDataService {
 	 * @returns {void}
 	 */
 	addEmojiToRecents = (id: string): void => {
-		const emojiIds =
-			this.emojiStorageService.prependToStorage<string>('recent', id);
+		const emojiIds = this.emojiStorageService.prependIdToStorage(
+			'recent',
+			id
+		);
 		const emojis = this.fetchEmojisByIds(emojiIds).map((emoji) =>
 			Object.assign({ ...emoji }, { category: 'suggestions' })
 		);

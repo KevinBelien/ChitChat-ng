@@ -65,15 +65,15 @@ export class EmojiStorageService {
 	 * @param {T} data - The data to prepend.
 	 * @returns {T[]} The updated array stored in localStorage.
 	 */
-	prependToStorage = <T>(
+	prependIdToStorage = (
 		storageKey: keyof typeof this.STORAGE_CONFIG,
-		data: T
-	): T[] => {
+		data: string
+	): string[] => {
 		const config = this.STORAGE_CONFIG[storageKey];
 
-		let emojis = this.retrieveFromStorage<T>(storageKey);
+		let emojis = this.retrieveFromStorage<string>(storageKey);
 		emojis.unshift(data);
-		emojis = [...new Set(emojis)]; // Remove duplicates
+		emojis = [...new Set(emojis)];
 		if ('limit' in config && emojis.length > config.limit) {
 			emojis = emojis.slice(0, config.limit);
 		}
@@ -215,6 +215,7 @@ export class EmojiStorageService {
 	 * @returns {void}
 	 */
 	updateGlobalSkintone = (skintone: Skintone): void => {
+		if (!isValidSkintone(skintone)) return;
 		localStorage.setItem(
 			this.STORAGE_CONFIG.globalSkintone.key,
 			skintone
