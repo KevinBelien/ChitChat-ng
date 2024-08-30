@@ -5,7 +5,6 @@ import {
 	ElementRef,
 	Inject,
 	input,
-	NgZone,
 	OnDestroy,
 	Renderer2,
 } from '@angular/core';
@@ -42,20 +41,17 @@ export class RippleDirective implements AfterViewInit, OnDestroy {
 	constructor(
 		private renderer: Renderer2,
 		private el: ElementRef,
-		private zone: NgZone,
 		@Inject(DOCUMENT) private document: Document
 	) {
 		this.hostEl = el.nativeElement as HTMLElement;
 	}
 
 	ngAfterViewInit() {
-		this.zone.runOutsideAngular(() => {
-			this.pointerDownListener = this.renderer.listen(
-				this.el.nativeElement,
-				'pointerdown',
-				this.onPointerDown.bind(this)
-			);
-		});
+		this.pointerDownListener = this.renderer.listen(
+			this.el.nativeElement,
+			'pointerdown',
+			this.onPointerDown.bind(this)
+		);
 	}
 
 	ngOnDestroy() {
