@@ -19,7 +19,6 @@ import { RippleDirective } from '@chit-chat/ng-chat/src/lib/utils';
 	styleUrl: './emoji-button.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })

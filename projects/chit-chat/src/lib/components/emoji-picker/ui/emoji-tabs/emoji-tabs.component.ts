@@ -35,7 +35,6 @@ import { emojiCategoryIcons } from '../icons';
 	styleUrl: './emoji-tabs.component.scss',
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })

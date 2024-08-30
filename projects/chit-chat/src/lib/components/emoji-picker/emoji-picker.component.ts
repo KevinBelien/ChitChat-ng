@@ -93,7 +93,6 @@ import { SkintoneSwatchPickerComponent } from './ui/skintone-swatch-picker/skint
 	templateUrl: './emoji-picker.component.html',
 	styleUrl: './emoji-picker.component.scss',
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })
@@ -112,9 +111,6 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	swatchPickerComponent = viewChild<SkintoneSwatchPickerComponent>(
 		SkintoneSwatchPickerComponent
 	);
-
-	emojiSkintonePickerDialog =
-		viewChild<DialogComponent>('skintoneDialog');
 
 	@HostBinding('style.--ch-emoji-fontsize') emojiSizeInPx?: number;
 

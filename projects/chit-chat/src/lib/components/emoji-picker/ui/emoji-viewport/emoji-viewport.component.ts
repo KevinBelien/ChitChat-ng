@@ -68,7 +68,6 @@ import { EmojiPickerService } from '../../services';
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	hostDirectives: [PreventContextMenuDirective],
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })

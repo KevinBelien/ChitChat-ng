@@ -12,5 +12,6 @@ module.exports = {
     '^@chit-chat/ng-chat/src/lib/(.*)$': '<rootDir>/projects/chit-chat/src/lib/$1',
     // add other mappings if necessary
   },
+  testEnvironment: 'jsdom',  // Use jsdom for DOM-related testing
 
 };

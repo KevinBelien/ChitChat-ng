@@ -34,7 +34,6 @@ import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 	hostDirectives: [PreventContextMenuDirective],
 	changeDetection: ChangeDetectionStrategy.OnPush,
 	host: {
-		'collision-id': crypto.randomUUID(),
 		class: 'ch-element',
 	},
 })
