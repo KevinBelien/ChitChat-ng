@@ -32,11 +32,11 @@ describe('AutofocusDirective', () => {
 		fixture = TestBed.createComponent(TestComponent);
 		fixture.detectChanges();
 
-		jest.useFakeTimers(); // Use Jest's fake timers
+		jest.useFakeTimers();
 	});
 
 	afterEach(() => {
-		jest.clearAllTimers(); // Clear timers after each test
+		jest.clearAllTimers();
 	});
 
 	it('should add autofocus attribute when autofocus is true', () => {
@@ -72,7 +72,7 @@ describe('AutofocusDirective', () => {
 		);
 		const focusSpy = jest.spyOn(buttonEl.nativeElement, 'focus');
 
-		jest.runAllTimers(); // Run all pending timers
+		jest.runAllTimers();
 
 		expect(focusSpy).toHaveBeenCalled();
 	});
@@ -86,7 +86,7 @@ describe('AutofocusDirective', () => {
 		);
 		const focusSpy = jest.spyOn(buttonEl.nativeElement, 'focus');
 
-		jest.runAllTimers(); // Run all pending timers
+		jest.runAllTimers();
 
 		expect(focusSpy).not.toHaveBeenCalled();
 	});
