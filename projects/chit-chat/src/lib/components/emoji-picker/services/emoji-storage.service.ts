@@ -57,22 +57,22 @@ export class EmojiStorageService {
 	};
 
 	/**
-	 * Prepends data to the beginning of the array in localStorage,
+	 * Prepends id to the beginning of the array in localStorage,
 	 * ensuring that the data does not exceed the configured limit.
 	 * @group Method
 	 * @template T
 	 * @param {keyof typeof STORAGE_CONFIG} storageKey - The key for the storage configuration.
-	 * @param {T} data - The data to prepend.
-	 * @returns {T[]} The updated array stored in localStorage.
+	 * @param {string} data - The id to prepend.
+	 * @returns {string[]} The updated id array stored in localStorage.
 	 */
 	prependIdToStorage = (
 		storageKey: keyof typeof this.STORAGE_CONFIG,
-		data: string
+		id: string
 	): string[] => {
 		const config = this.STORAGE_CONFIG[storageKey];
 
 		let emojis = this.retrieveFromStorage<string>(storageKey);
-		emojis.unshift(data);
+		emojis.unshift(id);
 		emojis = [...new Set(emojis)];
 		if ('limit' in config && emojis.length > config.limit) {
 			emojis = emojis.slice(0, config.limit);
