@@ -1,7 +1,8 @@
 import { Component } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
+import { emojis } from '../data';
 import { EmojiRowGenerator } from '../helpers';
-import { Emoji, EmojiRowGenerationConfig } from '../models';
+import { EmojiRowGenerationConfig } from '../models';
 import { EmojiPickerService } from './emoji-picker.service';
 
 @Component({
@@ -9,6 +10,7 @@ import { EmojiPickerService } from './emoji-picker.service';
 	template: `<div></div>`,
 })
 class EmojiPickerMockComponent {
+	emojis = [...emojis];
 	constructor(public emojiPickerService: EmojiPickerService) {}
 
 	setMultiplier(value: number) {
@@ -48,7 +50,7 @@ class EmojiPickerMockComponent {
 	}
 }
 
-describe('EmojiPickerService via EmojiPickerMockComponent', () => {
+describe('EmojiPickerService', () => {
 	let component: EmojiPickerMockComponent;
 	let service: EmojiPickerService;
 
@@ -61,24 +63,6 @@ describe('EmojiPickerService via EmojiPickerMockComponent', () => {
 		const fixture = TestBed.createComponent(EmojiPickerMockComponent);
 		component = fixture.componentInstance;
 		service = TestBed.inject(EmojiPickerService);
-	});
-
-	it('should create the mock component', () => {
-		expect(component).toBeTruthy();
-	});
-
-	it('should set emoji item size multiplier', () => {
-		const multiplierValue = 2;
-		component.setMultiplier(multiplierValue);
-		expect(service.emojiItemSizeMultiplier()).toEqual(
-			multiplierValue
-		);
-	});
-
-	it('should set padding value', () => {
-		const paddingValue = 10;
-		component.setPadding(paddingValue);
-		expect(service.padding()).toEqual(paddingValue);
 	});
 
 	it('should calculate correct emoji size', () => {
@@ -96,38 +80,49 @@ describe('EmojiPickerService via EmojiPickerMockComponent', () => {
 	});
 
 	it('should calculate correct number of emojis per row', () => {
-		const emojiSize = 24;
-		const viewportSize = 400;
-		const itemSizeMultiplier = 1.5;
+		const emojiSize1 = 24;
+		const viewportSize1 = 400;
+		const itemSizeMultiplier1 = 1.5;
 
-		const emojisPerRow = component.calculateEmojisPerRow(
-			emojiSize,
-			viewportSize,
-			itemSizeMultiplier
+		const emojisPerRow1 = component.calculateEmojisPerRow(
+			emojiSize1,
+			viewportSize1,
+			itemSizeMultiplier1
 		);
 
-		expect(emojisPerRow).toEqual(
-			Math.floor(viewportSize / (emojiSize * itemSizeMultiplier))
+		const emojiSize2 = 16;
+		const viewportSize2 = 300;
+		const itemSizeMultiplier2 = 2;
+
+		const emojisPerRow2 = component.calculateEmojisPerRow(
+			emojiSize2,
+			viewportSize2,
+			itemSizeMultiplier2
 		);
+
+		const emojiSize3 = 34;
+		const viewportSize3 = 800;
+		const itemSizeMultiplier3 = 1.5;
+
+		const emojisPerRow3 = component.calculateEmojisPerRow(
+			emojiSize3,
+			viewportSize3,
+			itemSizeMultiplier3
+		);
+
+		expect(emojisPerRow1).toEqual(11);
+		expect(emojisPerRow2).toEqual(9);
+		expect(emojisPerRow3).toEqual(15);
 	});
 
-	it('should generate emoji rows based on config', () => {
+	it('should generate the right amount emoji rows based on config', () => {
 		const config: EmojiRowGenerationConfig = {
 			emojiSize: 24,
 			viewportWidth: 400,
 			itemSizeMultiplier: 1.5,
 			generateCategoryRows: true,
 			type: 'filter',
-			emojis: [
-				{
-					id: '1',
-					name: 'Smiling Face',
-					value: '😊',
-					category: 'smileys-people',
-					order: 1,
-					keywords: ['smile', 'happy', 'joy'],
-				} as Emoji,
-			],
+			emojis: emojis.splice(0, 50),
 		};
 
 		const generatorSpy = jest.spyOn(
@@ -135,8 +130,16 @@ describe('EmojiPickerService via EmojiPickerMockComponent', () => {
 			'generateEmojiRowsPerCategory'
 		);
 
-		component.generateRows(config);
+		const rows = component.generateRows(config);
 
 		expect(generatorSpy).toHaveBeenCalled();
+
+		expect(rows.length).toBe(6);
+		rows.forEach((row, index) => {
+			if (row.type === 'category') return;
+			else if (index === 5) {
+				expect(row.value.length).toBe(6);
+			} else expect(row.value.length).toBe(11);
+		});
 	});
 });

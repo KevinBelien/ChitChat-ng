@@ -76,11 +76,11 @@ export class EmojiFilterService {
 		searchValue: string
 	): number {
 		if (keyword === searchValue) {
-			return Infinity; // Exact match gets the highest possible score
+			return Infinity;
 		}
 
 		if (keyword.startsWith(searchValue)) {
-			return 1 / (keyword.length - searchValue.length + 1); // Shorter matches get higher scores
+			return 1 / (keyword.length - searchValue.length + 1);
 		}
 
 		return 0; // No match
