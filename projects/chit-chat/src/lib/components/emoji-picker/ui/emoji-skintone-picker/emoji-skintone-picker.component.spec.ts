@@ -129,7 +129,7 @@ describe('EmojiSkintonePickerComponent', () => {
 
 			containerDiv.nativeElement.dispatchEvent(pointerUpEvent);
 			fixture.detectChanges();
-			jest.runAllTimers();
+			jest.useFakeTimers();
 
 			expect(
 				fixture.componentInstance.handleSelectionChanged
