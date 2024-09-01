@@ -28,6 +28,7 @@ import { EmojiButtonComponent } from '../emoji-button/emoji-button.component';
 		CommonModule,
 		EmojiButtonComponent,
 		ClickTouchHoldDirective,
+		PreventContextMenuDirective,
 	],
 	templateUrl: './emoji-skintone-picker.component.html',
 	styleUrl: './emoji-skintone-picker.component.scss',
@@ -71,22 +72,7 @@ export class EmojiSkintonePickerComponent {
 
 	readonly dataAttribute = 'data-skintone';
 
-	constructor() {
-		this.disableContextMenu();
-	}
-
-	private disableContextMenu = () => {
-		const overlayElement = document.querySelector(
-			'.cdk-overlay-container'
-		) as HTMLElement;
-		if (overlayElement) {
-			this.renderer.listen(
-				overlayElement,
-				'contextmenu',
-				(event: MouseEvent) => event.preventDefault()
-			);
-		}
-	};
+	constructor() {}
 
 	protected handleEmojiClick = (evt: ClickEvent) => {
 		if (evt.action === 'right-click') return;
