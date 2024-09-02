@@ -338,6 +338,39 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 		this.emojiDataService.skintoneSetting.set(this.skintoneSetting());
 
 		this.pointerDownListener = this.createPointerDownListener();
+
+		console.log(
+			[...emojis].map((emoji) => {
+				delete (emoji as any).keywords;
+				return Object.assign(emoji, {
+					id: emoji.name.toLowerCase().replaceAll(' ', '-'),
+				});
+			})
+		);
+
+		// const entries = Object.entries(enLocales)
+		// 	.map(([key, value]) => {
+		// 		const emoji = emojis.find((emoji) => emoji.id === key);
+		// 		if (emoji) {
+		// 			return [
+		// 				emoji.name.toLowerCase().replaceAll(' ', '-'),
+		// 				value,
+		// 			];
+		// 		}
+		// 		return undefined;
+		// 	})
+		// 	.filter((entry) => entry !== undefined); // Filter out undefined results
+
+		// const newLocales = Object.fromEntries(
+		// 	entries as [string, string[]][]
+		// );
+
+		// console.log(
+		// 	newLocales,
+		// 	Object.keys(newLocales).length,
+		// 	Object.keys(enLocales).length,
+		// 	emojis.length
+		// );
 	}
 
 	ngOnDestroy(): void {

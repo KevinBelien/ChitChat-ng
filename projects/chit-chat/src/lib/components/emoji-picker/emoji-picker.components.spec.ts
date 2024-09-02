@@ -71,7 +71,6 @@ describe('EmojiPickerComponent', () => {
 			value: '😊',
 			category: 'smileys-people',
 			order: 1,
-			keywords: ['happy'],
 		};
 
 		component.selectEmoji(testEmoji);

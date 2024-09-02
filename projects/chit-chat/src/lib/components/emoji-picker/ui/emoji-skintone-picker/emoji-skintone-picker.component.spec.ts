@@ -52,17 +52,6 @@ describe('EmojiSkintonePickerComponent', () => {
 			{ skintone: 'medium-dark', value: '🫶🏾', order: 5 },
 			{ skintone: 'dark', value: '🫶🏿', order: 6 },
 		],
-		keywords: [
-			'heart',
-			'hands',
-			'love',
-			'gesture',
-			'affection',
-			'romance',
-			'compassion',
-			'care',
-			'support',
-		],
 	};
 
 	beforeEach(() => {

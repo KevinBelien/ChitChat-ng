@@ -16,7 +16,6 @@ describe('EmojiDataService', () => {
 			value: '😀',
 			category: 'smileys-people',
 			order: 1,
-			keywords: ['grinning', 'face', 'smile'],
 		},
 		{
 			id: '2',
@@ -29,7 +28,6 @@ describe('EmojiDataService', () => {
 				{ skintone: 'medium', value: '👍🏽', order: 2 },
 				{ skintone: 'dark', value: '👍🏿', order: 3 },
 			],
-			keywords: ['thumbs', 'up', 'hand'],
 		},
 		{
 			id: '3',
@@ -37,7 +35,6 @@ describe('EmojiDataService', () => {
 			value: '❤️',
 			category: 'symbols',
 			order: 3,
-			keywords: ['heart', 'love', 'red'],
 		},
 	];
 

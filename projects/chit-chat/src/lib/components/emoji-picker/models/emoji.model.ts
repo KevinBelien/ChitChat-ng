@@ -35,9 +35,4 @@ export interface Emoji {
 	 * An optional array of skintone variations for the emoji.
 	 */
 	skintones?: AlternativeSkintone[];
-
-	/**
-	 * An array of keywords associated with the emoji, used for searching and filtering.
-	 */
-	keywords: string[];
 }

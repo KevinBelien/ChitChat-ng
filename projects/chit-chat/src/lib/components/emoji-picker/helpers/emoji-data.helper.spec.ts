@@ -9,7 +9,6 @@ describe('EmojiDataHelper', () => {
 			value: '😊',
 			category: 'smileys-people',
 			order: 1,
-			keywords: ['happy', 'smile'],
 		},
 		{
 			id: '2',
@@ -17,7 +16,6 @@ describe('EmojiDataHelper', () => {
 			value: '🐶',
 			category: 'animals-nature',
 			order: 2,
-			keywords: ['dog', 'pet'],
 		},
 		{
 			id: '3',
@@ -25,7 +23,6 @@ describe('EmojiDataHelper', () => {
 			value: '🍔',
 			category: 'food-drink',
 			order: 3,
-			keywords: ['food', 'burger'],
 		},
 		{
 			id: '4',
@@ -33,7 +30,6 @@ describe('EmojiDataHelper', () => {
 			value: '🐱',
 			category: 'animals-nature',
 			order: 1,
-			keywords: ['cat', 'pet'],
 		},
 		{
 			id: '5',
@@ -41,7 +37,6 @@ describe('EmojiDataHelper', () => {
 			value: '✈️',
 			category: 'travel-places',
 			order: 1,
-			keywords: ['travel', 'plane'],
 		},
 	];
 
