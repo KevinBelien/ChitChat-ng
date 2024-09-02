@@ -3815,7 +3815,9 @@
 	"man-playing-handball": [
 		"sport",
 		"handbal",
-		"mannelijke handbal spelen"
+		"man",
+		"spelen",
+		"handbal"
 	],
 	"shamrock": ["plant", "klaver", "geluk"],
 	"flag-of-turks-&-caicos-islands": [
@@ -5590,14 +5592,11 @@
 	"woman-playing-water-polo": [
 		"sport",
 		"waterpolo",
-		"vrouwelijke die waterpolo speelt"
+		"spelen",
+		"vrouw die waterpolo speelt"
 	],
 	"heart-with-arrow": ["liefde", "hart", "pijl", "hart met pijl"],
-	"woman-playing-handball": [
-		"sport",
-		"handbal",
-		"vrouwelijke die handbal speelt"
-	],
+	"woman-playing-handball": ["sport", "handbal", "vrouw", "spelen"],
 	"money-bag": ["geld zak", "geld", "munteenheid"],
 	"flag-of-vietnam": ["vlag", "vietnam", "vlag van vietnam"]
 }
