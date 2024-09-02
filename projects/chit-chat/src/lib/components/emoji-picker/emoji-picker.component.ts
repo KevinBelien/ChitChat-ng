@@ -318,9 +318,8 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 
 	noDataEmoji = computed(() => {
 		return (
-			this.emojiDataService
-				.emojiMap()
-				?.get('a4922734-f424-469c-aee2-7e8f89a8e411')?.value ?? '🤷'
+			this.emojiDataService.emojiMap()?.get('person-shrugging')
+				?.value ?? '🤷'
 		);
 	});
 
