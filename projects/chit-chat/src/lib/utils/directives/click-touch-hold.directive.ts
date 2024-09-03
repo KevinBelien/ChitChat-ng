@@ -4,10 +4,11 @@ import {
 	ElementRef,
 	inject,
 	input,
+	OnDestroy,
 	OnInit,
 	output,
 	Renderer2,
-	signal, OnDestroy,
+	signal,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, timer } from 'rxjs';
