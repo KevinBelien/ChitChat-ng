@@ -1,51 +1,77 @@
 import {
+	DestroyRef,
 	Directive,
 	ElementRef,
-	EventEmitter,
-	Input,
-	OnDestroy,
+	inject,
+	input,
 	OnInit,
-	Output,
+	output,
 	Renderer2,
+	signal,
 } from '@angular/core';
-import { Subject, fromEvent, timer } from 'rxjs';
+import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
+import { Subject, timer } from 'rxjs';
+import { switchMap, takeUntil, tap } from 'rxjs/operators';
 import {
-	debounceTime,
-	switchMap,
-	takeUntil,
-	tap,
-} from 'rxjs/operators';
-import { ClickActionType, PointerDeviceType } from '../enums';
-import { ClickEvent, TouchHoldEvent } from '../interfaces';
+	ClickActionType,
+	ClickEvent,
+	PointerDeviceType,
+	TouchHoldEvent,
+} from '../models';
 
+/**
+ * ClickTouchHold handles click, touch, and hold events on an element.
+ * It allows you to detect regular clicks, right-clicks, and long-press (touch hold) interactions,
+ * and emits corresponding events.
+ * @directive
+ * @selector [chClickTouchHold]
+ */
 @Directive({
 	selector: '[chClickTouchHold]',
 	standalone: true,
 })
-export class ClickTouchHoldDirective implements OnInit, OnDestroy {
-	@Input() touchHoldTimeInMillis = 750;
-	@Input() preventContextMenu = true;
-	@Input() dataAttribute?: string;
-	@Output() onClick = new EventEmitter<ClickEvent>();
-	@Output() onTouchHold = new EventEmitter<TouchHoldEvent>();
+export class ClickTouchHoldDirective implements OnInit {
+	private renderer = inject(Renderer2);
+	private elementRef = inject(ElementRef);
+	private destroyRef = inject(DestroyRef);
 
-	private destroy$ = new Subject<void>();
+	/**
+	 * The duration (in milliseconds) required for a touch to be recognized as a "hold."
+	 * @group Props
+	 * @default 500
+	 */
+	touchHoldTimeInMillis = input<number>(500);
+
+	/**
+	 * The data attribute used to identify elements for click and touch interactions.
+	 * @group Props
+	 */
+	dataAttribute = input<string>();
+
+	/**
+	 * Event emitted when a click interaction is detected.
+	 * @group Outputs
+	 * @type {EventEmitter<ClickEvent>} -The click event
+	 */
+	onClick = output<ClickEvent>();
+
+	/**
+	 * Event emitted when a touch hold interaction is detected.
+	 * @group Outputs
+	 * @type {EventEmitter<TouchHoldEvent>} - the touch hold event
+	 */
+	onTouchHold = output<TouchHoldEvent>();
+
 	private pointerDown$ = new Subject<PointerEvent>();
 	private pointerUp$ = new Subject<PointerEvent>();
 	private pointerMove$ = new Subject<PointerEvent>();
 	private touchMove$ = new Subject<TouchEvent>();
 	private scroll$ = new Subject<void>();
 
-	private pointerDownTarget: EventTarget | null = null;
-	private pointerDownDataAttribute: string | null = null;
-	private hasPointerExited = false;
+	private pointerDownTarget = signal<EventTarget | null>(null);
+	private pointerDownDataAttribute = signal<string | null>(null);
 
 	private eventListeners: Array<() => void> = [];
-
-	constructor(
-		private elementRef: ElementRef,
-		private renderer: Renderer2
-	) {}
 
 	ngOnInit(): void {
 		this.addEventListeners();
@@ -53,7 +79,7 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 		this.pointerDown$
 			.pipe(
 				switchMap((event) =>
-					timer(this.touchHoldTimeInMillis).pipe(
+					timer(this.touchHoldTimeInMillis()).pipe(
 						takeUntil(this.pointerUp$),
 						takeUntil(this.pointerMove$),
 						takeUntil(this.touchMove$),
@@ -61,22 +87,20 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 						tap(() => this.handleTouchHold(event))
 					)
 				),
-				takeUntil(this.destroy$)
+				takeUntilDestroyed(this.destroyRef)
 			)
 			.subscribe();
 
 		this.pointerUp$
 			.pipe(
 				tap((event) => this.handlePointerUp(event)),
-				takeUntil(this.destroy$)
+				takeUntilDestroyed(this.destroyRef)
 			)
 			.subscribe();
 	}
 
 	ngOnDestroy(): void {
 		this.removeEventListeners();
-		this.destroy$.next();
-		this.destroy$.complete();
 	}
 
 	private addEventListeners = (): void => {
@@ -86,12 +110,16 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 			this.renderer.listen(
 				nativeElement,
 				'pointerdown',
-				(event: PointerEvent) => this.onPointerDown(event)
+				(event: PointerEvent) => {
+					this.onPointerDown(event);
+				}
 			),
 			this.renderer.listen(
 				nativeElement,
 				'pointerup',
-				(event: PointerEvent) => this.onPointerUp(event)
+				(event: PointerEvent) => {
+					this.onPointerUp(event);
+				}
 			),
 
 			this.renderer.listen(nativeElement, 'scroll', () =>
@@ -104,24 +132,6 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 				(event: KeyboardEvent) => this.onKeyUp(event)
 			),
 		];
-
-		fromEvent<PointerEvent>(nativeElement, 'pointermove')
-			.pipe(debounceTime(50), takeUntil(this.destroy$))
-			.subscribe((e: PointerEvent) => this.onPointerMove(e));
-
-		fromEvent<TouchEvent>(nativeElement, 'touchmove')
-			.pipe(debounceTime(50), takeUntil(this.destroy$))
-			.subscribe((e: TouchEvent) => this.onTouchMove(e));
-
-		if (this.preventContextMenu) {
-			this.eventListeners.push(
-				this.renderer.listen(
-					nativeElement,
-					'contextmenu',
-					(event: MouseEvent) => event.preventDefault()
-				)
-			);
-		}
 	};
 
 	private removeEventListeners = (): void => {
@@ -135,10 +145,10 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 			event.target as HTMLElement
 		);
 		if (targetElement) {
-			this.pointerDownTarget = targetElement;
-			this.pointerDownDataAttribute =
-				this.getAttributeValue(targetElement);
-			this.hasPointerExited = false;
+			this.pointerDownTarget.set(targetElement);
+			this.pointerDownDataAttribute.set(
+				this.getAttributeValue(targetElement)
+			);
 			this.pointerDown$.next(event);
 		}
 	};
@@ -146,37 +156,8 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 	private onPointerUp = (event: PointerEvent): void => {
 		if (this.isPointerUpValid(event)) this.pointerUp$.next(event);
 
-		this.pointerDownTarget = null;
-		this.pointerDownDataAttribute = null;
-	};
-
-	private onPointerMove = (event: PointerEvent): void => {
-		if (!event.target || !this.pointerDownTarget) return;
-
-		const targetElement = this.findElementByAttribute(
-			event.target as HTMLElement
-		);
-		if (!targetElement || this.isOutOfBounds(targetElement)) {
-			this.hasPointerExited = true;
-			this.pointerMove$.next(event);
-		}
-	};
-
-	private onTouchMove = (event: TouchEvent): void => {
-		if (!this.pointerDownTarget) return;
-		let targetElement = document.elementFromPoint(
-			event.touches[0].clientX,
-			event.touches[0].clientY
-		) as HTMLElement | null;
-
-		if (!targetElement) return;
-
-		targetElement = this.findElementByAttribute(targetElement);
-
-		if (!targetElement || this.isOutOfBounds(targetElement)) {
-			this.hasPointerExited = true;
-			this.touchMove$.next(event);
-		}
+		this.pointerDownTarget.set(null);
+		this.pointerDownDataAttribute.set(null);
 	};
 
 	private onKeyUp = (event: KeyboardEvent): void => {
@@ -189,6 +170,7 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 			const data = this.getAttributeValue(targetElement);
 			this.onClick.emit({
 				event,
+				targetElement,
 				data,
 				action:
 					event.key === 'Enter'
@@ -207,11 +189,8 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 		if (!targetElement) return;
 
 		const data = this.getAttributeValue(targetElement);
-		if (
-			!this.hasPointerExited &&
-			this.isTargetDataAttributeMatch(targetElement, data)
-		) {
-			this.onTouchHold.emit({ event, data });
+		if (this.isTargetDataAttributeMatch(targetElement, data)) {
+			this.onTouchHold.emit({ event, data, targetElement });
 		}
 	};
 
@@ -224,28 +203,28 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 		if (!targetElement) return;
 
 		const data = this.getAttributeValue(targetElement);
-		if (!this.hasPointerExited) {
-			this.onClick.emit({
-				event,
-				data,
-				pointerType: event.pointerType as PointerDeviceType,
-				action:
-					event.pointerType === PointerDeviceType.MOUSE
-						? event.button === 0
-							? ClickActionType.LEFTCLICK
-							: ClickActionType.RIGHTCLICK
-						: undefined,
-			});
-		}
+		this.onClick.emit({
+			event,
+			targetElement,
+			data,
+			pointerType: event.pointerType as PointerDeviceType,
+			action:
+				event.pointerType === PointerDeviceType.MOUSE
+					? event.button === 0
+						? ClickActionType.LEFTCLICK
+						: ClickActionType.RIGHTCLICK
+					: undefined,
+		});
 	};
 
 	private findElementByAttribute = (
 		targetElement: HTMLElement
 	): HTMLElement | null => {
+		const dataAttribute = this.dataAttribute();
 		while (
 			targetElement &&
-			this.dataAttribute &&
-			!targetElement.hasAttribute(this.dataAttribute) &&
+			dataAttribute &&
+			!targetElement.hasAttribute(dataAttribute) &&
 			targetElement.parentElement
 		) {
 			targetElement = targetElement.parentElement;
@@ -256,11 +235,12 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 	private getAttributeValue = (
 		targetElement: HTMLElement
 	): string | null => {
-		if (!targetElement || !this.dataAttribute) return null;
+		const dataAttribute = this.dataAttribute();
+		if (!targetElement || !dataAttribute) return null;
 		const elementWithAttribute =
 			this.findElementByAttribute(targetElement);
 		return elementWithAttribute
-			? elementWithAttribute.getAttribute(this.dataAttribute)
+			? elementWithAttribute.getAttribute(dataAttribute)
 			: null;
 	};
 
@@ -268,21 +248,12 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 		targetElement: HTMLElement,
 		data?: string | null
 	): boolean => {
-		return (
-			!this.dataAttribute ||
-			(targetElement.hasAttribute(this.dataAttribute) &&
-				this.pointerDownDataAttribute === data)
-		);
-	};
+		const dataAttribute = this.dataAttribute();
 
-	private isOutOfBounds = (targetElement: HTMLElement): boolean => {
 		return (
-			!!this.pointerDownTarget &&
-			(!this.elementRef.nativeElement.contains(targetElement) ||
-				(!!this.dataAttribute &&
-					targetElement.hasAttribute(this.dataAttribute) &&
-					this.pointerDownDataAttribute !==
-						targetElement.getAttribute(this.dataAttribute)))
+			!dataAttribute ||
+			(targetElement.hasAttribute(dataAttribute) &&
+				this.pointerDownDataAttribute() === data)
 		);
 	};
 
@@ -303,10 +274,7 @@ export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 
 		const pointerUpDataAttribute =
 			this.getAttributeValue(targetElement);
-		return (
-			this.pointerDownDataAttribute === pointerUpDataAttribute &&
-			!this.hasPointerExited
-		);
+		return this.pointerDownDataAttribute() === pointerUpDataAttribute;
 	};
 
 	private isClickTriggerKey = (key: string): boolean =>

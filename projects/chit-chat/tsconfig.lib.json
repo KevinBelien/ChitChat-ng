@@ -5,12 +5,33 @@
 		"declaration": true,
 		"declarationMap": true,
 		"inlineSources": true,
+		"sourceMap": true,
 		"types": [],
 		"rootDir": "src",
 		"baseUrl": ".",
+		"moduleResolution": "node",
+		"target": "es2022",
+		"module": "es2022",
+		"experimentalDecorators": true,
+		"importHelpers": true,
+		"stripInternal": true,
+		"emitDecoratorMetadata": false,
+		"lib": ["es2022", "dom"],
+		"skipLibCheck": true,
 		"paths": {
-			"chit-chat/*": ["src/lib/*"]
+			"@chit-chat/ng-chat/*": ["src/app/components/*"]
 		}
 	},
-	"exclude": ["**/*.spec.ts"]
+	"angularCompilerOptions": {
+		"flatModuleId": "@chit-chat/ng-chat",
+		"flatModuleOutFile": "chit-chat-ng-chat.js",
+		"annotateForClosureCompiler": false,
+		"strictMetadataEmit": true,
+		"skipTemplateCodegen": true,
+		"enableI18nLegacyMessageIdFormat": false,
+		"strictInjectionParameters": true,
+		"strictInputAccessModifiers": true
+	},
+	"files": ["./public_api.ts"],
+	"exclude": ["**/*.spec.ts", "**/test.ts"]
 }

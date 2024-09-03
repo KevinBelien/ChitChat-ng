@@ -1,8 +1,8 @@
 import {
 	MapResult,
 	MapResultCollection,
-} from 'chit-chat/src/lib/utils';
-import { DtoPermission } from '../dto';
+} from '@chit-chat/ng-chat/src/lib/utils';
+import { DtoPermission } from '../models';
 
 export class Permission implements Omit<DtoPermission, 'role'> {
 	id: string;

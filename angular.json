@@ -5,9 +5,18 @@
 	"projects": {
 		"chit-chat": {
 			"projectType": "library",
+			"schematics": {
+				"@schematics/angular:component": {
+					"style": "scss",
+					"standalone": true,
+					"skipTests": true,
+					"changeDetection": "OnPush",
+					"path": "projects/chit-chat/src/lib/components"
+				}
+			},
 			"root": "projects/chit-chat",
 			"sourceRoot": "projects/chit-chat/src",
-			"prefix": "lib",
+			"prefix": "ch",
 			"architect": {
 				"build": {
 					"builder": "@angular-devkit/build-angular:ng-packagr",

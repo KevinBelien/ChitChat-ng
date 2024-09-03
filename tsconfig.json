@@ -3,8 +3,8 @@
 	"compilerOptions": {
 		"baseUrl": "./",
 		"paths": {
-			"chit-chat/*": ["dist/chit-chat/*"],
-			"chit-chat": ["dist/chit-chat"]
+			"@chit-chat/ng-chat": ["./projects/chit-chat/"],
+			"@chit-chat/ng-chat/*": ["./projects/chit-chat/*"]
 		},
 		"outDir": "./dist/out-tsc",
 		"strict": true,
@@ -14,6 +14,7 @@
 		"noFallthroughCasesInSwitch": true,
 		"skipLibCheck": true,
 		"esModuleInterop": true,
+		"resolveJsonModule": true,
 		"sourceMap": true,
 		"declaration": false,
 		"experimentalDecorators": true,

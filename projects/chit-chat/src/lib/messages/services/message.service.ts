@@ -3,8 +3,8 @@ import {
 	AngularFirestore,
 	DocumentChangeAction,
 } from '@angular/fire/compat/firestore';
-import { ConversationContext } from 'chit-chat/src/lib/conversations';
-import { FireStoreCollection } from 'chit-chat/src/lib/utils';
+import { ConversationContext } from '@chit-chat/ng-chat/src/lib/conversations';
+import { FireStoreCollection } from '@chit-chat/ng-chat/src/lib/utils';
 import {
 	collection,
 	doc,
@@ -19,8 +19,7 @@ import {
 	startWith,
 	throwError,
 } from 'rxjs';
-import { DtoMessage } from '../dto';
-import { Message } from './../models/message.model';
+import { DtoMessage, Message } from '../models';
 
 @Injectable({
 	providedIn: 'root',
@@ -50,8 +49,10 @@ export class MessageService {
 				doc(messagesRef),
 				JSON.parse(JSON.stringify(data))
 			);
-		} catch (e: any) {
-			throw Error(`Something went wrong when sending message. ${e}`);
+		} catch (evt: any) {
+			throw Error(
+				`Something went wrong when sending message. ${evt}`
+			);
 		}
 	};
 

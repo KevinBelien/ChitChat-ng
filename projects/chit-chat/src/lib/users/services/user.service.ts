@@ -4,7 +4,7 @@ import { AngularFirestore } from '@angular/fire/compat/firestore';
 import {
 	FireStoreCollection,
 	MapResult,
-} from 'chit-chat/src/lib/utils';
+} from '@chit-chat/ng-chat/src/lib/utils';
 
 import {
 	collection,
@@ -21,9 +21,14 @@ import {
 	startWith,
 	throwError,
 } from 'rxjs';
-import { DtoPermission, DtoUser, DtoUserRole } from '../dto';
-import { User, UserRole } from '../models';
-import { UserStatus } from '../types';
+import {
+	DtoPermission,
+	DtoUser,
+	DtoUserRole,
+	User,
+	UserRole,
+	UserStatus,
+} from '../models';
 
 @Injectable({
 	providedIn: 'root',
@@ -123,9 +128,9 @@ export class UserService {
 				doc(usersRef, data.uid),
 				JSON.parse(JSON.stringify(data))
 			);
-		} catch (e: any) {
+		} catch (evt: any) {
 			throw Error(
-				`Something went wrong when creating user with uid ${data.uid}. ${e}`
+				`Something went wrong when creating user with uid ${data.uid}. ${evt}`
 			);
 		}
 	};

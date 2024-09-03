@@ -9,15 +9,15 @@ import {
 import { AngularFirestore } from '@angular/fire/compat/firestore';
 
 import {
-	FireStoreCollection,
-	MapResult,
-} from 'chit-chat/src/lib/utils';
-import {
 	AuthUser,
 	DtoUser,
 	User,
 	UserService,
-} from 'chit-chat/src/lib/users';
+} from '@chit-chat/ng-chat/src/lib/users';
+import {
+	FireStoreCollection,
+	MapResult,
+} from '@chit-chat/ng-chat/src/lib/utils';
 
 import {
 	BehaviorSubject,

@@ -1,3 +1,5 @@
+import { ArrayMap } from '../models';
+
 export class ObjectHelper {
 	public static objectEquals = (
 		obj1: Record<string, any>,
@@ -27,5 +29,24 @@ export class ObjectHelper {
 	): Omit<T, K> => {
 		const { [keyToRemove]: _, ...rest } = obj;
 		return rest;
+	};
+
+	public static combineArrayMap = <T>(
+		obj1: ArrayMap<T>,
+		obj2: ArrayMap<T>
+	): ArrayMap<T> => {
+		const combinedObj: ArrayMap<T> = { ...obj1 };
+
+		for (const key in obj2) {
+			if (combinedObj[key]) {
+				combinedObj[key] = Array.from(
+					new Set([...combinedObj[key], ...obj2[key]])
+				);
+			} else {
+				combinedObj[key] = obj2[key];
+			}
+		}
+
+		return combinedObj;
 	};
 }

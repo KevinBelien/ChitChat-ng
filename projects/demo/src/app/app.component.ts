@@ -1,13 +1,24 @@
 import { CommonModule } from '@angular/common';
-import { Component, inject, OnInit, Renderer2 } from '@angular/core';
+import {
+	Component,
+	effect,
+	inject,
+	OnInit,
+	Renderer2,
+} from '@angular/core';
 import { MatListModule } from '@angular/material/list';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { RouterModule, RouterOutlet } from '@angular/router';
-import { AuthService } from 'chit-chat/src/lib/auth';
-import { ButtonComponent } from 'chit-chat/src/lib/components/button';
-import { ScreenService } from 'chit-chat/src/lib/utils';
+import { AuthService } from '@chit-chat/ng-chat/src/lib/auth';
+import { ButtonComponent } from '@chit-chat/ng-chat/src/lib/components/button';
+import {
+	frTranslations,
+	nlTranslations,
+	TranslationService,
+} from '@chit-chat/ng-chat/src/lib/localization';
+import { ScreenService } from '@chit-chat/ng-chat/src/lib/utils';
 import { NavigationItem, navigationItems } from './app-navigation';
 
 @Component({
@@ -30,13 +41,15 @@ export class AppComponent implements OnInit {
 	private renderer = inject(Renderer2);
 	private authenticationService = inject(AuthService);
 	private screenService = inject(ScreenService);
+	private translationsService = inject(TranslationService);
 
 	readonly navigationItems = [...navigationItems];
 
 	selectedNavItem: NavigationItem = navigationItems[0];
 	sideNavMode: 'over' | 'push' | 'side';
 
-	isMenuOpened: boolean = this.screenService.sizes['lg'];
+	isMenuOpened: boolean =
+		this.screenService.breakpointState()?.current === 'lg';
 
 	isDarkTheme: boolean = false;
 
@@ -44,16 +57,25 @@ export class AppComponent implements OnInit {
 	constructor() {
 		this.sideNavMode = this.calcSideNavMode();
 		this.contentHeight = this.calculatePageHeight();
-		this.screenService.breakPointChanged.subscribe(() => {
+
+		effect(() => {
+			const breakpoint = this.screenService.breakpointState();
+
 			this.sideNavMode = this.calcSideNavMode();
 			this.contentHeight = this.calculatePageHeight();
 		});
 
 		this.enableLightTheme();
+
+		this.translationsService.loadTranslations('nl', nlTranslations);
+		this.translationsService.loadTranslations('fr', frTranslations);
+		this.translationsService.setLanguage('nl');
 	}
 
 	calcSideNavMode = (): 'over' | 'push' | 'side' => {
-		return this.screenService.sizes['lg'] ? 'side' : 'over';
+		return this.screenService.breakpointState()?.current === 'lg'
+			? 'side'
+			: 'over';
 	};
 	calculatePageHeight = () => {
 		return window.innerHeight - 50;
@@ -70,8 +92,8 @@ export class AppComponent implements OnInit {
 		});
 	}
 
-	handleMenuBtnClick = (e: Event) => {
-		e.stopPropagation();
+	handleMenuBtnClick = (evt: Event) => {
+		evt.stopPropagation();
 		this.isMenuOpened = !this.isMenuOpened;
 	};
 
