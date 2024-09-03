@@ -4,7 +4,7 @@
 	"scripts": {
 		"ng": "ng",
 		"start": "ng build chit-chat && ng serve --port 4223 ",
-		"build": "ng build",
+		"build": "ng build chit-chat",
 		"serve": "ng serve --port 4223",
 		"build-chitchat:watch": "ng build chit-chat --watch",
 		"watch": "ng build --watch --configuration development",
