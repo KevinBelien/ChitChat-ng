@@ -63,7 +63,7 @@ export class User implements DtoUser {
 
 	public static fromCollection = (
 		collection: DtoUser[]
-	): MapResultCollection<DtoUser, User> => {
+	): MapResultCollection<User> => {
 		const mapResult = collection.map((user) => User.fromDto(user));
 
 		const users = mapResult

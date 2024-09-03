@@ -34,7 +34,7 @@ export class Permission implements Omit<DtoPermission, 'role'> {
 
 	public static fromDtoCollection = (
 		collection: (DtoPermission & { id: string })[]
-	): MapResultCollection<DtoPermission, Permission> => {
+	): MapResultCollection<Permission> => {
 		const mapResult = collection.map((permission) =>
 			Permission.fromDto(permission.id, permission)
 		);

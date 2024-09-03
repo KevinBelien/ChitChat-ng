@@ -74,9 +74,9 @@ export class Message {
 
 	public static fromDtoCollection = (
 		collection: (DtoMessage & { id: string })[]
-	): MapResultCollection<DtoMessage, Message> => {
+	): MapResultCollection<Message> => {
 		const result = collection.reduce(
-			(acc: MapResultCollection<DtoMessage, Message>, message) => {
+			(acc: MapResultCollection<Message>, message) => {
 				const mappedMessage = Message.fromDto(message.id, message);
 				if (mappedMessage.error) {
 					acc.errors.push(mappedMessage);
@@ -85,10 +85,7 @@ export class Message {
 				}
 				return acc;
 			},
-			{ data: [], errors: [] } as MapResultCollection<
-				DtoMessage,
-				Message
-			>
+			{ data: [], errors: [] } as MapResultCollection<Message>
 		);
 
 		return result;

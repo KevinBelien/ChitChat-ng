@@ -6,7 +6,7 @@
 		"start": "ng build chit-chat && ng serve --port 4223 ",
 		"build": "ng build chit-chat",
 		"serve": "ng serve --port 4223",
-		"build-chitchat:watch": "ng build chit-chat --watch",
+		"build:watch": "ng build chit-chat --watch",
 		"watch": "ng build --watch --configuration development",
 		"test": "jest",
 		"test:watch": "jest --watch",

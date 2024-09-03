@@ -3,7 +3,7 @@ export interface MapResult<T> {
 	error?: Error;
 }
 
-export interface MapResultCollection<T, P> {
+export interface MapResultCollection<P> {
 	data: Array<P>;
-	errors: Array<MapResult<T>>;
+	errors: Array<MapResult<P>>;
 }
