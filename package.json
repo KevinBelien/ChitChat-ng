@@ -10,7 +10,7 @@
 		"watch": "ng build --watch --configuration development",
 		"test": "jest",
 		"test:watch": "jest --watch",
-		"test:ci": "jest --runInBand",
+		"test:ci": "jest --runInBand --coverage",
 		"build-prod": "ng build chit-chat --configuration=production",
 		"publish": "npm run build-prod && cd dist/chit-chat && npm publish --access public",
 		"lint": "ng lint",
