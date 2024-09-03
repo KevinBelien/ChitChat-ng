@@ -7,7 +7,7 @@ import {
 	OnInit,
 	output,
 	Renderer2,
-	signal,
+	signal, OnDestroy,
 } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { Subject, timer } from 'rxjs';
@@ -30,7 +30,7 @@ import {
 	selector: '[chClickTouchHold]',
 	standalone: true,
 })
-export class ClickTouchHoldDirective implements OnInit {
+export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 	private renderer = inject(Renderer2);
 	private elementRef = inject(ElementRef);
 	private destroyRef = inject(DestroyRef);

@@ -66,7 +66,7 @@ export class MessageService {
 			.collection<DtoMessage>(FireStoreCollection.MESSAGES, (ref) => {
 				let modifiedRef = ref.orderBy('sendAt', 'desc');
 
-				if (!!lastSeenMessage) {
+				if (lastSeenMessage) {
 					modifiedRef = modifiedRef.startAfter(
 						lastSeenMessage.convertToDto().sendAt
 					);

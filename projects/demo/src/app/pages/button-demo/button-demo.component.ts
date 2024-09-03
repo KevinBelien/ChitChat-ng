@@ -27,7 +27,7 @@ export class ButtonDemoComponent {
 		'M220-130v-650h323.84l16 80H780v360H536.16l-16-80H280v290h-60Z';
 	readonly buttonFills: ButtonFill[] = ['solid', 'outlined', 'clear'];
 
-	form: any = {
+	form = {
 		isRaised: false,
 		isRound: false,
 		disabled: false,
@@ -48,7 +48,7 @@ export class ButtonDemoComponent {
 
 	constructor() {}
 
-	handleClick = (evt: MouseEvent) => {
+	handleClick = () => {
 		alert('button clicked');
 	};
 }

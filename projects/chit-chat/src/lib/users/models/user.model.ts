@@ -47,8 +47,8 @@ export class User implements DtoUser {
 				),
 			};
 
-		const avatar = !!dto.avatar ? dto.avatar : null;
-		const isActivated = !!dto.isActivated ? dto.isActivated : false;
+		const avatar = dto.avatar ? dto.avatar : null;
+		const isActivated = dto.isActivated ? dto.isActivated : false;
 		return {
 			data: new User(
 				dto.uid,
@@ -57,7 +57,7 @@ export class User implements DtoUser {
 				dto.creationDateMs,
 				avatar,
 				dto.onlineStatus,
-				!!dto.color ? dto.color : null,
+				dto.color ? dto.color : null,
 				isActivated
 			),
 		};

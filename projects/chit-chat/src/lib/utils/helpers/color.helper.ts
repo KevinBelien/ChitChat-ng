@@ -1,6 +1,6 @@
 export class ColorHelper {
 	public static isColorLight = (color: any) => {
-		var red: number, green: number, blue: number, hsp: number;
+		let red: number, green: number, blue: number;
 
 		if (color.match(/^rgb/)) {
 			color = color.match(
@@ -21,7 +21,7 @@ export class ColorHelper {
 			blue = color & 255;
 		}
 
-		hsp = Math.sqrt(
+		const hsp = Math.sqrt(
 			0.299 * (red * red) +
 				0.587 * (green * green) +
 				0.114 * (blue * blue)

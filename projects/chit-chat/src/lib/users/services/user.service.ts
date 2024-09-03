@@ -52,7 +52,7 @@ export class UserService {
 	): Observable<User[]> => {
 		return this.afs
 			.collection<DtoUser>(FireStoreCollection.USERS, (ref) =>
-				!!activatedUsersOnly
+				activatedUsersOnly
 					? ref.where('isActivated', '==', true).orderBy('name')
 					: ref.orderBy('name')
 			)

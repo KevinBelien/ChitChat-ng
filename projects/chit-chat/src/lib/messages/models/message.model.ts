@@ -66,7 +66,7 @@ export class Message {
 				obj.isDeleted,
 				obj.isSeen,
 				new Date(obj.sendAt),
-				!!obj.seenAt ? new Date(obj.seenAt) : null,
+				obj.seenAt ? new Date(obj.seenAt) : null,
 				obj.groupId
 			),
 		};
@@ -105,7 +105,7 @@ export class Message {
 			isDeleted: this.isDeleted,
 			isSeen: this.isSeen,
 			sendAt: this.sendAt.getTime(),
-			seenAt: !!this.seenAt ? this.seenAt.getTime() : null,
+			seenAt: this.seenAt ? this.seenAt.getTime() : null,
 			groupId: this.groupId,
 		};
 	};

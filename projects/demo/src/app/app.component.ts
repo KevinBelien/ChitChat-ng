@@ -18,7 +18,10 @@ import {
 	nlTranslations,
 	TranslationService,
 } from '@chit-chat/ng-chat/src/lib/localization';
-import { ScreenService } from '@chit-chat/ng-chat/src/lib/utils';
+import {
+	BreakpointState,
+	ScreenService,
+} from '@chit-chat/ng-chat/src/lib/utils';
 import { NavigationItem, navigationItems } from './app-navigation';
 
 @Component({
@@ -48,20 +51,23 @@ export class AppComponent implements OnInit {
 	selectedNavItem: NavigationItem = navigationItems[0];
 	sideNavMode: 'over' | 'push' | 'side';
 
-	isMenuOpened: boolean =
-		this.screenService.breakpointState()?.current === 'lg';
+	isMenuOpened: boolean = ['lg', 'xl'].includes(
+		this.screenService.breakpointState()?.current
+	);
 
 	isDarkTheme: boolean = false;
 
 	contentHeight: number;
 	constructor() {
-		this.sideNavMode = this.calcSideNavMode();
+		this.sideNavMode = this.calcSideNavMode(
+			this.screenService.breakpointState()
+		);
 		this.contentHeight = this.calculatePageHeight();
 
 		effect(() => {
 			const breakpoint = this.screenService.breakpointState();
 
-			this.sideNavMode = this.calcSideNavMode();
+			this.sideNavMode = this.calcSideNavMode(breakpoint);
 			this.contentHeight = this.calculatePageHeight();
 		});
 
@@ -72,8 +78,10 @@ export class AppComponent implements OnInit {
 		this.translationsService.setLanguage('nl');
 	}
 
-	calcSideNavMode = (): 'over' | 'push' | 'side' => {
-		return this.screenService.breakpointState()?.current === 'lg'
+	calcSideNavMode = (
+		breakpoint: BreakpointState
+	): 'over' | 'push' | 'side' => {
+		return ['lg', 'xl'].includes(breakpoint.current)
 			? 'side'
 			: 'over';
 	};

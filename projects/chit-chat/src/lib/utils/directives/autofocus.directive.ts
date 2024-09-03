@@ -6,7 +6,7 @@ import {
 	inject,
 	input,
 	PLATFORM_ID,
-	signal,
+	signal, AfterContentChecked, AfterViewChecked,
 } from '@angular/core';
 
 /**
@@ -18,7 +18,7 @@ import {
 	selector: '[chAutofocus]',
 	standalone: true,
 })
-export class AutofocusDirective {
+export class AutofocusDirective implements AfterContentChecked, AfterViewChecked {
 	private platformId = inject(PLATFORM_ID);
 	private host: ElementRef = inject(ElementRef);
 

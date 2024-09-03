@@ -54,11 +54,11 @@ export class AuthService {
 					//Set online status of user depending if user logged in/off
 					const previousUser = this.user$.getValue();
 
-					if (!!user)
+					if (user)
 						from(
 							this.userService.setUserStatus(user.uid, 'available')
 						);
-					else if (!!previousUser)
+					else if (previousUser)
 						from(
 							this.userService.setUserStatus(
 								previousUser.userInfo.uid,
@@ -69,7 +69,7 @@ export class AuthService {
 					return of(user);
 				}),
 				switchMap((user: FirebaseUser | null) => {
-					return !!user
+					return user
 						? this.getUserByFireBaseUser(user)
 						: of({ data: null });
 				}),
@@ -80,7 +80,7 @@ export class AuthService {
 			.subscribe(
 				async (user: MapResult<DtoUser, AuthUser | null>) => {
 					this.user$.next(user.data);
-					if (!!user.error) {
+					if (user.error) {
 						throw user.error;
 					}
 				}
@@ -99,7 +99,7 @@ export class AuthService {
 		user: FirebaseUser
 	): Observable<MapResult<DtoUser, AuthUser | null>> => {
 		return this.afs
-			.collection<DtoUser>(FireStoreCollection.USERS, (ref: any) =>
+			.collection<DtoUser>(FireStoreCollection.USERS, (ref) =>
 				ref
 					.where('uid', '==', user.uid)
 					.where('isActivated', '==', true)
@@ -118,7 +118,7 @@ export class AuthService {
 					});
 				}),
 				map((authUser) => {
-					if (!!authUser.userRole.error) {
+					if (authUser.userRole.error) {
 						return { data: null, error: authUser.userRole.error };
 					}
 
@@ -126,7 +126,7 @@ export class AuthService {
 						authUser.user
 					);
 
-					if (!!mappedUser.error)
+					if (mappedUser.error)
 						return { data: null, error: mappedUser.error };
 
 					if (!mappedUser.data || !authUser.userRole.data)

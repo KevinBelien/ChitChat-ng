@@ -140,7 +140,7 @@ export class TextBoxComponent
 	private onTouched: () => void = () => {};
 
 	@HostListener('blur', ['$event'])
-	onBlur(event: FocusEvent): void {
+	onBlur(): void {
 		this.onTouched();
 	}
 
@@ -174,7 +174,7 @@ export class TextBoxComponent
 	ngOnDestroy(): void {
 		this.cleanupCurrentListener();
 
-		if (!!this.elementClickListener) {
+		if (this.elementClickListener) {
 			this.elementClickListener();
 		}
 	}
