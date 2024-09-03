@@ -4,6 +4,7 @@ import {
 	ElementRef,
 	inject,
 	input,
+	OnDestroy,
 	OnInit,
 	output,
 	Renderer2,
@@ -30,7 +31,7 @@ import {
 	selector: '[chClickTouchHold]',
 	standalone: true,
 })
-export class ClickTouchHoldDirective implements OnInit {
+export class ClickTouchHoldDirective implements OnInit, OnDestroy {
 	private renderer = inject(Renderer2);
 	private elementRef = inject(ElementRef);
 	private destroyRef = inject(DestroyRef);

@@ -1,5 +1,7 @@
 import { isPlatformBrowser } from '@angular/common';
 import {
+	AfterContentChecked,
+	AfterViewChecked,
 	booleanAttribute,
 	Directive,
 	ElementRef,
@@ -18,7 +20,9 @@ import {
 	selector: '[chAutofocus]',
 	standalone: true,
 })
-export class AutofocusDirective {
+export class AutofocusDirective
+	implements AfterContentChecked, AfterViewChecked
+{
 	private platformId = inject(PLATFORM_ID);
 	private host: ElementRef = inject(ElementRef);
 

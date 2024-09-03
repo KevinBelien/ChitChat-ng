@@ -46,7 +46,7 @@ export class Message {
 	public static fromDto = (
 		id: string,
 		obj: DtoMessage
-	): MapResult<DtoMessage, Message> => {
+	): MapResult<Message> => {
 		if (!obj.senderId || !obj.recipientId || !obj.sendAt)
 			return {
 				data: null,
@@ -66,7 +66,7 @@ export class Message {
 				obj.isDeleted,
 				obj.isSeen,
 				new Date(obj.sendAt),
-				!!obj.seenAt ? new Date(obj.seenAt) : null,
+				obj.seenAt ? new Date(obj.seenAt) : null,
 				obj.groupId
 			),
 		};
@@ -74,9 +74,9 @@ export class Message {
 
 	public static fromDtoCollection = (
 		collection: (DtoMessage & { id: string })[]
-	): MapResultCollection<DtoMessage, Message> => {
+	): MapResultCollection<Message> => {
 		const result = collection.reduce(
-			(acc: MapResultCollection<DtoMessage, Message>, message) => {
+			(acc: MapResultCollection<Message>, message) => {
 				const mappedMessage = Message.fromDto(message.id, message);
 				if (mappedMessage.error) {
 					acc.errors.push(mappedMessage);
@@ -85,10 +85,7 @@ export class Message {
 				}
 				return acc;
 			},
-			{ data: [], errors: [] } as MapResultCollection<
-				DtoMessage,
-				Message
-			>
+			{ data: [], errors: [] } as MapResultCollection<Message>
 		);
 
 		return result;
@@ -105,7 +102,7 @@ export class Message {
 			isDeleted: this.isDeleted,
 			isSeen: this.isSeen,
 			sendAt: this.sendAt.getTime(),
-			seenAt: !!this.seenAt ? this.seenAt.getTime() : null,
+			seenAt: this.seenAt ? this.seenAt.getTime() : null,
 			groupId: this.groupId,
 		};
 	};

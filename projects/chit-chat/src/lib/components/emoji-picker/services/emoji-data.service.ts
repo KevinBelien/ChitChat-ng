@@ -223,7 +223,7 @@ export class EmojiDataService {
 				(e) => e.emojiId === emoji.id
 			);
 
-			return !!individualEmoji
+			return individualEmoji
 				? Object.assign(
 						{ ...emoji },
 						{ value: individualEmoji.emojiValue }

@@ -191,7 +191,7 @@ export class ButtonComponent {
 			['ch-focus-state-disabled']: !this.focusStateEnabled(),
 			['ch-active-state-disabled']: !this.activeStateEnabled(),
 
-			...(!!extraClasses ? { [extraClasses]: true } : undefined),
+			...(extraClasses ? { [extraClasses]: true } : undefined),
 		};
 	});
 

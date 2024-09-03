@@ -96,7 +96,7 @@ export class SkintoneSwatchPickerComponent {
 	) => {
 		event.stopPropagation();
 
-		if (!!this.isOpen()) {
+		if (this.isOpen()) {
 			this.selectedSkintone.set(skintoneColor.skintone);
 			this.onSelectionChanged.emit(skintoneColor.skintone);
 		}

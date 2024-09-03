@@ -8,7 +8,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 export class SmartDatePipe implements PipeTransform {
 	constructor(private datePipe: DatePipe) {}
 
-	transform(value: any): string | null {
+	transform(value: number | string | Date): string | null {
 		const currentDate = new Date();
 		const inputDate = new Date(value);
 		const yesterday = new Date(currentDate);

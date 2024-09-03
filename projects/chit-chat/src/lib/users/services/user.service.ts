@@ -52,7 +52,7 @@ export class UserService {
 	): Observable<User[]> => {
 		return this.afs
 			.collection<DtoUser>(FireStoreCollection.USERS, (ref) =>
-				!!activatedUsersOnly
+				activatedUsersOnly
 					? ref.where('isActivated', '==', true).orderBy('name')
 					: ref.orderBy('name')
 			)
@@ -137,7 +137,7 @@ export class UserService {
 
 	getUserRoleWithPermissions = (
 		roleId: string
-	): Observable<MapResult<DtoUserRole, UserRole>> => {
+	): Observable<MapResult<UserRole>> => {
 		const query = this.afs
 			.collection<DtoUserRole>(FireStoreCollection.ROLES)
 			.doc(roleId)

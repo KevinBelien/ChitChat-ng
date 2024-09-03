@@ -340,7 +340,7 @@ export class EmojiPickerComponent implements OnInit, OnDestroy {
 	}
 
 	ngOnDestroy(): void {
-		if (!!this.pointerDownListener) {
+		if (this.pointerDownListener) {
 			this.pointerDownListener();
 		}
 	}

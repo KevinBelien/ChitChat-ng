@@ -35,7 +35,7 @@ export class EmojiStorageService {
 		const response = localStorage.getItem(
 			this.STORAGE_CONFIG[storageKey].key
 		);
-		return !!response ? (JSON.parse(response) as T[]) : [];
+		return response ? (JSON.parse(response) as T[]) : [];
 	};
 
 	/**
