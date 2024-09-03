@@ -34,9 +34,7 @@ export class User implements DtoUser {
 		this.isActivated = isActivated;
 	}
 
-	public static fromDto = (
-		dto: DtoUser
-	): MapResult<DtoUser, User> => {
+	public static fromDto = (dto: DtoUser): MapResult<User> => {
 		if (!User.isValid(dto.uid, dto))
 			return {
 				data: null,

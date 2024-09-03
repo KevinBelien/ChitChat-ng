@@ -46,7 +46,7 @@ export class Message {
 	public static fromDto = (
 		id: string,
 		obj: DtoMessage
-	): MapResult<DtoMessage, Message> => {
+	): MapResult<Message> => {
 		if (!obj.senderId || !obj.recipientId || !obj.sendAt)
 			return {
 				data: null,

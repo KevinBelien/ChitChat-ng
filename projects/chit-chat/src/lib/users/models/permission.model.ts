@@ -18,7 +18,7 @@ export class Permission implements Omit<DtoPermission, 'role'> {
 	public static fromDto = (
 		id: string,
 		obj: DtoPermission
-	): MapResult<DtoPermission, Permission> => {
+	): MapResult<Permission> => {
 		if (!obj.name || !obj.description)
 			return {
 				data: null,

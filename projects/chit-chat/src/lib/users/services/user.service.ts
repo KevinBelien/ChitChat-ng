@@ -137,7 +137,7 @@ export class UserService {
 
 	getUserRoleWithPermissions = (
 		roleId: string
-	): Observable<MapResult<DtoUserRole, UserRole>> => {
+	): Observable<MapResult<UserRole>> => {
 		const query = this.afs
 			.collection<DtoUserRole>(FireStoreCollection.ROLES)
 			.doc(roleId)

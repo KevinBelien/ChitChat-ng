@@ -77,14 +77,12 @@ export class AuthService {
 					return of({ data: null, error: new Error(error) });
 				})
 			)
-			.subscribe(
-				async (user: MapResult<DtoUser, AuthUser | null>) => {
-					this.user$.next(user.data);
-					if (user.error) {
-						throw user.error;
-					}
+			.subscribe(async (user: MapResult<AuthUser | null>) => {
+				this.user$.next(user.data);
+				if (user.error) {
+					throw user.error;
 				}
-			);
+			});
 	}
 
 	getCurrentUser = (): AuthUser | null => {
@@ -97,7 +95,7 @@ export class AuthService {
 
 	getUserByFireBaseUser = (
 		user: FirebaseUser
-	): Observable<MapResult<DtoUser, AuthUser | null>> => {
+	): Observable<MapResult<AuthUser | null>> => {
 		return this.afs
 			.collection<DtoUser>(FireStoreCollection.USERS, (ref) =>
 				ref
@@ -122,7 +120,7 @@ export class AuthService {
 						return { data: null, error: authUser.userRole.error };
 					}
 
-					const mappedUser: MapResult<DtoUser, User> = User.fromDto(
+					const mappedUser: MapResult<User> = User.fromDto(
 						authUser.user
 					);
 
